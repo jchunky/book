@@ -5,7 +5,7 @@
   </tr>
   <% @games.each do |game| %>
     <tr>
-      <td><%= game.name %></td>
+      <td><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
       <td><%= game.rank %></td>
     </tr>
   <% end %>
