@@ -12,24 +12,31 @@ class Bgg
     month = (Date.today - 24.months).beginning_of_month
     while month < Date.today.beginning_of_month
       @months << month.to_s
-      url = url_for_month(month)
-      file = open_url(url)
-      doc = Nokogiri::HTML(file)
-
-      doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
-        link, _, plays = row.css('td')
-        anchor = link.css('a')
-        href = anchor[0]['href']
-        name = anchor[0].content
-
-        @games[name] ||= OpenStruct.new(href: href, name: name, ranks: {})
-
-        @games[name].ranks[month.to_s] = rank + 1
+      games = games_for_month(month)
+      games.each do |game|
+        @games[game.name] ||= game
+        @games[game.name].ranks.merge!(game.ranks)
       end
       month += 1.month
     end
 
     File.write('bgg.html', ERB.new(File.read('bgg.erb')).result(binding))
+  end
+
+  def games_for_month(month)
+    url = url_for_month(month)
+    file = open_url(url)
+    doc = Nokogiri::HTML(file)
+    doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
+      link, _, plays = row.css('td')
+      anchor = link.css('a')
+      href = anchor[0]['href']
+      name = anchor[0].content
+
+      game = OpenStruct.new(href: href, name: name, ranks: {})
+      game.ranks[month.to_s] = rank + 1
+      game
+    end
   end
 
   def url_for_month(month)
