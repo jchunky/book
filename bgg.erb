@@ -1,5 +1,12 @@
-<% @games.each do |game| %>
-  <p>
-    <%= game.name %>
-  </p>
-<% end %>
+<table>
+  <tr>
+    <th>Game</th>
+    <th>Rank</th>
+  </tr>
+  <% @games.each do |game| %>
+    <tr>
+      <td><%= game.name %></td>
+      <td><%= game.rank %></td>
+    </tr>
+  <% end %>
+</table>

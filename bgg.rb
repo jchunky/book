@@ -15,7 +15,7 @@ class Bgg
       anchor = link.css('a')
       href = anchor[0]['href']
       name = anchor[0].content
-      OpenStruct.new(href: href, name: name, rank: rank)
+      OpenStruct.new(href: href, name: name, rank: rank + 1)
     end
 
     File.write('bgg.html', ERB.new(File.read('bgg.erb')).result(binding))
