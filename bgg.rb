@@ -1,3 +1,4 @@
+require 'erb'
 require 'net/http'
 require 'nokogiri'
 require 'ostruct'
@@ -9,15 +10,15 @@ class Bgg
     file = open_url(url)
     doc = Nokogiri::HTML(file)
 
-    (
-    doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
+    @games = doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
       link, _, plays = row.css('td')
       anchor = link.css('a')
       href = anchor[0]['href']
       name = anchor[0].content
-      p OpenStruct.new(href: href, name: name, rank: rank)
+      OpenStruct.new(href: href, name: name, rank: rank)
     end
-    )
+
+    File.write('bgg.html', ERB.new(File.read('bgg.erb')).result(binding))
   end
 
   def url_for_month(month)
