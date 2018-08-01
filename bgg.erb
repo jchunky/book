@@ -1,12 +1,16 @@
 <table>
   <tr>
     <th>Game</th>
-    <th>Rank</th>
+    <% @months.each do |month| %>
+      <th><%= month %></th>
+    <% end %>
   </tr>
-  <% @games.each do |game| %>
+  <% @games.each do |name, details| %>
     <tr>
-      <td><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
-      <td><%= game.rank %></td>
+      <td><a href="https://boardgamegeek.com<%= details.href %>"><%= name %></a></td>
+      <% @months.each do |month| %>
+        <th><%= details.ranks[month] %></th>
+      <% end %>
     </tr>
   <% end %>
 </table>
