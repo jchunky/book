@@ -1,15 +1,59 @@
-<table>
+<style>
+  .even {
+    background-color: silver;
+  }
+  .rank {
+    width: 10px;
+    text-align: right;
+  }
+  th.rank {
+    /*height: 200px;*/
+  }
+  body {
+    margin-top: 100px;
+  }
+  .vertical-text {
+    transform: rotate(270deg);
+    /*transform-origin: left top 0;*/
+    /*overflow: visible;*/
+    /*text-overflow: visible;*/
+  }
+
+  #games {
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #games td, #games th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #games tr:nth-child(even){background-color: #f2f2f2;}
+
+  #games tr:hover {background-color: #ddd;}
+
+  #games th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+<table id="games">
   <tr>
     <th>Game</th>
     <% @months.each do |month| %>
-      <th><%= month %></th>
+      <th class="vertical-text rank"><%= month %></th>
     <% end %>
   </tr>
   <% @games.each do |name, details| %>
     <tr>
       <td><a href="https://boardgamegeek.com<%= details.href %>"><%= name %></a></td>
       <% @months.each do |month| %>
-        <th><%= details.ranks[month] %></th>
+        <td class="rank"><%= details.ranks[month] %></td>
       <% end %>
     </tr>
   <% end %>

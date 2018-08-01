@@ -9,7 +9,7 @@ class Bgg
   def run
     @games = {}
     @months = []
-    month = (Date.today - 3.months).beginning_of_month
+    month = (Date.today - 12.months).beginning_of_month
     while month < Date.today.beginning_of_month
       @months << month.to_s
       url = url_for_month(month)
