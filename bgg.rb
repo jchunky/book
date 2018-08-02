@@ -8,19 +8,26 @@ require 'active_support/all'
 class Bgg
   def run
     @games = {}
-    @months = []
-    month = (Date.today - 72.months).beginning_of_month
-    while month < Date.today.beginning_of_month
-      @months << month.to_s
+    @months = months
+    @months.each do |month|
       games = games_for_month(month)
       games.each do |game|
         @games[game.name] ||= game
         @games[game.name].ranks.merge!(game.ranks)
       end
-      month += 1.month
     end
 
     File.write('bgg.html', ERB.new(File.read('bgg.erb')).result(binding))
+  end
+
+  def months
+    result = []
+    month = (Date.today - 72.months).beginning_of_month
+    while month < Date.today.beginning_of_month
+      result << month
+      month += 1.month
+    end
+    result
   end
 
   def games_for_month(month)

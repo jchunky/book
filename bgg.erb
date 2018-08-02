@@ -48,7 +48,7 @@
   <tr>
     <th class="game">Game</th>
     <% @months.each do |month| %>
-      <th class="rank"><div><span><%= month %></span></div></th>
+      <th class="rank"><div><span><%= month.to_s %></span></div></th>
     <% end %>
   </tr>
   <% @games.each do |name, details| %>
