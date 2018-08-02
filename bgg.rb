@@ -20,6 +20,7 @@ class Bgg
         memo[game.name].ranks.merge!(game.ranks)
         memo
       end
+      .select { |name, game| display_game?(game) }
 
     write_output
   end
@@ -63,6 +64,10 @@ class Bgg
       game.ranks[month.to_s] = rank + 1
       game
     end
+  end
+
+  def display_game?(game)
+    game.ranks.keys.any? { |d| d >= (Date.today - 12.months).to_s }
   end
 
   def write_output
