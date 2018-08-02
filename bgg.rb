@@ -44,9 +44,9 @@ class Bgg
   end
 
   def cache(url)
-    url = "tmp/" + url.gsub(/[:\/]/, '_') + ".html"
-    File.write(url, yield) unless File.exist?(url)
-    File.read(url)
+    file = "tmp/" + url.gsub(/[:\/]/, '_') + ".html"
+    File.write(file, yield) unless File.exist?(file)
+    File.read(file)
   end
 
   def open(url)
