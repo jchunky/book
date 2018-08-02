@@ -9,7 +9,7 @@ class Bgg
   def run
     @games = {}
     @months = []
-    month = (Date.today - 24.months).beginning_of_month
+    month = (Date.today - 54.months).beginning_of_month
     while month < Date.today.beginning_of_month
       @months << month.to_s
       games = games_for_month(month)
