@@ -27,7 +27,7 @@ class Bgg
     url = url_for_month(month)
     file = open_url(url)
     doc = Nokogiri::HTML(file)
-    doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
+    doc.css('.forum_table')[1].css('tr')[1..-2].map.with_index do |row, rank|
       link, _, plays = row.css('td')
       anchor = link.css('a')
       href = anchor[0]['href']
