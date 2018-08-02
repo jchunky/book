@@ -7,17 +7,16 @@ require 'active_support/all'
 
 class Bgg
   def run
-    @games = {}
     @months = months
-    @months.each do |month|
-      games = games_for_month(month)
-      games.each do |game|
-        @games[game.name] ||= game
-        @games[game.name].ranks.merge!(game.ranks)
+    @games = @months
+      .flat_map { |month| games_for_month(month) }
+      .reduce({}) do |memo, game|
+        memo[game.name] ||= game
+        memo[game.name].ranks.merge!(game.ranks)
+        memo
       end
-    end
 
-    File.write('bgg.html', ERB.new(File.read('bgg.erb')).result(binding))
+    write_output
   end
 
   def months
@@ -62,6 +61,12 @@ class Bgg
 
   def open(url)
     Net::HTTP.get(URI.parse(url))
+  end
+
+  def write_output
+    template = File.read('bgg.erb')
+    html = ERB.new(template).result(binding)
+    File.write('bgg.html', html)
   end
 end
 
