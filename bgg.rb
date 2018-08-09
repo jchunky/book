@@ -9,8 +9,8 @@ class Bgg
   NUMBER_OF_MONTHS = 72
 
   def run
-    @months = months
-    @games = @months
+    @months = months_display
+    @games = months_data
       .map { |month| [month, url_for_month(month)] }
       .map { |month, url| [month, read_url(url)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
@@ -25,9 +25,19 @@ class Bgg
     write_output
   end
 
-  def months
+  def months_display
     result = []
     month = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
+    while month < Date.today.beginning_of_month
+      result << month
+      month += 1.month
+    end
+    result
+  end
+
+  def months_data
+    result = []
+    month = Date.parse('2003-01-01')
     while month < Date.today.beginning_of_month
       result << month
       month += 1.month
@@ -59,11 +69,14 @@ class Bgg
       anchor = link.css('a')
       href = anchor[0]['href']
       name = anchor[0].content
+      play_count = plays.css('a')[0].content.to_i
 
-      game = OpenStruct.new(href: href, name: name, ranks: {})
+      next if play_count < 300
+
+      game = OpenStruct.new(href: href, name: name, ranks: {}, plays: play_count)
       game.ranks[month.to_s] = rank + 1
       game
-    end
+    end.compact
   end
 
   def display_game?(game)
