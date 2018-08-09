@@ -67,8 +67,9 @@ class Bgg
   end
 
   def display_game?(game)
-    game.ranks.keys.any? { |d| d >= (Date.today - 12.months).to_s } &&
-      game.ranks.size >= 10
+    # game.ranks.keys.any? { |d| d >= (Date.today - 12.months).to_s } &&
+    game.name != 'Unpublished Prototype' &&
+    game.ranks.size >= 10
   end
 
   def write_output
