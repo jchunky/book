@@ -37,7 +37,7 @@ class Bgg
 
   def months_data
     result = []
-    month = Date.parse('2003-01-01')
+    month = Date.parse('2005-01-01')
     while month < Date.today.beginning_of_month
       result << month
       month += 1.month
