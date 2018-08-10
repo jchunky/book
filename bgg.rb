@@ -73,7 +73,7 @@ class Bgg
 
       next if play_count < 300
 
-      game = OpenStruct.new(href: href, name: name, ranks: {}, plays: play_count)
+      game = OpenStruct.new(href: href, name: name, ranks: {})
       game.ranks[month.to_s] = rank + 1
       game
     end.compact
