@@ -15,10 +15,9 @@ class Bgg
       .map { |month, url| [month, read_url(url)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
       .flat_map { |month, doc| games_for_doc(month, doc) }
-      .reduce({}) do |memo, game|
+      .each_with_object({}) do |game, memo|
         memo[game.name] ||= game
         memo[game.name].ranks.merge!(game.ranks)
-        memo
       end
       .select { |name, game| display_game?(game) }
 
