@@ -13,6 +13,7 @@ class Bgg
     @games = months_data
       .map { |month| [month, url_for_month(month)] }
       .map { |month, url| [month, read_url(url)] }
+      .map { |month, file| [month, strip_accents(file)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
       .flat_map { |month, doc| games_for_doc(month, doc) }
       .each_with_object({}) do |game, memo|
@@ -62,6 +63,10 @@ class Bgg
     Net::HTTP.get(URI.parse(url))
   end
 
+  def strip_accents(string)
+    ActiveSupport::Inflector.transliterate(string).to_s
+  end
+
   def games_for_doc(month, doc)
     doc.css('.forum_table')[1].css('tr')[1..-2].map.with_index do |row, rank|
       link, _, plays = row.css('td')
@@ -79,9 +84,7 @@ class Bgg
   end
 
   def display_game?(game)
-    # game.ranks.keys.any? { |d| d >= (Date.today - 12.months).to_s } &&
-    game.name != 'Unpublished Prototype' &&
-    game.ranks.size >= 10
+    game.name != 'Unpublished Prototype' && game.ranks.size >= 10
   end
 
   def write_output
