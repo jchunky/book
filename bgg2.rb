@@ -9,8 +9,18 @@ require_relative 'top_ranked'
 
 class Bgg2
   def run
-    # @games = TopPlayed.new.games
-    @games = TopRanked.new.games
+    top_played = TopPlayed.new.games
+    top_ranked = TopRanked.new.games
+    games = top_played.map { |g| [g.name, g] }.to_h
+
+    top_ranked.each do |game|
+      if games.include?(game.name)
+        game.player_count = games[game.name].player_count
+      end
+      games[game.name] = game
+    end
+
+    @games = games.values
 
     write_output
   end

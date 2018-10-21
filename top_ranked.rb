@@ -1,6 +1,6 @@
 class TopRanked
   def games
-    (1..10)
+    (1..100)
       .map { |page| url_for_page(page) }
       .map { |url| read_url(url) }
       .map { |file| strip_accents(file) }
