@@ -19,24 +19,26 @@
     color: white;
   }
 
-  .game {
-    text-align: left;
-  }
-
-  .player_count {
+  .number {
     text-align: right;
   }
 </style>
 
 <table id="games">
   <tr>
-    <th class="game">Game</th>
-    <th class="player_count">Player Count</th>
+    <th>Game</th>
+    <th class="number">Player Count</th>
+    <th class="number">Rank</th>
+    <th class="number">Rating</th>
+    <th class="number">Voters</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
-      <td class="game"><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
-      <td class="player_count"><%= game.player_count %></td>
+      <td><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
+      <td class="number"><%= game.player_count %></td>
+      <td class="number"><%= game.rank %></td>
+      <td class="number"><%= game.rating %></td>
+      <td class="number"><%= game.voters %></td>
     </tr>
   <% end %>
 </table>
