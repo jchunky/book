@@ -38,15 +38,12 @@ class TopRanked
   def games_for_doc(doc)
     doc.css('.collection_table')[0].css('tr')[1..-1].map.with_index do |row, rank|
       rank, _, title, _, rating, voters = row.css('td')
-      # p 'x' * 80
-      # p rank.to_s
-      # p title.css('a')[0].to_s
-      # p rating.to_s
-      # p voters.to_s
 
       rank = rank.css('a')[0]['name']
       href = title.css('a')[0]['href']
       name = title.css('a')[0].content
+      rating = rating.content
+      voters = voters.content
 
       OpenStruct.new(href: href, name: name, rank: rank, rating: rating, voters: voters)
     end.compact
