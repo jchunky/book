@@ -10,7 +10,7 @@ class TopPlayed
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{month.beginning_of_month}/end/#{month.end_of_month}/page/#{page}?sortby=distinctusers&subtype=All"
+    "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{month.beginning_of_month}/end/#{month.end_of_month}/page/#{page}?sortby=distinctusers&subtype=boardgame"
   end
 
   def month
