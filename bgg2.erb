@@ -2,15 +2,12 @@
   #games {
     font-family: Arial;
     border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
     font-size: 8pt;
   }
 
   #games td, #games th {
     border: 1px solid #ddd;
-    /*padding-top: 8px;*/
-    /*padding-bottom: 8px;*/
+    padding: 8px;
   }
 
   #games tr:nth-child(even) { background-color: #f2f2f2; }
@@ -18,28 +15,15 @@
   #games tr:hover { background-color: #ddd; }
 
   #games th {
-    /*text-align: left;*/
-    /*vertical-align: bottom;*/
     background-color: #4CAF50;
     color: white;
   }
 
-  th.rank {
-    /*height: 120px;*/
-    white-space: nowrap;
-  }
-
-  th.rank > div {
-    /*transform: rotate(270deg);*/
-  }
-
   .game {
-    white-space: nowrap;
-    overflow: hidden;
-    /*width: 400px;*/
+    text-align: left;
   }
 
-  .rank {
+  .player_count {
     text-align: right;
   }
 </style>
@@ -47,12 +31,12 @@
 <table id="games">
   <tr>
     <th class="game">Game</th>
-    <th class="rank">Player Count</th>
+    <th class="player_count">Player Count</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
       <td class="game"><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
-      <td class="rank"><%= game.player_count %></td>
+      <td class="player_count"><%= game.player_count %></td>
     </tr>
   <% end %>
 </table>
