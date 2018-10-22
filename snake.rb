@@ -64,11 +64,18 @@ class Snake
     "The Godfather: Corleones Empire" => "The Godfather: Corleone's Empire",
   }
 
-  def games
-    games = File.read('input/light_strategy.json')
-    games = JSON.parse(games)
+  FILES = [
+    'input/light_strategy.json',
+    'input/strategy.json',
+  ]
 
-    games.flat_map { |data| build_game(data) }
+  def games
+    FILES
+      .map { |f| File.read(f) }
+      .map { |f| JSON.parse(f) }
+      .flat_map do |rows|
+        rows.map { |row| build_game(row) }
+      end
   end
 
   def build_game(data)
