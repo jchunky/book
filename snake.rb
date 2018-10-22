@@ -3,6 +3,7 @@ require 'json'
 class Snake
   NAMES = {
     "(BlackBox) - Exploding Kittens - 1st edition" => "Exploding Kittens",
+    "(BlackBox) Exploding Kittens NSFW Deck" => "Exploding Kittens: NSFW Deck",
     "Abraca What?" => "Abracada...What?",
     "Agricola (2015)" => "Agricola (Revised Edition)",
     "Alien Frontiers 5th Edition" => "Alien Frontiers",
@@ -78,10 +79,11 @@ class Snake
     "NMBR9" => "NMBR 9",
     "Once Upon a Time" => "Once Upon a Time: The Storytelling Card Game",
     "Orinoco Gold" => "Gold am Orinoko",
-    "Parcheesi" => "Parchisi",
+    "Parcheesi" => "Pachisi",
     "Penguin Pile Up" => "Iceberg Seals",
     "Pentago Multiplayer" => "Multiplayer Pentago",
     "Perudo" => "Liar's Dice",
+    "Pick Your Poison - NSFW Edition" => "Pick Your Poison: NSFW Edition",
     "Plague Inc." => "Plague Inc.: The Board Game",
     "Playing Cards" => "Traditional Card Games",
     "Poison" => "Friday the 13th",
@@ -160,6 +162,7 @@ class Snake
   end
 
   def normalize_name(name)
+    name = name.strip
     NAMES[name] || name
   end
 end

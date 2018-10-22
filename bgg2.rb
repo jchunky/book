@@ -11,13 +11,28 @@ require_relative 'utils'
 
 class Bgg2
   BLACKLIST = [
+    "Analyze Me",
     "Atari's Missile Command",
     "Blackbox - Karmaka",
     "Blackbox - OrganATTACK!",
+    "Blank Marry Kill",
+    "Bob Ross: Happy Little Accidents",
+    "Canadian Trivia: Family Edition",
     "Catan: 5-6 Player Extension",
+    "Dogopoly",
+    "F*THAT!",
+    "Fake News",
+    "Grey's Anatomy Trivia Board Game",
     "Monster Misfits",
+    "Ouija",
+    "Pick Your Poison: NSFW Edition",
+    "Pickles to Penguins",
+    "Pop Culture Trivia",
+    "Q-bitz",
+    "Spank the Yeti: The Adult Party Game of Questionable Decisions",
     "Stumblewood",
     "The Crow Game",
+    "Who'd You Rather?",
   ]
 
   def run
