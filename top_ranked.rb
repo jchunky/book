@@ -6,6 +6,7 @@ class TopRanked
       .map { |file| strip_accents(file) }
       .map { | file| Nokogiri::HTML(file) }
       .flat_map { |doc| games_for_doc(doc) }
+      .uniq { |game| game.name }
   end
 
   def url_for_page(page)
