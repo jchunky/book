@@ -40,17 +40,24 @@ class TopRanked
     doc.css('.collection_table')[0].css('tr')[1..-1].map.with_index do |row, rank|
       rank, _, title, _, rating, voters = row.css('td')
 
-      rank = rank.css('a')[0]['name']
+      rank = rank.css('a')[0]['name'] rescue nil
       href = title.css('a')[0]['href']
       name = title.css('a')[0].content
       rating = rating.content
       voters = voters.content
 
-      OpenStruct.new(href: href, name: name, rank: rank, rating: rating, voters: voters)
+      OpenStruct.new(
+        href: href,
+        name: name,
+        rank: rank,
+        rating: rating,
+        voters: voters,
+        key: Utils.generate_key(name)
+      )
     end.compact
   end
 
   def display_game?(game)
-    game.name != 'Unpublished Prototype'
+    game.name != 'Unpublished Prototype' && game.rank
   end
 end

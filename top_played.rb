@@ -43,7 +43,12 @@ class TopPlayed
       name = anchor[0].content
       player_count = plays.css('a')[0].content.to_i
 
-      OpenStruct.new(href: href, name: name, player_count: player_count)
+      OpenStruct.new(
+        href: href,
+        name: name,
+        player_count: player_count,
+        key: Utils.generate_key(name)
+      )
     end.compact
   end
 

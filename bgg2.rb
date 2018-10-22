@@ -7,6 +7,7 @@ require 'uri'
 require_relative 'snake'
 require_relative 'top_played'
 require_relative 'top_ranked'
+require_relative 'utils'
 
 class Bgg2
   def run
@@ -14,24 +15,24 @@ class Bgg2
     top_ranked = TopRanked.new.games
     snake_games = Snake.new.games
 
-    games = top_played.map { |g| [g.name, g] }.to_h
+    games = top_played.map { |g| [g.key, g] }.to_h
 
     top_ranked.each do |game|
-      if games.include?(game.name)
-        game.player_count = games[game.name].player_count
+      if games.include?(game.key)
+        game.player_count = games[game.key].player_count
       end
-      games[game.name] = game
+      games[game.key] = game
     end
 
     snake_games.each do |g|
-      if games.include?(g.name)
-        game = games[g.name]
+      if games.include?(g.key)
+        game = games[g.key]
         game.rules_url = g.rules_url
         game.difficulty = g.difficulty
         game.location = g.location
         game.categories = g.categories
       else
-        games[g.name] = g
+        games[g.key] = g
       end
     end
 
