@@ -34,6 +34,16 @@ require 'json'
 #   "ts_maintenance_next"=>1557344106
 # }
 class Snake
+  BLACKLIST = [
+    "Atari's Missile Command",
+    "Blackbox - Karmaka",
+    "Blackbox - OrganATTACK!",
+    "Catan: 5-6 Player Extension",
+    "Monster Misfits",
+    "Stumblewood",
+    "The Crow Game",
+  ]
+
   NAMES = {
     "(BlackBox) - Exploding Kittens - 1st edition" => "Exploding Kittens",
     "Abraca What?" => "Abracada...What?",
@@ -61,7 +71,7 @@ class Snake
     "Cards Against Humanity (Canadian version)" => "Cards Against Humanity",
     "Cash'N Guns" => "Ca$h 'n Guns (Second Edition)",
     "Catan (5th Edition)" => "Catan",
-    "Catan, 5-6 Extension (4th Edition)" => "Catan: 5-6 Player Extension ",
+    "Catan, 5-6 Extension (4th Edition)" => "Catan: 5-6 Player Extension",
     "Checkers - 11.5" => "Checkers",
     "Chess - Folding Board - SET OAK BOOK STYLE 11\" (W/ HANDLE)" => "Chess",
     "Citadels (Classic)" => "Citadels",
@@ -199,6 +209,7 @@ class Snake
 
   def display_game?(game)
     game.difficulty.to_i != 3 &&
-    game.categories.include?("Strategy")
+    game.categories.include?("Strategy") &&
+    BLACKLIST.exclude?(game.name)
   end
 end
