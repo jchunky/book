@@ -35,7 +35,9 @@ class Bgg2
       end
     end
 
-    @games = games.values
+    @games = games
+      .values
+      .select { |g| g.location }
 
     write_output
   end
