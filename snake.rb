@@ -34,6 +34,36 @@ require 'json'
 #   "ts_maintenance_next"=>1557344106
 # }
 class Snake
+  NAMES = {
+    "1812 The Invasion of Canada" => "1812: The Invasion of Canada",
+    "Agricola (2015)" => "Agricola (Revised Edition)",
+    "Alien Frontiers 5th Edition" => "Alien Frontiers",
+    "Arkham Horror - 3rd Edition" => "Arkham Horror",
+    "Betrayal at the House on the Hill" => "Betrayal at House on the Hill",
+    "Blood Bowl Team Manager" => "Blood Bowl: Team Manager ? The Card Game",
+    "Britannia the game of the Birth of Britain" => "Britannia",
+    "Catan (5th Edition)" => "Catan",
+    "Catan, 5-6 Extension (4th Edition)" => "Catan: 5-6 Player Extension ",
+    "Caverna: Cave VS Cave" => "Caverna: Cave vs Cave",
+    "D&D: Castle Ravenloft" => "Dungeons & Dragons: Castle Ravenloft Board Game",
+    "D&D: Dungeon!" => "Dungeon!",
+    "DC Comics Deck Building Game" => "DC Comics Deck-Building Game",
+    "Eclipse: New Dawn" => "Eclipse",
+    "Game of Thrones 2nd Edition" => "A Game of Thrones: The Board Game (Second Edition)",
+    "Last Night on Earth" => "Last Night on Earth: The Zombie Game",
+    "Legendary: Marvel Deck-Building Game" => "Legendary: A Marvel Deck Building Game",
+    "Lord of the Rings Co-op" => "Lord of the Rings",
+    "Lord of the Rings: Fellowship of the Ring DBG" => "The Lord of the Rings: The Fellowship of the Ring Deck-Building Game",
+    "Merchants and Marauders" => "Merchants & Marauders",
+    "Netrunner (Revised Core)" => "Android: Netrunner",
+    "Power Grid: First Sparks" => "Power Grid: The First Sparks",
+    "Risk Lord of the Rings" => "Risk: The Lord of the Rings",
+    "Sentinels of the Multiverse: Enhanced Edition" => "Sentinels of the Multiverse",
+    "Spartacus: Blood and Treachery" => "Spartacus: A Game of Blood & Treachery",
+    "Star Trek Expeditions" => "Star Trek: Expeditions",
+    "The Godfather: Corleones Empire" => "The Godfather: Corleone's Empire",
+  }
+
   def games
     games = File.read('input/light_strategy.json')
     games = JSON.parse(games)
@@ -43,11 +73,15 @@ class Snake
 
   def build_game(data)
     OpenStruct.new(
-      name: data['title'],
+      name: normalize_name(data['title']),
       rules_url: data['rules_url'],
       difficulty: data['difficulty_label'],
       location: data['shelf_location'],
       categories: data['categories'].map { |c| c['name'] }.join(", ")
     )
+  end
+
+  def normalize_name(name)
+    NAMES[name] || name
   end
 end

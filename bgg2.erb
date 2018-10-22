@@ -46,7 +46,7 @@
       <td class="number"><%= game.rating %></td>
       <td class="number"><%= game.voters %></td>
       <td class="number">
-        <% if game.rules_url %>
+        <% if game.rules_url.present? %>
           <a href="<%= game.rules_url %>">Rules</a>
         <% end %>
       </td>
