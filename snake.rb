@@ -65,8 +65,18 @@ class Snake
   }
 
   FILES = [
+    'input/abstract.json',
+    'input/childrens.json',
+    'input/cooperative.json',
+    'input/dexterity.json',
+    'input/greatest_hits.json',
     'input/light_strategy.json',
+    'input/new_arrivals.json',
+    'input/nostalgia.json',
+    'input/party.json',
     'input/strategy.json',
+    'input/trivia.json',
+    'input/word.json',
   ]
 
   def games
