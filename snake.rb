@@ -177,6 +177,7 @@ class Snake
       .flat_map do |rows|
         rows.map { |row| build_game(row) }
       end
+      .select { |game| display_game?(game) }
   end
 
   def build_game(data)
@@ -194,5 +195,10 @@ class Snake
 
   def normalize_name(name)
     NAMES[name] || name
+  end
+
+  def display_game?(game)
+    game.difficulty.to_i != 3 &&
+    game.categories.include?("Strategy")
   end
 end

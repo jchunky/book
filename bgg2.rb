@@ -38,7 +38,7 @@ class Bgg2
 
     @games = games
       .values
-      .select { |g| g.location }
+      .select { |game| display_game?(game) }
 
     write_output
   end
@@ -47,6 +47,11 @@ class Bgg2
     template = File.read('bgg2.erb')
     html = ERB.new(template).result(binding)
     File.write('bgg2.html', html)
+  end
+
+  def display_game?(game)
+    game.location &&
+    (!game.rank.present? || game.player_count)
   end
 end
 
