@@ -1,13 +1,11 @@
 class TopRanked
   def games
-    # (1..10)
     (1..200)
       .map { |page| url_for_page(page) }
       .map { |url| read_url(url) }
       .map { |file| strip_accents(file) }
       .map { | file| Nokogiri::HTML(file) }
       .flat_map { |doc| games_for_doc(doc) }
-      .select { |game| display_game?(game) }
   end
 
   def url_for_page(page)
@@ -55,9 +53,5 @@ class TopRanked
         key: Utils.generate_key(name)
       )
     end.compact
-  end
-
-  def display_game?(game)
-    game.name != 'Unpublished Prototype' && game.rank
   end
 end

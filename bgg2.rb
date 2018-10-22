@@ -10,6 +10,16 @@ require_relative 'top_ranked'
 require_relative 'utils'
 
 class Bgg2
+  BLACKLIST = [
+    "Atari's Missile Command",
+    "Blackbox - Karmaka",
+    "Blackbox - OrganATTACK!",
+    "Catan: 5-6 Player Extension",
+    "Monster Misfits",
+    "Stumblewood",
+    "The Crow Game",
+  ]
+
   def run
     top_played = TopPlayed.new.games
     top_ranked = TopRanked.new.games
@@ -51,7 +61,10 @@ class Bgg2
 
   def display_game?(game)
     game.location &&
-    (!game.rank.present? || game.player_count)
+    game.difficulty.to_i != 3 &&
+    game.name != 'Unpublished Prototype' &&
+    BLACKLIST.exclude?(game.name) &&
+    (!game.voters.present? || (game.player_count && game.player_count.to_i >= 100))
   end
 end
 
