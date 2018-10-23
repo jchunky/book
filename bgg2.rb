@@ -77,6 +77,8 @@ class Bgg2
   def display_game?(game)
     game.location &&
     game.difficulty.to_i != 3 &&
+    game.categories.exclude?("Nostalgia") &&
+    game.categories.exclude?("Dexterity") &&
     (!game.player_count || game.player_count.to_i >= 100) &&
     (!game.voters.present? || game.player_count) &&
     BLACKLIST.exclude?(game.name)
