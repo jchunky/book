@@ -76,9 +76,9 @@ class Bgg2
 
   def display_game?(game)
     game.location &&
-    game.difficulty.to_i != 3 &&
     game.name != 'Unpublished Prototype' &&
     BLACKLIST.exclude?(game.name) &&
+    game.difficulty.to_i != 3 &&
     (!game.voters.present? || (game.player_count && game.player_count.to_i >= 100))
   end
 end
