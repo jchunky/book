@@ -4,6 +4,7 @@ require 'net/http'
 require 'nokogiri'
 require 'ostruct'
 require 'uri'
+require_relative 'utils'
 
 class Bgg
   NUMBER_OF_MONTHS = 72
@@ -12,8 +13,7 @@ class Bgg
     @months = months_display
     @games = months_data
       .map { |month| [month, url_for_month(month)] }
-      .map { |month, url| [month, read_url(url)] }
-      .map { |month, file| [month, strip_accents(file)] }
+      .map { |month, url| [month, Utils.read_url(url)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
       .flat_map { |month, doc| games_for_doc(month, doc) }
       .each_with_object({}) do |game, memo|
@@ -49,24 +49,6 @@ class Bgg
     "https://boardgamegeek.com/plays/bygame/start/#{month.beginning_of_month}/end/#{month.end_of_month}?sortby=distinctusers"
   end
 
-  def read_url(url)
-    cache(url) { open(url) }
-  end
-
-  def cache(url)
-    file = "tmp/" + url.gsub(/[:\/]/, '_') + ".html"
-    File.write(file, yield) unless File.exist?(file)
-    File.read(file)
-  end
-
-  def open(url)
-    Net::HTTP.get(URI.parse(url))
-  end
-
-  def strip_accents(string)
-    ActiveSupport::Inflector.transliterate(string).to_s
-  end
-
   def games_for_doc(month, doc)
     doc.css('.forum_table')[1].css('tr')[1..-2].map.with_index do |row, rank|
       link, _, plays = row.css('td')
@@ -88,9 +70,9 @@ class Bgg
   end
 
   def write_output
-    template = File.read('bgg.erb')
+    template = File.read('views/bgg.erb')
     html = ERB.new(template).result(binding)
-    File.write('bgg.html', html)
+    File.write('output/bgg.html', html)
   end
 end
 

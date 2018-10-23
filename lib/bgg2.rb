@@ -61,17 +61,15 @@ class Bgg2
       end
     end
 
-    @games = games
-      .values
-      .select { |game| display_game?(game) }
+    @games = games.values.select { |game| display_game?(game) }
 
     write_output
   end
 
   def write_output
-    template = File.read('bgg2.erb')
+    template = File.read('views/bgg2.erb')
     html = ERB.new(template).result(binding)
-    File.write('bgg2.html', html)
+    File.write('output/bgg2.html', html)
   end
 
   def display_game?(game)

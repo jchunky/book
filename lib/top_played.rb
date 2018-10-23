@@ -2,8 +2,7 @@ class TopPlayed
   def games
     (1..10)
       .map { |page| url_for_page(page) }
-      .map { |url| read_url(url) }
-      .map { |file| strip_accents(file) }
+      .map { |url| Utils.read_url(url) }
       .map { |file| Nokogiri::HTML(file) }
       .flat_map { |doc| games_for_doc(doc) }
       .uniq { |game| game.name }
@@ -15,24 +14,6 @@ class TopPlayed
 
   def month
     (Date.today - 1.month).beginning_of_month
-  end
-
-  def read_url(url)
-    cache(url) { open(url) }
-  end
-
-  def cache(url)
-    file = "tmp/" + url.gsub(/[:\/]/, '_') + ".html"
-    File.write(file, yield) unless File.exist?(file)
-    File.read(file)
-  end
-
-  def open(url)
-    Net::HTTP.get(URI.parse(url))
-  end
-
-  def strip_accents(string)
-    ActiveSupport::Inflector.transliterate(string).to_s
   end
 
   def games_for_doc(doc)
