@@ -33,10 +33,11 @@
     <th class="number">Rank</th>
     <th class="number">Rating</th>
     <th class="number">Voters</th>
-    <th class="number">Rules</th>
+    <th>Rules</th>
     <th class="number">Difficulty</th>
-    <th class="number">Location</th>
-    <th class="number">Categories</th>
+    <th>Location</th>
+    <th>Categories</th>
+    <th>iOS</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
@@ -45,14 +46,19 @@
       <td class="number"><%= game.rank %></td>
       <td class="number"><%= game.rating %></td>
       <td class="number"><%= game.voters %></td>
-      <td class="number">
+      <td>
         <% if game.rules_url.present? %>
           <a href="<%= game.rules_url %>">Rules</a>
         <% end %>
       </td>
       <td class="number"><%= game.difficulty %></td>
-      <td class="number"><%= game.location %></td>
-      <td class="number"><%= game.categories %></td>
+      <td><%= game.location %></td>
+      <td><%= game.categories %></td>
+      <td>
+        <% if game.ios %>
+          iOS
+        <% end %>
+      </td>
     </tr>
   <% end %>
 </table>
