@@ -36,7 +36,7 @@ class TopPlayed
   end
 
   def games_for_doc(doc)
-    doc.css('.forum_table')[1].css('tr')[1..-2].map.with_index do |row, rank|
+    doc.css('.forum_table')[1].css('tr')[1..-1].map.with_index do |row, rank|
       link, _, plays = row.css('td')
       anchor = link.css('a')
       href = anchor[0]['href']
