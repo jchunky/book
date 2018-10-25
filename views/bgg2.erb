@@ -38,6 +38,7 @@
     <th>Location</th>
     <th>Categories</th>
     <th>iOS</th>
+    <th>Children</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
@@ -54,11 +55,8 @@
       <td class="number"><%= game.difficulty %></td>
       <td><%= game.location %></td>
       <td><%= game.categories %></td>
-      <td>
-        <% if game.ios %>
-          iOS
-        <% end %>
-      </td>
+      <td><%= "iOS" if game.ios %></td>
+      <td><%= "Children" if game.children %></td>
     </tr>
   <% end %>
 </table>

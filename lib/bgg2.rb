@@ -4,6 +4,7 @@ require 'net/http'
 require 'nokogiri'
 require 'ostruct'
 require 'uri'
+require_relative 'games/children'
 require_relative 'games/snake'
 require_relative 'games/top_played'
 require_relative 'games/top_ranked'
@@ -39,6 +40,7 @@ class Bgg2
     top_played = TopPlayed.new.games
     top_ranked = TopRanked.new.games
     snake_games = Snake.new.games
+    children_games = Children.new.games
 
     games = top_played.map { |g| [g.key, g] }.to_h
 
@@ -47,6 +49,14 @@ class Bgg2
         game.player_count = games[game.key].player_count
       end
       games[game.key] = game
+    end
+
+    children_games.each do |game|
+      if games.include?(game.key)
+        game.children = true
+      else
+        games[game.key] = game
+      end
     end
 
     snake_games.each do |g|
