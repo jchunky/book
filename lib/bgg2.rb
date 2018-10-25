@@ -53,7 +53,7 @@ class Bgg2
 
     children_games.each do |game|
       if games.include?(game.key)
-        game.children = true
+        games[game.key].children = true
       else
         games[game.key] = game
       end
@@ -83,13 +83,16 @@ class Bgg2
   end
 
   def display_game?(game)
-    game.location &&
-    game.difficulty.to_i != 3 &&
-    game.categories.exclude?("Nostalgia") &&
-    game.categories.exclude?("Dexterity") &&
-    (!game.player_count || game.player_count.to_i >= 100 || game.categories.include?("Children")) &&
-    (!game.voters.present? || game.player_count || game.categories.include?("Children")) &&
-    BLACKLIST.exclude?(game.name)
+    (game.children && game.rank) ||
+    (game.categories.to_s.include?("Children") && game.rank) ||
+    (
+      game.location &&
+      game.difficulty.to_i != 3 &&
+      game.categories.exclude?("Nostalgia") &&
+      game.categories.exclude?("Dexterity") &&
+      BLACKLIST.exclude?(game.name) &&
+      (!game.voters.present? || game.player_count.to_i >= 100)
+    )
   end
 end
 
