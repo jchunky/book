@@ -20,6 +20,7 @@ class Bgg2
     "Bob Ross: Happy Little Accidents",
     "Canadian Trivia: Family Edition",
     "Catan: 5-6 Player Extension",
+    "Crossfire",
     "Dogopoly",
     "F*THAT!",
     "Fake News",
@@ -83,6 +84,7 @@ class Bgg2
   end
 
   def display_game?(game)
+    BLACKLIST.exclude?(game.name) &&
     (game.children && game.rank && game.player_count) ||
     (game.location && game.categories.include?("Children") && game.rank) ||
     (
@@ -90,7 +92,6 @@ class Bgg2
       game.difficulty.to_i != 3 &&
       game.categories.exclude?("Nostalgia") &&
       game.categories.exclude?("Dexterity") &&
-      BLACKLIST.exclude?(game.name) &&
       (!game.voters.present? || game.player_count.to_i >= 100)
     )
   end
