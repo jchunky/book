@@ -4,9 +4,9 @@ require 'net/http'
 require 'nokogiri'
 require 'ostruct'
 require 'uri'
-require_relative 'snake'
-require_relative 'top_played'
-require_relative 'top_ranked'
+require_relative 'games/snake'
+require_relative 'games/top_played'
+require_relative 'games/top_ranked'
 require_relative 'utils'
 
 class Bgg2
