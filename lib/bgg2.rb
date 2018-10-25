@@ -83,8 +83,8 @@ class Bgg2
   end
 
   def display_game?(game)
-    (game.children && game.rank) ||
-    (game.categories.to_s.include?("Children") && game.rank) ||
+    (game.children && game.rank && game.player_count) ||
+    (game.location && game.categories.include?("Children") && game.rank) ||
     (
       game.location &&
       game.difficulty.to_i != 3 &&
