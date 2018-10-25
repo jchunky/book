@@ -77,8 +77,8 @@ class Bgg2
     game.difficulty.to_i != 3 &&
     game.categories.exclude?("Nostalgia") &&
     game.categories.exclude?("Dexterity") &&
-    (!game.player_count || game.player_count.to_i >= 100) &&
-    (!game.voters.present? || game.player_count) &&
+    (!game.player_count || game.player_count.to_i >= 100 || game.categories.include?("Children")) &&
+    (!game.voters.present? || game.player_count || game.categories.include?("Children")) &&
     BLACKLIST.exclude?(game.name)
   end
 end
