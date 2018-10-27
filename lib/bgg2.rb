@@ -85,14 +85,16 @@ class Bgg2
 
   def display_game?(game)
     BLACKLIST.exclude?(game.name) &&
-    (game.children && game.rank && game.player_count) ||
-    (game.location && game.categories.include?("Children") && game.rank) ||
     (
-      game.location &&
-      game.difficulty.to_i != 3 &&
-      game.categories.exclude?("Nostalgia") &&
-      game.categories.exclude?("Dexterity") &&
-      (!game.voters.present? || game.player_count.to_i >= 100)
+      (game.children && game.rank && game.player_count) ||
+      (game.location && game.categories.include?("Children") && game.rank) ||
+      (
+        game.location &&
+        game.difficulty.to_i != 3 &&
+        game.categories.exclude?("Nostalgia") &&
+        game.categories.exclude?("Dexterity") &&
+        (!game.voters.present? || game.player_count.to_i >= 100)
+      )
     )
   end
 end
