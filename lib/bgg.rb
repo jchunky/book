@@ -37,8 +37,7 @@ class Bgg
 
   def months_data
     result = []
-    # month = Date.parse('2005-01-01')
-    month = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
+    month = Date.parse('2005-01-01')
     while month < Date.today.beginning_of_month
       result << month
       month += 1.month
@@ -68,10 +67,7 @@ class Bgg
 
   def display_game?(game)
     game.name != 'Unpublished Prototype' &&
-    (
-      game.ranks.size >= 10 #||
-      # game.ranks.keys.sort.last == (Date.today.beginning_of_month - 1.month).to_s
-    )
+    game.ranks.size >= 10
   end
 
   def write_output
