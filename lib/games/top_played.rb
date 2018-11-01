@@ -5,7 +5,7 @@ class TopPlayed
       .map { |url| Utils.read_url(url) }
       .map { |file| Nokogiri::HTML(file) }
       .flat_map { |doc| games_for_doc(doc) }
-      .uniq { |game| game.name }
+      .uniq { |game| game.key }
   end
 
   def url_for_page(page)
