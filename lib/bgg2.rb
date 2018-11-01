@@ -20,6 +20,7 @@ class Bgg2
     "Bob Ross: Happy Little Accidents",
     "Canadian Trivia: Family Edition",
     "Catan: 5-6 Player Extension",
+    "Celebrity Name Game",
     "Crossfire",
     "Dogopoly",
     "F*THAT!",
@@ -33,6 +34,7 @@ class Bgg2
     "Q-bitz",
     "Spank the Yeti: The Adult Party Game of Questionable Decisions",
     "Stumblewood",
+    "Tanks, But No Thanks!",
     "The Crow Game",
     "Who'd You Rather?",
   ]
