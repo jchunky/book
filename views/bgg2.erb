@@ -36,12 +36,12 @@
     <th>Rules</th>
     <th class="number">Difficulty</th>
     <th>Location</th>
-    <th>Categories</th>
+    <th>Category</th>
+    <th>Date Added</th>
+    <th class="number">Gurus</th>
+    <th>Sell Product</th>
     <th>iOS</th>
     <th>Children</th>
-    <th>ts_added</th>
-    <th>sell_product</th>
-    <th>employees_teachable</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
@@ -58,11 +58,11 @@
       <td class="number"><%= game.difficulty %></td>
       <td><%= game.location %></td>
       <td><%= game.categories %></td>
+      <td><%= game.ts_added %></td>
+      <td class="number"><%= game.employees_teachable %></td>
+      <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
       <td><%= "iOS" if game.ios %></td>
       <td><%= "Children" if game.children %></td>
-      <td><%= game.ts_added %></td>
-      <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
-      <td><%= game.employees_teachable %></td>
     </tr>
   <% end %>
 </table>
