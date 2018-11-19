@@ -93,7 +93,7 @@ class Bgg2
     game.name != 'Unpublished Prototype' &&
     game.categories.to_s.exclude?("Nostalgia") &&
     game.categories.to_s.exclude?("Dexterity") &&
-    (game.player_count.to_i >= 1 || game.location && game.voters.blank?)
+    (game.player_count.present? && game.rank.present? || game.location && game.voters.blank?)
   end
 end
 
