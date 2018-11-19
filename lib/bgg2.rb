@@ -23,6 +23,7 @@ class Bgg2
     "Celebrity Name Game",
     "Crossfire",
     "Dogopoly",
+    "Dungeon Mayhem",
     "F*THAT!",
     "Fake News",
     "Grey's Anatomy Trivia Board Game",
