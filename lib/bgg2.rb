@@ -74,7 +74,10 @@ class Bgg2
       end
     end
 
-    @games = games.values.select { |game| display_game?(game) }
+    @games = games
+      .values
+      .select { |game| display_game?(game) }
+      .sort_by { |g| [g.location.blank?.to_s, -g.player_count.to_i, g.rank.to_i] }
 
     write_output
   end
@@ -87,17 +90,10 @@ class Bgg2
 
   def display_game?(game)
     BLACKLIST.exclude?(game.name) &&
-    (
-      (game.children && game.rank && game.player_count) ||
-      (game.location && game.categories.include?("Children") && game.rank) ||
-      (
-        game.location &&
-        game.difficulty.to_i != 3 &&
-        game.categories.exclude?("Nostalgia") &&
-        game.categories.exclude?("Dexterity") &&
-        (!game.voters.present? || game.player_count.to_i >= 100)
-      )
-    )
+    game.name != 'Unpublished Prototype' &&
+    game.categories.to_s.exclude?("Nostalgia") &&
+    game.categories.to_s.exclude?("Dexterity") &&
+    (game.player_count.to_i >= 1 || game.location && game.voters.blank?)
   end
 end
 
