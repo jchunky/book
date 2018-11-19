@@ -150,9 +150,9 @@ class Snake
 
   def build_game(data)
     name = normalize_name(data['title'])
-    all_categoires = ["Children's", "Cooperative", "Party", "Light Strategy", "Strategy", "Word", "Abstract", "Trivia", "Greatest Hits"]
+    all_categories = ["Nostalgia", "Dexterity", "Children's", "Cooperative", "Party", "Light Strategy", "Strategy", "Word", "Abstract", "Trivia", "Greatest Hits"]
     game_catagories = data['categories'].map { |c| c['name'] }
-    category = all_categoires.find { |c| game_catagories.include?(c) }
+    category = all_categories.find { |c| game_catagories.include?(c) }
 
     OpenStruct.new(
       name: name,
