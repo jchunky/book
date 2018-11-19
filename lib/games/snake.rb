@@ -150,14 +150,43 @@ class Snake
 
   def build_game(data)
     name = normalize_name(data['title'])
+    all_categoires = ["Children's", "Cooperative", "Party", "Light Strategy", "Strategy", "Word", "Abstract", "Trivia", "Greatest Hits"]
+    game_catagories = data['categories'].map { |c| c['name'] }
+    category = all_categoires.find { |c| game_catagories.include?(c) }
 
     OpenStruct.new(
       name: name,
       rules_url: data['rules_url'],
       difficulty: data['difficulty_label'],
       location: data['shelf_location'],
-      categories: data['categories'].map { |c| c['name'] }.join(", "),
-      key: Utils.generate_key(name)
+      categories: category,
+      key: Utils.generate_key(name),
+
+      ts_added: data['ts_added'],
+      ts_updated: data['ts_updated'],
+      ts_maintenance: data['ts_maintenance'],
+      thumb_src: data['thumb_src'],
+      image_src: data['image_src'],
+      has_guide: data['has_guide'],
+      archived: data['archived'],
+      parts_copy: data['parts_copy'],
+      damaged: data['damaged'],
+      notes: data['notes'],
+      maintenance_frequency: data['maintenance_frequency'],
+      default_maintenance_frequency: data['default_maintenance_frequency'],
+      teach_time: data['teach_time'],
+      curation_notes: data['curation_notes'],
+      optimal_players: data['optimal_players'],
+      two_player_label: data['2player_label'],
+      solo_label: data['solo_label'],
+      sell_product: data['sell_product'],
+      shelf_copies: data['shelf_copies'],
+      title_url: data['title_url'],
+      employees_played: (data['employees_played'].size rescue 0),
+      employees_teachable: (data['employees_teachable'].size rescue 0),
+      employee_played: data['employee_played'],
+      employee_teachable: data['employee_teachable'],
+      ts_maintenance_next: data['ts_maintenance_next']
     )
   end
 

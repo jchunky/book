@@ -65,10 +65,9 @@ class Bgg2
     snake_games.each do |g|
       if games.include?(g.key)
         game = games[g.key]
-        game.rules_url = g.rules_url
-        game.difficulty = g.difficulty
-        game.location = g.location
-        game.categories = g.categories
+        name = game.name
+        g.to_h.each { |k, v| game[k] = v }
+        game.name = name
       else
         games[g.key] = g
       end
