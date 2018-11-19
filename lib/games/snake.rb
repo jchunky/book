@@ -162,7 +162,7 @@ class Snake
       categories: category,
       key: Utils.generate_key(name),
 
-      ts_added: data['ts_added'],
+      ts_added: Time.at(data['ts_added']).strftime("%Y-%m-%d"),
       ts_updated: data['ts_updated'],
       ts_maintenance: data['ts_maintenance'],
       thumb_src: data['thumb_src'],

@@ -40,6 +40,7 @@
     <th>iOS</th>
     <th>Children</th>
     <th>ts_added</th>
+    <th>sell_product</th>
     <th>employees_teachable</th>
   </tr>
   <% @games.each do |game| %>
@@ -60,6 +61,7 @@
       <td><%= "iOS" if game.ios %></td>
       <td><%= "Children" if game.children %></td>
       <td><%= game.ts_added %></td>
+      <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
       <td><%= game.employees_teachable %></td>
     </tr>
   <% end %>
