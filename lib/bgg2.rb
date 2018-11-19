@@ -77,7 +77,7 @@ class Bgg2
     @games = games
       .values
       .select { |game| display_game?(game) }
-      .sort_by { |g| [g.location.blank?.to_s, -g.player_count.to_i, g.rank.to_i] }
+      .sort_by { |g| [g.location.blank?.to_s, -g.player_count.to_i, g.name] }
 
     write_output
   end
