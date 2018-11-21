@@ -26,7 +26,7 @@ class Bgg
 
   def months_display
     first = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
-    last = Date.today
+    last = Date.today - 1.month
     (first..last).select { |d| d.day == 1 }
   end
 

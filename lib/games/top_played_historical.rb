@@ -13,7 +13,7 @@ class TopPlayedHistorical
 
   def months_data
     first = Date.parse('2005-01-01')
-    last = Date.today
+    last = Date.today - 1.month
     (first..last).select { |d| d.day == 1 }
   end
 
