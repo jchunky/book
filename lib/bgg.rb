@@ -24,7 +24,13 @@ class Bgg
     @games.each { |name, game| game.at_snakes = snake_games.include?(game.key) }
     @games = @games.select { |name, game| display_game?(game) }
     @games.each { |name, game| game.year = top_ranked[game.key]&.year }
-    @games = @games.sort_by { |name, game| [game.year, game.ranks.keys.min] }.to_h
+    @games = @games.sort_by do |name, game|
+      if game.year.to_i <= 2005
+        [game.year, game.ranks.keys.min]
+      else
+        [game.ranks.keys.min]
+      end
+    end.to_h
     write_output
   end
 
