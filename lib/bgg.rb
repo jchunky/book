@@ -18,9 +18,11 @@ class Bgg
 
   def run
     top_ranked = TopRanked.new.games.map { |g| [g.key, g] }.to_h
+    snake_games = Snake.new.games.map { |g| [g.key, g] }.to_h
+
     @months = months_display
+
     @games = TopPlayedHistorical.new.games
-    snake_games = Snake.new.games.map(&:key)
     @games.each { |name, game| game.at_snakes = snake_games.include?(game.key) }
     @games = @games.select { |name, game| display_game?(game) }
     @games.each { |name, game| game.year = top_ranked[game.key]&.year }
@@ -31,6 +33,7 @@ class Bgg
         [game.ranks.keys.min]
       end
     end.to_h
+
     write_output
   end
 
