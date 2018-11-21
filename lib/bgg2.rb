@@ -22,28 +22,23 @@ class Bgg2
   end
 
   def run
+    snake_games = Snake.new.games
     top_played = TopPlayed.new.games
     top_ranked = TopRanked.new.games
-    snake_games = Snake.new.games
 
-    games = top_played.map { |g| [g.key, g] }.to_h
+    games = snake_games.map { |g| [g.key, g] }.to_h
 
-    top_ranked.each do |game|
-      if games.include?(game.key)
-        game.player_count = games[game.key].player_count
-        game.year = games[game.key].year
-      end
-      games[game.key] = game
-    end
-
-    snake_games.each do |g|
+    top_ranked.each do |g|
       if games.include?(g.key)
         game = games[g.key]
-        name = game.name
         g.to_h.each { |k, v| game[k] = v }
-        game.name = name
-      else
-        games[g.key] = g
+      end
+    end
+
+    top_played.each do |g|
+      if games.include?(g.key)
+        game = games[g.key]
+        g.to_h.each { |k, v| game[k] = v }
       end
     end
 
