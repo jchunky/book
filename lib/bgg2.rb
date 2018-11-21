@@ -10,6 +10,17 @@ require_relative 'games/top_ranked'
 require_relative 'utils'
 
 class Bgg2
+  def display_game?(game)
+    return false unless game.location
+    return true if game.ts_added > "2018-11-17"
+    return false if game.categories.include?("Nostalgia")
+    return false if game.categories.include?("Dexterity")
+    return false if game.categories.include?("Greatest Hits")
+    return false if game.player_count.to_i < 100
+    return false if game.rank.to_i >= 1000
+    true
+  end
+
   def run
     top_played = TopPlayed.new.games
     top_ranked = TopRanked.new.games
@@ -47,17 +58,6 @@ class Bgg2
     template = File.read('views/bgg2.erb')
     html = ERB.new(template).result(binding)
     File.write('output/bgg2.html', html)
-  end
-
-  def display_game?(game)
-    return false unless game.location
-    return true if game.ts_added > "2018-11-17"
-    return false if game.categories.include?("Nostalgia")
-    return false if game.categories.include?("Dexterity")
-    return false if game.categories.include?("Greatest Hits")
-    return false if game.player_count.to_i < 100
-    return false if game.rank.to_i >= 1000
-    true
   end
 end
 
