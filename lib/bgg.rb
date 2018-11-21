@@ -6,6 +6,7 @@ require 'ostruct'
 require 'uri'
 require_relative 'games/snake'
 require_relative 'games/top_played_historical'
+require_relative 'games/top_ranked'
 require_relative 'utils'
 
 class Bgg
@@ -16,11 +17,13 @@ class Bgg
   end
 
   def run
+    top_ranked = TopRanked.new.games.map { |g| [g.key, g] }.to_h
     @months = months_display
     @games = TopPlayedHistorical.new.games
     snake_games = Snake.new.games.map(&:key)
     @games.each { |name, game| game.at_snakes = snake_games.include?(game.key) }
     @games = @games.select { |name, game| display_game?(game) }
+    @games.each { |name, game| game.year = top_ranked[game.key]&.year }
     write_output
   end
 

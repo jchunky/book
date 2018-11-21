@@ -31,6 +31,7 @@ class Bgg2
     top_ranked.each do |game|
       if games.include?(game.key)
         game.player_count = games[game.key].player_count
+        game.year = games[game.key].year
       end
       games[game.key] = game
     end

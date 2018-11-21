@@ -29,6 +29,7 @@
 <table id="games" class="sortable">
   <tr>
     <th>Game</th>
+    <th class="number">Year</th>
     <th class="number">Player Count</th>
     <th class="number">Rank</th>
     <th class="number">Rating</th>
@@ -45,6 +46,7 @@
   <% @games.each do |game| %>
     <tr>
       <td><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
+      <td class="number"><%= game.year %></td>
       <td class="number"><%= game.player_count %></td>
       <td class="number"><%= game.rank %></td>
       <td class="number"><%= game.rating %></td>
