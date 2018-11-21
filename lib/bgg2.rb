@@ -51,12 +51,12 @@ class Bgg2
 
   def display_game?(game)
     return false unless game.location
-    return true if game.ts_added > "2018-11-01"
+    return true if game.ts_added > "2018-11-17"
     return false if game.categories.include?("Nostalgia")
     return false if game.categories.include?("Dexterity")
     return false if game.categories.include?("Greatest Hits")
     return false if game.player_count.to_i < 100
-    return false if game.rank.to_i > 2500
+    return false if game.rank.to_i >= 1000
     true
   end
 end
