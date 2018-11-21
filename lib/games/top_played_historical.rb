@@ -9,7 +9,6 @@ class TopPlayedHistorical
         memo[game.name] ||= game
         memo[game.name].ranks.merge!(game.ranks)
       end
-      .uniq { |game| game.key }
   end
 
   def months_data
@@ -36,6 +35,6 @@ class TopPlayedHistorical
       game = OpenStruct.new(href: href, name: name, ranks: {}, key: key)
       game.ranks[month.to_s] = rank + 1
       game
-    end.compact
+    end.compact.uniq(&:key)
   end
 end
