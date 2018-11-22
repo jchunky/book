@@ -144,9 +144,9 @@ class Snake
       .map { |f| File.read(f) }
       .map { |f| JSON.parse(f) }
       .flat_map do |rows|
-        rows.map { |row| build_game(row) }
+        rows.map(&method(:build_game))
       end
-      .uniq { |g| g.key }
+      .uniq(&:key)
   end
 
   def build_game(data)
