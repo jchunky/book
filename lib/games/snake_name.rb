@@ -101,7 +101,6 @@ class SnakeName
     "Star Wars Trivial Pursuit" => "Trivial Pursuit: Star Wars – The Black Series Edition",
     "Survive: 30th Anniversary Edition" => "Survive: Escape from Atlantis!",
     "Taboo Refresh" => "Taboo",
-    "Telestrations Party Pack " => "Telestrations: 12 Player Party Pack ",
     "Telestrations Party Pack" => "Telestrations: 12 Player Party Pack",
     "The Game: On Fire" => "The Game",
     "The Hare & The Tortoise" => "Tales & Games: The Hare & the Tortoise",
