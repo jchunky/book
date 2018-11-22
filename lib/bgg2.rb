@@ -1,13 +1,4 @@
-require 'active_support/all'
-require 'erb'
-require 'net/http'
-require 'nokogiri'
-require 'ostruct'
-require 'uri'
-require_relative 'games/snake'
-require_relative 'games/top_played'
-require_relative 'games/top_ranked'
-require_relative 'utils'
+require_relative 'dependencies'
 
 class Bgg2
   def run

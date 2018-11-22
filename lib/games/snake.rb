@@ -1,6 +1,3 @@
-require 'json'
-require_relative 'snake_name'
-
 class Snake
   CATEGORIES = ["Nostalgia", "Dexterity", "Children's", "Cooperative", "Party", "Light Strategy", "Strategy", "Word", "Abstract", "Trivia", "Greatest Hits"]
   FILES = %w[abstract childrens cooperative dexterity greatest_hits light_strategy new_arrivals nostalgia party strategy trivia word].map { |f| "input/#{f}.json" }
