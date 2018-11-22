@@ -148,6 +148,7 @@ class Snake
         rows.map(&method(:build_game))
       end
       .uniq(&:key)
+      .force
   end
 
   def build_game(data)

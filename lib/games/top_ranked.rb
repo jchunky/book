@@ -7,6 +7,7 @@ class TopRanked
       .map { |file| Nokogiri::HTML(file) }
       .flat_map(&method(:games_for_doc))
       .uniq(&:key)
+      .force
   end
 
   def url_for_page(page)

@@ -6,6 +6,7 @@ class TopPlayedHistorical
       .map { |month, url| [month, Utils.read_url(url)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
       .flat_map { |month, doc| games_for_doc(month, doc) }
+      .force
       .each_with_object({}) do |game, memo|
         memo[game.name] ||= game
         memo[game.name].ranks.merge!(game.ranks)
