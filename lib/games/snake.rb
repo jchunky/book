@@ -166,30 +166,8 @@ class Snake
       key: Utils.generate_key(name),
 
       ts_added: Time.at(data['ts_added'].to_i).strftime("%Y-%m-%d"),
-      ts_updated: data['ts_updated'],
-      ts_maintenance: data['ts_maintenance'],
-      thumb_src: data['thumb_src'],
-      image_src: data['image_src'],
-      has_guide: data['has_guide'],
-      archived: data['archived'],
-      parts_copy: data['parts_copy'],
-      damaged: data['damaged'],
-      notes: data['notes'],
-      maintenance_frequency: data['maintenance_frequency'],
-      default_maintenance_frequency: data['default_maintenance_frequency'],
-      teach_time: data['teach_time'],
-      curation_notes: data['curation_notes'],
-      optimal_players: data['optimal_players'],
-      two_player_label: data['2player_label'],
-      solo_label: data['solo_label'],
       sell_product: data['sell_product'],
-      shelf_copies: data['shelf_copies'],
-      title_url: data['title_url'],
-      employees_played: (data['employees_played'].size rescue 0),
-      employees_teachable: (data['employees_teachable'].size rescue 0),
-      employee_played: data['employee_played'],
-      employee_teachable: data['employee_teachable'],
-      ts_maintenance_next: data['ts_maintenance_next']
+      employees_teachable: (data['employees_teachable'].size rescue 0)
     )
   end
 
