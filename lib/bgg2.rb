@@ -11,7 +11,7 @@ require_relative 'utils'
 
 class Bgg2
   def run
-    @games = Snake.games
+    @games = Snake.new.games
       .tap { |games| merge_games(games, top_played) }
       .tap { |games| merge_games(games, top_ranked) }
       .select(&method(:display_game?))
