@@ -141,6 +141,7 @@ class Snake
 
   def games
     FILES
+      .lazy
       .map { |f| File.read(f) }
       .map { |f| JSON.parse(f) }
       .flat_map do |rows|

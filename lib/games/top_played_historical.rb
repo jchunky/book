@@ -1,6 +1,7 @@
 class TopPlayedHistorical
   def games
     months_data
+      .lazy
       .map { |month| [month, url_for_month(month)] }
       .map { |month, url| [month, Utils.read_url(url)] }
       .map { |month, file| [month, Nokogiri::HTML(file)] }
