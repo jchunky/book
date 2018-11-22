@@ -11,7 +11,7 @@ require_relative 'utils'
 
 class Bgg2
   def run
-    @games = Snake.new.games
+    @games = Snake.games
       .tap { |games| merge_games(games, top_played) }
       .tap { |games| merge_games(games, top_ranked) }
       .select(&method(:display_game?))
@@ -23,9 +23,9 @@ class Bgg2
   def display_game?(game)
     return false unless game.location
     return true if game.ts_added > "2018-11-17"
-    return false if game.categories.include?("Dexterity")
-    return false if game.categories.include?("Greatest Hits")
-    return false if game.categories.include?("Nostalgia")
+    return false if game.category == "Dexterity"
+    return false if game.category == "Greatest Hits"
+    return false if game.category == "Nostalgia"
     return false if game.player_count.to_i < 100
     return false if game.rank.to_i > 1000 && game.year.to_i >= Date.today.year - 3
     return false if game.rank.to_i > 2500

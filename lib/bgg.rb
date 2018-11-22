@@ -15,7 +15,7 @@ class Bgg
   def run
     @months = months_display
 
-    @games = Snake.new.games
+    @games = Snake.games
       .tap { |games| merge_games(games, top_played) }
       .tap { |games| merge_games(games, top_ranked) }
       .select(&method(:display_game?))
