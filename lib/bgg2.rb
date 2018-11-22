@@ -10,6 +10,20 @@ require_relative 'games/top_ranked'
 require_relative 'utils'
 
 class Bgg2
+  def run
+    @games = Snake.new.games
+      .tap do |games|
+        games.each { |g| merge(g, top_played[g.key]) }
+      end
+      .tap do |games|
+        games.each { |g| merge(g, top_ranked[g.key]) }
+      end
+      .select(&method(:display_game?))
+      .sort_by(&method(:rank))
+
+    write_output
+  end
+
   def display_game?(game)
     return false unless game.location
     return true if game.ts_added > "2018-11-17"
@@ -23,39 +37,30 @@ class Bgg2
     true
   end
 
-  def run
-    snake_games = Snake.new.games
-    top_played = TopPlayed.new.games
-    top_ranked = TopRanked.new.games
-
-    games = snake_games.map { |g| [g.key, g] }.to_h
-
-    top_ranked.each do |g|
-      if games.include?(g.key)
-        game = games[g.key]
-        g.to_h.each { |k, v| game[k] = v }
-      end
-    end
-
-    top_played.each do |g|
-      if games.include?(g.key)
-        game = games[g.key]
-        g.to_h.each { |k, v| game[k] = v }
-      end
-    end
-
-    @games = games
-      .values
-      .select { |game| display_game?(game) }
-      .sort_by { |g| [g.location.blank?.to_s, -g.player_count.to_i, g.name] }
-
-    write_output
+  def rank(game)
+    [
+      game.location.blank?.to_s,
+      -game.player_count.to_i,
+      game.name
+    ]
   end
 
   def write_output
     template = File.read('views/bgg2.erb')
     html = ERB.new(template).result(binding)
     File.write('output/bgg2.html', html)
+  end
+
+  def top_played
+    @top_played ||= TopPlayed.new.games.map { |g| [g.key, g] }.to_h
+  end
+
+  def top_ranked
+    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
+  end
+
+  def merge(ostruct1, ostruct2)
+    ostruct2.to_h.each { |k, v| ostruct1[k] = v }
   end
 end
 

@@ -146,6 +146,7 @@ class Snake
       .flat_map do |rows|
         rows.map { |row| build_game(row) }
       end
+      .uniq { |g| g.key }
   end
 
   def build_game(data)

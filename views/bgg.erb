@@ -51,11 +51,11 @@
       <th class="rank"><div><span><%= month.to_s %></span></div></th>
     <% end %>
   </tr>
-  <% @games.each do |name, details| %>
+  <% @games.each do |game| %>
     <tr>
-      <td class="game"><a href="https://boardgamegeek.com<%= details.href %>"><%= name %></a></td>
+      <td class="game"><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
       <% @months.each do |month| %>
-        <td class="rank"><%= details.ranks[month.to_s] %></td>
+        <td class="rank"><%= game.ranks[month.to_s] %></td>
       <% end %>
     </tr>
   <% end %>

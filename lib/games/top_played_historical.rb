@@ -9,6 +9,7 @@ class TopPlayedHistorical
         memo[game.name] ||= game
         memo[game.name].ranks.merge!(game.ranks)
       end
+      .values
   end
 
   def months_data

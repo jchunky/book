@@ -12,29 +12,32 @@ require_relative 'utils'
 class Bgg
   NUMBER_OF_MONTHS = 72
 
-  def display_game?(game)
-    game.at_snakes
-  end
-
   def run
-    top_ranked = TopRanked.new.games.map { |g| [g.key, g] }.to_h
-    snake_games = Snake.new.games.map { |g| [g.key, g] }.to_h
-
     @months = months_display
 
-    @games = TopPlayedHistorical.new.games
-    @games.each { |name, game| game.at_snakes = snake_games.include?(game.key) }
-    @games = @games.select { |name, game| display_game?(game) }
-    @games.each { |name, game| game.year = top_ranked[game.key]&.year }
-    @games = @games.sort_by do |name, game|
-      if game.year.to_i <= 2005
-        [game.year, game.ranks.keys.min]
-      else
-        [game.ranks.keys.min]
+    @games = Snake.new.games
+      .tap do |games|
+        games.each { |g| merge(g, top_played[g.key]) }
       end
-    end.to_h
+      .tap do |games|
+        games.each { |g| merge(g, top_ranked[g.key]) }
+      end
+      .select(&method(:display_game?))
+      .sort_by(&method(:rank))
 
     write_output
+  end
+
+  def display_game?(game)
+    game.location && game.ranks
+  end
+
+  def rank(game)
+    if game.year.to_i <= 2005
+      [game.year, game.ranks.keys.min]
+    else
+      [game.ranks.keys.min]
+    end
   end
 
   def months_display
@@ -47,6 +50,18 @@ class Bgg
     template = File.read('views/bgg.erb')
     html = ERB.new(template).result(binding)
     File.write('output/bgg.html', html)
+  end
+
+  def top_played
+    @top_played ||= TopPlayedHistorical.new.games.map { |g| [g.key, g] }.to_h
+  end
+
+  def top_ranked
+    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
+  end
+
+  def merge(ostruct1, ostruct2)
+    ostruct2.to_h.each { |k, v| ostruct1[k] = v }
   end
 end
 
