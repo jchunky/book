@@ -18,8 +18,6 @@ class Bgg2
     return false if game.category == "Greatest Hits"
     return false if game.category == "Nostalgia"
     return false if game.player_count.to_i < 100
-    return false if game.rank.to_i > 1000 && game.year.to_i >= Date.today.year - 3
-    return false if game.rank.to_i > 2500
     return false if game.year.to_i < 1980
     true
   end
