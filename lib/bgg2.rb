@@ -15,7 +15,6 @@ class Bgg2
     return false unless game.location
     return true if game.ts_added > "2018-11-17"
     return false if game.category == "Dexterity"
-    return false if game.category == "Greatest Hits"
     return false if game.category == "Nostalgia"
     return false if game.player_count.to_i < 100
     return false if game.year.to_i < 1980
