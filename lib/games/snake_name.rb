@@ -91,6 +91,7 @@ class SnakeName
     "Rick and Morty: Total Rickall" => "Rick and Morty: Total Rickall Card Game",
     "Rock Paper Wizard" => "Dungeons & Dragons: Rock Paper Wizard",
     "Sentinels of the Multiverse: Enhanced Edition" => "Sentinels of the Multiverse",
+    "Show + Tile" => "Show & Tile",
     "Shrimp Cocktail" => "Shrimp",
     "Simpsons Trivia" => "The Simpsons Trivia Game",
     "Snakes and Ladders" => "Chutes and Ladders",
