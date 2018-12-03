@@ -28,9 +28,9 @@ class Bgg3
 
   def rank(game)
     if game.year.to_i <= 2005
-      [game.year, game.ranks.keys.min]
+      [game.year.to_i, game.players.keys.min]
     else
-      [game.ranks.keys.min]
+      [9999, game.players.keys.min]
     end
   end
 
