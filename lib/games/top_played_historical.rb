@@ -10,6 +10,7 @@ class TopPlayedHistorical
       .each_with_object({}) do |game, memo|
         memo[game.name] ||= game
         memo[game.name].ranks.merge!(game.ranks)
+        memo[game.name].players.merge!(game.players)
       end
       .values
   end
@@ -33,10 +34,11 @@ class TopPlayedHistorical
       key = Utils.generate_key(name)
       play_count = plays.css('a')[0].content.to_i
 
-      next if play_count < 300
+      next if play_count < 1
 
-      game = OpenStruct.new(href: href, name: name, ranks: {}, key: key)
+      game = OpenStruct.new(href: href, name: name, key: key, ranks: {}, players: {})
       game.ranks[month.to_s] = rank + 1
+      game.players[month.to_s] = play_count
       game
     end.compact.uniq(&:key)
   end
