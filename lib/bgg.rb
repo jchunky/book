@@ -1,7 +1,7 @@
 require_relative 'dependencies'
 
 class Bgg
-  NUMBER_OF_MONTHS = 36
+  NUMBER_OF_MONTHS = 24
 
   def run
     @months = months_display
