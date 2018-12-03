@@ -9,6 +9,7 @@ class Bgg3
     @games = Snake.new.games
       .tap { |games| merge_games(games, top_played) }
       .tap { |games| merge_games(games, top_ranked) }
+      .tap { |games| add_player_count(games) }
       .select(&method(:display_game?))
       .sort_by(&method(:rank))
 
@@ -16,13 +17,11 @@ class Bgg3
   end
 
   def display_game?(game)
-    # return true if game.ts_added > "2018-11-22"
-    return false unless game.players
+    return true if game.ts_added > "2018-11-22"
     return false if game.year.to_i < 1980
     return false if game.category == "Dexterity"
     return false if game.category == "Nostalgia"
-    return false unless game.players.include?(last_month)
-    return false if game.players[last_month].to_i < 100
+    return false if game.player_count < 1
     true
   end
 
@@ -31,11 +30,11 @@ class Bgg3
   end
 
   def rank(game)
-    if game.year.to_i <= 2005
-      [game.year.to_i, game.players.keys.min]
-    else
-      [9999, game.players.keys.min]
-    end
+    [
+      game.location.blank?.to_s,
+      -game.player_count.to_i,
+      game.name
+    ]
   end
 
   def months_display
@@ -64,6 +63,12 @@ class Bgg3
 
   def merge_ostructs(ostruct1, ostruct2)
     ostruct2.to_h.each { |k, v| ostruct1[k] = v }
+  end
+
+  def add_player_count(games)
+    games.each do |game|
+      game.player_count = game.players.to_h[last_month].to_i
+    end
   end
 end
 
