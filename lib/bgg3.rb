@@ -16,14 +16,18 @@ class Bgg3
   end
 
   def display_game?(game)
-    # return false unless game.location
-    return false unless game.players
     # return true if game.ts_added > "2018-11-22"
-    # return false if game.category == "Dexterity"
-    # return false if game.category == "Nostalgia"
-    # return false if game.player_count.to_i < 1
-    # return false if game.year.to_i < 1980
+    return false unless game.players
+    return false if game.year.to_i < 1980
+    return false if game.category == "Dexterity"
+    return false if game.category == "Nostalgia"
+    return false unless game.players.include?(last_month)
+    return false if game.players[last_month].to_i < 100
     true
+  end
+
+  def last_month
+    (Date.today - 1.month).beginning_of_month.to_s
   end
 
   def rank(game)
