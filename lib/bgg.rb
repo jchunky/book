@@ -3,6 +3,12 @@ require_relative 'dependencies'
 class Bgg
   NUMBER_OF_MONTHS = 12
 
+  def display_game?(game)
+    return true if game.ts_added && game.ts_added > "2018-11-22"
+    return false if game.player_count.to_i < 300
+    true
+  end
+
   def run
     @months = months_display
 
@@ -57,12 +63,6 @@ class Bgg
         month, _ = game.players.sort.find { |month, player_count| player_count >= 300 }
         month
       end
-  end
-
-  def display_game?(game)
-    return true if game.ts_added && game.ts_added > "2018-11-22"
-    return false if game.player_count.to_i < 300
-    true
   end
 
   def rank(game)
