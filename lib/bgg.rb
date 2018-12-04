@@ -5,7 +5,7 @@ class Bgg
 
   def display_game?(game)
     return true if game.ts_added && game.ts_added > "2018-11-22"
-    return false if game.player_count.to_i < 300
+    return false if game.players && game.players.all? { |month, player_count| player_count < 300 }
     true
   end
 
