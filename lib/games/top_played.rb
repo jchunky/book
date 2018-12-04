@@ -1,4 +1,6 @@
 class TopPlayed
+  NUMBER_OF_MONTHS = 24
+
   def games
     months_data.product((1..10).to_a)
       .lazy
@@ -20,7 +22,7 @@ class TopPlayed
     last = last_month
     (first..last)
       .select { |d| d.day == 1 }
-      .last(Bgg::NUMBER_OF_MONTHS)
+      .last(NUMBER_OF_MONTHS)
   end
 
   def url_for_month_and_page(month, page)
