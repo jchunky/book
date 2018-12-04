@@ -12,11 +12,12 @@ class TopPlayed
         memo[game.name].players = game.players.merge(memo[game.name].players)
       end
       .values
+      .tap { |games| add_player_count(games) }
   end
 
   def months_data
     first = Date.parse('2005-01-01')
-    last = Date.today - 1.month
+    last = last_month
     (first..last)
       .select { |d| d.day == 1 }
       .last(Bgg::NUMBER_OF_MONTHS)
@@ -43,5 +44,15 @@ class TopPlayed
     end.compact
   rescue
     []
+  end
+
+  def add_player_count(games)
+    games.each do |game|
+      game.player_count = game.players.to_h[last_month.to_s].to_i
+    end
+  end
+
+  def last_month
+    @last_month ||= (Date.today - 1.month).beginning_of_month
   end
 end

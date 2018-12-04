@@ -9,7 +9,6 @@ class Bgg
     @games = Snake.new.games
       .tap { |games| merge_games(games, top_played) }
       .tap { |games| merge_games(games, top_ranked) }
-      .tap { |games| add_player_count(games) }
       .select(&method(:display_game?))
       .sort_by(&method(:rank))
 
@@ -23,10 +22,6 @@ class Bgg
     return false if game.category == "Nostalgia"
     return false if game.players && game.player_count < 300
     true
-  end
-
-  def last_month
-    (Date.today - 1.month).beginning_of_month.to_s
   end
 
   def rank(game)
@@ -63,12 +58,6 @@ class Bgg
 
   def merge_ostructs(ostruct1, ostruct2)
     ostruct2.to_h.each { |k, v| ostruct1[k] = v }
-  end
-
-  def add_player_count(games)
-    games.each do |game|
-      game.player_count = game.players.to_h[last_month].to_i
-    end
   end
 end
 
