@@ -18,8 +18,6 @@ class Bgg
 
   def display_game?(game)
     return true if game.ts_added && game.ts_added > "2018-11-22"
-    return false if game.ts_added && !game.players
-    return false if game.year && game.year.to_i < 1980
     return false if game.category == "Dexterity"
     return false if game.category == "Nostalgia"
     return false if game.player_count.to_i < 300
