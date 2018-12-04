@@ -17,7 +17,9 @@ class TopPlayed
   def months_data
     first = Date.parse('2005-01-01')
     last = Date.today - 1.month
-    (first..last).select { |d| d.day == 1 }
+    (first..last)
+      .select { |d| d.day == 1 }
+      .last(Bgg::NUMBER_OF_MONTHS)
   end
 
   def url_for_month_and_page(month, page)

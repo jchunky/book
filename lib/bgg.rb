@@ -1,7 +1,7 @@
 require_relative 'dependencies'
 
 class Bgg
-  NUMBER_OF_MONTHS = 24
+  NUMBER_OF_MONTHS = 12
 
   def run
     @months = months_display
@@ -18,10 +18,10 @@ class Bgg
 
   def display_game?(game)
     return true if game.ts_added > "2018-11-22"
-    return false if game.year.to_i < 1980
+    return false if game.year && game.year.to_i < 1980
     return false if game.category == "Dexterity"
     return false if game.category == "Nostalgia"
-    return false if game.player_count < 1
+    return false if game.players && game.player_count < 300
     true
   end
 
