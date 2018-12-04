@@ -24,6 +24,8 @@
   #games td { white-space: nowrap; }
 
   .number { text-align: right; }
+
+  .highlight { background-color: rgb(229, 184, 176); }
 </style>
 
 <table id="games" class="sortable">
@@ -67,7 +69,9 @@
       <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
       <td><%= "iOS" if game.ios %></td>
       <% @months.each do |month| %>
-        <td class="number"><%= game.players.to_h[month.to_s] %></td>
+        <td class="number <%= "highlight" if game.players.to_h[month.to_s].to_i >= 300 %>">
+          <%= game.players.to_h[month.to_s] %>
+        </td>
       <% end %>
     </tr>
   <% end %>
