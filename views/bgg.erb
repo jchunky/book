@@ -45,7 +45,6 @@
     <% @months.each do |month| %>
       <th class="rank"><div><span><%= month.strftime("%m/%y") %></span></div></th>
     <% end %>
-    <th>Game</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
@@ -70,7 +69,6 @@
       <% @months.each do |month| %>
         <td class="number"><%= game.players.to_h[month.to_s] %></td>
       <% end %>
-      <td><a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a></td>
     </tr>
   <% end %>
 </table>
