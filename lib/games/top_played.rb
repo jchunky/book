@@ -1,5 +1,5 @@
 class TopPlayed
-  NUMBER_OF_MONTHS = 24
+  NUMBER_OF_MONTHS = 12
 
   def games
     months_data.product((1..10).to_a)
