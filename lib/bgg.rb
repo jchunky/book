@@ -4,8 +4,9 @@ class Bgg
   NUMBER_OF_MONTHS = 12
 
   def display_game?(game)
-    return true if game.ts_added && game.ts_added > "2018-11-22"
-    return false if game.players && game.players.all? { |month, player_count| player_count < 300 }
+    return true if game.ts_added.to_s > "2018-11-22"
+    return false unless game.ts_added
+    return false if game.players.to_h.sort.to_h.values.last(3).none? { |player_count| player_count >= 300 }
     true
   end
 
