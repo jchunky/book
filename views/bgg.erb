@@ -42,7 +42,6 @@
     <th>Location</th>
     <th>Category</th>
     <th>Date Added</th>
-    <th>Hit Date</th>
     <th>Gurus</th>
     <th>Sell Product</th>
     <th>iOS</th>
@@ -67,7 +66,6 @@
       <td><%= game.location %></td>
       <td><%= game.category %></td>
       <td><%= game.ts_added %></td>
-      <td><%= game.hit_date %></td>
       <td class="number"><%= game.employees_teachable %></td>
       <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
       <td><%= "iOS" if game.ios %></td>

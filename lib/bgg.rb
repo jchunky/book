@@ -17,7 +17,6 @@ class Bgg
       .merge(top_played) { |key, game1, game2| merge_ostructs(game1, game2) }
       .merge(top_ranked) { |key, game1, game2| merge_ostructs(game1, game2) }
       .values
-      .tap(&method(:add_hit_date_to_games))
       .select(&method(:display_game?))
       .sort_by(&method(:rank))
 
@@ -44,26 +43,6 @@ class Bgg
 
   def merge_ostructs(ostruct1, ostruct2)
     OpenStruct.new(ostruct1.to_h.merge(ostruct2.to_h))
-  end
-
-  def add_hit_date_to_games(games)
-    games.each(&method(:add_hit_date))
-  end
-
-  def add_hit_date(game)
-    game.hit_date =
-      if !game.year
-        ""
-      elsif game.year.to_i < Date.today.year - 1
-        "#{game.year}-01-01"
-      elsif game.player_count.to_i < 300 && game.ts_added
-        game.ts_added
-      elsif game.player_count.to_i < 300
-        "#{game.year}-01-01"
-      else
-        month, _ = game.players.sort.find { |month, player_count| player_count >= 300 }
-        month
-      end
   end
 
   def rank(game)
