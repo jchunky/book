@@ -6,7 +6,7 @@ class Bgg
   def display_game?(game)
     return true if game.ts_added.to_s > "2018-11-22"
     return false unless game.ts_added
-    return false if game.players.to_h.sort.to_h.values.last(3).none? { |player_count| player_count >= 300 }
+    return false if game.players.to_h.values.none? { |player_count| player_count >= 300 }
     true
   end
 
