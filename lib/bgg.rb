@@ -7,8 +7,9 @@ class Bgg
     return true if game.ts_added.to_s > "2018-11-22"
     return false if game.players.to_h.values.none? { |player_count| player_count >= 300 }
     return false if game.voters.to_i < 3000
-    # return false unless game.ts_added
+    # return false if game.player_count.to_i < 1
     # return false if game.player_count.to_i < 300
+    # return false unless game.ts_added
     true
   end
 
