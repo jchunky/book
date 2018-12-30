@@ -22,12 +22,17 @@ class Snake
       key: Utils.generate_key(name),
       rules_url: data['rules_url'],
       difficulty: data['difficulty_label'],
-      location: data['shelf_location'],
+      location: location(data),
       ts_added: Time.at(data['ts_added'].to_i).strftime("%Y-%m-%d"),
       sell_product: data['sell_product'],
       employees_teachable: (data['employees_teachable'].size rescue 0),
       category: category(data)
     )
+  end
+
+  def location(data)
+    location = data['shelf_location']
+    location.size == 2 ? "0" + location : location
   end
 
   def category(data)
