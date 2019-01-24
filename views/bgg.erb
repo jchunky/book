@@ -77,7 +77,7 @@
       <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
       <td><%= "iOS" if game.ios %></td>
       <% @months.each do |month| %>
-        <td class="number <%= "highlight" if game.players.to_h[month.to_s].to_i >= 300 %>">
+        <td class="number <%= "low" if game.players.to_h[month.to_s].to_i < 300 %>">
           <%= game.players.to_h[month.to_s] %>
         </td>
       <% end %>
