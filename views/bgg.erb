@@ -27,6 +27,8 @@
   .number { text-align: right; }
 
   .low { background-color: silver; }
+
+  .ios { border-right: 1px solid #999 !important; }
 </style>
 
 <table id="games" class="sortable">
@@ -44,7 +46,7 @@
     <th>Date Added</th>
     <th>Gurus</th>
     <th>Sell Product</th>
-    <th>iOS</th>
+    <th class="ios">iOS</th>
     <% @months.each do |month| %>
       <th class="rank"><div><span><%= month.strftime("%m/%y") %></span></div></th>
     <% end %>
@@ -73,7 +75,7 @@
       <td><%= game.ts_added %></td>
       <td class="number"><%= game.employees_teachable %></td>
       <td><%= "Not sold" if game.sell_product.to_i == 0 && game.location %></td>
-      <td><%= "iOS" if game.ios %></td>
+      <td class="ios"><%= "iOS" if game.ios %></td>
       <% @months.each do |month| %>
         <td class="number <%= "low" if game.players.to_h[month.to_s].to_i < 300 %>">
           <%= game.players.to_h[month.to_s] %>
