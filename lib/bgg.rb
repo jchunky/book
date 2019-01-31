@@ -9,6 +9,7 @@ class Bgg
     return false if game.players.to_h.values.none? { |player_count| player_count >= 300 }
     # return false if game.player_count.to_i < 1
     # return false if game.player_count.to_i < 300
+    # return false if game.rating.to_f < 7.5
     # return false unless game.ts_added
     true
   end
