@@ -5,6 +5,7 @@ class Bgg
 
   def display_game?(game)
     return true if game.ts_added.to_s > "2019-01-31"
+    return true if game.voters.to_i >= 1 && game.small_box
     return false if game.voters.to_i < 3000
     return false if game.players.to_h.values.none? { |player_count| player_count >= 300 }
     # return false if game.player_count.to_i < 1
