@@ -27,6 +27,7 @@
   .number { text-align: right; }
 
   .low { background-color: silver; }
+  .high { background-color: palegreen; }
 
   .right-border { border-right: 1px solid #999 !important; }
 </style>
@@ -73,7 +74,7 @@
         <% end %>
       </td>
       <td class="number"><%= game.difficulty %></td>
-      <td><%= game.location %></td>
+      <td class="<%= "high" if game.small_box %>"><%= game.location %></td>
       <td><%= game.category %></td>
       <td class="right-border"><%= game.ts_added %></td>
       <% if false %>
