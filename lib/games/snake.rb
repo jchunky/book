@@ -25,14 +25,14 @@ class Snake
       .flat_map do |rows|
         rows.map(&method(:build_game))
       end
-      .uniq(&:key)
+      .uniq { |g| g[:key] }
       .force
   end
 
   def build_game(data)
     name = SnakeName.normalize(Utils.strip_accents(data['title']))
 
-    OpenStruct.new(
+    {
       name: name,
       key: Utils.generate_key(name),
       rules_url: data['rules_url'],
@@ -43,7 +43,7 @@ class Snake
       employees_teachable: (data['employees_teachable'].size rescue 0),
       small_box: small_box(data),
       category: category(location(data))
-    )
+    }
   end
 
   def category(location)

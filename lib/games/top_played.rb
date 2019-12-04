@@ -10,8 +10,8 @@ class TopPlayed
       .flat_map { |month, doc| games_for_doc(month, doc) }
       .force
       .each_with_object({}) do |game, memo|
-        memo[game.name] ||= game
-        memo[game.name].players = game.players.merge(memo[game.name].players)
+        memo[game[:name]] ||= game
+        memo[game[:name]][:players] = game[:players].merge(memo[game[:name]][:players])
       end
       .values
       .tap { |games| add_player_count(games) }
@@ -36,13 +36,13 @@ class TopPlayed
       name = Utils.strip_accents(anchor[0].content)
       play_count = plays.css('a')[0].content.to_i
 
-      game = OpenStruct.new(
+      game = {
         href: anchor[0]['href'],
         name: name,
         key: Utils.generate_key(name),
         players: {}
-      )
-      game.players[month.to_s] = play_count
+      }
+      game[:players][month.to_s] = play_count
       game
     end
   rescue
@@ -51,7 +51,7 @@ class TopPlayed
 
   def add_player_count(games)
     games.each do |game|
-      game.player_count = game.players.to_h[last_month.to_s].to_i
+      game[:player_count] = game[:players].to_h[last_month.to_s].to_i
     end
   end
 

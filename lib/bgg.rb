@@ -4,12 +4,12 @@ class Bgg
   NUMBER_OF_MONTHS = 12
 
   def display_game?(game)
-    return true if game.ts_added.to_s > "2019-10-29"
-    return false unless game.ts_added
-    # return false if game.location == "Archives"
-    # return false if !game.rank.to_i.between?(1, 300)
-    return false if game.rank.to_i < 1
-    return false if game.player_count.to_i < 1
+    return true if game[:ts_added].to_s > "2019-10-29"
+    return false unless game[:ts_added]
+    # return false if game[:location] == "Archives"
+    # return false if !game[:rank].to_i.between?(1, 300)
+    return false if game[:rank].to_i < 1
+    return false if game[:player_count].to_i < 1
     true
   end
 
@@ -17,11 +17,11 @@ class Bgg
     @months = months_display
 
     @games = snake
-      .merge(top_played) { |key, game1, game2| merge_ostructs(game1, game2) }
-      .merge(top_ranked) { |key, game1, game2| merge_ostructs(game1, game2) }
+      .merge(top_played) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
       .values
       .select(&method(:display_game?))
-      .sort_by(&method(:rank))
+      .sort_by { |g| -g[:player_count].to_i }
 
     write_output
   end
@@ -33,27 +33,15 @@ class Bgg
   end
 
   def snake
-    @snake ||= Snake.new.games.map { |g| [g.key, g] }.to_h
+    @snake ||= Snake.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def top_played
-    @top_played ||= TopPlayed.new.games.map { |g| [g.key, g] }.to_h
+    @top_played ||= TopPlayed.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def top_ranked
-    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
-  end
-
-  def merge_ostructs(ostruct1, ostruct2)
-    OpenStruct.new(ostruct1.to_h.merge(ostruct2.to_h))
-  end
-
-  def rank(game)
-    [
-      game.location.blank?.to_s,
-      -game.player_count.to_i,
-      game.name
-    ]
+    @top_ranked ||= TopRanked.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def write_output
