@@ -5,7 +5,8 @@ class Bgg
 
   def display_game?(game)
     return false if !game.ts_added
-    return false if !game.rank.to_i.between?(1, 300)
+    # return false if !game.rank.to_i.between?(1, 300)
+    return false if game.rank.to_i < 1
     return false if game.player_count.to_i < 1
 
     true
