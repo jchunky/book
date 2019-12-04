@@ -30,20 +30,21 @@ class TopPlayed
   end
 
   def games_for_doc(month, doc)
-    doc.css('.forum_table')[1].css('tr')[1..-1].map do |row|
+    doc.css('.forum_table')[1].css('tr').drop(1).map do |row|
       link, _, plays = row.css('td')
       anchor = link.css('a')
-      href = anchor[0]['href']
-      name = anchor[0].content
-      key = Utils.generate_key(name)
+      name = Utils.strip_accents(anchor[0].content)
       play_count = plays.css('a')[0].content.to_i
 
-      next if play_count < 1
-
-      game = OpenStruct.new(href: href, name: name, key: key, players: {})
+      game = OpenStruct.new(
+        href: anchor[0]['href'],
+        name: name,
+        key: Utils.generate_key(name),
+        players: {}
+      )
       game.players[month.to_s] = play_count
       game
-    end.compact
+    end
   rescue
     []
   end
