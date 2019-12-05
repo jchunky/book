@@ -11,6 +11,12 @@
   .low { background-color: silver; }
   .high { background-color: rgb(183, 214 ,170); }
   .right-border { border-right: 1px solid #999 !important; }
+  .player-rank-1 { background-color: #ccccff; } /* blue */
+  .player-rank-2 { background-color: #ccccff; } /* blue */
+  .player-rank-3 { background-color: #ccccff; } /* blue */
+  .player-rank-4 { background-color: #ccffcc; } /* green */
+  .player-rank-5 { background-color: #ffd27f; } /* orange */
+  .player-rank-6 { background-color: #ffb2b2; } /* red */
 </style>
 
 <table id="games" class="sortable">
@@ -54,9 +60,11 @@
       </td>
       <td class="number right-border"><%= game[:difficulty] %></td>
       <% @months.each do |month| %>
-        <td class="number <%= "low" if game[:players].to_h[month.to_s].to_i < 300 %>">
-          <%= game[:players].to_h[month.to_s] %>
-        </td>
+        <%
+          player_count = game[:players].to_h[month.to_s].to_i
+          player_count_rank = player_count.zero? ? 0 : (Math.log(player_count) / Math.log(@max_player_count) * 6).ceil
+        %>
+        <td class="number player-rank-<%= player_count_rank %>"><%= game[:players].to_h[month.to_s] %></td>
       <% end %>
     </tr>
   <% end %>

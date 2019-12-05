@@ -14,14 +14,15 @@ class Bgg
   end
 
   def run
-    @months = months_display
-
     @games = snake
       .merge(top_played) { |key, game1, game2| game1.merge(game2) }
       .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
       .values
       .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
+
+    @max_player_count = @games.map { |g| g[:players].values.max }.max
+    @months = months_display
 
     write_output
   end
