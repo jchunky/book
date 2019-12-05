@@ -38,6 +38,7 @@
   </tr>
   <% @games.each do |game| %>
     <%
+      low_rank = game[:rank].to_i > 300
       low_players = game[:player_count].to_i < 300
       low_rating = game[:rating].to_f < 7.5
       low_voters = game[:voters].to_i < 3000
@@ -47,7 +48,7 @@
       <td class="<%= "low" if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
       <td class="number"><%= game[:year] %></td>
       <td class="number <%= "low" if low_players %>"><%= game[:player_count] %></td>
-      <td class="number"><%= game[:rank] %></td>
+      <td class="number <%= "low" if low_rank %>"><%= game[:rank] %></td>
       <td class="number <%= "low" if low_rating %>"><%= game[:rating] %></td>
       <td class="number <%= "low" if low_voters %>"><%= game[:voters] %></td>
       <td class="<%= "high" if game[:small_box] %>"><%= game[:location] %></td>
