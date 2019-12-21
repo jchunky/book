@@ -47,11 +47,8 @@ class Snake
   end
 
   def category(location)
-    return location if location == "New Arrivals"
-    return location if location == "Archives"
-
     _, result = SHELF_CATEGORIES.find { |k, v| k.include?(location.to_i) }
-    result
+    result || location
   end
 
   def location(data)
