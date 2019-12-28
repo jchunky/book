@@ -83,9 +83,6 @@ class Snake
   end
 
   def shelf(data)
-    # location = data['shelf_location']
-    # location = location.gsub("Archives, ", "").gsub(", Archives", "").gsub(", Sickbay", "").strip
-    # location.size == 2 ? "0" + location : location
     data['shelf_location']
   end
 end
