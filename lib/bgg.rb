@@ -4,12 +4,11 @@ class Bgg
   NUMBER_OF_MONTHS = 12
 
   def display_game?(game)
-    # return true if game[:ts_added].to_s > "2019-12-18"
+    return true if game[:ts_added].to_s > "2019-12-21"
     return false unless game[:ts_added]
-    return false unless game[:rank].nil?
     # return false if game[:rank].to_i > 300
-    # return false if game[:rank].to_i > 1000
-    # return false if game[:player_count].to_i < 1
+    return false if game[:rank].to_i < 1
+    return false if game[:player_count].to_i < 1
     true
   end
 
