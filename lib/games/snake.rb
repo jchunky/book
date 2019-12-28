@@ -21,6 +21,7 @@ class Snake
 
   def games
     FILES
+      .sort_by(&method(:location_priority))
       .lazy
       .map { |f| [f, File.read(f)] }
       .map { |f, file| [f, JSON.parse(file)] }
@@ -29,6 +30,19 @@ class Snake
       end
       .uniq { |g| g[:key] }
       .force
+  end
+
+  def location_priority(file)
+    case file.split("/")[1]
+    when "annex"
+      2
+    when "college"
+      1
+    when "midtown"
+      3
+    else
+      0
+    end
   end
 
   def build_game(f, data)
@@ -42,14 +56,10 @@ class Snake
       ts_added: Time.at(data['ts_added'].to_i).strftime("%Y-%m-%d"),
       sell_product: data['sell_product'],
       employees_teachable: (data['employees_teachable'].size rescue 0),
-      location: location(f),
       category: category(data),
+      location: location(f),
       shelf: shelf(data)
     }
-  end
-
-  def location(file)
-    file.split('/')[1].capitalize
   end
 
   def category(data)
@@ -58,6 +68,10 @@ class Snake
       .sort_by { |c| CATEGORIES.index(c).to_i }
       .first
       .to_s
+  end
+
+  def location(file)
+    file.split('/')[1].capitalize
   end
 
   def shelf(data)
