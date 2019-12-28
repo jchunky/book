@@ -21,24 +21,32 @@ class Snake
 
   def games
     FILES
-      .sort_by(&method(:location_priority))
       .lazy
       .map { |f| [f, File.read(f)] }
       .map { |f, file| [f, JSON.parse(file)] }
       .flat_map do |f, rows|
         rows.map { |row| build_game(f, row) }
       end
-      .uniq { |g| g[:key] }
       .force
+      .sort_by(&method(:sort_order))
+      .uniq { |g| g[:key] }
   end
 
-  def location_priority(file)
-    case file.split("/")[1]
-    when "annex"
+  def sort_order(game)
+    [shelf_priority(game[:shelf]), location_priority(game[:location])]
+  end
+
+  def shelf_priority(shelf)
+    shelf == "Archives" ? 2 : 1
+  end
+
+  def location_priority(location)
+    case location
+    when "Annex"
       2
-    when "college"
+    when "College"
       1
-    when "midtown"
+    when "Midtown"
       3
     else
       0
