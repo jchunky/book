@@ -1,5 +1,5 @@
 class Snake
-  FILES = Dir.glob("input/*.json").to_a
+  FILES = Dir.glob("input/**/*.json").to_a
   SMALL_BOX_LOCATIONS = %w[01C 02C 06C 07D 10C 11A 13C 15C 20B 20C 20D 21B 21E 22D 29B 29C 29D]
   SHELF_CATEGORIES = {
     (1..2) => "Trivia",
