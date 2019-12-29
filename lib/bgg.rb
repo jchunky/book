@@ -8,6 +8,7 @@ class Bgg
     return false unless game[:ts_added]
     return false if game[:rank].to_i > 300
     return false if game[:rank].to_i < 1
+    # return false if game[:player_count].to_i < 300
     return false if game[:player_count].to_i < 1
     true
   end
