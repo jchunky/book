@@ -5,8 +5,9 @@ class Bgg
 
   def display_game?(game)
     return true if game[:ts_added].to_s > "2020-01-16"
+    return false unless game[:family]
     return false unless game[:ts_added]
-    return false if game[:rank].to_i > 300
+    # return false if game[:rank].to_i > 300
     return false if game[:rank].to_i < 1
     # return false if game[:player_count].to_i < 300
     return false if game[:player_count].to_i < 1
@@ -17,6 +18,7 @@ class Bgg
     @games = snake
       .merge(top_played) { |key, game1, game2| game1.merge(game2) }
       .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_family) { |key, game1, game2| game1.merge(game2) }
       .values
       .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
@@ -43,6 +45,10 @@ class Bgg
 
   def top_ranked
     @top_ranked ||= TopRanked.new.games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_family
+    @top_family ||= TopFamily.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def write_output
