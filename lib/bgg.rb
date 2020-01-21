@@ -9,7 +9,7 @@ class Bgg
     # return false unless %w[family party].include?(game[:subdomain])
     # return false unless game[:subdomain] == "strategy"
     return false unless game[:ts_added]
-    # return false if game[:rank].to_i > 300
+    return false if game[:rank].to_i > 300
     return false if game[:rank].to_i < 1
     # return false if game[:player_count].to_i < 300
     return false if game[:player_count].to_i < 1
