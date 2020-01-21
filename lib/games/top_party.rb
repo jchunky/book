@@ -1,6 +1,6 @@
-class TopFamily
+class TopParty
   def games
-    (1..22)
+    (1..7)
       .lazy
       .map { |page| url_for_page(page) }
       .map { |url| Utils.read_url(url) }
@@ -11,7 +11,7 @@ class TopFamily
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B0%5D=5499&sortdir=asc"
+    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B%5D=5498&sortdir=asc"
   end
 
   def games_for_doc(doc)
@@ -21,7 +21,7 @@ class TopFamily
 
       {
         key: Utils.generate_key(name),
-        subdomain: "family"
+        subdomain: "party"
       }
     end
   end

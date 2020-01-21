@@ -21,7 +21,7 @@
 
 <table id="games" class="sortable">
   <tr>
-    <th>Family</th>
+    <th>Subdomain</th>
     <th>Game</th>
     <th>Year</th>
     <th>Player Count</th>
@@ -47,7 +47,7 @@
       low_game = low_players || low_rating || low_voters
     %>
     <tr>
-      <td><%= game[:family] %></td>
+      <td><%= game[:subdomain].to_s.titlecase %></td>
       <td class="<%= "low" if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
       <td class="number"><%= game[:year] %></td>
       <td class="number <%= "low" if low_players %>"><%= game[:player_count] %></td>
