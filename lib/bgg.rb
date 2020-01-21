@@ -4,13 +4,13 @@ class Bgg
   NUMBER_OF_MONTHS = 12
 
   SUBDOMAINS = {
-    "strategy" => 5497,
     "family" => 5499,
     "party" => 5498,
+    "strategy" => 5497,
     "thematic" => 5496,
+    "customizable" => 4667,
     "abstract" => 4666,
     "childrens" => 4665,
-    "customizable" => 4667,
   }
 
   def display_game?(game)
@@ -28,7 +28,7 @@ class Bgg
     @games = @games.merge(top_ranked, &method(:merge_hashes))
 
     SUBDOMAINS.each do |subdomain_name, subdomain_id|
-      @games = @games.merge(subdomain(subdomain_name, subdomain_id), &method(:merge_hashes))
+      @games = @games.merge(subdomain(subdomain_name, subdomain_id), &method(:merge_subdomains))
     end
 
     @games = @games.values
@@ -71,6 +71,10 @@ class Bgg
 
   def merge_hashes(key, game1, game2)
     game1.merge(game2)
+  end
+
+  def merge_subdomains(key, game1, game2)
+    game1.merge(subdomains: game1[:subdomains].to_a + game2[:subdomains].to_a)
   end
 end
 
