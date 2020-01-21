@@ -1,4 +1,4 @@
-class TopParty
+class TopAbstract
   def games
     (1..10)
       .lazy
@@ -11,7 +11,7 @@ class TopParty
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B%5D=5498&sortdir=asc"
+    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B%5D=4666&sortdir=asc"
   end
 
   def games_for_doc(doc)
@@ -21,7 +21,7 @@ class TopParty
 
       {
         key: Utils.generate_key(name),
-        subdomain: "party"
+        subdomain: "abstract"
       }
     end
   end

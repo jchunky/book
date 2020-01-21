@@ -21,6 +21,7 @@ class Bgg
       .merge(top_played) { |key, game1, game2| game1.merge(game2) }
       .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
       .merge(top_strategy) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_abstract) { |key, game1, game2| game1.merge(game2) }
       .merge(top_thematic) { |key, game1, game2| game1.merge(game2) }
       .merge(top_family) { |key, game1, game2| game1.merge(game2) }
       .merge(top_party) { |key, game1, game2| game1.merge(game2) }
@@ -42,6 +43,10 @@ class Bgg
 
   def snake
     @snake ||= Snake.new.games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_abstract
+    @top_abstract ||= TopAbstract.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def top_party
