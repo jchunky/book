@@ -5,13 +5,8 @@ class Bgg
 
   def display_game?(game)
     return true if game[:ts_added].to_s > "2020-01-16"
-    # return false unless game[:subdomain]
-    # return false unless %w[family party].include?(game[:subdomain])
-    # return false unless game[:subdomain] == "strategy"
     return false unless game[:ts_added]
-    # return false if game[:rank].to_i > 300
     return false if game[:rank].to_i < 1
-    # return false if game[:player_count].to_i < 300
     return false if game[:player_count].to_i < 1
     true
   end
@@ -25,6 +20,8 @@ class Bgg
       .merge(top_thematic) { |key, game1, game2| game1.merge(game2) }
       .merge(top_family) { |key, game1, game2| game1.merge(game2) }
       .merge(top_party) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_childrens) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_customizable) { |key, game1, game2| game1.merge(game2) }
       .values
       .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
@@ -45,14 +42,6 @@ class Bgg
     @snake ||= Snake.new.games.map { |g| [g[:key], g] }.to_h
   end
 
-  def top_abstract
-    @top_abstract ||= TopAbstract.new.games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_party
-    @top_party ||= TopParty.new.games.map { |g| [g[:key], g] }.to_h
-  end
-
   def top_played
     @top_played ||= TopPlayed.new.games.map { |g| [g[:key], g] }.to_h
   end
@@ -61,16 +50,36 @@ class Bgg
     @top_ranked ||= TopRanked.new.games.map { |g| [g[:key], g] }.to_h
   end
 
+  def top_abstract
+    @top_abstract ||= Subdomain.new("abstract", 4666).games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_party
+    @top_party ||= Subdomain.new("party", 5498).games.map { |g| [g[:key], g] }.to_h
+  end
+
   def top_family
-    @top_family ||= TopFamily.new.games.map { |g| [g[:key], g] }.to_h
+    @top_family ||= Subdomain.new("family", 5499).games.map { |g| [g[:key], g] }.to_h
   end
 
   def top_strategy
-    @top_strategy ||= TopStrategy.new.games.map { |g| [g[:key], g] }.to_h
+    @top_strategy ||= Subdomain.new("strategy", 5497).games.map { |g| [g[:key], g] }.to_h
   end
 
   def top_thematic
-    @top_thematic ||= TopThematic.new.games.map { |g| [g[:key], g] }.to_h
+    @top_thematic ||= Subdomain.new("thematic", 5496).games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_childrens
+    @top_childrens ||= Subdomain.new("childrens", 4665).games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_childrens
+    @top_childrens ||= Subdomain.new("childrens", 4665).games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_customizable
+    @top_customizable ||= Subdomain.new("customizable", 4667).games.map { |g| [g[:key], g] }.to_h
   end
 
   def write_output
