@@ -1,6 +1,6 @@
 class TopThematic
   def games
-    (1..25)
+    (1..15)
       .lazy
       .map { |page| url_for_page(page) }
       .map { |url| Utils.read_url(url) }
