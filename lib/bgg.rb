@@ -5,10 +5,10 @@ class Bgg
 
   SUBDOMAINS = {
     "strategy" => 5497,
-    "abstract" => 4666,
-    "thematic" => 5496,
     "family" => 5499,
     "party" => 5498,
+    "thematic" => 5496,
+    "abstract" => 4666,
     "childrens" => 4665,
     "customizable" => 4667,
   }
