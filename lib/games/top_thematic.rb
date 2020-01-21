@@ -1,6 +1,6 @@
-class TopRanked
+class TopThematic
   def games
-    (1..190)
+    (1..25)
       .lazy
       .map { |page| url_for_page(page) }
       .map { |url| Utils.read_url(url) }
@@ -11,23 +11,17 @@ class TopRanked
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/browse/boardgame/page/#{page}"
+    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B%5D=5496&sortdir=asc"
   end
 
   def games_for_doc(doc)
     doc.css('.collection_table')[0].css('tr').drop(1).map do |row|
-      rank, _, title, _, rating, voters, *_, shop = row.css('td')
+      _, _, title, *_ = row.css('td')
       name = Utils.strip_accents(title.css('a')[0].content)
 
       {
-        href: title.css('a')[0]['href'],
-        name: name,
-        rank: (rank.css('a')[0]['name'] rescue nil),
-        rating: rating.content,
-        voters: voters.content,
         key: Utils.generate_key(name),
-        ios: shop.to_s.include?("iOS App:"),
-        year: (title.css('span')[0].content[1..-2] rescue nil)
+        subdomain: "thematic"
       }
     end
   end

@@ -6,7 +6,8 @@ class Bgg
   def display_game?(game)
     return true if game[:ts_added].to_s > "2020-01-16"
     # return false unless game[:subdomain]
-    return false unless %w[family party].include?(game[:subdomain])
+    # return false unless %w[family party].include?(game[:subdomain])
+    # return false unless game[:subdomain] == "strategy"
     return false unless game[:ts_added]
     # return false if game[:rank].to_i > 300
     return false if game[:rank].to_i < 1
@@ -20,6 +21,7 @@ class Bgg
       .merge(top_played) { |key, game1, game2| game1.merge(game2) }
       .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
       .merge(top_strategy) { |key, game1, game2| game1.merge(game2) }
+      .merge(top_thematic) { |key, game1, game2| game1.merge(game2) }
       .merge(top_family) { |key, game1, game2| game1.merge(game2) }
       .merge(top_party) { |key, game1, game2| game1.merge(game2) }
       .values
@@ -60,6 +62,10 @@ class Bgg
 
   def top_strategy
     @top_strategy ||= TopStrategy.new.games.map { |g| [g[:key], g] }.to_h
+  end
+
+  def top_thematic
+    @top_thematic ||= TopThematic.new.games.map { |g| [g[:key], g] }.to_h
   end
 
   def write_output
