@@ -3,6 +3,16 @@ require_relative 'dependencies'
 class Bgg
   NUMBER_OF_MONTHS = 12
 
+  SUBDOMAINS = {
+    "strategy" => 5497,
+    "abstract" => 4666,
+    "thematic" => 5496,
+    "family" => 5499,
+    "party" => 5498,
+    "childrens" => 4665,
+    "customizable" => 4667,
+  }
+
   def display_game?(game)
     return true if game[:ts_added].to_s > "2020-01-16"
     return false unless game[:ts_added]
@@ -13,16 +23,15 @@ class Bgg
 
   def run
     @games = snake
-      .merge(top_played) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_ranked) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_strategy) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_abstract) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_thematic) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_family) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_party) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_childrens) { |key, game1, game2| game1.merge(game2) }
-      .merge(top_customizable) { |key, game1, game2| game1.merge(game2) }
-      .values
+
+    @games = @games.merge(top_played, &method(:merge_hashes))
+    @games = @games.merge(top_ranked, &method(:merge_hashes))
+
+    SUBDOMAINS.each do |subdomain_name, subdomain_id|
+      @games = @games.merge(subdomain(subdomain_name, subdomain_id), &method(:merge_hashes))
+    end
+
+    @games = @games.values
       .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
 
@@ -30,12 +39,6 @@ class Bgg
     @months = months_display
 
     write_output
-  end
-
-  def months_display
-    first = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
-    last = Date.today - 1.month
-    (first..last).select { |d| d.day == 1 }
   end
 
   def snake
@@ -50,42 +53,24 @@ class Bgg
     @top_ranked ||= TopRanked.new.games.map { |g| [g[:key], g] }.to_h
   end
 
-  def top_abstract
-    @top_abstract ||= Subdomain.new("abstract", 4666).games.map { |g| [g[:key], g] }.to_h
+  def subdomain(subdomain_name, subdomain_id)
+    Subdomain.new(subdomain_name, subdomain_id).games.map { |g| [g[:key], g] }.to_h
   end
 
-  def top_party
-    @top_party ||= Subdomain.new("party", 5498).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_family
-    @top_family ||= Subdomain.new("family", 5499).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_strategy
-    @top_strategy ||= Subdomain.new("strategy", 5497).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_thematic
-    @top_thematic ||= Subdomain.new("thematic", 5496).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_childrens
-    @top_childrens ||= Subdomain.new("childrens", 4665).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_childrens
-    @top_childrens ||= Subdomain.new("childrens", 4665).games.map { |g| [g[:key], g] }.to_h
-  end
-
-  def top_customizable
-    @top_customizable ||= Subdomain.new("customizable", 4667).games.map { |g| [g[:key], g] }.to_h
+  def months_display
+    first = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
+    last = Date.today - 1.month
+    (first..last).select { |d| d.day == 1 }
   end
 
   def write_output
     template = File.read('views/bgg.erb')
     html = ERB.new(template).result(binding)
     File.write('output/bgg.html', html)
+  end
+
+  def merge_hashes(key, game1, game2)
+    game1.merge(game2)
   end
 end
 
