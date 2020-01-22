@@ -23,6 +23,7 @@
   <tr>
     <th>Subdomain</th>
     <th>Game</th>
+    <th>iOS</th>
     <th>Year</th>
     <th>Player Count</th>
     <th>Rank</th>
@@ -49,6 +50,7 @@
     <tr>
       <td><%= game[:subdomains].to_a.join %></td>
       <td class="<%= "low" if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
+      <td><%= "iOS" if game[:ios] %></td>
       <td class="number"><%= game[:year] %></td>
       <td class="number <%= "low" if low_players %>"><%= game[:player_count] %></td>
       <td class="number <%= "low" if low_rank %>"><%= game[:rank] %></td>
