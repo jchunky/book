@@ -1,21 +1,20 @@
 class Snake
   FILES = Dir.glob("input/**/*.json").to_a
   CATEGORIES = [
-    "Trivia",
-    "Children's",
-    "Word",
-    "Party",
-    "Dexterity",
-    "Nostalgia",
-
     "Cooperative",
-    "Deck Builder",
+    "Party",
     "Light Strategy",
     "Strategy",
 
+    "Nostalgia",
+    "Deck Builder",
+    "Children's",
+    "Dexterity",
+    "Word",
+    "Trivia",
     "Abstract",
 
-    "Greatist Hits",
+    "Greatest Hits",
     "New Arrivals"
   ]
 
@@ -74,8 +73,8 @@ class Snake
     data['categories']
       .map { |c| c['name'] }
       .sort_by { |c| CATEGORIES.index(c).to_i }
-      .first
-      .to_s
+      .map { |c| c.delete(" ") }
+      .join(" ")
   end
 
   def location(file)
