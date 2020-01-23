@@ -14,7 +14,7 @@ class Bgg
   }
 
   def display_game?(game)
-    return true if game[:ts_added].to_s > "2020-01-16"
+    return true if game[:ts_added].to_s > "2020-01-17"
     return false unless game[:ts_added]
     return false if game[:rank].to_i < 1
     return false if game[:player_count].to_i < 1
