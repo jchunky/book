@@ -16,8 +16,8 @@ class Bgg
 
   def display_game?(game)
     return true if game[:ts_added].to_s > "2020-01-17"
-    return false unless game[:location] == "College"
     return false unless game[:ts_added]
+    return false unless game[:location] == "College"
     return false unless (%w[family party] & game[:subdomains].to_a).any?
     return false if game[:shelf] == "Archives"
     return false if game[:rank].to_i < 1
