@@ -48,7 +48,7 @@
       low_game = low_players || low_rating || low_voters
     %>
     <tr>
-      <td><%= game[:subdomains].to_a.join %></td>
+      <td><%= game[:subdomains].to_a.map { |s| s.chars.first.upcase }.join %></td>
       <td class="<%= "low" if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
       <td><%= "iOS" if game[:ios] %></td>
       <td class="number"><%= game[:year] %></td>

@@ -21,7 +21,7 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
 
       {
         key: Utils.generate_key(name),
-        subdomains: [subdomain_name.chars.first.upcase]
+        subdomains: [subdomain_name]
       }
     end
   end
