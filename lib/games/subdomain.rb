@@ -2,9 +2,9 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
   def games
     (1..10)
       .lazy
-      .map { |page| p '-' * 80; p page; url_for_page(page) }
-      .map { |url| Utils.read_url(url) }
-      .map { |file| Nokogiri::HTML(file) }
+      .map { |page| [page, url_for_page(page)] }
+      .map { |page, url| [page, Utils.read_url(url)] }
+      .map { |page, file| [page, Nokogiri::HTML(file)] }
       .flat_map(&method(:games_for_doc))
       .uniq { |g| g[:key] }
       .force
@@ -14,7 +14,7 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
     "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&sortdir=asc&advsearch=1&familyids%5B0%5D=#{subdomain_id}"
   end
 
-  def games_for_doc(doc)
+  def games_for_doc((page, doc))
     doc.css('.collection_table')[0].css('tr').drop(1).map do |row|
       begin
         rank, _, title, _, rating, voters, *_, shop = row.css('td')
@@ -25,13 +25,16 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
           subdomains: [subdomain_name]
         }
       rescue
-        p 'x' * 80
-        p subdomain_name
+        report_failure(page)
       end
     end
   rescue
-    p 'y'
-    p subdomain_name
+    report_failure(page)
     []
+  end
+
+  def report_failure(page)
+    p '-' * 80
+    p "Failed to process: subdomain name: #{subdomain_name}, subdomain id: #{subdomain_id}, page: #{page}"
   end
 end
