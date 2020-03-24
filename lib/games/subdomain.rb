@@ -2,7 +2,7 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
   def games
     (1..10)
       .lazy
-      .map { |page| url_for_page(page) }
+      .map { |page| p '-' * 80; p page; url_for_page(page) }
       .map { |url| Utils.read_url(url) }
       .map { |file| Nokogiri::HTML(file) }
       .flat_map(&method(:games_for_doc))
