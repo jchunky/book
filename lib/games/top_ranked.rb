@@ -26,7 +26,6 @@ class TopRanked
         rating: rating.content,
         voters: voters.content,
         key: Utils.generate_key(name),
-        ios: shop.to_s.include?("iOS App:"),
         year: (title.css('span')[0].content[1..-2] rescue nil)
       }
     end
