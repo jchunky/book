@@ -11,18 +11,27 @@ class Subdomain < Struct.new(:subdomain_name, :subdomain_id)
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&advsearch=1&familyids%5B%5D=#{subdomain_id}&sortdir=asc"
+    "https://boardgamegeek.com/search/boardgame/page/#{page}?sort=rank&sortdir=asc&advsearch=1&familyids%5B0%5D=#{subdomain_id}"
   end
 
   def games_for_doc(doc)
     doc.css('.collection_table')[0].css('tr').drop(1).map do |row|
-      rank, _, title, _, rating, voters, *_, shop = row.css('td')
-      name = Utils.strip_accents(title.css('a')[0].content)
+      begin
+        rank, _, title, _, rating, voters, *_, shop = row.css('td')
+        name = Utils.strip_accents(title.css('a')[0].content)
 
-      {
-        key: Utils.generate_key(name),
-        subdomains: [subdomain_name]
-      }
+        {
+          key: Utils.generate_key(name),
+          subdomains: [subdomain_name]
+        }
+      rescue
+        p 'x' * 80
+        p subdomain_name
+      end
     end
+  rescue
+    p 'y'
+    p subdomain_name
+    []
   end
 end
