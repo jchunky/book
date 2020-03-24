@@ -83,5 +83,17 @@ class Snake
 
   def shelf(data)
     data['shelf_location']
+      .split(", ")
+      .map(&method(:prefix_shelf_with_leading_zero))
+      .sort
+      .join(", ")
+  end
+
+  def prefix_shelf_with_leading_zero(shelf)
+    if shelf.length == 2
+      "0" + shelf
+    else
+      shelf
+    end
   end
 end
