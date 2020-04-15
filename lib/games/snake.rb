@@ -1,13 +1,13 @@
 class Snake
   FILES = Dir.glob("input/**/*.json").to_a
   CATEGORIES = [
-    "Cooperative",
+    "Deck Builder",
     "Party",
+    "Cooperative",
     "Light Strategy",
     "Strategy",
 
     "Nostalgia",
-    "Deck Builder",
     "Children's",
     "Dexterity",
     "Word",
