@@ -2,13 +2,13 @@ class Utils
   def self.generate_key(name)
     name
       .downcase
-      .gsub("-", " ")
-      .gsub(" and ", " & ")
-      .gsub(/\bthe /, "")
-      .gsub(/[^\w ]/, "")
-      .gsub("(blackbox) - ", "")
-      .gsub("(blackbox) ", "")
-      .gsub("blackbox - ", "")
+      .gsub('-', ' ')
+      .gsub(' and ', ' & ')
+      .gsub(/\bthe /, '')
+      .gsub(/[^\w ]/, '')
+      .gsub('(blackbox) - ', '')
+      .gsub('(blackbox) ', '')
+      .gsub('blackbox - ', '')
       .squish
   end
 
@@ -27,7 +27,7 @@ class Utils
   end
 
   def self.cache(url)
-    file = "tmp/" + url.gsub(/[:\/]/, '_') + ".html"
+    file = 'tmp/' + url.gsub(%r{[:/]}, '_') + '.html'
     File.write(file, yield) unless File.exist?(file)
     File.read(file)
   end

@@ -1,21 +1,21 @@
 class Snake
-  FILES = Dir.glob("input/**/*.json").to_a
+  FILES = Dir.glob('input/**/*.json').to_a
   CATEGORIES = [
-    "Deck Builder",
-    "Party",
-    "Cooperative",
-    "Light Strategy",
-    "Strategy",
+    'Deck Builder',
+    'Party',
+    'Cooperative',
+    'Light Strategy',
+    'Strategy',
 
-    "Nostalgia",
+    'Nostalgia',
     "Children's",
-    "Dexterity",
-    "Word",
-    "Trivia",
-    "Abstract",
+    'Dexterity',
+    'Word',
+    'Trivia',
+    'Abstract',
 
-    "Greatest Hits",
-    "New Arrivals"
+    'Greatest Hits',
+    'New Arrivals'
   ]
 
   def games
@@ -36,16 +36,16 @@ class Snake
   end
 
   def shelf_priority(shelf)
-    shelf == "Archives" ? 2 : 1
+    shelf == 'Archives' ? 2 : 1
   end
 
   def location_priority(location)
     case location
-    when "Annex"
+    when 'Annex'
       2
-    when "College"
+    when 'College'
       1
-    when "Midtown"
+    when 'Midtown'
       3
     else
       0
@@ -60,7 +60,7 @@ class Snake
       key: Utils.generate_key(name),
       rules_url: data['rules_url'],
       difficulty: data['difficulty_label'],
-      ts_added: Time.at(data['ts_added'].to_i).strftime("%Y-%m-%d"),
+      ts_added: Time.at(data['ts_added'].to_i).strftime('%Y-%m-%d'),
       sell_product: data['sell_product'],
       employees_teachable: (data['employees_teachable'].size rescue 0),
       category: category(data),
@@ -73,8 +73,8 @@ class Snake
     data['categories']
       .map { |c| c['name'] }
       .sort_by { |c| CATEGORIES.index(c).to_i }
-      .map { |c| c.delete(" ") }
-      .join(" ")
+      .map { |c| c.delete(' ') }
+      .join(' ')
   end
 
   def location(file)
@@ -83,15 +83,15 @@ class Snake
 
   def shelf(data)
     data['shelf_location']
-      .split(", ")
+      .split(', ')
       .map(&method(:prefix_shelf_with_leading_zero))
       .sort
-      .join(", ")
+      .join(', ')
   end
 
   def prefix_shelf_with_leading_zero(shelf)
     if shelf.length == 2
-      "0" + shelf
+      '0' + shelf
     else
       shelf
     end
