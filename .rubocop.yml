@@ -76,6 +76,10 @@ Style/MutableConstant:
   Enabled: false
 Style/NumericPredicate:
   Enabled: false
+Style/RescueModifier:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
 Style/StructInheritance:
   Enabled: false
 
