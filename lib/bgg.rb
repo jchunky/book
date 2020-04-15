@@ -51,7 +51,7 @@ class Bgg
   def write_output
     template = File.read('views/bgg.erb')
     html = ERB.new(template).result(binding)
-    File.write('output/bgg.html', html)
+    File.write('index.html', html)
   end
 
   def merge_hashes(_key, game1, game2)
