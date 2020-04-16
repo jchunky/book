@@ -17,7 +17,7 @@ class Utils
   end
 
   def self.strip_accents(string)
-    ActiveSupport::Inflector.transliterate(string).to_s
+    ActiveSupport::Inflector.transliterate(string.to_s.force_encoding("UTF-8")).to_s
   end
 
   private
