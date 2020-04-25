@@ -1,8 +1,45 @@
-# Layout
+# Tailor for bgg
+Style/RescueModifier:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
+
+# New cops
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+
+# Miscelleneous
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/HeredocArgumentClosingParenthesis:
   Enabled: true
+Style/CollectionMethods:
+  Enabled: true
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Auto-correct
+Layout/DefEndAlignment:
+  AutoCorrect: true
+Layout/EndAlignment:
+  AutoCorrect: true
+Layout/LineLength:
+  Enabled: true
+  AutoCorrect: true
+Style/NumericPredicate:
+  AutoCorrect: true
 
 # Indentation
 Layout/BlockAlignment:
@@ -20,16 +57,7 @@ Layout/MultilineMethodCallIndentation:
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
-# Auto-correct
-Layout/DefEndAlignment:
-  AutoCorrect: true
-Layout/EndAlignment:
-  AutoCorrect: true
-Layout/LineLength:
-  Enabled: true
-  AutoCorrect: true
-
-# Add line breaks when auto-correcting
+# Line breaks
 Layout/FirstArrayElementLineBreak:
   Enabled: true
 Layout/FirstHashElementLineBreak:
@@ -43,17 +71,11 @@ Layout/MultilineHashKeyLineBreaks:
 Layout/MultilineMethodArgumentLineBreaks:
   Enabled: true
 
-# Style
-Style/CollectionMethods:
-  Enabled: true
-
-# New cops
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
+# Trailing commas
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
 
 # Disable annoyances
 Metrics:
@@ -62,79 +84,28 @@ Naming/MethodParameterName:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/EmptyCaseCondition:
-  Enabled: false
 Style/FormatStringToken:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
-Style/ModuleFunction:
-  Enabled: false
-Style/MultilineBlockChain:
-  Enabled: false
 Style/MutableConstant:
-  Enabled: false
-Style/NumericPredicate:
-  Enabled: false
-Style/RescueModifier:
-  Enabled: false
-Style/RescueStandardError:
-  Enabled: false
-Style/StructInheritance:
   Enabled: false
 
 # Class structure
 Layout/ClassStructure:
   Enabled: true
-  AutoCorrect: false
-  Categories:
-    module_inclusion:
-      - include
-      - prepend
-      - extend
-    attributes:
-      - attribute
-      - attr_reader
-      - attr_writer
-      - attr_accessor
-      - squish_attributes
-      - delegate
-    associations:
-      - has_one
-      - has_many
-      - belongs_to
-      - has_and_belongs_to_many
-    validations:
-      - validate
-      - validates
-      - validates_presence_of
-      - validates_uniqueness_of
-    hooks:
-      - before_validation
-      - after_validation
-      - before_save
-      - around_save
-      - before_create
-      - around_create
-      - after_create
-      - before_update
-      - around_update
-      - after_update
-      - before_destroy
-      - around_destroy
-      - after_destroy
-      - after_save
-      - after_commit
-      - after_rollback
+  AutoCorrect: true
   ExpectedOrder:
-      - module_inclusion
-      - constants
-      - attributes
-      - associations
-      - validations
-      - hooks
-      - public_class_methods
-      - initializer
-      - public_methods
-      - protected_methods
-      - private_methods
+    - module_inclusion
+    - constants
+    - attr_accessor
+    - attr_reader
+    - attr_writer
+    - delegate
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_class_methods
+    - protected_methods
+    - private_class_methods
+    - private_methods

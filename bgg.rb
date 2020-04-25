@@ -1,4 +1,10 @@
-require_relative 'dependencies'
+require 'active_support/all'
+require 'erb'
+require 'json'
+require 'net/http'
+require 'nokogiri'
+require 'uri'
+Dir['lib/**/*.rb'].each { |f| require_relative f.sub(Dir.pwd, '.') }
 
 class Bgg
   NUMBER_OF_MONTHS = 12
