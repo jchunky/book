@@ -1,19 +1,19 @@
-require 'active_support/all'
-require 'erb'
-require 'json'
-require 'net/http'
-require 'nokogiri'
-require 'uri'
-Dir['lib/**/*.rb'].each { |f| require_relative f.sub(Dir.pwd, '.') }
+require "active_support/all"
+require "erb"
+require "json"
+require "net/http"
+require "nokogiri"
+require "uri"
+Dir["lib/**/*.rb"].each { |f| require_relative f.sub(Dir.pwd, ".") }
 
 class Bgg
   NUMBER_OF_MONTHS = 12
 
   def display_game?(game)
-    return true if game[:ts_added].to_s > '2020-03-23'
+    return true if game[:ts_added].to_s > "2020-03-23"
     return false unless game[:ts_added]
-    return false unless game[:location] == 'College'
-    return false if game[:shelf] == 'Archives'
+    return false unless game[:location] == "College"
+    return false if game[:shelf] == "Archives"
     return false if game[:rank].to_i < 1
     return false if game[:player_count].to_i < 1
 
@@ -55,9 +55,9 @@ class Bgg
   end
 
   def write_output
-    template = File.read('views/bgg.erb')
+    template = File.read("views/bgg.erb")
     html = ERB.new(template).result(binding)
-    File.write('index.html', html)
+    File.write("index.html", html)
   end
 
   def merge_hashes(_key, game1, game2)

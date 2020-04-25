@@ -18,7 +18,7 @@ class TopPlayed
   end
 
   def months_data
-    first = Date.parse('2005-01-01')
+    first = Date.parse("2005-01-01")
     last = last_month
     (first..last)
       .select { |d| d.day == 1 }
@@ -30,17 +30,17 @@ class TopPlayed
   end
 
   def games_for_doc(month, doc)
-    doc.css('.forum_table')[1].css('tr').drop(1).map do |row|
-      link, _, plays = row.css('td')
-      anchor = link.css('a')
+    doc.css(".forum_table")[1].css("tr").drop(1).map do |row|
+      link, _, plays = row.css("td")
+      anchor = link.css("a")
       name = Utils.strip_accents(anchor[0].content)
-      play_count = plays.css('a')[0].content.to_i
+      play_count = plays.css("a")[0].content.to_i
 
       game = {
-        href: anchor[0]['href'],
+        href: anchor[0]["href"],
         name: name,
         key: Utils.generate_key(name),
-        players: {}
+        players: {},
       }
       game[:players][month.to_s] = play_count
       game
