@@ -15,7 +15,7 @@ class Bgg
     return false unless game[:location] == "College"
     return false if game[:shelf] == "Archives"
     return false if game[:rank].to_i < 1
-    # return false if game[:player_count].to_i < 1
+    return false if game[:player_count].to_i < 1
 
     true
   end
@@ -23,7 +23,7 @@ class Bgg
   def run
     @games = snake
 
-    # @games = @games.merge(top_played, &method(:merge_hashes))
+    @games = @games.merge(top_played, &method(:merge_hashes))
     @games = @games.merge(top_ranked, &method(:merge_hashes))
 
     @games = @games.values
