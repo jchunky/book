@@ -15,7 +15,7 @@ class Bgg
     return false unless game[:location] == "College"
     return false if game[:shelf] == "Archives"
     return false if game[:rank].to_i < 1
-    # return false if game[:player_count].to_i < 1
+    return false if game[:player_count].to_i < 1
 
     true
   end
