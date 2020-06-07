@@ -15,5 +15,5 @@ gem "test-unit"
 
 # minitest
 gem "minitest-reporters"
-# require 'minitest/reporters'
+# require "minitest/reporters"
 # Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
