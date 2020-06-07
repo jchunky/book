@@ -1,14 +1,19 @@
 source "https://rubygems.org"
 
+# production
 gem "activesupport"
-gem "guard"
-gem "minitest"
 gem "nokogiri"
+
+# development
+gem "guard"
 gem "rake"
+
+# test
+gem "minitest"
 gem "rspec"
-gem "rubocop"
 gem "test-unit"
 
+# minitest
 gem "minitest-reporters"
 # require 'minitest/reporters'
 # Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
