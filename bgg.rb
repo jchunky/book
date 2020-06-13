@@ -4,7 +4,7 @@ require "json"
 require "net/http"
 require "nokogiri"
 require "uri"
-Dir["lib/*.rb"].each { |f| require_relative f.sub(Dir.pwd, ".") }
+Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   NUMBER_OF_MONTHS = 12
