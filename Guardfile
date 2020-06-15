@@ -21,8 +21,8 @@ watch(/.*\.rb/) do |match|
   print_line("=")
   path = match[0]
   puts "Processing file: #{path}..."
-  system "rubocop --auto-correct #{path}"
-  print_line("-")
+  # system "rubocop --auto-correct #{path}"
+  # print_line("-")
   system "ruby *_test.rb"
   print_line("-")
 end
