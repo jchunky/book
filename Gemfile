@@ -7,6 +7,7 @@ gem "nokogiri"
 # development
 gem "guard"
 gem "rake"
+gem "rubocop"
 
 # test
 gem "minitest"
