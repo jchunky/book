@@ -43,7 +43,7 @@
       low_players = game[:player_count].to_i < 300
       low_rating = game[:rating].to_f < 7.5
       low_voters = game[:voters].to_i < 3000
-      low_game = low_players || low_rating || low_voters
+      low_game = low_players
     %>
     <tr>
       <td class="<%= "low" if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
