@@ -1,5 +1,4 @@
 class TopPlayed
-  NUMBER_OF_MONTHS = 12
   NUMBER_OF_YEARS = 12
 
   def games
@@ -18,15 +17,6 @@ class TopPlayed
       .tap { |games| add_player_count(games) }
   end
 
-
-  def months_data
-    first = Date.parse("2005-01-01")
-    last = last_month
-    (first..last)
-      .select { |d| d.day == 1 }
-      .last(NUMBER_OF_MONTHS)
-  end
-
   def years_data
     first = Date.parse("2005-01-01")
     last = last_year
@@ -34,10 +24,6 @@ class TopPlayed
     (first..last)
       .select { |d| d.day == 1  && d.month == 1}
       .last(NUMBER_OF_YEARS)
-  end
-
-  def url_for_month_and_page(month, page)
-    "https://boardgamegeek.com/plays/bygame/start/#{month.beginning_of_month}/end/#{month.end_of_month}/page/#{page}?sortby=distinctusers"
   end
 
   def url_for_year_and_page(year, page)
@@ -68,10 +54,6 @@ class TopPlayed
     games.each do |game|
       game[:player_count] = game[:players].to_h[last_year.to_s].to_i
     end
-  end
-
-  def last_month
-    @last_month ||= (Date.today - 1.month).beginning_of_month
   end
 
   def last_year
