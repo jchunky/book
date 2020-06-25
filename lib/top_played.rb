@@ -19,7 +19,7 @@ class TopPlayed
 
   def years_data
     first = Date.parse("2005-01-01")
-    last = last_year
+    last = self.class.last_year
 
     (first..last)
       .select { |d| d.day == 1  && d.month == 1}
@@ -58,11 +58,11 @@ class TopPlayed
 
   def add_player_count(games)
     games.each do |game|
-      game[:player_count] = game[:players].to_h[last_year.to_s].to_i
+      game[:player_count] = game[:players].to_h[self.class.last_year.to_s].to_i
     end
   end
 
-  def last_year
-    @last_year ||= (Date.today - 1.year).beginning_of_year
+  def self.last_year
+    (Date.today - 1.year).beginning_of_year
   end
 end

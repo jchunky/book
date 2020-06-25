@@ -10,7 +10,9 @@ class Bgg
   NUMBER_OF_YEARS = 12
 
   def display_game?(game)
-    return false if game[:year].to_i >= 2015
+    upper_year = TopPlayed.last_year.year - 5
+
+    return false if game[:year].to_i > upper_year
     return false if game[:rank].to_i < 1
     return false if game[:player_count].to_i < 1
 
