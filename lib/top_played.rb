@@ -27,7 +27,13 @@ class TopPlayed
   end
 
   def url_for_year_and_page(year, page)
-    "https://boardgamegeek.com/plays/bygame/start/#{year.beginning_of_year}/end/#{year.end_of_year - 1.day}/page/#{page}?sortby=distinctusers"
+    start_date = year.beginning_of_year
+    end_date = year.end_of_year
+
+    # HACK: '2019-01-01 to 2019-12-31' fails for some reason
+    end_date -= 1.day if end_date.year == 2019
+
+    "https://boardgamegeek.com/plays/bygame/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers"
   end
 
   def games_for_doc(month, doc)
