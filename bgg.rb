@@ -8,14 +8,16 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   NUMBER_OF_MONTHS = 12
+  NUMBER_OF_YEARS = 12
 
   def display_game?(game)
-    return true if game[:ts_added].to_s > "2020-03-23"
-    return false unless game[:ts_added]
-    return false unless game[:location] == "College"
-    return false if game[:shelf] == "Archives"
+    # return true if game[:ts_added].to_s > "2020-03-23"
+    # return false unless game[:ts_added]
+    # return false unless game[:location] == "College"
+    # return false if game[:shelf] == "Archives"
+    return false if game[:year].to_i >= 2015
     return false if game[:rank].to_i < 1
-    return false if game[:player_count].to_i < 300
+    return false if game[:player_count].to_i < 1
 
     true
   end
@@ -31,7 +33,7 @@ class Bgg
       .sort_by { |g| -g[:player_count].to_i }
 
     @max_player_count = @games.map { |g| g[:players].to_h.values.max || 0 }.max
-    @months = months_display
+    @months = years_display
 
     write_output
   end
@@ -52,6 +54,12 @@ class Bgg
     first = (Date.today - NUMBER_OF_MONTHS.months).beginning_of_month
     last = Date.today - 1.month
     (first..last).select { |d| d.day == 1 }
+  end
+
+  def years_display
+    first = (Date.today - NUMBER_OF_YEARS.years).beginning_of_year
+    last = Date.today - 1.year
+    (first..last).select { |d| d.day == 1 && d.month == 1 }
   end
 
   def write_output
