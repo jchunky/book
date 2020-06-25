@@ -14,6 +14,7 @@ class Bgg
 
     return false if game[:year].to_i > upper_year
     return false if game[:rank].to_i < 1
+    # return false if game[:rank].to_i > 300
     return false if game[:player_count].to_i < 1
 
     true
