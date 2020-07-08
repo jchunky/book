@@ -28,7 +28,8 @@ class TopPlayed
 
   def url_for_year_and_page(year, page)
     start_date = year.beginning_of_year
-    end_date = year.end_of_year
+    end_date = year.end_of_year - 1.day
+
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
 
