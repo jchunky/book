@@ -1,5 +1,5 @@
 class TopPlayed
-  NUMBER_OF_YEARS = 12
+  NUMBER_OF_YEARS = 15
 
   def games
     years_data.product((1..1).to_a)
