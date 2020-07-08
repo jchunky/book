@@ -10,7 +10,7 @@ class Bgg
   NUMBER_OF_YEARS = 15
 
   def display_game?(game)
-    return false if game[:player_count].to_i < 3978
+    return false if game[:player_count].to_i < 1
     return false if game[:voters].to_i < 21720
 
     true
