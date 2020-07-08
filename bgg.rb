@@ -7,9 +7,14 @@ require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
-  NUMBER_OF_YEARS = 15
+  NUMBER_OF_YEARS = TopPlayed.years_data.size
 
   def display_game?(game)
+    upper_year = TopPlayed.last_year.year - 5
+
+    return false if game[:year].to_i > upper_year
+    return false if game[:rank].to_i < 1
+    # return false if game[:rank].to_i > 300
     return false if game[:player_count].to_i < 1
     return false if game[:voters].to_i < 21720
 

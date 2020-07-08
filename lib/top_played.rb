@@ -1,8 +1,6 @@
 class TopPlayed
-  NUMBER_OF_YEARS = 15
-
   def games
-    years_data.product((1..1).to_a)
+    self.class.years_data.product((1..1).to_a)
       .lazy
       .map { |month, page| [month, url_for_year_and_page(month, page)] }
       .map { |month, url| [month, Utils.read_url(url)] }
@@ -15,15 +13,6 @@ class TopPlayed
       end
       .values
       .tap { |games| add_player_count(games) }
-  end
-
-  def years_data
-    first = Date.parse("2005-01-01")
-    last = self.class.last_year
-
-    (first..last)
-      .select { |d| d.day == 1  && d.month == 1}
-      .last(NUMBER_OF_YEARS)
   end
 
   def url_for_year_and_page(year, page)
@@ -57,6 +46,14 @@ class TopPlayed
     games.each do |game|
       game[:player_count] = game[:players].to_h[self.class.last_year.to_s].to_i
     end
+  end
+
+  def self.years_data
+    first = Date.parse("2005-01-01")
+    last = last_year
+
+    (first..last)
+      .select { |d| d.day == 1  && d.month == 1 }
   end
 
   def self.last_year
