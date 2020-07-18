@@ -1,6 +1,6 @@
 class TopPlayed
   def games
-    self.class.years_data.product((1..1).to_a)
+    self.class.years_data.product((1..10).to_a)
       .lazy
       .map { |month, page| [month, url_for_year_and_page(month, page)] }
       .map { |month, url| [month, Utils.read_url(url)] }
