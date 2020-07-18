@@ -8,6 +8,7 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   NUMBER_OF_YEARS = TopPlayed.years_data.size
+  THRESHOLD = 100
 
   def display_game?(game)
     upper_year = TopPlayed.last_year.year - 5
@@ -16,21 +17,23 @@ class Bgg
     return false if game[:player_count].to_i < 1
 
     # return false unless game[:ts_added]
-    # return false if game[:rank].to_i > 300
     return false if game[:year].to_i > upper_year
-    return false if game[:player_count] < 3972
-    return false if game[:voters].to_i < 21720
+    return false if game[:player_count].to_i < player_count_threshold
+    return false if game[:voters].to_i < voter_threshold
 
     true
   end
 
+  def player_count_threshold
+    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(THRESHOLD).last
+  end
+
+  def voter_threshold
+    @player_count_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(THRESHOLD).last
+  end
+
   def run
-    @games = snake
-
-    @games = @games.merge(top_played, &method(:merge_hashes))
-    @games = @games.merge(top_ranked, &method(:merge_hashes))
-
-    @games = @games.values
+    @games = raw_games
       .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
 
@@ -38,6 +41,13 @@ class Bgg
     @months = years_display
 
     write_output
+  end
+
+  def raw_games
+    @raw_games ||= snake
+      .merge(top_played, &method(:merge_hashes))
+      .merge(top_ranked, &method(:merge_hashes))
+      .values
   end
 
   def snake
