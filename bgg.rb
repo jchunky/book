@@ -8,7 +8,8 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   NUMBER_OF_YEARS = TopPlayed.years_data.size
-  THRESHOLD = 100
+  PLAYER_COUNT_THRESHOLD = 100
+  VOTERS_THRESHOLD = 100
 
   def display_game?(game)
     upper_year = TopPlayed.last_year.year - 5
@@ -25,11 +26,11 @@ class Bgg
   end
 
   def player_count_threshold
-    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(THRESHOLD).last
+    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
   end
 
   def voter_threshold
-    @player_count_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(THRESHOLD).last
+    @voter_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
   end
 
   def run
