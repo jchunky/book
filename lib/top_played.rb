@@ -32,7 +32,6 @@ class TopPlayed
       game = {
         href: anchor[0]["href"],
         name: name,
-        key: Utils.generate_key(name),
         players: {},
       }
       game[:players][month.to_s] = play_count

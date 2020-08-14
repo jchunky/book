@@ -54,11 +54,11 @@ class Bgg
   end
 
   def top_played
-    @top_played ||= TopPlayed.new.games.map { |g| [g[:key], g] }.to_h
+    @top_played ||= TopPlayed.new.games.map { |g| [g[:name], g] }.to_h
   end
 
   def top_ranked
-    @top_ranked ||= TopRanked.new.games.map { |g| [g[:key], g] }.to_h
+    @top_ranked ||= TopRanked.new.games.map { |g| [g[:name], g] }.to_h
   end
 
   def years_display

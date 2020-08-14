@@ -7,7 +7,7 @@ class TopRanked
       .map { |file| Nokogiri::HTML(file) }
       .flat_map(&method(:games_for_doc))
       .force
-      .uniq { |g| g[:key] }
+      .uniq { |g| g[:name] }
   end
 
   def url_for_page(page)
@@ -25,7 +25,6 @@ class TopRanked
         rank: (rank.css("a")[0]["name"] rescue nil),
         rating: rating.content,
         voters: voters.content,
-        key: Utils.generate_key(name),
         year: (title.css("span")[0].content[1..-2] rescue nil),
       }
     end
