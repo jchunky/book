@@ -8,16 +8,15 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   NUMBER_OF_YEARS = TopPlayed.years_data.size
+  YEARS_OLD = 6
   PLAYER_COUNT_THRESHOLD = 100
-  VOTERS_THRESHOLD = 100
+  VOTERS_THRESHOLD = 1000
 
   def display_game?(game)
-    upper_year = TopPlayed.last_year.year - 5
-
     return false if game[:rank].to_i < 1
     return false if game[:player_count].to_i < 1
 
-    return false if game[:year].to_i > upper_year
+    return false if game[:year].to_i > TopPlayed.last_year.year - YEARS_OLD
     return false if game[:player_count].to_i < player_count_threshold
     return false if game[:voters].to_i < voter_threshold
 
