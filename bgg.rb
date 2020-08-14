@@ -12,6 +12,8 @@ class Bgg
   VOTERS_THRESHOLD = 100
 
   def display_game?(game)
+    return true if game[:ts_added].to_s > "2020-03-08"
+
     upper_year = TopPlayed.last_year.year - 5
 
     return false if game[:rank].to_i < 1
