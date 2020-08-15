@@ -28,7 +28,7 @@
     <th>Rating</th>
     <th>Voters</th>
     <% @months.each do |month| %>
-      <th class="rank"><div><span><%= month.strftime("%m/%y") %></span></div></th>
+      <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
     <% end %>
   </tr>
   <% @games.each do |game| %>
