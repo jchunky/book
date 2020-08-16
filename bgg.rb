@@ -39,19 +39,21 @@ class Bgg
 
     @max_player_count = @games.map { |g| g[:players].to_h.values.max || 0 }.max
     @months = years_display
+    @bgg = self
 
     write_output
   end
 
   def add_player_rank(g)
-    g[:player_rank] = player_rank(g)
+    g[:player_rank] = player_rank(g[:player_count])
     g
   end
 
-  def player_rank(g)
+  def player_rank(player_count)
     i = 1
     while true
-      return i if g[:player_count].to_i <= player_counts[(player_counts.size / 6.to_f * i).round - 1]
+      return 6 if i == 6
+      return i if player_count.to_i <= player_counts[(player_counts.size / 6.to_f * i).round - 1]
       i += 1
     end
   end
