@@ -17,8 +17,9 @@ class Bgg
     return false if game[:player_count].to_i < 1
 
     return false if game[:year].to_i > TopPlayed.last_year.year - YEARS_OLD
-    return false if game[:player_count].to_i < player_count_threshold
-    return false if game[:voters].to_i < voter_threshold
+    return false if game[:trend] == :down
+    # return false if game[:player_count].to_i < player_count_threshold
+    # return false if game[:voters].to_i < voter_threshold
 
     true
   end
@@ -28,8 +29,8 @@ class Bgg
     @months = years_display
 
     @games = raw_games
-      .select(&method(:display_game?))
       .map(&method(:add_trend))
+      .select(&method(:display_game?))
       .sort_by { |g| -g[:player_count].to_i }
 
     write_output
