@@ -24,13 +24,13 @@ class Bgg
   end
 
   def run
+    @bgg = self
+    @months = years_display
+
     @games = raw_games
       .select(&method(:display_game?))
+      .map(&method(:add_trend))
       .sort_by { |g| -g[:player_count].to_i }
-
-    @max_player_count = @games.map { |g| g[:players].to_h.values.max || 0 }.max
-    @months = years_display
-    @bgg = self
 
     write_output
   end
@@ -44,6 +44,22 @@ class Bgg
   end
 
   private
+
+  def add_trend(g)
+    count_data = @months.map { |month| g[:players].to_h[month.to_s].to_i }
+    rank_data = count_data.map(&method(:player_rank))
+
+    g[:trend] =
+      if count_data == count_data.sort
+        :up
+      elsif rank_data.last == rank_data.max
+        :even
+      else
+        :down
+      end
+
+    g
+  end
 
   def player_count_threshold
     @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last

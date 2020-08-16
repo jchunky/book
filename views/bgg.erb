@@ -16,6 +16,9 @@
   .player-rank-4 { background-color: #ffff8e; } /* yellow */
   .player-rank-5 { background-color: #ffc68e; } /* orange */
   .player-rank-6 { background-color: #ff8e8e; } /* red */
+  .trend-down { background-color: #8e8eff; } /* blue */
+  .trend-even { background-color: #ffff8e; } /* yellow */
+  .trend-up { background-color: #ff8e8e; } /* red */
   .right-border { border-right: 1px solid #999 !important; }
   .sparkline { stroke: red; fill: rgba(255, 0, 0, .3); }
   th { position: sticky; top: 0; }
@@ -46,7 +49,9 @@
     %>
     <tr>
       <td><svg class="sparkline sparkline-<%= i %>" width="100" height="30" stroke-width="3"></svg></td>
-      <td class="<%= 'low' if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
+      <td class="trend-<%= game[:trend] %>">
+        <a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a>
+      </td>
       <td class="number"><%= game[:year] %></td>
       <td class="number <%= 'low' if low_players %> player-rank-<%= player_count_rank %>"><%= game[:player_count] %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
