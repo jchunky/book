@@ -59,7 +59,11 @@ class Bgg
   end
 
   def player_counts
-    @player_counts ||= raw_games.map { |g| g[:player_count] }.compact.reject(&:zero?).sort
+    @player_counts ||= raw_games
+      .reject { |g| g[:rank].to_i < 1 }
+      .reject { |g| g[:player_count].to_i < 1 }
+      .map { |g| g[:player_count] }
+      .sort
   end
 
   def raw_games
