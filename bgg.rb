@@ -34,7 +34,6 @@ class Bgg
   def run
     @games = raw_games
       .select(&method(:display_game?))
-      .map(&method(:add_player_rank))
       .sort_by { |g| -g[:player_count].to_i }
 
     @max_player_count = @games.map { |g| g[:players].to_h.values.max || 0 }.max
@@ -63,6 +62,29 @@ class Bgg
       .reject { |g| g[:rank].to_i < 1 }
       .reject { |g| g[:player_count].to_i < 1 }
       .map { |g| g[:player_count] }
+      .sort
+  end
+
+  def add_voter_rank(g)
+    g[:voter_rank] = voter_rank(g[:voters])
+    g
+  end
+
+  def voter_rank(voters)
+    i = 1
+    while true
+      return 6 if i == 6
+      return i if voters.to_i <= voter_counts[(voter_counts.size / 6.to_f * i).round - 1]
+      i += 1
+    end
+  end
+
+  def voter_counts
+    @voter_counts ||= raw_games
+      .reject { |g| g[:rank].to_i < 1 }
+      .reject { |g| g[:player_count].to_i < 1 }
+      .map { |g| g[:voters].to_i }
+      .reject(&:zero?)
       .sort
   end
 

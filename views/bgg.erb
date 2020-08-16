@@ -41,8 +41,8 @@
       low_rating = game[:rating].to_f < 7.5
       low_voters = game[:voters].to_i < 3000
       low_game = low_players
-      player_count = game[:player_count]
-      player_count_rank = game[:player_rank]
+      player_count_rank = @bgg.player_rank(game[:player_count])
+      voter_count_rank = @bgg.voter_rank(game[:voters])
     %>
     <tr>
       <td><svg class="sparkline sparkline-<%= i %>" width="100" height="30" stroke-width="3"></svg></td>
@@ -51,7 +51,7 @@
       <td class="number <%= 'low' if low_players %> player-rank-<%= player_count_rank %>"><%= game[:player_count] %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game[:rating] %></td>
-      <td class="number <%= 'low' if low_voters %> right-border"><%= game[:voters] %></td>
+      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
       <% @months.each do |month| %>
         <%
           player_count = game[:players].to_h[month.to_s]
