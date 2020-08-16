@@ -30,6 +30,7 @@
     <th>Rank</th>
     <th>Rating</th>
     <th>Voters</th>
+    <th>Plays / Vote</th>
     <% @months.each do |month| %>
       <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
     <% end %>
@@ -43,15 +44,17 @@
       low_game = low_players
       player_count_rank = @bgg.player_rank(game[:player_count])
       voter_count_rank = @bgg.voter_rank(game[:voters])
+      plays_per_voter_rank = @bgg.plays_per_voter_rank(game[:plays_per_voter])
     %>
     <tr>
       <td><svg class="sparkline sparkline-<%= i %>" width="100" height="30" stroke-width="3"></svg></td>
       <td class="<%= 'low' if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
       <td class="number"><%= game[:year] %></td>
-      <td class="number <%= 'low' if low_players %> player-rank-<%= player_count_rank %>"><%= game[:player_count] %></td>
+      <td class="number player-rank-<%= player_count_rank %>"><%= game[:player_count] %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game[:rating] %></td>
-      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
+      <td class="number player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
+      <td class="number player-rank-<%= plays_per_voter_rank %> right-border"><%= game[:plays_per_voter] %></td>
       <% @months.each do |month| %>
         <%
           player_count = game[:players].to_h[month.to_s]

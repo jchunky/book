@@ -26,6 +26,7 @@ class Bgg
   def run
     @games = raw_games
       .select(&method(:display_game?))
+      .map(&method(:add_plays_per_voter))
       .sort_by { |g| -g[:player_count].to_i }
 
     @max_player_count = @games.map { |g| g[:players].to_h.values.max || 0 }.max
@@ -43,7 +44,19 @@ class Bgg
     calc_rank(voter_counts, voters)
   end
 
+  def plays_per_voter_rank(plays_per_voter)
+    calc_rank(plays_per_voter_counts, plays_per_voter)
+  end
+
   private
+
+  def add_plays_per_voter(g)
+    player_count = g[:player_count].to_i
+    voter_count = g[:voters].to_i
+    plays_per_voter = ((player_count.to_f / voter_count).round(4) rescue 0)
+    g[:plays_per_voter] = plays_per_voter
+    g
+  end
 
   def player_count_threshold
     @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
@@ -61,11 +74,15 @@ class Bgg
     @voter_counts ||= all_games.map { |g| g[:voters].to_i }.reject(&:zero?).sort
   end
 
+  def plays_per_voter_counts
+    @plays_per_voter_counts ||= all_games.map { |g| g[:plays_per_voter] }.compact.reject(&:zero?).sort
+  end
+
   def calc_rank(values, value)
     i = 1
     while true
       return 6 if i == 6
-      return i if value.to_i <= values[(values.size / 6.to_f * i).round - 1]
+      return i if value.to_f <= values[(values.size / 6.to_f * i).round - 1]
       i += 1
     end
   end
