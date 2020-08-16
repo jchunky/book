@@ -38,7 +38,7 @@
       low_voters = game[:voters].to_i < 3000
       low_game = low_players
       player_count = game[:player_count]
-      player_count_rank = player_count.zero? ? 0 : (Math.log(player_count) / Math.log(@max_player_count) * 6).ceil
+      player_count_rank = game[:player_rank]
     %>
     <tr>
       <td><svg class="sparkline sparkline-<%= i %>" width="100" height="30" stroke-width="3"></svg></td>
