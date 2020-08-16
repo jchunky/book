@@ -1,5 +1,5 @@
 <script src="./views/sorttable.js"></script>
-
+<script src="./views/sparkline.js"></script>
 <style>
   #games { font-family: Arial; border-collapse: collapse; font-size: 8pt; }
   #games td, #games th { border: 1px solid #ddd; padding: 8px; }
@@ -17,10 +17,13 @@
   .player-rank-4 { background-color: #ccffcc; } /* green */
   .player-rank-5 { background-color: #ffd27f; } /* orange */
   .player-rank-6 { background-color: #ffb2b2; } /* red */
+  .sparkline { stroke: red; fill: rgba(255, 0, 0, .3); }
+  th { position: sticky; top: 0; }
 </style>
 
 <table id="games" class="sortable">
   <tr>
+    <th>Play Stats</th>
     <th>Game</th>
     <th>Year</th>
     <th>Player Count</th>
@@ -31,7 +34,7 @@
       <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
     <% end %>
   </tr>
-  <% @games.each do |game| %>
+  <% @games.each.with_index do |game, i| %>
     <%
       low_rank = game[:rank].to_i > 300
       low_players = game[:player_count].to_i < 300
@@ -40,6 +43,7 @@
       low_game = low_players
     %>
     <tr>
+      <td><svg class="sparkline sparkline-<%= i %>" width="100" height="30" stroke-width="3"></svg></td>
       <td class="<%= 'low' if low_game %>"><a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a></td>
       <td class="number"><%= game[:year] %></td>
       <td class="number <%= 'low' if low_players %>"><%= game[:player_count] %></td>
@@ -56,3 +60,13 @@
     </tr>
   <% end %>
 </table>
+
+<script>
+  <% @games.each.with_index do |game, i| %>
+    sparkline(
+      document.querySelector(".sparkline-<%= i %>"),
+      <%= @months.map { |month| game[:players].to_h[month.to_s].to_i }.to_s %>
+    );
+  <% end %>
+</script>
+
