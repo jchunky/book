@@ -23,14 +23,6 @@ class Bgg
     true
   end
 
-  def player_count_threshold
-    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
-  end
-
-  def voter_threshold
-    @voter_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
-  end
-
   def run
     @games = raw_games
       .select(&method(:display_game?))
@@ -43,49 +35,45 @@ class Bgg
     write_output
   end
 
-  def add_player_rank(g)
-    g[:player_rank] = player_rank(g[:player_count])
-    g
-  end
-
   def player_rank(player_count)
-    i = 1
-    while true
-      return 6 if i == 6
-      return i if player_count.to_i <= player_counts[(player_counts.size / 6.to_f * i).round - 1]
-      i += 1
-    end
-  end
-
-  def player_counts
-    @player_counts ||= raw_games
-      .reject { |g| g[:rank].to_i < 1 }
-      .reject { |g| g[:player_count].to_i < 1 }
-      .map { |g| g[:player_count] }
-      .sort
-  end
-
-  def add_voter_rank(g)
-    g[:voter_rank] = voter_rank(g[:voters])
-    g
+    calc_rank(player_counts, player_count)
   end
 
   def voter_rank(voters)
+    calc_rank(voter_counts, voters)
+  end
+
+  private
+
+  def player_count_threshold
+    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
+  end
+
+  def voter_threshold
+    @voter_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
+  end
+
+  def player_counts
+    @player_counts ||= all_games.map { |g| g[:player_count].to_i }.reject(&:zero?).sort
+  end
+
+  def voter_counts
+    @voter_counts ||= all_games.map { |g| g[:voters].to_i }.reject(&:zero?).sort
+  end
+
+  def calc_rank(values, value)
     i = 1
     while true
       return 6 if i == 6
-      return i if voters.to_i <= voter_counts[(voter_counts.size / 6.to_f * i).round - 1]
+      return i if value.to_i <= values[(values.size / 6.to_f * i).round - 1]
       i += 1
     end
   end
 
-  def voter_counts
-    @voter_counts ||= raw_games
+  def all_games
+    @all_games ||= raw_games
       .reject { |g| g[:rank].to_i < 1 }
       .reject { |g| g[:player_count].to_i < 1 }
-      .map { |g| g[:voters].to_i }
-      .reject(&:zero?)
-      .sort
   end
 
   def raw_games
