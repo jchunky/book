@@ -38,7 +38,7 @@ class Bgg
   end
 
   def player_rank(play_rank)
-    calc_rank(play_ranks, play_rank)
+    calc_play_rank(play_ranks, play_rank)
   end
 
   def voter_rank(voters)
@@ -52,7 +52,7 @@ class Bgg
     rank_data = count_data.map(&method(:player_rank))
 
     g[:trend] =
-      if count_data == count_data.sort
+      if rank_data.sort == rank_data
         :up
       elsif rank_data.last == rank_data.max
         :even
@@ -68,7 +68,7 @@ class Bgg
   end
 
   def play_ranks
-    @play_ranks ||= all_games.map { |g| g[:play_rank].to_i }.reject(&:zero?).sort
+    @play_ranks ||= all_games.map { |g| g[:play_rank].to_i }.reject(&:zero?).sort.reverse
   end
 
   def voter_counts
@@ -80,6 +80,15 @@ class Bgg
     while true
       return 6 if i == 6
       return i if value.to_i <= values[(values.size / 6.to_f * i).round - 1]
+      i += 1
+    end
+  end
+
+  def calc_play_rank(values, value)
+    i = 1
+    while true
+      return 6 if i == 6
+      return i if value.to_i >= values[(values.size / 6.to_f * i).round - 1]
       i += 1
     end
   end
