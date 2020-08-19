@@ -32,7 +32,7 @@ class Bgg
     @games = all_games
       .map(&method(:add_trend))
       .select(&method(:display_game?))
-      .sort_by { |g| -g[:player_count].to_i }
+      .sort_by { |g| g[:play_rank].to_i }
 
     write_output
   end

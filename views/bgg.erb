@@ -26,6 +26,7 @@
 <table id="games" class="sortable">
   <tr>
     <th>Play Stats</th>
+    <th>Play Stats</th>
     <th>Game</th>
     <th>Year</th>
     <th>Play Rank</th>
@@ -42,6 +43,7 @@
       voter_count_rank = @bgg.voter_rank(game[:voters])
     %>
     <tr>
+      <td><svg class="sparkline zparkline-<%= i %> trend-<%= game[:trend] %>" width="100" height="30" stroke-width="3"></svg></td>
       <td><svg class="sparkline sparkline-<%= i %> trend-<%= game[:trend] %>" width="100" height="30" stroke-width="3"></svg></td>
       <td class="<%= 'low' if game[:trend] == :down %>">
         <a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a>
@@ -56,10 +58,22 @@
 </table>
 
 <script>
+   <% @games.each.with_index do |game, i| %>
+     sparkline(
+       document.querySelector(".zparkline-<%= i %>"),
+       <%= @months.map { |month| game[:players].to_h[month.to_s].to_i }.to_s %>
+     );
+   <% end %>
+
   <% @games.each.with_index do |game, i| %>
     sparkline(
       document.querySelector(".sparkline-<%= i %>"),
-      <%= @months.map { |month| game[:players].to_h[month.to_s].to_i }.to_s %>
+      <%=
+        @months.map do |month|
+          play_rank = game[:play_ranks].to_h[month.to_s].to_i
+          play_rank.zero? ? 0 : (1000 - play_rank)
+        end.to_s
+      %>
     );
   <% end %>
 </script>
