@@ -7,7 +7,7 @@ require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
-  PLAYER_COUNT_THRESHOLD = 100
+  PLAY_RANK_THRESHOLD = 100
   VOTERS_THRESHOLD = 1000
   YEARS_OLD = 6
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
@@ -15,12 +15,12 @@ class Bgg
 
   def display_game?(game)
     return false if game[:rank].to_i < 1
-    return false if game[:player_count].to_i < 1
+    return false if game[:play_rank].to_i < 1
 
     # return false if game[:trend] == :down
     return false if game[:year].to_i > MAX_GAME_YEAR
-    return false if game[:player_count].to_i < player_count_threshold
-    return false if game[:voters].to_i < voter_threshold
+    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
+    # return false if game[:voters].to_i < voter_threshold
 
     true
   end
@@ -37,8 +37,8 @@ class Bgg
     write_output
   end
 
-  def player_rank(player_count)
-    calc_rank(player_counts, player_count)
+  def player_rank(play_rank)
+    calc_rank(play_ranks, play_rank)
   end
 
   def voter_rank(voters)
@@ -48,7 +48,7 @@ class Bgg
   private
 
   def add_trend(g)
-    count_data = @months.map { |month| g[:players].to_h[month.to_s].to_i }
+    count_data = @months.map { |month| g[:play_ranks].to_h[month.to_s].to_i }
     rank_data = count_data.map(&method(:player_rank))
 
     g[:trend] =
@@ -63,16 +63,12 @@ class Bgg
     g
   end
 
-  def player_count_threshold
-    @player_count_threshold ||= all_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
-  end
-
   def voter_threshold
     @voter_threshold ||= all_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
   end
 
-  def player_counts
-    @player_counts ||= all_games.map { |g| g[:player_count].to_i }.reject(&:zero?).sort
+  def play_ranks
+    @play_ranks ||= all_games.map { |g| g[:play_rank].to_i }.reject(&:zero?).sort
   end
 
   def voter_counts

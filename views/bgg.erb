@@ -28,7 +28,7 @@
     <th>Play Stats</th>
     <th>Game</th>
     <th>Year</th>
-    <th>Player Count</th>
+    <th>Play Rank</th>
     <th>Rank</th>
     <th>Rating</th>
     <th>Voters</th>
@@ -38,7 +38,7 @@
       low_rank = game[:rank].to_i > 300
       low_rating = game[:rating].to_f < 7.5
       recent_year = game[:year].to_i > Bgg::MAX_GAME_YEAR
-      player_count_rank = @bgg.player_rank(game[:player_count])
+      player_count_rank = @bgg.player_rank(game[:play_rank])
       voter_count_rank = @bgg.voter_rank(game[:voters])
     %>
     <tr>
@@ -47,7 +47,7 @@
         <a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a>
       </td>
       <td class="number <%= 'low' if recent_year %>"><%= game[:year] %></td>
-      <td class="number player-rank-<%= player_count_rank %>"><%= game[:player_count] %></td>
+      <td class="number player-rank-<%= player_count_rank %>"><%= game[:play_rank] %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game[:rating] %></td>
       <td class="number player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
