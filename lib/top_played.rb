@@ -29,7 +29,7 @@ class TopPlayed
       anchor = link.css("a")
       name = Utils.strip_accents(anchor[0].content)
       play_count = plays.css("a")[0].content.to_i
-      play_rank = (page - 1) * 100 + i - 1
+      play_rank = (page - 1) * 100 + i + 1
 
       game = {
         href: anchor[0]["href"],
