@@ -52,7 +52,7 @@ class Bgg
     rank_data = count_data.map(&method(:player_rank))
 
     g[:trend] =
-      if rank_data.sort.reverse == rank_data
+      if rank_data.sort == rank_data
         :up
       elsif rank_data.last == rank_data.max
         :even
