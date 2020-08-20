@@ -33,13 +33,19 @@
     <th>Rank</th>
     <th>Rating</th>
     <th>Voters</th>
+    <% @months.each do |month| %>
+      <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
+    <% end %>
   </tr>
   <% @games.each.with_index do |game, i| %>
     <%
       low_rank = game[:rank].to_i > 300
+      low_players = game[:player_count].to_i < 300
       low_rating = game[:rating].to_f < 7.5
       recent_year = game[:year].to_i > Bgg::MAX_GAME_YEAR
       player_count_rank = @bgg.player_rank(game[:play_rank])
+      low_voters = game[:voters].to_i < 3000
+      low_game = low_players
       voter_count_rank = @bgg.voter_rank(game[:voters])
     %>
     <tr>
@@ -52,7 +58,14 @@
       <td class="number player-rank-<%= player_count_rank %>"><%= game[:play_rank] %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game[:rating] %></td>
-      <td class="number player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
+      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
+      <% @months.each do |month| %>
+        <%
+          player_count = game[:players].to_h[month.to_s]
+          player_count_rank = @bgg.player_rank(player_count)
+        %>
+        <td class="number player-rank-<%= player_count_rank if player_count %>"><%= player_count %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>

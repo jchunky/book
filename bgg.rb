@@ -29,7 +29,7 @@ class Bgg
     @bgg = self
     @months = years_display
 
-    @games = all_games
+    @games = raw_games
       .map(&method(:add_trend))
       .select(&method(:display_game?))
       .sort_by { |g| g[:play_rank].to_i }
@@ -63,8 +63,12 @@ class Bgg
     g
   end
 
+  def player_count_threshold
+    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
+  end
+
   def voter_threshold
-    @voter_threshold ||= all_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
+    @voter_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
   end
 
   def play_ranks
@@ -94,7 +98,13 @@ class Bgg
   end
 
   def all_games
-    @all_games ||= {}
+    @all_games ||= raw_games
+      .reject { |g| g[:rank].to_i < 1 }
+      .reject { |g| g[:player_count].to_i < 1 }
+  end
+
+  def raw_games
+    @raw_games ||= {}
       .merge(top_played, &method(:merge_hashes))
       .merge(top_ranked, &method(:merge_hashes))
       .values
