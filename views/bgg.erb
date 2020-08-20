@@ -61,7 +61,7 @@
       <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
       <% @months.each do |month| %>
         <%
-          player_count = game[:players].to_h[month.to_s]
+          player_count = game[:play_ranks].to_h[month.to_s]
           player_count_rank = @bgg.player_rank(player_count)
         %>
         <td class="number player-rank-<%= player_count_rank if player_count %>"><%= player_count %></td>

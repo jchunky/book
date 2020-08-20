@@ -52,7 +52,7 @@ class Bgg
     rank_data = count_data.map(&method(:player_rank))
 
     g[:trend] =
-      if rank_data.sort == rank_data
+      if rank_data.sort.reverse == rank_data
         :up
       elsif rank_data.last == rank_data.max
         :even
@@ -91,6 +91,7 @@ class Bgg
   def calc_play_rank(values, value)
     i = 1
     while true
+      return 1 if value.to_i == 0
       return 6 if i == 6
       return i if value.to_i >= values[(values.size / 6.to_f * i).round - 1]
       i += 1
@@ -99,8 +100,6 @@ class Bgg
 
   def all_games
     @all_games ||= raw_games
-      .reject { |g| g[:rank].to_i < 1 }
-      .reject { |g| g[:player_count].to_i < 1 }
   end
 
   def raw_games
