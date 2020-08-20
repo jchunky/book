@@ -18,9 +18,9 @@ class Bgg
     return false if game[:play_rank].to_i < 1
 
     # return false if game[:trend] == :down
-    return false if game[:year].to_i > MAX_GAME_YEAR
-    return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
-    return false if game[:voters].to_i < voter_threshold
+    # return false if game[:year].to_i > MAX_GAME_YEAR
+    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
+    # return false if game[:voters].to_i < voter_threshold
 
     true
   end
