@@ -11,7 +11,6 @@ class Bgg
   VOTERS_THRESHOLD = 1000
   YEARS_OLD = 6
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
-  NUMBER_OF_YEARS = TopPlayed.years_data.size
 
   def display_game?(game)
     return false if game[:rank].to_i < 1
@@ -19,15 +18,16 @@ class Bgg
 
     # return false if game[:trend] == :down
     # return false if game[:voters].to_i < voter_threshold
-    return false if game[:year].to_i > MAX_GAME_YEAR
-    return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
+    # return false if game[:year].to_i > MAX_GAME_YEAR
+    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
+    return false unless was_in_top_100?(game)
 
     true
   end
 
   def run
     @bgg = self
-    @months = years_display
+    @months = TopPlayed.years_data
 
     @games = raw_games
       .map(&method(:add_trend))
@@ -46,6 +46,14 @@ class Bgg
   end
 
   private
+
+  def was_in_top_100?(g)
+    g[:play_ranks]
+      .to_h
+      .select { |k, v| k.to_i >= g[:year].to_i + YEARS_OLD }
+      .values
+      .any? { |v| v.to_i.between?(1, PLAY_RANK_THRESHOLD) }
+  end
 
   def add_trend(g)
     count_data = @months.map { |month| g[:play_ranks].to_h[month.to_s].to_i }
@@ -115,12 +123,6 @@ class Bgg
 
   def top_ranked
     @top_ranked ||= TopRanked.new.games.map { |g| [g[:name], g] }.to_h
-  end
-
-  def years_display
-    first = (Date.today - NUMBER_OF_YEARS.years).beginning_of_year
-    last = Date.today - 1.year
-    (first..last).select { |d| d.day == 1 && d.month == 1 }
   end
 
   def write_output

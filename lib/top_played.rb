@@ -1,4 +1,16 @@
 class TopPlayed
+  def self.years_data
+    first = Date.parse("2005-01-01")
+    last = last_year
+
+    (first..last)
+      .select { |d| d.day == 1  && d.month == 1 }
+  end
+
+  def self.last_year
+    (Date.today - 1.year).beginning_of_year
+  end
+
   def games
     self.class.years_data.product((1..10).to_a)
       .lazy
@@ -18,7 +30,8 @@ class TopPlayed
 
   def url_for_year_and_page(year, page)
     start_date = year.beginning_of_year
-    end_date = year.end_of_year - 1.day
+    end_date = year.end_of_year
+    end_date -= 1.day if year.year == 2019
 
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
@@ -50,17 +63,5 @@ class TopPlayed
       game[:player_count] = game[:players].to_h[self.class.last_year.to_s].to_i
       game[:play_rank] = game[:play_ranks].to_h[self.class.last_year.to_s].to_i
     end
-  end
-
-  def self.years_data
-    first = Date.parse("2005-01-01")
-    last = last_year
-
-    (first..last)
-      .select { |d| d.day == 1  && d.month == 1 }
-  end
-
-  def self.last_year
-    (Date.today - 1.year).beginning_of_year
   end
 end
