@@ -16,11 +16,12 @@ class Bgg
     return false if game[:rank].to_i < 1
     return false if game[:play_rank].to_i < 1
 
+    return false if game[:year].to_i > MAX_GAME_YEAR
+    return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
     # return false if game[:trend] == :down
     # return false if game[:voters].to_i < voter_threshold
-    # return false if game[:year].to_i > MAX_GAME_YEAR
-    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
-    return false unless was_in_top_100?(game)
+    # return false unless old_and_was_in_top_100?(game)
+    # return false unless old_and_was_in_top_100?(game) || recent_and_was_in_top_100?(game)
 
     true
   end
@@ -47,10 +48,18 @@ class Bgg
 
   private
 
-  def was_in_top_100?(g)
+  def old_and_was_in_top_100?(g)
     g[:play_ranks]
       .to_h
       .select { |k, v| k.to_i >= g[:year].to_i + YEARS_OLD }
+      .values
+      .any? { |v| v.to_i.between?(1, PLAY_RANK_THRESHOLD) }
+  end
+
+  def recent_and_was_in_top_100?(g)
+    g[:year].to_i > MAX_GAME_YEAR &&
+    g[:play_ranks]
+      .to_h
       .values
       .any? { |v| v.to_i.between?(1, PLAY_RANK_THRESHOLD) }
   end
@@ -69,10 +78,6 @@ class Bgg
       end
 
     g
-  end
-
-  def player_count_threshold
-    @player_count_threshold ||= raw_games.map { |g| g[:player_count].to_i }.sort.reverse.take(PLAYER_COUNT_THRESHOLD).last
   end
 
   def voter_threshold
