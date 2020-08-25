@@ -5,10 +5,8 @@ Game = Struct.new(
   :rating,
   :voters,
   :year,
-
   :players,
   :play_ranks,
-
   keyword_init: true
 ) do
   def initialize(args)
