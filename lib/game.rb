@@ -12,9 +12,16 @@ Game = Struct.new(
   keyword_init: true
 ) do
   def initialize(args)
-    super
-    self.players ||= {}
-    self.play_ranks ||= {}
+    super(
+      href: args.fetch(:href),
+      name: args.fetch(:name),
+      rank: args.fetch(:rank, 0),
+      rating: args.fetch(:rating, 0.0),
+      voters: args.fetch(:voters, 0),
+      year: args.fetch(:year, 0),
+      players: args.fetch(:players, {}),
+      play_ranks: args.fetch(:play_ranks, {})
+    )
   end
 
   def add_player_count(month, play_count, play_rank)
@@ -26,10 +33,10 @@ Game = Struct.new(
     Game.new(
       href: href,
       name: name,
-      rank: rank || other.rank,
-      rating: rating || other.rating,
-      voters: voters || other.voters,
-      year: year || other.year,
+      rank: [rank, other.rank].max,
+      rating: [rating, other.rating].max,
+      voters: [voters, other.voters].max,
+      year: [year, other.year].max,
       players: players.merge(other.players),
       play_ranks: play_ranks.merge(other.play_ranks),
     )
@@ -49,7 +56,7 @@ Game = Struct.new(
 
   def was_in_top_100_for_6_years?
     play_ranks
-      .select { |k, v| k.to_i >= year.to_i + Bgg::YEARS_OLD }
+      .select { |k, v| k.to_i >= year + Bgg::YEARS_OLD }
       .values
       .any?(&method(:top_ranked?))
   end
@@ -71,6 +78,6 @@ Game = Struct.new(
   end
 
   def top_ranked?(rank)
-    rank.to_i.between?(1, Bgg::PLAY_RANK_THRESHOLD)
+    rank.between?(1, Bgg::PLAY_RANK_THRESHOLD)
   end
 end

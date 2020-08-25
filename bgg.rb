@@ -13,15 +13,15 @@ class Bgg
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
   def display_game?(game)
-    return false if game.rank.to_i < 1
-    return false if game.play_rank.to_i < 1
+    return false if game.rank < 1
+    return false if game.play_rank < 1
 
     # return false unless game.was_in_top_100_for_6_years?
     return false unless game.was_in_top_100?
     # return false if game.recent?
-    # return false if game.play_rank.to_i > PLAY_RANK_THRESHOLD
+    # return false if game.play_rank > PLAY_RANK_THRESHOLD
     # return false if game.trend == :down
-    # return false if game.voters.to_i < voter_threshold
+    # return false if game.voters < voter_threshold
 
     true
   end

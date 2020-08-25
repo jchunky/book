@@ -22,10 +22,10 @@ class TopRanked
       Game.new(
         href: title.css("a")[0]["href"],
         name: name,
-        rank: (rank.css("a")[0]["name"] rescue nil),
+        rank: (rank.css("a")[0]["name"].to_i rescue 0),
         rating: rating.content.to_f,
         voters: voters.content.to_i,
-        year: (title.css("span")[0].content[1..-2] rescue nil),
+        year: (title.css("span")[0].content[1..-2].to_i rescue 0),
       )
     end
   end
