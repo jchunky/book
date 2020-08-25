@@ -30,6 +30,7 @@
     <th>Game</th>
     <th>Year</th>
     <th>Play Rank</th>
+    <th>Years in Top 100</th>
     <th>Rank</th>
     <th>Rating</th>
     <th>Voters</th>
@@ -56,6 +57,7 @@
       </td>
       <td class="number <%= 'low' if recent_year %>"><%= game.year %></td>
       <td class="number player-rank-<%= player_count_rank %>"><%= game.play_rank %></td>
+      <td class="number %>"><%= game.play_ranks.values.count { |v| v.between?(1, 100) } %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game.rank %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game.rating %></td>
       <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game.voters %></td>
