@@ -40,23 +40,26 @@ Game = Struct.new(
     )
   end
 
-  def player_count
-    players[TopPlayed.last_year.to_s].to_i
+  def trend
+    if top_ranked?(play_rank)
+      :up
+    elsif was_in_top_100_for_awhile?
+      :even
+    else
+      :down
+    end
   end
 
   def play_rank
     play_ranks[TopPlayed.last_year.to_s].to_i
   end
 
-  def recent?
-    year.to_i > Bgg::MAX_GAME_YEAR
+  def player_count
+    players[TopPlayed.last_year.to_s].to_i
   end
 
-  def was_in_top_100_for_6_years?
-    play_ranks
-      .select { |k, v| k.to_i >= year + Bgg::YEARS_OLD }
-      .values
-      .any?(&method(:top_ranked?))
+  def recent?
+    year.to_i > Bgg::MAX_GAME_YEAR
   end
 
   def was_in_top_100?
@@ -65,14 +68,11 @@ Game = Struct.new(
       .any?(&method(:top_ranked?))
   end
 
-  def trend
-    if top_ranked?(play_rank)
-      :up
-    elsif was_in_top_100_for_6_years?
-      :even
-    else
-      :down
-    end
+  def was_in_top_100_for_awhile?
+    play_ranks
+      .select { |k, v| k.to_i >= year + Bgg::YEARS_OLD }
+      .values
+      .any?(&method(:top_ranked?))
   end
 
   def top_ranked?(rank)
