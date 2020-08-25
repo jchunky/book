@@ -16,9 +16,9 @@ class Bgg
     return false if game[:rank].to_i < 1
     return false if game[:play_rank].to_i < 1
 
-    return false unless old_and_was_in_top_100?(game)
-    # return false unless old_and_was_in_top_100?(game) || recent_and_was_in_top_100?(game)
-    # return false if game[:year].to_i > MAX_GAME_YEAR
+    return was_in_top_100?(game)
+    # return false unless was_in_top_100_for_6_years?(game)
+    # return false if recent?(game[:year])
     # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
     # return false if game[:trend] == :down
     # return false if game[:voters].to_i < voter_threshold
@@ -48,33 +48,40 @@ class Bgg
 
   private
 
-  def old_and_was_in_top_100?(g)
+  def recent?(g)
+    g[:year].to_i > MAX_GAME_YEAR
+  end
+
+  def was_in_top_100_for_6_years?(g)
     g[:play_ranks]
       .to_h
       .select { |k, v| k.to_i >= g[:year].to_i + YEARS_OLD }
       .values
-      .any? { |v| v.to_i.between?(1, PLAY_RANK_THRESHOLD) }
+      .any?(&method(:top_ranked?))
   end
 
-  def recent_and_was_in_top_100?(g)
-    g[:year].to_i > MAX_GAME_YEAR &&
+  def was_in_top_100?(g)
     g[:play_ranks]
       .to_h
       .values
-      .any? { |v| v.to_i.between?(1, PLAY_RANK_THRESHOLD) }
+      .any?(&method(:top_ranked?))
   end
 
   def add_trend(g)
     g[:trend] =
-      if g[:play_rank].to_i.between?(1, 100)
+      if top_ranked?(g[:play_rank])
         :up
-      elsif old_and_was_in_top_100?(g)
+      elsif was_in_top_100_for_6_years?(g)
         :even
       else
         :down
       end
 
     g
+  end
+
+  def top_ranked?(rank)
+    rank.to_i.between?(1, PLAY_RANK_THRESHOLD)
   end
 
   def voter_threshold
