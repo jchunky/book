@@ -16,12 +16,12 @@ class Bgg
     return false if game[:rank].to_i < 1
     return false if game[:play_rank].to_i < 1
 
-    return false if game[:year].to_i > MAX_GAME_YEAR
-    return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
+    return false unless old_and_was_in_top_100?(game)
+    # return false unless old_and_was_in_top_100?(game) || recent_and_was_in_top_100?(game)
+    # return false if game[:year].to_i > MAX_GAME_YEAR
+    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
     # return false if game[:trend] == :down
     # return false if game[:voters].to_i < voter_threshold
-    # return false unless old_and_was_in_top_100?(game)
-    # return false unless old_and_was_in_top_100?(game) || recent_and_was_in_top_100?(game)
 
     true
   end
@@ -65,13 +65,10 @@ class Bgg
   end
 
   def add_trend(g)
-    count_data = @months.map { |month| g[:play_ranks].to_h[month.to_s].to_i }
-    rank_data = count_data.map(&method(:player_rank))
-
     g[:trend] =
-      if rank_data.sort == rank_data
+      if g[:play_rank].to_i.between?(1, 100)
         :up
-      elsif rank_data.last == rank_data.max
+      elsif old_and_was_in_top_100?(g)
         :even
       else
         :down
