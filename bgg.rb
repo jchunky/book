@@ -13,15 +13,15 @@ class Bgg
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
   def display_game?(game)
-    return false if game[:rank].to_i < 1
-    return false if game[:play_rank].to_i < 1
+    return false if game.rank.to_i < 1
+    return false if game.play_rank.to_i < 1
 
-    return was_in_top_100?(game)
-    # return false unless was_in_top_100_for_6_years?(game)
-    # return false if recent?(game[:year])
-    # return false if game[:play_rank].to_i > PLAY_RANK_THRESHOLD
-    # return false if game[:trend] == :down
-    # return false if game[:voters].to_i < voter_threshold
+    # return false unless game.was_in_top_100_for_6_years?
+    return false unless game.was_in_top_100?
+    # return false if game.recent?
+    # return false if game.play_rank.to_i > PLAY_RANK_THRESHOLD
+    # return false if game.trend == :down
+    # return false if game.voters.to_i < voter_threshold
 
     true
   end
@@ -31,9 +31,8 @@ class Bgg
     @months = TopPlayed.years_data
 
     @games = raw_games
-      .map(&method(:add_trend))
       .select(&method(:display_game?))
-      .sort_by { |g| g[:play_rank].to_i }
+      .sort_by { |g| g.play_rank.to_i }
 
     write_output
   end
@@ -48,52 +47,20 @@ class Bgg
 
   private
 
-  def recent?(g)
-    g[:year].to_i > MAX_GAME_YEAR
-  end
-
-  def was_in_top_100_for_6_years?(g)
-    g[:play_ranks]
-      .to_h
-      .select { |k, v| k.to_i >= g[:year].to_i + YEARS_OLD }
-      .values
-      .any?(&method(:top_ranked?))
-  end
-
-  def was_in_top_100?(g)
-    g[:play_ranks]
-      .to_h
-      .values
-      .any?(&method(:top_ranked?))
-  end
-
-  def add_trend(g)
-    g[:trend] =
-      if top_ranked?(g[:play_rank])
-        :up
-      elsif was_in_top_100_for_6_years?(g)
-        :even
-      else
-        :down
-      end
-
-    g
-  end
-
   def top_ranked?(rank)
     rank.to_i.between?(1, PLAY_RANK_THRESHOLD)
   end
 
   def voter_threshold
-    @voter_threshold ||= raw_games.map { |g| g[:voters].to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
+    @voter_threshold ||= raw_games.map { |g| g.voters.to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
   end
 
   def play_ranks
-    @play_ranks ||= all_games.map { |g| g[:play_rank].to_i }.reject(&:zero?).sort.reverse
+    @play_ranks ||= all_games.map { |g| g.play_rank.to_i }.reject(&:zero?).sort.reverse
   end
 
   def voter_counts
-    @voter_counts ||= all_games.map { |g| g[:voters].to_i }.reject(&:zero?).sort
+    @voter_counts ||= all_games.map { |g| g.voters.to_i }.reject(&:zero?).sort
   end
 
   def calc_rank(values, value)
@@ -127,11 +94,11 @@ class Bgg
   end
 
   def top_played
-    @top_played ||= TopPlayed.new.games.map { |g| [g[:name], g] }.to_h
+    @top_played ||= TopPlayed.new.games.map { |g| [g.name, g] }.to_h
   end
 
   def top_ranked
-    @top_ranked ||= TopRanked.new.games.map { |g| [g[:name], g] }.to_h
+    @top_ranked ||= TopRanked.new.games.map { |g| [g.name, g] }.to_h
   end
 
   def write_output

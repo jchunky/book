@@ -20,12 +20,10 @@ class TopPlayed
       .flat_map { |month, page, doc| games_for_doc(month, page, doc) }
       .force
       .each_with_object({}) do |game, memo|
-        memo[game[:name]] ||= game
-        memo[game[:name]][:players] = game[:players].merge(memo[game[:name]][:players])
-        memo[game[:name]][:play_ranks] = game[:play_ranks].merge(memo[game[:name]][:play_ranks])
+        memo[game.name] ||= game
+        memo[game.name] = memo[game.name].merge(game)
       end
       .values
-      .tap { |games| add_player_count(games) }
   end
 
   def url_for_year_and_page(year, page)
@@ -44,24 +42,14 @@ class TopPlayed
       play_count = plays.css("a")[0].content.to_i
       play_rank = (page - 1) * 100 + i + 1
 
-      game = {
+      game = Game.new(
         href: anchor[0]["href"],
         name: name,
-        players: {},
-        play_ranks: {},
-      }
-      game[:players][month.to_s] = play_count
-      game[:play_ranks][month.to_s] = play_rank
+      )
+      game.add_player_count(month, play_count, play_rank)
       game
     end
   rescue
     []
-  end
-
-  def add_player_count(games)
-    games.each do |game|
-      game[:player_count] = game[:players].to_h[self.class.last_year.to_s].to_i
-      game[:play_rank] = game[:play_ranks].to_h[self.class.last_year.to_s].to_i
-    end
   end
 end

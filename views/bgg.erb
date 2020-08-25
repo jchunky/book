@@ -39,29 +39,29 @@
   </tr>
   <% @games.each.with_index do |game, i| %>
     <%
-      low_rank = game[:rank].to_i > 300
-      low_players = game[:player_count].to_i < 300
-      low_rating = game[:rating].to_f < 7.5
-      recent_year = game[:year].to_i > Bgg::MAX_GAME_YEAR
-      player_count_rank = @bgg.player_rank(game[:play_rank])
-      low_voters = game[:voters].to_i < 3000
+      low_rank = game.rank.to_i > 300
+      low_players = game.player_count.to_i < 300
+      low_rating = game.rating.to_f < 7.5
+      recent_year = game.year.to_i > Bgg::MAX_GAME_YEAR
+      player_count_rank = @bgg.player_rank(game.play_rank)
+      low_voters = game.voters.to_i < 3000
       low_game = low_players
-      voter_count_rank = @bgg.voter_rank(game[:voters])
+      voter_count_rank = @bgg.voter_rank(game.voters)
     %>
     <tr>
-      <td><svg class="sparkline sparkline-player-count-<%= i %> trend-<%= game[:trend] %>" width="100" height="30" stroke-width="3"></svg></td>
-      <td><svg class="sparkline sparkline-play-rank-<%= i %> trend-<%= game[:trend] %>" width="100" height="30" stroke-width="3"></svg></td>
-      <td class="<%= 'low' if game[:trend] == :down %>">
-        <a href="https://boardgamegeek.com<%= game[:href] %>"><%= game[:name] %></a>
+      <td><svg class="sparkline sparkline-player-count-<%= i %> trend-<%= game.trend %>" width="100" height="30" stroke-width="3"></svg></td>
+      <td><svg class="sparkline sparkline-play-rank-<%= i %> trend-<%= game.trend %>" width="100" height="30" stroke-width="3"></svg></td>
+      <td class="<%= 'low' if game.trend == :down %>">
+        <a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a>
       </td>
-      <td class="number <%= 'low' if recent_year %>"><%= game[:year] %></td>
-      <td class="number player-rank-<%= player_count_rank %>"><%= game[:play_rank] %></td>
-      <td class="number <%= 'low' if low_rank %>"><%= game[:rank] %></td>
-      <td class="number <%= 'low' if low_rating %>"><%= game[:rating] %></td>
-      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game[:voters] %></td>
+      <td class="number <%= 'low' if recent_year %>"><%= game.year %></td>
+      <td class="number player-rank-<%= player_count_rank %>"><%= game.play_rank %></td>
+      <td class="number <%= 'low' if low_rank %>"><%= game.rank %></td>
+      <td class="number <%= 'low' if low_rating %>"><%= game.rating %></td>
+      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game.voters %></td>
       <% @months.each do |month| %>
         <%
-          player_count = game[:play_ranks].to_h[month.to_s]
+          player_count = game.play_ranks.to_h[month.to_s]
           player_count_rank = @bgg.player_rank(player_count)
         %>
         <td class="number player-rank-<%= player_count_rank if player_count %>"><%= player_count %></td>
@@ -74,7 +74,7 @@
    <% @games.each.with_index do |game, i| %>
      sparkline(
        document.querySelector(".sparkline-player-count-<%= i %>"),
-       <%= @months.map { |month| game[:players].to_h[month.to_s].to_i }.to_s %>
+       <%= @months.map { |month| game.players.to_h[month.to_s].to_i }.to_s %>
      );
    <% end %>
 
@@ -83,7 +83,7 @@
       document.querySelector(".sparkline-play-rank-<%= i %>"),
       <%=
         @months.map do |month|
-          play_rank = game[:play_ranks].to_h[month.to_s].to_i
+          play_rank = game.play_ranks.to_h[month.to_s].to_i
           play_rank.zero? ? 0 : (1000 - play_rank)
         end.to_s
       %>
