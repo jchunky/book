@@ -32,7 +32,7 @@ class Bgg
 
     @games = raw_games
       .select(&method(:display_game?))
-      .sort_by { |g| g.play_rank.to_i }
+      .sort_by { |g| [-g.year, g.play_rank] }
 
     write_output
   end
@@ -47,20 +47,16 @@ class Bgg
 
   private
 
-  def top_ranked?(rank)
-    rank.to_i.between?(1, PLAY_RANK_THRESHOLD)
-  end
-
   def voter_threshold
-    @voter_threshold ||= raw_games.map { |g| g.voters.to_i }.sort.reverse.take(VOTERS_THRESHOLD).last
+    @voter_threshold ||= raw_games.map { |g| g.voters }.sort.reverse.take(VOTERS_THRESHOLD).last
   end
 
   def play_ranks
-    @play_ranks ||= all_games.map { |g| g.play_rank.to_i }.reject(&:zero?).sort.reverse
+    @play_ranks ||= all_games.map { |g| g.play_rank }.reject(&:zero?).sort.reverse
   end
 
   def voter_counts
-    @voter_counts ||= all_games.map { |g| g.voters.to_i }.reject(&:zero?).sort
+    @voter_counts ||= all_games.map { |g| g.voters }.reject(&:zero?).sort
   end
 
   def calc_rank(values, value)
