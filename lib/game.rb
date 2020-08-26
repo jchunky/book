@@ -21,8 +21,8 @@ Game = Struct.new(
   def initialize(args)
     super(
       key: args.fetch(:key),
-      href: args.fetch(:href, ""),
       name: args.fetch(:name),
+      href: args.fetch(:href, ""),
       rank: args.fetch(:rank, 0),
       rating: args.fetch(:rating, 0.0),
       voters: args.fetch(:voters, 0),
@@ -43,8 +43,8 @@ Game = Struct.new(
   def merge(other)
     Game.new(
       key: key,
-      href: href,
       name: name,
+      href: merge_attr(other, :href),
       rank: merge_attr(other, :rank),
       rating: merge_attr(other, :rating),
       voters: merge_attr(other, :voters),
