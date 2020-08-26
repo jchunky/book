@@ -45,21 +45,28 @@ Game = Struct.new(
       key: key,
       href: href,
       name: name,
-      rank: [rank, other.rank].max,
-      rating: [rating, other.rating].max,
-      voters: [voters, other.voters].max,
-      year: [year, other.year].max,
-      players: players.merge(other.players),
-      play_ranks: play_ranks.merge(other.play_ranks),
-      location: (location.present? ? location : other.location),
-      shelf: (shelf.present? ? shelf : other.shelf),
-      category: (category.present? ? category : other.category),
-      ts_added: (ts_added.present? ? ts_added : other.ts_added),
-      rules_url: (rules_url.present? ? rules_url : other.rules_url),
-      difficulty: (difficulty.present? ? difficulty : other.difficulty),
-      sell_product: (sell_product.present? ? sell_product : other.sell_product),
-      employees_teachable: (employees_teachable.present? ? employees_teachable : other.employees_teachable),
+      rank: merge_attr(other, :rank),
+      rating: merge_attr(other, :rating),
+      voters: merge_attr(other, :voters),
+      year: merge_attr(other, :year),
+      players: merge_attr(other, :players),
+      play_ranks: merge_attr(other, :play_ranks),
+      location: merge_attr(other, :location),
+      shelf: merge_attr(other, :shelf),
+      category: merge_attr(other, :category),
+      ts_added: merge_attr(other, :ts_added),
+      rules_url: merge_attr(other, :rules_url),
+      difficulty: merge_attr(other, :difficulty),
+      sell_product: merge_attr(other, :sell_product),
+      employees_teachable: merge_attr(other, :employees_teachable)
     )
+  end
+
+  def merge_attr(other, attr)
+    value = send(attr)
+    return value.merge(other.send(attr)) if value.is_a?(Hash)
+
+    value.present? ? value : other.send(attr)
   end
 
   def add_player_count(month, play_count, play_rank)
