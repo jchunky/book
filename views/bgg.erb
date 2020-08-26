@@ -34,6 +34,12 @@
     <th>Rank</th>
     <th>Rating</th>
     <th>Voters</th>
+    <th>Location</th>
+    <th>Shelf</th>
+    <th>Category</th>
+    <th>Date Added</th>
+    <th>Rules</th>
+    <th>Difficulty</th>
     <% @months.each do |month| %>
       <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
     <% end %>
@@ -61,6 +67,16 @@
       <td class="number <%= 'low' if low_rank %>"><%= game.rank %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game.rating %></td>
       <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game.voters %></td>
+      <td><%= game.location %></td>
+      <td><%= game.shelf %></td>
+      <td><%= game.category %></td>
+      <td><%= game.ts_added %></td>
+      <td>
+        <% if game.rules_url.present? %>
+          <a href="<%= game.rules_url %>">Rules</a>
+        <% end %>
+      </td>
+      <td class="number right-border"><%= game.difficulty %></td>
       <% @months.each do |month| %>
         <%
           player_count = game.play_ranks.to_h[month.to_s]
