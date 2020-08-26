@@ -64,7 +64,7 @@ Game = Struct.new(
 
   def merge_attr(other, attr)
     value = send(attr)
-    return value.merge(other.send(attr)) if value.is_a?(Hash)
+    return value.merge(other.send(attr)) if value.respond_to?(:merge)
 
     value.present? ? value : other.send(attr)
   end
