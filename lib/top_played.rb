@@ -45,6 +45,7 @@ class TopPlayed
       game = Game.new(
         href: anchor[0]["href"],
         name: name,
+        key: Utils.generate_key(name)
       )
       game.add_player_count(month, play_count, play_rank)
       game
