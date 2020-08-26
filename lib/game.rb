@@ -63,16 +63,15 @@ Game = Struct.new(
   end
 
   def was_in_top_100?
-    play_ranks
-      .values
-      .any?(&method(:top_ranked?))
+    years_in_top_100.positive?
   end
 
   def was_in_top_100_for_awhile?
-    play_ranks
-      .select { |k, v| k.to_i >= year + Bgg::YEARS_OLD }
-      .values
-      .any?(&method(:top_ranked?))
+    years_in_top_100 >= Bgg::YEARS_OLD
+  end
+
+  def years_in_top_100
+    @years_in_top_100 ||= play_ranks.values.count(&method(:top_ranked?))
   end
 
   def top_ranked?(rank)
