@@ -55,7 +55,7 @@ class Snake
   def build_game(f, data)
     name = SnakeName.normalize(Utils.strip_accents(data["title"]))
 
-    {
+    Game.new(
       name: name,
       key: Utils.generate_key(name),
       rules_url: data["rules_url"],
@@ -66,7 +66,7 @@ class Snake
       category: category(data),
       location: location(f),
       shelf: shelf(data),
-    }
+    )
   end
 
   def category(data)

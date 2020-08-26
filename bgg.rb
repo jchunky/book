@@ -92,15 +92,15 @@ class Bgg
   end
 
   def snake
-    @snake ||= Snake.new.games.map { |g| [g[:key], g] }.to_h
+    @snake ||= Snake.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def top_played
-    @top_played ||= TopPlayed.new.games.map { |g| [g.name, g] }.to_h
+    @top_played ||= TopPlayed.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def top_ranked
-    @top_ranked ||= TopRanked.new.games.map { |g| [g.name, g] }.to_h
+    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def write_output

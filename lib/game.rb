@@ -7,10 +7,20 @@ Game = Struct.new(
   :year,
   :players,
   :play_ranks,
+  :location,
+  :shelf,
+  :category,
+  :ts_added,
+  :rules_url,
+  :difficulty,
+  :sell_product,
+  :employees_teachable,
+  :key,
   keyword_init: true
 ) do
   def initialize(args)
     super(
+      key: args.fetch(:key),
       href: args.fetch(:href),
       name: args.fetch(:name),
       rank: args.fetch(:rank, 0),
@@ -19,6 +29,14 @@ Game = Struct.new(
       year: args.fetch(:year, 0),
       players: args.fetch(:players, {}),
       play_ranks: args.fetch(:play_ranks, {})
+      location: args.fetch(:location, ""),
+      shelf: args.fetch(:shelf, ""),
+      category: args.fetch(:category, ""),
+      ts_added: args.fetch(:ts_added, ""),
+      rules_url: args.fetch(:rules_url, ""),
+      difficulty: args.fetch(:difficulty, ""),
+      sell_product: args.fetch(:sell_product, ""),
+      employees_teachable: args.fetch(:employees_teachable, 0)
     )
   end
 
@@ -29,6 +47,7 @@ Game = Struct.new(
 
   def merge(other)
     Game.new(
+      key: key,
       href: href,
       name: name,
       rank: [rank, other.rank].max,
@@ -37,6 +56,11 @@ Game = Struct.new(
       year: [year, other.year].max,
       players: players.merge(other.players),
       play_ranks: play_ranks.merge(other.play_ranks),
+      location: (location.present? ? location : other.location),
+      shelf: (shelf.present? ? shelf : other.shelf),
+      category: (category.present? ? category : other.category),
+      ts_added: (ts_added.present? ? ts_added : other.ts_added),
+      rules_url: (rules_url.present? ? rules_url : other.rules_url)
     )
   end
 
