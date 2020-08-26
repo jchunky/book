@@ -21,14 +21,14 @@ Game = Struct.new(
   def initialize(args)
     super(
       key: args.fetch(:key),
-      href: args.fetch(:href),
+      href: args.fetch(:href, ""),
       name: args.fetch(:name),
       rank: args.fetch(:rank, 0),
       rating: args.fetch(:rating, 0.0),
       voters: args.fetch(:voters, 0),
       year: args.fetch(:year, 0),
       players: args.fetch(:players, {}),
-      play_ranks: args.fetch(:play_ranks, {})
+      play_ranks: args.fetch(:play_ranks, {}),
       location: args.fetch(:location, ""),
       shelf: args.fetch(:shelf, ""),
       category: args.fetch(:category, ""),
@@ -38,11 +38,6 @@ Game = Struct.new(
       sell_product: args.fetch(:sell_product, ""),
       employees_teachable: args.fetch(:employees_teachable, 0)
     )
-  end
-
-  def add_player_count(month, play_count, play_rank)
-    self.players[month.to_s] = play_count
-    self.play_ranks[month.to_s] = play_rank
   end
 
   def merge(other)
@@ -60,8 +55,16 @@ Game = Struct.new(
       shelf: (shelf.present? ? shelf : other.shelf),
       category: (category.present? ? category : other.category),
       ts_added: (ts_added.present? ? ts_added : other.ts_added),
-      rules_url: (rules_url.present? ? rules_url : other.rules_url)
+      rules_url: (rules_url.present? ? rules_url : other.rules_url),
+      difficulty: (difficulty.present? ? difficulty : other.difficulty),
+      sell_product: (sell_product.present? ? sell_product : other.sell_product),
+      employees_teachable: (employees_teachable.present? ? employees_teachable : other.employees_teachable),
     )
+  end
+
+  def add_player_count(month, play_count, play_rank)
+    self.players[month.to_s] = play_count
+    self.play_ranks[month.to_s] = play_rank
   end
 
   def trend

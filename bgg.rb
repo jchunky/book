@@ -85,22 +85,22 @@ class Bgg
   end
 
   def raw_games
-    @raw_games ||= snake
+    @raw_games ||= top_ranked
       .merge(top_played, &method(:merge_hashes))
-      .merge(top_ranked, &method(:merge_hashes))
+      .merge(snake, &method(:merge_hashes))
       .values
   end
 
-  def snake
-    @snake ||= Snake.new.games.map { |g| [g.key, g] }.to_h
+  def top_ranked
+    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def top_played
     @top_played ||= TopPlayed.new.games.map { |g| [g.key, g] }.to_h
   end
 
-  def top_ranked
-    @top_ranked ||= TopRanked.new.games.map { |g| [g.key, g] }.to_h
+  def snake
+    @snake ||= Snake.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def write_output

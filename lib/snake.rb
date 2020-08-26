@@ -28,11 +28,11 @@ class Snake
       end
       .force
       .sort_by(&method(:sort_order))
-      .uniq { |g| g[:key] }
+      .uniq(&:key)
   end
 
   def sort_order(game)
-    [shelf_priority(game[:shelf]), location_priority(game[:location])]
+    [shelf_priority(game.shelf), location_priority(game.location)]
   end
 
   def shelf_priority(shelf)
