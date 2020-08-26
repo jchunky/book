@@ -16,7 +16,8 @@ class Bgg
     return false if game.rank < 1
     return false if game.play_rank < 1
 
-    return false unless game.was_in_top_100_for_awhile?
+    # return false unless game.was_in_top_100_for_awhile?
+    # return false if game.trend == :down
     # return false unless game.was_in_top_100?
     # return false if game.year > MAX_GAME_YEAR
     # return false if game.recent?
