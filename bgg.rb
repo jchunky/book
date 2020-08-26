@@ -9,17 +9,17 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 class Bgg
   PLAY_RANK_THRESHOLD = 100
   VOTERS_THRESHOLD = 1000
-  YEARS_OLD = 6
+  YEARS_OLD = 7
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
   def display_game?(game)
     return false if game.rank < 1
     return false if game.play_rank < 1
 
-    # return false unless game.was_in_top_100_for_awhile?
+    return false unless game.was_in_top_100_for_awhile?
     # return false if game.trend == :down
-    return false unless game.was_in_top_100?
-    return false if game.year > MAX_GAME_YEAR
+    # return false unless game.was_in_top_100?
+    # return false if game.year > MAX_GAME_YEAR
     # return false if game.recent?
     # return false if game.play_rank > PLAY_RANK_THRESHOLD
     # return false if game.trend == :down
