@@ -13,7 +13,7 @@ class Bgg
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
   def display_game?(game)
-    return true if game.ts_added > "2020-03-08"
+    return true if game.ts_added > "2020-03-12"
     return false if game.rank < 1
     return false if game.play_rank < 1
 
