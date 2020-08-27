@@ -1,5 +1,6 @@
 class Snake
-  FILES = Dir.glob("input/**/*.json").to_a
+  FILES = Dir.glob("input/college/*.json").to_a
+
   CATEGORIES = [
     "Deck Builder",
     "Party",
