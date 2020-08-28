@@ -50,7 +50,7 @@
       low_rank = game.rank > 300
       low_players = game.player_count < 300
       low_rating = game.rating < 7.5
-      recent_year = game.year > Bgg::MAX_GAME_YEAR
+      low_year = game.year < 2012 || game.year > Bgg::MAX_GAME_YEAR
       player_count_rank = @bgg.player_rank(game.play_rank)
       low_voters = game.voters < 3000
       low_game = low_players
@@ -62,7 +62,7 @@
       <td class="<%= 'low' if game.trend == :down %>">
         <a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a>
       </td>
-      <td class="number <%= 'low' if recent_year %>"><%= game.year %></td>
+      <td class="number <%= 'low' if low_year %>"><%= game.year %></td>
       <td class="number player-rank-<%= player_count_rank %>"><%= game.play_rank %></td>
       <td class="number %>"><%= game.years_in_top_100 %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game.rank %></td>
