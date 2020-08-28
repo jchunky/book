@@ -8,7 +8,6 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   PLAY_RANK_THRESHOLD = 100
-  VOTERS_THRESHOLD = 1000
   YEARS_OLD = 6
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
@@ -17,16 +16,11 @@ class Bgg
     return false if game.rank < 1
     return false if game.play_rank < 1
 
+    return false unless game.in_top_100_in_last_two_years?
     # return false unless game.ts_added.present?
     # return false if game.play_rank > PLAY_RANK_THRESHOLD
     # return false if game.year > MAX_GAME_YEAR
     # return false unless game.was_in_top_100?
-    return false unless game.was_in_top_100_in_last_two_years?
-    # return false unless game.was_in_top_100_for_awhile?
-    # return false if game.trend == :down
-    # return false if game.recent?
-    # return false if game.trend == :down
-    # return false if game.voters < voter_threshold
 
     true
   end
@@ -51,10 +45,6 @@ class Bgg
   end
 
   private
-
-  def voter_threshold
-    @voter_threshold ||= raw_games.map { |g| g.voters }.sort.reverse.take(VOTERS_THRESHOLD).last
-  end
 
   def play_ranks
     @play_ranks ||= all_games.map { |g| g.play_rank }.reject(&:zero?).sort.reverse
