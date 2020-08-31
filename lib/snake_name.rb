@@ -2,6 +2,7 @@ class SnakeName
   NAMES = {
     "Agricola (2015)" => "Agricola",
     "Agricola (2016)" => "Agricola (Revised Edition)",
+    "Akrotiri - Revised Edition" => "Akrotiri",
     "Alien Frontiers 5th Edition" => "Alien Frontiers",
     "Arkham Horror - 3rd Edition" => "Arkham Horror (Third Edition)",
     "Avalon" => "The Resistance: Avalon",
