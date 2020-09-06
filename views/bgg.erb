@@ -103,7 +103,7 @@
       <%=
         @months.map do |month|
           play_rank = game.play_ranks.to_h[month.to_s].to_i
-          play_rank.zero? ? 0 : (1000 - play_rank)
+          play_rank.zero? ? 0 : [(101 - play_rank), 0].max
         end.to_s
       %>
     );
