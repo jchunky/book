@@ -10,12 +10,11 @@
   .number { text-align: right; }
   .low { background-color: silver; }
   .high { background-color: rgb(183, 214 ,170); }
-  .player-rank-1 { background-color: #c68eff; } /* purple */
-  .player-rank-2 { background-color: #8e8eff; } /* blue */
-  .player-rank-3 { background-color: #8eff8e; } /* green */
-  .player-rank-4 { background-color: #ffff8e; } /* yellow */
-  .player-rank-5 { background-color: #ffc68e; } /* orange */
-  .player-rank-6 { background-color: #ff8e8e; } /* red */
+  .player-rank-1 { background-color: #b4b4ff; } /* blue */
+  .player-rank-2 { background-color: #ffb4b4; } /* red */
+  .player-rank-new { background-color: #ffc68e; } /* orange */
+  .player-rank-leaving { background-color: #b4b4ff; } /* blue */
+  .player-rank-top_100 { background-color: #ffb4b4; } /* red */
   .right-border { border-right: 1px solid #999 !important; }
   .trend-new { stroke: orange; fill: rgba(255, 198, 142, .3); }
   .trend-leaving { stroke: blue; fill: rgba(0, 0, 255, .3); }
@@ -29,8 +28,8 @@
     <th>Player Count</th>
     <th>Play Rank</th>
     <th>Game</th>
-    <th>Year</th>
     <th>Play Rank</th>
+    <th>Year</th>
     <th>Years in Top 100</th>
     <th>Rank</th>
     <th>Rating</th>
@@ -54,20 +53,19 @@
       player_count_rank = @bgg.player_rank(game.play_rank)
       low_voters = game.voters < 3000
       low_game = low_players
-      voter_count_rank = @bgg.voter_rank(game.voters)
     %>
     <tr>
       <td><svg class="sparkline sparkline-player-count-<%= i %> trend-<%= game.trend %>" width="100" height="30" stroke-width="3"></svg></td>
       <td><svg class="sparkline sparkline-play-rank-<%= i %> trend-<%= game.trend %>" width="100" height="30" stroke-width="3"></svg></td>
-      <td class="<%= 'low' if game.trend == :down %>">
+      <td class="player-rank-<%= game.trend %>">
         <a href="https://boardgamegeek.com<%= game.href %>"><%= game.name %></a>
       </td>
+      <td class="number player-rank-<%= game.trend %>"><%= game.play_rank %></td>
       <td class="number <%= 'low' if low_year %>"><%= game.year %></td>
-      <td class="number player-rank-<%= player_count_rank %>"><%= game.play_rank %></td>
       <td class="number %>"><%= game.years_in_top_100 %></td>
       <td class="number <%= 'low' if low_rank %>"><%= game.rank %></td>
       <td class="number <%= 'low' if low_rating %>"><%= game.rating %></td>
-      <td class="number <%= 'low' if low_voters %>  player-rank-<%= voter_count_rank %> right-border"><%= game.voters %></td>
+      <td class="number <%= 'low' if low_voters %>  right-border"><%= game.voters %></td>
       <td><%= game.location %></td>
       <td><%= game.shelf %></td>
       <td><%= game.category %></td>

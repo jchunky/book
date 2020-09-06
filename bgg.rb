@@ -37,41 +37,12 @@ class Bgg
   end
 
   def player_rank(play_rank)
-    calc_play_rank(play_ranks, play_rank)
-  end
-
-  def voter_rank(voters)
-    calc_rank(voter_counts, voters)
+    return 1 if play_rank.to_i == 0
+    return 1 if play_rank.to_i > 100
+    return 2
   end
 
   private
-
-  def play_ranks
-    @play_ranks ||= all_games.map { |g| g.play_rank }.reject(&:zero?).sort.reverse
-  end
-
-  def voter_counts
-    @voter_counts ||= all_games.map { |g| g.voters }.reject(&:zero?).sort
-  end
-
-  def calc_rank(values, value)
-    i = 1
-    while true
-      return 6 if i == 6
-      return i if value.to_i <= values[(values.size / 6.to_f * i).round - 1]
-      i += 1
-    end
-  end
-
-  def calc_play_rank(values, value)
-    i = 1
-    while true
-      return 1 if value.to_i == 0
-      return 6 if i == 6
-      return i if value.to_i >= values[(values.size / 6.to_f * i).round - 1]
-      i += 1
-    end
-  end
 
   def all_games
     @all_games ||= raw_games
