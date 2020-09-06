@@ -26,7 +26,6 @@ class Bgg
   end
 
   def run
-    @bgg = self
     @months = TopPlayed.years_data
 
     @games = raw_games
@@ -36,7 +35,7 @@ class Bgg
     write_output
   end
 
-  def player_rank(play_rank)
+  def self.player_rank(play_rank)
     play_rank.to_i.between?(1, 100) ? 2 : 1
   end
 
