@@ -37,9 +37,7 @@ class Bgg
   end
 
   def player_rank(play_rank)
-    return 1 if play_rank.to_i == 0
-    return 1 if play_rank.to_i > 100
-    return 2
+    play_rank.to_i.between?(1, 100) ? 2 : 1
   end
 
   private
