@@ -45,8 +45,8 @@ class TopPlayed
     else
       start_date = year.beginning_of_year
       end_date = year.end_of_year
-      end_date -= 1.day if year.year == 2019
-      end_date = Date.today if year.year == 2020
+      end_date -= 1.day if year.year == 2013
+      end_date = Date.today if year.year == Date.today.year
     end
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
