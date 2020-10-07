@@ -1,14 +1,22 @@
 class TopPlayed
   def self.years_data
-    first = Date.parse("2005-01-01")
-    last = last_year
-
-    (first..last)
-      .select { |d| d.day == 1  && d.month == 1 }
+    if Bgg::BY_MONTH
+      first = (Date.today - 15.months).beginning_of_month
+      last = last_year
+      (first..last).select { |d| d.day == 1 }
+    else
+      first = Date.parse("2005-01-01")
+      last = last_year
+      (first..last).select { |d| d.day == 1  && d.month == 1 }
+    end
   end
 
   def self.last_year
-    (Date.today - 1.year).beginning_of_year
+    if Bgg::BY_MONTH
+      (Date.today).beginning_of_month
+    else
+      (Date.today - 1.year).beginning_of_year
+    end
   end
 
   def games
@@ -27,10 +35,16 @@ class TopPlayed
   end
 
   def url_for_year_and_page(year, page)
-    start_date = year.beginning_of_year
-    end_date = year.end_of_year
-    end_date -= 1.day if year.year == 2019
-
+    start_date = nil
+    end_date = nil
+    if Bgg::BY_MONTH
+      start_date = year.beginning_of_month
+      end_date = year.end_of_month
+    else
+      start_date = year.beginning_of_year
+      end_date = year.end_of_year
+      end_date -= 1.day if year.year == 2019
+    end
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
 

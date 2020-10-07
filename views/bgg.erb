@@ -41,7 +41,13 @@
     <th>Rules</th>
     <th>Difficulty</th>
     <% @months.each do |month| %>
-      <th class="rank"><div><span><%= month.strftime("%Y") %></span></div></th>
+      <th class="rank">
+        <div>
+          <span>
+            <%= Bgg::BY_MONTH ? month.strftime("%m/%y") : month.strftime("%Y") %>
+          </span>
+        </div>
+      </th>
     <% end %>
   </tr>
   <% @games.each.with_index do |game, i| %>

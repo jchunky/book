@@ -107,7 +107,7 @@ Game = Struct.new(
   end
 
   def play_rank_last_year
-    play_ranks[(TopPlayed.last_year - 1.year).to_s].to_i
+    play_ranks[(TopPlayed.last_year - (Bgg::BY_MONTH ? 1.month : 1.year)).to_s].to_i
   end
 
   def player_count
