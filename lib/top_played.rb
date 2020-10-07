@@ -31,7 +31,7 @@ class TopPlayed
       .force
       .each_with_object({}) do |game, memo|
         memo[game.name] ||= game
-        memo[game.name] = memo[game.name].merge(game)
+        memo[game.name] = game.merge(memo[game.name])
       end
       .values
   end
