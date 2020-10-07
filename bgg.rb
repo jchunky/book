@@ -10,7 +10,7 @@ class Bgg
   # BY_MONTH = true
   BY_MONTH = false
   PLAY_RANK_THRESHOLD = 100
-  YEARS_OLD = 3
+  YEARS_OLD = 4
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
 
   def display_game?(game)
