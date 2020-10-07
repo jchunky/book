@@ -13,9 +13,11 @@ class TopPlayed
 
   def self.last_year
     if Bgg::BY_MONTH
+      # (Date.today - 1.month).beginning_of_month
       (Date.today).beginning_of_month
     else
-      (Date.today - 1.year).beginning_of_year
+      # (Date.today - 1.year).beginning_of_year
+      (Date.today).beginning_of_year
     end
   end
 
@@ -44,6 +46,7 @@ class TopPlayed
       start_date = year.beginning_of_year
       end_date = year.end_of_year
       end_date -= 1.day if year.year == 2019
+      end_date = Date.today if year.year == 2020
     end
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
