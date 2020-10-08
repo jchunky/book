@@ -7,8 +7,8 @@ require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
+  INCLUDE_CURRENT_YEAR = true
   BY_MONTH = true
-  # BY_MONTH = false
   PLAY_RANK_THRESHOLD = 100
   YEARS_OLD = 4
   MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
@@ -18,7 +18,8 @@ class Bgg
     return false if game.rank < 1
     return false if game.play_rank < 1
 
-    return false unless game.in_top_100_in_last_two_years?
+    return false unless game.in_top_100?
+    # return false unless game.in_top_100_in_last_two_years?
     # return false unless game.ts_added.present?
     # return false if game.play_rank > PLAY_RANK_THRESHOLD
     # return false if game.year > MAX_GAME_YEAR

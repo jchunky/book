@@ -13,11 +13,17 @@ class TopPlayed
 
   def self.last_year
     if Bgg::BY_MONTH
-      # (Date.today - 1.month).beginning_of_month
-      (Date.today).beginning_of_month
+      if Bgg::INCLUDE_CURRENT_YEAR
+        (Date.today).beginning_of_month
+      else
+        (Date.today - 1.month).beginning_of_month
+      end
     else
-      # (Date.today - 1.year).beginning_of_year
-      (Date.today).beginning_of_year
+      if Bgg::INCLUDE_CURRENT_YEAR
+        (Date.today).beginning_of_year
+      else
+        (Date.today - 1.year).beginning_of_year
+      end
     end
   end
 
