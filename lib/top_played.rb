@@ -64,7 +64,7 @@ class TopPlayed
         name: name,
         key: Utils.generate_key(name)
       )
-      game.add_player_count(month, play_count, play_rank)
+      game = game.add_player_count(month, play_count, play_rank)
       game
     end
   rescue
