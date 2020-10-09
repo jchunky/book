@@ -42,7 +42,7 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
   end
 
   def trend
-    if in_top_100? && !in_top_100_last_month?
+    if in_top_100? && !in_top_100_for_a_year?
       :new
     elsif !in_top_100? && in_top_100_last_month?
       :leaving
@@ -53,8 +53,12 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
     end
   end
 
-  def in_top_100_in_last_two_months?
-    in_top_100? || in_top_100_last_month?
+  def in_top_100_for_a_year?
+    12.times.to_a.all? do |i|
+      month = (TopPlayed.last_month - i.month).to_s
+      rank = play_ranks[month].to_i
+      top_ranked?(rank)
+    end
   end
 
   def in_top_100?
@@ -63,10 +67,6 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
 
   def in_top_100_last_month?
     top_ranked?(play_rank_last_month)
-  end
-
-  def was_in_top_100?
-    years_in_top_100.positive?
   end
 
   def play_rank
@@ -81,8 +81,8 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
     players[TopPlayed.last_month.to_s].to_i
   end
 
-  def years_in_top_100
-    @years_in_top_100 ||= play_ranks.values.count(&method(:top_ranked?))
+  def months_in_top_100
+    @months_in_top_100 ||= play_ranks.values.count(&method(:top_ranked?))
   end
 
   def top_ranked?(rank)
