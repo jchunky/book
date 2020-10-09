@@ -54,31 +54,32 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
   end
 
   def in_top_100_for_a_year?
-    12.times.to_a.all? do |i|
-      month = (TopPlayed.last_month - i.month).to_s
-      rank = play_ranks[month].to_i
-      top_ranked?(rank)
-    end
+    12.times.to_a.all?(&method(:top_ranked_x_months_ago?))
   end
 
   def in_top_100?
-    top_ranked?(play_rank)
+    top_ranked_x_months_ago?(0)
   end
 
   def in_top_100_last_month?
-    top_ranked?(play_rank_last_month)
+    top_ranked_x_months_ago?(1)
   end
 
   def play_rank
-    play_ranks[TopPlayed.last_month.to_s].to_i
-  end
-
-  def play_rank_last_month
-    play_ranks[(TopPlayed.last_month - 1.month).to_s].to_i
+    play_rank_x_months_ago(0)
   end
 
   def player_count
     players[TopPlayed.last_month.to_s].to_i
+  end
+
+  def top_ranked_x_months_ago?(x)
+    rank = play_rank_x_months_ago(x)
+    top_ranked?(rank)
+  end
+
+  def play_rank_x_months_ago(x)
+    play_ranks[(TopPlayed.last_month - x.month).to_s].to_i
   end
 
   def months_in_top_100
