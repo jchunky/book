@@ -42,9 +42,9 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
   end
 
   def trend
-    if in_top_100? && !in_top_100_last_year?
+    if in_top_100? && !in_top_100_last_month?
       :new
-    elsif !in_top_100? && in_top_100_last_year?
+    elsif !in_top_100? && in_top_100_last_month?
       :leaving
     elsif in_top_100?
       :top_100
@@ -53,16 +53,16 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
     end
   end
 
-  def in_top_100_in_last_two_years?
-    in_top_100? || in_top_100_last_year?
+  def in_top_100_in_last_two_months?
+    in_top_100? || in_top_100_last_month?
   end
 
   def in_top_100?
     top_ranked?(play_rank)
   end
 
-  def in_top_100_last_year?
-    top_ranked?(play_rank_last_year)
+  def in_top_100_last_month?
+    top_ranked?(play_rank_last_month)
   end
 
   def was_in_top_100?
@@ -70,15 +70,15 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
   end
 
   def play_rank
-    play_ranks[TopPlayed.last_year.to_s].to_i
+    play_ranks[TopPlayed.last_month.to_s].to_i
   end
 
-  def play_rank_last_year
-    play_ranks[(TopPlayed.last_year - (Bgg::BY_MONTH ? 1.month : 1.year)).to_s].to_i
+  def play_rank_last_month
+    play_ranks[(TopPlayed.last_month - 1.month).to_s].to_i
   end
 
   def player_count
-    players[TopPlayed.last_year.to_s].to_i
+    players[TopPlayed.last_month.to_s].to_i
   end
 
   def years_in_top_100

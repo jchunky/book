@@ -41,13 +41,7 @@
     <th>Rules</th>
     <th>Difficulty</th>
     <% @months.each do |month| %>
-      <th class="rank">
-        <div>
-          <span>
-            <%= Bgg::BY_MONTH ? month.strftime("%m/%y") : month.strftime("%Y") %>
-          </span>
-        </div>
-      </th>
+      <th class="rank"><%= month.strftime("%m/%y") %></th>
     <% end %>
   </tr>
   <% @games.each.with_index do |game, i| %>
@@ -97,7 +91,7 @@
    <% @games.each.with_index do |game, i| %>
      sparkline(
        document.querySelector(".sparkline-player-count-<%= i %>"),
-       <%= @months[0..(Bgg::INCLUDE_CURRENT_YEAR ? -2 : -1)].map { |month| game.players.to_h[month.to_s].to_i }.to_s %>
+       <%= @months[0..-2].map { |month| game.players.to_h[month.to_s].to_i }.to_s %>
      );
    <% end %>
 

@@ -1,34 +1,16 @@
 class TopPlayed
-  def self.years_data
-    if Bgg::BY_MONTH
-      first = (Date.today - 15.months).beginning_of_month
-      last = last_year
-      (first..last).select { |d| d.day == 1 }
-    else
-      first = Date.parse("2005-01-01")
-      last = last_year
-      (first..last).select { |d| d.day == 1  && d.month == 1 }
-    end
+  def self.months_data
+    first = (Date.today - (Bgg::NUMBER_OF_MONTHS - 1).months).beginning_of_month
+    last = last_month
+    (first..last).select { |d| d.day == 1 }
   end
 
-  def self.last_year
-    if Bgg::BY_MONTH
-      if Bgg::INCLUDE_CURRENT_YEAR
-        (Date.today).beginning_of_month
-      else
-        (Date.today - 1.month).beginning_of_month
-      end
-    else
-      if Bgg::INCLUDE_CURRENT_YEAR
-        (Date.today).beginning_of_year
-      else
-        (Date.today - 1.year).beginning_of_year
-      end
-    end
+  def self.last_month
+    (Date.today).beginning_of_month
   end
 
   def games
-    self.class.years_data.product((1..10).to_a)
+    self.class.months_data.product((1..10).to_a)
       .lazy
       .map { |month, page| [month, page, url_for_year_and_page(month, page)] }
       .map { |month, page, url| [month, page, Utils.read_url(url)] }
@@ -43,17 +25,9 @@ class TopPlayed
   end
 
   def url_for_year_and_page(year, page)
-    start_date = nil
-    end_date = nil
-    if Bgg::BY_MONTH
-      start_date = year.beginning_of_month
-      end_date = year.end_of_month
-    else
-      start_date = year.beginning_of_year
-      end_date = year.end_of_year
-      end_date -= 1.day if year.year == 2013
-      end_date = Date.today if year.year == Date.today.year
-    end
+    start_date = year.beginning_of_month
+    end_date = year.end_of_month
+
     "https://boardgamegeek.com/plays/bygame/subtype/All/start/#{start_date}/end/#{end_date}/page/#{page}?sortby=distinctusers&subtype=All"
   end
 

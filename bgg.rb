@@ -7,11 +7,10 @@ require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
-  INCLUDE_CURRENT_YEAR = true
-  BY_MONTH = true
+  NUMBER_OF_MONTHS = 15
   PLAY_RANK_THRESHOLD = 100
   YEARS_OLD = 4
-  MAX_GAME_YEAR = TopPlayed.last_year.year - YEARS_OLD
+  MAX_GAME_YEAR = TopPlayed.last_month.year - YEARS_OLD
 
   def display_game?(game)
     return true if game.ts_added > "2020-08-30"
@@ -19,7 +18,7 @@ class Bgg
     return false if game.play_rank < 1
 
     return false unless game.in_top_100?
-    # return false unless game.in_top_100_in_last_two_years?
+    # return false unless game.in_top_100_in_last_two_months?
     # return false unless game.ts_added.present?
     # return false if game.play_rank > PLAY_RANK_THRESHOLD
     # return false if game.year > MAX_GAME_YEAR
@@ -29,7 +28,7 @@ class Bgg
   end
 
   def run
-    @months = TopPlayed.years_data
+    @months = TopPlayed.months_data
 
     @games = raw_games
       .select(&method(:display_game?))
