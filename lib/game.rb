@@ -44,8 +44,8 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
   def trend
     if in_top_100? && !in_top_100_for_a_year?
       :new
-    elsif !in_top_100? && in_top_100_last_month?
-      :leaving
+    # elsif !in_top_100? && in_top_100_last_month?
+    #   :leaving
     elsif in_top_100?
       :top_100
     else
