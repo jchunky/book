@@ -53,8 +53,12 @@ Game = Struct.new(*ATTRS.keys, keyword_init: true) do
     end
   end
 
+  def was_in_top_100?
+    play_ranks.values.any?(&method(:top_ranked?))
+  end
+
   def in_top_100_for_a_year?
-    12.times.to_a.all?(&method(:top_ranked_x_months_ago?))
+    play_ranks.values.select(&method(:top_ranked?)).count == Bgg::NUMBER_OF_MONTHS
   end
 
   def in_top_100?
