@@ -13,13 +13,11 @@ class Bgg
   MAX_GAME_YEAR = TopPlayed.last_month.year - YEARS_OLD
 
   def display_game?(game)
-    return true if game.ts_added > "2020-08-30"
     return false if game.rank < 1
     return false if game.play_rank < 1
 
     return false unless game.was_in_top_100?
     # return false unless game.in_top_100?
-    # return false unless game.ts_added.present?
 
     true
   end
@@ -27,7 +25,7 @@ class Bgg
   def run
     @months = TopPlayed.months_data
 
-    @games = raw_games
+    @games = all_games
       .select(&method(:display_game?))
       .sort_by { |g| [-g.year, g.play_rank] }
 
@@ -41,13 +39,8 @@ class Bgg
   private
 
   def all_games
-    @all_games ||= raw_games
-  end
-
-  def raw_games
-    @raw_games ||= top_ranked
+    @all_games ||= top_ranked
       .merge(top_played, &method(:merge_hashes))
-      .merge(snake, &method(:merge_hashes))
       .values
   end
 
@@ -57,10 +50,6 @@ class Bgg
 
   def top_played
     @top_played ||= TopPlayed.new.games.map { |g| [g.key, g] }.to_h
-  end
-
-  def snake
-    @snake ||= Snake.new.games.map { |g| [g.key, g] }.to_h
   end
 
   def write_output

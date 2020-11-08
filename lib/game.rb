@@ -8,14 +8,6 @@ ATTRS = {
   year: 0,
   players: {},
   play_ranks: {},
-  location: "",
-  shelf: "",
-  category: "",
-  ts_added: "",
-  rules_url: "",
-  difficulty: "",
-  sell_product: "",
-  employees_teachable: 0,
 }
 
 Game = Struct.new(*ATTRS.keys, keyword_init: true) do
