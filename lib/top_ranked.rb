@@ -26,7 +26,7 @@ class TopRanked
         rating: rating.content.to_f,
         voters: voters.content.to_i,
         key: Utils.generate_key(name),
-        year: (title.css("span")[0].content[1..-2].to_i rescue 0),
+        year: (title.css("span")[0].content[1..-2].to_i rescue 0)
       )
     end
   end

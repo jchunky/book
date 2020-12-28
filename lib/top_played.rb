@@ -6,7 +6,7 @@ class TopPlayed
   end
 
   def self.last_month
-    (Date.today).beginning_of_month
+    Date.today.beginning_of_month
   end
 
   def games
@@ -47,7 +47,7 @@ class TopPlayed
       game = game.add_player_count(month, play_count, play_rank)
       game
     end
-  rescue
+  rescue StandardError
     []
   end
 end

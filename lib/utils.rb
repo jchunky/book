@@ -27,7 +27,7 @@ class Utils
   end
 
   def self.cache(url)
-    file = ".data/" + url.gsub(%r{[:/]}, "_") + ".html"
+    file = ".data/#{url.gsub(%r{[:/]}, '_')}.html"
     File.write(file, yield) unless File.exist?(file)
     File.read(file)
   end
