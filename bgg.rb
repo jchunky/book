@@ -1,6 +1,5 @@
 require "active_support/all"
 require "erb"
-require "json"
 require "net/http"
 require "nokogiri"
 require "uri"

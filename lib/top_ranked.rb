@@ -1,6 +1,6 @@
 class TopRanked
-  BookType = Struct.new(:name, :id)
   Book = Struct.new(:title, :copies, :book_type)
+  BookType = Struct.new(:name, :id)
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773&Ne=38769"),
@@ -12,7 +12,7 @@ class TopRanked
 
   def games
     BOOK_TYPES.flat_map do |book_type|
-      (1..10)
+      (1..100)
         .lazy
         .map { |page| url_for_page(book_type, page) }
         .map { |url| Utils.read_url(url) }
