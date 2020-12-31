@@ -17,7 +17,7 @@ class TopRanked
   def games_for_doc(doc)
     doc.css(".search-results-column > .row").last.css(".details").map do |row|
       title = row.css(".ellipsis_text").first.content
-      copies = row.css(".p").first.content
+      copies = row.css(".p").first.content.scan(/\d+ copies/).first.to_i
 
       Game.new(
         title: title,

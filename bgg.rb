@@ -14,7 +14,7 @@ class Bgg
   def run
     @games = TopRanked.new.games
       .select(&method(:display_game?))
-    # .sort_by { |g| [-g.year, g.play_rank] }
+      .sort_by { |g| [-g.copies, g.title] }
 
     write_output
   end

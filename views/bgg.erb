@@ -14,10 +14,12 @@
 <table id="games" class="sortable">
   <tr>
     <th>Book</th>
+    <th>Copies</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
       <td><%= game.title %></td>
+      <td><%= game.copies %></td>
     </tr>
   <% end %>
 </table>
