@@ -1,5 +1,5 @@
 class TopRanked
-  Book = Struct.new(:title, :copies, :book_type)
+  Book = Struct.new(:title, :copies, :book_type, :href, :author)
   BookType = Struct.new(:name, :id)
 
   BOOK_TYPES = [
@@ -32,8 +32,10 @@ class TopRanked
     doc.css(".search-results-column > .row").last.css(".details").map do |row|
       title = row.css(".ellipsis_text").first.content
       copies = row.css(".p").first.content.scan(/\d+ copies/).first.to_i
+      href = row.css("a").first[:href]
+      author = row.css(".p").first.content.scan(/.* author.*\./).first.to_s.strip
 
-      Book.new(title, copies, book_type.name)
+      Book.new(title, copies, book_type.name, href, author)
     end
   end
 end
