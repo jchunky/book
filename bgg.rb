@@ -6,8 +6,8 @@ require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
-  def display_game?(_game)
-    true
+  def display_game?(game)
+    game.book_type != "FICTION"
   end
 
   def run
