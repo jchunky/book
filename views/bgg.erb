@@ -15,11 +15,13 @@
   <tr>
     <th>Book</th>
     <th>Copies</th>
+    <th>Book Type</th>
   </tr>
   <% @games.each do |game| %>
     <tr>
       <td><%= game.title %></td>
-      <td><%= game.copies %></td>
+      <td class="number"><%= game.copies %></td>
+      <td><%= game.book_type %></td>
     </tr>
   <% end %>
 </table>
