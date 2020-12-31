@@ -7,26 +7,21 @@ class TopRanked
       .map { |file| Nokogiri::HTML(file) }
       .flat_map(&method(:games_for_doc))
       .force
-      .uniq(&:key)
   end
 
   def url_for_page(page)
-    "https://boardgamegeek.com/browse/boardgame/page/#{page}"
+    index = (page - 1) * 150
+    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=38773+20206+37751+37918&Ne=38769&No=#{index}&Ns=p_date_acquired_sort&Nso=1&Ntk=Keyword_Anywhere&view=grid"
   end
 
   def games_for_doc(doc)
-    doc.css(".collection_table")[0].css("tr").drop(1).map do |row|
-      rank, _, title, _, rating, voters, *_, shop = row.css("td")
-      name = Utils.strip_accents(title.css("a")[0].content)
+    doc.css(".search-results-column > .row").last.css(".details").map do |row|
+      title = row.css(".ellipsis_text").first.content
+      copies = row.css(".p").first.content
 
       Game.new(
-        href: title.css("a")[0]["href"],
-        name: name,
-        rank: (rank.css("a")[0]["name"].to_i rescue 0),
-        rating: rating.content.to_f,
-        voters: voters.content.to_i,
-        key: Utils.generate_key(name),
-        year: (title.css("span")[0].content[1..-2].to_i rescue 0)
+        title: title,
+        copies: copies
       )
     end
   end
