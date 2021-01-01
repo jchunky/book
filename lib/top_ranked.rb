@@ -1,13 +1,6 @@
 class TopRanked
   BookType = Struct.new(:name, :id)
-  Book = Struct.new(:title, :copies, :book_type, :href, :author) do
-    def display?
-      # return false if book_type == "FICTION"
-      return false if copies < 60
-
-      true
-    end
-  end
+  Book = Struct.new(:title, :copies, :book_type, :href, :author)
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
@@ -19,8 +12,16 @@ class TopRanked
     CHILD_NON_FICTION = BookType.new("CHILD NON-FICTION", "4294952073+37846"),
     TEEN_FICTION = BookType.new("TEEN FICTION", "4294952052+37845"),
     TEEN_NON_FICTION = BookType.new("TEEN NON-FICTION", "4294952073+37845"),
-    ADULT_FICTION = BookType.new("ADULT FICTION", "4294952052+37844"),
-    ADULT_NON_FICTION = BookType.new("ADULT NON-FICTION", "4294952073+37844"),
+    FICTION = BookType.new("FICTION", "4294952052+37844"),
+    NON_FICTION = BookType.new("NON-FICTION", "4294952073+37844"),
+    HISTORY = BookType.new("HISTORY", "4294952052+4293412643"),
+    BIOGRAPHY = BookType.new("BIOGRAPHY", "4294952052+4293412635"),
+    NOVEL = BookType.new("NOVEL", "4294952052+4293412630"),
+    MYSTERY = BookType.new("MYSTERY", "4294952052+37869"),
+    ROMANCE = BookType.new("ROMANCE", "4294952052+37871"),
+    SCIENCE_FICTION = BookType.new("SCIENCE FICTION", "4294952052+37870"),
+    SHORT = BookType.new("SHORT", "4294952052+37873"),
+    WESTERN = BookType.new("WESTERN", "4294952052+37872"),
   ]
 
   def games
@@ -31,8 +32,8 @@ class TopRanked
         .map { |url| Utils.read_url(url) }
         .map { |file| Nokogiri::HTML(file) }
         .flat_map { |doc| games_for_doc(book_type, doc) }
-        .select(&:display?)
-        .force
+        .sort_by { |g| [g.book_type, -g.copies, g.title] }
+        .take(20)
     end
   end
 
