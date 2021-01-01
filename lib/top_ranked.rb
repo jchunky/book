@@ -8,34 +8,28 @@ class TopRanked
   CHILDREN = "37846"
   TEEN = "37845"
   ADULT = "37844"
-
-  FICTION_TYPE = "38790"
+  ADOLESCENT_FICTION = "38790"
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
     BR = BookType.new("BR", "38771"),
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
+    CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{ADOLESCENT_FICTION}+#{CHILDREN}"),
 
-    CHILD_FICTION_TYPE = BookType.new("CHILD_FICTION_TYPE", "#{FICTION_TYPE}+#{CHILDREN}"),
-    TEEN_FICTION_TYPE = BookType.new("TEEN_FICTION_TYPE", "#{FICTION_TYPE}+#{TEEN}"),
-    ADULT_FICTION_TYPE = BookType.new("ADULT_FICTION_TYPE", "#{FICTION_TYPE}+#{ADULT}"),
+    TEEN_FICTION = BookType.new("TEEN_FICTION", "#{FICTION}+#{TEEN}"),
 
-    CHILD_BOOKS = BookType.new("CHILD_BOOKS", CHILDREN),
-    TEEN_BOOKS = BookType.new("TEEN_BOOKS", TEEN),
-    ADULT_FICTION = BookType.new("ADULT_FICTION", "#{FICTION}+#{ADULT}"),
-    ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{NON_FICTION}+#{ADULT}"),
-
-    FANTASY = BookType.new("FANTASY", "4287892397"),
-    FICTION_SUBJECT = BookType.new("FICTION_SUBJECT", "4293412630"),
-    BIOGRAPHY = BookType.new("BIOGRAPHY", "4293412635"),
-    HISTORY = BookType.new("HISTORY", "4293412643"),
-
-    MYSTERY = BookType.new("MYSTERY", "37869"),
-    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "37870"),
-    ROMANCE = BookType.new("ROMANCE", "37871"),
-    WESTERN = BookType.new("WESTERN", "37872"),
-    SHORT = BookType.new("SHORT", "37873"),
+    # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
+    # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
+    # FANTASY = BookType.new("FANTASY", "4287892397"),
+    # NOVEL = BookType.new("NOVEL", "4293412630"),
+    # BIOGRAPHY = BookType.new("BIOGRAPHY", "4293412635"),
+    # HISTORY = BookType.new("HISTORY", "4293412643"),
+    # MYSTERY = BookType.new("MYSTERY", "37869"),
+    # SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "37870"),
+    # ROMANCE = BookType.new("ROMANCE", "37871"),
+    # WESTERN = BookType.new("WESTERN", "37872"),
+    # SHORT = BookType.new("SHORT", "37873"),
   ]
 
   def games
@@ -47,7 +41,7 @@ class TopRanked
         .map { |file| Nokogiri::HTML(file) }
         .flat_map { |doc| games_for_doc(book_type, doc) }
         .sort_by { |g| [g.book_type, -g.copies, g.title] }
-        .take(20)
+        .take(40)
     end
   end
 
