@@ -2,26 +2,40 @@ class TopRanked
   BookType = Struct.new(:name, :id)
   Book = Struct.new(:title, :copies, :book_type, :href, :author)
 
+  FICTION = "4294952052"
+  NON_FICTION = "4294952073"
+
+  CHILDREN = "37846"
+  TEEN = "37845"
+  ADULT = "37844"
+
+  FICTION_TYPE = "38790"
+
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
     BR = BookType.new("BR", "38771"),
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
-    CHILD = BookType.new("CHILD", "38790+37846"),
-    CHILD_FICTION = BookType.new("CHILD FICTION", "4294952052+37846"),
-    CHILD_NON_FICTION = BookType.new("CHILD NON-FICTION", "4294952073+37846"),
-    TEEN_FICTION = BookType.new("TEEN FICTION", "4294952052+37845"),
-    TEEN_NON_FICTION = BookType.new("TEEN NON-FICTION", "4294952073+37845"),
-    FICTION = BookType.new("FICTION", "4294952052+37844"),
-    NON_FICTION = BookType.new("NON-FICTION", "4294952073+37844"),
-    HISTORY = BookType.new("HISTORY", "4294952052+4293412643"),
-    BIOGRAPHY = BookType.new("BIOGRAPHY", "4294952052+4293412635"),
-    NOVEL = BookType.new("NOVEL", "4294952052+4293412630"),
-    MYSTERY = BookType.new("MYSTERY", "4294952052+37869"),
-    ROMANCE = BookType.new("ROMANCE", "4294952052+37871"),
-    SCIENCE_FICTION = BookType.new("SCIENCE FICTION", "4294952052+37870"),
-    SHORT = BookType.new("SHORT", "4294952052+37873"),
-    WESTERN = BookType.new("WESTERN", "4294952052+37872"),
+
+    CHILD_FICTION_TYPE = BookType.new("CHILD_FICTION_TYPE", "#{FICTION_TYPE}+#{CHILDREN}"),
+    TEEN_FICTION_TYPE = BookType.new("TEEN_FICTION_TYPE", "#{FICTION_TYPE}+#{TEEN}"),
+    ADULT_FICTION_TYPE = BookType.new("ADULT_FICTION_TYPE", "#{FICTION_TYPE}+#{ADULT}"),
+
+    CHILD_BOOKS = BookType.new("CHILD_BOOKS", CHILDREN),
+    TEEN_BOOKS = BookType.new("TEEN_BOOKS", TEEN),
+    ADULT_FICTION = BookType.new("ADULT_FICTION", "#{FICTION}+#{ADULT}"),
+    ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{NON_FICTION}+#{ADULT}"),
+
+    FANTASY = BookType.new("FANTASY", "4287892397"),
+    FICTION_SUBJECT = BookType.new("FICTION_SUBJECT", "4293412630"),
+    BIOGRAPHY = BookType.new("BIOGRAPHY", "4293412635"),
+    HISTORY = BookType.new("HISTORY", "4293412643"),
+
+    MYSTERY = BookType.new("MYSTERY", "37869"),
+    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "37870"),
+    ROMANCE = BookType.new("ROMANCE", "37871"),
+    WESTERN = BookType.new("WESTERN", "37872"),
+    SHORT = BookType.new("SHORT", "37873"),
   ]
 
   def games
