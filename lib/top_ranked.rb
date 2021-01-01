@@ -1,13 +1,26 @@
 class TopRanked
-  Book = Struct.new(:title, :copies, :book_type, :href, :author)
   BookType = Struct.new(:name, :id)
+  Book = Struct.new(:title, :copies, :book_type, :href, :author) do
+    def display?
+      # return false if book_type == "FICTION"
+      return false if copies < 60
+
+      true
+    end
+  end
 
   BOOK_TYPES = [
-    PIC = BookType.new("PIC", "38773&Ne=38769"),
-    BR = BookType.new("BR", "38771&Ne=38769"),
-    ER = BookType.new("ER", "38772&Ne=38769"),
-    APIC = BookType.new("APIC", "38770&Ne=38769"),
-    FICTION = BookType.new("FICTION", "38790+37846&Ne=27605"),
+    PIC = BookType.new("PIC", "38773"),
+    BR = BookType.new("BR", "38771"),
+    ER = BookType.new("ER", "38772"),
+    APIC = BookType.new("APIC", "38770"),
+    CHILD = BookType.new("CHILD", "38790+37846"),
+    CHILD_FICTION = BookType.new("CHILD FICTION", "4294952052+37846"),
+    CHILD_NON_FICTION = BookType.new("CHILD NON-FICTION", "4294952073+37846"),
+    TEEN_FICTION = BookType.new("TEEN FICTION", "4294952052+37845"),
+    TEEN_NON_FICTION = BookType.new("TEEN NON-FICTION", "4294952073+37845"),
+    ADULT_FICTION = BookType.new("ADULT FICTION", "4294952052+37844"),
+    ADULT_NON_FICTION = BookType.new("ADULT NON-FICTION", "4294952073+37844"),
   ]
 
   def games
@@ -18,6 +31,7 @@ class TopRanked
         .map { |url| Utils.read_url(url) }
         .map { |file| Nokogiri::HTML(file) }
         .flat_map { |doc| games_for_doc(book_type, doc) }
+        .select(&:display?)
         .force
     end
   end

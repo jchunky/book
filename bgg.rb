@@ -7,16 +7,13 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Bgg
   def display_game?(game)
-    return false if game.book_type == "FICTION"
-    return false if game.copies < 60
-
-    true
+    game.display?
   end
 
   def run
     @games = TopRanked.new.games
       .select(&method(:display_game?))
-      .sort_by { |g| [-g.copies, g.title] }
+      .sort_by { |g| [g.book_type, -g.copies, g.title] }
 
     p @games.count
 
