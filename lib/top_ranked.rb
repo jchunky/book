@@ -8,18 +8,16 @@ class TopRanked
   CHILDREN = "37846"
   TEEN = "37845"
   ADULT = "37844"
-  ADOLESCENT_FICTION = "38790"
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
     BR = BookType.new("BR", "38771"),
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
-    CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{ADOLESCENT_FICTION}+#{CHILDREN}"),
+    CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "38790+#{CHILDREN}"),
+    TEEN_FICTION = BookType.new("TEEN_FICTION", "#{FICTION}-#{TEEN}"),
+    ADULT_FICTION = BookType.new("ADULT_FICTION", "#{FICTION}-#{ADULT}"),
 
-    TEEN_FICTION = BookType.new("TEEN_FICTION", "#{FICTION}+#{TEEN}"),
-
-    # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
     # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
     # FANTASY = BookType.new("FANTASY", "4287892397"),
     # NOVEL = BookType.new("NOVEL", "4293412630"),
