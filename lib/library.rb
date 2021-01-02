@@ -1,4 +1,4 @@
-class TopRanked
+class Library
   BookType = Struct.new(:name, :id)
   Book = Struct.new(:title, :copies, :book_type, :href, :author)
 
@@ -30,15 +30,15 @@ class TopRanked
     # SHORT = BookType.new("SHORT", "37873"),
   ]
 
-  def games
+  def books
     BOOK_TYPES.flat_map do |book_type|
       (1..100)
         .lazy
         .map { |page| url_for_page(book_type, page) }
         .map { |url| Utils.read_url(url) }
         .map { |file| Nokogiri::HTML(file) }
-        .flat_map { |doc| games_for_doc(book_type, doc) }
-        .sort_by { |g| [g.book_type, -g.copies, g.title] }
+        .flat_map { |doc| books_for_doc(book_type, doc) }
+        .sort_by { |b| [b.book_type, -b.copies, b.title] }
         .take(100)
     end
   end
@@ -49,7 +49,7 @@ class TopRanked
     "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=20206+37751+37918+#{book_type.id}&No=#{index}&Ns=p_date_acquired_sort&Nso=1&Ntk=Keyword_Anywhere&view=grid"
   end
 
-  def games_for_doc(book_type, doc)
+  def books_for_doc(book_type, doc)
     doc.css(".search-results-column > .row").last.css(".details").map do |row|
       title = row.css(".ellipsis_text").first.content
       copies = row.css(".p").first.content.scan(/\d+ copies/).first.to_i

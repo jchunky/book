@@ -5,17 +5,17 @@ require "nokogiri"
 require "uri"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
-class Bgg
-  def display_game?(_game)
+class Book
+  def display_book?(_book)
     true
   end
 
   def run
-    @games = TopRanked.new.games
-      .select(&method(:display_game?))
+    @books = Library.new.books
+      .select(&method(:display_book?))
       .sort_by { |g| [g.book_type, -g.copies, g.title] }
 
-    p @games.count
+    p @books.count
 
     write_output
   end
@@ -23,10 +23,10 @@ class Bgg
   private
 
   def write_output
-    template = File.read("views/bgg.erb")
+    template = File.read("views/book.erb")
     html = ERB.new(template).result(binding)
     File.write("index.html", html)
   end
 end
 
-Bgg.new.run
+Book.new.run
