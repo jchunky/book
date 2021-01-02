@@ -41,7 +41,6 @@ class Library
         .uniq { |b| [b.book_type, b.href] }
         .sort_by { |b| [b.book_type, -b.copies] }
         .take(100)
-        .sort_by { |b| [b.book_type, -b.copies, b.title] }
     end
   end
 
