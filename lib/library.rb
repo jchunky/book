@@ -1,6 +1,6 @@
 class Library
   BookType = Struct.new(:name, :id)
-  Book = Struct.new(:title, :copies, :book_type, :href, :author)
+  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author)
 
   FICTION = "4294952052"
   NON_FICTION = "4294952073"
@@ -39,7 +39,7 @@ class Library
         .map { |file| Nokogiri::HTML(file) }
         .flat_map { |doc| books_for_doc(book_type, doc) }
         .uniq { |b| [b.book_type, b.href] }
-        .sort_by { |b| [b.book_type, -b.copies] }
+        .sort_by { |b| [b.book_type, -b.rating] }
         .take(100)
     end
   end
@@ -53,11 +53,13 @@ class Library
   def books_for_doc(book_type, doc)
     doc.css(".search-results-column > .row").last.css(".details").map do |row|
       title = row.css(".ellipsis_text").first.content
-      copies = row.css(".p").first.content.scan(/\d+ copies/).first.to_i
+      holds = row.css(".p").first.content.scan(/\d+ hold/).first.to_i
+      copies = row.css(".p").first.content.scan(/\d+ cop/).first.to_i
+      rating = holds * copies
       href = row.css("a").first[:href]
       author = row.css(".p").first.content.scan(/.* author.*\./).first.to_s.strip
 
-      Book.new(title, copies, book_type.name, href, author)
+      Book.new(title, holds, copies, rating, book_type.name, href, author)
     end
   end
 end

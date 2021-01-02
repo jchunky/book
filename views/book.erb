@@ -13,14 +13,18 @@
 <table id="books" class="sortable">
   <tr>
     <th>Book Type</th>
+    <th>Holds</th>
     <th>Copies</th>
+    <th>Rating</th>
     <th>Book</th>
     <th>Author</th>
   </tr>
   <% @books.each do |book| %>
     <tr>
       <td><%= book.book_type %></td>
+      <td class="number"><%= book.holds %></td>
       <td class="number"><%= book.copies %></td>
+      <td class="number"><%= book.rating %></td>
       <td><a href="https://www.torontopubliclibrary.ca<%= book.href %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
     </tr>
