@@ -38,9 +38,10 @@ class Library
         .map { |url| Utils.read_url(url) }
         .map { |file| Nokogiri::HTML(file) }
         .flat_map { |doc| books_for_doc(book_type, doc) }
-        .sort_by { |b| [b.book_type, -b.copies, b.title] }
-        .take(100)
         .uniq { |b| [b.book_type, b.href] }
+        .sort_by { |b| [b.book_type, -b.copies] }
+        .take(100)
+        .sort_by { |b| [b.book_type, -b.copies, b.title] }
     end
   end
 
