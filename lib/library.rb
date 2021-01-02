@@ -15,8 +15,8 @@ class Library
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
     # CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
-
     # TEEN_FICTION = BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
+
     # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
     # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
     # FANTASY = BookType.new("FANTASY", "4287892397"),
@@ -32,7 +32,7 @@ class Library
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      (1..100)
+      (1..130)
         .lazy
         .map { |page| url_for_page(book_type, page) }
         .map { |url| Utils.read_url(url) }
@@ -40,6 +40,7 @@ class Library
         .flat_map { |doc| books_for_doc(book_type, doc) }
         .sort_by { |b| [b.book_type, -b.copies, b.title] }
         .take(100)
+        .uniq { |b| [b.book_type, b.href] }
     end
   end
 
