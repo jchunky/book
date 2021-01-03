@@ -1,6 +1,10 @@
 class Library
   BookType = Struct.new(:name, :id)
-  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author)
+  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author) do
+    def ==(other)
+      href == other.href
+    end
+  end
 
   FICTION = "4294952052"
   NON_FICTION = "4294952073"
@@ -35,25 +39,26 @@ class Library
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      books_for(book_type)
+      books = books_for(book_type)
         .sort_by { |b| -b.copies }
         .take(100)
         .reject { |book| book.title.include?("Captain Underpants") }
         .reject { |book| book.title.include?("Christmas") }
         .reject { |book| book.title.include?("Claus") }
         .reject { |book| book.title.include?("Santa") }
-        .reject { |book| graphic_books_hrefs.include?(book.href) }
+
+      books - graphic_books
     end
   end
 
   private
 
-  def graphic_books_hrefs
-    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href)
+  def graphic_books
+    @graphic_books ||= books_for(GRAPHIC_BOOKS)
   end
 
-  def past_180_days_hrefs
-    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href)
+  def past_180_days
+    @past_180_days ||= books_for(PAST_180_DAYS)
   end
 
   def books_for(book_type)
