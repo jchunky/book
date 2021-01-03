@@ -36,15 +36,13 @@ class Library
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
-        .reject { |book| book.copies < 10 }
+        .sort_by { |b| [b.book_type, -b.copies] }
+        .take(100)
         .reject { |book| book.title.include?("Captain Underpants") }
         .reject { |book| book.title.include?("Christmas") }
         .reject { |book| book.title.include?("Claus") }
         .reject { |book| book.title.include?("Santa") }
         .reject { |book| graphic_books_hrefs.include?(book.href) }
-        .reject { |book| past_180_days_hrefs.include?(book.href) }
-        .sort_by { |b| [b.book_type, -b.copies] }
-        .take(100)
     end
   end
 
@@ -65,6 +63,7 @@ class Library
       .map { |url| Utils.read_url(url) }
       .map { |file| Nokogiri::HTML(file) }
       .flat_map { |doc| books_for_doc(book_type, doc) }
+      .reject { |book| book.copies < 30 }
       .uniq(&:href)
   end
 
