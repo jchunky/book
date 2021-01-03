@@ -60,10 +60,12 @@ class Library
     result = []
     (1..).each do |page|
       books = books_for_page(book_type, page)
-      return result if books.none?
+      break if books.none?
 
       result.concat(books)
     end
+
+    result.reject { |book| book.copies < 30 }
   end
 
   def books_for_page(book_type, page)
