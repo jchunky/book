@@ -36,7 +36,7 @@ class Library
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
-        .sort_by { |b| [b.book_type, -b.copies] }
+        .sort_by { |b| -b.copies }
         .take(100)
         .reject { |book| book.title.include?("Captain Underpants") }
         .reject { |book| book.title.include?("Christmas") }
