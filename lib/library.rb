@@ -49,22 +49,28 @@ class Library
   private
 
   def graphic_books_hrefs
-    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href).force
+    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href)
   end
 
   def past_180_days_hrefs
-    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href).force
+    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href)
   end
 
   def books_for(book_type)
-    (1..130)
-      .lazy
-      .map { |page| url_for_page(book_type, page) }
-      .map { |url| Utils.read_url(url) }
-      .map { |file| Nokogiri::HTML(file) }
-      .flat_map { |doc| books_for_doc(book_type, doc) }
-      .reject { |book| book.copies < 30 }
-      .uniq(&:href)
+    result = []
+    (1..).each do |page|
+      books = books_for_page(book_type, page)
+      return result if books.none?
+
+      result.concat(books)
+    end
+  end
+
+  def books_for_page(book_type, page)
+    url = url_for_page(book_type, page)
+    file = Utils.read_url(url)
+    doc = Nokogiri::HTML(file)
+    books_for_doc(book_type, doc)
   end
 
   def url_for_page(book_type, page)
