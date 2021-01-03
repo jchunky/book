@@ -58,14 +58,21 @@ class Library
   private
 
   def keep?(book)
+    return false if book.title =~ /avengers/i
     return false if book.title =~ /bad guys/i
+    return false if book.title =~ /batman/i
+    return false if book.title =~ /captain america/i
     return false if book.title =~ /captain underpants/i
     return false if book.title =~ /christmas/i
     return false if book.title =~ /claus/i
+    return false if book.title =~ /disney/i
     return false if book.title =~ /dog man/i
     return false if book.title =~ /fly guy/i
     return false if book.title =~ /halloween/i
+    return false if book.title =~ /iron man/i
+    return false if book.title =~ /peppa pig/i
     return false if book.title =~ /santa/i
+    return false if book.title =~ /spider-man/i
     return false if book.title =~ /wolverine/i
     return false if book.title =~ /x-men/i
 
