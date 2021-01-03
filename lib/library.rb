@@ -10,6 +10,7 @@ class Library
   ADULT = "37844"
 
   PAST_180_DAYS = BookType.new("PAST_180_DAYS", "38755")
+  GRAPHIC_BOOKS = BookType.new("GRAPHIC_BOOKS", "37874")
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
@@ -35,8 +36,14 @@ class Library
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
-        .select { |book| past_180_days_hrefs.exclude?(book.href) }
-        .sort_by { |b| [b.book_type, -b.rating] }
+        .reject { |book| book.copies < 10 }
+        .reject { |book| book.title.include?("Captain Underpants") }
+        .reject { |book| book.title.include?("Christmas") }
+        .reject { |book| book.title.include?("Claus") }
+        .reject { |book| book.title.include?("Santa") }
+        .reject { |book| graphic_books_hrefs.include?(book.href) }
+        .reject { |book| past_180_days_hrefs.include?(book.href) }
+        .sort_by { |b| [b.book_type, -b.holds] }
         .take(100)
     end
   end
@@ -45,6 +52,10 @@ class Library
 
   def past_180_days_hrefs
     @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href).force
+  end
+
+  def graphic_books_hrefs
+    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href).force
   end
 
   def books_for(book_type)
