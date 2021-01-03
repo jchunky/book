@@ -9,6 +9,8 @@ class Library
   TEEN = "37845"
   ADULT = "37844"
 
+  PAST_180_DAYS = BookType.new("PAST_180_DAYS", "38755")
+
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
     BR = BookType.new("BR", "38771"),
@@ -32,16 +34,27 @@ class Library
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      (1..130)
-        .lazy
-        .map { |page| url_for_page(book_type, page) }
-        .map { |url| Utils.read_url(url) }
-        .map { |file| Nokogiri::HTML(file) }
-        .flat_map { |doc| books_for_doc(book_type, doc) }
-        .uniq { |b| [b.book_type, b.href] }
+      books_for(book_type)
+        .select { |book| past_180_days_hrefs.exclude?(book.href) }
         .sort_by { |b| [b.book_type, -b.rating] }
         .take(100)
     end
+  end
+
+  private
+
+  def past_180_days_hrefs
+    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href).force
+  end
+
+  def books_for(book_type)
+    (1..130)
+      .lazy
+      .map { |page| url_for_page(book_type, page) }
+      .map { |url| Utils.read_url(url) }
+      .map { |file| Nokogiri::HTML(file) }
+      .flat_map { |doc| books_for_doc(book_type, doc) }
+      .uniq(&:href)
   end
 
   def url_for_page(book_type, page)
