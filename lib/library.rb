@@ -9,8 +9,8 @@ class Library
   TEEN = "37845"
   ADULT = "37844"
 
-  PAST_180_DAYS = BookType.new("PAST_180_DAYS", "38755")
   GRAPHIC_BOOKS = BookType.new("GRAPHIC_BOOKS", "37874")
+  PAST_180_DAYS = BookType.new("PAST_180_DAYS", "38755")
 
   BOOK_TYPES = [
     PIC = BookType.new("PIC", "38773"),
@@ -50,12 +50,12 @@ class Library
 
   private
 
-  def past_180_days_hrefs
-    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href).force
-  end
-
   def graphic_books_hrefs
     @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href).force
+  end
+
+  def past_180_days_hrefs
+    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href).force
   end
 
   def books_for(book_type)
