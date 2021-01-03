@@ -43,7 +43,7 @@ class Library
         .reject { |book| book.title.include?("Santa") }
         .reject { |book| graphic_books_hrefs.include?(book.href) }
         .reject { |book| past_180_days_hrefs.include?(book.href) }
-        .sort_by { |b| [b.book_type, -b.holds] }
+        .sort_by { |b| [b.book_type, -b.copies] }
         .take(100)
     end
   end
