@@ -2,7 +2,15 @@ class Library
   BookType = Struct.new(:name, :id)
   Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author) do
     def ==(other)
+      href == other
+    end
+
+    def eql?(other)
       href == other.href
+    end
+
+    def hash
+      href.hash
     end
   end
 
@@ -39,19 +47,30 @@ class Library
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      books = books_for(book_type)
+      books_for(book_type)
         .sort_by { |b| -b.copies }
         .take(100)
-        .reject { |book| book.title.include?("Captain Underpants") }
-        .reject { |book| book.title.include?("Christmas") }
-        .reject { |book| book.title.include?("Claus") }
-        .reject { |book| book.title.include?("Santa") }
-
-      books - graphic_books
+        .select(&method(:keep?))
+        .then { |books| books - graphic_books }
     end
   end
 
   private
+
+  def keep?(book)
+    return false if book.title =~ /bad guys/i
+    return false if book.title =~ /captain underpants/i
+    return false if book.title =~ /christmas/i
+    return false if book.title =~ /claus/i
+    return false if book.title =~ /dog man/i
+    return false if book.title =~ /fly guy/i
+    return false if book.title =~ /halloween/i
+    return false if book.title =~ /santa/i
+    return false if book.title =~ /wolverine/i
+    return false if book.title =~ /x-men/i
+
+    true
+  end
 
   def graphic_books
     @graphic_books ||= books_for(GRAPHIC_BOOKS)
@@ -70,7 +89,7 @@ class Library
       result.concat(books)
     end
 
-    result.reject { |book| book.copies < 30 }
+    result.reject { |book| book.copies < 30 }.uniq
   end
 
   def books_for_page(book_type, page)
