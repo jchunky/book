@@ -29,20 +29,27 @@ class Library
     BR = BookType.new("BR", "38771"),
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
-    # CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
-    # TEEN_FICTION = BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
+    CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    TEEN_FICTION = BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
 
-    # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
-    # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
-    # FANTASY = BookType.new("FANTASY", "4287892397"),
-    # NOVEL = BookType.new("NOVEL", "4293412630"),
-    # BIOGRAPHY = BookType.new("BIOGRAPHY", "4293412635"),
-    # HISTORY = BookType.new("HISTORY", "4293412643"),
-    # MYSTERY = BookType.new("MYSTERY", "37869"),
-    # SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "37870"),
-    # ROMANCE = BookType.new("ROMANCE", "37871"),
-    # WESTERN = BookType.new("WESTERN", "37872"),
-    # SHORT = BookType.new("SHORT", "37873"),
+    ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
+    ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
+
+    BIOGRAPHY = BookType.new("BIOGRAPHY", "#{ADULT}+4293412635"),
+    CANADIAN_POETRY = BookType.new("CANADIAN_POETRY", "#{ADULT}+4293411560"),
+    CHILD_REARING = BookType.new("CHILD_REARING", "#{ADULT}+4293412106"),
+    DRAWING = BookType.new("DRAWING", "#{ADULT}+4293412549"),
+    FANTASY = BookType.new("FANTASY", "#{ADULT}+4287892397"),
+    FICTION = BookType.new("FICTION", "#{ADULT}+4293412630"),
+    HISTORY = BookType.new("HISTORY", "#{ADULT}+4293412643"),
+    MYSTERY = BookType.new("MYSTERY", "#{ADULT}+37869"),
+    NATURE = BookType.new("NATURE", "#{ADULT}+4293410500"),
+    PERSONAL_FINANCE = BookType.new("PERSONAL_FINANCE", "#{ADULT}+4293407417"),
+    POETRY = BookType.new("POETRY", "#{ADULT}+4293411909"),
+    ROMANCE = BookType.new("ROMANCE", "#{ADULT}+37871"),
+    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "#{ADULT}+37870"),
+    SHORT = BookType.new("SHORT", "#{ADULT}+37873"),
+    WESTERN = BookType.new("WESTERN", "#{ADULT}+37872"),
   ]
 
   def books
@@ -52,6 +59,7 @@ class Library
         .take(100)
         .select(&method(:keep?))
         .then { |books| books - graphic_books }
+        .then { |books| books & past_180_days }
     end
   end
 
