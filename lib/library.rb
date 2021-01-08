@@ -56,11 +56,11 @@ class Library
     STUDY_AND_TEACHING = BookType.new("STUDY_AND_TEACHING", "#{ADULT}+4293412474"),
     SUCCESS = BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}+4293408033"),
 
-    # FANTASY = BookType.new("FANTASY", "#{ADULT}+4287892397"),
+    FANTASY = BookType.new("FANTASY", "#{ADULT}+4287892397"),
     # NOVEL = BookType.new("NOVEL", "#{ADULT}+4293412630"),
     # MYSTERY = BookType.new("MYSTERY", "#{ADULT}+37869"),
     # ROMANCE = BookType.new("ROMANCE", "#{ADULT}+37871"),
-    # SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "#{ADULT}+37870"),
+    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "#{ADULT}+37870"),
     # SHORT = BookType.new("SHORT", "#{ADULT}+37873"),
     # WESTERN = BookType.new("WESTERN", "#{ADULT}+37872"),
   ]
