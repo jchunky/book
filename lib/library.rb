@@ -1,18 +1,6 @@
 class Library
   BookType = Struct.new(:name, :id)
-  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author) do
-    def ==(other)
-      href == other
-    end
-
-    def eql?(other)
-      href == other.href
-    end
-
-    def hash
-      href.hash
-    end
-  end
+  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author)
 
   FICTION = "4294952052"
   NON_FICTION = "4294952073"
@@ -74,8 +62,8 @@ class Library
         .sort_by { |b| -b.copies }
         .take(100)
         .select(&method(:keep?))
-        .then { |books| books - graphic_books }
-        .then { |books| books & past_180_days }
+        .reject { |book| graphic_books_hrefs.include?(book.href) }
+        .select { |book| past_180_days_hrefs.include?(book.href) }
     end
   end
 
@@ -103,12 +91,12 @@ class Library
     true
   end
 
-  def graphic_books
-    @graphic_books ||= books_for(GRAPHIC_BOOKS)
+  def graphic_books_hrefs
+    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS).map(&:href)
   end
 
-  def past_180_days
-    @past_180_days ||= books_for(PAST_180_DAYS)
+  def past_180_days_hrefs
+    @past_180_days_hrefs ||= books_for(PAST_180_DAYS).map(&:href)
   end
 
   def books_for(book_type)
