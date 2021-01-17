@@ -56,12 +56,6 @@ class Library
     # WESTERN = BookType.new("WESTERN", "#{ADULT}+37872"),
   ]
 
-  attr_reader :cache
-
-  def initialize
-    @cache = Cache.new
-  end
-
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
@@ -108,7 +102,7 @@ class Library
   end
 
   def books_for(book_type)
-    cache.cache(book_type.id) do
+    Utils.cache_yaml(book_type.id) do
       result = []
       (1..).each do |page|
         books = books_for_page(book_type, page)
