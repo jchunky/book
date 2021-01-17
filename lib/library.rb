@@ -100,24 +100,24 @@ class Library
   end
 
   def books_for(book_type)
-    Utils.cache_yaml(book_type.id) do
-      result = []
-      (1..).each do |page|
-        books = books_for_page(book_type, page)
-        break if books.none?
+    result = []
+    (1..).each do |page|
+      books = books_for_page(book_type, page)
+      break if books.none?
 
-        result.concat(books)
-      end
-
-      result.reject { |book| book.copies < 30 }.uniq(&:href)
+      result.concat(books)
     end
+
+    result.reject { |book| book.copies < 30 }.uniq(&:href)
   end
 
   def books_for_page(book_type, page)
     url = url_for_page(book_type, page)
-    file = Utils.read_url(url)
-    doc = Nokogiri::HTML(file)
-    books_for_doc(book_type, doc)
+    Utils.cache_yaml(url) do
+      file = Utils.read_url(url)
+      doc = Nokogiri::HTML(file)
+      books_for_doc(book_type, doc)
+    end
   end
 
   def url_for_page(book_type, page)
