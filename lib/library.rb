@@ -113,7 +113,7 @@ class Library
 
   def books_for_page(book_type, page)
     url = url_for_page(book_type, page)
-    Utils.cache_yaml(url) do
+    Utils.cache_object(url) do
       file = Utils.read_url(url)
       doc = Nokogiri::HTML(file)
       books_for_doc(book_type, doc)
