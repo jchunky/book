@@ -18,13 +18,8 @@ class Library
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
     CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
-    # TEEN_FICTION = BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
-
     DICTIONARY = BookType.new("DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
     ENCYCLOPEDIA = BookType.new("ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
-
-    # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
-    # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
 
     ART = BookType.new("ART", "#{ADULT}+#{NON_FICTION}+4293411914"),
     BIOGRAPHY = BookType.new("BIOGRAPHY", "#{ADULT}+4293412635"),
@@ -46,12 +41,15 @@ class Library
     SOCIAL_PSYCHOLOGY = BookType.new("SOCIAL_PSYCHOLOGY", "#{ADULT}+4293406987"),
     STUDY_AND_TEACHING = BookType.new("STUDY_AND_TEACHING", "#{ADULT}+4293412474"),
     SUCCESS = BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}+4293408033"),
-
     FANTASY = BookType.new("FANTASY", "#{ADULT}+4287892397"),
+    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "#{ADULT}+37870"),
+
+    # TEEN_FICTION = BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
+    # ADULT_FICTION = BookType.new("ADULT_FICTION", "#{ADULT}+#{FICTION}"),
+    # ADULT_NON_FICTION = BookType.new("ADULT_NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
     # NOVEL = BookType.new("NOVEL", "#{ADULT}+4293412630"),
     # MYSTERY = BookType.new("MYSTERY", "#{ADULT}+37869"),
     # ROMANCE = BookType.new("ROMANCE", "#{ADULT}+37871"),
-    SCIENCE_FICTION = BookType.new("SCIENCE_FICTION", "#{ADULT}+37870"),
     # SHORT = BookType.new("SHORT", "#{ADULT}+37873"),
     # WESTERN = BookType.new("WESTERN", "#{ADULT}+37872"),
   ]
