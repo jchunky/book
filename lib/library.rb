@@ -19,10 +19,12 @@ class Library
     APIC = BookType.new("APIC", "38770"),
     CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
     DICTIONARY = BookType.new("DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
+    DK = BookType.new("DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=dk+publishing"),
     ENCYCLOPEDIA = BookType.new("ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
     ENGLISH = BookType.new("ENGLISH", "#{CHILDREN}+#{NON_FICTION}+4293412613"),
     JOKES = BookType.new("JOKES", "#{CHILDREN}&Ntt=jokes"),
     MATH = BookType.new("MATH", "#{CHILDREN}&Ntt=Mathematics--Juvenile+literature."),
+    VISUAL_ENCYCLOPEDIA = BookType.new("VISUAL_ENCYCLOPEDIA", "#{CHILDREN}&Ntt=visual+encyclopedia"),
 
     ART = BookType.new("ART", "#{ADULT}+#{NON_FICTION}+4293411914"),
     BIOGRAPHY = BookType.new("BIOGRAPHY", "#{ADULT}+4293412635"),
