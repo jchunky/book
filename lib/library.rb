@@ -88,6 +88,7 @@ class Library
     return false if book.title =~ /lego/i
     return false if book.title =~ /marvel/i
     return false if book.title =~ /peppa pig/i
+    return false if book.title =~ /pokemon/i
     return false if book.title =~ /santa/i
     return false if book.title =~ /spider-man/i
     return false if book.title =~ /wolverine/i
