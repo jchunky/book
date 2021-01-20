@@ -21,6 +21,7 @@ class Library
     DICTIONARY = BookType.new("DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
     ENCYCLOPEDIA = BookType.new("ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
     JOKES = BookType.new("JOKES", "#{CHILDREN}&Ntt=jokes"),
+    MATH = BookType.new("MATH", "#{CHILDREN}&Ntt=Mathematics--Juvenile+literature."),
 
     ART = BookType.new("ART", "#{ADULT}+#{NON_FICTION}+4293411914"),
     BIOGRAPHY = BookType.new("BIOGRAPHY", "#{ADULT}+4293412635"),
