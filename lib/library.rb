@@ -18,6 +18,7 @@ class Library
     ER = BookType.new("ER", "38772"),
     APIC = BookType.new("APIC", "38770"),
     CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    CHILDREN_POETRY = BookType.new("CHILDREN_POETRY", "#{CHILDREN}&Ntt=poetry"),
     DICTIONARY = BookType.new("DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
     DK = BookType.new("DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=dk+publishing"),
     ENCYCLOPEDIA = BookType.new("ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
