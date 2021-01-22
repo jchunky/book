@@ -13,19 +13,21 @@ class Library
   PAST_180_DAYS = BookType.new("PAST_180_DAYS", "38755")
 
   BOOK_TYPES = [
-    PIC = BookType.new("PIC", "38773"),
-    BR = BookType.new("BR", "38771"),
-    ER = BookType.new("ER", "38772"),
-    APIC = BookType.new("APIC", "38770"),
+    CHILDREN_PIC = BookType.new("CHILDREN_PIC", "38773"),
+    CHILDREN_BR = BookType.new("CHILDREN_BR", "38771"),
+    CHILDREN_ER = BookType.new("CHILDREN_ER", "38772"),
+    CHILDREN_APIC = BookType.new("CHILDREN_APIC", "38770"),
     CHILDREN_FICTION = BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+
+    CHILDREN_DICTIONARY = BookType.new("CHILDREN_DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
+    CHILDREN_DK = BookType.new("CHILDREN_DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=dk+publishing"),
+    CHILDREN_ENCYCLOPEDIA = BookType.new("CHILDREN_ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
+    CHILDREN_ENGLISH_LANGUAGE = BookType.new("CHILDREN_ENGLISH_LANGUAGE", "#{CHILDREN}+#{NON_FICTION}+4293412613"),
+    CHILDREN_HISTORY = BookType.new("CHILDREN_HISTORY", "#{CHILDREN}+#{NON_FICTION}&Ntt=history"),
+    CHILDREN_JOKES = BookType.new("CHILDREN_JOKES", "#{CHILDREN}&Ntt=jokes"),
+    CHILDREN_MATH = BookType.new("CHILDREN_MATH", "#{CHILDREN}&Ntt=Mathematics--Juvenile+literature."),
     CHILDREN_POETRY = BookType.new("CHILDREN_POETRY", "#{CHILDREN}&Ntt=poetry"),
-    DICTIONARY = BookType.new("DICTIONARY", "#{CHILDREN}&Ntt=dictionary"),
-    DK = BookType.new("DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=dk+publishing"),
-    ENCYCLOPEDIA = BookType.new("ENCYCLOPEDIA", "#{CHILDREN}&Ntt=encyclopedia"),
-    ENGLISH = BookType.new("ENGLISH", "#{CHILDREN}+#{NON_FICTION}+4293412613"),
-    JOKES = BookType.new("JOKES", "#{CHILDREN}&Ntt=jokes"),
-    MATH = BookType.new("MATH", "#{CHILDREN}&Ntt=Mathematics--Juvenile+literature."),
-    VISUAL_ENCYCLOPEDIA = BookType.new("VISUAL_ENCYCLOPEDIA", "#{CHILDREN}&Ntt=visual+encyclopedia"),
+    CHILDREN_VISUAL_ENCYCLOPEDIA = BookType.new("CHILDREN_VISUAL_ENCYCLOPEDIA", "#{CHILDREN}&Ntt=visual+encyclopedia"),
 
     ART = BookType.new("ART", "#{ADULT}+#{NON_FICTION}+4293411914"),
     BIOGRAPHY = BookType.new("BIOGRAPHY", "#{ADULT}+4293412635"),
