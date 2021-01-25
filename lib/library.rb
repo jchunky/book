@@ -32,13 +32,16 @@ class Library
     BookType.new("CHILDREN_VISUAL_ENCYCLOPEDIA", "#{CHILDREN}+#{NON_FICTION}&Ntt=visual+encyclopedia"),
 
     # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    BookType.new("ART_HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=art+history"),
+    BookType.new("ART_TECHNIQUE", "#{ADULT}+#{NON_FICTION}&Ntt=art+technique"),
     BookType.new("CANADIAN_POETRY", "#{ADULT}+#{NON_FICTION}&Ntt=canadian+poetry"),
     BookType.new("CHILD_REARING", "#{ADULT}+#{NON_FICTION}&Ntt=child+rearing"),
     BookType.new("CONDUCT_OF_LIFE", "#{ADULT}+#{NON_FICTION}&Ntt=conduct+of+life"),
     BookType.new("DECISION_MAKING", "#{ADULT}+#{NON_FICTION}&Ntt=decision+making"),
     BookType.new("DESIGN", "#{ADULT}+#{NON_FICTION}&Ntt=design"),
     BookType.new("DRAWING", "#{ADULT}+#{NON_FICTION}&Ntt=drawing"),
-    BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
+    BookType.new("GRAPHIC ARTS", "#{ADULT}+#{NON_FICTION}&Ntt=graphic+arts"),
+    # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
     BookType.new("INTERPERSONAL_RELATIONS", "#{ADULT}+#{NON_FICTION}&Ntt=interpersonal+relations"),
     BookType.new("MAN_WOMAN_RELATIONSHIPS", "#{ADULT}+#{NON_FICTION}&Ntt=man+woman+relationships"),
     BookType.new("NATURE", "#{ADULT}+#{NON_FICTION}&Ntt=nature"),
@@ -65,7 +68,7 @@ class Library
         .take(100)
         .select(&method(:keep?))
         .reject { |book| graphic_books_hrefs.include?(book.href) }
-        .select { |book| past_180_days_hrefs.include?(book.href) }
+      # .select { |book| past_180_days_hrefs.include?(book.href) }
     end
   end
 
