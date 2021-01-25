@@ -31,7 +31,6 @@ class Library
     BookType.new("CHILDREN_PUZZLE", "#{CHILDREN}+#{NON_FICTION}&Ntt=puzzle"),
     BookType.new("CHILDREN_VISUAL_ENCYCLOPEDIA", "#{CHILDREN}+#{NON_FICTION}&Ntt=visual+encyclopedia"),
 
-    BookType.new("ART", "#{ADULT}+#{NON_FICTION}&Ntt=art"),
     # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
     BookType.new("CANADIAN_POETRY", "#{ADULT}+#{NON_FICTION}&Ntt=canadian+poetry"),
     BookType.new("CHILD_REARING", "#{ADULT}+#{NON_FICTION}&Ntt=child+rearing"),
@@ -53,8 +52,8 @@ class Library
     BookType.new("STUDY_AND_TEACHING", "#{ADULT}+#{NON_FICTION}&Ntt=study+and+teaching"),
     BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
 
-    BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
-    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=science+fiction"),
+    # BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
+    # BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=science+fiction"),
 
     # BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
   ]
