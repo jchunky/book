@@ -113,7 +113,10 @@ class Library
       result.concat(books)
     end
 
-    result.reject { |book| book.copies < 30 }.uniq(&:href)
+    result
+      .reject { |book| book.copies < 30 }
+      .reject { |book| book.holds < 30 }
+      .uniq(&:href)
   end
 
   def books_for_page(book_type, page)
