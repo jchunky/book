@@ -32,7 +32,7 @@ class Library
     BookType.new("CHILDREN_VISUAL_ENCYCLOPEDIA", "#{CHILDREN}+#{NON_FICTION}&Ntt=visual+encyclopedia"),
 
     BookType.new("ART", "#{ADULT}+#{NON_FICTION}&Ntt=art"),
-    BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
     BookType.new("CANADIAN_POETRY", "#{ADULT}+#{NON_FICTION}&Ntt=canadian+poetry"),
     BookType.new("CHILD_REARING", "#{ADULT}+#{NON_FICTION}&Ntt=child+rearing"),
     BookType.new("CONDUCT_OF_LIFE", "#{ADULT}+#{NON_FICTION}&Ntt=conduct+of+life"),
