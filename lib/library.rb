@@ -43,6 +43,7 @@ class Library
     BookType.new("INTERPERSONAL_RELATIONS", "#{ADULT}+#{NON_FICTION}&Ntt=interpersonal+relations"),
     BookType.new("MAN_WOMAN_RELATIONSHIPS", "#{ADULT}+#{NON_FICTION}&Ntt=man+woman+relationships"),
     BookType.new("NATURE", "#{ADULT}+#{NON_FICTION}&Ntt=nature"),
+    BookType.new("PARENTING", "#{ADULT}+#{NON_FICTION}&Ntt=parenting"),
     BookType.new("PERSONAL_FINANCE", "#{ADULT}+#{NON_FICTION}&Ntt=personal+finance"),
     BookType.new("PHYSICAL_FITNESS", "#{ADULT}+#{NON_FICTION}&Ntt=physical+fitness"),
     BookType.new("PLANNING", "#{ADULT}+#{NON_FICTION}&Ntt=planning"),
