@@ -117,7 +117,7 @@ class Library
 
     result
       .reject { |book| book.copies < 30 }
-      .reject { |book| book.holds < 30 }
+      .reject { |book| book.holds < 10 }
       .uniq(&:href)
   end
 
