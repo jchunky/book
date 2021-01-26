@@ -51,10 +51,10 @@ class Library
     BookType.new("POETRY", "#{ADULT}+#{NON_FICTION}&Ntt=poetry"),
     BookType.new("SOCIAL_PSYCHOLOGY", "#{ADULT}+#{NON_FICTION}&Ntt=\"social+psychology\""),
     BookType.new("STUDY_AND_TEACHING", "#{ADULT}+#{NON_FICTION}&Ntt=\"study+and+teaching\""),
-    BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
 
     # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
     # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
+    # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
     # BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
     # BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
     # BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
