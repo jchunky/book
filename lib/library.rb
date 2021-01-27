@@ -17,7 +17,7 @@ class Library
     BookType.new("CHILDREN_BR", "38771"),
     BookType.new("CHILDREN_ER", "38772"),
     BookType.new("CHILDREN_APIC", "38770"),
-    BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    # BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
 
     BookType.new("CHILDREN_DICTIONARY", "#{CHILDREN}+#{NON_FICTION}&Ntt=dictionary"),
     BookType.new("CHILDREN_DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=\"dk+publishing\""),
@@ -117,7 +117,6 @@ class Library
 
     result
       .reject { |book| book.copies < 30 }
-      .reject { |book| book.holds < 10 }
       .uniq(&:href)
   end
 
