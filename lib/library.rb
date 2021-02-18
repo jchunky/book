@@ -67,7 +67,7 @@ class Library
         .take(100)
         .select(&method(:keep?))
         .reject { |book| graphic_books_hrefs.include?(book.href) }
-      # .select { |book| past_180_days_hrefs.include?(book.href) }
+        .select { |book| past_180_days_hrefs.include?(book.href) }
     end
   end
 
