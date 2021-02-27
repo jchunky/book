@@ -64,7 +64,6 @@ class Library
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
         .sort_by { |b| -b.copies }
-        .take(100)
         .select(&method(:keep?))
         .reject { |book| graphic_books_hrefs.include?(book.href) }
         .select { |book| past_180_days_hrefs.include?(book.href) }
