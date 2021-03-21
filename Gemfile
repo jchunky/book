@@ -5,9 +5,9 @@ gem "activesupport"
 gem "nokogiri"
 
 # development
-gem "guard"
 gem "rake"
 gem "rubocop"
+gem "whats_up"
 
 # test
 gem "minitest"
@@ -17,4 +17,4 @@ gem "test-unit"
 # minitest
 gem "minitest-reporters"
 # require "minitest/reporters"
-# Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
+# Minitest::Reporters.use!
