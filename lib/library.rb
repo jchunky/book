@@ -130,8 +130,12 @@ class Library
 
   def url_for_page(book_type, page)
     index = (page - 1) * 150
+    english = "20206"
+    items_that_check_out = "37751"
+    regular_print_books = "37918"
+    past_180_days = "38755"
 
-    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=20206+37751+37918+#{book_type.id}&No=#{index}&Ns=p_date_acquired_sort&Nso=1&Ntk=Keyword_Anywhere&view=grid"
+    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=#{english}+#{items_that_check_out}+#{regular_print_books}+#{past_180_days}+#{book_type.id}&No=#{index}&Ns=p_date_acquired_sort&Nso=1&Ntk=Keyword_Anywhere&view=grid"
   end
 
   def books_for_doc(book_type, doc)
