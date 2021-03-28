@@ -74,7 +74,6 @@ class Library
 
   def keep?(book)
     return false if book.title =~ /avengers/i
-    return false if book.title =~ /bad guys/i
     return false if book.title =~ /batman/i
     return false if book.title =~ /captain america/i
     return false if book.title =~ /captain underpants/i
