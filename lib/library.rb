@@ -17,7 +17,7 @@ class Library
     BookType.new("CHILDREN_BR", "38771"),
     BookType.new("CHILDREN_ER", "38772"),
     BookType.new("CHILDREN_APIC", "38770"),
-    # BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
 
     BookType.new("CHILDREN_DICTIONARY", "#{CHILDREN}+#{NON_FICTION}&Ntt=dictionary"),
     BookType.new("CHILDREN_DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=\"dk+publishing\""),
@@ -52,12 +52,12 @@ class Library
     BookType.new("SOCIAL_PSYCHOLOGY", "#{ADULT}+#{NON_FICTION}&Ntt=\"social+psychology\""),
     BookType.new("STUDY_AND_TEACHING", "#{ADULT}+#{NON_FICTION}&Ntt=\"study+and+teaching\""),
 
-    # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
-    # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
-    # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
-    # BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
-    # BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
-    # BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
+    BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
+    BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
+    BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
+    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
+    BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
   ]
 
   def books
