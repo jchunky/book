@@ -79,28 +79,8 @@ class Library
   private
 
   def keep?(book)
-    return false if book.holds < 10
-    return false if book.copies < 30 && %w[COMICS SUCCESS].exclude?(book.book_type)
-
-    # return false if book.title =~ /avengers/i
-    # return false if book.title =~ /batman/i
-    # return false if book.title =~ /captain america/i
-    # return false if book.title =~ /captain underpants/i
-    # return false if book.title =~ /christmas/i
-    # return false if book.title =~ /claus/i
-    # return false if book.title =~ /disney/i
-    # return false if book.title =~ /dog man/i
-    # return false if book.title =~ /fly guy/i
-    # return false if book.title =~ /halloween/i
-    # return false if book.title =~ /iron man/i
-    # return false if book.title =~ /lego/i
-    # return false if book.title =~ /marvel/i
-    # return false if book.title =~ /peppa pig/i
-    # return false if book.title =~ /pokemon/i
-    # return false if book.title =~ /santa/i
-    # return false if book.title =~ /spider-man/i
-    # return false if book.title =~ /wolverine/i
-    # return false if book.title =~ /x-men/i
+    return false if book.holds < 10 && !(book.book_type =~ /(CHILDREN)/)
+    return false if book.copies < 30 && !(book.book_type =~ /(COMICS|SUCCESS)/)
 
     true
   end
