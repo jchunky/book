@@ -17,12 +17,15 @@ class Library
 
   SUPERHEROES = "4293403305"
 
+  PARKDALE = "33162"
+
   BOOK_TYPES = [
-    BookType.new("CHILDREN_PIC", "38773"),
+    BookType.new("CHILDREN_APIC", "38770"),
     BookType.new("CHILDREN_BR", "38771"),
     BookType.new("CHILDREN_ER", "38772"),
-    BookType.new("CHILDREN_APIC", "38770"),
     BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    BookType.new("CHILDREN_PARKDALE", "#{CHILDREN}+#{PARKDALE}"),
+    BookType.new("CHILDREN_PIC", "38773"),
 
     BookType.new("CHILDREN_DICTIONARY", "#{CHILDREN}+#{NON_FICTION}&Ntt=dictionary"),
     BookType.new("CHILDREN_DK", "#{CHILDREN}+#{NON_FICTION}&Ntt=\"dk+publishing\""),
@@ -36,6 +39,7 @@ class Library
     BookType.new("CHILDREN_PUZZLE", "#{CHILDREN}+#{NON_FICTION}&Ntt=puzzle"),
     BookType.new("CHILDREN_VISUAL_ENCYCLOPEDIA", "#{CHILDREN}+#{NON_FICTION}&Ntt=\"visual+encyclopedia\""),
 
+    BookType.new("ADULT_PARKDALE", "#{ADULT}+#{PARKDALE}"),
     BookType.new("ART_HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=\"art+history\""),
     BookType.new("ART_TECHNIQUE", "#{ADULT}+#{NON_FICTION}&Ntt=\"art+technique\""),
     BookType.new("CANADIAN_POETRY", "#{ADULT}+#{NON_FICTION}&Ntt=\"canadian+poetry\""),
@@ -78,7 +82,8 @@ class Library
   private
 
   def keep?(book)
-    return false if book.rating < 100
+    return false if book.holds < 10
+    # return false if book.rating < 100
     return false if book.rating < 1000 && book.book_type =~ /HISTORY/
     return false if graphic_books_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
 
@@ -120,7 +125,7 @@ class Library
     items_that_check_out = "37751"
     regular_print_books = "37918"
 
-    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=#{PAST_180_DAYS}+#{english}+#{items_that_check_out}+#{regular_print_books}+#{book_type.id}&No=#{index}&view=grid"
+    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=#{PARKDALE}+#{PAST_180_DAYS}+#{english}+#{items_that_check_out}+#{regular_print_books}+#{book_type.id}&No=#{index}&view=grid"
   end
 
   def books_for_doc(book_type, doc)
