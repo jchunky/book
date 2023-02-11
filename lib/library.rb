@@ -11,13 +11,13 @@ class Library
 
   BIOGRAPHY = "4293412635"
   COOKBOOK = "4287892185"
-  GRAPHIC_BOOKS = "37874"
+  COMICS = "37874"
   JAPAN = "4293412397"
   PAST_180_DAYS = "38755"
 
   BIOGRAPHY_BOOK_TYPE = BookType.new("BIOGRAPHY", BIOGRAPHY)
   COOKBOOK_BOOK_TYPE = BookType.new("COOKBOOK", COOKBOOK)
-  GRAPHIC_BOOKS_BOOK_TYPE = BookType.new("GRAPHIC_BOOKS", GRAPHIC_BOOKS)
+  COMICS_BOOK_TYPE = BookType.new("COMICS", COMICS)
   JAPAN_BOOK_TYPE = BookType.new("JAPAN", JAPAN)
   PAST_180_DAYS_BOOK_TYPE = BookType.new("PAST_180_DAYS", PAST_180_DAYS)
 
@@ -25,9 +25,9 @@ class Library
   PARKDALE = "33162"
 
   BOOK_TYPES = [
-    BookType.new("CHILDREN_PARKDALE", "#{PARKDALE}+#{CHILDREN}"),
-    BookType.new("ADULT_NONFICTION_PARKDALE", "#{PARKDALE}+#{ADULT}+#{NON_FICTION}"),
-    BookType.new("COMICS_ADULT_PARKDALE", "#{PARKDALE}+#{GRAPHIC_BOOKS}+#{ADULT}"),
+    BookType.new("CHILDREN_PARKDALE", "#{CHILDREN}+#{PARKDALE}"),
+    BookType.new("NONFICTION_ADULT_PARKDALE", "#{NON_FICTION}+#{ADULT}+#{PARKDALE}"),
+    BookType.new("COMICS_ADULT_PARKDALE", "#{COMICS}+#{ADULT}+#{PARKDALE}"),
 
     # BookType.new("CHILDREN_APIC", "38770"),
     # BookType.new("CHILDREN_BR", "38771"),
@@ -71,7 +71,7 @@ class Library
     # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
     # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
 
-    # BookType.new("COMICS", "#{GRAPHIC_BOOKS}+#{SUPERHEROES}"),
+    # BookType.new("COMICS", "#{COMICS}+#{SUPERHEROES}"),
 
     ## BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
     ## BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
@@ -93,8 +93,8 @@ class Library
     return false if book.holds < 10
     # return false if book.rating < 100
     return false if book.rating < 1000 && book.book_type =~ /HISTORY/
-    return false if book.rating < 1000 && book.book_type =~ /ADULT_NONFICTION_PARKDALE/
-    return false if graphic_books_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
+    return false if book.rating < 1000 && book.book_type =~ /NONFICTION_ADULT_PARKDALE/
+    return false if comics_href.include?(book.href) && !(book.book_type =~ /COMICS/)
     return false if biography_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
     return false if cookbook_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
     # return false if japan_hrefs.include?(book.href) && (book.book_type =~ /COMICS/)
@@ -102,8 +102,8 @@ class Library
     true
   end
 
-  def graphic_books_hrefs
-    @graphic_books_hrefs ||= books_for(GRAPHIC_BOOKS_BOOK_TYPE).map(&:href)
+  def comics_href
+    @comics_href ||= books_for(COMICS_BOOK_TYPE).map(&:href)
   end
 
   def past_180_days_hrefs
