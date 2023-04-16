@@ -1,6 +1,6 @@
 class Library
   BookType = Struct.new(:name, :id)
-  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author)
+  Book = Struct.new(:title, :holds, :copies, :rating, :book_type, :href, :author, :year)
 
   FICTION = "4294952052"
   NON_FICTION = "4294952073"
@@ -25,9 +25,9 @@ class Library
   PARKDALE = "33162"
 
   BOOK_TYPES = [
-    BookType.new("CHILDREN_PARKDALE", "#{CHILDREN}+#{PARKDALE}"),
-    BookType.new("NONFICTION_ADULT_PARKDALE", "#{NON_FICTION}+#{ADULT}+#{PARKDALE}"),
-    BookType.new("COMICS_ADULT_PARKDALE", "#{COMICS}+#{ADULT}+#{PARKDALE}"),
+    # BookType.new("CHILDREN_PARKDALE", "#{CHILDREN}+#{PARKDALE}"),
+    # BookType.new("NONFICTION_ADULT_PARKDALE", "#{NON_FICTION}+#{ADULT}+#{PARKDALE}"),
+    # BookType.new("COMICS_ADULT_PARKDALE", "#{COMICS}+#{ADULT}+#{PARKDALE}"),
 
     # BookType.new("CHILDREN_APIC", "38770"),
     # BookType.new("CHILDREN_BR", "38771"),
@@ -73,30 +73,32 @@ class Library
 
     # BookType.new("COMICS", "#{COMICS}+#{SUPERHEROES}"),
 
-    ## BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
-    ## BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
-    ## BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
+    BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
+    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
     ## BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
   ]
 
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
-        .sort_by { |b| -b.rating }
         .select(&method(:keep?))
+        .sort_by { |b| -b.rating }
     end
   end
 
   private
 
   def keep?(book)
-    return false if book.holds < 10
+    return false if book.holds < 100
+    return false if book.copies < 10
+
     # return false if book.rating < 100
-    return false if book.rating < 1000 && book.book_type =~ /HISTORY/
-    return false if book.rating < 1000 && book.book_type =~ /NONFICTION_ADULT_PARKDALE/
-    return false if comics_href.include?(book.href) && !(book.book_type =~ /COMICS/)
-    return false if biography_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
-    return false if cookbook_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
+    # return false if book.rating < 1000 && book.book_type =~ /HISTORY/
+    # return false if book.rating < 1000 && book.book_type =~ /NONFICTION_ADULT_PARKDALE/
+    # return false if comics_href.include?(book.href) && !(book.book_type =~ /COMICS/)
+    # return false if biography_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
+    # return false if cookbook_hrefs.include?(book.href) && !(book.book_type =~ /COMICS/)
     # return false if japan_hrefs.include?(book.href) && (book.book_type =~ /COMICS/)
 
     true
@@ -149,7 +151,7 @@ class Library
     items_that_check_out = "37751"
     regular_print_books = "37918"
 
-    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=#{PARKDALE}+#{PAST_180_DAYS}+#{english}+#{items_that_check_out}+#{regular_print_books}+#{book_type.id}&No=#{index}&view=grid"
+    "https://www.torontopubliclibrary.ca/search.jsp?Erp=150&N=#{english}+#{items_that_check_out}+#{regular_print_books}+#{book_type.id}&No=#{index}&view=grid"
   end
 
   def books_for_doc(book_type, doc)
@@ -160,8 +162,9 @@ class Library
       rating = holds * copies
       href = row.css("a").first[:href]
       author = row.css(".p").first.content.scan(/.* author.*\./).first.to_s.strip
+      year = (row.css('.date').first.content.to_i rescue 0)
 
-      Book.new(title, holds, copies, rating, book_type.name, href, author)
+      Book.new(title, holds, copies, rating, book_type.name, href, author, year)
     end
   rescue StandardError
     []
