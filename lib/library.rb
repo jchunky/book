@@ -76,6 +76,7 @@ class Library
     # BookType.new("COMICS", "#{COMICS}+#{SUPERHEROES}"),
 
     BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    BookType.new("COMICS", "#{ADULT}+#{COMICS}"),
     BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+#{SCIENCE_FICTION}"),
     BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+#{SHORT_STORIES}"),
     ## BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
@@ -94,9 +95,10 @@ class Library
   def keep?(book)
     # return false if book.holds < 100
     # return false if book.copies < 10
-    return false if book.rating < 20000
+    # return false if (book.year >= Date.today.year - 5) && (book.book_type != "SHORT_STORIES")
+    return false if book.rating < 10000 && (book.book_type != "COMICS")
+    return false if book.rating < 1000 && (book.book_type == "COMICS")
     return false if book.year == 0
-    # return false if book.year >= Date.today.year - 5
 
     # return false if book.rating < 100
     # return false if book.rating < 1000 && book.book_type =~ /HISTORY/
