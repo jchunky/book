@@ -14,6 +14,8 @@ class Library
   COMICS = "37874"
   JAPAN = "4293412397"
   PAST_180_DAYS = "38755"
+  SHORT_STORIES = "37873"
+  SCIENCE_FICTION = "37870"
 
   BIOGRAPHY_BOOK_TYPE = BookType.new("BIOGRAPHY", BIOGRAPHY)
   COOKBOOK_BOOK_TYPE = BookType.new("COOKBOOK", COOKBOOK)
@@ -74,8 +76,8 @@ class Library
     # BookType.new("COMICS", "#{COMICS}+#{SUPERHEROES}"),
 
     BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
-    BookType.new("FANTASY", "#{ADULT}+#{FICTION}&Ntt=fantasy"),
-    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}&Ntt=\"science+fiction\""),
+    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+#{SCIENCE_FICTION}"),
+    BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+#{SHORT_STORIES}"),
     ## BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
   ]
 
@@ -90,8 +92,11 @@ class Library
   private
 
   def keep?(book)
-    return false if book.holds < 100
-    return false if book.copies < 10
+    # return false if book.holds < 100
+    # return false if book.copies < 10
+    return false if book.rating < 20000
+    return false if book.year == 0
+    # return false if book.year >= Date.today.year - 5
 
     # return false if book.rating < 100
     # return false if book.rating < 1000 && book.book_type =~ /HISTORY/
@@ -159,10 +164,10 @@ class Library
       title = row.css(".ellipsis_text").first.content
       holds = row.css(".p").first.content.scan(/\d+ hold/).first.to_i
       copies = row.css(".p").first.content.scan(/\d+ cop/).first.to_i
-      rating = holds * copies
       href = row.css("a").first[:href]
       author = row.css(".p").first.content.scan(/.* author.*\./).first.to_s.strip
       year = (row.css('.date').first.content.to_i rescue 0)
+      rating = holds * copies * (Date.today.year + 1 - year)
 
       Book.new(title, holds, copies, rating, book_type.name, href, author, year)
     end

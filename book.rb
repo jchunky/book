@@ -14,7 +14,7 @@ class Book
   def run
     @books = Library.new.books
       .select(&method(:display_book?))
-      .sort_by { |g| [g.book_type, -g.rating, g.title] }
+      .sort_by { |b| [b.book_type, -b.year, -b.rating, b.title] }
 
     p @books.count
 
