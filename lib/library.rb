@@ -22,9 +22,9 @@ class Library
     "BIOGRAPHY" => 10_000,
     "SCIENCE_FICTION" => 10_000,
     "HISTORY" => 4_000,
-    "COMICS" => 1_000,
     "SHORT_STORIES" => 1_000,
     "SUCCESS" => 1_000,
+    "COMICS" => 400,
   }
 
   BOOK_TYPES = [
