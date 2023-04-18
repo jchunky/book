@@ -9,24 +9,6 @@ class Library
   TEEN = "37845"
   ADULT = "37844"
 
-  RATING_THRESHOLDS = {
-    "CHILDREN" => 10_000,
-    "CHILDREN_APIC" => 10_000,
-    "CHILDREN_BR" => 10_000,
-    "CHILDREN_ER" => 1_000,
-    "CHILDREN_FICTION" => 10_000,
-    "CHILDREN_PIC" => 3_000,
-    "TEEN_FICTION" => 10_000,
-
-    "NONFICTION" => 30_000,
-    "BIOGRAPHY" => 10_000,
-    "SCIENCE_FICTION" => 10_000,
-    "HISTORY" => 4_000,
-    "SHORT_STORIES" => 1_000,
-    "SUCCESS" => 1_000,
-    "COMICS" => 400,
-  }
-
   BOOK_TYPES = [
     BookType.new("CHILDREN", "#{CHILDREN}"),
     BookType.new("CHILDREN_APIC", "38770"),
@@ -50,6 +32,7 @@ class Library
       books_for(book_type)
         .select(&method(:keep?))
         .sort_by { |b| -b.rating }
+        .first(30)
     end
   end
 
@@ -60,7 +43,6 @@ class Library
     # return false if book.copies < 10
     # return false if (book.year >= Date.today.year - 5)
     return false if book.year == 0
-    return false if book.rating < RATING_THRESHOLDS.fetch(book.book_type, 10_000)
 
     true
   end
