@@ -18,11 +18,11 @@ class Library
     "CHILDREN_PIC" => 3_000,
     "TEEN_FICTION" => 10_000,
 
-    "BIOGRAPHY" => 10_000,
-    "COMICS" => 1_000,
-    "HISTORY" => 4_000,
     "NONFICTION" => 30_000,
+    "BIOGRAPHY" => 10_000,
     "SCIENCE_FICTION" => 10_000,
+    "HISTORY" => 4_000,
+    "COMICS" => 1_000,
     "SHORT_STORIES" => 1_000,
     "SUCCESS" => 1_000,
   }
