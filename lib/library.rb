@@ -92,7 +92,7 @@ class Library
       copies = row.css(".p").first.content.scan(/\d+ cop/).first.to_i
       href = row.css("a").first[:href]
       author = row.css(".p").first.content.scan(/.* author.*\./).first.to_s.strip
-      year = (row.css('.date').first.content.to_i rescue 0)
+      year = (row.css('.date').first.content.to_i rescue Date.today.year)
       rating = holds * copies * (Date.today.year + 1 - year)
 
       Book.new(title, holds, copies, book_type.name, href, author, year, rating)
