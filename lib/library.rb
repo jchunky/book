@@ -10,23 +10,24 @@ class Library
   ADULT = "37844"
 
   BOOK_TYPES = [
-    BookType.new("CHILDREN", "#{CHILDREN}"),
-    BookType.new("CHILDREN_APIC", "38770"),
-    BookType.new("CHILDREN_BR", "38771"),
-    BookType.new("CHILDREN_ER", "38772"),
-    BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
-    BookType.new("CHILDREN_NON_FICTION", "#{CHILDREN}+#{NON_FICTION}"),
-    BookType.new("CHILDREN_PIC", "38773"),
+    # BookType.new("CHILDREN", "#{CHILDREN}"),
+    # BookType.new("CHILDREN_APIC", "38770"),
+    # BookType.new("CHILDREN_BR", "38771"),
+    # BookType.new("CHILDREN_ER", "38772"),
+    # BookType.new("CHILDREN_FICTION", "#{CHILDREN}+38790"),
+    # BookType.new("CHILDREN_NON_FICTION", "#{CHILDREN}+#{NON_FICTION}"),
+    # BookType.new("CHILDREN_PIC", "38773"),
+
     # BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
 
-    BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
-    BookType.new("COMICS", "#{ADULT}+37874"),
-    BookType.new("FICTION", "#{ADULT}+#{FICTION}"),
-    BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
-    BookType.new("NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
+    # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
+    # BookType.new("COMICS", "#{ADULT}+37874"),
+    # BookType.new("FICTION", "#{ADULT}+#{FICTION}"),
+    # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
+    # BookType.new("NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
     BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+37870"),
-    BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+37873"),
-    BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
+    # BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+37873"),
+    # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
   ]
 
   def books
