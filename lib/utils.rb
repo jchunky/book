@@ -9,15 +9,6 @@ module Utils
     ActiveSupport::Inflector.transliterate(string.to_s.force_encoding("UTF-8")).to_s
   end
 
-  def cache_object(id)
-    file = filename(id, "yml")
-    return yaml_read(file) if File.exist?(file)
-
-    result = yield
-    File.write(file, YAML.dump(result))
-    result
-  end
-
   def cache_text(id)
     file = filename(id, "html")
     return File.read(file) if File.exist?(file)
