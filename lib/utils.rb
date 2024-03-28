@@ -12,7 +12,7 @@ module Utils
   end
 
   def read_url_raw(url)
-    cache_text(url) { open(url) }
+    cache_text(url) { open(url) } # rubocop:disable Security/Open
   end
 
   def cache_text(id)

@@ -7,7 +7,7 @@ require "yaml/store"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Book
-  def display_book?(book)
+  def display_book?(_book)
     true
   end
 
