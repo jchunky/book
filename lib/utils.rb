@@ -24,10 +24,6 @@ module Utils
     result
   end
 
-  def yaml_read(file)
-    YAML.safe_load(File.read(file), aliases: true, permitted_classes: [Library::Book, Symbol])
-  end
-
   def open(url)
     Net::HTTP.get(URI.parse(url))
   end
