@@ -5,8 +5,14 @@ module Utils
     strip_accents(read_url_raw(url))
   end
 
+  private
+
   def strip_accents(string)
     ActiveSupport::Inflector.transliterate(string.to_s.force_encoding("UTF-8")).to_s
+  end
+
+  def read_url_raw(url)
+    cache_text(url) { open(url) }
   end
 
   def cache_text(id)
@@ -16,12 +22,6 @@ module Utils
     result = yield
     File.write(file, result)
     result
-  end
-
-  private
-
-  def read_url_raw(url)
-    cache_text(url) { open(url) }
   end
 
   def yaml_read(file)
