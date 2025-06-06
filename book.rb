@@ -2,6 +2,7 @@ require "active_support/all"
 require "erb"
 require "net/http"
 require "nokogiri"
+require "pstore"
 require "uri"
 require "yaml/store"
 Dir["lib/*.rb"].each { |f| require_relative f }
