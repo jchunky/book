@@ -19,14 +19,14 @@ class Library
     # BookType.new("CHILDREN_PIC", "38773"),
 
     # BookType.new("TEEN_FICTION", "#{TEEN}+#{FICTION}"),
-    BookType.new("TEEN_FICTION", "#{TEEN}+37874&Ntt=Manga."),
+    # BookType.new("TEEN_MANGA", "#{TEEN}+37874&Ntt=Manga."),
 
     # BookType.new("BIOGRAPHY", "#{ADULT}+#{NON_FICTION}&Ntt=biography"),
     # BookType.new("COMICS", "#{ADULT}+37874"),
     # BookType.new("FICTION", "#{ADULT}+#{FICTION}"),
     # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
     # BookType.new("NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
-    # BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+37870"),
+    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+37870"),
     # BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+37873"),
     # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
   ]
@@ -77,7 +77,7 @@ class Library
 
   def common_criteria
     [
-      # parkdale = "33162",
+      parkdale = "33162",
       # past_180_days = "38755",
       english = "20206",
       items_that_check_out = "37751",
