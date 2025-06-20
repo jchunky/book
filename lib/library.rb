@@ -25,8 +25,9 @@ class Library
     # BookType.new("COMICS", "#{ADULT}+37874"),
     # BookType.new("FICTION", "#{ADULT}+#{FICTION}"),
     # BookType.new("HISTORY", "#{ADULT}+#{NON_FICTION}&Ntt=history"),
+    BookType.new("MERRIL", "#{ADULT}+38532"),
     # BookType.new("NON_FICTION", "#{ADULT}+#{NON_FICTION}"),
-    BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+37870"),
+    # BookType.new("SCIENCE_FICTION", "#{ADULT}+#{FICTION}+37870"),
     # BookType.new("SHORT_STORIES", "#{ADULT}+#{FICTION}+37873"),
     # BookType.new("SUCCESS", "#{ADULT}+#{NON_FICTION}&Ntt=success"),
   ]
