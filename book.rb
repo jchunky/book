@@ -17,7 +17,10 @@ class Book
       .select(&method(:display_book?))
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
 
+    @dvds = DvdLibrary.new.dvds
+
     p @books.count
+    p @dvds.count
 
     write_output
   end

@@ -1,16 +1,18 @@
 <script src="./views/sorttable.js"></script>
 <style>
-  #books { font-family: Arial; border-collapse: collapse; font-size: 8pt; margin-top: 20px; }
-  #books td, #books th { border: 1px solid #ddd; padding: 8px; }
-  #books tr:nth-child(even) { background-color: #f2f2f2; }
-  #books tr:hover * { background-color: rgb(194, 149, 141) !important; }
-  #books th { background-color: #4CAF50; color: white; }
-  #books td { white-space: nowrap; }
+  .data-table { font-family: Arial; border-collapse: collapse; font-size: 8pt; margin-top: 20px; }
+  .data-table td, .data-table th { border: 1px solid #ddd; padding: 8px; }
+  .data-table tr:nth-child(even) { background-color: #f2f2f2; }
+  .data-table tr:hover * { background-color: rgb(194, 149, 141) !important; }
+  .data-table th { background-color: #4CAF50; color: white; }
+  .data-table td { white-space: nowrap; }
   .number { text-align: right; }
   th { position: sticky; top: 20; }
+  h2 { font-family: Arial; margin-top: 30px; }
 </style>
 
-<table id="books" class="sortable">
+<h2>Books</h2>
+<table class="data-table sortable">
   <tr>
     <th>Book Type</th>
     <th>Holds</th>
@@ -41,6 +43,38 @@
       <td><%= book.content_type %></td>
       <td><%= book.genre %></td>
       <td><%= book.subject %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h2>DVDs</h2>
+<table class="data-table sortable">
+  <tr>
+    <th>Holds</th>
+    <th>Copies</th>
+    <th>Available</th>
+    <th>Rating</th>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Availability Status</th>
+    <th>Audiences</th>
+    <th>Content Type</th>
+    <th>Genre</th>
+    <th>Subject</th>
+  </tr>
+  <% @dvds.each do |dvd| %>
+    <tr>
+      <td class="number"><%= dvd.holds %></td>
+      <td class="number"><%= dvd.copies %></td>
+      <td class="number"><%= dvd.available %></td>
+      <td class="number"><%= dvd.rating %></td>
+      <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
+      <td><%= dvd.year %></td>
+      <td><%= dvd.availability_status %></td>
+      <td><%= dvd.audiences %></td>
+      <td><%= dvd.content_type %></td>
+      <td><%= dvd.genre %></td>
+      <td><%= dvd.subject %></td>
     </tr>
   <% end %>
 </table>
