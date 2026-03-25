@@ -65,9 +65,11 @@ class BookLibrary
   end
 
   def genre_from_call_number(call_number)
-    return "" if call_number.match?(/\A\d/)
-
-    call_number.split[0..-2].join(" ")
+    if call_number.match?(/\A\d/)
+      Dewey.lookup(call_number)
+    else
+      call_number.split[0..-2].join(" ")
+    end
   end
 
   def bib_to_book(book_type, bib)
