@@ -4,10 +4,8 @@ class Library
                     :href, :author, :year, :rating)
 
   BOOK_TYPES = [
-    BookType.new("MERRIL", "&f_SUBJ=Science+fiction"),
+    BookType.new("ALL", ""),
   ]
-
-  RESULTS_PER_PAGE = 20
 
   def books
     BOOK_TYPES.flat_map do |book_type|
@@ -40,15 +38,20 @@ class Library
 
   def books_for_page(book_type, page)
     url = url_for_page(book_type, page)
-    file = Utils.read_url(url)
-    doc = Nokogiri::HTML(file)
-    books_for_doc(book_type, doc)
+    json = Utils.read_url(url)
+    data = JSON.parse(json)
+    bibs = data.dig("entities", "bibs") || {}
+    ids = data.dig("catalogSearch", "results")
+      &.map { |r| r["representative"] } || []
+    ids.filter_map { |id| bib_to_book(book_type, bibs[id]) }
+  rescue StandardError
+    []
   end
 
   def url_for_page(book_type, page)
-    base = "https://tpl.bibliocommons.com/v2/search"
-    params = "?custom_edit=false"
-    params += "&query=avlocation%3A%22Parkdale%22"
+    base = "https://gateway.bibliocommons.com/v2"
+    base += "/libraries/tpl/bibs/search"
+    params = "?query=avlocation%3A%22Parkdale%22"
     params += "&searchType=bl&suppress=true"
     params += "&f_FORMAT=BK&f_CIRC=CIRC&f_PRIMARY_LANGUAGE=eng"
     params += book_type.query_fragment
@@ -56,33 +59,21 @@ class Library
     "#{base}#{params}"
   end
 
-  def books_for_doc(book_type, doc)
-    doc.css(".search-result-item").map do |row|
-      title = row.css(".search-result-title a").first&.text.to_s.strip
-      href = row.css(".search-result-title a").first&.[]("href").to_s
-      author = row.css(".search-result-author a").first&.text.to_s.strip
-      year = extract_year(row)
-      holds, copies = extract_holds_copies(row)
-      rating = holds * copies * (Date.today.year + 1 - year)
+  def bib_to_book(book_type, bib)
+    return unless bib
 
-      Book.new(title, holds, copies, book_type.name,
-               href, author, year, rating)
-    end
-  rescue StandardError
-    []
-  end
+    info = bib["briefInfo"] || {}
+    avail = bib["availability"] || {}
 
-  def extract_year(row)
-    details = row.css(".search-result-details").first&.text.to_s
-    details.scan(/\d{4}/).last.to_i
-  rescue StandardError
-    Date.today.year
-  end
+    title = info["title"].to_s
+    author = Array(info["authors"]).first.to_s
+    year = info["publicationDate"].to_i
+    holds = avail["heldCopies"].to_i
+    copies = avail["totalCopies"].to_i
+    href = "/v2/record/#{bib["id"]}"
+    rating = holds * copies * (Date.today.year + 1 - year)
 
-  def extract_holds_copies(row)
-    text = row.css(".search-result-holds").first&.text.to_s
-    holds = text[/(\d+)\s*on/, 1].to_i
-    copies = text[/on\s*(\d+)/, 1].to_i
-    [holds, copies]
+    Book.new(title, holds, copies, book_type.name,
+             href, author, year, rating)
   end
 end

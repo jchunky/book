@@ -1,7 +1,7 @@
 module Utils
   extend self
 
-  CRAWL_DELAY = 120
+  CRAWL_DELAY = 2
 
   def read_url(url)
     strip_accents(read_url_raw(url))
@@ -18,7 +18,7 @@ module Utils
   end
 
   def cache_text(id)
-    file = filename(id, "html")
+    file = filename(id, "json")
     return File.read(file) if File.exist?(file)
 
     result = yield
@@ -28,6 +28,7 @@ module Utils
 
   def fetch(url)
     respect_crawl_delay
+    print "."
     Net::HTTP.get(URI.parse(url))
   end
 
