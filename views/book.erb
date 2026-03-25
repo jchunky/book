@@ -42,7 +42,7 @@
       <td class="number"><%= book.available %></td>
       <td class="number"><%= book.on_order %></td>
       <td class="number"><%= book.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= book.description %>"><%= book.title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= ERB::Util.h(book.description) %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
       <td><%= book.year %></td>
       <td><%= book.call_number %></td>
