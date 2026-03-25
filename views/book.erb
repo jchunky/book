@@ -28,7 +28,7 @@
     <th>Book</th>
     <th>Author</th>
     <th>Year</th>
-    <th>Call Number</th>
+    <th>Genre</th>
     <th>Availability Status</th>
     <th>Audiences</th>
     <th>Content Type</th>
@@ -45,7 +45,7 @@
       <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= ERB::Util.h(book.description) %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
       <td><%= book.year %></td>
-      <td><%= book.call_number %></td>
+      <td><%= book.genre %></td>
       <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
       <td><%= book.content_type %></td>

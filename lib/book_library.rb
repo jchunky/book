@@ -4,7 +4,7 @@ class BookLibrary
                     :href, :author, :year, :rating,
                     :availability_status, :audiences,
                     :content_type, :available, :on_order,
-                    :call_number, :jacket_url,
+                    :genre, :jacket_url,
                     :jacket_url_medium, :description)
 
   BOOK_TYPES = [
@@ -64,6 +64,12 @@ class BookLibrary
     "#{base}#{params}"
   end
 
+  def genre_from_call_number(call_number)
+    return "" if call_number.match?(/\A\d/)
+
+    call_number.split[0..-2].join(" ")
+  end
+
   def bib_to_book(book_type, bib)
     return unless bib
 
@@ -87,7 +93,7 @@ class BookLibrary
              info["contentType"].to_s,
              avail["availableCopies"].to_i,
              avail["onOrderCopies"].to_i,
-             info["callNumber"].to_s,
+             genre_from_call_number(info["callNumber"].to_s),
              info.dig("jacket", "small").to_s,
              info.dig("jacket", "medium").to_s,
              info["description"].to_s)
