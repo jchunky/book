@@ -4,7 +4,9 @@ class BookLibrary
                     :href, :author, :year, :rating,
                     :availability_status, :audiences,
                     :content_type, :genre, :subject,
-                    :available)
+                    :available, :on_order, :call_number,
+                    :jacket_url, :jacket_url_medium,
+                    :description)
 
   BOOK_TYPES = [
     BookType.new("ALL", ""),
@@ -84,6 +86,11 @@ class BookLibrary
              info["contentType"].to_s,
              Array(info["genreForm"]).join(", "),
              Array(info["subjectHeadings"]).join(", "),
-             avail["availableCopies"].to_i)
+             avail["availableCopies"].to_i,
+             avail["onOrderCopies"].to_i,
+             info["callNumber"].to_s,
+             info.dig("jacket", "small").to_s,
+             info.dig("jacket", "medium").to_s,
+             info["description"].to_s)
   end
 end
