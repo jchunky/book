@@ -26,6 +26,7 @@
     <th>On Order</th>
     <th>Rating</th>
     <th>Book</th>
+    <th>Subtitle</th>
     <th>Author</th>
     <th>Year</th>
     <th>Call Number</th>
@@ -43,6 +44,7 @@
       <td class="number"><%= book.on_order %></td>
       <td class="number"><%= book.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= book.description %>"><%= book.title %></a></td>
+      <td><%= book.subtitle %></td>
       <td><%= book.author %></td>
       <td><%= book.year %></td>
       <td><%= book.call_number %></td>
@@ -63,6 +65,7 @@
     <th>On Order</th>
     <th>Rating</th>
     <th>Title</th>
+    <th>Subtitle</th>
     <th>Year</th>
     <th>Availability Status</th>
     <th>Audiences</th>
@@ -77,6 +80,7 @@
       <td class="number"><%= dvd.on_order %></td>
       <td class="number"><%= dvd.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
+      <td><%= dvd.subtitle %></td>
       <td><%= dvd.year %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>

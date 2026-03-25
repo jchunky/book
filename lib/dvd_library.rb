@@ -1,6 +1,7 @@
 class DvdLibrary
-  Dvd = Struct.new(:title, :holds, :copies, :href, :year,
-                   :rating, :availability_status, :audiences,
+  Dvd = Struct.new(:title, :subtitle, :holds, :copies,
+                   :href, :year, :rating,
+                   :availability_status, :audiences,
                    :content_type, :available, :on_order,
                    :jacket_url, :jacket_url_medium)
 
@@ -58,7 +59,8 @@ class DvdLibrary
     href = "/v2/record/#{bib["id"]}"
     rating = holds * copies
 
-    Dvd.new(title, holds, copies, href, year, rating,
+    Dvd.new(title, info["subtitle"].to_s,
+            holds, copies, href, year, rating,
             avail["localisedStatus"].to_s,
             Array(info["audiences"]).join(", "),
             info["contentType"].to_s,
