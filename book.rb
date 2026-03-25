@@ -8,6 +8,18 @@ require "yaml/store"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Book
+  GENRE_COLORS = {
+    "FICTION" => "#7B6B4B",
+    "MYSTERY" => "#2E5A88",
+    "ROMANCE" => "#A8435A",
+    "SCI-FI" => "#2A7B5F",
+    "HORROR" => "#6B3A6B",
+  }.freeze
+
+  def genre_color(genre)
+    GENRE_COLORS[genre] || "#555555"
+  end
+
   def display_book?(_book)
     true
   end

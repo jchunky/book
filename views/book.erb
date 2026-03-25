@@ -11,6 +11,7 @@
   .cover-lg { display: none; position: absolute; left: 50px; top: -20px; z-index: 10; }
   .cover:hover .cover-lg { display: block; }
   .cover:hover > img:first-child { opacity: 0; }
+  .genre-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
   th { position: sticky; top: 20; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
@@ -45,7 +46,7 @@
       <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= ERB::Util.h(book.description) %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
       <td><%= book.year %></td>
-      <td><%= book.genre %></td>
+      <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
       <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
       <td><%= book.content_type %></td>
