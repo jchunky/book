@@ -1,10 +1,10 @@
 class BookLibrary
   BookType = Struct.new(:name, :query_fragment)
-  Book = Struct.new(:title, :subtitle, :holds, :copies,
-                    :book_type, :href, :author, :year,
-                    :rating, :availability_status,
-                    :audiences, :content_type, :available,
-                    :on_order, :call_number, :jacket_url,
+  Book = Struct.new(:title, :holds, :copies, :book_type,
+                    :href, :author, :year, :rating,
+                    :availability_status, :audiences,
+                    :content_type, :available, :on_order,
+                    :call_number, :jacket_url,
                     :jacket_url_medium, :description)
 
   BOOK_TYPES = [
@@ -70,7 +70,9 @@ class BookLibrary
     info = bib["briefInfo"] || {}
     avail = bib["availability"] || {}
 
+    subtitle = info["subtitle"].to_s
     title = info["title"].to_s
+    title = "#{title}: #{subtitle}" unless subtitle.empty?
     author = Array(info["authors"]).first.to_s
     year = info["publicationDate"].to_i
     holds = avail["heldCopies"].to_i
@@ -78,8 +80,7 @@ class BookLibrary
     href = "/v2/record/#{bib["id"]}"
     rating = holds * copies #* (Date.today.year + 1 - year)
 
-    Book.new(title, info["subtitle"].to_s,
-             holds, copies, book_type.name,
+    Book.new(title, holds, copies, book_type.name,
              href, author, year, rating,
              avail["localisedStatus"].to_s,
              Array(info["audiences"]).join(", "),
