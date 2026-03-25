@@ -7,6 +7,10 @@
   .data-table th { background-color: #4CAF50; color: white; }
   .data-table td { white-space: nowrap; }
   .number { text-align: right; }
+  .cover { position: relative; }
+  .cover-lg { display: none; position: absolute; left: 50px; top: -20px; z-index: 10; }
+  .cover:hover .cover-lg { display: block; }
+  .cover:hover > img:first-child { opacity: 0; }
   th { position: sticky; top: 20; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
@@ -50,9 +54,11 @@
 <h2>DVDs</h2>
 <table class="data-table sortable">
   <tr>
+    <th></th>
     <th>Holds</th>
     <th>Copies</th>
     <th>Available</th>
+    <th>On Order</th>
     <th>Rating</th>
     <th>Title</th>
     <th>Year</th>
@@ -64,9 +70,11 @@
   </tr>
   <% @dvds.each do |dvd| %>
     <tr>
+      <td class="cover"><% unless dvd.jacket_url.empty? %><img src="<%= dvd.jacket_url %>" height="40"><img src="<%= dvd.jacket_url_medium %>" class="cover-lg"><% end %></td>
       <td class="number"><%= dvd.holds %></td>
       <td class="number"><%= dvd.copies %></td>
       <td class="number"><%= dvd.available %></td>
+      <td class="number"><%= dvd.on_order %></td>
       <td class="number"><%= dvd.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
       <td><%= dvd.year %></td>
