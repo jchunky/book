@@ -64,6 +64,7 @@
     <th>Rating</th>
     <th>Title</th>
     <th>Year</th>
+    <th>Call Number</th>
     <th>Availability Status</th>
     <th>Audiences</th>
     <th>Content Type</th>
@@ -76,8 +77,9 @@
       <td class="number"><%= dvd.available %></td>
       <td class="number"><%= dvd.on_order %></td>
       <td class="number"><%= dvd.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>" title="<%= ERB::Util.h(dvd.description) %>"><%= dvd.title %></a></td>
       <td><%= dvd.year %></td>
+      <td><%= dvd.call_number %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
       <td><%= dvd.content_type %></td>
