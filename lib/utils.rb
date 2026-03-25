@@ -1,6 +1,8 @@
 module Utils
   extend self
 
+  CRAWL_DELAY = 120
+
   def read_url(url)
     strip_accents(read_url_raw(url))
   end
@@ -12,7 +14,7 @@ module Utils
   end
 
   def read_url_raw(url)
-    cache_text(url) { open(url) } # rubocop:disable Security/Open
+    cache_text(url) { fetch(url) }
   end
 
   def cache_text(id)
@@ -24,8 +26,18 @@ module Utils
     result
   end
 
-  def open(url)
+  def fetch(url)
+    respect_crawl_delay
     Net::HTTP.get(URI.parse(url))
+  end
+
+  def respect_crawl_delay
+    return unless @last_fetch_at
+
+    elapsed = Time.now - @last_fetch_at
+    sleep(CRAWL_DELAY - elapsed) if elapsed < CRAWL_DELAY
+  ensure
+    @last_fetch_at = Time.now
   end
 
   def filename(id, extension)
