@@ -21,7 +21,7 @@ class DvdLibrary
 
   def dvds_for_page(page)
     url = url_for_page(page)
-    CachedFile.new(url:, crawl_delay: 2).read do |content|
+    CachedFile.new(url:, crawl_delay: 1).read do |content|
       data = JSON.parse(content)
       bibs = data.dig("entities", "bibs") || {}
       ids = data.dig("catalogSearch", "results")
