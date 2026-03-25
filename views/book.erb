@@ -19,7 +19,6 @@
 <h2>Books</h2>
 <table class="data-table sortable">
   <tr>
-    <th></th>
     <th>Book Type</th>
     <th>Holds</th>
     <th>Copies</th>
@@ -36,14 +35,13 @@
   </tr>
   <% @books.each do |book| %>
     <tr>
-      <td class="cover"><% unless book.jacket_url.empty? %><img src="<%= book.jacket_url %>" height="40"><img src="<%= book.jacket_url_medium %>" class="cover-lg"><% end %></td>
       <td><%= book.book_type %></td>
       <td class="number"><%= book.holds %></td>
       <td class="number"><%= book.copies %></td>
       <td class="number"><%= book.available %></td>
       <td class="number"><%= book.on_order %></td>
       <td class="number"><%= book.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= book.href %>" title="<%= ERB::Util.h(book.description) %>"><%= book.title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
       <td><%= book.year %></td>
       <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
@@ -57,7 +55,6 @@
 <h2>DVDs</h2>
 <table class="data-table sortable">
   <tr>
-    <th></th>
     <th>Holds</th>
     <th>Copies</th>
     <th>Available</th>
@@ -71,13 +68,12 @@
   </tr>
   <% @dvds.each do |dvd| %>
     <tr>
-      <td class="cover"><% unless dvd.jacket_url.empty? %><img src="<%= dvd.jacket_url %>" height="40"><img src="<%= dvd.jacket_url_medium %>" class="cover-lg"><% end %></td>
       <td class="number"><%= dvd.holds %></td>
       <td class="number"><%= dvd.copies %></td>
       <td class="number"><%= dvd.available %></td>
       <td class="number"><%= dvd.on_order %></td>
       <td class="number"><%= dvd.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>" title="<%= ERB::Util.h(dvd.description) %>"><%= dvd.title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
       <td><%= dvd.year %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
