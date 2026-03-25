@@ -1,7 +1,10 @@
 class Library
   BookType = Struct.new(:name, :query_fragment)
   Book = Struct.new(:title, :holds, :copies, :book_type,
-                    :href, :author, :year, :rating)
+                    :href, :author, :year, :rating,
+                    :availability_status, :audiences,
+                    :content_type, :genre, :subject,
+                    :available)
 
   BOOK_TYPES = [
     BookType.new("ALL", ""),
@@ -19,7 +22,7 @@ class Library
   private
 
   def keep?(book)
-    return false if book.year == 0
+    # return false if book.year == 0
 
     true
   end
@@ -38,12 +41,13 @@ class Library
 
   def books_for_page(book_type, page)
     url = url_for_page(book_type, page)
-    json = Utils.read_url(url)
-    data = JSON.parse(json)
-    bibs = data.dig("entities", "bibs") || {}
-    ids = data.dig("catalogSearch", "results")
-      &.map { |r| r["representative"] } || []
-    ids.filter_map { |id| bib_to_book(book_type, bibs[id]) }
+    CachedFile.new(url:, crawl_delay: 2).read do |content|
+      data = JSON.parse(content)
+      bibs = data.dig("entities", "bibs") || {}
+      ids = data.dig("catalogSearch", "results")
+        &.map { |r| r["representative"] } || []
+      ids.filter_map { |id| bib_to_book(book_type, bibs[id]) }
+    end
   rescue StandardError
     []
   end
@@ -71,9 +75,15 @@ class Library
     holds = avail["heldCopies"].to_i
     copies = avail["totalCopies"].to_i
     href = "/v2/record/#{bib["id"]}"
-    rating = holds * copies * (Date.today.year + 1 - year)
+    rating = holds * copies #* (Date.today.year + 1 - year)
 
     Book.new(title, holds, copies, book_type.name,
-             href, author, year, rating)
+             href, author, year, rating,
+             avail["localisedStatus"].to_s,
+             Array(info["audiences"]).join(", "),
+             info["contentType"].to_s,
+             Array(info["genreForm"]).join(", "),
+             Array(info["subjectHeadings"]).join(", "),
+             avail["availableCopies"].to_i)
   end
 end
