@@ -41,7 +41,7 @@ class Library
 
   def books_for_page(book_type, page)
     url = url_for_page(book_type, page)
-    CachedFile.new(url:, crawl_delay: 2).read do |content|
+    CachedFile.new(url:, crawl_delay: 1).read do |content|
       data = JSON.parse(content)
       bibs = data.dig("entities", "bibs") || {}
       ids = data.dig("catalogSearch", "results")
