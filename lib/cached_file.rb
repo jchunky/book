@@ -13,7 +13,7 @@ class CachedFile < Data.define(:url, :crawl_delay)
   def fetch_from_url
     sleep crawl_delay
     print "."
-    puts url
+    # puts url
     Net::HTTP.get(URI.parse(url))
   end
 
