@@ -3,7 +3,7 @@ class DvdLibrary
                    :rating, :availability_status, :audiences,
                    :content_type, :available, :on_order,
                    :jacket_url, :jacket_url_medium,
-                   :description, :call_number)
+                   :description)
 
   def dvds
     result = []
@@ -69,7 +69,6 @@ class DvdLibrary
             avail["onOrderCopies"].to_i,
             info.dig("jacket", "small").to_s,
             info.dig("jacket", "medium").to_s,
-            info["description"].to_s,
-            info["callNumber"].to_s)
+            info["description"].to_s)
   end
 end
