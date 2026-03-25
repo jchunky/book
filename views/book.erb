@@ -32,8 +32,6 @@
     <th>Availability Status</th>
     <th>Audiences</th>
     <th>Content Type</th>
-    <th>Genre</th>
-    <th>Subject</th>
   </tr>
   <% @books.each do |book| %>
     <tr>
@@ -51,8 +49,6 @@
       <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
       <td><%= book.content_type %></td>
-      <td><%= book.genre %></td>
-      <td><%= book.subject %></td>
     </tr>
   <% end %>
 </table>
@@ -71,8 +67,6 @@
     <th>Availability Status</th>
     <th>Audiences</th>
     <th>Content Type</th>
-    <th>Genre</th>
-    <th>Subject</th>
   </tr>
   <% @dvds.each do |dvd| %>
     <tr>
@@ -87,8 +81,6 @@
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
       <td><%= dvd.content_type %></td>
-      <td><%= dvd.genre %></td>
-      <td><%= dvd.subject %></td>
     </tr>
   <% end %>
 </table>

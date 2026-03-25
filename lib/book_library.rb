@@ -3,10 +3,9 @@ class BookLibrary
   Book = Struct.new(:title, :holds, :copies, :book_type,
                     :href, :author, :year, :rating,
                     :availability_status, :audiences,
-                    :content_type, :genre, :subject,
-                    :available, :on_order, :call_number,
-                    :jacket_url, :jacket_url_medium,
-                    :description)
+                    :content_type, :available, :on_order,
+                    :call_number, :jacket_url,
+                    :jacket_url_medium, :description)
 
   BOOK_TYPES = [
     BookType.new("ALL", ""),
@@ -84,8 +83,6 @@ class BookLibrary
              avail["localisedStatus"].to_s,
              Array(info["audiences"]).join(", "),
              info["contentType"].to_s,
-             Array(info["genreForm"]).join(", "),
-             Array(info["subjectHeadings"]).join(", "),
              avail["availableCopies"].to_i,
              avail["onOrderCopies"].to_i,
              info["callNumber"].to_s,

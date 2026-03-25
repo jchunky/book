@@ -1,8 +1,8 @@
 class DvdLibrary
   Dvd = Struct.new(:title, :holds, :copies, :href, :year,
                    :rating, :availability_status, :audiences,
-                   :content_type, :genre, :subject, :available,
-                   :on_order, :jacket_url, :jacket_url_medium)
+                   :content_type, :available, :on_order,
+                   :jacket_url, :jacket_url_medium)
 
   def dvds
     result = []
@@ -62,8 +62,6 @@ class DvdLibrary
             avail["localisedStatus"].to_s,
             Array(info["audiences"]).join(", "),
             info["contentType"].to_s,
-            Array(info["genreForm"]).join(", "),
-            Array(info["subjectHeadings"]).join(", "),
             avail["availableCopies"].to_i,
             avail["onOrderCopies"].to_i,
             info.dig("jacket", "small").to_s,
