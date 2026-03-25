@@ -12,7 +12,7 @@ class Book
     "FICTION" => "#888888",
     "MYSTERY" => "#2979FF",
     "ROMANCE" => "#E91E63",
-    "SCI-FI" => "#00BFA5",
+    "SCI-FI" => "#00C853",
     "HORROR" => "#AA00FF",
   }.freeze
 
