@@ -9,15 +9,15 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Book
   GENRE_COLORS = {
-    "FICTION" => "#7B6B4B",
-    "MYSTERY" => "#2E5A88",
-    "ROMANCE" => "#A8435A",
-    "SCI-FI" => "#2A7B5F",
-    "HORROR" => "#6B3A6B",
+    "FICTION" => "#888888",
+    "MYSTERY" => "#2979FF",
+    "ROMANCE" => "#E91E63",
+    "SCI-FI" => "#00BFA5",
+    "HORROR" => "#AA00FF",
   }.freeze
 
   def genre_color(genre)
-    GENRE_COLORS[genre] || "#555555"
+    GENRE_COLORS[genre] || "#000000"
   end
 
   def display_book?(_book)
