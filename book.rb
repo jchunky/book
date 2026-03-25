@@ -13,7 +13,7 @@ class Book
   end
 
   def run
-    @books = Library.new.books
+    @books = BookLibrary.new.books
       .select(&method(:display_book?))
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
 

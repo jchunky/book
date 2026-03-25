@@ -1,4 +1,4 @@
-class Library
+class BookLibrary
   BookType = Struct.new(:name, :query_fragment)
   Book = Struct.new(:title, :holds, :copies, :book_type,
                     :href, :author, :year, :rating,
