@@ -5,7 +5,7 @@ class DvdLibrary
                    :jacket_url, :jacket_url_medium,
                    :description, :rotten_tomatoes, :metacritic,
                    :omdb_year, :rated, :runtime, :genre,
-                   :box_office) do
+                   :box_office, keyword_init: true) do
     def certified_fresh? = rotten_tomatoes.to_i >= 75
     def must_see? = metacritic.to_i >= 80
     def juvenile? = audiences.include?("JUVENILE")
@@ -93,14 +93,16 @@ class DvdLibrary
     href = "/v2/record/#{bib["id"]}"
     rating = holds * copies
 
-    Dvd.new(title, holds, copies, href, year, rating,
-            avail["localisedStatus"].to_s,
-            Array(info["audiences"]).join(", "),
-            info["contentType"].to_s,
-            avail["availableCopies"].to_i,
-            avail["onOrderCopies"].to_i,
-            info.dig("jacket", "small").to_s,
-            info.dig("jacket", "medium").to_s,
-            info["description"].to_s)
+    Dvd.new(
+      title:, holds:, copies:, href:, year:, rating:,
+      availability_status: avail["localisedStatus"].to_s,
+      audiences: Array(info["audiences"]).join(", "),
+      content_type: info["contentType"].to_s,
+      available: avail["availableCopies"].to_i,
+      on_order: avail["onOrderCopies"].to_i,
+      jacket_url: info.dig("jacket", "small").to_s,
+      jacket_url_medium: info.dig("jacket", "medium").to_s,
+      description: info["description"].to_s
+    )
   end
 end
