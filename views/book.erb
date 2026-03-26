@@ -86,8 +86,8 @@
       <td><%= dvd.runtime %></td>
       <td><%= dvd.genre %></td>
       <td><%= dvd.box_office %></td>
-      <td<%= ' class="grayed-out"' unless dvd.rotten_tomatoes.to_i >= 75 %>><%= dvd.rotten_tomatoes %></td>
-      <td<%= ' class="grayed-out"' unless dvd.metacritic.to_i >= 80 %>><%= dvd.metacritic %></td>
+      <td<%= ' class="grayed-out"' unless dvd.certified_fresh? %>><%= dvd.rotten_tomatoes %></td>
+      <td<%= ' class="grayed-out"' unless dvd.must_see? %>><%= dvd.metacritic %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
       <td><%= dvd.content_type %></td>

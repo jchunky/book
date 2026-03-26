@@ -5,7 +5,10 @@ class DvdLibrary
                    :jacket_url, :jacket_url_medium,
                    :description, :rotten_tomatoes, :metacritic,
                    :omdb_year, :rated, :runtime, :genre,
-                   :box_office)
+                   :box_office) do
+    def certified_fresh? = rotten_tomatoes.to_i >= 75
+    def must_see? = metacritic.to_i >= 80
+  end
 
   def dvds
     result = []
