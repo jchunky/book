@@ -40,7 +40,7 @@ class Omdb
   def url_for(title:, year: nil)
     key = ENV.fetch("OMDB_API_KEY")
     t = URI.encode_www_form_component(title)
-    url = "http://www.omdbapi.com/?t=#{t}&apikey=#{key}"
+    url = "https://www.omdbapi.com/?t=#{t}&apikey=#{key}"
     url += "&y=#{year}" if year
     url
   end
