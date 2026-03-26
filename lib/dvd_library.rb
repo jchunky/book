@@ -3,7 +3,9 @@ class DvdLibrary
                    :rating, :availability_status, :audiences,
                    :content_type, :available, :on_order,
                    :jacket_url, :jacket_url_medium,
-                   :description, :rotten_tomatoes, :metacritic)
+                   :description, :rotten_tomatoes, :metacritic,
+                   :omdb_year, :rated, :runtime, :genre,
+                   :box_office)
 
   def dvds
     result = []
@@ -17,17 +19,22 @@ class DvdLibrary
     top = result.uniq(&:href)
       .sort_by { |d| -d.rating }
       .first(30)
-    enrich_with_scores(top)
+    enrich_with_omdb(top)
   end
 
   private
 
-  def enrich_with_scores(dvds)
+  def enrich_with_omdb(dvds)
     omdb = Omdb.new
     dvds.each do |dvd|
-      scores = omdb.scores(title: dvd.title, year: dvd.year)
-      dvd.rotten_tomatoes = scores.rotten_tomatoes
-      dvd.metacritic = scores.metacritic
+      info = omdb.info(title: dvd.title, year: dvd.year)
+      dvd.rotten_tomatoes = info.rotten_tomatoes
+      dvd.metacritic = info.metacritic
+      dvd.omdb_year = info.year
+      dvd.rated = info.rated
+      dvd.runtime = info.runtime
+      dvd.genre = info.genre
+      dvd.box_office = info.box_office
     end
   end
 

@@ -1,32 +1,39 @@
 class Omdb
-  Scores = Data.define(:rotten_tomatoes, :metacritic)
+  Info = Data.define(:year, :rated, :runtime, :genre, :box_office,
+                     :rotten_tomatoes, :metacritic)
 
-  NO_SCORES = Scores.new(rotten_tomatoes: "", metacritic: "")
+  NO_INFO = Info.new(year: "", rated: "", runtime: "", genre: "",
+                     box_office: "", rotten_tomatoes: "", metacritic: "")
 
-  def scores(title:, year:)
-    scores = scores_for(title:, year:)
-    return scores unless scores == NO_SCORES
+  def info(title:, year:)
+    result = info_for(title:, year:)
+    return result unless result == NO_INFO
 
-    scores_for(title:)
+    info_for(title:)
   end
 
   private
 
-  def scores_for(title:, year: nil)
+  def info_for(title:, year: nil)
     url = url_for(title:, year:)
     CachedFile.new(url:, crawl_delay: 1).read do |content|
-      parse_scores(JSON.parse(content))
+      parse_info(JSON.parse(content))
     end
   rescue StandardError => e
     warn "OMDb lookup failed for '#{title}': #{e.message}"
-    NO_SCORES
+    NO_INFO
   end
 
-  def parse_scores(data)
-    return NO_SCORES unless data["Response"] == "True"
+  def parse_info(data)
+    return NO_INFO unless data["Response"] == "True"
 
     ratings = Array(data["Ratings"])
-    Scores.new(
+    Info.new(
+      year: data["Year"].to_s,
+      rated: data["Rated"].to_s,
+      runtime: data["Runtime"].to_s,
+      genre: data["Genre"].to_s,
+      box_office: data["BoxOffice"].to_s,
       rotten_tomatoes: rating_value(ratings, "Rotten Tomatoes"),
       metacritic: rating_value(ratings, "Metacritic")
     )
