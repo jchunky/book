@@ -41,7 +41,7 @@ class Omdb
       runtime: clean_value(data["Runtime"]),
       genre: data["Genre"].to_s,
       box_office: round_to_million(data["BoxOffice"]),
-      rotten_tomatoes: rating_value(ratings, "Rotten Tomatoes"),
+      rotten_tomatoes: clean_value(rating_value(ratings, "Rotten Tomatoes")),
       metacritic: clean_value(rating_value(ratings, "Metacritic"))
     )
   end
