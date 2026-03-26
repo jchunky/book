@@ -30,13 +30,18 @@ class Omdb
     ratings = Array(data["Ratings"])
     Info.new(
       year: data["Year"].to_s,
-      rated: data["Rated"].to_s,
-      runtime: data["Runtime"].to_s,
+      rated: na_to_empty(data["Rated"]),
+      runtime: na_to_empty(data["Runtime"]),
       genre: data["Genre"].to_s,
       box_office: data["BoxOffice"].to_s,
       rotten_tomatoes: rating_value(ratings, "Rotten Tomatoes"),
       metacritic: rating_value(ratings, "Metacritic")
     )
+  end
+
+  def na_to_empty(value)
+    value = value.to_s
+    value == "N/A" ? "" : value
   end
 
   def rating_value(ratings, source)
