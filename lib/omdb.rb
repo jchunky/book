@@ -50,7 +50,7 @@ class Omdb
     amount = value.to_s.gsub(/\D/, "").to_i
     return "" if amount.zero?
 
-    "$#{(amount / 1_000_000.0).round}M"
+    (amount / 1_000_000.0).round.to_s
   end
 
   def clean_value(value)
