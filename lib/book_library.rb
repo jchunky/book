@@ -5,7 +5,11 @@ class BookLibrary
                     :availability_status, :audiences,
                     :content_type, :available, :on_order,
                     :genre, :jacket_url,
-                    :jacket_url_medium, :description)
+                    :jacket_url_medium, :description) do
+    def juvenile? = audiences.include?("JUVENILE")
+    def teen? = audiences.include?("TEEN")
+    def adult? = audiences.include?("ADULT")
+  end
 
   BOOK_TYPES = [
     BookType.new("ALL", ""),
