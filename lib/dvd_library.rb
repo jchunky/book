@@ -24,6 +24,7 @@ class DvdLibrary
 
     teens = result.uniq(&:href)
       .sort_by { |d| -d.rating }
+
     enrich_with_omdb(teens)
       .select(&method(:keep?))
       # .first(30)
