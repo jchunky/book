@@ -55,7 +55,7 @@ class Omdb
 
   def clean_value(value)
     value = value.to_s
-    value == "N/A" ? "" : value.delete_suffix(" min").delete_suffix("/100")
+    value == "N/A" ? "" : value.delete_suffix(" min").delete_suffix("/100").delete_suffix("%")
   end
 
   def rating_value(ratings, source)
