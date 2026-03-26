@@ -41,7 +41,7 @@ class Omdb
 
   def na_to_empty(value)
     value = value.to_s
-    value == "N/A" ? "" : value
+    value == "N/A" ? "" : value.delete_suffix(" min")
   end
 
   def rating_value(ratings, source)
