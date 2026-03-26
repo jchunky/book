@@ -21,9 +21,9 @@ class DvdLibrary
 
     top = result.uniq(&:href)
       .sort_by { |d| -d.rating }
-      .first(30)
     enrich_with_omdb(top)
       .select(&method(:keep?))
+      .first(30)
   end
 
   private
