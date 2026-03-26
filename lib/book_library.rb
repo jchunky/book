@@ -9,6 +9,11 @@ class BookLibrary
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
+
+    def keep?
+      content_type == "NONFICTION" ||
+        genre == "SCIENCE FICTION"
+    end
   end
 
   BOOK_TYPES = [
@@ -18,18 +23,13 @@ class BookLibrary
   def books
     BOOK_TYPES.flat_map do |book_type|
       books_for(book_type)
-        .select(&method(:keep?))
+        .select(&:keep?)
         .sort_by { |b| -b.rating }
         .first(30)
     end
   end
 
   private
-
-  def keep?(book)
-    book.content_type == "NONFICTION" ||
-      book.genre == "SCIENCE FICTION"
-  end
 
   def books_for(book_type)
     result = []

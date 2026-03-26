@@ -11,6 +11,10 @@ class DvdLibrary
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
+
+    def keep?
+      teen? && certified_fresh?
+    end
   end
 
   def dvds
@@ -26,19 +30,11 @@ class DvdLibrary
       .sort_by { |d| -d.rating }
 
     enrich_with_omdb(teens)
-      .select(&method(:keep?))
+      .select(&:keep?)
       # .first(30)
   end
 
   private
-
-  def keep?(dvd)
-    return false unless dvd.teen?
-    # return false unless dvd.must_see?
-    return false unless dvd.certified_fresh?
-
-    true
-  end
 
   def enrich_with_omdb(dvds)
     omdb = Omdb.new
