@@ -20,13 +20,17 @@ class DvdLibrary
     end
 
     top = result.uniq(&:href)
-      .select { |d| d.audiences.include?("TEEN") }
+      .select(&method(:keep?))
       .sort_by { |d| -d.rating }
       .first(30)
     enrich_with_omdb(top)
   end
 
   private
+
+  def keep?(dvd)
+    dvd.audiences.include?("TEEN")
+  end
 
   def enrich_with_omdb(dvds)
     omdb = Omdb.new
