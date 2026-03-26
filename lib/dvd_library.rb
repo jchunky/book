@@ -17,6 +17,7 @@ class DvdLibrary
     end
 
     top = result.uniq(&:href)
+      .select { |d| d.audiences.include?("Teen") }
       .sort_by { |d| -d.rating }
       .first(30)
     enrich_with_omdb(top)
