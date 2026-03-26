@@ -8,6 +8,7 @@ class DvdLibrary
                    :box_office) do
     def certified_fresh? = rotten_tomatoes.to_i >= 75
     def must_see? = metacritic.to_i >= 80
+    def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
   end
@@ -25,13 +26,17 @@ class DvdLibrary
       .sort_by { |d| -d.rating }
     enrich_with_omdb(teens)
       .select(&method(:keep?))
-      .first(30)
+      # .first(30)
   end
 
   private
 
   def keep?(dvd)
-    dvd.teen? && dvd.certified_fresh?
+    # return false unless dvd.teen?
+    return false unless dvd.must_see?
+    # return false unless dvd.certified_fresh?
+
+    true
   end
 
   def enrich_with_omdb(dvds)
