@@ -5,7 +5,8 @@ class BookLibrary
                     :availability_status, :audiences,
                     :content_type, :available, :on_order,
                     :genre, :jacket_url,
-                    :jacket_url_medium, :description) do
+                    :jacket_url_medium, :description,
+                    keyword_init: true) do
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
@@ -91,16 +92,18 @@ class BookLibrary
     href = "/v2/record/#{bib["id"]}"
     rating = holds * copies #* (Date.today.year + 1 - year)
 
-    Book.new(title, holds, copies, book_type.name,
-             href, author, year, rating,
-             avail["localisedStatus"].to_s,
-             Array(info["audiences"]).join(", "),
-             info["contentType"].to_s,
-             avail["availableCopies"].to_i,
-             avail["onOrderCopies"].to_i,
-             genre_from_call_number(info["callNumber"].to_s),
-             info.dig("jacket", "small").to_s,
-             info.dig("jacket", "medium").to_s,
-             info["description"].to_s)
+    Book.new(
+      title:, holds:, copies:, href:, author:, year:, rating:,
+      book_type: book_type.name,
+      availability_status: avail["localisedStatus"].to_s,
+      audiences: Array(info["audiences"]).join(", "),
+      content_type: info["contentType"].to_s,
+      available: avail["availableCopies"].to_i,
+      on_order: avail["onOrderCopies"].to_i,
+      genre: genre_from_call_number(info["callNumber"].to_s),
+      jacket_url: info.dig("jacket", "small").to_s,
+      jacket_url_medium: info.dig("jacket", "medium").to_s,
+      description: info["description"].to_s
+    )
   end
 end
