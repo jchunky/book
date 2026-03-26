@@ -26,10 +26,10 @@ class DvdLibrary
       result.concat(page_dvds)
     end
 
-    teens = result.uniq(&:href)
+    sorted = result.uniq(&:href)
       .sort_by { |d| -d.rating }
 
-    enrich_with_omdb(teens)
+    enrich_with_omdb(sorted)
       .select(&:keep?)
       # .first(30)
   end
