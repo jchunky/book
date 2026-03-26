@@ -31,7 +31,7 @@ class DvdLibrary
   private
 
   def keep?(dvd)
-    dvd.teen? && dvd.must_see?
+    dvd.teen? && dvd.certified_fresh?
   end
 
   def enrich_with_omdb(dvds)
