@@ -1,4 +1,6 @@
 class Omdb
+  RateLimitError = Class.new(StandardError)
+
   Info = Data.define(:year, :rated, :runtime, :genre, :box_office,
                      :rotten_tomatoes, :metacritic)
 
@@ -19,12 +21,17 @@ class Omdb
     CachedFile.new(url:, crawl_delay: 1).read do |content|
       parse_info(JSON.parse(content))
     end
+  rescue RateLimitError
+    raise
   rescue StandardError => e
     warn "OMDb lookup failed for '#{title}': #{e.message}"
     NO_INFO
   end
 
   def parse_info(data)
+    if data["Error"]&.include?("limit")
+      raise RateLimitError, data["Error"]
+    end
     return NO_INFO unless data["Response"] == "True"
 
     ratings = Array(data["Ratings"])
