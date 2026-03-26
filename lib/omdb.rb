@@ -35,7 +35,7 @@ class Omdb
       genre: data["Genre"].to_s,
       box_office: data["BoxOffice"].to_s,
       rotten_tomatoes: rating_value(ratings, "Rotten Tomatoes"),
-      metacritic: rating_value(ratings, "Metacritic")
+      metacritic: clean_value(rating_value(ratings, "Metacritic"))
     )
   end
 
