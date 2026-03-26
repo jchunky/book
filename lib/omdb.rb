@@ -30,8 +30,8 @@ class Omdb
     ratings = Array(data["Ratings"])
     Info.new(
       year: data["Year"].to_s,
-      rated: na_to_empty(data["Rated"]),
-      runtime: na_to_empty(data["Runtime"]),
+      rated: clean_value(data["Rated"]),
+      runtime: clean_value(data["Runtime"]),
       genre: data["Genre"].to_s,
       box_office: data["BoxOffice"].to_s,
       rotten_tomatoes: rating_value(ratings, "Rotten Tomatoes"),
@@ -39,7 +39,7 @@ class Omdb
     )
   end
 
-  def na_to_empty(value)
+  def clean_value(value)
     value = value.to_s
     value == "N/A" ? "" : value.delete_suffix(" min").delete_suffix("/100")
   end
