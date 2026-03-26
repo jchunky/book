@@ -44,7 +44,7 @@
       <td class="number"><%= book.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
       <td><%= book.author %></td>
-      <td><%= book.year %></td>
+      <td class="number"><%= book.year %></td>
       <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
       <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
@@ -81,13 +81,13 @@
       <td class="number"><%= dvd.on_order %></td>
       <td class="number"><%= dvd.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= dvd.href %>"><%= dvd.title %></a></td>
-      <td><%= dvd.year %></td>
+      <td class="number"><%= dvd.year %></td>
       <td><%= dvd.rated %></td>
-      <td><%= dvd.runtime %></td>
+      <td class="number"><%= dvd.runtime %></td>
       <td><%= dvd.genre %></td>
-      <td><%= dvd.box_office %></td>
-      <td<%= ' class="grayed-out"' unless dvd.certified_fresh? %>><%= dvd.rotten_tomatoes %></td>
-      <td<%= ' class="grayed-out"' unless dvd.must_see? %>><%= dvd.metacritic %></td>
+      <td class="number"><%= dvd.box_office %></td>
+      <td class="number<%= ' grayed-out' unless dvd.certified_fresh? %>"><%= dvd.rotten_tomatoes %></td>
+      <td class="number<%= ' grayed-out' unless dvd.must_see? %>"><%= dvd.metacritic %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
       <td><%= dvd.content_type %></td>
