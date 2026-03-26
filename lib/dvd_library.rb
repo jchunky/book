@@ -32,9 +32,9 @@ class DvdLibrary
   private
 
   def keep?(dvd)
-    # return false unless dvd.teen?
-    return false unless dvd.must_see?
-    # return false unless dvd.certified_fresh?
+    return false unless dvd.teen?
+    # return false unless dvd.must_see?
+    return false unless dvd.certified_fresh?
 
     true
   end
