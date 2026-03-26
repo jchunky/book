@@ -12,6 +12,7 @@
   .cover:hover .cover-lg { display: block; }
   .cover:hover > img:first-child { opacity: 0; }
   .genre-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
+  .grayed-out { color: #ccc; }
   th { position: sticky; top: 20; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
@@ -85,8 +86,8 @@
       <td><%= dvd.runtime %></td>
       <td><%= dvd.genre %></td>
       <td><%= dvd.box_office %></td>
-      <td><%= dvd.rotten_tomatoes %></td>
-      <td><%= dvd.metacritic %></td>
+      <td<%= ' class="grayed-out"' unless dvd.rotten_tomatoes.to_i >= 75 %>><%= dvd.rotten_tomatoes %></td>
+      <td<%= ' class="grayed-out"' unless dvd.metacritic.to_i >= 80 %>><%= dvd.metacritic %></td>
       <td><%= dvd.availability_status %></td>
       <td><%= dvd.audiences %></td>
       <td><%= dvd.content_type %></td>
