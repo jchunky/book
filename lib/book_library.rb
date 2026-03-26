@@ -23,9 +23,8 @@ class BookLibrary
   private
 
   def keep?(book)
-    # return false if book.year == 0
-
-    true
+    book.content_type == "NONFICTION" ||
+      book.genre == "SCIENCE FICTION"
   end
 
   def books_for(book_type)
