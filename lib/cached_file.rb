@@ -2,19 +2,20 @@ class CachedFile < Data.define(:url, :crawl_delay)
   CACHE_EXPIRY = 1.year
 
   def read
-    content = cache_expired? ? fetch_from_url : File.read(file)
-    result = yield(content)
-    File.write(file, content) if cache_expired?
-    result
+    content = cache_expired? ? fetch_and_cache : File.read(file)
+    yield(content)
+  end
+
+  def invalidate
+    File.delete(file) if File.exist?(file)
   end
 
   private
 
-  def fetch_from_url
+  def fetch_and_cache
     sleep crawl_delay
     print "."
-    # puts url
-    Net::HTTP.get(URI.parse(url))
+    Net::HTTP.get(URI.parse(url)).tap { |c| File.write(file, c) }
   end
 
   def cache_expired?

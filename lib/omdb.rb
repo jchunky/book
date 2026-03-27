@@ -26,11 +26,10 @@ class Omdb
   private
 
   def info_for(title:, year: nil)
-    url = url_for(title:, year:)
-    CachedFile.new(url:, crawl_delay: 1).read do |content|
-      parse_info(JSON.parse(content))
-    end
+    cached = CachedFile.new(url: url_for(title:, year:), crawl_delay: 1)
+    cached.read { |content| parse_info(JSON.parse(content)) }
   rescue RateLimitError
+    cached.invalidate
     raise
   rescue StandardError => e
     warn "OMDb lookup failed for '#{title}': #{e.message}"
