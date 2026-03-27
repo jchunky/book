@@ -8,10 +8,19 @@ class Omdb
                      box_office: "", rotten_tomatoes: "", metacritic: "")
 
   def info(title:, year:)
-    result = info_for(title:, year:)
-    return result unless result == NO_INFO
+    titles = [title]
+    base = title.split(":").first.strip
+    titles << base if base != title
 
-    info_for(title:)
+    titles.each do |t|
+      result = info_for(title: t, year:)
+      return result unless result == NO_INFO
+
+      result = info_for(title: t)
+      return result unless result == NO_INFO
+    end
+
+    NO_INFO
   end
 
   private
