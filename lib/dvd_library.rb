@@ -50,9 +50,6 @@ class DvdLibrary
       dvd.genre = info.genre
       dvd.box_office = info.box_office
     end
-  rescue Omdb::RateLimitError
-    warn "OMDb daily limit reached, skipping remaining lookups"
-    dvds
   end
 
   def dvds_for_page(page)

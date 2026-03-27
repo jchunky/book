@@ -4,6 +4,11 @@ class CachedFile < Data.define(:url, :crawl_delay)
     yield(content)
   end
 
+  def read_if_cached
+    return unless File.exist?(file)
+    yield(File.read(file))
+  end
+
   def invalidate
     File.delete(file) if File.exist?(file)
   end

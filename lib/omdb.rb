@@ -27,12 +27,22 @@ class Omdb
 
   def info_for(title:, year: nil)
     cached = CachedFile.new(url: url_for(title:, year:), crawl_delay: 1)
+    return cached_info(cached) if @rate_limited
+
     cached.read { |content| parse_info(JSON.parse(content)) }
   rescue RateLimitError
     cached.invalidate
-    raise
+    @rate_limited = true
+    warn "OMDb daily limit reached, using cache only"
+    NO_INFO
   rescue StandardError => e
     warn "OMDb lookup failed for '#{title}': #{e.message}"
+    NO_INFO
+  end
+
+  def cached_info(cached)
+    cached.read_if_cached { |c| parse_info(JSON.parse(c)) } || NO_INFO
+  rescue StandardError
     NO_INFO
   end
 
