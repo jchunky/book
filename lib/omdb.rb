@@ -63,9 +63,13 @@ class Omdb
     match ? match["Value"] : ""
   end
 
+  def clean_title(title)
+    title.split(%r{ [/;] }).first.strip
+  end
+
   def url_for(title:, year: nil)
     key = ENV.fetch("OMDB_API_KEY")
-    t = URI.encode_www_form_component(title)
+    t = URI.encode_www_form_component(clean_title(title))
     url = "https://www.omdbapi.com/?t=#{t}&apikey=#{key}"
     url += "&y=#{year}" if year
     url
