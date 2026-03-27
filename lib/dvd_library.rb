@@ -14,6 +14,8 @@ class DvdLibrary
 
     def keep?
       teen? && certified_fresh?
+      # adult? && must_see?
+      # true
     end
   end
 
