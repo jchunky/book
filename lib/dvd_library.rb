@@ -39,7 +39,7 @@ class DvdLibrary
   def enrich_with_omdb(dvds)
     omdb = Omdb.new
     dvds.each do |dvd|
-      info = omdb.info(title: dvd.title, year: dvd.year)
+      info = omdb.info(title: dvd.title.for_search, year: dvd.year)
       dvd.rotten_tomatoes = info.rotten_tomatoes
       dvd.metacritic = info.metacritic
       dvd.omdb_year = info.year
@@ -84,9 +84,10 @@ class DvdLibrary
     info = bib["briefInfo"] || {}
     avail = bib["availability"] || {}
 
-    subtitle = info["subtitle"].to_s
-    title = info["title"].to_s
-    title = "#{title}: #{subtitle}" unless subtitle.empty?
+    title = CatalogTitle.new(
+      title: info["title"].to_s,
+      subtitle: info["subtitle"].to_s
+    )
     year = info["publicationDate"].to_i
     holds = avail["heldCopies"].to_i
     copies = avail["totalCopies"].to_i
