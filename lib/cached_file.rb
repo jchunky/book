@@ -1,6 +1,4 @@
 class CachedFile < Data.define(:url, :crawl_delay)
-  CACHE_EXPIRY = 1.year
-
   def read
     content = cache_expired? ? fetch_and_cache : File.read(file)
     yield(content)
@@ -19,7 +17,7 @@ class CachedFile < Data.define(:url, :crawl_delay)
   end
 
   def cache_expired?
-    !File.exist?(file) || File.mtime(file) < (Time.now - CACHE_EXPIRY)
+    !File.exist?(file)
   end
 
   def file
