@@ -4,17 +4,21 @@ class DvdLibrary
                    :content_type, :available, :on_order,
                    :jacket_url, :jacket_url_medium,
                    :description, :rotten_tomatoes, :metacritic,
-                   :omdb_year, :rated, :runtime, :genre,
-                   :box_office, keyword_init: true) do
+                   :omdb_title, :omdb_year, :rated, :runtime,
+                   :genre, :box_office, keyword_init: true) do
     def certified_fresh? = rotten_tomatoes.to_i >= 75
     def must_see? = metacritic.to_i >= 80
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
+    def animation? = genre.include?("Animation")
 
+    def display_title = omdb_title.to_s.empty? ? title : omdb_title
     def display_year = omdb_year.to_s.empty? ? year : omdb_year
 
     def keep?
+      return false if animation?
+
       teen? && certified_fresh?
       # adult? && must_see?
       # true
@@ -44,6 +48,7 @@ class DvdLibrary
     omdb = Omdb.new
     dvds.each do |dvd|
       info = omdb.info(title: dvd.title.to_s, year: dvd.year)
+      dvd.omdb_title = info.title
       dvd.rotten_tomatoes = info.rotten_tomatoes
       dvd.metacritic = info.metacritic
       dvd.omdb_year = info.year

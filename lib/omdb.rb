@@ -1,10 +1,10 @@
 class Omdb
   RateLimitError = Class.new(StandardError)
 
-  Info = Data.define(:year, :rated, :runtime, :genre, :box_office,
+  Info = Data.define(:title, :year, :rated, :runtime, :genre, :box_office,
                      :rotten_tomatoes, :metacritic)
 
-  NO_INFO = Info.new(year: "", rated: "", runtime: "", genre: "",
+  NO_INFO = Info.new(title: "", year: "", rated: "", runtime: "", genre: "",
                      box_office: "", rotten_tomatoes: "", metacritic: "")
 
   def info(title:, year:)
@@ -54,6 +54,7 @@ class Omdb
 
     ratings = Array(data["Ratings"])
     Info.new(
+      title: data["Title"].to_s,
       year: data["Year"].to_s,
       rated: clean_value(data["Rated"]),
       runtime: clean_value(data["Runtime"]),
