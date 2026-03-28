@@ -12,6 +12,8 @@ class DvdLibrary
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
 
+    def display_year = omdb_year.to_s.empty? ? year : omdb_year
+
     def keep?
       teen? && certified_fresh?
       # adult? && must_see?
