@@ -1,6 +1,19 @@
 # frozen_string_literal: true
 
 module Dewey
+  CLASSES = {
+    0 => "Computer Science & Information",
+    100 => "Philosophy & Psychology",
+    200 => "Religion",
+    300 => "Social Sciences",
+    400 => "Language",
+    500 => "Science",
+    600 => "Technology",
+    700 => "Arts & Recreation",
+    800 => "Literature",
+    900 => "History & Geography",
+  }.freeze
+
   DIVISIONS = {
     0 => "Computer Science & Information",
     10 => "Bibliography",
@@ -104,11 +117,17 @@ module Dewey
     990 => "Pacific Islands History",
   }.freeze
 
+  def self.class_lookup(call_number)
+    digits = call_number[/\A(\d+)/, 1]
+    return "" unless digits
+
+    CLASSES[digits.to_i / 100 * 100] || ""
+  end
+
   def self.lookup(call_number)
     digits = call_number[/\A(\d+)/, 1]
     return "" unless digits
 
-    code = digits.to_i / 10 * 10
-    DIVISIONS[code] || ""
+    DIVISIONS[digits.to_i / 10 * 10] || ""
   end
 end
