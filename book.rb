@@ -32,9 +32,11 @@ class Book
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
 
     @dvds = DvdLibrary.new.dvds
+    @book_list = BookListLibrary.new(@books).entries
 
     p @books.count
     p @dvds.count
+    p @book_list.count
 
     write_output
   end
