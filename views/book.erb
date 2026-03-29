@@ -52,7 +52,7 @@
       <% nyt = @nyt.find(book.title.to_s) %>
       <td class="number"><%= nyt&.dig("appearances") %></td>
       <td class="number"><%= nyt&.dig("best_rank") %></td>
-      <td><%= "#{nyt&.dig("first_year")}-#{nyt&.dig("last_year")}" if nyt %></td>
+      <td><%= nyt&.dig("first_year") == nyt&.dig("last_year") ? nyt&.dig("first_year") : "#{nyt&.dig("first_year")}-#{nyt&.dig("last_year")}" if nyt %></td>
       <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
       <td><%= book.content_type %></td>
