@@ -3,9 +3,10 @@ class DvdLibrary
                    :rating, :availability_status, :audiences,
                    :content_type, :available, :on_order,
                    :jacket_url, :jacket_url_medium,
-                   :description, :rotten_tomatoes, :metacritic,
-                   :omdb_title, :omdb_year, :rated, :runtime,
-                   :genre, :box_office, keyword_init: true) do
+                   :description, :omdb, keyword_init: true) do
+    delegate :rated, :runtime, :genre, :box_office,
+             :rotten_tomatoes, :metacritic, to: :omdb
+
     def certified_fresh? = rotten_tomatoes.to_i >= 75
     def must_see? = metacritic.to_i >= 80
     def juvenile? = audiences.include?("JUVENILE")
@@ -13,8 +14,13 @@ class DvdLibrary
     def adult? = audiences.include?("ADULT")
     def animation? = genre.include?("Animation")
 
-    def display_title = omdb_title.to_s.empty? ? title : omdb_title
-    def display_year = omdb_year.to_s.empty? ? year : omdb_year
+    def display_title
+      omdb.title.empty? ? title : omdb.title
+    end
+
+    def display_year
+      omdb.year.empty? ? year : omdb.year
+    end
 
     def keep?
       return false if animation?
@@ -39,16 +45,10 @@ class DvdLibrary
   private
 
   def enrich_with_omdb(dvds)
-    omdb = Omdb.new
+    omdb_client = Omdb.new
     dvds.map do |dvd|
-      info = omdb.info(title: dvd.title.to_s, year: dvd.year)
-      Dvd.new(**dvd.to_h.merge(
-        omdb_title: info.title, omdb_year: info.year,
-        rotten_tomatoes: info.rotten_tomatoes,
-        metacritic: info.metacritic, rated: info.rated,
-        runtime: info.runtime, genre: info.genre,
-        box_office: info.box_office
-      ))
+      info = omdb_client.info(title: dvd.title.to_s, year: dvd.year)
+      Dvd.new(**dvd.to_h.merge(omdb: info))
     end
   end
 
@@ -87,7 +87,8 @@ class DvdLibrary
       on_order: avail["onOrderCopies"].to_i,
       jacket_url: info.dig("jacket", "small").to_s,
       jacket_url_medium: info.dig("jacket", "medium").to_s,
-      description: info["description"].to_s
+      description: info["description"].to_s,
+      omdb: Omdb::NO_INFO
     )
   end
 end
