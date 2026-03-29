@@ -34,7 +34,7 @@
     <th>Audiences</th>
     <th>Content Type</th>
   </tr>
-  <% @books.each do |book| %>
+  <% @books.first(30).each do |book| %>
     <tr>
       <td><%= book.book_type %></td>
       <td class="number"><%= book.holds %></td>

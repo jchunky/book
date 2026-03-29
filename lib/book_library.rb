@@ -42,7 +42,7 @@ class BookLibrary
         url_for_page(book_type, page)
       end
       search.fetch_all { |bib| bib_to_book(book_type, bib) }
-        .select(&:keep?)
+        # .select(&:keep?)
         .sort_by { |b| -b.rating }
         # .first(30)
     end
