@@ -42,7 +42,7 @@
       <td class="number"><%= book.available %></td>
       <td class="number"><%= book.on_order %></td>
       <td class="number"><%= book.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title.title %></a></td>
       <td><%= book.author %></td>
       <td class="number"><%= book.year %></td>
       <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
