@@ -22,11 +22,12 @@ class Book
     GENRE_COLORS[genre] || "#000000"
   end
 
-  def display_book?(_book)
-    true
+  def display_book?(book)
+    @nyt.best_seller?(book.title.to_s)
   end
 
   def run
+    @nyt = NytBestSellers.new
     @books = BookLibrary.new.books
       .select(&method(:display_book?))
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
