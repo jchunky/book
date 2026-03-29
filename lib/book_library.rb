@@ -82,9 +82,10 @@ class BookLibrary
     info = bib["briefInfo"] || {}
     avail = bib["availability"] || {}
 
-    subtitle = info["subtitle"].to_s
-    title = info["title"].to_s
-    title = "#{title}: #{subtitle}" unless subtitle.empty?
+    title = CatalogTitle.new(
+      title: info["title"].to_s,
+      subtitle: info["subtitle"].to_s
+    )
     author = Array(info["authors"]).first.to_s
     year = info["publicationDate"].to_i
     holds = avail["heldCopies"].to_i

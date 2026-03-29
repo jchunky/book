@@ -39,23 +39,21 @@ class DvdLibrary
 
     enrich_with_omdb(sorted)
       .select(&:keep?)
-      # .first(30)
   end
 
   private
 
   def enrich_with_omdb(dvds)
     omdb = Omdb.new
-    dvds.each do |dvd|
+    dvds.map do |dvd|
       info = omdb.info(title: dvd.title.to_s, year: dvd.year)
-      dvd.omdb_title = info.title
-      dvd.rotten_tomatoes = info.rotten_tomatoes
-      dvd.metacritic = info.metacritic
-      dvd.omdb_year = info.year
-      dvd.rated = info.rated
-      dvd.runtime = info.runtime
-      dvd.genre = info.genre
-      dvd.box_office = info.box_office
+      Dvd.new(**dvd.to_h.merge(
+        omdb_title: info.title, omdb_year: info.year,
+        rotten_tomatoes: info.rotten_tomatoes,
+        metacritic: info.metacritic, rated: info.rated,
+        runtime: info.runtime, genre: info.genre,
+        box_office: info.box_office
+      ))
     end
   end
 
