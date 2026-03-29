@@ -26,15 +26,10 @@ class DvdLibrary
   end
 
   def dvds
-    result = []
-    (1..).each do |page|
-      page_dvds = dvds_for_page(page)
-      break if page_dvds.none?
-
-      result.concat(page_dvds)
-    end
-
-    sorted = result.uniq(&:href)
+    search = BibliocommonsSearch.new { |page|
+      url_for_page(page)
+    }
+    sorted = search.fetch_all { |bib| bib_to_dvd(bib) }
       .sort_by { |d| -d.rating }
 
     enrich_with_omdb(sorted)
@@ -57,29 +52,14 @@ class DvdLibrary
     end
   end
 
-  def dvds_for_page(page)
-    url = url_for_page(page)
-    CachedFile.new(url:, crawl_delay: 1).read do |content|
-      data = JSON.parse(content)
-      bibs = data.dig("entities", "bibs") || {}
-      ids = data.dig("catalogSearch", "results")
-        &.map { |r| r["representative"] } || []
-      ids.filter_map { |id| bib_to_dvd(bibs[id]) }
-    end
-  rescue StandardError
-    []
-  end
-
   def url_for_page(page)
-    base = "https://gateway.bibliocommons.com/v2"
-    base += "/libraries/tpl/bibs/search"
     params = "?query=isolanguage%3A%22eng%22%20formatcode%3A(DVD%20)"
     params += "&searchType=bl&suppress=true"
     params += "&f_PRIMARY_LANGUAGE=eng&f_CIRC=CIRC"
     params += "&f_GENRE_HEADINGS=Feature%20films"
     params += "&sort=newly_acquired"
     params += "&page=#{page}" if page > 1
-    "#{base}#{params}"
+    "#{BibliocommonsSearch::BASE_URL}#{params}"
   end
 
   def bib_to_dvd(bib)

@@ -23,7 +23,10 @@ class BookLibrary
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      books_for(book_type)
+      search = BibliocommonsSearch.new { |page|
+        url_for_page(book_type, page)
+      }
+      search.fetch_all { |bib| bib_to_book(book_type, bib) }
         .select(&:keep?)
         .sort_by { |b| -b.rating }
         .first(30)
@@ -32,40 +35,13 @@ class BookLibrary
 
   private
 
-  def books_for(book_type)
-    result = []
-    (1..).each do |page|
-      books = books_for_page(book_type, page)
-      break if books.none?
-
-      result.concat(books)
-    end
-
-    result.uniq(&:href)
-  end
-
-  def books_for_page(book_type, page)
-    url = url_for_page(book_type, page)
-    CachedFile.new(url:, crawl_delay: 1).read do |content|
-      data = JSON.parse(content)
-      bibs = data.dig("entities", "bibs") || {}
-      ids = data.dig("catalogSearch", "results")
-        &.map { |r| r["representative"] } || []
-      ids.filter_map { |id| bib_to_book(book_type, bibs[id]) }
-    end
-  rescue StandardError
-    []
-  end
-
   def url_for_page(book_type, page)
-    base = "https://gateway.bibliocommons.com/v2"
-    base += "/libraries/tpl/bibs/search"
     params = "?query=avlocation%3A%22Parkdale%22"
     params += "&searchType=bl&suppress=true"
     params += "&f_FORMAT=BK&f_CIRC=CIRC&f_PRIMARY_LANGUAGE=eng"
     params += book_type.query_fragment
     params += "&page=#{page}" if page > 1
-    "#{base}#{params}"
+    "#{BibliocommonsSearch::BASE_URL}#{params}"
   end
 
   def genre_from_call_number(call_number)
