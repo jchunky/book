@@ -60,6 +60,7 @@
     <th>Call Number</th>
     <th>Dewey Class (100s)</th>
     <th>Dewey Division (10s)</th>
+    <th>Dewey Section (1s)</th>
   </tr>
   <% @book_list.each do |entry| %>
     <tr>
@@ -67,6 +68,7 @@
       <td><%= entry.call_number %></td>
       <td><%= entry.dewey_class %></td>
       <td><%= entry.dewey_division %></td>
+      <td><%= entry.dewey_section %></td>
     </tr>
   <% end %>
 </table>

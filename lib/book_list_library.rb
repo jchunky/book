@@ -2,7 +2,8 @@
 
 class BookListLibrary
   BookListEntry = Data.define(
-    :title, :call_number, :dewey_class, :dewey_division, :href,
+    :title, :call_number,
+    :dewey_class, :dewey_division, :dewey_section, :href,
   )
 
   def initialize(books)
@@ -32,6 +33,7 @@ class BookListLibrary
       title:, call_number: book.call_number,
       dewey_class: Dewey.class_lookup(book.call_number),
       dewey_division: Dewey.lookup(book.call_number),
+      dewey_section: Dewey.section_lookup(book.call_number),
       href: book.href,
     )
   end
