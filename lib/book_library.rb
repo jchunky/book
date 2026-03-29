@@ -17,6 +17,7 @@ class BookLibrary
     :available,
     :on_order,
     :genre,
+    :call_number,
     :jacket_url,
     :jacket_url_medium,
     :description,
@@ -43,7 +44,7 @@ class BookLibrary
       search.fetch_all { |bib| bib_to_book(book_type, bib) }
         .select(&:keep?)
         .sort_by { |b| -b.rating }
-        .first(30)
+        # .first(30)
     end
   end
 
@@ -97,6 +98,7 @@ class BookLibrary
       content_type: info["contentType"].to_s,
       available: avail["availableCopies"].to_i,
       on_order: avail["onOrderCopies"].to_i,
+      call_number: info["callNumber"].to_s,
       genre: genre_from_call_number(info["callNumber"].to_s),
       jacket_url: info.dig("jacket", "small").to_s,
       jacket_url_medium: info.dig("jacket", "medium").to_s,
