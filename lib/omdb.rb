@@ -1,11 +1,30 @@
+# frozen_string_literal: true
+
 class Omdb
-  RateLimitError = Class.new(StandardError)
+  class RateLimitError < StandardError
+  end
 
-  Info = Data.define(:title, :year, :rated, :runtime, :genre, :box_office,
-                     :rotten_tomatoes, :metacritic)
+  Info = Data.define(
+    :title,
+    :year,
+    :rated,
+    :runtime,
+    :genre,
+    :box_office,
+    :rotten_tomatoes,
+    :metacritic,
+  )
 
-  NO_INFO = Info.new(title: "", year: "", rated: "", runtime: "", genre: "",
-                     box_office: "", rotten_tomatoes: "", metacritic: "")
+  NO_INFO = Info.new(
+    title: "",
+    year: "",
+    rated: "",
+    runtime: "",
+    genre: "",
+    box_office: "",
+    rotten_tomatoes: "",
+    metacritic: "",
+  )
 
   def info(title:, year:)
     titles = [title]
@@ -61,7 +80,7 @@ class Omdb
       genre: data["Genre"].to_s,
       box_office: round_to_million(data["BoxOffice"]),
       rotten_tomatoes: clean_value(rating_value(ratings, "Rotten Tomatoes")),
-      metacritic: clean_value(rating_value(ratings, "Metacritic"))
+      metacritic: clean_value(rating_value(ratings, "Metacritic")),
     )
   end
 

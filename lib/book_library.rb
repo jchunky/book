@@ -1,12 +1,26 @@
+# frozen_string_literal: true
+
 class BookLibrary
   BookType = Struct.new(:name, :query_fragment)
-  Book = Struct.new(:title, :holds, :copies, :book_type,
-                    :href, :author, :year, :rating,
-                    :availability_status, :audiences,
-                    :content_type, :available, :on_order,
-                    :genre, :jacket_url,
-                    :jacket_url_medium, :description,
-                    keyword_init: true) do
+  Book = Struct.new(
+    :title,
+    :holds,
+    :copies,
+    :book_type,
+    :href,
+    :author,
+    :year,
+    :rating,
+    :availability_status,
+    :audiences,
+    :content_type,
+    :available,
+    :on_order,
+    :genre,
+    :jacket_url,
+    :jacket_url_medium,
+    :description,
+  ) do
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
@@ -19,13 +33,13 @@ class BookLibrary
 
   BOOK_TYPES = [
     BookType.new("ALL", ""),
-  ]
+  ].freeze
 
   def books
     BOOK_TYPES.flat_map do |book_type|
-      search = BibliocommonsSearch.new { |page|
+      search = BibliocommonsSearch.new do |page|
         url_for_page(book_type, page)
-      }
+      end
       search.fetch_all { |bib| bib_to_book(book_type, bib) }
         .select(&:keep?)
         .sort_by { |b| -b.rating }
@@ -60,17 +74,23 @@ class BookLibrary
 
     title = CatalogTitle.new(
       title: info["title"].to_s,
-      subtitle: info["subtitle"].to_s
+      subtitle: info["subtitle"].to_s,
     )
     author = Array(info["authors"]).first.to_s
     year = info["publicationDate"].to_i
     holds = avail["heldCopies"].to_i
     copies = avail["totalCopies"].to_i
     href = "/v2/record/#{bib["id"]}"
-    rating = holds * copies #* (Date.today.year + 1 - year)
+    rating = holds * copies # * (Date.today.year + 1 - year)
 
     Book.new(
-      title:, holds:, copies:, href:, author:, year:, rating:,
+      title:,
+      holds:,
+      copies:,
+      href:,
+      author:,
+      year:,
+      rating:,
       book_type: book_type.name,
       availability_status: avail["localisedStatus"].to_s,
       audiences: Array(info["audiences"]).join(", "),
@@ -80,7 +100,7 @@ class BookLibrary
       genre: genre_from_call_number(info["callNumber"].to_s),
       jacket_url: info.dig("jacket", "small").to_s,
       jacket_url_medium: info.dig("jacket", "medium").to_s,
-      description: info["description"].to_s
+      description: info["description"].to_s,
     )
   end
 end

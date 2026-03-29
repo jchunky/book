@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CachedFile < Data.define(:url, :crawl_delay)
   def read
     content = cache_expired? ? fetch_and_cache : File.read(file)
@@ -6,11 +8,12 @@ class CachedFile < Data.define(:url, :crawl_delay)
 
   def read_if_cached
     return unless File.exist?(file)
+
     yield(File.read(file))
   end
 
   def invalidate
-    File.delete(file) if File.exist?(file)
+    FileUtils.rm_f(file)
   end
 
   private

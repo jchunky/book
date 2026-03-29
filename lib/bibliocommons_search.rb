@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BibliocommonsSearch
   BASE_URL = "https://gateway.bibliocommons.com/v2" \
              "/libraries/tpl/bibs/search"

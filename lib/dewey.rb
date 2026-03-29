@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Dewey
   DIVISIONS = {
     0 => "Computer Science & Information",

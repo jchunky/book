@@ -1,11 +1,30 @@
+# frozen_string_literal: true
+
 class DvdLibrary
-  Dvd = Struct.new(:title, :holds, :copies, :href, :year,
-                   :rating, :availability_status, :audiences,
-                   :content_type, :available, :on_order,
-                   :jacket_url, :jacket_url_medium,
-                   :description, :omdb, keyword_init: true) do
-    delegate :rated, :runtime, :genre, :box_office,
-             :rotten_tomatoes, :metacritic, to: :omdb
+  Dvd = Struct.new(
+    :title,
+    :holds,
+    :copies,
+    :href,
+    :year,
+    :rating,
+    :availability_status,
+    :audiences,
+    :content_type,
+    :available,
+    :on_order,
+    :jacket_url,
+    :jacket_url_medium,
+    :description,
+    :omdb,
+  ) do
+    delegate :rated,
+             :runtime,
+             :genre,
+             :box_office,
+             :rotten_tomatoes,
+             :metacritic,
+             to: :omdb
 
     def certified_fresh? = rotten_tomatoes.to_i >= 75
     def must_see? = metacritic.to_i >= 80
@@ -32,9 +51,9 @@ class DvdLibrary
   end
 
   def dvds
-    search = BibliocommonsSearch.new { |page|
+    search = BibliocommonsSearch.new do |page|
       url_for_page(page)
-    }
+    end
     sorted = search.fetch_all { |bib| bib_to_dvd(bib) }
       .sort_by { |d| -d.rating }
 
@@ -48,7 +67,7 @@ class DvdLibrary
     omdb_client = Omdb.new
     dvds.map do |dvd|
       info = omdb_client.info(title: dvd.title.to_s, year: dvd.year)
-      Dvd.new(**dvd.to_h.merge(omdb: info))
+      Dvd.new(**dvd.to_h, omdb: info)
     end
   end
 
@@ -70,7 +89,7 @@ class DvdLibrary
 
     title = CatalogTitle.new(
       title: info["title"].to_s,
-      subtitle: info["subtitle"].to_s
+      subtitle: info["subtitle"].to_s,
     )
     year = info["publicationDate"].to_i
     holds = avail["heldCopies"].to_i
@@ -79,7 +98,12 @@ class DvdLibrary
     rating = holds * copies
 
     Dvd.new(
-      title:, holds:, copies:, href:, year:, rating:,
+      title:,
+      holds:,
+      copies:,
+      href:,
+      year:,
+      rating:,
       availability_status: avail["localisedStatus"].to_s,
       audiences: Array(info["audiences"]).join(", "),
       content_type: info["contentType"].to_s,
@@ -88,7 +112,7 @@ class DvdLibrary
       jacket_url: info.dig("jacket", "small").to_s,
       jacket_url_medium: info.dig("jacket", "medium").to_s,
       description: info["description"].to_s,
-      omdb: Omdb::NO_INFO
+      omdb: Omdb::NO_INFO,
     )
   end
 end
