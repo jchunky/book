@@ -53,6 +53,24 @@
   <% end %>
 </table>
 
+<h2>Book List</h2>
+<table class="data-table sortable">
+  <tr>
+    <th>Title</th>
+    <th>Call Number</th>
+    <th>Dewey Class (100s)</th>
+    <th>Dewey Division (10s)</th>
+  </tr>
+  <% @book_list.each do |entry| %>
+    <tr>
+      <td><a href="https://tpl.bibliocommons.com<%= entry.href %>"><%= entry.title %></a></td>
+      <td><%= entry.call_number %></td>
+      <td><%= entry.dewey_class %></td>
+      <td><%= entry.dewey_division %></td>
+    </tr>
+  <% end %>
+</table>
+
 <h2>DVDs</h2>
 <table class="data-table sortable">
   <tr>
