@@ -21,7 +21,7 @@ class BookListLibrary
   end
 
   def find_book(title)
-    book = @books.find { |b| b.title.to_s.start_with?(title) }
+    book = @books.find { |b| b.title.to_s.split(":").first.casecmp?(title) }
     book_to_entry(title, book)
   end
 
