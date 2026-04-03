@@ -20,6 +20,12 @@ class MovieLibrary
     "Rose Plays Julie",
     "Ad Astra",
     "A Hidden Life",
+    "A Beautiful Day in the Neighborhood",
+    "Invisible Hands",
+    "Firecrackers",
+    "A Bread Factory Part One",
+    "Hesburgh",
+    "Black Mother",
   ].to_set.freeze
 
   Movie = Struct.new(
