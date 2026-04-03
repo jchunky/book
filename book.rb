@@ -19,7 +19,7 @@ class Book
   }.freeze
 
   def genre_color(genre)
-    GENRE_COLORS[genre] || "#000000"
+    GENRE_COLORS[genre] || "#444444"
   end
 
   def display_book?(_book)
