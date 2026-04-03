@@ -37,6 +37,14 @@ class MovieLibrary
     "In Jackson Heights",
     "Resolution",
     "Call Me Kuchu",
+    "Minority Report",
+    "Dead Man Walking",
+    "Much Ado About Nothing",
+    "Mystery Train",
+    "Children of a Lesser God",
+    "The Trip to Bountiful",
+    "Close Encounters of the Third Kind",
+    "3 Women",
   ].to_set.freeze
 
   Movie = Struct.new(
