@@ -31,7 +31,8 @@ class BibliocommonsSearch
         &.map { |r| r["representative"] } || []
       ids.filter_map { |id| yield(bibs[id]) }
     end
-  rescue StandardError
+  rescue StandardError => e
+    warn "Bibliocommons page #{page} failed: #{e.message}"
     []
   end
 
