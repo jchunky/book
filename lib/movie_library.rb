@@ -26,6 +26,10 @@ class MovieLibrary
     "A Bread Factory, Part One",
     "Hesburgh",
     "Black Mother",
+    "Wobble Palace",
+    "We the Animals",
+    "The Old Man & the Gun",
+    "Lean on Pete",
   ].to_set.freeze
 
   Movie = Struct.new(
