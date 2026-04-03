@@ -43,10 +43,10 @@ class DvdLibrary
 
     def keep?
       return false if animation?
+      # return fale unless teen? && certified_fresh?
+      return false unless adult? && must_see?
 
-      # teen? && certified_fresh?
-      adult? && must_see?
-      # true
+      true
     end
   end
 
