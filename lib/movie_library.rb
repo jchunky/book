@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class DvdLibrary
-  Dvd = Struct.new(
+class MovieLibrary
+  Movie = Struct.new(
     :title,
     :holds,
     :copies,
@@ -50,12 +50,12 @@ class DvdLibrary
     end
   end
 
-  def dvds
+  def movies
     search = BibliocommonsSearch.new do |page|
       url_for_page(page)
     end
-    sorted = search.fetch_all { |bib| bib_to_dvd(bib) }
-      .sort_by { |d| -d.rating }
+    sorted = search.fetch_all { |bib| bib_to_movie(bib) }
+      .sort_by { |m| -m.rating }
 
     enrich_with_omdb(sorted)
       .select(&:keep?)
@@ -63,11 +63,11 @@ class DvdLibrary
 
   private
 
-  def enrich_with_omdb(dvds)
+  def enrich_with_omdb(movies)
     omdb_client = Omdb.new
-    dvds.map do |dvd|
-      info = omdb_client.info(title: dvd.title.to_s, year: dvd.year)
-      Dvd.new(**dvd.to_h, omdb: info)
+    movies.map do |movie|
+      info = omdb_client.info(title: movie.title.to_s, year: movie.year)
+      Movie.new(**movie.to_h, omdb: info)
     end
   end
 
@@ -81,7 +81,7 @@ class DvdLibrary
     "#{BibliocommonsSearch::BASE_URL}#{params}"
   end
 
-  def bib_to_dvd(bib)
+  def bib_to_movie(bib)
     return unless bib
 
     info = bib["briefInfo"] || {}
@@ -97,7 +97,7 @@ class DvdLibrary
     href = "/v2/record/#{bib["id"]}"
     rating = holds * copies
 
-    Dvd.new(
+    Movie.new(
       title:,
       holds:,
       copies:,

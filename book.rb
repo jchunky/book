@@ -31,9 +31,9 @@ class Book
       .select(&method(:display_book?))
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
 
-    @dvds = DvdLibrary.new.dvds
+    @movies = MovieLibrary.new.movies
 
-    puts "Books: #{@books.count}, DVDs: #{@dvds.count}"
+    puts "Books: #{@books.count}, Movies: #{@movies.count}"
 
     write_output
   end
