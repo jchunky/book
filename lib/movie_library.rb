@@ -49,19 +49,19 @@ class MovieLibrary
       search_url("site:metacritic.com/movie", display_title, display_year)
     end
 
-    private
-
-    def search_url(site_filter, title, year)
-      query = URI.encode_www_form_component("#{site_filter} #{title} #{year}")
-      "https://www.google.com/search?btnI&q=#{query}"
-    end
-
     def keep?
       return false if animation?
       # return fale unless teen? && certified_fresh?
       return false unless adult? && must_see?
 
       true
+    end
+
+    private
+
+    def search_url(site_filter, title, year)
+      query = URI.encode_www_form_component("#{site_filter} #{title} #{year}")
+      "https://www.google.com/search?btnI&q=#{query}"
     end
   end
 
