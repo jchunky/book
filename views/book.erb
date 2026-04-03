@@ -86,8 +86,8 @@
       <td class="number"><%= movie.runtime %></td>
       <td><%= movie.genre %></td>
       <td class="number"><%= movie.box_office %></td>
-      <td class="number<%= ' grayed-out' unless movie.certified_fresh? %>"><%= movie.rotten_tomatoes %></td>
-      <td class="number<%= ' grayed-out' unless movie.must_see? %>"><%= movie.metacritic %></td>
+      <td class="number<%= ' grayed-out' unless movie.certified_fresh? %>"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
+      <td class="number<%= ' grayed-out' unless movie.must_see? %>"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></td>
       <td><%= movie.availability_status %></td>
       <td><%= movie.audiences %></td>
       <td><%= movie.content_type %></td>

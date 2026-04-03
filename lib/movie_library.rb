@@ -41,6 +41,21 @@ class MovieLibrary
       omdb.year.empty? ? year : omdb.year
     end
 
+    def rotten_tomatoes_url
+      search_url("site:rottentomatoes.com/m", display_title, display_year)
+    end
+
+    def metacritic_url
+      search_url("site:metacritic.com/movie", display_title, display_year)
+    end
+
+    private
+
+    def search_url(site_filter, title, year)
+      query = URI.encode_www_form_component("#{site_filter} #{title} #{year}")
+      "https://www.google.com/search?btnI&q=#{query}"
+    end
+
     def keep?
       return false if animation?
       # return fale unless teen? && certified_fresh?
