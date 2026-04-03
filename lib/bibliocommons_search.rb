@@ -13,9 +13,9 @@ class BibliocommonsSearch
     result = []
     (1..).each do |page|
       items = fetch_page(page, &bib_mapper)
-      break if items.none?
+      break if items&.none?
 
-      result.concat(items)
+      result.concat(items) if items
     end
     result.uniq(&:href)
   end
@@ -33,7 +33,7 @@ class BibliocommonsSearch
     end
   rescue StandardError => e
     warn "Bibliocommons page #{page} failed: #{e.message}"
-    []
+    nil
   end
 
   def valid_response?(content)
