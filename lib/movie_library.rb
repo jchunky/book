@@ -103,7 +103,9 @@ class MovieLibrary
              to: :omdb
 
     def certified_fresh? = rotten_tomatoes.to_i >= 75
-    def must_see? = metacritic.to_i >= 80
+    def must_see?
+      metacritic.to_i >= 80 && !excluded?
+    end
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
@@ -129,7 +131,6 @@ class MovieLibrary
 
     def keep?
       return false if animation?
-      return false if excluded?
       # return fale unless teen? && certified_fresh?
       return false unless adult? && must_see?
 
