@@ -30,6 +30,13 @@ class MovieLibrary
     "We the Animals",
     "The Old Man & the Gun",
     "Lean on Pete",
+    "Mountain",
+    "Good Time",
+    "The Levelling",
+    "Everything Is Copy",
+    "In Jackson Heights",
+    "Resolution",
+    "Call Me Kuchu",
   ].to_set.freeze
 
   Movie = Struct.new(
