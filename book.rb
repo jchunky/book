@@ -33,8 +33,7 @@ class Book
 
     @dvds = DvdLibrary.new.dvds
 
-    p @books.count
-    p @dvds.count
+    puts "Books: #{@books.count}, DVDs: #{@dvds.count}"
 
     write_output
   end
