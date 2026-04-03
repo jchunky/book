@@ -13,11 +13,11 @@
   .cover:hover > img:first-child { opacity: 0; }
   .genre-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
   .grayed-out { color: #ccc; }
-  th { position: sticky; top: 20; }
+  th { position: sticky; top: 20px; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
 
-<h2>Books</h2>
+<h2>Books (<%= @books.count %>)</h2>
 <table class="data-table sortable">
   <tr>
     <th>Book Type</th>
@@ -53,7 +53,7 @@
   <% end %>
 </table>
 
-<h2>DVDs</h2>
+<h2>DVDs (<%= @dvds.count %>)</h2>
 <table class="data-table sortable">
   <tr>
     <th>Holds</th>
