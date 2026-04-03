@@ -1,6 +1,27 @@
 # frozen_string_literal: true
 
 class MovieLibrary
+  EXCLUDED_TITLES = [
+    "In the Summers",
+    "The Settlers",
+    "Strange Darling",
+    "You Hurt My Feelings",
+    "Barbie",
+    "Linoleum",
+    "Turn Every Page",
+    "The Unknown Country",
+    "I Was a Simple Man",
+    "Bergman Island",
+    "Stray",
+    "Fatman",
+    "Eyimofe",
+    "David Crosby",
+    "Anne at 13,000 ft",
+    "Rose Plays Julie",
+    "Ad Astra",
+    "A Hidden Life",
+  ].to_set.freeze
+
   Movie = Struct.new(
     :title,
     :holds,
@@ -49,8 +70,11 @@ class MovieLibrary
       search_url("site:metacritic.com/movie", display_title, display_year)
     end
 
+    def excluded? = EXCLUDED_TITLES.include?(display_title)
+
     def keep?
       return false if animation?
+      return false if excluded?
       # return fale unless teen? && certified_fresh?
       return false unless adult? && must_see?
 
