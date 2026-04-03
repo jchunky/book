@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
-class CachedFile < Data.define(:url, :crawl_delay)
+class CachedFile < Data.define(:url, :crawl_delay, :cacheable)
+  def initialize(url:, crawl_delay:, cacheable: ->(_) { true })
+    super(url:, crawl_delay:, cacheable:)
+  end
+
   def read
     content = cache_expired? ? fetch_and_cache : File.read(file)
     yield(content)
@@ -21,7 +25,7 @@ class CachedFile < Data.define(:url, :crawl_delay)
   def fetch_and_cache
     sleep crawl_delay
     print "."
-    Net::HTTP.get(URI.parse(url)).tap { |c| File.write(file, c) }
+    Net::HTTP.get(URI.parse(url)).tap { |c| File.write(file, c) if cacheable.call(c) }
   end
 
   def cache_expired?

@@ -45,7 +45,7 @@ class Omdb
   private
 
   def info_for(title:, year: nil)
-    cached = CachedFile.new(url: url_for(title:, year:), crawl_delay: 1)
+    cached = CachedFile.new(url: url_for(title:, year:), crawl_delay: 1, cacheable: method(:cacheable_response?))
     return cached_info(cached) if @rate_limited
 
     cached.read { |content| parse_info(JSON.parse(content)) }
@@ -99,6 +99,13 @@ class Omdb
   def rating_value(ratings, source)
     match = ratings.find { |r| r["Source"] == source }
     match ? match["Value"] : ""
+  end
+
+  def cacheable_response?(content)
+    data = JSON.parse(content)
+    data["Response"] == "True" || data["Error"]&.include?("not found")
+  rescue JSON::ParserError
+    false
   end
 
   def url_for(title:, year: nil)

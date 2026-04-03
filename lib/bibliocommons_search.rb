@@ -24,7 +24,7 @@ class BibliocommonsSearch
 
   def fetch_page(page)
     url = @url_builder.call(page)
-    CachedFile.new(url:, crawl_delay: @crawl_delay).read do |content|
+    CachedFile.new(url:, crawl_delay: @crawl_delay, cacheable: method(:valid_response?)).read do |content|
       data = JSON.parse(content)
       bibs = data.dig("entities", "bibs") || {}
       ids = data.dig("catalogSearch", "results")
@@ -33,5 +33,11 @@ class BibliocommonsSearch
     end
   rescue StandardError
     []
+  end
+
+  def valid_response?(content)
+    !JSON.parse(content).key?("error")
+  rescue JSON::ParserError
+    false
   end
 end
