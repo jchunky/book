@@ -66,9 +66,7 @@ class Omdb
   end
 
   def parse_info(data)
-    if data["Error"]&.include?("limit")
-      raise RateLimitError, data["Error"]
-    end
+    raise(RateLimitError, data["Error"]) if data["Error"]&.include?("limit")
     return NO_INFO unless data["Response"] == "True"
 
     ratings = Array(data["Ratings"])
