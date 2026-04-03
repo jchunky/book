@@ -24,7 +24,7 @@ class CachedFile < Data.define(:url, :crawl_delay, :cacheable)
 
   def fetch_and_cache
     sleep crawl_delay
-    print "."
+    warn "Fetching #{url}"
     Net::HTTP.get(URI.parse(url)).tap { |c| File.write(file, c) if cacheable.call(c) }
   end
 
