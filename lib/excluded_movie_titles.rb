@@ -55,6 +55,7 @@ EXCLUDED_MOVIE_TITLES = [
   "Once Upon a Time in the West",
   "One Cut of the Dead",
   "Personal Problems",
+  "Portrait of Jason",
   "Relaxer",
   "Resolution",
   "Ride the High Country",
