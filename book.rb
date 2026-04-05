@@ -34,6 +34,12 @@ class Book
     %(<span class="rating-pill #{css_class}">#{rated}</span>)
   end
 
+  def availability_class(available, copies)
+    return "avail-none" if available.zero?
+    return "avail-low" if copies.positive? && available <= copies / 4
+    "avail-ok" if available.positive?
+  end
+
   def display_book?(_book)
     true
   end

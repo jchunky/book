@@ -19,6 +19,9 @@
   .rating-pg { background-color: #dcfce7; color: #166534; }
   .rating-pg13 { background-color: #fff7ed; color: #9a3412; }
   .rating-r { background-color: #fee2e2; color: #991b1b; }
+  .avail-none { color: #991b1b; background-color: #fee2e2; }
+  .avail-low { color: #9a3412; background-color: #fff7ed; }
+  .avail-ok { color: #166534; background-color: #dcfce7; }
   th { position: sticky; top: 20px; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
@@ -42,7 +45,7 @@
     <tr>
       <td class="number"><%= book.holds %></td>
       <td class="number"><%= book.copies %></td>
-      <td class="number"><%= book.available %></td>
+      <td class="number <%= availability_class(book.available, book.copies) %>"><%= book.available %></td>
       <td class="number"><%= book.on_order %></td>
       <td class="number"><%= book.rating %></td>
       <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
@@ -77,7 +80,7 @@
     <tr>
       <td class="number"><%= movie.holds %></td>
       <td class="number"><%= movie.copies %></td>
-      <td class="number"><%= movie.available %></td>
+      <td class="number <%= availability_class(movie.available, movie.copies) %>"><%= movie.available %></td>
       <td class="number"><%= movie.on_order %></td>
       <td class="number"><%= movie.rating %></td>
       <td<%= ' class="not-must-see"' unless movie.must_see? %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
