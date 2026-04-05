@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-EXCLUDED_MOVIE_TITLES = [
+MUST_SEE_EXCLUDED_MOVIE_TITLES = [
   "3 Women",
   "A Beautiful Day in the Neighborhood",
   "A Bread Factory, Part One",

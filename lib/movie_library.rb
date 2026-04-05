@@ -36,12 +36,12 @@ class MovieLibrary
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = search_url("site:rottentomatoes.com/m", display_title, display_year)
     def metacritic_url = search_url("site:metacritic.com/movie", display_title, display_year)
-    def excluded? = EXCLUDED_MOVIE_TITLES.include?(display_title)
+    def excluded? = MUST_SEE_EXCLUDED_MOVIE_TITLES.include?(display_title)
 
     def keep?
       return false if animation?
-      # return fale unless teen? && certified_fresh?
-      return false unless adult? && must_see?
+      return false unless teen? && certified_fresh?
+      # return false unless adult? && must_see?
 
       true
     end
