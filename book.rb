@@ -18,8 +18,22 @@ class Book
     "HORROR" => "#AA00FF",
   }.freeze
 
+  RATING_CSS_CLASSES = {
+    "G" => "rating-g",
+    "PG" => "rating-pg",
+    "PG-13" => "rating-pg13",
+    "R" => "rating-r",
+  }.freeze
+
   def genre_color(genre)
     GENRE_COLORS[genre] || "#444444"
+  end
+
+  def rated_pill(rated)
+    css_class = RATING_CSS_CLASSES[rated]
+    return "" unless css_class
+
+    %(<span class="rating-pill #{css_class}">#{rated}</span>)
   end
 
   def display_book?(_book)
