@@ -11,7 +11,10 @@
   .cover-lg { display: none; position: absolute; left: 50px; top: -20px; z-index: 10; }
   .cover:hover .cover-lg { display: block; }
   .cover:hover > img:first-child { opacity: 0; }
-  .genre-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
+  .genre-pill, .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
+  .score-pill a { color: white; text-decoration: none; }
+  .certified-fresh { background-color: #F93208; }
+  .must-see { background-color: #6C3AAB; }
   .grayed-out { color: #ccc; }
   th { position: sticky; top: 20px; }
   h2 { font-family: Arial; margin-top: 30px; }
@@ -82,8 +85,8 @@
       <td class="number"><%= movie.runtime %></td>
       <td><%= movie.genre %></td>
       <td class="number"><%= movie.box_office %></td>
-      <td class="number<%= ' grayed-out' unless movie.certified_fresh? %>"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
-      <td class="number<%= ' grayed-out' unless movie.must_see? %>"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></td>
+      <td class="number"><% if movie.certified_fresh? %><span class="score-pill certified-fresh"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></span><% else %><span class="grayed-out"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></span><% end %></td>
+      <td class="number"><% if movie.must_see? %><span class="score-pill must-see"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></span><% else %><span class="grayed-out"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></span><% end %></td>
       <td><%= movie.audiences %></td>
     </tr>
   <% end %>
