@@ -26,8 +26,8 @@ class MovieLibrary
              :metacritic,
              to: :omdb
 
-    def certified_fresh? = rotten_tomatoes.to_i >= 75
-    def must_see? = metacritic.to_i >= 80 && !excluded?
+    def certified_fresh? = rotten_tomatoes.to_i >= 75 && !certified_fresh_excluded?
+    def must_see? = metacritic.to_i >= 80 && !must_see_excluded?
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
@@ -36,7 +36,8 @@ class MovieLibrary
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = search_url("site:rottentomatoes.com/m", display_title, display_year)
     def metacritic_url = search_url("site:metacritic.com/movie", display_title, display_year)
-    def excluded? = MUST_SEE_EXCLUDED_MOVIE_TITLES.include?(display_title)
+    def must_see_excluded? = MUST_SEE_EXCLUDED_MOVIE_TITLES.include?(display_title)
+    def certified_fresh_excluded? = CERTIFIED_FRESH_EXCLUDED_MOVIE_TITLES.include?(display_title)
 
     def keep?
       return false if animation?
