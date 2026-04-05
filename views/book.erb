@@ -30,7 +30,6 @@
     <th>Author</th>
     <th>Year</th>
     <th>Genre</th>
-    <th>Availability Status</th>
     <th>Audiences</th>
     <th>Content Type</th>
   </tr>
@@ -46,7 +45,6 @@
       <td><%= book.author %></td>
       <td class="number"><%= book.year %></td>
       <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
-      <td><%= book.availability_status %></td>
       <td><%= book.audiences %></td>
       <td><%= book.content_type %></td>
     </tr>
@@ -69,9 +67,7 @@
     <th>Box Office ($M)</th>
     <th>RT (%)</th>
     <th>MC (/100)</th>
-    <th>Availability Status</th>
     <th>Audiences</th>
-    <th>Content Type</th>
   </tr>
   <% @movies.each do |movie| %>
     <tr>
@@ -88,9 +84,7 @@
       <td class="number"><%= movie.box_office %></td>
       <td class="number<%= ' grayed-out' unless movie.certified_fresh? %>"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
       <td class="number<%= ' grayed-out' unless movie.must_see? %>"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></td>
-      <td><%= movie.availability_status %></td>
       <td><%= movie.audiences %></td>
-      <td><%= movie.content_type %></td>
     </tr>
   <% end %>
 </table>
