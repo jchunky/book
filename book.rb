@@ -32,6 +32,7 @@ class Book
       .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
 
     @movies = MovieLibrary.new.movies
+    @all_must_see = @movies.all?(&:must_see?)
 
     puts "Books: #{@books.count}, Movies: #{@movies.count}"
 

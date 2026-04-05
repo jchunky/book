@@ -13,7 +13,6 @@
   .cover:hover > img:first-child { opacity: 0; }
   .genre-pill, .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
   .score-pill { margin-left: 4px; }
-  .certified-fresh { background-color: #F93208; }
   .must-see { background-color: #6C3AAB; }
   th { position: sticky; top: 20px; }
   h2 { font-family: Arial; margin-top: 30px; }
@@ -78,7 +77,7 @@
       <td class="number"><%= movie.available %></td>
       <td class="number"><%= movie.on_order %></td>
       <td class="number"><%= movie.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a><% if movie.certified_fresh? %> <span class="score-pill certified-fresh">F</span><% end %><% if movie.must_see? %> <span class="score-pill must-see">S</span><% end %></td>
+      <td><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a><% if movie.must_see? && !@all_must_see %> <span class="score-pill must-see">S</span><% end %></td>
       <td class="number"><%= movie.display_year %></td>
       <td><%= movie.rated %></td>
       <td class="number"><%= movie.runtime %></td>
