@@ -12,10 +12,8 @@
   .cover:hover .cover-lg { display: block; }
   .cover:hover > img:first-child { opacity: 0; }
   .genre-pill, .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
-  .score-pill a { color: white; text-decoration: none; }
   .certified-fresh { background-color: #F93208; }
   .must-see { background-color: #6C3AAB; }
-  .grayed-out { color: #ccc; }
   th { position: sticky; top: 20px; }
   h2 { font-family: Arial; margin-top: 30px; }
 </style>
@@ -79,14 +77,14 @@
       <td class="number"><%= movie.available %></td>
       <td class="number"><%= movie.on_order %></td>
       <td class="number"><%= movie.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
+      <td><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a><% if movie.certified_fresh? %> <span class="score-pill certified-fresh">CF</span><% end %><% if movie.must_see? %> <span class="score-pill must-see">MS</span><% end %></td>
       <td class="number"><%= movie.display_year %></td>
       <td><%= movie.rated %></td>
       <td class="number"><%= movie.runtime %></td>
       <td><%= movie.genre %></td>
       <td class="number"><%= movie.box_office %></td>
-      <td class="number"><% if movie.certified_fresh? %><span class="score-pill certified-fresh"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></span><% else %><span class="grayed-out"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></span><% end %></td>
-      <td class="number"><% if movie.must_see? %><span class="score-pill must-see"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></span><% else %><span class="grayed-out"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></span><% end %></td>
+      <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
+      <td class="number"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></td>
       <td><%= movie.audiences %></td>
     </tr>
   <% end %>
