@@ -89,7 +89,7 @@
       <td><%= movie.genre %></td>
       <td class="number"><%= movie.box_office %></td>
       <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
-      <td class="number"><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a></td>
+      <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
       <td><%= movie.audiences %></td>
     </tr>
   <% end %>
