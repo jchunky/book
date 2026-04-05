@@ -4,9 +4,7 @@ require "active_support/all"
 require "erb"
 require "json"
 require "net/http"
-require "pstore"
 require "uri"
-require "yaml/store"
 Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Book
