@@ -83,6 +83,7 @@ MUST_SEE_EXCLUDED_MOVIE_TITLES = [
   "Turn Every Page: The Adventures of Robert Caro and Robert Gottlieb",
   "Wattstax",
   "We the Animals",
+  "Wild Rose",
   "Wobble Palace",
   "You Hurt My Feelings",
   "Young Mr. Lincoln",
