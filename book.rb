@@ -43,7 +43,7 @@ class Book
   def run
     @books = BookLibrary.new.books
       .select(&method(:display_book?))
-      .sort_by { |b| [b.book_type, -b.rating, -b.year, b.title] }
+      .sort_by { |b| [-b.rating, -b.year, b.title] }
 
     @movies = MovieLibrary.new.movies
 

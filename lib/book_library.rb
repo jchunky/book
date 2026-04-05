@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
 class BookLibrary
-  BookType = Struct.new(:name, :query_fragment)
   Book = Struct.new(
     :title,
     :holds,
     :copies,
-    :book_type,
     :href,
     :author,
     :year,
@@ -31,29 +29,22 @@ class BookLibrary
     end
   end
 
-  BOOK_TYPES = [
-    BookType.new("ALL", ""),
-  ].freeze
-
   def books
-    BOOK_TYPES.flat_map do |book_type|
-      search = BibliocommonsSearch.new do |page|
-        url_for_page(book_type, page)
-      end
-      search.fetch_all { |bib| bib_to_book(book_type, bib) }
-        .select(&:keep?)
-        .sort_by { |b| -b.rating }
-        .first(30)
+    search = BibliocommonsSearch.new do |page|
+      url_for_page(page)
     end
+    search.fetch_all { |bib| bib_to_book(bib) }
+      .select(&:keep?)
+      .sort_by { |b| -b.rating }
+      .first(30)
   end
 
   private
 
-  def url_for_page(book_type, page)
+  def url_for_page(page)
     params = "?query=avlocation%3A%22Parkdale%22"
     params += "&searchType=bl&suppress=true"
     params += "&f_FORMAT=BK&f_CIRC=CIRC&f_PRIMARY_LANGUAGE=eng"
-    params += book_type.query_fragment
     params += "&page=#{page}" if page > 1
     "#{BibliocommonsSearch::BASE_URL}#{params}"
   end
@@ -66,7 +57,7 @@ class BookLibrary
     end
   end
 
-  def bib_to_book(book_type, bib)
+  def bib_to_book(bib)
     return unless bib
 
     info = bib["briefInfo"] || {}
@@ -91,7 +82,6 @@ class BookLibrary
       author:,
       year:,
       rating:,
-      book_type: book_type.name,
       availability_status: avail["localisedStatus"].to_s,
       audiences: Array(info["audiences"]).join(", "),
       content_type: info["contentType"].to_s,
