@@ -13,7 +13,7 @@
   .cover:hover > img:first-child { opacity: 0; }
   .genre-pill, .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
   .score-pill { margin-left: 4px; }
-  .must-see { background-color: #6C3AAB; }
+  .not-must-see a { color: #aaa; }
   .rating-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 7pt; font-weight: bold; }
   .rating-g { background-color: #dcfce7; color: #166534; }
   .rating-pg { background-color: #dcfce7; color: #166534; }
@@ -82,7 +82,7 @@
       <td class="number"><%= movie.available %></td>
       <td class="number"><%= movie.on_order %></td>
       <td class="number"><%= movie.rating %></td>
-      <td><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a><% if movie.must_see? && !@all_must_see %> <span class="score-pill must-see">S</span><% end %></td>
+      <td<%= ' class="not-must-see"' unless movie.must_see? || @all_must_see %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
       <td class="number"><%= movie.display_year %></td>
       <td><%= rated_pill(movie.rated) %></td>
       <td class="number"><%= movie.runtime %></td>
