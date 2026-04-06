@@ -49,7 +49,6 @@ class Book
   def audience_pill(item)
     label = if item.juvenile? then "JUVENILE"
             elsif item.teen? then "TEEN"
-            elsif item.adult? then "ADULT"
             end
     return "" unless label
 
