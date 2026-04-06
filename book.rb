@@ -23,6 +23,12 @@ class Book
     "R" => "rating-r",
   }.freeze
 
+  AUDIENCE_CSS_CLASSES = {
+    "JUVENILE" => "audience-juvenile",
+    "TEEN" => "audience-teen",
+    "ADULT" => "audience-adult",
+  }.freeze
+
   def genre_color(genre)
     GENRE_COLORS[genre] || "#444444"
   end
@@ -38,6 +44,17 @@ class Book
     return "avail-none" if available.zero?
     return "avail-low" if copies.positive? && available <= copies / 4
     "avail-ok" if available.positive?
+  end
+
+  def audience_pill(item)
+    label = if item.juvenile? then "JUVENILE"
+            elsif item.teen? then "TEEN"
+            elsif item.adult? then "ADULT"
+            end
+    return "" unless label
+
+    css_class = AUDIENCE_CSS_CLASSES[label]
+    %(<span class="audience-pill #{css_class}">#{label.capitalize}</span>)
   end
 
   def display_book?(_book)

@@ -26,6 +26,10 @@
     .avail-none { color: #991b1b; background-color: #fee2e2; }
     .avail-low { color: #9a3412; background-color: #fff7ed; }
     .avail-ok { color: #166534; background-color: #dcfce7; }
+    .audience-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 7pt; font-weight: bold; }
+    .audience-juvenile { background-color: #dcfce7; color: #166534; }
+    .audience-teen { background-color: #fff7ed; color: #9a3412; }
+    .audience-adult { background-color: #fee2e2; color: #991b1b; }
     h2 { font-family: Arial; margin: 0; }
     #books thead th, #movies thead th {
       position: sticky;
@@ -89,7 +93,7 @@
           <td><%= book.author %></td>
           <td class="number"><%= book.year %></td>
           <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
-          <td><%= book.audiences %></td>
+          <td><%= audience_pill(book) %></td>
           <td><%= book.content_type %></td>
         </tr>
       <% end %>
@@ -131,7 +135,7 @@
           <td class="number"><%= movie.box_office %></td>
           <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
           <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
-          <td><%= movie.audiences %></td>
+          <td><%= audience_pill(movie) %></td>
         </tr>
       <% end %>
     </tbody>
