@@ -21,6 +21,7 @@ CERTIFIED_FRESH_EXCLUDED_MOVIE_TITLES = [
   "Odd Man Out",
   "Of Men and War",
   "Omette: Made in America",
+  "Ornette: Made in America",
   "Planet Terror",
   "Pretending I'm a Superman: The Tony Hawk Video Game Story",
   "Red River",
