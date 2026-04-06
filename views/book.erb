@@ -130,7 +130,7 @@
           <td><%= rated_pill(movie.rated) %></td>
           <td class="number"><%= movie.runtime %></td>
           <td><%= movie.genre %></td>
-          <td class="number"><%= movie.box_office unless movie.box_office.empty? %></td>
+          <td class="number"><%= movie.box_office if movie.box_office.to_i > 0 %></td>
           <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
           <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
           <td><%= audience_pill(movie) %></td>
