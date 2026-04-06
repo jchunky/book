@@ -15,7 +15,7 @@
     .cover-lg { display: none; position: absolute; left: 50px; top: -20px; z-index: 10; }
     .cover:hover .cover-lg { display: block; }
     .cover:hover > img:first-child { opacity: 0; }
-    .genre-pill, .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
+    .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
     .score-pill { margin-left: 4px; }
     .not-must-see a { color: #aaa; }
     .rating-g { color: #16a34a; font-weight: bold; }
@@ -90,7 +90,7 @@
           <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
           <td><%= book.author %></td>
           <td class="number"><%= book.year %></td>
-          <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
+          <td><% unless book.genre.empty? %><span style="color: <%= genre_color(book.genre) %>; font-weight: bold;"><%= book.genre %></span><% end %></td>
           <td><%= audience_pill(book) %></td>
           <td><%= "F" unless book.content_type == "NONFICTION" %></td>
         </tr>

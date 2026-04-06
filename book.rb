@@ -9,11 +9,11 @@ Dir["lib/*.rb"].each { |f| require_relative f }
 
 class Book
   GENRE_COLORS = {
-    "FICTION" => "#888888",
-    "MYSTERY" => "#2979FF",
-    "ROMANCE" => "#E91E63",
-    "SCIENCE FICTION" => "#00BFA5",
-    "HORROR" => "#AA00FF",
+    "FICTION" => "#6b7280",
+    "MYSTERY" => "#2563eb",
+    "ROMANCE" => "#e11d48",
+    "SCIENCE FICTION" => "#0d9488",
+    "HORROR" => "#9333ea",
   }.freeze
 
   RATING_CSS_CLASSES = {
