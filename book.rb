@@ -54,7 +54,7 @@ class Book
     return "" unless label
 
     css_class = AUDIENCE_CSS_CLASSES[label]
-    %(<span class="#{css_class}">#{label.capitalize}</span>)
+    %(<span class="#{css_class}">#{label[0]}</span>)
   end
 
   def display_book?(_book)
