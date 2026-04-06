@@ -30,8 +30,9 @@
     .audience-juvenile { color: #16a34a; font-weight: bold; }
     .audience-teen { color: #dc2626; font-weight: bold; }
     .audience-adult { color: #64748b; font-weight: bold; }
-    h2 { font-family: Arial; margin: 0; }
-    input.search { font-size: 9pt; padding: 4px 8px; margin-top: 16px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
+    h2 { font-family: Arial; margin: 0; display: inline; }
+    .table-header { margin-top: 16px; display: flex; align-items: baseline; gap: 12px; }
+    input.search { font-size: 9pt; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
     #books thead th, #movies thead th {
       position: sticky;
       top: 0;
@@ -41,8 +42,10 @@
 </head>
 <body>
   <div id="books-list">
-    <input class="search" placeholder="Search books...">
-    <h2>Books (<%= @books.count %>)</h2>
+    <div class="table-header">
+      <h2>Books (<%= @books.count %>)</h2>
+      <input class="search" placeholder="Search...">
+    </div>
     <table id="books">
       <thead>
         <tr>
@@ -80,8 +83,10 @@
   </div>
 
   <div id="movies-list">
-    <input class="search" placeholder="Search movies...">
-    <h2>Movies (<%= @movies.count %>)</h2>
+    <div class="table-header">
+      <h2>Movies (<%= @movies.count %>)</h2>
+      <input class="search" placeholder="Search...">
+    </div>
     <table id="movies">
       <thead>
         <tr>
