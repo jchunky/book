@@ -67,7 +67,7 @@
             <td class="number <%= availability_class(book.available, book.copies) %> available"><%= book.available %></td>
             <td class="number on-order"><%= book.on_order unless book.on_order.zero? %></td>
             <td class="number<%= ' low-rating' if book.rating < 100 %> rating"><%= book.rating %></td>
-            <td class="book-title"><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
+            <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><span class="book-title"><%= book.title %></span></a></td>
             <td class="author"><%= book.author %></td>
             <td class="number year"><%= book.year %></td>
             <td class="genre"><% unless book.genre.empty? %><span style="color: <%= genre_color(book.genre) %>; font-weight: bold;"><%= book.genre %></span><% end %></td>
@@ -109,14 +109,14 @@
             <td class="number <%= availability_class(movie.available, movie.copies) %> available"><%= movie.available %></td>
             <td class="number on-order"><%= movie.on_order unless movie.on_order.zero? %></td>
             <td class="number<%= ' low-rating' if movie.rating < 100 %> rating"><%= movie.rating %></td>
-            <td class="title<%= ' not-must-see' unless movie.must_see? %>"><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
+            <td<%= ' class="not-must-see"' unless movie.must_see? %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><span class="title"><%= movie.display_title %></span></a></td>
             <td class="number year"><%= movie.display_year %></td>
             <td class="rated"><%= rated_pill(movie.rated) %></td>
             <td class="number runtime"><%= movie.runtime %></td>
             <td class="genre"><%= movie.genre %></td>
             <td class="number box-office"><%= movie.box_office if movie.box_office.to_i > 0 %></td>
-            <td class="number rt"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
-            <td class="number mc"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
+            <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><span class="rt"><%= movie.rotten_tomatoes %></span></a></td>
+            <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><span class="mc"><%= movie.metacritic %></span></a><% end %></td>
             <td class="audiences"><%= audience_pill(movie) %></td>
           </tr>
         <% end %>
