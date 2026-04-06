@@ -92,7 +92,7 @@
           <td class="number"><%= book.year %></td>
           <td><% unless book.genre.empty? %><span class="genre-pill" style="background-color: <%= genre_color(book.genre) %>"><%= book.genre %></span><% end %></td>
           <td><%= audience_pill(book) %></td>
-          <td><%= book.content_type %></td>
+          <td><%= "F" unless book.content_type == "NONFICTION" %></td>
         </tr>
       <% end %>
     </tbody>
