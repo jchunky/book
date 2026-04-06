@@ -18,6 +18,7 @@
     .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
     .score-pill { margin-left: 4px; }
     .not-must-see a { color: #aaa; }
+    .low-rating { color: #aaa; }
     .rating-g { color: #16a34a; font-weight: bold; }
     .rating-pg { color: #16a34a; font-weight: bold; }
     .rating-pg13 { color: #ca8a04; font-weight: bold; }
@@ -86,7 +87,7 @@
           <td class="number"><%= book.copies %></td>
           <td class="number <%= availability_class(book.available, book.copies) %>"><%= book.available %></td>
           <td class="number"><%= book.on_order unless book.on_order.zero? %></td>
-          <td class="number"><%= book.rating %></td>
+          <td class="number<%= ' low-rating' if book.rating < 100 %>"><%= book.rating %></td>
           <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
           <td><%= book.author %></td>
           <td class="number"><%= book.year %></td>
@@ -124,7 +125,7 @@
           <td class="number"><%= movie.copies %></td>
           <td class="number <%= availability_class(movie.available, movie.copies) %>"><%= movie.available %></td>
           <td class="number"><%= movie.on_order unless movie.on_order.zero? %></td>
-          <td class="number"><%= movie.rating %></td>
+          <td class="number<%= ' low-rating' if movie.rating < 100 %>"><%= movie.rating %></td>
           <td<%= ' class="not-must-see"' unless movie.must_see? %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
           <td class="number"><%= movie.display_year %></td>
           <td><%= rated_pill(movie.rated) %></td>
