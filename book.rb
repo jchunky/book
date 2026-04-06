@@ -37,7 +37,7 @@ class Book
     css_class = RATING_CSS_CLASSES[rated]
     return "" unless css_class
 
-    %(<span class="rating-pill #{css_class}">#{rated}</span>)
+    %(<span class="#{css_class}">#{rated}</span>)
   end
 
   def availability_class(available, copies)
