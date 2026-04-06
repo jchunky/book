@@ -1,15 +1,16 @@
 <head>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <link href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css" rel="stylesheet">
-  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
   <style>
     body { max-width: 95%; margin: 0; padding-left: 20px; }
-    .dt-container { width: fit-content; }
-    .dataTable { font-family: Arial; border-collapse: collapse; font-size: 8pt; margin-top: 20px; width: auto !important; }
-    .dataTable tr:nth-child(even) { background-color: #f2f2f2; }
-    .dataTable tbody tr:hover * { background-color: rgb(194, 149, 141) !important; }
-    .dataTable th { background-color: #4CAF50; color: white; }
-    .dataTable td { white-space: nowrap; }
+    table { font-family: Arial; border-collapse: collapse; font-size: 8pt; margin-top: 10px; width: auto; }
+    table tr:nth-child(even) { background-color: #f2f2f2; }
+    table tbody tr:hover * { background-color: rgb(194, 149, 141) !important; }
+    table th { background-color: #4CAF50; color: white; }
+    table td { white-space: nowrap; }
+    th.sort { cursor: pointer; user-select: none; }
+    th.sort::after { content: ' ⇕'; font-size: 7pt; opacity: 0.5; }
+    th.sort.asc::after { content: ' ↑'; opacity: 1; }
+    th.sort.desc::after { content: ' ↓'; opacity: 1; }
     .number { text-align: right; }
     .cover { position: relative; }
     .cover-lg { display: none; position: absolute; left: 50px; top: -20px; z-index: 10; }
@@ -30,113 +31,108 @@
     .audience-teen { color: #dc2626; font-weight: bold; }
     .audience-adult { color: #64748b; font-weight: bold; }
     h2 { font-family: Arial; margin: 0; }
+    input.search { font-size: 9pt; padding: 4px 8px; margin-top: 16px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
     #books thead th, #movies thead th {
       position: sticky;
       top: 0;
       z-index: 2;
     }
   </style>
-  <script>
-    $(function() {
-      $('#books').DataTable({
-        order: [[4, 'desc']],
-        paging: false,
-        layout: {
-          topStart: function() {
-            var h2 = document.createElement('h2');
-            h2.textContent = 'Books (<%= @books.count %>)';
-            return h2;
-          }
-        }
-      });
-      $('#movies').DataTable({
-        order: [[4, 'desc']],
-        paging: false,
-        layout: {
-          topStart: function() {
-            var h2 = document.createElement('h2');
-            h2.textContent = 'Movies (<%= @movies.count %>)';
-            return h2;
-          }
-        }
-      });
-    });
-  </script>
 </head>
 <body>
-  <table id="books">
-    <thead>
-      <tr>
-        <th>Holds</th>
-        <th>Copies</th>
-        <th>Available</th>
-        <th>On Order</th>
-        <th>Rating</th>
-        <th>Book</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>Genre</th>
-        <th>Audiences</th>
-        <th>Content Type</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @books.each do |book| %>
+  <div id="books-list">
+    <input class="search" placeholder="Search books...">
+    <h2>Books (<%= @books.count %>)</h2>
+    <table id="books">
+      <thead>
         <tr>
-          <td class="number"><%= book.holds %></td>
-          <td class="number"><%= book.copies %></td>
-          <td class="number <%= availability_class(book.available, book.copies) %>"><%= book.available %></td>
-          <td class="number"><%= book.on_order unless book.on_order.zero? %></td>
-          <td class="number<%= ' low-rating' if book.rating < 100 %>"><%= book.rating %></td>
-          <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
-          <td><%= book.author %></td>
-          <td class="number"><%= book.year %></td>
-          <td><% unless book.genre.empty? %><span style="color: <%= genre_color(book.genre) %>; font-weight: bold;"><%= book.genre %></span><% end %></td>
-          <td><%= audience_pill(book) %></td>
-          <td><%= "F" unless book.content_type == "NONFICTION" %></td>
+          <th class="sort" data-sort="holds">Holds</th>
+          <th class="sort" data-sort="copies">Copies</th>
+          <th class="sort" data-sort="available">Available</th>
+          <th class="sort" data-sort="on-order">On Order</th>
+          <th class="sort" data-sort="rating">Rating</th>
+          <th class="sort" data-sort="book-title">Book</th>
+          <th class="sort" data-sort="author">Author</th>
+          <th class="sort" data-sort="year">Year</th>
+          <th class="sort" data-sort="genre">Genre</th>
+          <th class="sort" data-sort="audiences">Audiences</th>
+          <th class="sort" data-sort="content-type">Content Type</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody class="list">
+        <% @books.each do |book| %>
+          <tr>
+            <td class="number holds"><%= book.holds %></td>
+            <td class="number copies"><%= book.copies %></td>
+            <td class="number <%= availability_class(book.available, book.copies) %> available"><%= book.available %></td>
+            <td class="number on-order"><%= book.on_order unless book.on_order.zero? %></td>
+            <td class="number<%= ' low-rating' if book.rating < 100 %> rating"><%= book.rating %></td>
+            <td class="book-title"><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
+            <td class="author"><%= book.author %></td>
+            <td class="number year"><%= book.year %></td>
+            <td class="genre"><% unless book.genre.empty? %><span style="color: <%= genre_color(book.genre) %>; font-weight: bold;"><%= book.genre %></span><% end %></td>
+            <td class="audiences"><%= audience_pill(book) %></td>
+            <td class="content-type"><%= "F" unless book.content_type == "NONFICTION" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-  <table id="movies">
-    <thead>
-      <tr>
-        <th>Holds</th>
-        <th>Copies</th>
-        <th>Available</th>
-        <th>On Order</th>
-        <th>Rating</th>
-        <th>Title</th>
-        <th>Year</th>
-        <th>Rated</th>
-        <th>Runtime (min)</th>
-        <th>Genre</th>
-        <th>Box Office ($M)</th>
-        <th>RT (%)</th>
-        <th>MC (/100)</th>
-        <th>Audiences</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @movies.each do |movie| %>
+  <div id="movies-list">
+    <input class="search" placeholder="Search movies...">
+    <h2>Movies (<%= @movies.count %>)</h2>
+    <table id="movies">
+      <thead>
         <tr>
-          <td class="number"><%= movie.holds %></td>
-          <td class="number"><%= movie.copies %></td>
-          <td class="number <%= availability_class(movie.available, movie.copies) %>"><%= movie.available %></td>
-          <td class="number"><%= movie.on_order unless movie.on_order.zero? %></td>
-          <td class="number<%= ' low-rating' if movie.rating < 100 %>"><%= movie.rating %></td>
-          <td<%= ' class="not-must-see"' unless movie.must_see? %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
-          <td class="number"><%= movie.display_year %></td>
-          <td><%= rated_pill(movie.rated) %></td>
-          <td class="number"><%= movie.runtime %></td>
-          <td><%= movie.genre %></td>
-          <td class="number"><%= movie.box_office if movie.box_office.to_i > 0 %></td>
-          <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
-          <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
-          <td><%= audience_pill(movie) %></td>
+          <th class="sort" data-sort="holds">Holds</th>
+          <th class="sort" data-sort="copies">Copies</th>
+          <th class="sort" data-sort="available">Available</th>
+          <th class="sort" data-sort="on-order">On Order</th>
+          <th class="sort" data-sort="rating">Rating</th>
+          <th class="sort" data-sort="title">Title</th>
+          <th class="sort" data-sort="year">Year</th>
+          <th class="sort" data-sort="rated">Rated</th>
+          <th class="sort" data-sort="runtime">Runtime (min)</th>
+          <th class="sort" data-sort="genre">Genre</th>
+          <th class="sort" data-sort="box-office">Box Office ($M)</th>
+          <th class="sort" data-sort="rt">RT (%)</th>
+          <th class="sort" data-sort="mc">MC (/100)</th>
+          <th class="sort" data-sort="audiences">Audiences</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody class="list">
+        <% @movies.each do |movie| %>
+          <tr>
+            <td class="number holds"><%= movie.holds %></td>
+            <td class="number copies"><%= movie.copies %></td>
+            <td class="number <%= availability_class(movie.available, movie.copies) %> available"><%= movie.available %></td>
+            <td class="number on-order"><%= movie.on_order unless movie.on_order.zero? %></td>
+            <td class="number<%= ' low-rating' if movie.rating < 100 %> rating"><%= movie.rating %></td>
+            <td class="title<%= ' not-must-see' unless movie.must_see? %>"><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
+            <td class="number year"><%= movie.display_year %></td>
+            <td class="rated"><%= rated_pill(movie.rated) %></td>
+            <td class="number runtime"><%= movie.runtime %></td>
+            <td class="genre"><%= movie.genre %></td>
+            <td class="number box-office"><%= movie.box_office if movie.box_office.to_i > 0 %></td>
+            <td class="number rt"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
+            <td class="number mc"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
+            <td class="audiences"><%= audience_pill(movie) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    var booksList = new List('books-list', {
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'rating', 'book-title', 'author', 'year', 'genre', 'audiences', 'content-type']
+    });
+    booksList.sort('rating', { order: 'desc' });
+
+    var moviesList = new List('movies-list', {
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'rating', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences']
+    });
+    moviesList.sort('rating', { order: 'desc' });
+  </script>
 </body>
