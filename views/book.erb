@@ -82,11 +82,11 @@
     <tbody>
       <% @books.each do |book| %>
         <tr>
-          <td class="number"><%= book.holds %></td>
+          <td class="number"><%= book.holds unless book.holds.zero? %></td>
           <td class="number"><%= book.copies %></td>
           <td class="number <%= availability_class(book.available, book.copies) %>"><%= book.available %></td>
           <td class="number"><%= book.on_order unless book.on_order.zero? %></td>
-          <td class="number"><%= book.rating %></td>
+          <td class="number"><%= book.rating unless book.rating.zero? %></td>
           <td><a href="https://tpl.bibliocommons.com<%= book.href %>"><%= book.title %></a></td>
           <td><%= book.author %></td>
           <td class="number"><%= book.year %></td>
@@ -120,17 +120,17 @@
     <tbody>
       <% @movies.each do |movie| %>
         <tr>
-          <td class="number"><%= movie.holds %></td>
+          <td class="number"><%= movie.holds unless movie.holds.zero? %></td>
           <td class="number"><%= movie.copies %></td>
           <td class="number <%= availability_class(movie.available, movie.copies) %>"><%= movie.available %></td>
           <td class="number"><%= movie.on_order unless movie.on_order.zero? %></td>
-          <td class="number"><%= movie.rating %></td>
+          <td class="number"><%= movie.rating unless movie.rating.zero? %></td>
           <td<%= ' class="not-must-see"' unless movie.must_see? %>><a href="https://tpl.bibliocommons.com<%= movie.href %>"><%= movie.display_title %></a></td>
           <td class="number"><%= movie.display_year %></td>
           <td><%= rated_pill(movie.rated) %></td>
           <td class="number"><%= movie.runtime %></td>
           <td><%= movie.genre %></td>
-          <td class="number"><%= movie.box_office %></td>
+          <td class="number"><%= movie.box_office unless movie.box_office.empty? %></td>
           <td class="number"><a href="<%= movie.rotten_tomatoes_url %>"><%= movie.rotten_tomatoes %></a></td>
           <td class="number"><% unless movie.metacritic.empty? %><a href="<%= movie.metacritic_url %>"><%= movie.metacritic %></a><% end %></td>
           <td><%= audience_pill(movie) %></td>
