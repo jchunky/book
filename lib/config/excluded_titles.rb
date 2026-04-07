@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require "yaml"
-
 module Config
   module ExcludedTitles
-    CERTIFIED_FRESH = YAML.load_file("data/excluded_certified_fresh.yml").to_set.freeze
-    MUST_SEE = YAML.load_file("data/excluded_must_see.yml").to_set.freeze
+    def self.read(filename) = File.read("data/#{filename}").split("\n").reject(&:blank?).to_set.freeze
+
+    CERTIFIED_FRESH = read("excluded_certified_fresh.txt")
+    MUST_SEE = read("excluded_must_see.txt")
   end
 end
