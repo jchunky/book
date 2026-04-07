@@ -7,7 +7,7 @@ module Models
     :copies,
     :href,
     :year,
-    :rating,
+    :popularity,
     :availability_status,
     :audiences,
     :content_type,

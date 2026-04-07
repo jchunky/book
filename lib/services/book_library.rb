@@ -12,7 +12,7 @@ module Services
       end
       search.fetch_all { |bib| bib_to_book(bib) }
         .select(&@filter)
-        .sort_by { |b| -b.rating }
+        .sort_by { |b| -b.popularity.score }
         .first(30)
     end
 
@@ -41,7 +41,7 @@ module Services
       holds = avail["heldCopies"].to_i
       copies = avail["totalCopies"].to_i
       href = "/v2/record/#{bib["id"]}"
-      rating = holds * copies # * (Date.today.year + 1 - year)
+      popularity = Models::PopularityScore.new(holds:, copies:)
 
       Models::Book.new(
         title:,
@@ -50,7 +50,7 @@ module Services
         href:,
         author:,
         year:,
-        rating:,
+        popularity:,
         availability_status: avail["localisedStatus"].to_s,
         audiences: Array(info["audiences"]).join(", "),
         content_type: info["contentType"].to_s,

@@ -8,7 +8,7 @@ module Models
     :href,
     :author,
     :year,
-    :rating,
+    :popularity,
     :availability_status,
     :audiences,
     :content_type,

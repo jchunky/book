@@ -23,12 +23,10 @@ module Presenters
       @movie.on_order unless @movie.on_order.zero?
     end
 
-    def rating = @movie.rating
-
-    def low_rating? = @movie.rating < 100
+    def rating = @movie.popularity.score
 
     def rating_class
-      "number#{" low-rating" if low_rating?} rating"
+      "number#{" low-rating" if @movie.popularity.low?} rating"
     end
 
     def availability_style

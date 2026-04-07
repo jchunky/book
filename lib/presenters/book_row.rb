@@ -24,12 +24,10 @@ module Presenters
       @book.on_order unless @book.on_order.zero?
     end
 
-    def rating = @book.rating
-
-    def low_rating? = @book.rating < 100
+    def rating = @book.popularity.score
 
     def rating_class
-      "number#{" low-rating" if low_rating?} rating"
+      "number#{" low-rating" if @book.popularity.low?} rating"
     end
 
     def availability_style

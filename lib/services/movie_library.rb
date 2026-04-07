@@ -11,7 +11,7 @@ module Services
         url_for_page(page)
       end
       sorted = search.fetch_all { |bib| bib_to_movie(bib) }
-        .sort_by { |m| -m.rating }
+        .sort_by { |m| -m.popularity.score }
 
       enrich_with_omdb(sorted)
         .select(&@filter)
@@ -51,7 +51,7 @@ module Services
       holds = avail["heldCopies"].to_i
       copies = avail["totalCopies"].to_i
       href = "/v2/record/#{bib["id"]}"
-      rating = holds * copies
+      popularity = Models::PopularityScore.new(holds:, copies:)
 
       Models::Movie.new(
         title:,
@@ -59,7 +59,7 @@ module Services
         copies:,
         href:,
         year:,
-        rating:,
+        popularity:,
         availability_status: avail["localisedStatus"].to_s,
         audiences: Array(info["audiences"]).join(", "),
         content_type: info["contentType"].to_s,
