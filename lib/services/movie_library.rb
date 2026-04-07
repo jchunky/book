@@ -50,21 +50,20 @@ module Services
       year = info["publicationDate"].to_i
       holds = avail["heldCopies"].to_i
       copies = avail["totalCopies"].to_i
+      available = avail["availableCopies"].to_i
+      on_order = avail["onOrderCopies"].to_i
       href = "/v2/record/#{bib["id"]}"
+      copies_info = Models::CopiesInfo.new(copies:, available:, holds:, on_order:)
       popularity = Models::PopularityScore.new(holds:, copies:)
 
       Models::Movie.new(
         title:,
-        holds:,
-        copies:,
+        copies_info:,
         href:,
         year:,
         popularity:,
-        availability_status: avail["localisedStatus"].to_s,
         audiences: Array(info["audiences"]).join(", "),
         content_type: info["contentType"].to_s,
-        available: avail["availableCopies"].to_i,
-        on_order: avail["onOrderCopies"].to_i,
         jacket_url: info.dig("jacket", "small").to_s,
         jacket_url_medium: info.dig("jacket", "medium").to_s,
         description: info["description"].to_s,

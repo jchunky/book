@@ -3,17 +3,13 @@
 module Models
   Book = Struct.new(
     :title,
-    :holds,
-    :copies,
+    :copies_info,
     :href,
     :author,
     :year,
     :popularity,
-    :availability_status,
     :audiences,
     :content_type,
-    :available,
-    :on_order,
     :genre,
     :jacket_url,
     :jacket_url_medium,

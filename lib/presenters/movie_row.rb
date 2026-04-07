@@ -2,25 +2,21 @@
 
 module Presenters
   class MovieRow
-    delegate :holds,
-             :copies,
-             :available,
-             :display_title,
-             :display_year,
-             :href,
-             :runtime,
-             :genre,
-             :rotten_tomatoes,
-             :rotten_tomatoes_url,
-             :metacritic_url,
+    delegate :display_title, :display_year, :href,
+             :runtime, :genre,
+             :rotten_tomatoes, :rotten_tomatoes_url, :metacritic_url,
              to: :@movie
+    delegate :holds, :copies, :available, :on_order,
+             to: :copies_info
 
     def initialize(movie)
       @movie = movie
     end
 
+    def copies_info = @movie.copies_info
+
     def on_order
-      @movie.on_order unless @movie.on_order.zero?
+      copies_info.on_order unless copies_info.on_order.zero?
     end
 
     def rating = @movie.popularity.score
@@ -30,7 +26,7 @@ module Presenters
     end
 
     def availability_style
-      Models::Availability.style(available:, copies:)
+      copies_info.availability_style
     end
 
     def title_class

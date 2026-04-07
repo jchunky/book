@@ -3,16 +3,12 @@
 module Models
   Movie = Struct.new(
     :title,
-    :holds,
-    :copies,
+    :copies_info,
     :href,
     :year,
     :popularity,
-    :availability_status,
     :audiences,
     :content_type,
-    :available,
-    :on_order,
     :jacket_url,
     :jacket_url_medium,
     :description,

@@ -2,15 +2,10 @@
 
 module Presenters
   class BookRow
-    delegate :holds,
-             :copies,
-             :available,
-             :title,
-             :href,
-             :author,
-             :year,
-             :genre,
+    delegate :title, :href, :author, :year, :genre,
              to: :@book
+    delegate :holds, :copies, :available, :on_order,
+             to: :copies_info
 
     CONTENT_TYPE_FLAGS = {
       "FICTION" => "F",
@@ -20,8 +15,10 @@ module Presenters
       @book = book
     end
 
+    def copies_info = @book.copies_info
+
     def on_order
-      @book.on_order unless @book.on_order.zero?
+      copies_info.on_order unless copies_info.on_order.zero?
     end
 
     def rating = @book.popularity.score
@@ -31,7 +28,7 @@ module Presenters
     end
 
     def availability_style
-      Models::Availability.style(available:, copies:)
+      copies_info.availability_style
     end
 
     def genre_html
