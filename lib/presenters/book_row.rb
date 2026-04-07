@@ -58,8 +58,13 @@ module Presenters
       %(<span class="#{css_class}">#{label[0]}</span>)
     end
 
+    CONTENT_TYPE_FLAGS = {
+      "FICTION" => "F",
+      "NONFICTION" => "",
+    }.freeze
+
     def fiction_flag
-      "F" unless @book.content_type == "NONFICTION"
+      CONTENT_TYPE_FLAGS.fetch(@book.content_type)
     end
   end
 end
