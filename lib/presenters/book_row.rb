@@ -2,14 +2,6 @@
 
 module Presenters
   class BookRow
-    GENRE_COLORS = {
-      "FICTION" => "#6b7280",
-      "MYSTERY" => "#2563eb",
-      "ROMANCE" => "#e11d48",
-      "SCIENCE FICTION" => "#0d9488",
-      "HORROR" => "#9333ea",
-    }.freeze
-
     delegate :holds, :copies, :available, :title, :href,
              :author, :year, :genre, to: :@book
 
@@ -38,8 +30,8 @@ module Presenters
     def genre_html
       return "" if genre.empty?
 
-      color = GENRE_COLORS[genre] || "#444444"
-      %(<span style="color: #{color}; font-weight: bold;">#{genre}</span>)
+      g = Genre.for(genre)
+      %(<span style="color: #{g.color}; font-weight: bold;">#{g.name}</span>)
     end
 
     def audience_pill
