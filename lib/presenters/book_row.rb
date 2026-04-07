@@ -2,33 +2,18 @@
 
 module Presenters
   class BookRow
+    include CatalogRow
+
     delegate :title, :href, :author, :year, :genre,
-             to: :@book
-    delegate :holds, :copies, :available, :on_order,
-             to: :copies_info
+             to: :catalog_item
 
     CONTENT_TYPE_FLAGS = {
       "FICTION" => "F",
       "NONFICTION" => "",
     }.freeze
+
     def initialize(book)
       @book = book
-    end
-
-    def copies_info = @book.copies_info
-
-    def on_order
-      copies_info.on_order unless copies_info.on_order.zero?
-    end
-
-    def popularity = @book.popularity.score
-
-    def popularity_class
-      "number#{" low-popularity" if @book.popularity.low?} popularity"
-    end
-
-    def availability_style
-      copies_info.availability_style
     end
 
     def genre_html
@@ -37,12 +22,12 @@ module Presenters
       Models::Genre.for(genre).to_html
     end
 
-    def audience_pill
-      Models::Audience.for(@book)&.to_html || ""
+    def fiction_flag
+      CONTENT_TYPE_FLAGS.fetch(catalog_item.content_type)
     end
 
-    def fiction_flag
-      CONTENT_TYPE_FLAGS.fetch(@book.content_type)
-    end
+    private
+
+    def catalog_item = @book
   end
 end
