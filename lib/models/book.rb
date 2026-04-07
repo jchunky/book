@@ -17,5 +17,13 @@ module Models
              :jacket_url_medium,
              :description,
              to: :biblio
+
+    def self.all
+      Services::BookLibrary.new.books
+    end
+
+    def keep?
+      Services::BookFilter.keep?(self)
+    end
   end
 end

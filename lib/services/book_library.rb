@@ -2,16 +2,12 @@
 
 module Services
   class BookLibrary
-    def initialize(filter: Services::BookFilter)
-      @filter = filter
-    end
-
     def books
       search = Downloaders::BibliocommonsSearch.new do |page|
         url_for_page(page)
       end
       search.fetch_all { |bib| bib_to_book(bib) }
-        .select(&@filter)
+        .select(&:keep?)
         .sort_by { |b| -b.popularity.score }
         .first(30)
     end

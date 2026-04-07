@@ -24,6 +24,14 @@ module Models
              :metacritic,
              to: :omdb
 
+    def self.all
+      Services::MovieLibrary.new.movies
+    end
+
+    def keep?
+      Services::MovieFilter.keep?(self)
+    end
+
     def certified_fresh? = rotten_tomatoes.fresh? && !certified_fresh_excluded?
     def must_see? = metacritic.must_see? && !must_see_excluded?
     def juvenile? = Models::Audience.juvenile?(self)

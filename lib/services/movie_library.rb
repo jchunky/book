@@ -2,10 +2,6 @@
 
 module Services
   class MovieLibrary
-    def initialize(filter: Services::MovieFilter)
-      @filter = filter
-    end
-
     def movies
       search = Downloaders::BibliocommonsSearch.new do |page|
         url_for_page(page)
@@ -14,7 +10,7 @@ module Services
         .sort_by { |m| -m.popularity.score }
 
       enrich_with_omdb(sorted)
-        .select(&@filter)
+        .select(&:keep?)
     end
 
     private

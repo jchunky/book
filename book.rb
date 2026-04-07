@@ -12,8 +12,8 @@ Loader.setup
 
 class Book
   def run
-    books = Services::BookLibrary.new.books
-    movies = Services::MovieLibrary.new.movies
+    books = Models::Book.all
+    movies = Models::Movie.all
 
     puts "Books: #{books.count}, Movies: #{movies.count}"
 
