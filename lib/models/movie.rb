@@ -21,16 +21,9 @@ module Models
     def animation? = Models::Genre.animation?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
-    def rotten_tomatoes_url = search_url("site:rottentomatoes.com/m", display_title, display_year)
-    def metacritic_url = search_url("site:metacritic.com/movie", display_title, display_year)
+    def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)
+    def metacritic_url = GoogleRedirectUrl.new("site:metacritic.com/movie", display_title, display_year)
     def must_see_excluded? = Config::ExcludedTitles::MUST_SEE.include?(display_title)
     def certified_fresh_excluded? = Config::ExcludedTitles::CERTIFIED_FRESH.include?(display_title)
-
-    private
-
-    def search_url(site_filter, title, year)
-      query = URI.encode_www_form_component("#{site_filter} #{title} #{year}")
-      "https://www.google.com/search?btnI&q=#{query}"
-    end
   end
 end
