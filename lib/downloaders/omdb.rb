@@ -5,7 +5,7 @@ module Downloaders
     class RateLimitError < StandardError
     end
 
-    Info = Data.define(
+    class Info < Data.define(
       :title,
       :year,
       :rated,
@@ -15,6 +15,7 @@ module Downloaders
       :rotten_tomatoes,
       :metacritic,
     )
+    end
 
     NO_INFO = Info.new(
       title: "",

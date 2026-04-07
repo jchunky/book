@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  Runtime = Data.define(:minutes)
-
-  class Runtime
+  class Runtime < Data.define(:minutes)
     EMPTY = new(minutes: "")
 
     def self.parse(raw)

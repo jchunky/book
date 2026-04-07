@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  CallNumber = Data.define(:raw) do
+  class CallNumber < Data.define(:raw)
     def genre
       if raw.match?(/\A\d/)
         Dewey.lookup(raw)

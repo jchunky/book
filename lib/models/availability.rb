@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  Availability = Data.define(:name, :text_color, :bg_color)
-
-  class Availability
+  class Availability < Data.define(:name, :text_color, :bg_color)
     NONE = new("avail-none", "#991b1b", "#fee2e2") # red
     LOW = new("avail-low", "#9a3412", "#fff7ed") # orange
     OK = new("avail-ok", "#166534", "#dcfce7") # green

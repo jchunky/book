@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  Genre = Data.define(:name, :color)
-
-  class Genre
+  class Genre < Data.define(:name, :color)
     ALL = [
       new("FICTION", "#6b7280"), # grey
       new("MYSTERY", "#2563eb"), # blue

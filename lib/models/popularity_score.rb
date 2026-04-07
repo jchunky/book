@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  PopularityScore = Data.define(:holds, :copies)
-
-  class PopularityScore
+  class PopularityScore < Data.define(:holds, :copies)
     LOW_THRESHOLD = 100
 
     def score = holds * copies

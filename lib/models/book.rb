@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 module Models
-  Book = Struct.new(
+  class Book < Struct.new(
     :biblio,
     :author,
     :genre,
-  ) do
+  )
     delegate :title,
              :copies_info,
              :href,

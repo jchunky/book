@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  RottenTomatoesScore = Data.define(:value)
-
-  class RottenTomatoesScore
+  class RottenTomatoesScore < Data.define(:value)
     FRESH_THRESHOLD = 75
     EMPTY = new(value: "")
 

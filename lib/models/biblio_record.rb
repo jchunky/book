@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  BiblioRecord = Data.define(
+  class BiblioRecord < Data.define(
     :title,
     :copies_info,
     :href,
@@ -12,7 +12,7 @@ module Models
     :jacket_url,
     :jacket_url_medium,
     :description,
-  ) do
+  )
     def self.from_bib(bib)
       info = bib["briefInfo"] || {}
       avail = bib["availability"] || {}

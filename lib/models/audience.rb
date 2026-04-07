@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  Audience = Data.define(:name, :abbr, :color)
-
-  class Audience
+  class Audience < Data.define(:name, :abbr, :color)
     ALL = [
       new("JUVENILE", "J", "#16a34a"), # green
       new("TEEN", "T", "#dc2626"), # red

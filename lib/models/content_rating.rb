@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  ContentRating = Data.define(:name, :color)
-
-  class ContentRating
+  class ContentRating < Data.define(:name, :color)
     ALL = [
       new("G", "#16a34a"), # green
       new("PG", "#16a34a"), # green

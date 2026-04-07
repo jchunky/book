@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 module Models
-  Movie = Struct.new(
+  class Movie < Struct.new(
     :biblio,
     :omdb,
-  ) do
+  )
     delegate :title,
              :copies_info,
              :href,
