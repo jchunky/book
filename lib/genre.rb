@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-Genre = Data.define(:name, :color) do
+Genre = Data.define(:name, :color)
+
+class Genre
   ALL = [
     new("FICTION",         "#6b7280"),
     new("MYSTERY",         "#2563eb"),

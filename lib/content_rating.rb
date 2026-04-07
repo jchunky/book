@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-ContentRating = Data.define(:name, :color) do
+ContentRating = Data.define(:name, :color)
+
+class ContentRating
   ALL = [
     new("G",     "#16a34a"),
     new("PG",    "#16a34a"),

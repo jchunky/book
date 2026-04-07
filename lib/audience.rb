@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-Audience = Data.define(:name, :abbr, :color) do
+Audience = Data.define(:name, :abbr, :color)
+
+class Audience
   ALL = [
     new("JUVENILE", "J", "#16a34a"),
     new("TEEN",     "T", "#dc2626"),
