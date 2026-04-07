@@ -10,8 +10,10 @@ module Models
       new("ADULT", "", "#64748b"), # slate
     ].freeze
 
+    UNKNOWN = new("UNKNOWN", "", "")
+
     def self.for(item)
-      ALL.find { item.audiences.include?(it.name) }
+      ALL.find { item.audiences.include?(it.name) } || UNKNOWN
     end
 
     def to_html

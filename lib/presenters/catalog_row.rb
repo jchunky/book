@@ -24,7 +24,7 @@ module Presenters
     end
 
     def audience_pill
-      Models::Audience.for(catalog_item)&.to_html || ""
+      Models::Audience.for(catalog_item).to_html
     end
   end
 end
