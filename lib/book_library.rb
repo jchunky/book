@@ -22,11 +22,10 @@ class BookLibrary
     def juvenile? = audiences.include?("JUVENILE")
     def teen? = audiences.include?("TEEN")
     def adult? = audiences.include?("ADULT")
+  end
 
-    def keep?
-      content_type == "NONFICTION" ||
-        genre == "SCIENCE FICTION"
-    end
+  def initialize(filter: BookFilter.new)
+    @filter = filter
   end
 
   def books
@@ -34,7 +33,7 @@ class BookLibrary
       url_for_page(page)
     end
     search.fetch_all { |bib| bib_to_book(bib) }
-      .select(&:keep?)
+      .select(&@filter)
       .sort_by { |b| -b.rating }
       .first(30)
   end

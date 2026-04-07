@@ -39,20 +39,16 @@ class MovieLibrary
     def must_see_excluded? = MUST_SEE_EXCLUDED_MOVIE_TITLES.include?(display_title)
     def certified_fresh_excluded? = CERTIFIED_FRESH_EXCLUDED_MOVIE_TITLES.include?(display_title)
 
-    def keep?
-      return false if animation?
-      return false unless certified_fresh?
-      return false unless teen? || (adult? && must_see?)
-
-      true
-    end
-
     private
 
     def search_url(site_filter, title, year)
       query = URI.encode_www_form_component("#{site_filter} #{title} #{year}")
       "https://www.google.com/search?btnI&q=#{query}"
     end
+  end
+
+  def initialize(filter: MovieFilter.new)
+    @filter = filter
   end
 
   def movies
@@ -63,7 +59,7 @@ class MovieLibrary
       .sort_by { |m| -m.rating }
 
     enrich_with_omdb(sorted)
-      .select(&:keep?)
+      .select(&@filter)
   end
 
   private
