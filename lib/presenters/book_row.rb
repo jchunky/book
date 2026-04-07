@@ -10,12 +10,6 @@ module Presenters
       "HORROR" => "#9333ea",
     }.freeze
 
-    AUDIENCE_CSS_CLASSES = {
-      "JUVENILE" => "audience-juvenile",
-      "TEEN" => "audience-teen",
-      "ADULT" => "audience-adult",
-    }.freeze
-
     delegate :holds, :copies, :available, :title, :href,
              :author, :year, :genre, to: :@book
 
@@ -49,13 +43,10 @@ module Presenters
     end
 
     def audience_pill
-      label = if @book.juvenile? then "JUVENILE"
-              elsif @book.teen? then "TEEN"
-              end
-      return "" unless label
+      audience = Audience.for(@book)
+      return "" if audience.name == "ADULT"
 
-      css_class = AUDIENCE_CSS_CLASSES[label]
-      %(<span class="#{css_class}">#{label[0]}</span>)
+      %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
     end
 
     CONTENT_TYPE_FLAGS = {

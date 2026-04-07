@@ -9,12 +9,6 @@ module Presenters
       "R" => "rating-r",
     }.freeze
 
-    AUDIENCE_CSS_CLASSES = {
-      "JUVENILE" => "audience-juvenile",
-      "TEEN" => "audience-teen",
-      "ADULT" => "audience-adult",
-    }.freeze
-
     delegate :holds, :copies, :available, :display_title, :display_year,
              :href, :runtime, :genre, :rotten_tomatoes,
              :rotten_tomatoes_url, :metacritic_url, to: :@movie
@@ -63,13 +57,10 @@ module Presenters
     end
 
     def audience_pill
-      label = if @movie.juvenile? then "JUVENILE"
-              elsif @movie.teen? then "TEEN"
-              end
-      return "" unless label
+      audience = Audience.for(@movie)
+      return "" if audience.name == "ADULT"
 
-      css_class = AUDIENCE_CSS_CLASSES[label]
-      %(<span class="#{css_class}">#{label[0]}</span>)
+      %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
     end
   end
 end
