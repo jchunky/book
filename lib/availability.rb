@@ -7,6 +7,10 @@ class Availability
   LOW  = new("avail-low",  "#9a3412", "#fff7ed") # orange
   OK   = new("avail-ok",   "#166534", "#dcfce7") # green
 
+  def style
+    "color: #{text_color}; background-color: #{bg_color};"
+  end
+
   def self.for(available:, copies:)
     return NONE if available.zero?
     return LOW if copies.positive? && available <= copies / 4

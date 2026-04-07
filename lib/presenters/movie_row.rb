@@ -23,10 +23,7 @@ module Presenters
     end
 
     def availability_style
-      avail = Availability.for(available:, copies:)
-      return "" unless avail
-
-      "color: #{avail.text_color}; background-color: #{avail.bg_color};"
+      Availability.for(available:, copies:)&.style || ""
     end
 
     def title_class
