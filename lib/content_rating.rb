@@ -4,10 +4,10 @@ ContentRating = Data.define(:name, :color)
 
 class ContentRating
   ALL = [
-    new("G",     "#16a34a"),
-    new("PG",    "#16a34a"),
-    new("PG-13", "#ca8a04"),
-    new("R",     "#dc2626"),
+    new("G",     "#16a34a"), # green
+    new("PG",    "#16a34a"), # green
+    new("PG-13", "#ca8a04"), # amber
+    new("R",     "#dc2626"), # red
   ].freeze
 
   BY_NAME = ALL.index_by(&:name).freeze
