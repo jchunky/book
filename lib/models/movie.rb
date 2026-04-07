@@ -2,24 +2,15 @@
 
 module Models
   Movie = Struct.new(
-    :title,
-    :copies_info,
-    :href,
-    :year,
-    :popularity,
-    :audiences,
-    :content_type,
-    :jacket_url,
-    :jacket_url_medium,
-    :description,
+    :biblio,
     :omdb,
   ) do
-    delegate :rated,
-             :runtime,
-             :genre,
-             :box_office,
-             :rotten_tomatoes,
-             :metacritic,
+    delegate :title, :copies_info, :href, :year, :popularity,
+             :audiences, :content_type,
+             :jacket_url, :jacket_url_medium, :description,
+             to: :biblio
+    delegate :rated, :runtime, :genre, :box_office,
+             :rotten_tomatoes, :metacritic,
              to: :omdb
 
     def certified_fresh? = rotten_tomatoes.to_i >= 75 && !certified_fresh_excluded?

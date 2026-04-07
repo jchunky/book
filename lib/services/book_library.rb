@@ -30,35 +30,12 @@ module Services
       return unless bib
 
       info = bib["briefInfo"] || {}
-      avail = bib["availability"] || {}
-
-      title = Models::CatalogTitle.new(
-        title: info["title"].to_s,
-        subtitle: info["subtitle"].to_s,
-      )
-      author = Array(info["authors"]).first.to_s
-      year = info["publicationDate"].to_i
-      holds = avail["heldCopies"].to_i
-      copies = avail["totalCopies"].to_i
-      available = avail["availableCopies"].to_i
-      on_order = avail["onOrderCopies"].to_i
-      href = "/v2/record/#{bib["id"]}"
-      copies_info = Models::CopiesInfo.new(copies:, available:, holds:, on_order:)
-      popularity = Models::PopularityScore.new(holds:, copies:)
+      biblio = Models::BiblioRecord.from_bib(bib)
 
       Models::Book.new(
-        title:,
-        copies_info:,
-        href:,
-        author:,
-        year:,
-        popularity:,
-        audiences: Array(info["audiences"]).join(", "),
-        content_type: info["contentType"].to_s,
+        biblio:,
+        author: Array(info["authors"]).first.to_s,
         genre: Models::CallNumber.new(raw: info["callNumber"].to_s).genre,
-        jacket_url: info.dig("jacket", "small").to_s,
-        jacket_url_medium: info.dig("jacket", "medium").to_s,
-        description: info["description"].to_s,
       )
     end
   end

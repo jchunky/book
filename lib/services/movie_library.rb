@@ -23,7 +23,7 @@ module Services
       omdb_client = Downloaders::Omdb.new
       movies.map do |movie|
         info = omdb_client.info(title: movie.title.to_s, year: movie.year)
-        Models::Movie.new(**movie.to_h, omdb: info)
+        Models::Movie.new(biblio: movie.biblio, omdb: info)
       end
     end
 
@@ -40,33 +40,10 @@ module Services
     def bib_to_movie(bib)
       return unless bib
 
-      info = bib["briefInfo"] || {}
-      avail = bib["availability"] || {}
-
-      title = Models::CatalogTitle.new(
-        title: info["title"].to_s,
-        subtitle: info["subtitle"].to_s,
-      )
-      year = info["publicationDate"].to_i
-      holds = avail["heldCopies"].to_i
-      copies = avail["totalCopies"].to_i
-      available = avail["availableCopies"].to_i
-      on_order = avail["onOrderCopies"].to_i
-      href = "/v2/record/#{bib["id"]}"
-      copies_info = Models::CopiesInfo.new(copies:, available:, holds:, on_order:)
-      popularity = Models::PopularityScore.new(holds:, copies:)
+      biblio = Models::BiblioRecord.from_bib(bib)
 
       Models::Movie.new(
-        title:,
-        copies_info:,
-        href:,
-        year:,
-        popularity:,
-        audiences: Array(info["audiences"]).join(", "),
-        content_type: info["contentType"].to_s,
-        jacket_url: info.dig("jacket", "small").to_s,
-        jacket_url_medium: info.dig("jacket", "medium").to_s,
-        description: info["description"].to_s,
+        biblio:,
         omdb: Downloaders::Omdb::NO_INFO,
       )
     end
