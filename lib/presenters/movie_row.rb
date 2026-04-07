@@ -58,7 +58,7 @@ module Presenters
 
     def audience_pill
       audience = Audience.for(@movie)
-      return "" if audience.name == "ADULT"
+      return "" if audience.abbr.empty?
 
       %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
     end
