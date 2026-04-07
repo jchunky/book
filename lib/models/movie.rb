@@ -13,8 +13,8 @@ module Models
              :rotten_tomatoes, :metacritic,
              to: :omdb
 
-    def certified_fresh? = rotten_tomatoes.to_i >= 75 && !certified_fresh_excluded?
-    def must_see? = metacritic.to_i >= 80 && !must_see_excluded?
+    def certified_fresh? = rotten_tomatoes.fresh? && !certified_fresh_excluded?
+    def must_see? = metacritic.must_see? && !must_see_excluded?
     def juvenile? = Models::Audience.juvenile?(self)
     def teen? = Models::Audience.teen?(self)
     def adult? = Models::Audience.adult?(self)

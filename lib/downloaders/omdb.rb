@@ -20,11 +20,11 @@ module Downloaders
       title: "",
       year: "",
       rated: "",
-      runtime: "",
+      runtime: Models::Runtime::EMPTY,
       genre: "",
-      box_office: "",
-      rotten_tomatoes: "",
-      metacritic: "",
+      box_office: Models::BoxOffice::EMPTY,
+      rotten_tomatoes: Models::RottenTomatoesScore::EMPTY,
+      metacritic: Models::MetacriticScore::EMPTY,
     )
 
     def info(title:, year:)
@@ -79,24 +79,17 @@ module Downloaders
         title: data["Title"].to_s,
         year: data["Year"].to_s,
         rated: clean_value(data["Rated"]),
-        runtime: clean_value(data["Runtime"]),
+        runtime: Models::Runtime.parse(data["Runtime"]),
         genre: data["Genre"].to_s,
-        box_office: round_to_million(data["BoxOffice"]),
-        rotten_tomatoes: clean_value(rating_value(ratings, "Rotten Tomatoes")),
-        metacritic: clean_value(rating_value(ratings, "Metacritic")),
+        box_office: Models::BoxOffice.parse(data["BoxOffice"]),
+        rotten_tomatoes: Models::RottenTomatoesScore.parse(rating_value(ratings, "Rotten Tomatoes")),
+        metacritic: Models::MetacriticScore.parse(rating_value(ratings, "Metacritic")),
       )
-    end
-
-    def round_to_million(value)
-      amount = value.to_s.gsub(/\D/, "").to_i
-      return "" if amount.zero?
-
-      (amount / 1_000_000.0).round.to_s
     end
 
     def clean_value(value)
       value = value.to_s
-      value == "N/A" ? "" : value.delete_suffix(" min").delete_suffix("/100").delete_suffix("%")
+      value == "N/A" ? "" : value
     end
 
     def rating_value(ratings, source)
