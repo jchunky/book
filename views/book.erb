@@ -19,7 +19,7 @@
     .score-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; color: white; font-size: 7pt; }
     .score-pill { margin-left: 4px; }
     .not-must-see a { color: #aaa; }
-    .low-rating { color: #aaa; }
+    .low-popularity { color: #aaa; }
     h2 { font-family: Arial; margin: 0; display: inline; }
     .table-header { margin-top: 16px; display: flex; align-items: baseline; gap: 12px; }
     input.search { font-size: 9pt; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
@@ -43,7 +43,7 @@
           <th class="sort" data-sort="copies">Copies</th>
           <th class="sort" data-sort="available">Available</th>
           <th class="sort" data-sort="on-order">On Order</th>
-          <th class="sort" data-sort="rating">Rating</th>
+          <th class="sort" data-sort="popularity">Popularity</th>
           <th class="sort" data-sort="book-title">Book</th>
           <th class="sort" data-sort="author">Author</th>
           <th class="sort" data-sort="year">Year</th>
@@ -59,7 +59,7 @@
             <td class="number copies"><%= row.copies %></td>
             <td class="number available" style="<%= row.availability_style %>"><%= row.available %></td>
             <td class="number on-order"><%= row.on_order %></td>
-            <td class="<%= row.rating_class %>"><%= row.rating %></td>
+            <td class="<%= row.popularity_class %>"><%= row.popularity %></td>
             <td><a href="https://tpl.bibliocommons.com<%= row.href %>"><span class="book-title"><%= row.title %></span></a></td>
             <td class="author"><%= row.author %></td>
             <td class="number year"><%= row.year %></td>
@@ -84,7 +84,7 @@
           <th class="sort" data-sort="copies">Copies</th>
           <th class="sort" data-sort="available">Available</th>
           <th class="sort" data-sort="on-order">On Order</th>
-          <th class="sort" data-sort="rating">Rating</th>
+          <th class="sort" data-sort="popularity">Popularity</th>
           <th class="sort" data-sort="title">Title</th>
           <th class="sort" data-sort="year">Year</th>
           <th class="sort" data-sort="rated">Rated</th>
@@ -103,7 +103,7 @@
             <td class="number copies"><%= row.copies %></td>
             <td class="number available" style="<%= row.availability_style %>"><%= row.available %></td>
             <td class="number on-order"><%= row.on_order %></td>
-            <td class="<%= row.rating_class %>"><%= row.rating %></td>
+            <td class="<%= row.popularity_class %>"><%= row.popularity %></td>
             <td<%= " class=\"#{row.title_class}\"" if row.title_class %>><a href="https://tpl.bibliocommons.com<%= row.href %>"><span class="title"><%= row.display_title %></span></a></td>
             <td class="number year"><%= row.display_year %></td>
             <td class="rated"><%= row.rated_pill %></td>
@@ -121,13 +121,13 @@
 
   <script>
     var booksList = new List('books-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'rating', 'book-title', 'author', 'year', 'genre', 'audiences', 'content-type']
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'book-title', 'author', 'year', 'genre', 'audiences', 'content-type']
     });
-    booksList.sort('rating', { order: 'desc' });
+    booksList.sort('popularity', { order: 'desc' });
 
     var moviesList = new List('movies-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'rating', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences']
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences']
     });
-    moviesList.sort('rating', { order: 'desc' });
+    moviesList.sort('popularity', { order: 'desc' });
   </script>
 </body>

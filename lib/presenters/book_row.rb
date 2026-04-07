@@ -21,10 +21,10 @@ module Presenters
       copies_info.on_order unless copies_info.on_order.zero?
     end
 
-    def rating = @book.popularity.score
+    def popularity = @book.popularity.score
 
-    def rating_class
-      "number#{" low-rating" if @book.popularity.low?} rating"
+    def popularity_class
+      "number#{" low-popularity" if @book.popularity.low?} popularity"
     end
 
     def availability_style
