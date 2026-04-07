@@ -22,18 +22,18 @@ module Presenters
     end
 
     def availability_style
-      Availability.style(available:, copies:)
+      Models::Availability.style(available:, copies:)
     end
 
     def genre_html
       return "" if genre.empty?
 
-      g = Genre.for(genre)
+      g = Models::Genre.for(genre)
       %(<span style="color: #{g.color}; font-weight: bold;">#{g.name}</span>)
     end
 
     def audience_pill
-      audience = Audience.for(@book)
+      audience = Models::Audience.for(@book)
       return "" if audience.abbr.empty?
 
       %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)

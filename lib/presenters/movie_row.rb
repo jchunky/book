@@ -23,7 +23,7 @@ module Presenters
     end
 
     def availability_style
-      Availability.style(available:, copies:)
+      Models::Availability.style(available:, copies:)
     end
 
     def title_class
@@ -31,7 +31,7 @@ module Presenters
     end
 
     def rated_pill
-      content_rating = ContentRating.for(@movie.rated)
+      content_rating = Models::ContentRating.for(@movie.rated)
       return "" unless content_rating
 
       %(<span style="color: #{content_rating.color}; font-weight: bold;">#{content_rating.name}</span>)
@@ -48,7 +48,7 @@ module Presenters
     end
 
     def audience_pill
-      audience = Audience.for(@movie)
+      audience = Models::Audience.for(@movie)
       return "" if audience.abbr.empty?
 
       %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
