@@ -5,12 +5,23 @@ module Models
     :biblio,
     :omdb,
   ) do
-    delegate :title, :copies_info, :href, :year, :popularity,
-             :audiences, :content_type,
-             :jacket_url, :jacket_url_medium, :description,
+    delegate :title,
+             :copies_info,
+             :href,
+             :year,
+             :popularity,
+             :audiences,
+             :content_type,
+             :jacket_url,
+             :jacket_url_medium,
+             :description,
              to: :biblio
-    delegate :rated, :runtime, :genre, :box_office,
-             :rotten_tomatoes, :metacritic,
+    delegate :rated,
+             :runtime,
+             :genre,
+             :box_office,
+             :rotten_tomatoes,
+             :metacritic,
              to: :omdb
 
     def certified_fresh? = rotten_tomatoes.fresh? && !certified_fresh_excluded?

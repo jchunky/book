@@ -20,11 +20,11 @@ module Models
       BY_NAME.fetch(name) { new(name, DEFAULT_COLOR) }
     end
 
+    def self.science_fiction?(item) = item.genre == "SCIENCE FICTION"
+    def self.animation?(item) = item.genre.include?("Animation")
+
     def to_html
       %(<span style="color: #{color}; font-weight: bold;">#{name}</span>)
     end
-
-    def self.science_fiction?(item) = item.genre == "SCIENCE FICTION"
-    def self.animation?(item) = item.genre.include?("Animation")
   end
 end

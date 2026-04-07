@@ -4,7 +4,11 @@ module Presenters
   class BookRow
     include CatalogRow
 
-    delegate :title, :href, :author, :year, :genre,
+    delegate :title,
+             :href,
+             :author,
+             :year,
+             :genre,
              to: :catalog_item
 
     CONTENT_TYPE_FLAGS = {

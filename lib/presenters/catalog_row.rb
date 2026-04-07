@@ -3,7 +3,10 @@
 module Presenters
   module CatalogRow
     def self.included(base)
-      base.delegate :holds, :copies, :available, :on_order,
+      base.delegate :holds,
+                    :copies,
+                    :available,
+                    :on_order,
                     to: :copies_info
     end
 

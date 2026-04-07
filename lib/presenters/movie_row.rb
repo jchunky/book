@@ -4,9 +4,14 @@ module Presenters
   class MovieRow
     include CatalogRow
 
-    delegate :display_title, :display_year, :href,
-             :runtime, :genre,
-             :rotten_tomatoes, :rotten_tomatoes_url, :metacritic_url,
+    delegate :display_title,
+             :display_year,
+             :href,
+             :runtime,
+             :genre,
+             :rotten_tomatoes,
+             :rotten_tomatoes_url,
+             :metacritic_url,
              to: :catalog_item
 
     def initialize(movie)
