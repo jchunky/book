@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  class Movie < Struct.new(
+  class Movie < Data.define(
     :biblio,
     :omdb,
   )

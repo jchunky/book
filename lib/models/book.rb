@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  class Book < Struct.new(
+  class Book < Data.define(
     :biblio,
     :author,
     :genre,
