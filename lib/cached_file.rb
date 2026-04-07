@@ -6,7 +6,7 @@ class CachedFile < Data.define(:url, :crawl_delay, :cacheable)
   end
 
   def read
-    content = cache_expired? ? fetch_and_cache : File.read(file)
+    content = cache_miss? ? fetch_and_cache : File.read(file)
     yield(content)
   end
 
@@ -28,7 +28,7 @@ class CachedFile < Data.define(:url, :crawl_delay, :cacheable)
     Net::HTTP.get(URI.parse(url)).tap { |c| File.write(file, c) if cacheable.call(c) }
   end
 
-  def cache_expired?
+  def cache_miss?
     !File.exist?(file)
   end
 
