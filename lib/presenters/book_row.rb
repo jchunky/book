@@ -22,7 +22,7 @@ module Presenters
     end
 
     def availability_style
-      Availability.for(available:, copies:)&.style || ""
+      Availability.style(available:, copies:)
     end
 
     def genre_html

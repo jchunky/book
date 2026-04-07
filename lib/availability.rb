@@ -16,4 +16,8 @@ class Availability
     return LOW if copies.positive? && available <= copies / 4
     OK if available.positive?
   end
+
+  def self.style(available:, copies:)
+    self.for(available:, copies:)&.style || ""
+  end
 end
