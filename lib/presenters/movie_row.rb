@@ -2,13 +2,6 @@
 
 module Presenters
   class MovieRow
-    RATING_CSS_CLASSES = {
-      "G" => "rating-g",
-      "PG" => "rating-pg",
-      "PG-13" => "rating-pg13",
-      "R" => "rating-r",
-    }.freeze
-
     delegate :holds, :copies, :available, :display_title, :display_year,
              :href, :runtime, :genre, :rotten_tomatoes,
              :rotten_tomatoes_url, :metacritic_url, to: :@movie
@@ -40,10 +33,10 @@ module Presenters
     end
 
     def rated_pill
-      css_class = RATING_CSS_CLASSES[@movie.rated]
-      return "" unless css_class
+      content_rating = ContentRating.for(@movie.rated)
+      return "" unless content_rating
 
-      %(<span class="#{css_class}">#{@movie.rated}</span>)
+      %(<span style="color: #{content_rating.color}; font-weight: bold;">#{content_rating.name}</span>)
     end
 
     def box_office
