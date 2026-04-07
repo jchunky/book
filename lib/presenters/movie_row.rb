@@ -2,9 +2,18 @@
 
 module Presenters
   class MovieRow
-    delegate :holds, :copies, :available, :display_title, :display_year,
-             :href, :runtime, :genre, :rotten_tomatoes,
-             :rotten_tomatoes_url, :metacritic_url, to: :@movie
+    delegate :holds,
+             :copies,
+             :available,
+             :display_title,
+             :display_year,
+             :href,
+             :runtime,
+             :genre,
+             :rotten_tomatoes,
+             :rotten_tomatoes_url,
+             :metacritic_url,
+             to: :@movie
 
     def initialize(movie)
       @movie = movie
@@ -19,7 +28,7 @@ module Presenters
     def low_rating? = @movie.rating < 100
 
     def rating_class
-      "number#{' low-rating' if low_rating?} rating"
+      "number#{" low-rating" if low_rating?} rating"
     end
 
     def availability_style

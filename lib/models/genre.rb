@@ -5,11 +5,11 @@ module Models
 
   class Genre
     ALL = [
-      new("FICTION",         "#6b7280"), # grey
-      new("MYSTERY",         "#2563eb"), # blue
-      new("ROMANCE",         "#e11d48"), # rose
+      new("FICTION", "#6b7280"), # grey
+      new("MYSTERY", "#2563eb"), # blue
+      new("ROMANCE", "#e11d48"), # rose
       new("SCIENCE FICTION", "#0d9488"), # teal
-      new("HORROR",          "#9333ea"), # purple
+      new("HORROR", "#9333ea"), # purple
     ].freeze
 
     DEFAULT_COLOR = "#444444" # dark grey

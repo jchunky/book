@@ -2,9 +2,20 @@
 
 module Presenters
   class BookRow
-    delegate :holds, :copies, :available, :title, :href,
-             :author, :year, :genre, to: :@book
+    delegate :holds,
+             :copies,
+             :available,
+             :title,
+             :href,
+             :author,
+             :year,
+             :genre,
+             to: :@book
 
+    CONTENT_TYPE_FLAGS = {
+      "FICTION" => "F",
+      "NONFICTION" => "",
+    }.freeze
     def initialize(book)
       @book = book
     end
@@ -18,7 +29,7 @@ module Presenters
     def low_rating? = @book.rating < 100
 
     def rating_class
-      "number#{' low-rating' if low_rating?} rating"
+      "number#{" low-rating" if low_rating?} rating"
     end
 
     def availability_style
@@ -38,11 +49,6 @@ module Presenters
 
       %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
     end
-
-    CONTENT_TYPE_FLAGS = {
-      "FICTION" => "F",
-      "NONFICTION" => "",
-    }.freeze
 
     def fiction_flag
       CONTENT_TYPE_FLAGS.fetch(@book.content_type)

@@ -5,10 +5,10 @@ module Models
 
   class ContentRating
     ALL = [
-      new("G",     "#16a34a"), # green
-      new("PG",    "#16a34a"), # green
+      new("G", "#16a34a"), # green
+      new("PG", "#16a34a"), # green
       new("PG-13", "#ca8a04"), # amber
-      new("R",     "#dc2626"), # red
+      new("R", "#dc2626"), # red
     ].freeze
 
     BY_NAME = ALL.index_by(&:name).freeze

@@ -46,8 +46,11 @@ module Downloaders
     private
 
     def info_for(title:, year: nil)
-      cached = Utils::CachedFile.new(url: url_for(title:, year:), crawl_delay: 1,
-                                     cacheable: method(:cacheable_response?))
+      cached = Utils::CachedFile.new(
+        url: url_for(title:, year:),
+        crawl_delay: 1,
+        cacheable: method(:cacheable_response?),
+      )
       return cached_info(cached) if @rate_limited
 
       cached.read { |content| parse_info(JSON.parse(content)) }
