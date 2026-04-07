@@ -10,8 +10,6 @@ Dir["lib/**/*.rb"].each { |f| require_relative f }
 class Book
   def run
     books = BookLibrary.new.books
-      .sort_by { |b| [-b.rating, -b.year, b.title] }
-
     movies = MovieLibrary.new.movies
 
     puts "Books: #{books.count}, Movies: #{movies.count}"
