@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
 require "active_support/all"
+require "delegate"
 require "erb"
 require "json"
 require "net/http"
-require "delegate"
 require "uri"
-Dir["lib/**/*.rb"].each { |f| require_relative f }
+
+require_relative "lib/loader"
+Loader.setup
 
 class Book
   def run

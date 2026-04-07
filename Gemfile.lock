@@ -31,12 +31,14 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uri (1.1.1)
+    zeitwerk (2.7.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activesupport
+  zeitwerk
 
 BUNDLED WITH
    2.5.3
