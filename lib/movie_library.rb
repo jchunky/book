@@ -28,9 +28,9 @@ class MovieLibrary
 
     def certified_fresh? = rotten_tomatoes.to_i >= 75 && !certified_fresh_excluded?
     def must_see? = metacritic.to_i >= 80 && !must_see_excluded?
-    def juvenile? = audiences.include?("JUVENILE")
-    def teen? = audiences.include?("TEEN")
-    def adult? = audiences.include?("ADULT")
+    def juvenile? = Audience.juvenile?(self)
+    def teen? = Audience.teen?(self)
+    def adult? = Audience.adult?(self)
     def animation? = genre.include?("Animation")
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year

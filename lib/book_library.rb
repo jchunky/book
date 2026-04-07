@@ -18,11 +18,7 @@ class BookLibrary
     :jacket_url,
     :jacket_url_medium,
     :description,
-  ) do
-    def juvenile? = audiences.include?("JUVENILE")
-    def teen? = audiences.include?("TEEN")
-    def adult? = audiences.include?("ADULT")
-  end
+  )
 
   def initialize(filter: BookFilter.new)
     @filter = filter

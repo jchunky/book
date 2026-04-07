@@ -12,4 +12,8 @@ class Audience
   def self.for(item)
     ALL.find { item.audiences.include?(it.name) }
   end
+
+  def self.juvenile?(item) = item.audiences.include?("JUVENILE")
+  def self.teen?(item) = item.audiences.include?("TEEN")
+  def self.adult?(item) = item.audiences.include?("ADULT")
 end
