@@ -21,10 +21,11 @@ module Presenters
       "number#{' low-rating' if low_rating?} rating"
     end
 
-    def availability_class
-      return "avail-none" if available.zero?
-      return "avail-low" if copies.positive? && available <= copies / 4
-      "avail-ok" if available.positive?
+    def availability_style
+      avail = Availability.for(available:, copies:)
+      return "" unless avail
+
+      "color: #{avail.text_color}; background-color: #{avail.bg_color};"
     end
 
     def genre_html

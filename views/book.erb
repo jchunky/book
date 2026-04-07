@@ -20,9 +20,6 @@
     .score-pill { margin-left: 4px; }
     .not-must-see a { color: #aaa; }
     .low-rating { color: #aaa; }
-    .avail-none { color: #991b1b; background-color: #fee2e2; }
-    .avail-low { color: #9a3412; background-color: #fff7ed; }
-    .avail-ok { color: #166534; background-color: #dcfce7; }
     h2 { font-family: Arial; margin: 0; display: inline; }
     .table-header { margin-top: 16px; display: flex; align-items: baseline; gap: 12px; }
     input.search { font-size: 9pt; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
@@ -60,7 +57,7 @@
           <tr>
             <td class="number holds"><%= row.holds %></td>
             <td class="number copies"><%= row.copies %></td>
-            <td class="number <%= row.availability_class %> available"><%= row.available %></td>
+            <td class="number available" style="<%= row.availability_style %>"><%= row.available %></td>
             <td class="number on-order"><%= row.on_order %></td>
             <td class="<%= row.rating_class %>"><%= row.rating %></td>
             <td><a href="https://tpl.bibliocommons.com<%= row.href %>"><span class="book-title"><%= row.title %></span></a></td>
@@ -104,7 +101,7 @@
           <tr>
             <td class="number holds"><%= row.holds %></td>
             <td class="number copies"><%= row.copies %></td>
-            <td class="number <%= row.availability_class %> available"><%= row.available %></td>
+            <td class="number available" style="<%= row.availability_style %>"><%= row.available %></td>
             <td class="number on-order"><%= row.on_order %></td>
             <td class="<%= row.rating_class %>"><%= row.rating %></td>
             <td<%= " class=\"#{row.title_class}\"" if row.title_class %>><a href="https://tpl.bibliocommons.com<%= row.href %>"><span class="title"><%= row.display_title %></span></a></td>
