@@ -3,7 +3,7 @@
 class BookFilter
   def call(book)
     book.content_type == "NONFICTION" ||
-      book.genre == "SCIENCE FICTION"
+      Genre.science_fiction?(book)
   end
 
   def to_proc = method(:call).to_proc

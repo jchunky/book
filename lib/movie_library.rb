@@ -31,7 +31,7 @@ class MovieLibrary
     def juvenile? = Audience.juvenile?(self)
     def teen? = Audience.teen?(self)
     def adult? = Audience.adult?(self)
-    def animation? = genre.include?("Animation")
+    def animation? = Genre.animation?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = search_url("site:rottentomatoes.com/m", display_title, display_year)

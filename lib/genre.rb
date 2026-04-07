@@ -18,4 +18,7 @@ class Genre
   def self.for(name)
     BY_NAME.fetch(name) { new(name, DEFAULT_COLOR) }
   end
+
+  def self.science_fiction?(item) = item.genre == "SCIENCE FICTION"
+  def self.animation?(item) = item.genre.include?("Animation")
 end
