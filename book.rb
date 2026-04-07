@@ -56,13 +56,8 @@ class Book
     %(<span class="#{css_class}">#{label[0]}</span>)
   end
 
-  def display_book?(_book)
-    true
-  end
-
   def run
     @books = BookLibrary.new.books
-      .select(&method(:display_book?))
       .sort_by { |b| [-b.rating, -b.year, b.title] }
 
     @movies = MovieLibrary.new.movies
