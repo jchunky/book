@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 module Models
-  MetacriticScore = Data.define(:value) do
+  MetacriticScore = Data.define(:value)
+
+  class MetacriticScore
     MUST_SEE_THRESHOLD = 80
     EMPTY = new(value: "")
 

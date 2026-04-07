@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 module Models
-  BoxOffice = Data.define(:millions) do
+  BoxOffice = Data.define(:millions)
+
+  class BoxOffice
     EMPTY = new(millions: "")
 
     def self.parse(raw)
