@@ -34,10 +34,7 @@ module Presenters
     end
 
     def rated_pill
-      content_rating = Models::ContentRating.for(@movie.rated)
-      return "" unless content_rating
-
-      %(<span style="color: #{content_rating.color}; font-weight: bold;">#{content_rating.name}</span>)
+      Models::ContentRating.for(@movie.rated)&.to_html || ""
     end
 
     def box_office
@@ -51,10 +48,7 @@ module Presenters
     end
 
     def audience_pill
-      audience = Models::Audience.for(@movie)
-      return "" if audience.abbr.empty?
-
-      %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
+      Models::Audience.for(@movie)&.to_html || ""
     end
   end
 end

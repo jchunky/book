@@ -14,6 +14,12 @@ module Models
       ALL.find { item.audiences.include?(it.name) }
     end
 
+    def to_html
+      return "" if abbr.empty?
+
+      %(<span style="color: #{color}; font-weight: bold;">#{abbr}</span>)
+    end
+
     def self.juvenile?(item) = item.audiences.include?("JUVENILE")
     def self.teen?(item) = item.audiences.include?("TEEN")
     def self.adult?(item) = item.audiences.include?("ADULT")

@@ -13,6 +13,10 @@ module Models
 
     BY_NAME = ALL.index_by(&:name).freeze
 
+    def to_html
+      %(<span style="color: #{color}; font-weight: bold;">#{name}</span>)
+    end
+
     def self.for(name)
       BY_NAME[name]
     end

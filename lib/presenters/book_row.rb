@@ -34,15 +34,11 @@ module Presenters
     def genre_html
       return "" if genre.empty?
 
-      g = Models::Genre.for(genre)
-      %(<span style="color: #{g.color}; font-weight: bold;">#{g.name}</span>)
+      Models::Genre.for(genre).to_html
     end
 
     def audience_pill
-      audience = Models::Audience.for(@book)
-      return "" if audience.abbr.empty?
-
-      %(<span style="color: #{audience.color}; font-weight: bold;">#{audience.abbr}</span>)
+      Models::Audience.for(@book)&.to_html || ""
     end
 
     def fiction_flag
