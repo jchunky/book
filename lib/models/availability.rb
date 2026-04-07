@@ -15,10 +15,6 @@ module Models
       OK if available.positive?
     end
 
-    def self.style(available:, copies:)
-      self.for(available:, copies:)&.style || ""
-    end
-
     def style
       "color: #{text_color}; background-color: #{bg_color};"
     end
