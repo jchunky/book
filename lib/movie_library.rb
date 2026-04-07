@@ -47,7 +47,7 @@ class MovieLibrary
     end
   end
 
-  def initialize(filter: MovieFilter.new)
+  def initialize(filter: MovieFilter)
     @filter = filter
   end
 

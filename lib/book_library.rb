@@ -20,7 +20,7 @@ class BookLibrary
     :description,
   )
 
-  def initialize(filter: BookFilter.new)
+  def initialize(filter: BookFilter)
     @filter = filter
   end
 

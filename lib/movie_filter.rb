@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 
-class MovieFilter
-  def call(movie)
-    return false if movie.animation?
-    return false unless movie.certified_fresh?
-    return false unless movie.teen? || (movie.adult? && movie.must_see?)
+class MovieFilter < SimpleDelegator
+  def self.keep?(item) = new(item).keep?
+  def self.to_proc = method(:keep?).to_proc
+
+  def keep?
+    return false if animation?
+    return false unless certified_fresh?
+    return false unless teen? || (adult? && must_see?)
 
     true
   end
-
-  def to_proc = method(:call).to_proc
 end

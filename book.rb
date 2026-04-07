@@ -4,6 +4,7 @@ require "active_support/all"
 require "erb"
 require "json"
 require "net/http"
+require "delegate"
 require "uri"
 Dir["lib/**/*.rb"].each { |f| require_relative f }
 
