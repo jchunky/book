@@ -35,7 +35,7 @@ module Downloaders
 
       titles.each do |t|
         result = info_for(title: t, year:)
-        return result unless result == NO_INFO
+        return result if result != NO_INFO && titles_match?(t, result.title)
 
         result = info_for(title: t)
         return result unless result == NO_INFO
@@ -45,6 +45,10 @@ module Downloaders
     end
 
     private
+
+    def titles_match?(requested, returned)
+      requested.downcase == returned.downcase
+    end
 
     def info_for(title:, year: nil)
       cached = Utils::CachedFile.new(
