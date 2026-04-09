@@ -7,7 +7,9 @@ module Services
     def keep?
       return false if animation?
       return false unless certified_fresh?
-      return false unless !(teen? || (adult? && must_see?))
+      # return false unless teen?
+      # return false unless must_see?
+      # return false unless !(teen? || (adult? && must_see?))
 
       true
     end
