@@ -20,6 +20,7 @@ module Models
 
     def self.science_fiction?(item) = item.genre == "SCIENCE FICTION"
     def self.animation?(item) = item.genre.include?("Animation")
+    def self.horror?(item) = item.genre.include?("Horror")
 
     def to_html
       %(<span style="color: #{color}; font-weight: bold;">#{name}</span>)

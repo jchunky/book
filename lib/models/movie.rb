@@ -38,6 +38,7 @@ module Models
     def teen? = Models::Audience.teen?(self)
     def adult? = Models::Audience.adult?(self)
     def animation? = Models::Genre.animation?(self)
+    def horror? = Models::Genre.horror?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)

@@ -5,7 +5,7 @@ module Services
     def self.keep?(item) = new(item).keep?
 
     def keep?
-      return false if animation?
+      return false if animation? || horror?
       return false unless certified_fresh?
       # return false unless teen?
       # return false unless must_see?
