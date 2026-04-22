@@ -41,6 +41,7 @@ module Models
     def documentary? = Models::Genre.documentary?(self)
     def horror? = Models::Genre.horror?(self)
     def musical? = Models::Genre.musical?(self)
+    def restricted? = Models::ContentRating.restricted?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)
