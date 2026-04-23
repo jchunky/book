@@ -16,7 +16,6 @@ module Models
 
     def self.juvenile?(item) = item.audiences.include?("JUVENILE")
     def self.teen?(item) = item.audiences.include?("TEEN")
-
     def self.adult?(item) = item.audiences.include?("ADULT")
 
     def to_html
