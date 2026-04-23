@@ -1,4 +1,5 @@
 'Round Midnight
+100 Years
 13 Rue Madeleine
 1984
 3 Backyards
@@ -8,10 +9,12 @@ A Better Man
 A Boy and His Dog
 A Brixton Tale
 A Child Is Waiting
+A Christmas Horror Story
 A Cry in the Dark
 A Foreign Affair
 A Good American
 A Gray State
+A Letter to Momo
 A Life on the Farm
 A Master Builder
 A Matter of Life and Death
@@ -43,16 +46,19 @@ American Star
 American: An Odyssey to 1947
 Among the Believers
 Amongst the Wolves
+An Oversimplification of Her Beauty
 An Unmarried Woman
 And Then I Go
 And the Band Played On
 Angel Face
+Angel Heart
 Animal Crackers
 Animal Factory
 Anne of Green Gables
 Annie Get Your Gun
 Anote's Ark
 Antarctica: Ice and Sky
+Ants on a Shrimp
 Apprentice
 Are You Proud?
 Arizona Dream
@@ -74,8 +80,13 @@ Ball of Fire
 Band of Robbers
 Barabbas
 Barcelona
+Batman & Mr. Freeze: SubZero
+Batman: Assault on Arkham
+Batman: Gotham by Gaslight
+Batman: Return of the Caped Crusaders
 Beast Beast
 Beau Geste
+Beautiful Darling
 Beauty Mark
 Becoming Bulletproof
 Bell Book and Candle
@@ -87,12 +98,14 @@ Betting on Zero
 Beyond the Valley of the Dolls
 Bhowani Junction
 Big Bad Mama
+Big Fish & Begonia
 Bigger Than Life
 Bill
 Billy Budd
 Billy Liar
 Biloxi Blues
 Bird
+Birdboy: The Forgotten Children
 Black Boys
 Black Cop
 Black Mother
@@ -102,6 +115,7 @@ Black Sunday
 Blaze
 Bless Their Little Hearts
 Blockade
+Blue's Big City Adventure
 Blur: To the End
 Bones of Crows
 Bonjour Tristesse
@@ -129,6 +143,7 @@ Captain Blood
 Captain Horatio Hornblower
 Captain Kidd
 Carville: Winning Is Everything, Stupid
+Castle in the Sky
 Catch-22
 Catching Fire: The Story of Anita Pallenberg
 Catwalk: Tales from the Cat Show Circuit
@@ -154,6 +169,7 @@ Coffy
 Colewell
 Colors
 Colossus: The Forbin Project
+Combat Obscura
 Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean
 Come Back, Little Sheba
 Come and Get It
@@ -178,6 +194,7 @@ Dance, Girl, Dance
 Dangerous Liaisons
 Daphne
 Dark Victory
+David
 David Holzman's Diary
 Days of Wine and Roses
 Dead Calm
@@ -216,6 +233,7 @@ Down by Law
 Downhill Racer
 Downriver
 Dr. Feelgood: Dealer or Healer?
+Dragon Ball Z: Resurrection 'F'
 Dragon: The Bruce Lee Story
 Dragonslayer
 Dream Boat
@@ -239,9 +257,12 @@ Emanuel
 Emergent City
 Emptying the Skies
 Escape from the Planet of the Apes
+Eternal Spring
+Ethel & Ernest
 Eva Hesse
 Ever Deadly
 Every Day in Kaimuki
+Everybody Knows... Elizabeth Murray
 Everything Is Copy
 Ex-Husbands
 Executive Suite
@@ -276,8 +297,10 @@ Float Like a Butterfly
 For Ahkeem
 Forbidden Zone
 Fort Apache
+Frame by Frame
 Fully Realized Humans
 GTFO: Get the F&#% Out
+Gabby's Dollhouse: The Movie
 Ganja & Hess
 Gates of Heaven
 Genesis 2.0
@@ -290,6 +313,7 @@ Give Me Liberty
 Go West
 Going My Way
 Going in Style
+Gold Diggers of 1933
 Goldstone
 Good Bad Things
 Google and the World Brain
@@ -334,8 +358,10 @@ Hondo
 Hopscotch
 Horror Noire: A History of Black Horror
 How to Come Alive with Norman Mailer
+How to Let Go of the World: and Love All the Things Climate Can't Change
 How to Succeed in Business Without Really Trying
 Hysterical Blindness
+I Am Another You
 I Don't Know Who You Are
 I Never Sang for My Father
 I Wake Up Screaming
@@ -356,6 +382,7 @@ India's Daughter
 Indian Horse
 Indian Point
 Inside the Rain
+Inspector Sun
 Internal Affairs
 Into Eternity: A Film for the Future
 Isadora
@@ -366,6 +393,7 @@ It Happens Every Spring
 It's Quieter in the Twilight
 It's a Very Merry Muppet Christmas Movie
 Jack the Giant Killer
+Jamel Shabazz Street Photographer
 James vs. His Future Self
 Janis Ian: Breaking Silence
 Jay Myself
@@ -402,13 +430,16 @@ Last Passenger
 Last Take: Rust and the Story of Halyna
 Laws of Gravity
 Les Girls
+Let the Wrong One In
 Lifechanger
 Lindy Lou, Juror Number 2
 Liquid Sky
 Little Bites
 Little Caesar
+Little Vampire
 Living in Oblivion
 Living in the Future's Past
+Liz and the Blue Bird
 Llyn Foulkes One Man Band
 Look at Us Now, Mother!
 Looking Through Water
@@ -444,6 +475,7 @@ Mali Blues
 Malum
 Man of the West
 Mandrake
+Mapplethorpe: Look at the Pictures
 Mariah Carey's Magical Christmas Special
 Markie in Milwaukee
 Mary Poppins
@@ -451,6 +483,7 @@ Master of Dark Shadows
 Matewan
 Matilda
 Mavis!
+Mavka: The Forest Song
 Maya Angelou And Still I Rise
 McKellen: Playing the Part
 Meadowland
@@ -465,15 +498,19 @@ Mikey and Nicky
 Milford Graves Full Mantis
 Millennium Bugs
 Millie Lies Low
+Mind Game
 Ministry of Fear
+Minuscule: Valley of the Lost Ants
 Miracle in Harlem
 Miss Stevens
 Missing from Fire Trail Road
+Modest Heroes
 Monk in Pieces
 Monte Walsh
 Montréal Girls
 Moonrise
 Morocco
+Mortal Kombat Legends: Scorpion's Revenge
 Mother, May I?
 Mr. Gaga: A True Story of Love and Dance
 Mr. Majestyk
@@ -487,13 +524,17 @@ My Brilliant Career
 My Dinner with Hervé
 My Favorite Year
 My Generation
+My Hero Academia: Two Heroes
+My Love Affair with Marriage
 My Mexican Bretzel
 My Penguin Friend
 Mystery Train
 Mystic Pizza
 NOTFILM
 Nancy Drew and the Hidden Staircase
+Nausicaä of the Valley of the Wind
 Naz & Maalik
+Ne Zha
 Neither Confirm Nor Deny
 Netizens
 Never Steady, Never Still
@@ -505,6 +546,7 @@ Night Train to Munich
 Night at the Eagle Inn
 Night of the Comet
 Night of the Juggler
+Night of the Zoopocalypse
 No Future
 No Way to Treat a Lady
 Normal
@@ -523,6 +565,7 @@ Old Yeller
 Omette: Made in America
 On Any Sunday
 On Dangerous Ground
+On These Grounds
 On a Clear Day You Can See Forever
 On the Beach
 On the Town
@@ -531,16 +574,20 @@ One Road to Quartzsite
 Ornette: Made in America
 Out of the Loop
 Oyate
+PAW Patrol: The Movie
+PAY 2 PLAY: Democracy's High Stakes
 Paint It Black
 Pale Rider
 Party Girl
 Path to War
 Peace by Chocolate
+Penguin Highway
 Pennies from Heaven
 Performance
 Personal Problems
 Peter Ibbetson
 Petulia
+Phantom Boy
 Pianoforte
 Pianomania
 Planet Terror
@@ -549,6 +596,7 @@ Poop Talk
 Porcupine Lake
 Portrait of Jason
 Portrait of Jennie
+Poupelle of Chimney Town
 Pretending I'm a Superman: The Tony Hawk Video Game Story
 Pretty Red Dress
 Prince of the City
@@ -601,6 +649,7 @@ Run Silent Run Deep
 Runoff
 Saboteur
 Sadie
+Sam & Mattie Make a Zombie Movie
 Sands of Iwo Jima
 Santoalla
 Say Her Name: The Life and Death of Sandra Bland
@@ -613,7 +662,9 @@ Seeds
 Semi-Tough
 Sergeant Rutledge
 Sergeant York
+Sgt. Stubby: An American Hero
 Shadowlands
+Shake the Dust
 Sharknado
 Sharky's Machine
 Shock Corridor
@@ -621,6 +672,7 @@ Shot in the Heart
 Show Boat
 Showdown at the Grand
 Silicon Cowboys
+Silk Stockings
 Silkwood
 Silver Haze
 Silver Streak
@@ -641,12 +693,14 @@ Somebody Up There Likes Me
 Something Old, Something New, Something Borrowed
 Sometimes a Great Notion
 Somewhere in the Night
+Son of Bigfoot
 Song of Granite
 Songs My Brothers Taught Me
 Sophie Jones
 Sophie and the Rising Sun
 Sour Grapes
 South Mountain
+Space: The Longest Goodbye
 Sparkling: The Story of Champagne
 Spielberg
 Sprinter
@@ -655,17 +709,20 @@ Star 80
 Start the Revolution Without Me
 Stealing Chaplin
 Stefan Zweig: Farewell to Europe
+Steven Universe: The Movie
 Story Ave
 Straight Time
 Straight Up
 Strange Brew
 Stray Dog
+Stream
 Stretch
 Strike a Pose
 Stunt Rock
 Sublet
 Suck It Up
 Sudden Fear
+Suicide Squad: Hell to Pay
 Summer Stock
 Summertime
 Sun Choke
@@ -674,6 +731,8 @@ Sunday Girl
 Super Fly
 Superhost
 Superman II: The Richard Donner Cut
+Superman: Man of Tomorrow
+Superman: Unbound
 Support Your Local Sheriff!
 Survival Skills
 Swallows and Amazons
@@ -688,6 +747,7 @@ Targets
 Tea and Sympathy
 Tenebrae
 Thank You for Playing
+That's Entertainment!
 That's Not Me
 The 12th Man
 The Accidental Tourist
@@ -704,6 +764,7 @@ The Ballad of Gregorio Cortez
 The Bedford Incident
 The Bells of St. Mary's
 The Belly of an Architect
+The Big Bad Fox and Other Tales
 The Big Clock
 The Big Country
 The Big Fix
@@ -742,6 +803,7 @@ The Diary of Anne Frank
 The Dig
 The Doctor
 The Domestics
+The Donut King
 The Elephant 6 Recording Co.
 The Emerald Forest
 The Enemy Below
@@ -753,12 +815,14 @@ The Fight Machine
 The Flame and the Arrow
 The Flamingo Kid
 The Force
+The Freedom to Marry
 The Gauntlet
 The Ghost Breakers
 The Ghost and Mrs. Muir
 The Girl Can't Help It
 The Glass Key
 The Glenn Miller Story
+The Golem
 The GoodTimesKid
 The Gospel of Eureka
 The Grab
@@ -793,6 +857,7 @@ The Last Wave
 The Last of Sheila
 The Learning Tree
 The Left Handed Gun
+The Leopard Man
 The Levelling
 The Life and Death of Colonel Blimp
 The Life and Times of Judge Roy Bean
@@ -806,6 +871,7 @@ The Man Who Saw Too Much
 The Man Who Would Be King
 The Man from Laramie
 The Man with the Answers
+The Many Adventures of Winnie the Pooh
 The Melt Goes on Forever: The Art & Times of David Hammons
 The Merger
 The Midnight Swim
@@ -819,6 +885,7 @@ The Naked Kiss
 The Naked Prey
 The Naked and the Dead
 The Newspaperman: The Life and Times of Ben Bradlee
+The Night Is Short, Walk on Girl
 The Night Stalker
 The Ninth Configuration
 The Occupant
@@ -841,6 +908,7 @@ The Quiet Epidemic
 The Railway Children
 The Rain People
 The Red Badge of Courage
+The Reflecting Skin
 The Reivers
 The Road Dance
 The Roaring Twenties
@@ -862,6 +930,7 @@ The Snows of Kilimanjaro
 The Song of Bernadette
 The Sound Barrier
 The Spiral Staircase
+The SpongeBob Movie: Search for SquarePants
 The Spook Who Sat by the Door
 The Spy Who Came in from the Cold
 The Story of Adele H
@@ -882,9 +951,11 @@ The Trip to Bountiful
 The Trotsky
 The Trouble with Angels
 The Tuskegee Airmen
+The United States of Insanity
 The War Room
 The Westerner
 The Wild Geese
+The Witch Who Came from the Sea
 The Witches of the Orient
 The Wobblies
 The Women of Brewster Place
@@ -895,6 +966,7 @@ The Year Between
 The Yearling
 The YouTube Effect
 The Youth Governor
+Thelonious Monk: Straight, No Chaser
 There's Always Tomorrow
 They Call Us Monsters
 They Drive by Night
@@ -912,6 +984,8 @@ Thunderbolt and Lightfoot
 Thunderheart
 Tiger Orange
 Till the Clouds Roll By
+Tinker Bell
+Tinker Bell and the Lost Treasure
 Titicut Follies
 Too Late for Tears
 Toxic Beauty
@@ -926,12 +1000,14 @@ Turbo Cola
 Turn It Around: The Story of East Bay Punk
 Twelfth Night
 Twelfth Night
+Twinsters
 Two Lovers and a Bear
 Two Weeks in Another Town
 Two Years at Sea
 Ulzana's Raid
 Unfaithfully Yours
 Unmade Beds
+Unrest
 Until the End of the World
 Uproar
 V/H/S/85
@@ -945,14 +1021,20 @@ Waitress: The Musical
 War Requiem
 Washington Square
 Watch on the Rhine
+Watership Down
 We Go On
+We the People: The Market Basket Effect
 Wexford Plaza
 What Lies West
 What Our Fathers Did: A Nazi Legacy
 What You Wish For
+When I Consume You
+When the Beat Drops
+When the Wind Blows
 Where Eagles Dare
 Where's Poppa?
 While the City Sleeps
+Whisper of the Heart
 White Bird
 Who Is Killing the Great Chefs of Europe?
 Wichita
@@ -971,8 +1053,10 @@ Woman on the Run
 Woodlawn
 Working Girls
 Written on the Wind
+Yarn
 Yes
 You'll Never Get Rich
 Young Mr. Lincoln
 Your Lucky Day
 Yours in Sisterhood
+Zoo
