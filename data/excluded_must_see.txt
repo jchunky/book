@@ -10,8 +10,11 @@ Bang the Drum Slowly
 Barbie
 Ben-Hur
 Bergman Island
+Billy Liar
 Black Mother
 Black Sabbath
+Bugsy
+Cabaret
 California Typewriter
 Call Me Kuchu
 Can You Bring It: Bill T. Jones and D-Man in the Waters
@@ -19,6 +22,7 @@ Cane River
 Children of a Lesser God
 Close Encounters of the Third Kind
 Closet Monster
+Cow
 David Crosby: Remember My Name
 Dawson City: Frozen Time
 Dead Man Walking
@@ -39,6 +43,7 @@ Going My Way
 Goldfinger
 Good Time
 Hesburgh
+Hombre
 I Was a Simple Man
 In Jackson Heights
 In the Summers
@@ -47,9 +52,13 @@ Journey to Italy
 Lean on Pete
 Light from Light
 Linoleum
+Love & Mercy
+Love Affair
 M*A*S*H
+Medium Cool
 Minority Report
 Miracle on 34th Street
+Modern Times
 Mountain
 Much Ado About Nothing
 Mystery Train
@@ -62,18 +71,27 @@ Once Upon a Time in the West
 One Cut of the Dead
 Personal Problems
 Portrait of Jason
+Prince of the City
 Relaxer
 Resolution
 Restless Creature: Wendy Whelan
 Ride the High Country
 Rose Plays Julie
+Sherpa
+Star Wars: Episode VII - The Force Awakens
 Strange Darling
 Stray
 Sweet Smell of Success
+Tenebrae
+The Adventures of Robin Hood
 The Awful Truth
+The Beast
+The Conformist
+The Fallout
 The Force
 The Friends of Eddie Coyle
 The Good, the Bad and the Ugly
+The Gunfighter
 The Killing of Kenneth Chamberlain
 The Lavender Hill Mob
 The Levelling
@@ -82,40 +100,24 @@ The Odd Couple
 The Old Man & the Gun
 The Philadelphia Story
 The Producers
+The Remains of the Day
 The Roaring Twenties
 The Settlers
 The Sundowners
 The Trip to Bountiful
 The Unknown Country
+The Wrestler
 The Yearling
 They Live by Night
 Trophy
+True Grit
 Turn Every Page: The Adventures of Robert Caro and Robert Gottlieb
 Wattstax
+Waves
 We the Animals
 Wild Rose
+Wildlife
 Wobble Palace
 X
 You Hurt My Feelings
 Young Mr. Lincoln
-Bugsy
-Cabaret
-Cow
-Hombre
-Love & Mercy
-Love Affair
-Medium Cool
-Modern Times
-Prince of the City
-Sherpa
-Star Wars: Episode VII - The Force Awakens
-Tenebrae
-The Adventures of Robin Hood
-The Beast
-The Conformist
-The Gunfighter
-The Remains of the Day
-The Wrestler
-True Grit
-Waves
-Wildlife

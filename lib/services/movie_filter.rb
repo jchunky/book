@@ -7,7 +7,7 @@ module Services
     def keep?
       return false if animation? || documentary? || horror? || musical?
       return false unless certified_fresh?
-      return false if restricted?
+      # return false if restricted?
       # return false unless must_see?
 
       true
