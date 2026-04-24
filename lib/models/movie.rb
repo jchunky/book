@@ -42,6 +42,7 @@ module Models
     def documentary? = Models::Genre.documentary?(self)
     def horror? = Models::Genre.horror?(self)
     def musical? = Models::Genre.musical?(self)
+    def tv_series? = Models::Genre.tv_series?(self)
     def restricted? = Models::ContentRating.restricted?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
