@@ -23,6 +23,7 @@ module Models
     def self.documentary?(item) = item.genre.include?("Documentary")
     def self.horror?(item) = item.genre.include?("Horror")
     def self.musical?(item) = item.genre.include?("Musical")
+    def self.tv_series?(item) = Array(item.genre_form).any? { |g| g.match?(/television/i) }
 
     def to_html
       %(<span style="color: #{color}; font-weight: bold;">#{name}</span>)
