@@ -108,6 +108,7 @@ Biloxi Blues
 Bird
 Birdboy: The Forgotten Children
 Black Boys
+Black Code
 Black Cop
 Black Mother
 Black Robe
@@ -139,6 +140,7 @@ Bye Bye Birdie
 Cactus Flower
 Can You Bring It: Bill T. Jones and D-Man in the Waters
 Candy Land
+Cane Fire
 Cane River
 Cannery Row
 Captain Blood
@@ -262,6 +264,7 @@ Emergent City
 Emptying the Skies
 Escape from the Planet of the Apes
 Eternal Spring
+Eternal You
 Ethel & Ernest
 Eva Hesse
 Ever Deadly
@@ -298,6 +301,7 @@ Flesh+Blood
 Flex Is Kings
 Flight of the Navigator
 Float Like a Butterfly
+Food, Inc. 2
 For Ahkeem
 Forbidden Zone
 Fort Apache
@@ -309,6 +313,7 @@ Ganja & Hess
 Gates of Heaven
 Genesis 2.0
 Genghis Blues
+Geoff McFetridge: Drawing a Life
 Get Carter
 Girl Asleep
 Girl Crazy
@@ -338,6 +343,7 @@ Hannah
 Hansel and Gretel
 Happy Cleaners
 Hard Miles
+Hardware Wars
 Harold and Lillian: A Hollywood Love Story
 Harper
 He Ran All the Way
@@ -496,6 +502,7 @@ Meadowland
 Meat the Future
 Medium Cool
 Meeting Venus
+Memoria
 Merrily We Go to Hell
 Mia and the White Lion
 Midnight Lace
@@ -510,6 +517,7 @@ Minuscule: Valley of the Lost Ants
 Miracle in Harlem
 Miss Stevens
 Missing from Fire Trail Road
+Mississippi Burning
 Modest Heroes
 Monk in Pieces
 Monte Walsh
@@ -753,6 +761,7 @@ Tahara
 Take Out Girl
 Targets
 Tea and Sympathy
+Tender Mercies
 Tenebrae
 Thank You for Playing
 That's Entertainment!
@@ -803,6 +812,7 @@ The Dalai Lama: Scientist
 The Dam Busters
 The Dark Corner
 The Dark End of the Street
+The Dark Red
 The Day the Earth Caught Fire
 The Dead Center
 The Desert Rats
@@ -910,6 +920,7 @@ The Pearl
 The Pez Outlaw
 The Pirates of Penzance
 The Positively True Adventures of the Alleged Texas Cheerleader-Murdering Mom
+The Prime of Miss Jean Brodie
 The Private Life of Henry VIII
 The Private Life of Sherlock Holmes
 The Queen of Spades
@@ -996,6 +1007,7 @@ Till the Clouds Roll By
 Tinker Bell
 Tinker Bell and the Lost Treasure
 Titicut Follies
+To Walk Invisible: The Brontë Sisters
 Too Late for Tears
 Toxic Beauty
 Tread
@@ -1014,7 +1026,9 @@ Two Lovers and a Bear
 Two Weeks in Another Town
 Two Years at Sea
 Ulzana's Raid
+Uncropped
 Unfaithfully Yours
+Unfit: The Psychology of Donald Trump
 Unmade Beds
 Unrest
 Until the End of the World
