@@ -30,7 +30,7 @@ module Downloaders
 
     def info(title:, year:)
       titles = [title]
-      base = title.split(":").first.strip
+      base = title.split(":").first.to_s.strip
       titles << base if base != title
 
       titles.each do |t|
