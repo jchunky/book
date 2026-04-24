@@ -3,13 +3,12 @@
 module Services
   class MovieLibrary
     def movies
-      search = Downloaders::BibliocommonsSearch.new do |page|
-        url_for_page(page)
-      end
-      sorted = search.fetch_all { |bib| bib_to_movie(bib) }
+      Downloaders::BibliocommonsSearch
+        .new { |page| url_for_page(page) }
+        .fetch_all { |bib| bib_to_movie(bib) }
+        .reject(&:tv_series?)
         .sort_by { |m| -m.popularity.score }
-
-      enrich_with_omdb(sorted)
+        .then { |movies| enrich_with_omdb(movies) }
         .select(&:keep?)
     end
 
