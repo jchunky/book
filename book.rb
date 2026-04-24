@@ -12,7 +12,7 @@ Loader.setup
 class Book
   def run
     books = Models::Book.all
-    movies = Models::Movie.all
+    movies = Models::Movie.all.select(&:keep?)
 
     puts "Books: #{books.count}, Movies: #{movies.count}"
 

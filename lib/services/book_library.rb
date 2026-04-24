@@ -3,10 +3,9 @@
 module Services
   class BookLibrary
     def books
-      search = Downloaders::BibliocommonsSearch.new do |page|
-        url_for_page(page)
-      end
-      search.fetch_all { |bib| bib_to_book(bib) }
+      Downloaders::BibliocommonsSearch
+        .new { |page| url_for_page(page) }
+        .fetch_all { |bib| bib_to_book(bib) }
         .select(&:keep?)
         .sort_by { |b| -b.popularity.score }
         .first(30)

@@ -9,7 +9,6 @@ module Services
         .reject(&:tv_series?)
         .sort_by { |m| -m.popularity.score }
         .then { |movies| enrich_with_omdb(movies) }
-        .select(&:keep?)
     end
 
     private

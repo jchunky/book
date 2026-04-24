@@ -11,13 +11,13 @@ Loader.setup
 
 class UpdateProcessedMovies
   def run
-    movies = Models::Movie.all
-    qualifying = movies.select { |m| m.rotten_tomatoes.fresh? || m.metacritic.must_see? }
-    titles = qualifying.map(&:display_title).map(&:to_s).sort.uniq
-
-    File.write("data/processed_movies.txt", "#{titles.join("\n")}\n")
-
-    puts "Processed movies: #{titles.count}"
+    Models::Movie.all
+      .select { |m| m.rotten_tomatoes.fresh? || m.metacritic.must_see? }
+      .map(&:display_title).map(&:to_s).sort.uniq
+      .then do |titles|
+        File.write("data/processed_movies.txt", "#{titles.join("\n")}\n")
+        puts "Processed movies: #{titles.count}"
+      end
   end
 end
 
