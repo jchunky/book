@@ -48,5 +48,6 @@ module Models
     def metacritic_url = GoogleRedirectUrl.new("site:metacritic.com/movie", display_title, display_year)
     def must_see_excluded? = Config::ExcludedTitles::MUST_SEE.include?(display_title)
     def certified_fresh_excluded? = Config::ExcludedTitles::CERTIFIED_FRESH.include?(display_title)
+    def processed? = Config::ProcessedTitles::ALL.include?(display_title)
   end
 end
