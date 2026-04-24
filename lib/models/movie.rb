@@ -12,6 +12,7 @@ module Models
              :popularity,
              :audiences,
              :content_type,
+             :genre_form,
              :jacket_url,
              :jacket_url_medium,
              :description,
