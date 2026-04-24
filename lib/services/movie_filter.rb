@@ -11,6 +11,7 @@ module Services
       # return false if juvenile?
       # return false unless teen?
       # return false unless must_see?
+      return false if processed?
       return false unless must_see? || certified_fresh?
 
       true

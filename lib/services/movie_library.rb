@@ -27,7 +27,6 @@ module Services
       params = "?query=isolanguage%3A%22eng%22%20formatcode%3A(DVD%20)"
       params += "&searchType=bl&suppress=true"
       params += "&f_PRIMARY_LANGUAGE=eng&f_CIRC=CIRC"
-      params += "&f_GENRE_HEADINGS=Feature%20films"
       params += "&sort=newly_acquired"
       params += "&page=#{page}" if page > 1
       "#{Downloaders::BibliocommonsSearch::BASE_URL}#{params}"
