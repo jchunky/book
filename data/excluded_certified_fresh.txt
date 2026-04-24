@@ -52,6 +52,7 @@ And Then I Go
 And the Band Played On
 Angel Face
 Angel Heart
+Angelheaded Hipster: The Songs of Marc Bolan & T. Rex
 Animal Crackers
 Animal Factory
 Anne of Green Gables
@@ -119,6 +120,7 @@ Blue's Big City Adventure
 Blur: To the End
 Bones of Crows
 Bonjour Tristesse
+BookWars
 Braid
 Braven
 Breaker Morant
@@ -144,6 +146,7 @@ Captain Horatio Hornblower
 Captain Kidd
 Carville: Winning Is Everything, Stupid
 Castle in the Sky
+Cat Daddies
 Catch-22
 Catching Fire: The Story of Anita Pallenberg
 Catwalk: Tales from the Cat Show Circuit
@@ -197,6 +200,7 @@ Dark Victory
 David
 David Holzman's Diary
 Days of Wine and Roses
+Daytime Revolution
 Dead Calm
 Dead Dicks
 Dead Men Don't Wear Plaid
@@ -372,6 +376,7 @@ I Will Follow
 I'll Show You Mine
 I'm No Angel
 Imitation of Life
+In Between Days
 In Pursuit of Silence
 In Search of Fellini
 In Search of Greatness
@@ -408,6 +413,7 @@ Julius Caesar
 Jurassic Punk
 Just Charlie
 Just Eat It: A Food Waste Story
+Justice League: The Flashpoint Paradox
 Kansas City Confidential
 Karl Marx City
 Kelly's Heroes
@@ -655,6 +661,7 @@ Santoalla
 Say Her Name: The Life and Death of Sandra Bland
 Scalene
 Scarlet Street
+Scenes from an Empty Church
 Scenes from the Class Struggle in Beverly Hills
 Screwball
 Searching for Mr. Rugoff
@@ -732,6 +739,7 @@ Super Fly
 Superhost
 Superman II: The Richard Donner Cut
 Superman: Man of Tomorrow
+Superman: Red Son
 Superman: Unbound
 Support Your Local Sheriff!
 Survival Skills
@@ -788,6 +796,7 @@ The Cincinnati Kid
 The Clovehitch Killer
 The Cocoanuts
 The Cold Blue
+The Corridors of Power
 The Creeping Garden
 The Crow
 The Dalai Lama: Scientist
@@ -1024,6 +1033,7 @@ Watch on the Rhine
 Watership Down
 We Go On
 We the People: The Market Basket Effect
+Western Union
 Wexford Plaza
 What Lies West
 What Our Fathers Did: A Nazi Legacy
@@ -1040,6 +1050,7 @@ Who Is Killing the Great Chefs of Europe?
 Wichita
 Wigstock: The Movie
 Wildhood
+Wildlike
 Will Penny
 William S. Burroughs: A Man Within
 Winchester '73
