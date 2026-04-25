@@ -9,12 +9,14 @@ A Bay of Blood
 A Better Man
 A Boy and His Dog
 A Brixton Tale
+A Bronx Tale
 A Child Is Waiting
 A Christmas Horror Story
 A Cry in the Dark
 A Foreign Affair
 A Good American
 A Gray State
+A Handful of Dust
 A Letter to Momo
 A Life on the Farm
 A Master Builder
@@ -47,6 +49,7 @@ American Star
 American: An Odyssey to 1947
 Among the Believers
 Amongst the Wolves
+An Officer and a Gentleman
 An Oversimplification of Her Beauty
 An Unmarried Woman
 And Then I Go
@@ -80,6 +83,7 @@ Bachelor Mother
 Bad Day at Black Rock
 Ball of Fire
 Band of Robbers
+Banksy Most Wanted
 Barabbas
 Barcelona
 Batman & Mr. Freeze: SubZero
@@ -160,6 +164,7 @@ Charming the Hearts of Men
 Chemsex
 Children of a Lesser God
 Chrissy Judy
+Christmas in Connecticut
 Chuck Chuck Baby
 Chutney Popcorn
 Circle of Friends
@@ -401,6 +406,7 @@ India Sweets and Spices
 India's Daughter
 Indian Horse
 Indian Point
+Inherent Vice
 Inside the Rain
 Inspector Sun
 Internal Affairs
@@ -849,6 +855,7 @@ The Donut King
 The Elephant 6 Recording Co.
 The Emerald Forest
 The Enemy Below
+The Exiles
 The Fabulous Baker Boys
 The Fall of the Roman Empire
 The Family Jewels
@@ -893,6 +900,7 @@ The Keeper
 The Killing of Kenneth Chamberlain
 The Killing of a Chinese Bookie
 The King Tide
+The King and I
 The Laramie Project
 The Last Daughter
 The Last Days of Chez Nous
@@ -969,6 +977,7 @@ The Sheik
 The Shooting
 The Shootist
 The Short History of the Long Road
+The Silence of Others
 The Silent Partner
 The Sisterhood of Night
 The Sleeping Beauty
@@ -1014,6 +1023,7 @@ The Year Between
 The Year of the Everlasting Storm
 The Yearling
 The YouTube Effect
+The Young Lions
 The Youth Governor
 Thelonious Monk: Straight, No Chaser
 There's Always Tomorrow
