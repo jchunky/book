@@ -4,6 +4,7 @@
 1984
 3 Backyards
 8-Bit Christmas
+84 Charing Cross Road
 A Bay of Blood
 A Better Man
 A Boy and His Dog
@@ -207,6 +208,7 @@ Dead Calm
 Dead Dicks
 Dead Men Don't Wear Plaid
 Dealing with Dad
+Dear Mr. Brody
 Deathtrap
 Descendants 2
 Descendants 3
@@ -366,6 +368,7 @@ High Tide
 Higher Love
 Hobson's Choice
 Hombre
+Homeward Bound: The Incredible Journey
 Homicide
 Hondo
 Hopscotch
@@ -400,6 +403,7 @@ Inside the Rain
 Inspector Sun
 Internal Affairs
 Into Eternity: A Film for the Future
+Invisible Beauty
 Isadora
 It Always Rains on Sunday
 It Could Happen to You
@@ -501,6 +505,7 @@ Mary Poppins
 Master of Dark Shadows
 Matewan
 Matilda
+Maurice
 Mavis!
 Mavka: The Forest Song
 Maya Angelou And Still I Rise
@@ -533,6 +538,7 @@ Moonrise
 Morocco
 Mortal Kombat Legends: Scorpion's Revenge
 Mother, May I?
+Motherly
 Mr. Gaga: A True Story of Love and Dance
 Mr. Majestyk
 Mr. Mom
@@ -540,9 +546,11 @@ Much Ado
 Much Ado About Dying
 Multiple Maniacs
 Murder Bury Win
+Murder She Said
 Museum Town
 My Brilliant Career
 My Dinner with Hervé
+My Favorite Wife
 My Favorite Year
 My Generation
 My Hero Academia: Two Heroes
@@ -570,6 +578,7 @@ Night of the Juggler
 Night of the Zoopocalypse
 No Future
 No Way to Treat a Lady
+Nomad: In the Footsteps of Bruce Chatwin
 Normal
 Not a Pretty Picture
 Notes on an Appearance
@@ -592,6 +601,7 @@ On the Beach
 On the Town
 One Potato, Two Potato
 One Road to Quartzsite
+Only Angels Have Wings
 Ornette: Made in America
 Out of the Loop
 Oyate
@@ -836,6 +846,7 @@ The Elephant 6 Recording Co.
 The Emerald Forest
 The Enemy Below
 The Fabulous Baker Boys
+The Fall of the Roman Empire
 The Family Jewels
 The Farmer's Daughter
 The Feeling of Being Watched
@@ -942,6 +953,7 @@ The Reivers
 The Road Dance
 The Roaring Twenties
 The Russian Five
+The Russians Are Coming the Russians Are Coming
 The Saint of Fort Washington
 The Scarlet Empress
 The Seduction of Joe Tynan
@@ -962,6 +974,7 @@ The Spiral Staircase
 The SpongeBob Movie: Search for SquarePants
 The Spook Who Sat by the Door
 The Spy Who Came in from the Cold
+The Story Won't Die
 The Story of Adele H
 The Story of Temple Drake
 The Strange Love of Martha Ivers
@@ -992,6 +1005,7 @@ The World Before Your Feet
 The Wrong Box
 The Wrong Light
 The Year Between
+The Year of the Everlasting Storm
 The Yearling
 The YouTube Effect
 The Youth Governor
@@ -1057,6 +1071,7 @@ Washington Square
 Watch on the Rhine
 Watership Down
 We Go On
+We Have Always Lived in the Castle
 We the People: The Market Basket Effect
 Western Union
 Wexford Plaza
