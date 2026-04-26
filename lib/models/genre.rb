@@ -21,6 +21,8 @@ module Models
     def self.science_fiction?(item) = item.genre == "SCIENCE FICTION"
     def self.animation?(item) = item.genre.include?("Animation")
     def self.documentary?(item) = item.genre.include?("Documentary")
+    def self.action?(item) = item.genre.include?("Action")
+    def self.comedy?(item) = item.genre.include?("Comedy")
     def self.horror?(item) = item.genre.include?("Horror")
     def self.musical?(item) = item.genre.include?("Musical")
     def self.tv_series?(item) = Array(item.genre_form).any? { |g| g.match?(/television/i) }

@@ -35,6 +35,8 @@ module Models
     def adult? = Models::Audience.adult?(self)
     def animation? = Models::Genre.animation?(self)
     def documentary? = Models::Genre.documentary?(self)
+    def action? = Models::Genre.action?(self)
+    def comedy? = Models::Genre.comedy?(self)
     def horror? = Models::Genre.horror?(self)
     def musical? = Models::Genre.musical?(self)
     def tv_series? = Models::Genre.tv_series?(self)
