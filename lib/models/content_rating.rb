@@ -16,6 +16,7 @@ module Models
     end
 
     def self.restricted?(item) = item.rated == "R"
+    def self.rated?(item) = BY_NAME[item.rated]
 
     def to_html
       %(<span style="color: #{color}; font-weight: bold;">#{name}</span>)
