@@ -21,6 +21,7 @@ A Letter to Momo
 A Life on the Farm
 A Master Builder
 A Matter of Life and Death
+A Passage to India
 A Perfect World
 A Room with a View
 A Soldier's Story
@@ -57,6 +58,7 @@ And the Band Played On
 Angel Face
 Angel Heart
 Angelheaded Hipster: The Songs of Marc Bolan & T. Rex
+Angry Inuk
 Animal Crackers
 Animal Factory
 Anne of Green Gables
@@ -152,6 +154,7 @@ Cannery Row
 Captain Blood
 Captain Horatio Hornblower
 Captain Kidd
+Carnal Knowledge
 Carville: Winning Is Everything, Stupid
 Castle in the Sky
 Cat Daddies
@@ -205,6 +208,7 @@ Dad & Step-Dad
 Dance, Girl, Dance
 Dangerous Liaisons
 Daphne
+Dark Passage
 Dark Victory
 David
 David Holzman's Diary
@@ -290,6 +294,7 @@ Fahrenheit 451
 Fail Safe
 Fancy Pants
 Far North
+Farewell, My Lovely
 Fat City
 Faults
 Feast of the Seven Fishes
@@ -440,6 +445,7 @@ Just Eat It: A Food Waste Story
 Justice League: The Flashpoint Paradox
 Kansas City Confidential
 Karl Marx City
+Kati with an I
 Kelly's Heroes
 Kes
 Key Largo
@@ -594,6 +600,7 @@ Not a Pretty Picture
 Notes on an Appearance
 Nothing Sacred
 Now, Voyager
+Nuclear Now
 Nurse.Fighter.Boy
 Oasis Knebworth 1996
 Obey
@@ -744,6 +751,7 @@ Sophie Jones
 Sophie and the Rising Sun
 Sour Grapes
 South Mountain
+South Pacific
 Space: The Longest Goodbye
 Sparkling: The Story of Champagne
 Spielberg
@@ -872,12 +880,14 @@ The Gauntlet
 The Ghost Breakers
 The Ghost and Mrs. Muir
 The Girl Can't Help It
+The Girl Who Leapt Through Time
 The Glass Key
 The Glenn Miller Story
 The Golem
 The GoodTimesKid
 The Gospel of Eureka
 The Grab
+The Grass Is Greener
 The Great McGinty
 The Great Santini
 The Grief of Others
@@ -940,6 +950,7 @@ The Naked and the Dead
 The Newspaperman: The Life and Times of Ben Bradlee
 The Night Is Short, Walk on Girl
 The Night Stalker
+The Night of the Iguana
 The Ninth Configuration
 The Occupant
 The Other Fellow
@@ -1006,9 +1017,11 @@ The Thief of Bagdad
 The Thrill of It All
 The Tin Star
 The Tracker
+The Trip
 The Trip to Bountiful
 The Trotsky
 The Trouble with Angels
+The Trouble with Harry
 The Tuskegee Airmen
 The United States of Insanity
 The War Room
@@ -1050,6 +1063,7 @@ Tinker Bell
 Tinker Bell and the Lost Treasure
 Titicut Follies
 To Have and Have Not
+To Sir, with Love
 To Walk Invisible: The Brontë Sisters
 Too Late for Tears
 Toxic Beauty
@@ -1077,6 +1091,7 @@ Unrest
 Until the End of the World
 Uproar
 V/H/S/85
+Vanya on 42nd Street
 Variety
 Victor Frankenstein
 Vinyl Nation
