@@ -10,7 +10,7 @@ module Services
       return false unless rated?
       return false if juvenile?
       return false unless must_see?
-      # return false unless popularity.to_i >= 100
+      return false unless popularity.to_i >= 100
 
       # return false if restricted?
       # return false unless teen?
