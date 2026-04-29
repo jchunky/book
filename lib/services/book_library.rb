@@ -14,7 +14,7 @@ module Services
     private
 
     def url_for_page(page)
-      params = "?query=avlocation%3A%22Parkdale%22"
+      params = "?query=avlocation%3A%22High%20Park%22"
       params += "&searchType=bl&suppress=true"
       params += "&f_FORMAT=BK&f_CIRC=CIRC&f_PRIMARY_LANGUAGE=eng"
       params += "&page=#{page}" if page > 1
