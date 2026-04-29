@@ -32,6 +32,7 @@ A Taste of Honey
 A Woman Under the Influence
 A Woman, a Part
 Aberdeen
+Across 110th Street
 Across the Pacific
 Across the River and Into the Trees
 Actor Martinez
@@ -87,6 +88,7 @@ Atlantic City
 Auntie Mame
 Avalon
 Aviva
+Awakenings
 Ayar
 Bachelor Mother
 Bad Day at Black Rock
@@ -114,6 +116,7 @@ Betting on Zero
 Beyond the Valley of the Dolls
 Bhowani Junction
 Big Bad Mama
+Big Boys Gone Bananas!*
 Big Fish & Begonia
 Bigger Than Life
 Bill
@@ -122,6 +125,7 @@ Billy Liar
 Biloxi Blues
 Bird
 Birdboy: The Forgotten Children
+Birdman of Alcatraz
 Black Boys
 Black Code
 Black Cop
@@ -289,6 +293,7 @@ Elmer Gantry
 Emanuel
 Emergent City
 Emptying the Skies
+Escape from Alcatraz
 Escape from the Planet of the Apes
 Eternal Spring
 Eternal You
@@ -408,6 +413,7 @@ Hopscotch
 Horror Noire: A History of Black Horror
 How to Come Alive with Norman Mailer
 How to Let Go of the World: and Love All the Things Climate Can't Change
+How to Marry a Millionaire
 How to Steal a Million
 How to Succeed in Business Without Really Trying
 Hysterical Blindness
@@ -415,6 +421,7 @@ I Am Another You
 I Am Richard Pryor
 I Don't Know Who You Are
 I Got a Monster
+I Married a Witch
 I Never Sang for My Father
 I Wake Up Screaming
 I Wanna Hold Your Hand
@@ -429,11 +436,13 @@ In Pursuit of Silence
 In Search of Fellini
 In Search of Greatness
 In Search of Israeli Cuisine
+In Search of Mozart
 In the Company of Rose
 India Sweets and Spices
 India's Daughter
 Indian Horse
 Indian Point
+Influence
 Inherent Vice
 Inherit the Wind
 Inside the Rain
@@ -499,6 +508,7 @@ Leaving Home, Coming Home: A Portrait of Robert Frank
 Les Girls
 Let the Wrong One In
 Letters from Baghdad
+Levitated Mass
 Lifechanger
 Lindy Lou, Juror Number 2
 Lion of the Desert
@@ -510,6 +520,7 @@ Living in Oblivion
 Living in the Future's Past
 Liz and the Blue Bird
 Llyn Foulkes One Man Band
+London River
 Look at Us Now, Mother!
 Looking Through Water
 Loopers: The Caddie's Long Walk
@@ -565,6 +576,7 @@ McKellen: Playing the Part
 Meadowland
 Meat the Future
 Medium Cool
+Meet John Doe
 Meeting Venus
 Memoria
 Merrily We Go to Hell
@@ -626,6 +638,7 @@ Naz & Maalik
 Ne Zha
 Neither Confirm Nor Deny
 Netizens
+Never Cry Wolf
 Never Steady, Never Still
 New Jack City
 New Waterford Girl
@@ -666,6 +679,7 @@ One Potato, Two Potato
 One Road to Quartzsite
 Only Angels Have Wings
 Ornette: Made in America
+Our Man in Havana
 Out of the Loop
 Oyate
 PAW Patrol: The Movie
@@ -673,6 +687,7 @@ PAY 2 PLAY: Democracy's High Stakes
 Page Eight
 Paint It Black
 Pale Rider
+Paradise Lost 3: Purgatory
 Party Girl
 Path to War
 Peace by Chocolate
@@ -688,6 +703,7 @@ Pianomania
 Places in the Heart
 Planet Terror
 Platinum Blonde
+Play It Again, Sam
 Poop Talk
 Porcupine Lake
 Portrait of Jason
@@ -802,6 +818,7 @@ Song of the Thin Man
 Songs My Brothers Taught Me
 Sophie Jones
 Sophie and the Rising Sun
+Sorry, Wrong Number
 Sour Grapes
 South Mountain
 South Pacific
@@ -904,6 +921,7 @@ The Clovehitch Killer
 The Cocoanuts
 The Cold Blue
 The Corridors of Power
+The Country Girl
 The Court Jester
 The Creeping Garden
 The Crow
@@ -924,6 +942,7 @@ The Domestics
 The Donut King
 The Elephant 6 Recording Co.
 The Emerald Forest
+The Endless Summer
 The Enemy Below
 The Exiles
 The Fabulous Baker Boys
@@ -950,6 +969,7 @@ The Gospel of Eureka
 The Grab
 The Grass Is Greener
 The Great McGinty
+The Great Rock 'n' Roll Swindle
 The Great Santini
 The Grief of Others
 The Grizzlies
@@ -1008,6 +1028,7 @@ The Midnight Swim
 The Mimic
 The Miracle Worker
 The Misandrists
+The Misfits
 The Missionary
 The Missouri Breaks
 The Mosquito Coast
@@ -1025,6 +1046,7 @@ The Occupant
 The Other Fellow
 The Other Zoey
 The Owl and the Pussycat
+The Ox-Bow Incident
 The Pajama Game
 The Paper
 The Party's Just Beginning
@@ -1083,6 +1105,7 @@ The Story of Temple Drake
 The Strange Love of Martha Ivers
 The Subject Was Roses
 The Sundowners
+The Sunshine Makers
 The Super Cops
 The Suspect
 The Swimmer
@@ -1103,6 +1126,7 @@ The United States of Insanity
 The War Room
 The Way of the Dragon
 The Westerner
+The White Stripes Under Great White Northern Lights
 The Wild Geese
 The Winslow Boy
 The Witch Who Came from the Sea
@@ -1110,15 +1134,18 @@ The Witches of the Orient
 The Wobblies
 The Women of Brewster Place
 The World Before Your Feet
+The World of Henry Orient
 The Wrong Box
 The Wrong Light
 The Year Between
+The Year of Living Dangerously
 The Year of the Everlasting Storm
 The Yearling
 The YouTube Effect
 The Young Lions
 The Youth Governor
 Thelonious Monk: Straight, No Chaser
+Theory of Obscurity: A Film About the Residents
 There's Always Tomorrow
 They Call Us Monsters
 They Drive by Night
@@ -1182,6 +1209,7 @@ Waitress: The Musical
 War Requiem
 Washington Square
 Watch on the Rhine
+Watchers of the Sky
 Watermark
 Watership Down
 We Go On
@@ -1194,6 +1222,7 @@ What Our Fathers Did: A Nazi Legacy
 What You Wish For
 When I Consume You
 When the Beat Drops
+When the Levees Broke: A Requiem in Four Acts
 When the Wind Blows
 Where Eagles Dare
 Where's Poppa?
