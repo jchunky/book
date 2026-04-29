@@ -16,6 +16,7 @@ Big Night
 Billy Liar
 Black Mother
 Black Sabbath
+Bring Me the Head of Alfredo Garcia
 Bugsy
 Cabaret
 California Typewriter
@@ -34,6 +35,7 @@ Dead Man Walking
 Deliverance
 Destry Rides Again
 Dirty Harry
+Donnie Darko
 Dr. Jekyll and Mr. Hyde
 Dreamcatcher
 Dumbo
@@ -54,6 +56,7 @@ Goldfinger
 Good Time
 Hannah and Her Sisters
 Hearts of Darkness: A Filmmaker's Apocalypse
+Henry: Portrait of a Serial Killer
 Hesburgh
 Hombre
 Howards End
@@ -82,6 +85,7 @@ Miracle on 34th Street
 Modern Times
 Mountain
 Much Ado About Nothing
+Mutiny on the Bounty
 My Love Affair with Marriage
 Mystery Train
 NOTFILM
@@ -108,6 +112,7 @@ Ride the High Country
 Rose Plays Julie
 Sherpa
 Sleeping Beauty
+Spellbound
 Star Wars: Episode VII - The Force Awakens
 Strange Darling
 Stranger Than Paradise
@@ -128,13 +133,17 @@ The Good, the Bad and the Ugly
 The Gunfighter
 The Hours
 The Killing of Kenneth Chamberlain
+The Last Temptation of Christ
 The Lavender Hill Mob
 The Levelling
+The Man Who Fell to Earth
+The Man Who Shot Liberty Valance
 The Miracle Worker
 The Odd Couple
 The Old Man & the Gun
 The Philadelphia Story
 The Producers
+The Queen of Versailles
 The Remains of the Day
 The Roaring Twenties
 The Secret World of Arrietty
@@ -146,6 +155,7 @@ The Unknown Country
 The Wrestler
 The Yearling
 They Live by Night
+To Be or Not to Be
 Trophy
 True Grit
 Turn Every Page: The Adventures of Robert Caro and Robert Gottlieb
@@ -157,6 +167,7 @@ We the Animals
 Wild Rose
 Wildlife
 Wobble Palace
+Woodstock
 X
 You Hurt My Feelings
 Young Mr. Lincoln
