@@ -25,6 +25,7 @@ A Matter of Life and Death
 A Passage to India
 A Perfect World
 A Room with a View
+A Shot in the Dark
 A Soldier's Story
 A Spell to Ward Off the Darkness
 A Suitable Girl
@@ -56,6 +57,7 @@ American Star
 American: An Odyssey to 1947
 Among the Believers
 Amongst the Wolves
+An Angel at My Table
 An Officer and a Gentleman
 An Oversimplification of Her Beauty
 An Unmarried Woman
@@ -110,6 +112,7 @@ Becoming Bulletproof
 Bell Book and Candle
 Bells Are Ringing
 Bend of the River
+Beneath Hill 60
 Best and Most Beautiful Things
 Better Off Dead
 Betting on Zero
@@ -201,11 +204,13 @@ Colors
 Colossus: The Forbin Project
 Combat Obscura
 Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean
+Come Back, Africa
 Come Back, Little Sheba
 Come and Get It
 Coming Home
 Coming Home Again
 Compensation
+Conspiracy
 Conversation Piece
 Coogan's Bluff
 Cooked: Survival by Zip Code
@@ -215,6 +220,7 @@ Cover Girl
 Creem: America's Only Rock 'n' Roll Magazine
 Crocodile Dundee
 Crooklyn
+Crossfire Hurricane
 Crshd
 Cul-de-sac
 Cult of Chucky
@@ -246,6 +252,7 @@ Desperate Souls, Dark City and the Legend of Midnight Cowboy
 Desperately Seeking Susan
 Destry Rides Again
 Diane Warren: Relentless
+Diary of a Lost Girl
 Diary of a Mad Housewife
 Did You Wonder Who Fired the Gun?
 Dim Sum: A Little Bit of Heart
@@ -306,6 +313,7 @@ Everything Is Copy
 Ex-Husbands
 Executive Suite
 Exhibition
+Exotica
 Exposing Muybridge
 Eye of the Needle
 Eyimofe (This Is My Desire)
@@ -315,6 +323,7 @@ Fancy Pants
 Far North
 Farewell, My Lovely
 Fat City
+Father Goose
 Faults
 Feast of the Seven Fishes
 Female Trouble
@@ -395,6 +404,7 @@ Hell Is for Heroes
 Hello Destroyer
 Helmut Newton: The Bad and the Beautiful
 Help!
+Herb & Dorothy
 Here Comes Mr. Jordan
 Hermia & Helena
 Hesburgh
@@ -431,6 +441,7 @@ I Will Follow
 I'll Show You Mine
 I'm No Angel
 Imitation of Life
+In Another Country
 In Between Days
 In Pursuit of Silence
 In Search of Fellini
@@ -505,11 +516,14 @@ Last Passenger
 Last Take: Rust and the Story of Halyna
 Laws of Gravity
 Leaving Home, Coming Home: A Portrait of Robert Frank
+Leolo
 Les Girls
 Let the Wrong One In
 Letters from Baghdad
 Levitated Mass
+Lifeboat
 Lifechanger
+Like Dandelion Dust
 Lindy Lou, Juror Number 2
 Lion of the Desert
 Liquid Sky
@@ -540,6 +554,7 @@ Lovers and Other Strangers
 Lovesong
 Low Low
 Lust for Life
+Lydia Lunch: The War Is Never Over
 Lyle
 M.C. Escher: Journey to Infinity
 MVP
@@ -599,6 +614,7 @@ Mississippi Burning
 Moby Dick
 Modest Heroes
 Monk in Pieces
+Monsieur Verdoux
 Monte Walsh
 Montréal Girls
 Monty Python's the Meaning of Life
@@ -636,6 +652,7 @@ Nasrin
 Nausicaä of the Valley of the Wind
 Naz & Maalik
 Ne Zha
+Neds
 Neither Confirm Nor Deny
 Netizens
 Never Cry Wolf
@@ -643,6 +660,7 @@ Never Steady, Never Still
 New Jack City
 New Waterford Girl
 New York Stories
+Niagara
 Night Has a Thousand Eyes
 Night Tide
 Night Train to Munich
@@ -700,6 +718,7 @@ Petulia
 Phantom Boy
 Pianoforte
 Pianomania
+Pink Floyd: Live at Pompeii
 Places in the Heart
 Planet Terror
 Platinum Blonde
@@ -780,6 +799,7 @@ Sergeant York
 Seven Days in May
 Sgt. Stubby: An American Hero
 Shackleton
+Shadow of the Thin Man
 Shadowlands
 Shake the Dust
 Sharknado
@@ -869,6 +889,7 @@ T-Men
 Tahara
 Take Out Girl
 Targets
+Taxi to the Dark Side
 Tea and Sympathy
 Tender Mercies
 Tenebrae
@@ -906,6 +927,7 @@ The Blue Lamp
 The Bostonians
 The Boy Friend
 The Boy in the Woods
+The Brave Little Toaster
 The Breaking Point
 The Bride Wore Black
 The Brood
@@ -982,6 +1004,7 @@ The Heart Machine
 The Honeymoon Killers
 The Horse's Mouth
 The Hot Rock
+The Hours and Times
 The Iceman Cometh
 The Indian Runner
 The Inevitable Defeat of Mister & Pete
@@ -1048,6 +1071,7 @@ The Other Zoey
 The Owl and the Pussycat
 The Ox-Bow Incident
 The Pajama Game
+The Palm Beach Story
 The Paper
 The Party's Just Beginning
 The Pass
@@ -1091,6 +1115,7 @@ The Silence of Others
 The Silent Partner
 The Sisterhood of Night
 The Sleeping Beauty
+The Smiling Lieutenant
 The Snapper
 The Snows of Kilimanjaro
 The Song of Bernadette
@@ -1172,6 +1197,7 @@ To Sir, with Love
 To Walk Invisible: The Brontë Sisters
 Too Big to Fail
 Too Late for Tears
+Top Spin
 Toxic Beauty
 Tread
 Tremors 3: Back to Perfection
@@ -1251,6 +1277,7 @@ Woman on the Run
 Women He's Undressed
 Woodlawn
 Woodstock
+Woody Allen: A Documentary
 Working Girls
 Written on the Wind
 Yarn
@@ -1261,4 +1288,5 @@ Young at Heart
 Your Lucky Day
 Yours in Sisterhood
 Zoo
+Zorba the Greek
 Zulu
