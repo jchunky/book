@@ -25,12 +25,14 @@
 45 Years
 48 Hrs.
 500 Days of Summer
+51 Birch Street
 7 Men from Now
 78/52
 8 Mile
 8-Bit Christmas
 84 Charing Cross Road
 99 Homes
+A Band Called Death
 A Bay of Blood
 A Beautiful Day in the Neighborhood
 A Better Man
@@ -40,6 +42,7 @@ A Bread Factory, Part One
 A Brixton Tale
 A Bronx Tale
 A Bug's Life
+A Canterbury Tale
 A Child Is Waiting
 A Christmas Horror Story
 A Christmas Story
@@ -89,6 +92,7 @@ A Soldier's Story
 A Spell to Ward Off the Darkness
 A Star Is Born
 A Streetcar Named Desire
+A Tale of Two Cities
 A Taste of Honey
 A Thousand and One
 A United Kingdom
@@ -141,12 +145,14 @@ Almost Famous
 Alpha
 Always Shine
 Amadeus
+Amazing Journey: The Story of the Who
 American Animals
 American Beauty
 American Gangster
 American Graffiti
 American Heretics: The Politics of the Gospel
 American Hustle
+American Radical: The Trials of Norman Finkelstein
 American Star
 American Underdog
 American: An Odyssey to 1947
@@ -230,6 +236,7 @@ Bad Lieutenant: Port of Call New Orleans
 Bad Santa
 Bad Times at the El Royale
 Bad Turn Worse
+Badlands
 Ball of Fire
 Band of Robbers
 Bang the Drum Slowly
@@ -268,6 +275,7 @@ Before Sunset
 Before You Know It
 Before the Devil Knows You're Dead
 Begin Again
+Behind the Burly Q
 Behind the Candelabra
 Being John Malkovich
 Belfast
@@ -279,6 +287,7 @@ Ben-Hur
 Bend It Like Beckham
 Beneath Hill 60
 Bergman Island
+Bernie
 Best and Most Beautiful Things
 Best in Show
 Better Luck Tomorrow
@@ -364,6 +373,7 @@ BookWars
 Booksmart
 Borat
 Born Yesterday
+Born on the Fourth of July
 Bottle Rocket
 Bowfinger
 Bowling for Columbine
@@ -380,6 +390,7 @@ Brazil
 Breach
 Breaking Away
 Breaking Bad
+Breaking the Waves
 Breakup Season
 Brewster McCloud
 Brexit
@@ -446,6 +457,7 @@ Captain Horatio Hornblower
 Captain Kidd
 Captain Marvel
 Captain Underpants: The First Epic Movie
+Capturing the Friedmans
 Carnal Knowledge
 Carnival of Souls
 Carrie
@@ -456,6 +468,7 @@ Casino
 Cast Away
 Casting By
 Castle in the Sky
+Casualties of War
 Cat Daddies
 Cat People
 Cat on a Hot Tin Roof
@@ -567,6 +580,7 @@ Cul-de-sac
 Cult of Chucky
 Cunningham
 Curse of Chucky
+Curse of the Demon
 Cyrano
 Cyrano de Bergerac
 Dad & Step-Dad
@@ -609,6 +623,7 @@ Dealing with Dad
 Dear Mr. Brody
 Dear Zachary: A Letter to a Son About His Father
 Death Race 2000
+Death Watch
 Death of a Salesman
 Deathtrap
 Deep Cover
@@ -637,6 +652,7 @@ Dig!
 Dim Sum: A Little Bit of Heart
 Diner
 Dingo
+Dinner at Eight
 Dio: Dreamers Never Die
 Dirty Harry
 Dirty Rotten Scoundrels
@@ -706,6 +722,7 @@ Dying to Know: Ram Dass & Timothy Leary
 Eagles of Death Metal: Nos Amis (Our Friends)
 Early Man
 Earth: One Amazing Day
+East of Eden
 Easy A
 Easy Living
 Easy Rider
@@ -727,6 +744,7 @@ Elizabeth
 Elizabeth: A Portrait in Part(s)
 Elmer Gantry
 Elvis
+Elvis: That's the Way It Is
 Emanuel
 Emergent City
 Emma
@@ -762,6 +780,7 @@ Ex-Husbands
 Executive Suite
 Exhibition
 Exotica
+Experiment in Terror
 Exposing Muybridge
 Exposure 36
 Eye of the Needle
@@ -846,6 +865,7 @@ Freaky
 Freaky Friday
 Freaky Tales
 Free Guy
+Free Men
 Free Solo
 Fremont
 Frenzy
@@ -879,10 +899,12 @@ George Harrison: Living in the Material World
 Get Away
 Get Low
 Get Out
+Get Shorty
 Ghost Dog: The Way of the Samurai
 Ghost World
 Giant
 Giant Little Ones
+Gigi
 Gilda
 Gimme Danger
 Ginger & Rosa
@@ -911,6 +933,7 @@ Good Bad Things
 Good Fortune
 Good Hair
 Good Kill
+Good Night, and Good Luck.
 Good Time
 Good Will Hunting
 Goodfellas
@@ -941,6 +964,7 @@ Hail, Caesar!
 Hair
 Hairspray
 Hale County This Morning, This Evening
+Half Nelson
 Hallelujah: Leonard Cohen, a Journey, a Song
 Hallow Road
 Halloween
@@ -1066,6 +1090,7 @@ I, Daniel Blake
 I, Tonya
 If Beale Street Could Talk
 If I Had Legs I'd Kick You
+If the Dancer Dances
 Imitation of Life
 In Another Country
 In Between Days
@@ -1235,6 +1260,7 @@ Land of the Dead
 Lapsis
 Lassie
 Last Breath
+Last Call at the Oasis
 Last Days in Vietnam
 Last Flag Flying
 Last Night in Soho
@@ -1273,6 +1299,7 @@ Liquid Sky
 Little Big Man
 Little Bites
 Little Caesar
+Little Dieter Needs to Fly
 Little Men
 Little Richard: I Am Everything
 Little Shop of Horrors
@@ -1287,6 +1314,7 @@ Liza: A Truly Terrific Absolutely True Story
 Llyn Foulkes One Man Band
 Lo and Behold: Reveries of the Connected World
 Local Hero
+Lock, Stock and Two Smoking Barrels
 Logan
 Logan Lucky
 Lolita
@@ -1337,6 +1365,7 @@ Macbeth
 Mad About the Boy: The Noël Coward Story
 Mad Dog and Glory
 Mad God
+Mad Hot Ballroom
 Mad Max
 Mad Max Beyond Thunderdome
 Mad Max: Fury Road
@@ -1618,8 +1647,11 @@ Odd Man Out
 Oddity
 Of Men and War
 Of Mice and Men
+Of Time and the City
+Off the Rails
 Office Space
 Official Secrets
+Offside
 Oklahoma!
 Old Henry
 Old Joy
@@ -1650,6 +1682,7 @@ Only Angels Have Wings
 Only Lovers Left Alive
 Only the Brave
 Onward
+Operation Petticoat
 Oppenheimer
 Ordinary Angels
 Ordinary Love
@@ -1697,6 +1730,7 @@ Pearl
 Pee-wee's Big Adventure
 Penguin Highway
 Pennies from Heaven
+Penny Serenade
 Performance
 Perpetrator
 Persepolis
@@ -1796,6 +1830,7 @@ Raya and the Last Dragon
 Re-Animator
 Re: Uniting
 Ready or Not
+Real Women Have Curves
 Rear Window
 Reawakening
 Rebel Without a Cause
@@ -1822,6 +1857,8 @@ Resolution
 Restless Creature: Wendy Whelan
 Results
 Resurrection
+Reuben, Reuben
+Reversal of Fortune
 Richard Jewell
 Ricochet
 Ride the High Country
@@ -1830,6 +1867,7 @@ Riefenstahl
 Ring of Bright Water
 Rio Bravo
 Rio Breaks
+Riot in Cell Block 11
 Rise of the Planet of the Apes
 Risky Business
 River
@@ -1902,9 +1940,12 @@ Scream 2
 Scream VI
 Screwball
 Searching
+Searching for Bobby Fischer
+Searching for Debra Winger
 Searching for Mr. Rugoff
 Searching for Sugar Man
 Sebastian
+Seconds
 Secret Mall Apartment
 Secretary
 Secrets & Lies
@@ -1917,6 +1958,7 @@ Sergeant Rutledge
 Sergeant York
 Serpico
 Seven
+Seven Brides for Seven Brothers
 Seven Days in May
 Seven Psychopaths
 Sex, Lies, and Videotape
@@ -2019,6 +2061,7 @@ Soundtrack to a Coup d'Etat
 Sour Grapes
 South Mountain
 South Pacific
+South Park: Bigger, Longer & Uncut
 Sovereign
 Space Cowboys
 Space: The Longest Goodbye
@@ -2045,6 +2088,7 @@ Stagecoach
 Stake Land
 Stalag 17
 Stan & Ollie
+Stand and Deliver
 Stand by Me
 Standing Up, Falling Down
 Star 80
@@ -2157,6 +2201,7 @@ Thank You Very Much
 Thank You for Your Service
 That Hamilton Woman
 That Thing You Do!
+That Touch of Mink
 That's Entertainment!
 That's Not Me
 The 12th Man
@@ -2255,6 +2300,7 @@ The Butcher Boy
 The Canterville Ghost
 The Case Against 8
 The Cat Rescuers
+The Changeling
 The Chant of Jimmie Blacksmith
 The Children's Hour
 The China Syndrome
@@ -2322,6 +2368,7 @@ The Emperor's New Groove
 The End of the Tour
 The Endless
 The Endless Summer
+The Endurance
 The Enemy Below
 The English Patient
 The Equalizer 3
@@ -2436,6 +2483,7 @@ The Infiltrators
 The Informant!
 The Insider
 The Inspection
+The Inspector General
 The Invisible Woman
 The Irishman
 The Iron Claw
@@ -2468,6 +2516,7 @@ The Last Daughter
 The Last Days of Chez Nous
 The Last Duel
 The Last Gladiators
+The Last King of Scotland
 The Last Mountain
 The Last Picture Show
 The Last Starfighter
@@ -2475,6 +2524,7 @@ The Last Temptation of Christ
 The Last Waltz
 The Last Wave
 The Last of Sheila
+The Last of the Mohicans
 The Lavender Hill Mob
 The League
 The Learning Tree
@@ -2520,6 +2570,7 @@ The Madness of King George
 The Magic Flute
 The Magnificent Ambersons
 The Maltese Falcon
+The Man Who Came to Dinner
 The Man Who Fell to Earth
 The Man Who Invented Christmas
 The Man Who Killed Hitler and Then the Bigfoot
@@ -2575,6 +2626,7 @@ The Night of the Hunter
 The Night of the Iguana
 The Nightmare Before Christmas
 The Ninth Configuration
+The Nun's Story
 The Occupant
 The Odd Couple
 The Old Man & the Gun
@@ -2611,6 +2663,7 @@ The Philadelphia Story
 The Phoenician Scheme
 The Pianist
 The Piano
+The Picture of Dorian Gray
 The Pirates of Penzance
 The Poseidon Adventure
 The Positively True Adventures of the Alleged Texas Cheerleader-Murdering Mom
@@ -2748,6 +2801,7 @@ The Trotsky
 The Trouble with Angels
 The Trouble with Harry
 The Truman Show
+The Twelve Chairs
 The Twentieth Century
 The Two Faces of January
 The Unbearable Weight of Massive Talent
@@ -2789,6 +2843,7 @@ The Women of Brewster Place
 The World Before Your Feet
 The World of Henry Orient
 The World's End
+The World's Fastest Indian
 The Wrath of Becky
 The Wrestler
 The Wrong Box
@@ -2798,6 +2853,7 @@ The Year of Living Dangerously
 The Year of the Everlasting Storm
 The YouTube Effect
 The Young Lions
+Theater of Life
 Their Finest
 Thelma
 Thelonious Monk: Straight, No Chaser
@@ -2813,6 +2869,7 @@ They Shall Not Grow Old
 They Shoot Horses, Don't They?
 Things Will Be Different
 Things to Come
+Thirty Seconds Over Tokyo
 This Changes Everything
 This Gun for Hire
 This Is England
@@ -2898,6 +2955,7 @@ Turbo Cola
 Turn It Around: The Story of East Bay Punk
 Turning Red
 Twelfth Night
+Twelve O'Clock High
 Twisters
 Two Lovers
 Two Lovers and a Bear
@@ -2954,6 +3012,7 @@ Waking Life
 Walkabout
 Wall Street
 Wallace & Gromit: The Curse of the Were-Rabbit
+War Dance
 War Requiem
 War for the Planet of the Apes
 WarGames
@@ -2961,6 +3020,7 @@ Warrior
 Watch on the Rhine
 Watcher
 Watchers of the Sky
+Waterloo Bridge
 Watermark
 Watership Down
 Wattstax
@@ -3028,6 +3088,7 @@ William Eggleston in the Real World
 Winchester '73
 Wind River
 Winter Kills
+Wit
 Withnail and I
 Without Limits
 Without Name
@@ -3042,6 +3103,7 @@ Woman on the Run
 Women He's Undressed
 Women Talking
 Won't You Be My Neighbor?
+Wonder Boys
 Wonder Woman
 Wonka
 Woodlawn
@@ -3057,6 +3119,7 @@ X
 X-Men: Days of Future Past
 X-Men: First Class
 X2: X-Men United
+X: The Man with the X-Ray Eyes
 Yarn
 Yellow Rose
 Yellow Submarine
@@ -3073,6 +3136,7 @@ Your Lucky Day
 Your Sister's Sister
 Yours in Sisterhood
 Z
+Zelig
 Zero Dark Thirty
 Zola
 Zoo
