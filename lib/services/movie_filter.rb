@@ -12,11 +12,11 @@ module Services
       return false unless display_year.to_i >= 2000
 
       # Kids
-      # return false if restricted?
-      # return false unless box_office.to_i >= 50
+      return false if restricted?
+      return false unless box_office.to_i >= 50
 
       # Date night
-      return false unless metacritic.to_i >= 70
+      # return false unless metacritic.to_i >= 70
 
       true
     end
