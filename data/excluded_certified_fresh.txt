@@ -3,6 +3,7 @@
 13 Rue Madeleine
 1984
 3 Backyards
+51 Birch Street
 8-Bit Christmas
 84 Charing Cross Road
 A Bay of Blood
@@ -10,6 +11,7 @@ A Better Man
 A Boy and His Dog
 A Brixton Tale
 A Bronx Tale
+A Canterbury Tale
 A Child Is Waiting
 A Christmas Horror Story
 A Cry in the Dark
@@ -29,6 +31,7 @@ A Shot in the Dark
 A Soldier's Story
 A Spell to Ward Off the Darkness
 A Suitable Girl
+A Tale of Two Cities
 A Taste of Honey
 A Woman Under the Influence
 A Woman, a Part
@@ -52,7 +55,9 @@ All Man: The International Male Story
 All Saints
 All the World Is Sleeping
 Alma's Rainbow
+Amazing Journey: The Story of the Who
 American Heretics: The Politics of the Gospel
+American Radical: The Trials of Norman Finkelstein
 American Star
 American: An Odyssey to 1947
 Among the Believers
@@ -109,6 +114,7 @@ Beau Geste
 Beautiful Darling
 Beauty Mark
 Becoming Bulletproof
+Behind the Burly Q
 Bell Book and Candle
 Bells Are Ringing
 Bend of the River
@@ -225,6 +231,7 @@ Crshd
 Cul-de-sac
 Cult of Chucky
 Curse of Chucky
+Curse of the Demon
 Cyrano de Bergerac
 Dad & Step-Dad
 Damage
@@ -242,6 +249,7 @@ Dead Dicks
 Dead Men Don't Wear Plaid
 Dealing with Dad
 Dear Mr. Brody
+Death Watch
 Death of a Salesman
 Deathtrap
 Descendants 2
@@ -257,6 +265,7 @@ Diary of a Mad Housewife
 Did You Wonder Who Fired the Gun?
 Dim Sum: A Little Bit of Heart
 Dingo
+Dinner at Eight
 Dio: Dreamers Never Die
 Disclosure
 Disfluency
@@ -297,6 +306,7 @@ El Dorado
 Eleni
 Elizabeth: A Portrait in Part(s)
 Elmer Gantry
+Elvis: That's the Way It Is
 Emanuel
 Emergent City
 Emptying the Skies
@@ -314,6 +324,7 @@ Ex-Husbands
 Executive Suite
 Exhibition
 Exotica
+Experiment in Terror
 Exposing Muybridge
 Eye of the Needle
 Eyimofe (This Is My Desire)
@@ -350,6 +361,7 @@ For a Few Dollars More
 Forbidden Zone
 Fort Apache
 Frame by Frame
+Free Men
 Fully Realized Humans
 GTFO: Get the F&#% Out
 Gabby's Dollhouse: The Movie
@@ -440,6 +452,7 @@ I Was a Simple Man
 I Will Follow
 I'll Show You Mine
 I'm No Angel
+If the Dancer Dances
 Imitation of Life
 In Another Country
 In Between Days
@@ -512,6 +525,7 @@ Lady Buds
 Lady of Burlesque
 Lake George
 Lassie
+Last Call at the Oasis
 Last Passenger
 Last Take: Rust and the Story of Halyna
 Laws of Gravity
@@ -529,6 +543,7 @@ Lion of the Desert
 Liquid Sky
 Little Bites
 Little Caesar
+Little Dieter Needs to Fly
 Little Vampire
 Living in Oblivion
 Living in the Future's Past
@@ -684,6 +699,7 @@ Obey
 Odd Man Out
 Of Men and War
 Of Mice and Men
+Off the Rails
 Oklahoma!
 Old Yeller
 Omette: Made in America
@@ -696,6 +712,7 @@ On the Town
 One Potato, Two Potato
 One Road to Quartzsite
 Only Angels Have Wings
+Operation Petticoat
 Ornette: Made in America
 Our Man in Havana
 Out of the Loop
@@ -711,6 +728,7 @@ Path to War
 Peace by Chocolate
 Penguin Highway
 Pennies from Heaven
+Penny Serenade
 Performance
 Personal Problems
 Peter Ibbetson
@@ -761,11 +779,13 @@ Rent Free
 Requiem for the American Dream
 Resolution
 Restless Creature: Wendy Whelan
+Reuben, Reuben
 Ricochet
 Ride the High Country
 Rider on the Rain
 Ring of Bright Water
 Rio Breaks
+Riot in Cell Block 11
 River
 River Wild
 River of Grass
@@ -791,11 +811,13 @@ Scarlet Street
 Scenes from an Empty Church
 Scenes from the Class Struggle in Beverly Hills
 Screwball
+Searching for Debra Winger
 Searching for Mr. Rugoff
 Seeds
 Semi-Tough
 Sergeant Rutledge
 Sergeant York
+Seven Brides for Seven Brothers
 Seven Days in May
 Sgt. Stubby: An American Hero
 Shackleton
@@ -895,6 +917,7 @@ Tender Mercies
 Tenebrae
 Thank You for Playing
 That Hamilton Woman
+That Touch of Mink
 That's Entertainment!
 That's Not Me
 The 12th Man
@@ -936,6 +959,7 @@ The Browning Version
 The Buddy Holly Story
 The Canterville Ghost
 The Cat Rescuers
+The Changeling
 The Chant of Jimmie Blacksmith
 The Children's Hour
 The Cincinnati Kid
@@ -1009,6 +1033,7 @@ The Iceman Cometh
 The Indian Runner
 The Inevitable Defeat of Mister & Pete
 The Infiltrators
+The Inspector General
 The Ipcress File
 The Iron Mask
 The Jack Bull
@@ -1039,6 +1064,7 @@ The Longest Day
 The Lost Patrol
 The Lusty Men
 The Magic Flute
+The Man Who Came to Dinner
 The Man Who Saw Too Much
 The Man Who Would Be King
 The Man from Laramie
@@ -1065,6 +1091,7 @@ The Night Is Short, Walk on Girl
 The Night Stalker
 The Night of the Iguana
 The Ninth Configuration
+The Nun's Story
 The Occupant
 The Other Fellow
 The Other Zoey
@@ -1081,6 +1108,7 @@ The Pearl
 The Petrified Forest
 The Pez Outlaw
 The Phenomenon
+The Picture of Dorian Gray
 The Pirates of Penzance
 The Poseidon Adventure
 The Positively True Adventures of the Alleged Texas Cheerleader-Murdering Mom
@@ -1147,6 +1175,7 @@ The Trotsky
 The Trouble with Angels
 The Trouble with Harry
 The Tuskegee Airmen
+The Twelve Chairs
 The United States of Insanity
 The War Room
 The Way of the Dragon
@@ -1169,6 +1198,7 @@ The Yearling
 The YouTube Effect
 The Young Lions
 The Youth Governor
+Theater of Life
 Thelonious Monk: Straight, No Chaser
 Theory of Obscurity: A Film About the Residents
 There's Always Tomorrow
@@ -1178,6 +1208,7 @@ They Live by Night
 They Look Like People
 They Shoot Horses, Don't They?
 Thieves' Highway
+Thirty Seconds Over Tokyo
 This Changes Everything
 This Gun for Hire
 This Teacher
@@ -1210,6 +1241,7 @@ Turbo Cola
 Turn It Around: The Story of East Bay Punk
 Twelfth Night
 Twelfth Night
+Twelve O'Clock High
 Twinsters
 Two Lovers and a Bear
 Two Weeks in Another Town
@@ -1236,6 +1268,7 @@ War Requiem
 Washington Square
 Watch on the Rhine
 Watchers of the Sky
+Waterloo Bridge
 Watermark
 Watership Down
 We Go On
@@ -1268,6 +1301,7 @@ William Eggleston in the Real World
 William S. Burroughs: A Man Within
 Winchester '73
 Winter Kills
+Wit
 Without Limits
 Without Name
 Wittgenstein
@@ -1280,6 +1314,7 @@ Woodstock
 Woody Allen: A Documentary
 Working Girls
 Written on the Wind
+X: The Man with the X-Ray Eyes
 Yarn
 Yes
 You'll Never Get Rich
@@ -1287,6 +1322,7 @@ Young Mr. Lincoln
 Young at Heart
 Your Lucky Day
 Yours in Sisterhood
+Zelig
 Zoo
 Zorba the Greek
 Zulu
