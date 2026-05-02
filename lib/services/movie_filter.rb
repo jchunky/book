@@ -5,22 +5,18 @@ module Services
     def self.keep?(item) = new(item).keep?
 
     def keep?
-      # return false if animation? || documentary? || horror? || musical? || juvenile?
-      # return false unless box_office.to_i >= 10
-      # return false unless certified_fresh?
-      # return false unless display_year.to_i >= 1985
-      # return false unless rated?
+      return false if animation? || documentary? || horror? || musical? || juvenile?
+      return false unless rated?
+      return false unless box_office.to_i >= 20
+      return false unless rotten_tomatoes.to_i >= 75
+      return false unless display_year.to_i >= 2000
 
-      # == KIDS ==
+      # Kids
       # return false if restricted?
+      # return false unless box_office.to_i >= 50
 
-      # == ME ==
-      # return false unless must_see?
-      # return false unless display_year.to_i >= 2015
-
-      # == UNPROCESSED ==
-      return false if processed?
-      return false unless must_see? || certified_fresh?
+      # Date night
+      return false unless metacritic.to_i >= 70
 
       true
     end

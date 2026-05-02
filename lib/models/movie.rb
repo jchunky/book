@@ -28,8 +28,8 @@ module Models
     def self.all = Services::MovieLibrary.new.movies
 
     def keep? = Services::MovieFilter.keep?(self)
-    def certified_fresh? = rotten_tomatoes.fresh? && !certified_fresh_excluded?
-    def must_see? = metacritic.must_see? && !must_see_excluded?
+    def certified_fresh? = rotten_tomatoes.fresh?
+    def must_see? = metacritic.must_see?
     def juvenile? = Models::Audience.juvenile?(self)
     def teen? = Models::Audience.teen?(self)
     def adult? = Models::Audience.adult?(self)
@@ -46,8 +46,5 @@ module Models
     def display_year = omdb.year.empty? ? year : omdb.year
     def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)
     def metacritic_url = GoogleRedirectUrl.new("site:metacritic.com/movie", display_title, display_year)
-    def must_see_excluded? = Config::ExcludedTitles::MUST_SEE.include?(display_title)
-    def certified_fresh_excluded? = Config::ExcludedTitles::CERTIFIED_FRESH.include?(display_title)
-    def processed? = Config::ProcessedTitles::ALL.include?(display_title)
   end
 end
