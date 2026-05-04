@@ -95,6 +95,7 @@
           <th class="sort" data-sort="rt">RT (%)</th>
           <th class="sort" data-sort="mc">MC (/100)</th>
           <th class="sort" data-sort="audiences">Audience</th>
+          <th class="sort" data-sort="primary-language">Language</th>
         </tr>
       </thead>
       <tbody class="list">
@@ -114,6 +115,7 @@
             <td class="number"><a href="<%= row.rotten_tomatoes_url %>"><span class="rt"><%= row.rotten_tomatoes %></span></a></td>
             <td class="number"><%= row.metacritic_html %></td>
             <td class="audiences"><%= row.audience_pill %></td>
+            <td class="primary-language"><%= row.primary_language %></td>
           </tr>
         <% end %>
       </tbody>
@@ -127,7 +129,7 @@
     booksList.sort('popularity', { order: 'desc' });
 
     var moviesList = new List('movies-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences']
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language']
     });
     moviesList.sort('popularity', { order: 'desc' });
   </script>

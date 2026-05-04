@@ -16,6 +16,7 @@ module Models
              :jacket_url,
              :jacket_url_medium,
              :description,
+             :primary_language,
              to: :biblio
     delegate :rated,
              :runtime,

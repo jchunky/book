@@ -12,6 +12,7 @@ module Presenters
              :rotten_tomatoes,
              :rotten_tomatoes_url,
              :metacritic_url,
+             :primary_language,
              to: :catalog_item
 
     def initialize(movie)
