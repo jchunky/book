@@ -2,7 +2,7 @@
 
 module Models
   class MetacriticScore < Data.define(:value)
-    MUST_SEE_THRESHOLD = 80
+    MUST_SEE_THRESHOLD = 81
     EMPTY = new(value: "")
 
     def self.parse(raw)

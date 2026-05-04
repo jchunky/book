@@ -9,10 +9,10 @@ module Services
       return false unless rated?
       return false unless box_office.to_i >= 20
       return false unless rotten_tomatoes.to_i >= 75
-      return false unless display_year.to_i >= 2000
+      # return false unless display_year.to_i >= 2000
 
       # Kids
-      return false if restricted?
+      # return false if restricted?
       return false unless box_office.to_i >= 50
 
       # Date night
