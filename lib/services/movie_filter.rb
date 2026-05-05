@@ -11,6 +11,10 @@ module Services
       return false if restricted?
       return false unless box_office.to_i >= 50
 
+      # == FOREIGN ==
+      # return false unless foreign?
+      # return false unless popularity.to_i > 0
+
       # == DATE NIGHT ==
       # return false unless meet_minimum_quality_bar?
       # return false unless meet_personal_interest_criteria?
