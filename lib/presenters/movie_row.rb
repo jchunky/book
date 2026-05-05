@@ -12,7 +12,6 @@ module Presenters
              :rotten_tomatoes,
              :rotten_tomatoes_url,
              :metacritic_url,
-             :primary_language,
              to: :catalog_item
 
     def initialize(movie)
@@ -29,6 +28,10 @@ module Presenters
 
     def box_office
       catalog_item.box_office if catalog_item.box_office.to_i > 0
+    end
+
+    def language_pill
+      Models::Language.for(catalog_item.primary_language).to_html
     end
 
     def metacritic_html

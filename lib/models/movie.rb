@@ -42,6 +42,7 @@ module Models
     def musical? = Models::Genre.musical?(self)
     def tv_series? = Models::Genre.tv_series?(self)
     def restricted? = Models::ContentRating.restricted?(self)
+    def foreign? = Models::Language.for(primary_language).foreign?
     def rated? = Models::ContentRating.rated?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
     def display_year = omdb.year.empty? ? year : omdb.year
