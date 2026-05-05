@@ -12,7 +12,13 @@ Loader.setup
 class UpdateProcessedMovies
   def run
     Models::Movie.all
-      .select { |m| m.rotten_tomatoes.fresh? || m.metacritic.must_see? }
+      .select do |m|
+        (
+          m.rotten_tomatoes.to_i >= 75
+          || m.metacritic.to_i >= 80
+        )
+        && m.box_office.to_i >= 20
+      end
       .map(&:display_title).map(&:to_s).sort.uniq
       .then do |titles|
         File.write("data/processed_movies.txt", "#{titles.join("\n")}\n")

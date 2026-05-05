@@ -5,10 +5,12 @@
 2001: A Space Odyssey
 28 Days Later
 28 Years Later
+28 Years Later: The Bone Temple
 3:10 to Yuma
 48 Hrs.
 500 Days of Summer
 8 Mile
+A Beautiful Day in the Neighborhood
 A Bug's Life
 A Christmas Story
 A Clockwork Orange
@@ -21,8 +23,10 @@ A Nightmare on Elm Street
 A Passage to India
 A Perfect World
 A Quiet Place
+A Quiet Place Part II
 A Quiet Place: Day One
 A River Runs Through It
+A Room with a View
 A Simple Favor
 A Soldier's Story
 A Star Is Born
@@ -33,13 +37,13 @@ About Schmidt
 About a Boy
 Ad Astra
 Addams Family Values
-Air
 Airplane!
 Alien
 Alien: Romulus
 Aliens
 All That Jazz
 All of Me
+All the Money in the World
 All the President's Men
 Almost Famous
 Alpha
@@ -74,10 +78,13 @@ Avatar
 Avatar: The Way of Water
 Avengers: Endgame
 Awakenings
+Baby Driver
 Babygirl
+Back to the Future
 Back to the Future Part III
 Bad Boys for Life
 Bad Santa
+Bambi
 Barbershop: The Next Cut
 Barbie
 Batman Begins
@@ -91,6 +98,7 @@ Bend It Like Beckham
 Beverly Hills Cop
 Big
 Big Fish
+Big Hero 6
 Bill & Ted's Excellent Adventure
 Billy Elliot
 Biloxi Blues
@@ -108,6 +116,7 @@ Blink Twice
 Blockers
 Blue Beetle
 Blue Jasmine
+Blue Planet
 Bolt
 Boogie Nights
 Booksmart
@@ -121,7 +130,6 @@ Braveheart
 Breach
 Bridesmaids
 Bridge of Spies
-Bridge to Terabithia
 Bridget Jones's Baby
 Bridget Jones's Diary
 Broadcast News
@@ -145,7 +153,6 @@ Carlito's Way
 Carrie
 Casino
 Cast Away
-Challengers
 Changing Lanes
 Chariots of Fire
 Charlie Wilson's War
@@ -172,6 +179,7 @@ Corpse Bride
 Crawl
 Crazy Rich Asians
 Creed II
+Creed III
 Crimson Tide
 Crocodile Dundee
 Cruella
@@ -188,6 +196,7 @@ Deadpool
 Deadpool & Wolverine
 Deadpool 2
 Deepwater Horizon
+Desperately Seeking Susan
 Despicable Me
 Despicable Me 2
 Devotion
@@ -198,6 +207,7 @@ District 9
 Django Unchained
 Doctor Sleep
 Doctor Strange
+Doctor Zhivago
 Dog
 Dog Day Afternoon
 Dog Man
@@ -230,7 +240,6 @@ Escape from New York
 Escape to Witch Mountain
 Eternal Sunshine of the Spotless Mind
 Everything Everywhere All at Once
-Evil Dead Rise
 Eyes Wide Shut
 F1: The Movie
 Face/Off
@@ -254,6 +263,7 @@ Ford v Ferrari
 Forgetting Sarah Marshall
 Forrest Gump
 Four Weddings and a Funeral
+Frankenweenie
 Freaky Friday
 Free Guy
 Frida
@@ -271,15 +281,19 @@ Game Night
 Gandhi
 Get Out
 Get Shorty
+Ghostbusters
 Giant
 Girls Trip
 Gladiator
+Glory
 Godzilla
+Godzilla Minus One
 Going in Style
-GoldenEye
+Goldfinger
 Gone Baby Gone
 Gone Girl
 Gone with the Wind
+Good Morning, Vietnam
 Good Night, and Good Luck.
 Good Will Hunting
 Goodfellas
@@ -340,7 +354,6 @@ Inside Out
 Inside Out 2
 Instant Family
 Internal Affairs
-Intolerable Cruelty
 Invasion of the Body Snatchers
 Invictus
 Iron Man
@@ -348,7 +361,6 @@ Isle of Dogs
 It
 It Could Happen to You
 JFK
-Jackass Forever
 Jackie Brown
 James and the Giant Peach
 Jaws
@@ -370,6 +382,7 @@ Kingdom of the Planet of the Apes
 Knives Out
 Knocked Up
 Kong: Skull Island
+Kung Fu Panda
 Kung Fu Panda 3
 L.A. Confidential
 La Bamba
@@ -377,10 +390,13 @@ La La Land
 Lady Bird
 Land of the Dead
 Last Breath
+Last Tango in Paris
 Lawrence of Arabia
 Lethal Weapon
 Liar Liar
+Licence to Kill
 Life of Pi
+Like Water for Chocolate
 Lilo & Stitch
 Lincoln
 Little Big Man
@@ -397,7 +413,7 @@ Love, Simon
 M*A*S*H
 M3GAN
 Mad Max Beyond Thunderdome
-Mad Max: Fury Road
+Madagascar 3: Europe's Most Wanted
 Magnolia
 Major League
 Malcolm X
@@ -419,7 +435,6 @@ Michael Clayton
 Mickey 17
 Midnight Cowboy
 Midsommar
-Milk
 Minority Report
 Misery
 Missing
@@ -453,7 +468,6 @@ Nanny McPhee Returns
 National Lampoon's Animal House
 Network
 Never Cry Wolf
-New Jack City
 No Country for Old Men
 No Time to Die
 Noah
@@ -467,12 +481,14 @@ Nurse Betty
 O Brother, Where Art Thou?
 Ocean's Eleven
 October Sky
+Old Yeller
 On Golden Pond
 One Battle After Another
 One Flew Over the Cuckoo's Nest
 One True Thing
 One of Them Days
 Onward
+Operation Petticoat
 Oppenheimer
 Ordinary People
 Ouija: Origin of Evil
@@ -483,7 +499,10 @@ PAW Patrol: The Movie
 Paddington
 Paddington 2
 Paddington in Peru
+Pale Rider
+Pan's Labyrinth
 ParaNorman
+Parasite
 Parenthood
 Patriots Day
 Patton
@@ -491,6 +510,7 @@ Pee-wee's Big Adventure
 Pete's Dragon
 Peter Pan
 Phantom Thread
+Pinocchio
 Pirates of the Caribbean: The Curse of the Black Pearl
 Places in the Heart
 Plane
@@ -507,11 +527,11 @@ Prisoners
 Prizzi's Honor
 Psycho
 Pulp Fiction
-Puss in Boots
 Raging Bull
 Rain Man
 Raising Arizona
 Ralph Breaks the Internet
+Rango
 Ratatouille
 Ray
 Raya and the Last Dragon
@@ -532,7 +552,6 @@ Romancing the Stone
 Roofman
 Rudy
 Saturday Night Fever
-Sausage Party
 Saving Mr. Banks
 Saving Private Ryan
 Saw X
@@ -546,6 +565,7 @@ Scream 2
 Scream VI
 Searching
 Semi-Tough
+Send Help
 Sense and Sensibility
 Serpico
 Seven
@@ -586,6 +606,7 @@ Spider-Man: Far from Home
 Spider-Man: Homecoming
 Spider-Man: Into the Spider-Verse
 Spider-Man: No Way Home
+Spy
 Stand by Me
 Star Trek
 Star Trek Beyond
@@ -601,7 +622,6 @@ Straight Outta Compton
 Sully
 Superbad
 Superman
-Sweeney Todd: The Demon Barber of Fleet Street
 Tangled
 Tarzan
 Taxi Driver
@@ -609,6 +629,7 @@ Teen Titans GO! To the Movies
 Teenage Mutant Ninja Turtles: Mutant Mayhem
 Terminator 2: Judgment Day
 Terms of Endearment
+Terrifier 3
 That Thing You Do!
 That's Entertainment!
 The Abyss
@@ -624,7 +645,9 @@ The Aviator
 The Bad Guys
 The Bad Guys 2
 The Batman
+The Bells of St. Mary's
 The Best Exotic Marigold Hotel
+The Best Years of Our Lives
 The Big Short
 The Big Sick
 The Bikeriders
@@ -638,6 +661,7 @@ The Bourne Identity
 The Boy and the Heron
 The Bridge on the River Kwai
 The Bridges of Madison County
+The Caine Mutiny
 The China Syndrome
 The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
 The Client
@@ -672,7 +696,9 @@ The Fog
 The French Connection
 The Fugitive
 The Full Monty
+The Gauntlet
 The Gentlemen
+The Gift
 The Girl with the Dragon Tattoo
 The Godfather
 The Godfather Part II
@@ -703,10 +729,10 @@ The Karate Kid
 The Killing Fields
 The King and I
 The King's Speech
+The Last Emperor
 The Last Picture Show
 The Last Starfighter
 The Last of the Mohicans
-The Lego Batman Movie
 The Lego Movie
 The Lego Movie 2: The Second Part
 The Lincoln Lawyer
@@ -722,7 +748,6 @@ The Mask
 The Mask of Zorro
 The Matrix
 The Monkey
-The Muppet Christmas Carol
 The Muppet Movie
 The Muppets
 The Naked Gun
@@ -730,9 +755,9 @@ The Natural
 The NeverEnding Story
 The Nice Guys
 The Nightmare Before Christmas
+The Northman
 The Odd Couple
 The Other Guys
-The Others
 The Outlaw Josey Wales
 The Owl and the Pussycat
 The Paper
@@ -761,7 +786,6 @@ The Shape of Water
 The Shawshank Redemption
 The Shining
 The Silence of the Lambs
-The Sisterhood of the Traveling Pants
 The Sixth Sense
 The Social Network
 The Sound of Music
@@ -773,6 +797,7 @@ The Terminator
 The Thin Red Line
 The Thing
 The Truman Show
+The Truth About Cats & Dogs
 The Unbearable Weight of Massive Talent
 The Untouchables
 The Usual Suspects
@@ -780,23 +805,24 @@ The Verdict
 The War of the Roses
 The Warriors
 The Wild Robot
+The Witch
 The Wizard of Oz
 The Wolf of Wall Street
 The Woman King
 The World's End
-The Wrestler
 There Will Be Blood
 There's Something About Mary
 Thor
 Thor: Ragnarok
 Three Billboards Outside Ebbing, Missouri
+Thunderball
 Thunderbolt and Lightfoot
 Thunderbolts*
-Thunderheart
 Time Bandits
 Tinker Tailor Soldier Spy
 Together
 Tombstone
+Tootsie
 Top Gun: Maverick
 Top Secret!
 Total Recall
@@ -806,7 +832,6 @@ Toy Story 3
 Toy Story 4
 Trading Places
 Traffic
-Transformers One
 Trolls
 Tropic Thunder
 True Grit
@@ -818,6 +843,7 @@ Unforgiven
 Unstoppable
 Up
 Us
+Vicky Cristina Barcelona
 Wag the Dog
 Wall Street
 Wallace & Gromit: The Curse of the Were-Rabbit
@@ -826,10 +852,12 @@ WarGames
 We Live in Time
 Weapons
 Wedding Crashers
+West Side Story
 What About Bob?
 What's Love Got to Do with It
 What's Up, Doc?
 White Men Can't Jump
+Who's Afraid of Virginia Woolf?
 Wicked
 Widows
 Wild
