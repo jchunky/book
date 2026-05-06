@@ -128,12 +128,12 @@
 
   <script>
     var booksList = new List('books-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'book-title', 'author', 'year', 'genre', 'audiences', 'content-type']
+      valueNames: ['book-title', 'author', 'genre']
     });
     booksList.sort('popularity', { order: 'desc' });
 
     var moviesList = new List('movies-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language', 'director', 'country']
+      valueNames: ['title', 'genre', 'primary-language', 'director', 'country']
     });
     moviesList.sort('popularity', { order: 'desc' });
   </script>
