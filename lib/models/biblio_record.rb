@@ -13,7 +13,6 @@ module Models
     :jacket_url,
     :jacket_url_medium,
     :description,
-    :primary_language,
   )
     def self.from_bib(bib)
       info = bib["briefInfo"] || {}
@@ -39,7 +38,6 @@ module Models
         jacket_url: info.dig("jacket", "small").to_s,
         jacket_url_medium: info.dig("jacket", "medium").to_s,
         description: info["description"].to_s,
-        primary_language: info["primaryLanguage"].to_s,
       )
     end
   end

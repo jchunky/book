@@ -16,7 +16,6 @@ module Models
              :jacket_url,
              :jacket_url_medium,
              :description,
-             :primary_language,
              to: :biblio
     delegate :rated,
              :runtime,
@@ -24,6 +23,9 @@ module Models
              :box_office,
              :rotten_tomatoes,
              :metacritic,
+             :primary_language,
+             :director,
+             :country,
              to: :omdb
 
     def self.all = Services::MovieLibrary.new.movies

@@ -9,6 +9,8 @@ module Presenters
              :href,
              :runtime,
              :genre,
+             :director,
+             :country,
              :rotten_tomatoes,
              :rotten_tomatoes_url,
              :metacritic_url,

@@ -96,6 +96,8 @@
           <th class="sort" data-sort="mc">MC (/100)</th>
           <th class="sort" data-sort="audiences">Audience</th>
           <th class="sort" data-sort="primary-language">Language</th>
+          <th class="sort" data-sort="director">Director</th>
+          <th class="sort" data-sort="country">Country</th>
         </tr>
       </thead>
       <tbody class="list">
@@ -116,6 +118,8 @@
             <td class="number"><%= row.metacritic_html %></td>
             <td class="audiences"><%= row.audience_pill %></td>
             <td class="primary-language"><%= row.language_pill %></td>
+            <td class="director"><%= row.director %></td>
+            <td class="country"><%= row.country %></td>
           </tr>
         <% end %>
       </tbody>

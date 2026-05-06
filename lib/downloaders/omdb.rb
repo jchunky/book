@@ -14,6 +14,9 @@ module Downloaders
       :box_office,
       :rotten_tomatoes,
       :metacritic,
+      :primary_language,
+      :director,
+      :country,
     )
     end
 
@@ -26,6 +29,9 @@ module Downloaders
       box_office: Models::BoxOffice::EMPTY,
       rotten_tomatoes: Models::RottenTomatoesScore::EMPTY,
       metacritic: Models::MetacriticScore::EMPTY,
+      primary_language: "",
+      director: "",
+      country: "",
     )
 
     def info(title:, year:)
@@ -89,12 +95,22 @@ module Downloaders
         box_office: Models::BoxOffice.parse(data["BoxOffice"]),
         rotten_tomatoes: Models::RottenTomatoesScore.parse(rating_value(ratings, "Rotten Tomatoes")),
         metacritic: Models::MetacriticScore.parse(rating_value(ratings, "Metacritic")),
+        primary_language: primary_language(data["Language"]),
+        director: clean_value(data["Director"]),
+        country: clean_value(data["Country"]),
       )
     end
 
     def clean_value(value)
       value = value.to_s
       value == "N/A" ? "" : value
+    end
+
+    def primary_language(value)
+      cleaned = clean_value(value)
+      return "" if cleaned == "None"
+
+      cleaned.split(",").first.to_s.strip
     end
 
     def rating_value(ratings, source)
