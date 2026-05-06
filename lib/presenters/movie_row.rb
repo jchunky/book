@@ -10,7 +10,6 @@ module Presenters
              :runtime,
              :genre,
              :director,
-             :country,
              :rotten_tomatoes,
              :rotten_tomatoes_url,
              :metacritic_url,
@@ -34,6 +33,10 @@ module Presenters
 
     def language_pill
       Models::Language.for(catalog_item.primary_language).to_html
+    end
+
+    def country
+      catalog_item.country == "United States" ? "" : catalog_item.country
     end
 
     def metacritic_html

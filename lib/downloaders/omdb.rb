@@ -96,8 +96,8 @@ module Downloaders
         rotten_tomatoes: Models::RottenTomatoesScore.parse(rating_value(ratings, "Rotten Tomatoes")),
         metacritic: Models::MetacriticScore.parse(rating_value(ratings, "Metacritic")),
         primary_language: primary_language(data["Language"]),
-        director: clean_value(data["Director"]),
-        country: clean_value(data["Country"]),
+        director: primary_director(data["Director"]),
+        country: primary_country(data["Country"]),
       )
     end
 
@@ -111,6 +111,14 @@ module Downloaders
       return "" if cleaned == "None"
 
       cleaned.split(",").first.to_s.strip
+    end
+
+    def primary_country(value)
+      clean_value(value).split(",").first.to_s.strip
+    end
+
+    def primary_director(value)
+      clean_value(value).split(",").first.to_s.strip
     end
 
     def rating_value(ratings, source)
