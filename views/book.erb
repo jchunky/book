@@ -127,14 +127,31 @@
   </div>
 
   <script>
+    // searchClass is set to a class no input has, so List.js skips auto-binding
+    // the search input. We bind it manually below with a restricted column list,
+    // which lets every column stay sortable while only some are searchable.
+    var DISABLE_AUTO_SEARCH = 'list-js-no-auto-search';
+
     var booksList = new List('books-list', {
-      valueNames: ['book-title', 'author', 'genre']
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'book-title', 'author', 'year', 'genre', 'audiences', 'content-type'],
+      searchClass: DISABLE_AUTO_SEARCH
     });
     booksList.sort('popularity', { order: 'desc' });
 
+    var booksSearchColumns = ['book-title', 'author', 'genre'];
+    document.querySelector('#books-list .search').addEventListener('input', function () {
+      booksList.search(this.value, booksSearchColumns);
+    });
+
     var moviesList = new List('movies-list', {
-      valueNames: ['title', 'genre', 'primary-language', 'director', 'country']
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language', 'director', 'country'],
+      searchClass: DISABLE_AUTO_SEARCH
     });
     moviesList.sort('popularity', { order: 'desc' });
+
+    var moviesSearchColumns = ['title', 'director', 'country', 'genre', 'primary-language'];
+    document.querySelector('#movies-list .search').addEventListener('input', function () {
+      moviesList.search(this.value, moviesSearchColumns);
+    });
   </script>
 </body>
