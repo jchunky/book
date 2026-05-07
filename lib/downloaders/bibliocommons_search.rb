@@ -23,14 +23,14 @@ module Downloaders
 
     private
 
-    def fetch_page(page)
+    def fetch_page(page, &bib_mapper)
       url = @url_builder.call(page)
       Utils::CachedFile.new(url:, crawl_delay: @crawl_delay, cacheable: method(:valid_response?)).read do |content|
         data = JSON.parse(content)
         bibs = data.dig("entities", "bibs") || {}
         ids = data.dig("catalogSearch", "results")
           &.map { |r| r["representative"] } || []
-        ids.filter_map { |id| yield(bibs[id]) }
+        ids.filter_map { |id| bib_mapper.call(bibs[id]) }
       end
     rescue StandardError => e
       warn "Bibliocommons page #{page} failed: #{e.message}"

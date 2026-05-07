@@ -6,7 +6,6 @@ module Presenters
       base.delegate :holds,
                     :copies,
                     :available,
-                    :on_order,
                     to: :copies_info
     end
 

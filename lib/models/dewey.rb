@@ -107,7 +107,7 @@ module Models
 
     def self.lookup(call_number)
       digits = call_number[/\A(\d+)/, 1]
-      return "" unless digits
+      return "" unless digits && digits.length >= 3
 
       code = digits.to_i / 10 * 10
       DIVISIONS[code] || ""

@@ -10,7 +10,6 @@ module Presenters
              :runtime,
              :genre,
              :director,
-             :rotten_tomatoes,
              :rotten_tomatoes_url,
              :metacritic_url,
              to: :catalog_item
@@ -37,6 +36,12 @@ module Presenters
 
     def country
       catalog_item.country == "United States" ? "" : catalog_item.country
+    end
+
+    def rotten_tomatoes_html
+      return "" if catalog_item.rotten_tomatoes.empty?
+
+      %(<a href="#{rotten_tomatoes_url}"><span class="rt">#{catalog_item.rotten_tomatoes}</span></a>)
     end
 
     def metacritic_html
