@@ -168,6 +168,7 @@ Circle of Friends
 Civil War
 Clear and Present Danger
 Close Encounters of the Third Kind
+Coal Miner's Daughter
 Colors
 Coming Home
 Companion
@@ -359,6 +360,7 @@ Internal Affairs
 Invasion of the Body Snatchers
 Invictus
 Iron Man
+Iron Man 3
 Isle of Dogs
 It
 It Could Happen to You
@@ -457,6 +459,7 @@ Moonrise Kingdom
 Moonstruck
 Mr. Holland's Opus
 Mr. Mom
+Mr. Peabody & Sherman
 Much Ado About Nothing
 Mulan
 Munich
@@ -477,6 +480,7 @@ Nobody
 Nobody 2
 Nobody's Fool
 Nope
+Nosferatu
 Notting Hill
 Novocaine
 Nurse Betty
@@ -557,6 +561,7 @@ Saturday Night Fever
 Saving Mr. Banks
 Saving Private Ryan
 Saw X
+Say Anything
 Scarface
 Scary Stories to Tell in the Dark
 Scent of a Woman
@@ -850,6 +855,7 @@ Wag the Dog
 Wall Street
 Wallace & Gromit: The Curse of the Were-Rabbit
 War for the Planet of the Apes
+War of the Worlds
 WarGames
 We Live in Time
 Weapons
