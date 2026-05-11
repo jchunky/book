@@ -1,6 +1,7 @@
 10 Cloverfield Lane
 12 Monkeys
 12 Years a Slave
+1408
 1917
 2001: A Space Odyssey
 28 Days Later
@@ -259,6 +260,7 @@ Finding Dory
 Finding Nemo
 Finding Neverland
 First Man
+Flags of Our Fathers
 Flash Gordon
 Florence Foster Jenkins
 Ford v Ferrari
@@ -633,6 +635,7 @@ Straight Outta Compton
 Sully
 Superbad
 Superman
+Surf's Up
 Tangled
 Tarzan
 Taxi Driver
@@ -670,6 +673,7 @@ The Blair Witch Project
 The Bob's Burgers Movie
 The Book of Life
 The Bourne Identity
+The Bourne Ultimatum
 The Boy and the Heron
 The Bridge on the River Kwai
 The Bridges of Madison County
@@ -755,6 +759,7 @@ The Lord of the Rings: The Fellowship of the Ring
 The Lord of the Rings: The Return of the King
 The Lord of the Rings: The Two Towers
 The Lost City
+The Man from Snowy River
 The Manchurian Candidate
 The Mask
 The Mask of Zorro
@@ -798,6 +803,7 @@ The Shape of Water
 The Shawshank Redemption
 The Shining
 The Silence of the Lambs
+The Simpsons Movie
 The Sixth Sense
 The Social Network
 The Sound of Music
