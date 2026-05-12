@@ -6,9 +6,9 @@ module Services
 
     def keep?
       # == KIDS ==
-      # return false unless meet_minimum_quality_bar?
-      # return false unless meet_personal_interest_criteria?
-      # return false unless box_office.to_i >= 50
+      return false unless meet_minimum_quality_bar?
+      return false unless meet_personal_interest_criteria?
+      return false unless box_office.to_i >= 50
       # return false if restricted?
 
       # == FOREIGN ==
@@ -24,9 +24,9 @@ module Services
       # return false unless metacritic.to_i >= 70
 
       # == UNPROCESSED ==
-      return false unless box_office.to_i >= 20
-      return false if processed?
-      return false unless must_see? || certified_fresh?
+      # return false unless box_office.to_i >= 20
+      # return false if processed?
+      # return false unless must_see? || certified_fresh?
 
       true
     end
