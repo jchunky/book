@@ -7,7 +7,7 @@ module Services
         .new { |page| url_for_page(page) }
         .fetch_all { |bib| bib_to_movie(bib) }
         .reject(&:tv_series?)
-        .sort_by { |m| -m.popularity.score }
+        .sort_by { |m| -m.box_office.to_i }
         .then { |movies| enrich_with_omdb(movies) }
     end
 
