@@ -26,7 +26,7 @@ module Services
 
       # == UNPROCESSED ==
       return false unless box_office.to_i >= 1
-      return false if processed?
+      # return false if processed?
       # return false unless must_see? || certified_fresh?
 
       true
