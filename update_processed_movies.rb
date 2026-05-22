@@ -13,11 +13,9 @@ class UpdateProcessedMovies
   def run
     Models::Movie.all
       .select do |m|
-        (
-          m.rotten_tomatoes.to_i >= 75
-          || m.metacritic.to_i >= 80
-        )
-        && m.box_office.to_i >= 20
+        m.rotten_tomatoes.to_i >= 75
+          && m.box_office.to_i >= 1
+          && m.rated?
       end
       .map(&:display_title).map(&:to_s).sort.uniq
       .then do |titles|

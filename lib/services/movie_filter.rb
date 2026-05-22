@@ -42,7 +42,7 @@ module Services
     end
 
     def meet_personal_interest_criteria?
-      return false if animation? || musical? || juvenile? #|| !foreign?
+      return false if animation? || musical? || juvenile?
       # return false unless display_year.to_i >= 2000
 
       true
