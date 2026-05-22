@@ -19,7 +19,11 @@ module Presenters
     end
 
     def title_class
-      catalog_item.must_see? ? nil : "not-must-see"
+      classes = []
+      classes << "not-must-see" unless catalog_item.must_see?
+      classes << "loved" if catalog_item.loved?
+      classes << "disliked" if catalog_item.disliked?
+      classes.join(" ").presence
     end
 
     def rated_pill
