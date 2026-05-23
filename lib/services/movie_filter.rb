@@ -6,16 +6,18 @@ module Services
 
     def keep?
       return false if animation? || musical? || juvenile?
+      return false unless rated?
+      return false unless box_office.to_i >= 1
+      return false unless metacritic.to_i >= 1
+      return false unless rotten_tomatoes.to_i >= 75
+
       # return false if restricted?
       # return false if processed?
       # return false unless foreign?
-      return false unless rated?
 
-      return false unless box_office.to_i >= 1
       # return false unless display_year.to_i >= 2000
       # return false unless metacritic.to_i >= 70
       # return false unless popularity.to_i >= 1
-      # return false unless rotten_tomatoes.to_i >= 75
 
       true
     end
