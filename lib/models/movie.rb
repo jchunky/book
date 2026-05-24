@@ -47,7 +47,7 @@ module Models
     def foreign? = Models::Language.for(primary_language).foreign?
     def rated? = Models::ContentRating.rated?(self)
     def display_title = omdb.title.empty? ? title : omdb.title
-    def display_year = omdb.year.empty? ? year : omdb.year
+    def display_year = omdb.year.empty? ? year.to_i : omdb.year.to_i
     def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)
     def metacritic_url = GoogleRedirectUrl.new("site:metacritic.com/movie", display_title, display_year)
     def processed? = Config::ProcessedTitles::ALL.include?(display_title)
