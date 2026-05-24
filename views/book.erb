@@ -149,7 +149,14 @@
       valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language', 'director', 'country'],
       searchClass: DISABLE_AUTO_SEARCH
     });
-    moviesList.sort('popularity', { order: 'desc' });
+    moviesList.sort('year', {
+      order: 'desc',
+      sortFunction: function (a, b) {
+        var yearDiff = (parseInt(b.values().year, 10) || 0) - (parseInt(a.values().year, 10) || 0);
+        if (yearDiff !== 0) return yearDiff;
+        return (parseInt(b.values().popularity, 10) || 0) - (parseInt(a.values().popularity, 10) || 0);
+      }
+    });
 
     var moviesSearchColumns = ['title', 'director', 'country', 'genre', 'primary-language'];
     document.querySelector('#movies-list .search').addEventListener('input', function () {
