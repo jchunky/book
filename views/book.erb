@@ -152,9 +152,9 @@
     moviesList.sort('year', {
       order: 'desc',
       sortFunction: function (a, b) {
-        var yearDiff = (parseInt(b.values().year, 10) || 0) - (parseInt(a.values().year, 10) || 0);
+        var yearDiff = (parseInt(a.values().year, 10) || 0) - (parseInt(b.values().year, 10) || 0);
         if (yearDiff !== 0) return yearDiff;
-        return (parseInt(b.values().popularity, 10) || 0) - (parseInt(a.values().popularity, 10) || 0);
+        return (parseInt(a.values().popularity, 10) || 0) - (parseInt(b.values().popularity, 10) || 0);
       }
     });
 
