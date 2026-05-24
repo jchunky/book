@@ -53,6 +53,7 @@ Cast Away
 Chinatown
 Chungking Express
 Close Encounters of the Third Kind
+Colossal
 Comedian
 Crocodile Dundee
 Cronos
@@ -214,6 +215,7 @@ The Machinist
 The Man from Nowhere
 The Matrix
 The Naked Gun
+The One I Love
 The Piano
 The Shawshank Redemption
 The Silence of the Lambs
