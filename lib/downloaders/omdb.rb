@@ -40,8 +40,10 @@ module Downloaders
       titles << base if base != title
 
       titles.each do |t|
-        result = info_for(title: t, year:)
-        return result if result != NO_INFO && titles_match?(t, result.title)
+        if year.to_i >= 1
+          result = info_for(title: t, year:)
+          return result if result != NO_INFO && titles_match?(t, result.title)
+        end
 
         result = info_for(title: t)
         return result unless result == NO_INFO
