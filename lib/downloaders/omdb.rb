@@ -8,6 +8,7 @@ module Downloaders
     class Info < Data.define(
       :title,
       :year,
+      :type,
       :rated,
       :runtime,
       :genre,
@@ -18,11 +19,16 @@ module Downloaders
       :director,
       :country,
     )
+      def movie? = type == "movie"
+      def series? = type == "series"
+      def episode? = type == "episode"
+      def game? = type == "game"
     end
 
     NO_INFO = Info.new(
       title: "",
       year: "",
+      type: "",
       rated: "",
       runtime: Models::Runtime::EMPTY,
       genre: "",
@@ -91,6 +97,7 @@ module Downloaders
       Info.new(
         title: data["Title"].to_s,
         year: data["Year"].to_s,
+        type: data["Type"].to_s,
         rated: clean_value(data["Rated"]),
         runtime: Models::Runtime.parse(data["Runtime"]),
         genre: data["Genre"].to_s,
