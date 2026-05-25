@@ -7,8 +7,9 @@ module Services
         .new { |page| url_for_page(page) }
         .fetch_all { |bib| bib_to_movie(bib) }
         .reject(&:tv_series?)
-        .sort_by { |m| m.year.to_i }
+        .sort_by { |m| [m.display_year, -m.popularity.to_i] }
         .then { |movies| enrich_with_omdb(movies) }
+        .uniq { |m| [m.display_title, m.display_year] }
     end
 
     private
