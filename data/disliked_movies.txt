@@ -1,4 +1,5 @@
 12 Monkeys
+2046
 48 Hrs.
 500 Days of Summer
 A Bronx Tale
@@ -10,19 +11,35 @@ American Beauty
 American Splendor
 An Education
 Annie Hall
+Ant-Man
+Ant-Man and the Wasp
+Atomic Blonde
+Avatar
+Avengers: Endgame
 Awakenings
+Baby Driver
+Beetlejuice Beetlejuice
 Better Off Dead
 Big Fish
 Bill & Ted's Excellent Adventure
 Billy Elliot
 Bird
+Birds of Prey and the Fantabulous Emancipation of One Harley Quinn
+Black Panther
 Black Robe
+Black Widow
+Blade Runner 2049
 Blazing Saddles
+Blue Beetle
 Bowling for Columbine
 Bridget Jones's Diary
 Broadcast News
 Bull Durham
 Cape Fear
+Captain America: Civil War
+Captain America: The First Avenger
+Captain America: The Winter Soldier
+Captain Marvel
 Casablanca
 Casino
 Chasing Amy
@@ -32,9 +49,12 @@ Colors
 Crossing Delancey
 Dawn of the Dead
 Dead Again
+Deadpool
+Deedpool 2
 Dirty Harry
 District 9
 Django Unchained
+Doctor Strange
 Dogtown and Z-Boys
 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
 Eastern Promises
@@ -58,17 +78,23 @@ Good Morning, Vietnam
 Goodfellas
 Grand Canyon
 Grosse Pointe Blank
+Guardians of the Galaxy
+Guardians of the Galaxy Vol. 2
 Hannah and Her Sisters
 Heaven Can Wait
 Hidden Figures
 Howards End
 Inception
 Internal Affairs
+Iron Man
+Iron Man 3
 Jackie Brown
+John Wick: Chapter 2
 Juno
 King Kong
 Land of the Dead
 Life of Pi
+Like Water for Chocolate
 Little Big Man
 Looper
 Love & Basketball
@@ -78,6 +104,11 @@ Magnolia
 Midnight Cowboy
 Midnight in Paris
 Misery
+Mission: Impossible - Dead Reckoning Part One
+Mission: Impossible - Fallout
+Mission: Impossible - Ghost Protocol
+Mission: Impossible - Rogue Nation
+Mission: Impossible - The Final Reckoning
 Monty Python and the Holy Grail
 Monty Python's Life of Brian
 Moonrise Kingdom
@@ -89,8 +120,10 @@ National Lampoon's Animal House
 Night of the Comet
 Night on Earth
 O Brother, Where Art Thou?
+Oldboy
 One Flew Over the Cuckoo's Nest
 Pale Rider
+Pan's Labyrinth
 Pee-wee's Big Adventure
 Planet of the Apes
 Primal Fear
@@ -104,25 +137,37 @@ Rogue One: A Star Wars Story
 Romero
 Rushmore
 Scarface
+Shang-Chi and the Legend of the Ten Rings
 Sharky's Machine
 Shaun of the Dead
+Shazam!
 Shine
 Sicko
 Sling Blade
 Sneakers
 Snowpiercer
+Spider-Man: Far from Home
+Spider-Man: Homecoming
+Spider-Man: No Way Home
+Star Trek Beyond
+Star Wars: Episode VII - The Force Awakens
 Sunshine
 Taxi Driver
+The Avengers
+The Batman
 The Big Easy
 The Blair Witch Project
 The Brother from Another Planet
 The Butcher Boy
+The Dark Knight
+The Dark Knight Rises
 The Fabulous Baker Boys
 The Fisher King
 The Flamingo Kid
 The Fog
 The Graduate
 The Ice Storm
+The Imitation Game
 The Joy Luck Club
 The Last Emperor
 The Last Starfighter
@@ -142,15 +187,21 @@ The Usual Suspects
 The War of the Roses
 The Warriors
 There Will Be Blood
+Thor
+Thor: Ragnarok
 Thunderbolts*
 Thunderheart
 Top Secret!
 Trading Places
 True Grit
+Twisters
 Wall Street
 War of the Worlds
 WarGames
 Wedding Crashers
 White Hunter Black Heart
 Witness
+Wonder Woman
+X-Men: Days of Future Past
+X-Men: First Class
 Young Frankenstein
