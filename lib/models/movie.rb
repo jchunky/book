@@ -51,6 +51,7 @@ module Models
     def rotten_tomatoes_url = GoogleRedirectUrl.new("site:rottentomatoes.com/m", display_title, display_year)
     def metacritic_url = GoogleRedirectUrl.new("site:metacritic.com/movie", display_title, display_year)
     def processed? = Config::ProcessedTitles::ALL.include?(display_title)
+    def watched? = loved? || disliked?
     def loved? = Config::MovieOpinions::LOVED.include?(display_title)
     def disliked? = Config::MovieOpinions::DISLIKED.include?(display_title)
   end
