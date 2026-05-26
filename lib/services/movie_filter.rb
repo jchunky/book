@@ -10,7 +10,8 @@ module Services
       return false unless rated?
       return false unless box_office.to_i >= 1
       return false unless metacritic.to_i >= 1
-      return false unless rotten_tomatoes.to_i >= 75
+      return false unless rotten_tomatoes.to_i >= 1
+      return false unless rotten_tomatoes.to_i <= 74
 
       # return false unless watched?
       # return false unless loved?

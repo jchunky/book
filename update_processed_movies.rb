@@ -13,7 +13,8 @@ class UpdateProcessedMovies
   def run
     Models::Movie.all
       .select do |m|
-        m.rotten_tomatoes.to_i >= 75
+        m.omdb.movie?
+          && m.rotten_tomatoes.to_i >= 1
           && m.box_office.to_i >= 1
           && m.rated?
       end
