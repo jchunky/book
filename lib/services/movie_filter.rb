@@ -11,9 +11,8 @@ module Services
       return false unless box_office.to_i >= 1
       return false unless metacritic.to_i >= 1
       return false unless rotten_tomatoes.to_i >= 1
-      return false unless rotten_tomatoes.to_i <= 74
 
-      # return false unless watched?
+      return false unless watched?
       # return false unless loved?
       # return false if restricted?
       # return false if processed?
