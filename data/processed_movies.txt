@@ -2,6 +2,7 @@
 'Round Midnight
 10
 10 Cloverfield Lane
+10 Things I Hate About You
 101 Dalmatians
 102 Dalmatians
 12 Mighty Orphans
@@ -232,6 +233,7 @@ Ant-Man and the Wasp: Quantumania
 Anthropoid
 Antonia's Line
 Antwone Fisher
+Antz
 Any Which Way You Can
 Anyone But You
 Apocalypse Now
@@ -481,6 +483,7 @@ Brooklyn
 Brooklyn's Finest
 Bros
 Bruce Almighty
+Buena Vista Social Club
 Buffalo '66
 Bugonia
 Bugsy
@@ -539,6 +542,7 @@ Caught Stealing
 Cave of Forgotten Dreams
 Celebrity
 Cellular
+Center Stage
 Certain Women
 Challengers
 Champions
@@ -571,6 +575,7 @@ Chitty Chitty Bang Bang
 Christine
 Christmas with the Kranks
 Christopher Robin
+Chuck & Buck
 Chungking Express
 Churchill
 Cinderella
@@ -631,6 +636,7 @@ Cool as Ice
 Cop Land
 Copshop
 Coraline
+Coriolanus
 Corky Romano
 Corpse Bride
 Cosmopolis
@@ -638,6 +644,7 @@ Country
 Coupe de Ville
 Couples Retreat
 Courageous
+Cousin Bette
 Coyote Ugly
 Cradle Will Rock
 Crank
@@ -695,6 +702,7 @@ Dead Calm
 Dead Man Walking
 Dead Men Don't Wear Plaid
 Dead Poets Society
+Dead Ringers
 Deadly Friend
 Deadpool
 Deadpool & Wolverine
@@ -786,6 +794,7 @@ Dracula
 Draft Day
 Drag Me to Hell
 Dragon: The Bruce Lee Story
+DragonHeart
 Dragonball Evolution
 Dragonslayer
 Dream Scenario
@@ -879,6 +888,7 @@ Exit Wounds
 Exotica
 Extract
 Extreme Measures
+Eye of the Beholder
 Eye of the Needle
 Eyes Wide Shut
 Eyes of Laura Mars
@@ -897,7 +907,9 @@ Fantasia 2000
 Fantastic Beasts and Where to Find Them
 Fantastic Beasts: The Crimes of Grindelwald
 Fantastic Beasts: The Secrets of Dumbledore
+Far and Away
 Far from the Madding Crowd
+Farewell My Concubine
 Fargo
 Farinelli
 Fast & Furious
@@ -913,6 +925,7 @@ Father Stu
 Father of the Bride
 Fear and Loathing in Las Vegas
 Fed Up
+Felicia's Journey
 Ferdinand
 FernGully: The Last Rainforest
 Ferrari
@@ -974,6 +987,7 @@ Ford v Ferrari
 Forever Strong
 Forever Young
 Forrest Gump
+Fort Apache the Bronx
 Four Good Days
 Foxcatcher
 Fracture
@@ -1076,6 +1090,7 @@ Goosebumps 2: Haunted Halloween
 Gorillas in the Mist
 Gorky Park
 Gosford Park
+Grace of My Heart
 Graffiti Bridge
 Gran Torino
 Grand Canyon
@@ -1087,6 +1102,7 @@ Green Lantern
 Green Room
 Greenfingers
 Gretel & Hansel
+Grey Owl
 Gridiron Gang
 Gridlock'd
 Gringo
@@ -1143,6 +1159,7 @@ He Got Game
 He's Just Not That Into You
 Head of State
 Heart Eyes
+Heart and Souls
 Heartbreak Ridge
 Heartburn
 Hearts Beat Loud
@@ -1254,6 +1271,7 @@ If Beale Street Could Talk
 If I Had Legs I'd Kick You
 Immaculate
 Immediate Family
+Immortal Beloved
 Impromptu
 In Bruges
 In Country
@@ -1368,6 +1386,7 @@ Jumanji: The Next Level
 Jumanji: Welcome to the Jungle
 Jumper
 Jungle Cruise
+Jungle Fever
 Juno
 Jupiter Ascending
 Jurassic Park
@@ -1574,6 +1593,7 @@ Man of Steel
 Man of the Year
 Man on Fire
 Man on Wire
+Man on the Moon
 Manchester by the Sea
 Manhattan Murder Mystery
 Mansfield Park
@@ -1733,6 +1753,7 @@ Muppet Treasure Island
 Muppets from Space
 Murder in the First
 Murder on the Orient Express
+Muriel's Wedding
 Murmur of the Heart
 Music and Lyrics
 Music of the Heart
@@ -1747,8 +1768,10 @@ My Cousin Rachel
 My Cousin Vinny
 My Crazy Life
 My Dead Friend Zoe
+My Dog Skip
 My Fair Lady
 My Favorite Year
+My Girl
 My Hero Academia: Heroes Rising
 My Hero Academia: Two Heroes
 My Left Foot
@@ -2099,6 +2122,7 @@ Reversal of Fortune
 Revolutionary Road
 Richard III
 Richard Jewell
+Richard Pryor: Live on the Sunset Strip
 Richie Rich
 Ricochet
 Rider on the Rain
@@ -2156,6 +2180,7 @@ Rush Hour 3
 Rushmore
 Safe
 Safe House
+Salsa
 Salt
 Sasquatch Sunset
 Saturday Night
@@ -2220,6 +2245,7 @@ Shakespeare in Love
 Shall We Dance?
 Shang-Chi and the Legend of the Ten Rings
 Shanghai Knights
+Shanghai Noon
 Shanghai Surprise
 Shark Tale
 Sharky's Machine
@@ -2385,6 +2411,7 @@ Step Up
 Steve Jobs
 Stigmata
 Stillwater
+Stir Crazy
 Stoker
 Stomp the Yard
 Stop Making Sense
@@ -2488,6 +2515,7 @@ The Addams Family 2
 The Adjustment Bureau
 The Adventures of Baron Munchausen
 The Adventures of Elmo in Grouchland
+The Adventures of Milo and Otis
 The Adventures of Pinocchio
 The Adventures of Priscilla, Queen of the Desert
 The Adventures of Tintin
@@ -2560,12 +2588,14 @@ The Book of Clarence
 The Book of Eli
 The Book of Henry
 The Book of Life
+The Borrowers
 The Boss
 The Boss Baby: Family Business
 The Bounty
 The Bounty Hunter
 The Bourne Identity
 The Bourne Ultimatum
+The Boxer
 The Boy and the Beast
 The Boy and the Heron
 The Boy in the Striped Pajamas
@@ -2711,6 +2741,7 @@ The Fisher King
 The Five-Year Engagement
 The Flamingo Kid
 The Flash
+The Flintstones
 The Florida Project
 The Flower of My Secret
 The Fog
@@ -2894,6 +2925,7 @@ The Lion King
 The Little Hours
 The Little Mermaid
 The Little Prince
+The Little Rascals
 The Little Things
 The Living Daylights
 The Lone Ranger
@@ -2994,6 +3026,7 @@ The Nutcracker
 The Nutcracker and the Four Realms
 The Nutty Professor
 The Odd Couple
+The Odessa File
 The Old Man & the Gun
 The Omen
 The One I Love
@@ -3071,12 +3104,14 @@ The Rider
 The Right Stuff
 The Ring Two
 The Road Warrior
+The Road to El Dorado
 The Rock
 The Rocky Horror Picture Show
 The Room Next Door
 The Rose
 The Royal Hotel
 The Royal Tenenbaums
+The Rugrats Movie
 The Running Man
 The Saint
 The Sandlot
@@ -3095,6 +3130,7 @@ The Secret Life of Pets 2
 The Secret Life of Walter Mitty
 The Secret World of Arrietty
 The Secret of My Success
+The Secret of NIMH
 The Secret of Roan Inish
 The Seduction of Joe Tynan
 The Sense of an Ending
@@ -3205,6 +3241,7 @@ The Wedding Singer
 The Whale
 The White Countess
 The White Crow
+The Whole Nine Yards
 The Whole Ten Yards
 The Wife
 The Wild Bunch
@@ -3233,6 +3270,7 @@ The Year of Living Dangerously
 The Zookeeper's Wife
 Their Finest
 Thelma
+Thelma & Louise
 Thelonious Monk: Straight, No Chaser
 There Will Be Blood
 There's Something About Mary
@@ -3450,6 +3488,7 @@ Welcome to Me
 Werewolves Within
 What About Bob?
 What Dreams May Come
+What If
 What Just Happened
 What Lies Beneath
 What Men Want
@@ -3549,6 +3588,7 @@ You Can Count on Me
 You Don't Mess with the Zohan
 You Gotta Believe
 You Hurt My Feelings
+You Only Live Twice
 You Were Never Really Here
 You've Got Mail
 You, Me and Dupree
