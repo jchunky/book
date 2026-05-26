@@ -1,40 +1,62 @@
 12 Monkeys
 2046
+28 Weeks Later
 48 Hrs.
 500 Days of Summer
+52 Pick-Up
 A Bronx Tale
 A Clockwork Orange
 A Few Good Men
 A Fish Called Wanda
 A League of Their Own
+About Time
+Adventures in Babysitting
+Alien: Resurrection
+Alita: Battle Angel
 American Beauty
+American Pie
+American Psycho
 American Splendor
 An Education
 Annie Hall
 Ant-Man
 Ant-Man and the Wasp
+Any Which Way You Can
+Armageddon
+Army of Darkness
 Atomic Blonde
+Austin Powers: International Man of Mystery
 Avatar
 Avengers: Endgame
 Awakenings
 Baby Driver
+Back to the Future Part II
+Bad Boys
+Basic Instinct
+Batman v Superman: Dawn of Justice
 Beetlejuice Beetlejuice
+Before Night Falls
 Better Off Dead
 Big Fish
+Big Trouble in Little China
 Bill & Ted's Excellent Adventure
 Billy Elliot
 Bird
 Birds of Prey and the Fantabulous Emancipation of One Harley Quinn
+Bitter Moon
 Black Panther
 Black Robe
 Black Widow
+Blade
 Blade Runner 2049
 Blazing Saddles
+Bloodsport
 Blue Beetle
 Bowling for Columbine
 Bridget Jones's Diary
 Broadcast News
 Bull Durham
+Caddyshack
 Cape Fear
 Captain America: Civil War
 Captain America: The First Avenger
@@ -42,32 +64,57 @@ Captain America: The Winter Soldier
 Captain Marvel
 Casablanca
 Casino
+Charlie's Angels
 Chasing Amy
 Children of Men
 Clear and Present Danger
+Cloud Atlas
 Colors
+Conan the Barbarian
+Creepshow
+Creepshow 2
 Crossing Delancey
+Cube
+Curse of the Pink Panther
 Dawn of the Dead
+Daybreakers
 Dead Again
 Deadpool
 Deedpool 2
+Desperado
+Dick Tracy
+Die Hard 2
+Dirty Dancing
 Dirty Harry
 District 9
 Django Unchained
+Doc Hollywood
 Doctor Strange
+Doctor Strange in the Multiverse of Madness
 Dogtown and Z-Boys
+Dogville
 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+Dracula
+Dumb and Dumber
+Dune
 Eastern Promises
 Edward Scissorhands
 Elf
 Empire of the Sun
 Escape from the Planet of the Apes
+Eternals
 Exotica
 Eyes Wide Shut
 Face/Off
 Fargo
 Fast Times at Ridgemont High
+Fear and Loathing in Las Vegas
+Firestarter
 Flash Gordon
+Flatliners
+Footloose
+For Your Eyes Only
+Frequency
 Fried Green Tomatoes
 Galaxy Quest
 Game Night
@@ -77,30 +124,55 @@ Gone with the Wind
 Good Morning, Vietnam
 Goodfellas
 Grand Canyon
+Green Card
+Green Lantern
 Grosse Pointe Blank
 Guardians of the Galaxy
 Guardians of the Galaxy Vol. 2
+Hancock
+Hanna
 Hannah and Her Sisters
+Hard Candy
+Hard to Kill
 Heaven Can Wait
+Hellboy
 Hidden Figures
+Highlander
 Howards End
 Inception
+Inherent Vice
 Internal Affairs
+Interstellar
 Iron Man
+Iron Man 2
 Iron Man 3
+Jack Reacher
 Jackie Brown
+Jason Bourne
+Jennifer's Body
+John Carter
 John Wick: Chapter 2
+Jumanji: The Next Level
+Jumper
 Juno
+Kindergarten Cop
 King Kong
+Kiss of the Dragon
+Ladyhawke
 Land of the Dead
+Last Action Hero
+Last Man Standing
+Lethal Weapon 3
 Life of Pi
 Like Water for Chocolate
 Little Big Man
 Looper
+Lost Highway
 Love & Basketball
 Mad Max
 Mad Max Beyond Thunderdome
 Magnolia
+Man of Steel
 Midnight Cowboy
 Midnight in Paris
 Misery
@@ -109,99 +181,189 @@ Mission: Impossible - Fallout
 Mission: Impossible - Ghost Protocol
 Mission: Impossible - Rogue Nation
 Mission: Impossible - The Final Reckoning
+Mo' Better Blues
 Monty Python and the Holy Grail
 Monty Python's Life of Brian
 Moonrise Kingdom
+Mr. & Mrs. Smith
 Mr. Mom
 Much Ado About Nothing
+Mulholland Falls
+My Blue Heaven
 My Own Private Idaho
 Mystic River
 National Lampoon's Animal House
+Natural Born Killers
+Never Say Never Again
+Next
 Night of the Comet
 Night on Earth
+Nightbreed
 O Brother, Where Art Thou?
+Octopussy
 Oldboy
 One Flew Over the Cuckoo's Nest
 Pale Rider
 Pan's Labyrinth
+Pandorum
+Passengers
 Pee-wee's Big Adventure
 Planet of the Apes
+Point Break
+Police Academy
+Porky's
+Predator
+Pretty Woman
 Primal Fear
+Prince of Persia: The Sands of Time
 Prisoners
 Prizzi's Honor
+Prometheus
 Raising Arizona
+Rambo: First Blood Part II
+Ready Player One
+Regarding Henry
+Revenge of the Nerds
 Risky Business
 Road to Perdition
+Robin Hood: Prince of Thieves
 Rocky
+Rocky II
 Rogue One: A Star Wars Story
 Romero
 Rushmore
+Salt
+Scanners
 Scarface
+Scrooged
 Shang-Chi and the Legend of the Ten Rings
 Sharky's Machine
 Shaun of the Dead
 Shazam!
 Shine
+Short Circuit
+Shutter Island
 Sicko
+Sleepy Hollow
 Sling Blade
+Smokey and the Bandit
+Smokey and the Bandit II
+Snatch
 Sneakers
 Snowpiercer
+Spaceballs
+Spider-Man 3
 Spider-Man: Far from Home
 Spider-Man: Homecoming
 Spider-Man: No Way Home
 Star Trek Beyond
+Star Trek: The Motion Picture
+Star Wars: Episode IX - The Rise of Skywalker
 Star Wars: Episode VII - The Force Awakens
+Starship Troopers
+Sucker Punch
+Suicide Squad
 Sunshine
+Superman Returns
+Taken 2
+Taken 3
 Taxi Driver
+Tenet
+Terminator: Dark Fate
+The Accountant
+The Addams Family
+The Adjustment Bureau
+The Amazing Spider-Man 2
 The Avengers
 The Batman
 The Big Easy
 The Blair Witch Project
+The Blues Brothers
+The Book of Eli
 The Brother from Another Planet
 The Butcher Boy
+The Cannonball Run
+The Chronicles of Riddick
+The Color Purple
 The Dark Knight
 The Dark Knight Rises
+The Equalizer 2
 The Fabulous Baker Boys
+The Fifth Element
 The Fisher King
 The Flamingo Kid
+The Flash
 The Fog
+The Godfather Part III
+The Golden Child
 The Graduate
+The Hateful Eight
+The Hitcher
 The Ice Storm
 The Imitation Game
 The Joy Luck Club
 The Last Emperor
+The Last Samurai
 The Last Starfighter
 The Lincoln Lawyer
 The Man with Two Brains
 The Mask
 The Mask of Zorro
+The Matrix Revolutions
+The Mist
 The Northman
+The Notebook
+The Outsiders
 The Paper
 The Place Beyond the Pines
 The Prestige
 The Revenant
+The Rock
 The Royal Tenenbaums
+The Running Man
+The Secret of My Success
 The Shining
 The Straight Story
+The Transporter
 The Usual Suspects
 The War of the Roses
 The Warriors
+The Witches of Eastwick
+The Wolverine
 There Will Be Blood
 Thor
 Thor: Ragnarok
+Thor: The Dark World
+Three Men and a Baby
 Thunderbolts*
 Thunderheart
+Top Gun
 Top Secret!
 Trading Places
+Training Day
+Tron: Legacy
 True Grit
+Twister
 Twisters
+U.S. Marshals
+Uncle Buck
+Universal Soldier
+V for Vendetta
+Venom
 Wall Street
 War of the Worlds
 WarGames
+Watchmen
 Wedding Crashers
+Weird Science
 White Hunter Black Heart
 Witness
 Wonder Woman
+Wonder Woman 1984
+World War Z
+Wrath of Man
 X-Men: Days of Future Past
 X-Men: First Class
+X-Men: The Last Stand
+Yesterday
 Young Frankenstein
