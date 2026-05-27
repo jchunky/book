@@ -6,7 +6,7 @@ module Services
 
     def keep?
       return false if animation? || musical? || juvenile?
-      return false unless omdb.movie?
+      return false unless omdb_matched? && omdb.movie?
       return false unless rated?
       return false unless box_office.to_i >= 1
       return false unless metacritic.to_i >= 1

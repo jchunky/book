@@ -4,6 +4,7 @@ module Models
   class Movie < Data.define(
     :biblio,
     :omdb,
+    :omdb_status,
   )
     delegate :title,
              :copies_info,
@@ -31,6 +32,9 @@ module Models
     def self.all = Services::MovieLibrary.new.movies
 
     def keep? = Services::MovieFilter.keep?(self)
+    def omdb_matched?   = omdb_status == :matched
+    def omdb_unmatched? = omdb_status == :unmatched
+    def omdb_unqueried? = omdb_status == :unqueried
     def certified_fresh? = rotten_tomatoes.fresh?
     def must_see? = metacritic.must_see?
     def juvenile? = Models::Audience.juvenile?(self)

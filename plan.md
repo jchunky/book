@@ -15,3 +15,5 @@
 ### 8. Extract `CatalogRow` module for shared presenter methods ✅ 0fe5458
 ### 9. Extract `GoogleRedirectUrl` value object ✅ 1d5a7e4
 ### 10. Add Null Object for unknown `Audience` ✅ 38a5014
+### 11. Disambiguate OMDB outcomes via `Omdb::Lookup` value object
+### 12. Surface OMDB Status column on movie list table

@@ -17,8 +17,8 @@ module Services
     def enrich_with_omdb(movies)
       omdb_client = Downloaders::Omdb.new
       movies.map do |movie|
-        info = omdb_client.info(title: movie.title.to_s, year: movie.year)
-        Models::Movie.new(biblio: movie.biblio, omdb: info)
+        lookup = omdb_client.lookup(title: movie.title.to_s, year: movie.year)
+        Models::Movie.new(biblio: movie.biblio, omdb: lookup.info, omdb_status: lookup.status)
       end
     end
 
@@ -39,6 +39,7 @@ module Services
       Models::Movie.new(
         biblio:,
         omdb: Downloaders::Omdb::NO_INFO,
+        omdb_status: :unqueried,
       )
     end
   end

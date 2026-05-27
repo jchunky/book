@@ -40,53 +40,78 @@ module Downloaders
       country: "",
     )
 
-    def info(title:, year:)
+    class Lookup < Data.define(:info, :status)
+      def matched?   = status == :matched
+      def unmatched? = status == :unmatched
+      def unqueried? = status == :unqueried
+    end
+
+    UNQUERIED = Lookup.new(info: NO_INFO, status: :unqueried)
+
+    def lookup(title:, year:)
       titles = [title]
       base = title.split(":").first.to_s.strip
       titles << base if base != title
 
+      best = UNQUERIED
       titles.each do |t|
         if year.to_i >= 1
-          result = info_for(title: t, year:)
-          return result if result != NO_INFO && titles_match?(t, result.title)
+          result = lookup_for(title: t, year:)
+          return result if result.matched? && titles_match?(t, result.info.title)
+          best = prefer(best, result)
         end
 
-        result = info_for(title: t)
-        return result unless result == NO_INFO
+        result = lookup_for(title: t)
+        return result if result.matched?
+        best = prefer(best, result)
       end
 
-      NO_INFO
+      best
     end
 
     private
+
+    def prefer(current, candidate)
+      return candidate if current.unqueried? && !candidate.unqueried?
+      current
+    end
 
     def titles_match?(requested, returned)
       requested.downcase == returned.downcase
     end
 
-    def info_for(title:, year: nil)
+    def lookup_for(title:, year: nil)
       cached = Utils::CachedFile.new(
         url: url_for(title:, year:),
         crawl_delay: 1,
         cacheable: method(:cacheable_response?),
       )
-      return cached_info(cached) if @rate_limited
+      return cached_lookup(cached) if @rate_limited
 
-      cached.read { |content| parse_info(JSON.parse(content)) }
+      info = cached.read { |content| parse_info(JSON.parse(content)) }
+      lookup_from(info)
     rescue RateLimitError
       cached.invalidate
       @rate_limited = true
       warn "OMDb daily limit reached, using cache only"
-      NO_INFO
+      UNQUERIED
     rescue StandardError => e
       warn "OMDb lookup failed for '#{title}': #{e.message}"
-      NO_INFO
+      UNQUERIED
     end
 
-    def cached_info(cached)
-      cached.read_if_cached { |c| parse_info(JSON.parse(c)) } || NO_INFO
+    def cached_lookup(cached)
+      info = cached.read_if_cached { |c| parse_info(JSON.parse(c)) }
+      return UNQUERIED unless info
+
+      lookup_from(info)
     rescue StandardError
-      NO_INFO
+      UNQUERIED
+    end
+
+    def lookup_from(info)
+      status = info == NO_INFO ? :unmatched : :matched
+      Lookup.new(info:, status:)
     end
 
     def parse_info(data)
