@@ -60,6 +60,7 @@ Cronos
 Cyrano de Bergerac
 Dances with Wolves
 Dangerous Liaisons
+Dark City
 Dave Chappelle's Block Party
 Dead Calm
 Dead Poets Society
@@ -72,6 +73,7 @@ Donnie Darko
 Drag Me to Hell
 Dragonslayer
 Dredd
+Drive
 Dune: Part Two
 Edge of Tomorrow
 Election
@@ -85,6 +87,7 @@ Fight Club
 For a Few Dollars More
 Forrest Gump
 Frantic
+Freaks
 Free Guy
 Full Metal Jacket
 Gandhi
@@ -215,6 +218,7 @@ The Hunt for Red October
 The Karate Kid
 The King of Kong: A Fistful of Quarters
 The Last King of Scotland
+The Lobster
 The Lookout
 The Lord of the Rings: The Fellowship of the Ring
 The Lost City

@@ -6,10 +6,12 @@ module Services
 
     def keep?
       return false if animation? || musical? || juvenile?
+      return true if loved?
 
       # return false unless omdb_matched?
       # return false unless omdb_unmatched?
       # return false unless omdb_unqueried?
+      # return false unless title.to_s.include?("Freaks")
 
       return false unless omdb.movie?
       return false unless rated?
@@ -20,8 +22,8 @@ module Services
       # return false unless watched?
       # return false unless loved?
       # return false if restricted?
-      return false if processed?
       # return false unless foreign?
+      # return false if processed?
 
       # return false unless display_year.to_i >= 2000
       # return false unless metacritic.to_i >= 70
