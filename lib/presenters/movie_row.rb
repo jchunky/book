@@ -10,6 +10,7 @@ module Presenters
              :runtime,
              :genre,
              :director,
+             :omdb_status,
              :rotten_tomatoes_url,
              :metacritic_url,
              to: :catalog_item

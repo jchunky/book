@@ -89,6 +89,7 @@
           <th class="sort" data-sort="on-order">On Order</th>
           <th class="sort" data-sort="popularity">Popularity</th>
           <th class="sort" data-sort="title">Title</th>
+          <th class="sort" data-sort="omdb-status">OMDB Status</th>
           <th class="sort" data-sort="year">Year</th>
           <th class="sort" data-sort="rated">Rated</th>
           <th class="sort" data-sort="runtime">Runtime (min)</th>
@@ -111,6 +112,7 @@
             <td class="number on-order"><%= row.on_order %></td>
             <td class="<%= row.popularity_class %>"><%= row.popularity %></td>
             <td<%= " class=\"#{row.title_class}\"" if row.title_class %>><a href="https://tpl.bibliocommons.com<%= row.href %>"><span class="title"><%= row.display_title %></span></a></td>
+            <td class="omdb-status"><%= row.omdb_status %></td>
             <td class="number year"><%= row.display_year %></td>
             <td class="rated"><%= row.rated_pill %></td>
             <td class="number runtime"><%= row.runtime %></td>
@@ -146,7 +148,7 @@
     });
 
     var moviesList = new List('movies-list', {
-      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language', 'director', 'country'],
+      valueNames: ['holds', 'copies', 'available', 'on-order', 'popularity', 'title', 'omdb-status', 'year', 'rated', 'runtime', 'genre', 'box-office', 'rt', 'mc', 'audiences', 'primary-language', 'director', 'country'],
       searchClass: DISABLE_AUTO_SEARCH
     });
     moviesList.sort('year', {
