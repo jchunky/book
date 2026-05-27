@@ -67,6 +67,7 @@ Casino
 Charlie's Angels
 Chasing Amy
 Children of Men
+City Slickers
 Clear and Present Danger
 Cloud Atlas
 Colors
@@ -116,9 +117,11 @@ Footloose
 For Your Eyes Only
 Frequency
 Fried Green Tomatoes
+From Hell
 Galaxy Quest
 Game Night
 Ghost World
+Girl, Interrupted
 Gone Girl
 Gone with the Wind
 Good Morning, Vietnam
@@ -306,6 +309,7 @@ The Last Emperor
 The Last Samurai
 The Last Starfighter
 The Lincoln Lawyer
+The Lost World: Jurassic Park
 The Man with Two Brains
 The Mask
 The Mask of Zorro

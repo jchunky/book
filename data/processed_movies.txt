@@ -83,6 +83,7 @@ A League of Their Own
 A Little Chaos
 A Little Princess
 A Man Called Otto
+A Midsummer Night's Sex Comedy
 A Mighty Heart
 A Monster Calls
 A Most Violent Year
@@ -101,6 +102,7 @@ A River Runs Through It
 A Scanner Darkly
 A Serious Man
 A Simple Favor
+A Simple Plan
 A Soldier's Story
 A Star Is Born
 A Sunday in the Country
@@ -180,6 +182,7 @@ Always
 Amadeus
 Ambulance
 Amelia
+America's Sweethearts
 American Animals
 American Beauty
 American Gangster
@@ -187,6 +190,7 @@ American Gigolo
 American Graffiti
 American Honey
 American Hustle
+American Me
 American Pastoral
 American Pie
 American Psycho
@@ -242,6 +246,7 @@ Apollo 11
 Apollo 13
 Aquaman
 Aquaman and the Lost Kingdom
+Ararat
 Arctic
 Arctic Dogs
 Are You There God? It's Me, Margaret.
@@ -292,6 +297,7 @@ Backdraft
 Bad Boys
 Bad Boys for Life
 Bad Boys: Ride or Die
+Bad Company
 Bad Education
 Bad Lieutenant: Port of Call New Orleans
 Bad Moms
@@ -348,6 +354,7 @@ Bend It Like Beckham
 Beneath the Planet of the Apes
 Benji the Hunted
 Benji: Off the Leash!
+Benny & Joon
 Bernie
 Best in Show
 Bethany Hamilton: Unstoppable
@@ -566,6 +573,7 @@ Chernobyl Diaries
 Chi-Raq
 Chicago
 Chicken Little
+Chicken Run
 Child 44
 Child's Play
 Children of Men
@@ -583,6 +591,7 @@ Cinderella Man
 Circle of Friends
 Cirque du Soleil: Worlds Away
 Citizenfour
+City Slickers
 City by the Sea
 Civil War
 Clash of the Titans
@@ -625,6 +634,7 @@ Confess, Fletch
 Confessions of a Dangerous Mind
 Confessions of a Shopaholic
 Confidence
+Congo
 Connie and Carla
 Conquest of the Planet of the Apes
 Constantine
@@ -699,6 +709,7 @@ Days of Thunder
 Dazed and Confused
 Dead Again
 Dead Calm
+Dead Man
 Dead Man Walking
 Dead Men Don't Wear Plaid
 Dead Poets Society
@@ -727,6 +738,7 @@ Derailed
 Desert Hearts
 Desierto
 Desperado
+Desperate Hours
 Desperately Seeking Susan
 Despicable Me
 Despicable Me 2
@@ -736,6 +748,7 @@ Detroit
 Deuce Bigalow: Male Gigolo
 Devil
 Devotion
+Diamonds Are Forever
 Diary of a Mad Housewife
 Diary of a Wimpy Kid
 Diary of a Wimpy Kid: Dog Days
@@ -749,6 +762,7 @@ Die Another Day
 Die Hard
 Die Hard 2
 Diner
+Dinosaur
 Dirty Dancing
 Dirty Grandpa
 Dirty Harry
@@ -756,6 +770,7 @@ Dirty Rotten Scoundrels
 Disclosure
 District 9
 Divergent
+Divided We Fall
 Django Unchained
 Doc Hollywood
 Doctor Sleep
@@ -814,6 +829,7 @@ Dune: Part Two
 Dunkirk
 Duplicity
 E.T. the Extra-Terrestrial
+EPiC: Elvis Presley in Concert
 Eagle Eye
 Early Man
 Eastern Promises
@@ -830,6 +846,7 @@ Edge of Tomorrow
 Edward II
 Edward Scissorhands
 Eight Below
+Eight Men Out
 Election
 Elektra
 Elemental
@@ -849,6 +866,7 @@ Empire of the Sun
 Employee of the Month
 Enchanted
 Encounters at the End of the World
+End of Days
 End of Watch
 End of the Spear
 Endless Love
@@ -939,6 +957,7 @@ Fifty Shades Freed
 Fifty Shades of Black
 Fight Club
 Fight or Flight
+Final Destination
 Final Destination 2
 Final Destination: Bloodlines
 Finding Dory
@@ -1010,6 +1029,7 @@ Freud's Last Session
 Frida
 Fried Green Tomatoes
 Friends with Kids
+From Hell
 From Russia with Love
 Frost/Nixon
 Frozen II
@@ -1058,6 +1078,7 @@ Giant
 Gifted
 Ginger & Rosa
 Girl Most Likely
+Girl, Interrupted
 Girls Trip
 Gladiator
 Gladiator II
@@ -1278,6 +1299,7 @@ In Country
 In Her Shoes
 In the Bedroom
 In the Heart of the Sea
+In the Line of Fire
 In the Mood for Love
 In the Mouth of Madness
 In the Name of the Father
@@ -1311,6 +1333,7 @@ Inspector Sun
 Instant Family
 Internal Affairs
 Interstellar
+Interview with the Vampire
 Into the Storm
 Into the Wild
 Intolerable Cruelty
@@ -1323,6 +1346,7 @@ Iron Eagle
 Iron Man
 Iron Man 2
 Iron Man 3
+Iron Will
 Ironweed
 Irrational Man
 Isle of Dogs
@@ -1432,6 +1456,7 @@ Kon-Tiki
 Kong: Skull Island
 Krampus
 Kraven the Hunter
+Kundun
 Kung Fu Hustle
 Kung Fu Panda
 Kung Fu Panda 3
@@ -1479,6 +1504,7 @@ Leatherheads
 Leave No Trace
 Leaving Normal
 Legal Eagles
+Legally Blonde
 Legally Blonde 2: Red, White & Blonde
 Legend
 Les Misérables
@@ -1512,6 +1538,8 @@ Little
 Little Big Man
 Little Boy
 Little Children
+Little Italy
+Little Man Tate
 Little Men
 Little Miss Sunshine
 Little Shop of Horrors
@@ -1533,12 +1561,15 @@ Lone Star
 Long Shot
 Long Weekend
 Longlegs
+Longtime Companion
+Look Who's Talking Too
 Looper
 Lord of War
 Lord of the Flies
 Losing Isaiah
 Lost Highway
 Lost in America
+Lost in La Mancha
 Lost in Translation
 Love & Basketball
 Love & Friendship
@@ -1598,12 +1629,15 @@ Manchester by the Sea
 Manhattan Murder Mystery
 Mansfield Park
 Mao's Last Dancer
+Marathon Man
 Marcel the Shell with Shoes On
+Margaret's Museum
 Margin Call
 Maria By Callas
 Marie Antoinette
 Marlowe
 Married Life
+Married to the Mob
 Marry Me
 Mars Attacks!
 Marshall
@@ -1815,6 +1849,7 @@ News of the World
 Newsies
 Next
 Next Goal Wins
+Next of Kin
 Nicholas Nickleby
 Night Falls on Manhattan
 Night School
@@ -1845,6 +1880,7 @@ Nope
 Norm of the North
 Norma Rae
 North Country
+North Dallas Forty
 Nosferatu
 Not Another Teen Movie
 Not Without My Daughter
@@ -1896,6 +1932,7 @@ Only God Forgives
 Only You
 Only the Brave
 Onward
+Operation Dumbo Drop
 Operation Finale
 Operation Fortune: Ruse de Guerre
 Oppenheimer
@@ -2024,6 +2061,7 @@ Post Grad
 Postcards from the Edge
 Power Rangers
 Practical Magic
+Prancer
 Predator
 Predator: Badlands
 Premonition
@@ -2090,6 +2128,7 @@ Raya and the Last Dragon
 Ready Player One
 Ready or Not
 Rear Window
+Recess: School's Out
 Red Cliff
 Red Dawn
 Red Dragon
@@ -2105,6 +2144,7 @@ Reign Over Me
 Reindeer Games
 Relic
 Remember Me
+Remember the Titans
 Reminiscence
 Renfield
 Rent
@@ -2125,6 +2165,7 @@ Richard Jewell
 Richard Pryor: Live on the Sunset Strip
 Richie Rich
 Ricochet
+Ride with the Devil
 Rider on the Rain
 Righteous Kill
 Rings
@@ -2163,6 +2204,7 @@ Rough Night
 Ruby Gillman: Teenage Kraken
 Rudo y Cursi
 Rudy
+Rugrats in Paris
 Rule Breakers
 Rules Don't Apply
 Rules of Engagement
@@ -2383,8 +2425,10 @@ Splitsville
 Spoiler Alert
 Spy
 Spy Game
+Spy Kids
 Spy Kids 3: Game Over
 Spy x Family Code: White
+St. Elmo's Fire
 Stan & Ollie
 Stand Up Guys
 Stand and Deliver
@@ -2605,6 +2649,7 @@ The Breakfast Club
 The Bridge on the River Kwai
 The Bridges of Madison County
 The Brink's Job
+The Broken Hearts Club: A Romantic Comedy
 The Bronze
 The Brother from Another Planet
 The Brothers Bloom
@@ -2644,6 +2689,7 @@ The Commuter
 The Competition
 The Concert
 The Constant Gardener
+The Contender
 The Core
 The Cotton Club
 The Counselor
@@ -2659,6 +2705,7 @@ The Crow
 The Crying Game
 The Curious Case of Benjamin Button
 The Curse of La Llorona
+The Curse of the Jade Scorpion
 The Cursed
 The Da Vinci Code
 The Damned
@@ -2742,6 +2789,7 @@ The Five-Year Engagement
 The Flamingo Kid
 The Flash
 The Flintstones
+The Flintstones in Viva Rock Vegas
 The Florida Project
 The Flower of My Secret
 The Fog
@@ -2941,6 +2989,7 @@ The Losers
 The Lost City
 The Lost City of Z
 The Lost King
+The Lost World: Jurassic Park
 The Lover
 The Lovers
 The Lunchbox
@@ -3001,6 +3050,7 @@ The Mummy: Tomb of the Dragon Emperor
 The Muppet Christmas Carol
 The Muppet Movie
 The Muppets
+The Muppets Take Manhattan
 The Naked Gun
 The Namesake
 The Nativity Story
@@ -3060,6 +3110,7 @@ The Pink Panther
 The Pirates of Penzance
 The Place Beyond the Pines
 The Polar Express
+The Pope of Greenwich Village
 The Pope's Exorcist
 The Portrait of a Lady
 The Poseidon Adventure
@@ -3097,6 +3148,7 @@ The Reincarnation of Peter Proud
 The Reluctant Fundamentalist
 The Remains of the Day
 The Rental
+The Replacements
 The Retirement Plan
 The Revenant
 The Rhythm Section
@@ -3181,6 +3233,7 @@ The Substance
 The Sugarland Express
 The Super Mario Bros. Movie
 The Swan Princess
+The Sweet Hereafter
 The Sword in the Stone
 The Tailor of Panama
 The Taking of Beverly Hills
@@ -3274,14 +3327,17 @@ Thelma & Louise
 Thelonious Monk: Straight, No Chaser
 There Will Be Blood
 There's Something About Mary
+They Call Me Mister Tibbs!
 They Shall Not Grow Old
 Things We Lost in the Fire
 Thir13en Ghosts
 Third Person
+Thirteen Days
 This Christmas
 This Is My Life
 This Is Spinal Tap
 This Means War
+Thomas and the Magic Railroad
 Thor
 Thor: Love and Thunder
 Thor: Ragnarok
