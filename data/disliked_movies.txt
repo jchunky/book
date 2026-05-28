@@ -1,6 +1,5 @@
 12 Monkeys
 2046
-28 Weeks Later
 48 Hrs.
 500 Days of Summer
 52 Pick-Up
@@ -50,7 +49,6 @@ Black Widow
 Blade
 Blade Runner 2049
 Blazing Saddles
-Bloodsport
 Blue Beetle
 Bowling for Columbine
 Bridget Jones's Diary
@@ -71,7 +69,6 @@ City Slickers
 Clear and Present Danger
 Cloud Atlas
 Colors
-Conan the Barbarian
 Creepshow
 Creepshow 2
 Crossing Delancey
@@ -84,8 +81,6 @@ Deadpool
 Deedpool 2
 Desperado
 Dick Tracy
-Die Hard 2
-Dirty Dancing
 Dirty Harry
 District 9
 Django Unchained
@@ -115,7 +110,6 @@ Flash Gordon
 Flatliners
 Footloose
 For Your Eyes Only
-Frequency
 Fried Green Tomatoes
 From Hell
 Galaxy Quest
@@ -133,14 +127,11 @@ Grosse Pointe Blank
 Guardians of the Galaxy
 Guardians of the Galaxy Vol. 2
 Hancock
-Hanna
 Hannah and Her Sisters
-Hard Candy
 Hard to Kill
 Heaven Can Wait
 Hellboy
 Hidden Figures
-Highlander
 Howards End
 Inception
 Inherent Vice
@@ -152,7 +143,6 @@ Iron Man 3
 Jack Reacher
 Jackie Brown
 Jason Bourne
-Jennifer's Body
 John Carter
 John Wick: Chapter 2
 Jumanji: The Next Level
@@ -161,7 +151,6 @@ Juno
 Kindergarten Cop
 King Kong
 Kiss of the Dragon
-Ladyhawke
 Land of the Dead
 Last Action Hero
 Last Man Standing
@@ -170,12 +159,10 @@ Life of Pi
 Like Water for Chocolate
 Little Big Man
 Looper
-Lost Highway
 Love & Basketball
 Mad Max
 Mad Max Beyond Thunderdome
 Magnolia
-Man of Steel
 Midnight Cowboy
 Midnight in Paris
 Misery
@@ -185,20 +172,16 @@ Mission: Impossible - Ghost Protocol
 Mission: Impossible - Rogue Nation
 Mission: Impossible - The Final Reckoning
 Mo' Better Blues
-Monty Python and the Holy Grail
-Monty Python's Life of Brian
 Moonrise Kingdom
 Mr. & Mrs. Smith
 Mr. Mom
 Much Ado About Nothing
-Mulholland Falls
 My Blue Heaven
 My Own Private Idaho
 Mystic River
 National Lampoon's Animal House
 Natural Born Killers
 Never Say Never Again
-Next
 Night of the Comet
 Night on Earth
 Nightbreed
@@ -208,15 +191,11 @@ Oldboy
 One Flew Over the Cuckoo's Nest
 Pale Rider
 Pan's Labyrinth
-Pandorum
 Passengers
 Pee-wee's Big Adventure
 Planet of the Apes
-Point Break
 Police Academy
 Porky's
-Predator
-Pretty Woman
 Primal Fear
 Prince of Persia: The Sands of Time
 Prisoners
@@ -225,36 +204,30 @@ Prometheus
 Raising Arizona
 Rambo: First Blood Part II
 Ready Player One
-Regarding Henry
 Revenge of the Nerds
 Risky Business
 Road to Perdition
 Robin Hood: Prince of Thieves
-Rocky
 Rocky II
 Rogue One: A Star Wars Story
 Romero
 Rushmore
-Salt
-Scanners
 Scarface
-Scrooged
 Shang-Chi and the Legend of the Ten Rings
 Sharky's Machine
-Shaun of the Dead
 Shazam!
 Shine
 Short Circuit
 Shutter Island
 Sicko
-Sleepy Hollow
 Sling Blade
 Smokey and the Bandit
 Smokey and the Bandit II
-Snatch
 Sneakers
 Snowpiercer
 Spaceballs
+Spider-Man
+Spider-Man 2
 Spider-Man 3
 Spider-Man: Far from Home
 Spider-Man: Homecoming
@@ -267,18 +240,15 @@ Starship Troopers
 Sucker Punch
 Suicide Squad
 Sunshine
-Superman Returns
 Taken 2
 Taken 3
 Taxi Driver
 Tenet
 Terminator: Dark Fate
-The Accountant
 The Addams Family
 The Adjustment Bureau
 The Amazing Spider-Man 2
 The Avengers
-The Batman
 The Big Easy
 The Blair Witch Project
 The Blues Brothers
@@ -288,7 +258,6 @@ The Butcher Boy
 The Cannonball Run
 The Chronicles of Riddick
 The Color Purple
-The Dark Knight
 The Dark Knight Rises
 The Equalizer 2
 The Fabulous Baker Boys
@@ -301,7 +270,6 @@ The Godfather Part III
 The Golden Child
 The Graduate
 The Hateful Eight
-The Hitcher
 The Ice Storm
 The Imitation Game
 The Joy Luck Club
@@ -309,26 +277,21 @@ The Last Emperor
 The Last Samurai
 The Last Starfighter
 The Lincoln Lawyer
+The Lord of the Rings: The Return of the King
+The Lord of the Rings: The Two Towers
 The Lost World: Jurassic Park
 The Man with Two Brains
 The Mask
 The Mask of Zorro
 The Matrix Revolutions
-The Mist
 The Northman
-The Notebook
-The Outsiders
 The Paper
-The Place Beyond the Pines
 The Prestige
 The Revenant
-The Rock
 The Royal Tenenbaums
 The Running Man
 The Secret of My Success
-The Shining
 The Straight Story
-The Transporter
 The Usual Suspects
 The War of the Roses
 The Warriors
@@ -345,12 +308,9 @@ Thunderheart
 Top Gun
 Top Secret!
 Trading Places
-Training Day
-Tron: Legacy
 True Grit
 Twister
 Twisters
-U.S. Marshals
 Uncle Buck
 Universal Soldier
 V for Vendetta
@@ -363,12 +323,11 @@ Wedding Crashers
 Weird Science
 White Hunter Black Heart
 Witness
-Wonder Woman
 Wonder Woman 1984
 World War Z
-Wrath of Man
 X-Men: Days of Future Past
 X-Men: First Class
 X-Men: The Last Stand
+X2: X-Men United
 Yesterday
 Young Frankenstein

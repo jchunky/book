@@ -2,6 +2,7 @@
 127 Hours
 2001: A Space Odyssey
 28 Days Later
+28 Weeks Later
 3:10 to Yuma
 A Fistful of Dollars
 A History of Violence
@@ -28,6 +29,8 @@ Argo
 Arrival
 As Good as It Gets
 Back to the Future
+Batman
+Batman Begins
 Beetlejuice
 Before Midnight
 Before Sunrise
@@ -39,6 +42,7 @@ Big
 Birdman or (The Unexpected Virtue of Ignorance)
 Black Hawk Down
 Blood Simple
+Bloodsport
 Blue Velvet
 Born on the Fourth of July
 Boyhood
@@ -55,6 +59,7 @@ Chungking Express
 Close Encounters of the Third Kind
 Colossal
 Comedian
+Conan the Barbarian
 Crocodile Dundee
 Cronos
 Cyrano de Bergerac
@@ -67,6 +72,8 @@ Dead Poets Society
 Deathtrap
 Defending Your Life
 Die Hard
+Die Hard 2
+Dirty Dancing
 Dirty Rotten Scoundrels
 Doctor Sleep
 Donnie Darko
@@ -89,16 +96,20 @@ Forrest Gump
 Frantic
 Freaks
 Free Guy
+Frequency
 Full Metal Jacket
 Gandhi
 Gattaca
 Ghostbusters
 Gladiator
 Good Will Hunting
+Hanna
+Hard Candy
 Heat
 Heathers
 Hell or High Water
 Her
+Highlander
 House of Flying Daggers
 In the Bedroom
 In the Line of Fire
@@ -109,6 +120,7 @@ Instant Family
 Interview With the Vampire
 Invasion of the Body Snatchers
 Jaws
+Jennifer's Body
 Jerry Maguire
 John Wick
 Jurassic Park
@@ -117,17 +129,20 @@ Kingdom of the Planet of the Apes
 Kung Fu Hustle
 L.A. Confidential
 La Femme Nikita
+Ladyhawke
 Lawrence of Arabia
 Let the Right One In
 Lethal Weapon
 Lock, Stock and Two Smoking Barrels
 Logan
 Lone Star
+Lost Highway
 Lost in Translation
 Love & Friendship
 Love and Monsters
 Mad Hot Ballroom
 Mad Max: Fury Road
+Man of Steel
 Man on Wire
 Marathon Man
 Margin Call
@@ -136,10 +151,14 @@ Memento
 Men in Black
 Miller's Crossing
 Minority Report
+Monty Python and the Holy Grail
+Monty Python's Life of Brian
 Moon
 Moonstruck
+Mulholland Falls
 My Cousin Vinny
 Nebraska
+Next
 No Country for Old Men
 No Time to Die
 Nobody
@@ -148,10 +167,15 @@ Once Upon a Time in the West
 Once Were Warriors
 Ong-Bak: The Thai Warrior
 Out of Sight
+Pandorum
 Parenthood
 Paterson
 Pirates of the Caribbean: The Curse of the Black Pearl
 Platoon
+Point Break
+Poltergeist
+Predator
+Pretty Woman
 Pretty in Pink
 Psycho
 Pulp Fiction
@@ -161,26 +185,34 @@ Rabbit-Proof Fence
 Rain Man
 Ready or Not
 Rear Window
+Regarding Henry
 Reservoir Dogs
 RoboCop
+Rocky
 Romancing the Stone
 Room
 Rumble Fish
 Run Lola Run
+Salt
 Saving Private Ryan
 Say Anything
+Scanners
 Scent of a Woman
 Schindler's List
+Scrooged
 Searching for Sugar Man
 Send Help
 Seven
 Shakespeare in Love
 Shattered Glass
+Shaun of the Dead
 Sicario
 Sideways
 Silver Linings Playbook
 Sixteen Candles
+Sleepy Hollow
 Slumdog Millionaire
+Snatch
 Something Wild
 Sorry To Bother You
 Sorry to Bother You
@@ -188,18 +220,23 @@ Speed
 Spellbound
 Stand by Me
 Star Trek
+Star Wars: Episode IV - A New Hope
 Superbad
 Superman
+Superman Returns
 Terminator 2: Judgment Day
 Thank You for Smoking
 The 40-Year-Old Virgin
 The Abyss
 The Accidental Tourist
+The Accountant
+The Batman
 The Big Short
 The Bourne Identity
 The Bourne Ultimatum
 The Breakfast Club
 The Color of Money
+The Dark Knight
 The Deer Hunter
 The Departed
 The Descent
@@ -212,6 +249,7 @@ The Godfather Part II
 The Good, the Bad and the Ugly
 The Green Knight
 The Grifters
+The Hitcher
 The House of Mirth
 The Hunger Games
 The Hunt for Red October
@@ -225,10 +263,16 @@ The Lost City
 The Machinist
 The Man from Nowhere
 The Matrix
+The Mist
 The Naked Gun
+The Notebook
 The One I Love
+The Outsiders
 The Piano
+The Place Beyond the Pines
+The Rock
 The Shawshank Redemption
+The Shining
 The Silence of the Lambs
 The Sixth Sense
 The Social Network
@@ -236,6 +280,7 @@ The Sound of Music
 The Ten Commandments
 The Terminator
 The Thing
+The Transporter
 The Truman Show
 The Untouchables
 The Wrestler
@@ -245,7 +290,10 @@ Time Bandits
 Tinker Tailor Soldier Spy
 Top Gun: Maverick
 Total Recall
+Training Day
+Tron: Legacy
 True Lies
+U.S. Marshals
 Unforgiven
 Unstoppable
 Upgrade
@@ -254,4 +302,6 @@ Waiting for Superman
 Whiplash
 White Men Can't Jump
 Wings of Desire
+Wonder Woman
 Working Girl
+Wrath of Man
