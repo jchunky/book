@@ -32,7 +32,7 @@ module Models
     def self.all = Services::MovieLibrary.new.movies
 
     def keep? = Services::MovieFilter.keep?(self)
-    def omdb_matched?   = omdb_status == :matched
+    def omdb_matched? = omdb_status == :matched
     def omdb_unmatched? = omdb_status == :unmatched
     def omdb_unqueried? = omdb_status == :unqueried
     def certified_fresh? = rotten_tomatoes.fresh?

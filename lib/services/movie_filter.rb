@@ -6,7 +6,7 @@ module Services
 
     def keep?
       return false if animation? || musical? || juvenile?
-      return true if loved?
+      # return true if loved?
 
       # return false unless omdb_matched?
       # return false unless omdb_unmatched?
@@ -19,7 +19,7 @@ module Services
       return false unless metacritic.to_i >= 1
       return false unless rotten_tomatoes.to_i >= 1
 
-      # return false unless watched?
+      # return false if watched?
       # return false unless loved?
       # return false if restricted?
       # return false unless foreign?
