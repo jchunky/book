@@ -10,6 +10,7 @@ A Fish Called Wanda
 A League of Their Own
 About Time
 Adventures in Babysitting
+Akeelah and the Bee
 Alien: Resurrection
 Alita: Battle Angel
 American Beauty
@@ -21,6 +22,7 @@ Annie Hall
 Ant-Man
 Ant-Man and the Wasp
 Any Which Way You Can
+Apollo 13
 Armageddon
 Army of Darkness
 Atomic Blonde
@@ -29,13 +31,18 @@ Avatar
 Avengers: Endgame
 Awakenings
 Baby Driver
+Back to the Future
 Back to the Future Part II
 Bad Boys
 Basic Instinct
+Batman
 Batman v Superman: Dawn of Justice
+Beetlejuice
 Beetlejuice Beetlejuice
 Before Night Falls
 Better Off Dead
+Beverly Hills Cop
+Big
 Big Fish
 Big Trouble in Little China
 Bill & Ted's Excellent Adventure
@@ -54,6 +61,7 @@ Bowling for Columbine
 Bridget Jones's Diary
 Broadcast News
 Bull Durham
+Bumblebee
 Caddyshack
 Cape Fear
 Captain America: Civil War
@@ -67,10 +75,12 @@ Chasing Amy
 Children of Men
 City Slickers
 Clear and Present Danger
+Close Encounters of the Third Kind
 Cloud Atlas
 Colors
 Creepshow
 Creepshow 2
+Crocodile Dundee
 Crossing Delancey
 Cube
 Curse of the Pink Panther
@@ -94,6 +104,7 @@ Dracula
 Dumb and Dumber
 Dune
 Eastern Promises
+Edge of Tomorrow
 Edward Scissorhands
 Elf
 Empire of the Sun
@@ -110,11 +121,13 @@ Flash Gordon
 Flatliners
 Footloose
 For Your Eyes Only
+Free Guy
 Fried Green Tomatoes
 From Hell
 Galaxy Quest
 Game Night
 Ghost World
+Ghostbusters
 Girl, Interrupted
 Gone Girl
 Gone with the Wind
@@ -134,7 +147,10 @@ Hellboy
 Hidden Figures
 Howards End
 Inception
+Indiana Jones and the Temple of Doom
 Inherent Vice
+Innerspace
+Instant Family
 Internal Affairs
 Interstellar
 Iron Man
@@ -143,13 +159,16 @@ Iron Man 3
 Jack Reacher
 Jackie Brown
 Jason Bourne
+Jaws
 John Carter
 John Wick: Chapter 2
 Jumanji: The Next Level
 Jumper
 Juno
+Jurassic Park
 Kindergarten Cop
 King Kong
+Kingdom of the Planet of the Apes
 Kiss of the Dragon
 Land of the Dead
 Last Action Hero
@@ -163,6 +182,7 @@ Love & Basketball
 Mad Max
 Mad Max Beyond Thunderdome
 Magnolia
+Men in Black
 Midnight Cowboy
 Midnight in Paris
 Misery
@@ -193,8 +213,10 @@ Pale Rider
 Pan's Labyrinth
 Passengers
 Pee-wee's Big Adventure
+Pirates of the Caribbean: The Curse of the Black Pearl
 Planet of the Apes
 Police Academy
+Poltergeist
 Porky's
 Primal Fear
 Prince of Persia: The Sands of Time
@@ -210,6 +232,7 @@ Road to Perdition
 Robin Hood: Prince of Thieves
 Rocky II
 Rogue One: A Star Wars Story
+Romancing the Stone
 Romero
 Rushmore
 Scarface
@@ -232,14 +255,17 @@ Spider-Man 3
 Spider-Man: Far from Home
 Spider-Man: Homecoming
 Spider-Man: No Way Home
+Star Trek
 Star Trek Beyond
 Star Trek: The Motion Picture
+Star Wars: Episode IV - A New Hope
 Star Wars: Episode IX - The Rise of Skywalker
 Star Wars: Episode VII - The Force Awakens
 Starship Troopers
 Sucker Punch
 Suicide Squad
 Sunshine
+Superman
 Taken 2
 Taken 3
 Taxi Driver
@@ -261,29 +287,36 @@ The Color Purple
 The Dark Knight Rises
 The Equalizer 2
 The Fabulous Baker Boys
+The Fall Guy
 The Fifth Element
 The Fisher King
 The Flamingo Kid
 The Flash
 The Fog
+The Fugitive
 The Godfather Part III
 The Golden Child
 The Graduate
 The Hateful Eight
+The Hunger Games
 The Ice Storm
 The Imitation Game
 The Joy Luck Club
+The Karate Kid
 The Last Emperor
 The Last Samurai
 The Last Starfighter
 The Lincoln Lawyer
+The Lord of the Rings: The Fellowship of the Ring
 The Lord of the Rings: The Return of the King
 The Lord of the Rings: The Two Towers
+The Lost City
 The Lost World: Jurassic Park
 The Man with Two Brains
 The Mask
 The Mask of Zorro
 The Matrix Revolutions
+The Naked Gun
 The Northman
 The Paper
 The Prestige
@@ -291,7 +324,9 @@ The Revenant
 The Royal Tenenbaums
 The Running Man
 The Secret of My Success
+The Sound of Music
 The Straight Story
+The Truman Show
 The Usual Suspects
 The War of the Roses
 The Warriors
@@ -306,6 +341,7 @@ Three Men and a Baby
 Thunderbolts*
 Thunderheart
 Top Gun
+Top Gun: Maverick
 Top Secret!
 Trading Places
 True Grit
@@ -313,6 +349,7 @@ Twister
 Twisters
 Uncle Buck
 Universal Soldier
+Unstoppable
 V for Vendetta
 Venom
 Wall Street

@@ -14,7 +14,6 @@ A Simple Plan
 A.I. Artificial Intelligence
 About Schmidt
 Ad Astra
-Akeelah and the Bee
 Alien
 Aliens
 All Is Lost
@@ -24,21 +23,15 @@ Angel Heart
 Animal Kingdom
 Annihilation
 Apocalypse Now
-Apollo 13
 Argo
 Arrival
 As Good as It Gets
-Back to the Future
-Batman
 Batman Begins
-Beetlejuice
 Before Midnight
 Before Sunrise
 Before Sunset
 Being John Malkovich
 Ben-Hur
-Beverly Hills Cop
-Big
 Birdman or (The Unexpected Virtue of Ignorance)
 Black Hawk Down
 Blood Simple
@@ -50,17 +43,14 @@ Braveheart
 Brazil
 Brick
 Bridge of Spies
-Bumblebee
 Capote
 Carrie
 Cast Away
 Chinatown
 Chungking Express
-Close Encounters of the Third Kind
 Colossal
 Comedian
 Conan the Barbarian
-Crocodile Dundee
 Cronos
 Cyrano de Bergerac
 Dances with Wolves
@@ -82,7 +72,6 @@ Dragonslayer
 Dredd
 Drive
 Dune: Part Two
-Edge of Tomorrow
 Election
 Elizabeth
 Escape from New York
@@ -95,12 +84,10 @@ For a Few Dollars More
 Forrest Gump
 Frantic
 Freaks
-Free Guy
 Frequency
 Full Metal Jacket
 Gandhi
 Gattaca
-Ghostbusters
 Gladiator
 Good Will Hunting
 Hanna
@@ -114,18 +101,12 @@ House of Flying Daggers
 In the Bedroom
 In the Line of Fire
 In the Mood for Love
-Indiana Jones and the Temple of Doom
-Innerspace
-Instant Family
 Interview With the Vampire
 Invasion of the Body Snatchers
-Jaws
 Jennifer's Body
 Jerry Maguire
 John Wick
-Jurassic Park
 Kick-Ass
-Kingdom of the Planet of the Apes
 Kung Fu Hustle
 L.A. Confidential
 La Femme Nikita
@@ -148,7 +129,6 @@ Marathon Man
 Margin Call
 Master and Commander: The Far Side of the World
 Memento
-Men in Black
 Miller's Crossing
 Minority Report
 Monty Python and the Holy Grail
@@ -170,10 +150,8 @@ Out of Sight
 Pandorum
 Parenthood
 Paterson
-Pirates of the Caribbean: The Curse of the Black Pearl
 Platoon
 Point Break
-Poltergeist
 Predator
 Pretty Woman
 Pretty in Pink
@@ -189,7 +167,6 @@ Regarding Henry
 Reservoir Dogs
 RoboCop
 Rocky
-Romancing the Stone
 Room
 Rumble Fish
 Run Lola Run
@@ -214,15 +191,11 @@ Sleepy Hollow
 Slumdog Millionaire
 Snatch
 Something Wild
-Sorry To Bother You
 Sorry to Bother You
 Speed
 Spellbound
 Stand by Me
-Star Trek
-Star Wars: Episode IV - A New Hope
 Superbad
-Superman
 Superman Returns
 Terminator 2: Judgment Day
 Thank You for Smoking
@@ -242,8 +215,6 @@ The Departed
 The Descent
 The English Patient
 The Exorcist
-The Fall Guy
-The Fugitive
 The Godfather
 The Godfather Part II
 The Good, the Bad and the Ugly
@@ -251,20 +222,15 @@ The Green Knight
 The Grifters
 The Hitcher
 The House of Mirth
-The Hunger Games
 The Hunt for Red October
-The Karate Kid
 The King of Kong: A Fistful of Quarters
 The Last King of Scotland
 The Lobster
 The Lookout
-The Lord of the Rings: The Fellowship of the Ring
-The Lost City
 The Machinist
 The Man from Nowhere
 The Matrix
 The Mist
-The Naked Gun
 The Notebook
 The One I Love
 The Outsiders
@@ -276,26 +242,22 @@ The Shining
 The Silence of the Lambs
 The Sixth Sense
 The Social Network
-The Sound of Music
 The Ten Commandments
 The Terminator
 The Thing
 The Transporter
-The Truman Show
 The Untouchables
 The Wrestler
 There's Something About Mary
 Three Colors: Blue
 Time Bandits
 Tinker Tailor Soldier Spy
-Top Gun: Maverick
 Total Recall
 Training Day
 Tron: Legacy
 True Lies
 U.S. Marshals
 Unforgiven
-Unstoppable
 Upgrade
 Vertigo
 Waiting for Superman
