@@ -1,8 +1,11 @@
+The Company of Wolves
 10 Cloverfield Lane
+Stakeout
 127 Hours
 2001: A Space Odyssey
 28 Days Later
 28 Weeks Later
+300
 3:10 to Yuma
 A Fistful of Dollars
 A History of Violence
@@ -18,6 +21,7 @@ Alien
 Aliens
 All Is Lost
 Amadeus
+An Affair to Remember
 An American Werewolf in London
 Angel Heart
 Animal Kingdom
@@ -26,7 +30,9 @@ Apocalypse Now
 Argo
 Arrival
 As Good as It Gets
+Bad Lieutenant
 Batman Begins
+Battle Royale
 Before Midnight
 Before Sunrise
 Before Sunset
@@ -41,12 +47,14 @@ Born on the Fourth of July
 Boyhood
 Braveheart
 Brazil
+Breakfast at Tiffany's
 Brick
 Bridge of Spies
 Capote
 Carrie
 Cast Away
 Chinatown
+Chop Shop
 Chungking Express
 Colossal
 Comedian
@@ -59,8 +67,10 @@ Dark City
 Dave Chappelle's Block Party
 Dead Calm
 Dead Poets Society
+Death Proof
 Deathtrap
 Defending Your Life
+Deliverance
 Die Hard
 Die Hard 2
 Dirty Dancing
@@ -74,6 +84,7 @@ Drive
 Dune: Part Two
 Election
 Elizabeth
+Enter the Dragon
 Escape from New York
 Eternal Sunshine of the Spotless Mind
 Everything Everywhere All at Once
@@ -90,23 +101,28 @@ Gandhi
 Gattaca
 Gladiator
 Good Will Hunting
+Groundhog Day
 Hanna
+Hannah
 Hard Candy
 Heat
 Heathers
 Hell or High Water
 Her
 Highlander
+Highway 61
 House of Flying Daggers
 In the Bedroom
 In the Line of Fire
 In the Mood for Love
 Interview With the Vampire
 Invasion of the Body Snatchers
+Irma Vep
 Jennifer's Body
 Jerry Maguire
 John Wick
 Kick-Ass
+Kids
 Kung Fu Hustle
 L.A. Confidential
 La Femme Nikita
@@ -127,14 +143,17 @@ Man of Steel
 Man on Wire
 Marathon Man
 Margin Call
+Marjorie Prime
 Master and Commander: The Far Side of the World
 Memento
 Miller's Crossing
 Minority Report
+Mississippi Grind
 Monty Python and the Holy Grail
 Monty Python's Life of Brian
 Moon
 Moonstruck
+Mr. Nobody
 Mulholland Falls
 My Cousin Vinny
 Nebraska
@@ -155,6 +174,7 @@ Point Break
 Predator
 Pretty Woman
 Pretty in Pink
+Primer
 Psycho
 Pulp Fiction
 Pump Up the Volume
@@ -176,11 +196,15 @@ Say Anything
 Scanners
 Scent of a Woman
 Schindler's List
+Scott Pilgrim Vs. The World (2010)
 Scrooged
 Searching for Sugar Man
 Send Help
 Seven
+Seven Samurai
 Shakespeare in Love
+Shallow Hal
+Shaolin Soccer
 Shattered Glass
 Shaun of the Dead
 Sicario
@@ -190,6 +214,7 @@ Sixteen Candles
 Sleepy Hollow
 Slumdog Millionaire
 Snatch
+Solaris
 Something Wild
 Sorry to Bother You
 Speed
@@ -203,6 +228,7 @@ The 40-Year-Old Virgin
 The Abyss
 The Accidental Tourist
 The Accountant
+The Babadook
 The Batman
 The Big Short
 The Bourne Identity
@@ -210,10 +236,12 @@ The Bourne Ultimatum
 The Breakfast Club
 The Color of Money
 The Dark Knight
+The Dead Zone
 The Deer Hunter
 The Departed
 The Descent
 The English Patient
+The Evil Dead
 The Exorcist
 The Godfather
 The Godfather Part II
@@ -227,6 +255,7 @@ The King of Kong: A Fistful of Quarters
 The Last King of Scotland
 The Lobster
 The Lookout
+The Loved Ones
 The Machinist
 The Man from Nowhere
 The Matrix
@@ -247,12 +276,15 @@ The Terminator
 The Thing
 The Transporter
 The Untouchables
+The Vanishing
 The Wrestler
 There's Something About Mary
 Three Colors: Blue
 Time Bandits
 Tinker Tailor Soldier Spy
+To Kill a Mockingbird
 Total Recall
+Train to Busan
 Training Day
 Tron: Legacy
 True Lies
@@ -267,3 +299,4 @@ Wings of Desire
 Wonder Woman
 Working Girl
 Wrath of Man
+Yojimbo

@@ -15,8 +15,6 @@ class UpdateProcessedMovies
       .select do |m|
         m.omdb.movie?
           && m.rotten_tomatoes.to_i >= 1
-          && m.box_office.to_i >= 1
-          && m.rated?
       end
       .map(&:display_title).map(&:to_s).sort.uniq
       .then do |titles|
