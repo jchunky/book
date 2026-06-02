@@ -449,6 +449,7 @@ An Affair to Remember
 An American Journey
 An American Pickle
 An American Tail
+An American Tail: Fievel Goes West
 An American Werewolf in London
 An American in Paris
 An Angel at My Table
@@ -634,6 +635,7 @@ Ayurveda: Art of Being
 Azrael
 BUtterfield 8
 Baadasssss!
+Babe
 Babe: Pig in the City
 Babel
 Babette's Feast
@@ -685,6 +687,7 @@ Bamako (The Court)
 Bambi
 Bananas
 Bananas!*
+Band of Outsiders
 Band of Robbers
 Bandit
 Banel & Adama
@@ -1006,6 +1009,7 @@ Boy Erased
 Boy Kills World
 Boyhood
 Boys from County Hell
+Boyz n the Hood
 Brahmastra Part One: Shiva
 Braid
 Brainwashed: Sex-Camera-Power
@@ -1057,6 +1061,7 @@ Brighton Rock
 Bring Her Back
 Bring It On
 Bring Me the Head of Alfredo Garcia
+Bringing Down the House
 Bringing Out the Dead
 Bringing Up Baby
 Britannia Hospital
@@ -1078,6 +1083,7 @@ Buena Vista Social Club
 Buena Vista Social Club: Adios
 Buffalo '66
 Buffalo Bill and the Indians, or Sitting Bull's History Lesson
+Buffalo Soldiers
 Buffaloed
 Bugonia
 Bugsy
@@ -1086,6 +1092,7 @@ Bukowski: Born into This
 Bull Durham
 Bullet Train
 Bulletproof
+Bulletproof Monk
 Bullitt
 Bumblebee
 Bunny Lake Is Missing
@@ -1099,6 +1106,7 @@ Burn
 Burn After Reading
 Burning
 Burning the Future: Coal in America
+Bus 174
 Bushman
 Buster's Mal Heart
 But I'm a Cheerleader
@@ -1223,6 +1231,7 @@ Changing Lanes
 Chaplin
 Chappaquiddick
 Chapter & Verse
+Character
 Charade
 Chariots of Fire
 Charley Varrick
@@ -1422,6 +1431,7 @@ Courageous
 Cousin Bette
 Cover Girl
 Cow
+Cowboy Bebop: The Movie - Knockin' on Heaven's Door
 Cowboys
 Coyote Ugly
 Cradle Will Rock
@@ -1480,8 +1490,10 @@ DTF
 Dad & Step-Dad
 Daddio
 Daddy Day Camp
+Daddy Day Care
 Daddy's Home 2
 Dahmer
+Daisy Miller
 Damage
 Dames
 Dan in Real Life
@@ -1541,6 +1553,7 @@ Dead Men Don't Wear Plaid
 Dead Poets Society
 Dead Ringers
 Dead for a Dollar
+Deadline
 Deadly Friend
 Deadpool
 Deadpool & Wolverine
@@ -1728,6 +1741,7 @@ Double Suicide
 Double Take
 Down Low
 Down by Law
+Down with Love
 Downhill Racer
 Downriver
 Downsizing
@@ -1833,12 +1847,14 @@ Eismayer
 El Camino
 El Cid
 El Dorado
+El Mariachi
 El Norte
 El Topo
 Election
 Elektra
 Elemental
 Eleni
+Elephant
 Elevation
 Elevator to the Gallows
 Eleven Minutes
@@ -1889,6 +1905,7 @@ Entrapment
 Entre nos
 Enys Men
 Epicentro
+Equilibrium
 Equinox Flower
 Equity
 Eraserhead
@@ -1998,6 +2015,7 @@ Fantastic Machine
 Fantastic Planet
 Far North
 Far and Away
+Far from Heaven
 Far from the Madding Crowd
 Farewell Amor
 Farewell My Concubine
@@ -2005,6 +2023,7 @@ Farewell, My Lovely
 Fargo
 Farinelli
 Farmageddon
+Farmingville
 Farrey
 Fast & Furious
 Fast & Furious Presents: Hobbs & Shaw
@@ -2188,6 +2207,8 @@ Free Men
 Free Puppies!
 Free Solo
 Free State of Jones
+Free Willy
+Free Willy 2: The Adventure Home
 Free to Run
 Freedom Writers
 Freeheld
@@ -2247,6 +2268,7 @@ Gambit
 Game 6
 Game Night
 Gandhi
+Gangs of New York
 Gangubai Kathiawadi
 Ganja & Hess
 Garbage Dreams
@@ -2494,6 +2516,7 @@ Harold and Lillian: A Hollywood Love Story
 Harold and Maude
 Harold and the Purple Crayon
 Harper
+Harriet the Spy
 Harry Chapin: When in Doubt, Do Something
 Harry Potter 20th Anniversary: Return to Hogwarts
 Harry Potter and the Chamber of Secrets
@@ -2692,6 +2715,7 @@ How to Train Your Dragon 2
 How to Train Your Dragon: The Hidden World
 Howards End
 Howl's Moving Castle
+Hud
 Hudson Hawk
 Hulk
 Hulk Vs.
@@ -2707,10 +2731,12 @@ Hustle
 Hustlers
 Hyde Park on Hudson
 Hyena Road
+Hyenas
 Hype!
 Hypochondriac
 Häxan
 I Am Another You
+I Am Curious (Yellow)
 I Am DB Cooper
 I Am Divine
 I Am Kalam
@@ -2795,6 +2821,7 @@ In Another Country
 In Balanchine's Classroom
 In Between Days
 In Bruges
+In Cold Blood
 In Country
 In Darkness
 In Her Shoes
@@ -2832,6 +2859,7 @@ Inception
 Incitement
 Incredibles 2
 Indecent Proposal
+Independence Day
 Independence Day: Resurgence
 India Song
 India's Daughter
@@ -3212,6 +3240,7 @@ Land of Mine
 Land of the Dead
 Lansky
 Lapsis
+Lara Croft: Tomb Raider - The Cradle of Life
 Lars and the Real Girl
 Lassie
 Last Action Hero
@@ -3491,6 +3520,7 @@ Maa
 MacArthur
 Macbeth
 Machete Kills
+Mackenna's Gold
 Mad About the Boy: The Noël Coward Story
 Mad Dog and Glory
 Mad God
@@ -3557,6 +3587,7 @@ Man of the Year
 Man on Fire
 Man on Wire
 Man on the Moon
+Man with a Movie Camera
 Manchester by the Sea
 Mancora
 Manda Bala (Send a Bullet)
@@ -3708,6 +3739,7 @@ Mickey's Once Upon a Christmas
 Midnight Cowboy
 Midnight Family
 Midnight Lace
+Midnight Run
 Midnight in Paris
 Midnight in the Garden of Good and Evil
 Midnight's Children
@@ -3770,6 +3802,7 @@ Moby Dick
 Moby Doc
 Modern Times
 Modest Heroes
+Modigliani
 Mogambo
 Molly's Game
 Moloch
@@ -3856,6 +3889,7 @@ Mr. Nobody Against Putin
 Mr. Peabody & Sherman
 Mr. Skeffington
 Mr. Smith Goes to Washington
+Mr. Toad's Wild Ride
 Mr. Turner
 Mr. Woodcock
 Mrs. Doubtfire
@@ -3927,6 +3961,7 @@ My Italian Secret: The Forgotten Heroes
 My Journey Through French Cinema
 My Kid Could Paint That
 My Left Foot
+My Life as a Dog
 My Life as a Zucchini
 My Life in Ruins
 My Little Pony: The Movie
@@ -4273,6 +4308,7 @@ Over the Hedge
 Overboard
 Overlord
 Overwhelm the Sky
+Owning Mahowny
 Oyate
 PAW Patrol: The Mighty Movie
 PAW Patrol: The Movie
@@ -4366,6 +4402,7 @@ Pearl
 Pearl Harbor
 Pee-wee's Big Adventure
 Peggy Guggenheim: Art Addict
+Peking Opera Blues
 Pelle the Conqueror
 Penguin Highway
 Penguins
@@ -4518,6 +4555,7 @@ Pride & Prejudice
 Pride and Glory
 Pride and Prejudice and Zombies
 Primal Fear
+Primary
 Primary Colors
 Prime Cut
 Primer
@@ -4547,6 +4585,7 @@ Public Enemies
 Pulp
 Pulp Fiction
 Pump Up the Volume
+Pumping Iron
 Punch-Drunk Love
 Punk the Capital: Building a Sound Movement
 Pursued
@@ -4606,6 +4645,7 @@ Raid 2
 Rain Man
 Raising Arizona
 Raising Buchanan
+Raising Victor Vargas
 Rally Caps
 Ralph Breaks the Internet
 Ram Setu
@@ -4941,6 +4981,7 @@ Scrooge
 Scrooge: A Christmas Carol
 Scrooged
 Sea Monsters: A Prehistoric Adventure
+Sea of Love
 Searching for Bobby Fischer
 Searching for Debra Winger
 Searching for Mr. Rugoff
@@ -5469,6 +5510,7 @@ Swan Song
 Sweeney Todd: The Demon Barber of Fleet Street
 Sweet Charity
 Sweet Country
+Sweet Liberty
 Sweet Movie
 Sweet Smell of Success
 Sweet Thing
@@ -5477,6 +5519,7 @@ Sweetie, You Won't Believe It
 Sweetness
 Sweetwater
 Swimming Pool
+Swing
 Swing Shift
 Swing Time
 Swing Vote
@@ -5529,6 +5572,7 @@ Te Ata
 Tea With the Dames
 Tea and Sympathy
 Tea with Mussolini
+Teacher's Pet
 Tears of the Sun
 Ted
 Ted 2
@@ -5870,6 +5914,7 @@ The Country Girl
 The Country Teacher
 The Courier
 The Court Jester
+The Court-Martial of Billy Mitchell
 The Covenant
 The Cow Who Sang a Song Into the Future
 The Craft
@@ -6227,6 +6272,7 @@ The Horse Whisperer
 The Horse's Mouth
 The Hot Rock
 The Hottest August
+The Hound of the Baskervilles
 The Hours
 The Hours and Times
 The House
@@ -6431,6 +6477,7 @@ The Long Good Friday
 The Long Goodbye
 The Long Riders
 The Long Walk
+The Long, Hot Summer
 The Longest Day
 The Longest Yard
 The Look of Silence
@@ -6507,6 +6554,7 @@ The Matador
 The Match Factory Girl
 The MatchMaker
 The Matrix
+The Matrix Reloaded
 The Matrix Resurrections
 The Matrix Revolutions
 The Mauritanian
@@ -6635,6 +6683,7 @@ The Old Man and the Sea
 The Old Oak
 The Old Way
 The Old Woman with the Knife
+The Omega Man
 The Omen
 The One I Love
 The Ones Below
@@ -6706,6 +6755,7 @@ The Policeman's Lineage
 The Pollinators
 The Pope of Greenwich Village
 The Pope's Exorcist
+The Pornographers
 The Portrait of a Lady
 The Poseidon Adventure
 The Positively True Adventures of the Alleged Texas Cheerleader-Murdering Mom
@@ -6780,6 +6830,7 @@ The Remains of the Day
 The Rental
 The Replacements
 The Republic of Love
+The Rescuers
 The Retirement Plan
 The Revenant
 The Rewrite
@@ -6938,6 +6989,7 @@ The Story of Adele H
 The Story of Us
 The Straight Story
 The Strange Color of Your Body's Tears
+The Strange Love of Martha Ivers
 The Strange Woman
 The Strangers: Prey at Night
 The Subject Was Roses
@@ -6983,6 +7035,7 @@ The Thin Man
 The Thin Man Goes Home
 The Thin Red Line
 The Thing
+The Thing from Another World
 The Third Man
 The Third Murder
 The Thomas Crown Affair
@@ -7218,6 +7271,7 @@ Three Stars
 Three Summers
 Three Thousand Years of Longing
 Through Black Spruce
+Through a Glass Darkly
 Through the Olive Trees
 Throw Down
 Throw Down Your Heart
@@ -7226,6 +7280,7 @@ Thunderball
 Thunderbolt and Lightfoot
 Thunderbolts*
 Thunderheart
+Tibet: Cry of the Snow Lion
 Ticket to Paradise
 Tickled
 Tie Me Up! Tie Me Down!
@@ -7412,6 +7467,7 @@ Typhoon Club
 Tyrannosaur
 Tyrel
 Tyson
+U-571
 U.S. Marshals
 Ugetsu
 UglyDolls
@@ -7432,6 +7488,7 @@ Under the Shadow
 Under the Silver Lake
 Under the Tuscan Sun
 Under the Volcano
+Undercover Brother
 Underdog
 Underwater
 Underworld: Blood Wars
@@ -7540,6 +7597,7 @@ Waco: The Rules of Engagement
 Wadjda
 Wag the Dog
 Waikiki
+Wait Until Dark
 Waiting for Guffman
 Waiting for Superman
 Waiting to Exhale
@@ -7630,6 +7688,7 @@ Wet Hot American Summer
 Wet Season
 Wetlands
 Wexford Plaza
+Whale Rider
 What About Bob?
 What Dreams May Come
 What Ever Happened to Baby Jane?
@@ -7697,6 +7756,7 @@ White Sun
 White of the Eye
 Whitney
 Whitney Houston: I Wanna Dance with Somebody
+Who Framed Roger Rabbit
 Who Is Harry Kellerman and Why Is He Saying Those Terrible Things About Me?
 Who Is Killing the Great Chefs of Europe?
 Who We Are: A Chronicle of Racism in America

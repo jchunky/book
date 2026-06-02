@@ -147,6 +147,7 @@ Hellboy
 Hidden Figures
 Howards End
 Inception
+Independence Day
 Indiana Jones and the Temple of Doom
 Inherent Vice
 Innerspace
@@ -236,6 +237,7 @@ Romancing the Stone
 Romero
 Rushmore
 Scarface
+Sea of Love
 Shang-Chi and the Legend of the Ten Rings
 Sharky's Machine
 Shazam!
@@ -255,6 +257,7 @@ Spider-Man 3
 Spider-Man: Far from Home
 Spider-Man: Homecoming
 Spider-Man: No Way Home
+Stakeout
 Star Trek
 Star Trek Beyond
 Star Trek: The Motion Picture
@@ -284,6 +287,7 @@ The Butcher Boy
 The Cannonball Run
 The Chronicles of Riddick
 The Color Purple
+The Company of Wolves
 The Dark Knight Rises
 The Equalizer 2
 The Fabulous Baker Boys
@@ -358,6 +362,7 @@ WarGames
 Watchmen
 Wedding Crashers
 Weird Science
+Whale Rider
 White Hunter Black Heart
 Witness
 Wonder Woman 1984

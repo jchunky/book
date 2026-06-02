@@ -1,6 +1,4 @@
-The Company of Wolves
 10 Cloverfield Lane
-Stakeout
 127 Hours
 2001: A Space Odyssey
 28 Days Later
@@ -45,6 +43,7 @@ Bloodsport
 Blue Velvet
 Born on the Fourth of July
 Boyhood
+Boyz n the Hood
 Braveheart
 Brazil
 Breakfast at Tiffany's
@@ -82,9 +81,11 @@ Dragonslayer
 Dredd
 Drive
 Dune: Part Two
+El Mariachi
 Election
 Elizabeth
 Enter the Dragon
+Equilibrium
 Escape from New York
 Eternal Sunshine of the Spotless Mind
 Everything Everywhere All at Once
@@ -181,6 +182,7 @@ Pump Up the Volume
 Punch-Drunk Love
 Rabbit-Proof Fence
 Rain Man
+Raising Victor Vargas
 Ready or Not
 Rear Window
 Regarding Henry
@@ -259,6 +261,7 @@ The Loved Ones
 The Machinist
 The Man from Nowhere
 The Matrix
+The Matrix Reloaded
 The Mist
 The Notebook
 The One I Love
