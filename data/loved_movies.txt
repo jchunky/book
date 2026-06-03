@@ -53,6 +53,7 @@ Bridge of Spies
 Capote
 Carrie
 Cast Away
+Celebration
 Chinatown
 Chop Shop
 Chungking Express
@@ -63,6 +64,7 @@ Cronos
 Cyrano de Bergerac
 Dances with Wolves
 Dangerous Liaisons
+Dark City
 Dark City
 Dave Chappelle's Block Party
 Dead Calm
@@ -83,6 +85,7 @@ Dragonslayer
 Dredd
 Drive
 Dune: Part Two
+Dungeons & Dragons: Honor Among Thieves
 El Mariachi
 Election
 Elizabeth
@@ -223,6 +226,7 @@ Something Wild
 Sorry to Bother You
 Speed
 Spellbound
+Splash
 Spring, Summer, Fall, Winter... and Spring
 Stand by Me
 Superbad
@@ -309,4 +313,5 @@ Wings of Desire
 Wonder Woman
 Working Girl
 Wrath of Man
+Yi Yi
 Yojimbo

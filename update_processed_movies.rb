@@ -14,7 +14,10 @@ class UpdateProcessedMovies
     Models::Movie.all
       .select do |m|
         m.omdb.movie?
-          && m.rotten_tomatoes.to_i >= 1
+          && (
+            m.rotten_tomatoes.to_i >= 1
+              || m.metacritic.to_i >= 1
+          )
       end
       .map(&:display_title).map(&:to_s).sort.uniq
       .then do |titles|
