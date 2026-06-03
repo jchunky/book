@@ -69,6 +69,7 @@ $ellebrity
 48 Hrs.
 49 Up
 4x4
+50 First Dates
 500 Days of Summer
 51 Birch Street
 52 Pick-Up
@@ -123,6 +124,7 @@ A Crude Awakening: The Oil Crash
 A Cry in the Dark
 A Cure for Wellness
 A Dangerous Method
+A Day at the Races
 A Day in the Country
 A Different Man
 A Dim Valley
@@ -131,6 +133,7 @@ A Dog's Journey
 A Dog's Way Home
 A Dry White Season
 A Face in the Crowd
+A Farewell to Arms
 A Few Good Men
 A Fish Called Wanda
 A Fistful of Dollars
@@ -221,6 +224,7 @@ A Somewhat Gentle Man
 A Spell to Ward Off the Darkness
 A Star Is Born
 A Story of Floating Weeds
+A Stranger Among Us
 A Street Cat Named Bob
 A Streetcar Named Desire
 A Suitable Girl
@@ -470,6 +474,7 @@ Anatomy
 Anatomy of a Fall
 Anatomy of a Murder
 Anchorman 2: The Legend Continues
+Anchorman: The Legend of Ron Burgundy
 And Life Goes On
 And Then I Go
 And Then We Danced
@@ -496,6 +501,7 @@ Animal Kingdom
 Animalia
 Anita O'Day: The Life of a Jazz Singer
 Anna
+Anna Karenina
 Anna Nicole Smith: You Don't Know Me
 Anna and the King
 Annabelle Comes Home
@@ -802,6 +808,7 @@ Beneath Hill 60
 Beneath the Planet of the Apes
 Benedetta
 Benjamin
+Benji
 Benji the Hunted
 Benji: Off the Leash!
 Benny & Joon
@@ -908,6 +915,7 @@ Blackboard Jungle
 Blackfish
 Blacklight
 Blade
+Blade II
 Blade Runner 2049
 Blades of Glory
 Blast from the Past
@@ -1057,6 +1065,7 @@ Bridget Jones: Mad About the Boy
 Bridget Jones: The Edge of Reason
 Brief Encounter
 Brigadoon
+Bright Leaves
 Brighton Rock
 Bring Her Back
 Bring It On
@@ -1121,6 +1130,7 @@ Bye Bye Germany
 Byzantium
 Cabaret
 Cabin Boy
+Cabin Fever
 Cabin in the Sky
 Cabrini
 Cactus Flower
@@ -1360,6 +1370,7 @@ Colette
 Collateral Damage
 Collisions
 Colombiana
+Color Adjustment
 Color of Night
 Colors
 Colossal
@@ -1412,6 +1423,7 @@ Cop Land
 Copa 71
 Copshop
 Cora Bora
+Coral Reef Adventure
 Coraline
 Coriolanus
 Corky Romano
@@ -1651,6 +1663,7 @@ Did You Wonder Who Fired the Gun?
 Die Another Day
 Die Hard
 Die Hard 2
+Die Hard with a Vengeance
 Dig!
 Digging for Fire
 Dim Sum: A Little Bit of Heart
@@ -1829,6 +1842,7 @@ Echo in the Canyon
 Eddie
 Eddie and the Cruisers
 Eddington
+Edge Codes.com: The Art of Motion Picture Editing
 Edge of Darkness
 Edge of Seventeen
 Edge of Tomorrow
@@ -2007,6 +2021,7 @@ Family Plot
 Fanaa
 Fancy Dance
 Fancy Pants
+Fanny and Alexander
 Fantasia 2000
 Fantastic Beasts and Where to Find Them
 Fantastic Beasts: The Crimes of Grindelwald
@@ -2199,6 +2214,7 @@ Frankenweenie
 Frantic
 Frantz
 Freakier Friday
+Freaks
 Freaky
 Freaky Friday
 Freaky Tales
@@ -2220,6 +2236,7 @@ Frenzy
 Frequency
 Freud's Last Session
 Frida
+Friday Night Lights
 Fried Barry
 Fried Green Tomatoes
 Friendly Persuasion
@@ -2274,6 +2291,7 @@ Ganja & Hess
 Garbage Dreams
 Garbage Warrior
 Garbo Talks
+Garden State
 Garfield: The Movie
 GasLand
 Gaslight
@@ -2332,6 +2350,7 @@ Girl Crazy
 Girl Model
 Girl Most Likely
 Girl on the Third Floor
+Girl with a Pearl Earring
 Girl, Interrupted
 Girls Trip
 Gitmo
@@ -2345,6 +2364,7 @@ Glory
 Gnomeo & Juliet
 Go
 Go West
+Go West Young Man
 God & Country
 God Bless America
 God Grew Tired of Us
@@ -2406,6 +2426,7 @@ Gored
 Gorillas in the Mist
 Gorky Park
 Gosford Park
+Gothika
 Grabbers
 Grace Is Gone
 Grace of My Heart
@@ -2459,6 +2480,7 @@ Gunga Din
 Gunless
 Guys and Dolls
 Guzaarish
+H.H. Holmes: America's First Serial Killer
 Hachi: A Dog's Tale
 Hacksaw Ridge
 Hail Satan?
@@ -2597,6 +2619,7 @@ Hermia & Helena
 Hero Mode
 Hesburgh
 Hey, Boo: Harper Lee and 'To Kill a Mockingbird'
+Hidalgo
 Hidden Figures
 Hidden Master: The Legacy of George Platt Lynes
 Hidden Strike
@@ -2654,6 +2677,7 @@ Homeward Bound: The Incredible Journey
 Homicide
 Hondo
 Honest Thief
+Honey
 Honey, We Shrunk Ourselves!
 Honeyland
 Honeymoon
@@ -2770,6 +2794,7 @@ I Love You, Beth Cooper
 I Married a Witch
 I Never Sang for My Father
 I Only Want You to Love Me
+I Remember Me
 I Saw the Light
 I Saw the TV Glow
 I Spy
@@ -2856,6 +2881,7 @@ In the Valley of Elah
 InRealLife
 Incarnation
 Inception
+Incident at Oglala
 Incitement
 Incredibles 2
 Indecent Proposal
@@ -2904,6 +2930,7 @@ Intelligent Lives
 Intermezzo
 Internal Affairs
 International Falls
+International House
 Interstellar
 Interview with the Vampire
 Into Great Silence
@@ -3321,6 +3348,7 @@ Levitated Mass
 Liar Liar
 Liberty Stands Still
 Licence to Kill
+Licensed to Kill
 Licorice Pizza
 Life
 Life & Life
@@ -3410,6 +3438,7 @@ London to Brighton
 Lone Star
 Lonely Are the Brave
 Lonesome
+Long Day's Journey Into Night
 Long Shot
 Long Time Coming: A 1955 Baseball Story
 Long Way North
@@ -3431,6 +3460,7 @@ Lord of War
 Lord of the Flies
 Lords of Chaos
 Lore
+Lorenzo's Oil
 Los Conductos
 Los Hermanos/the Brothers
 Los Reyes
@@ -3576,6 +3606,7 @@ Mama Bears
 Mambar Pierrette
 Mame
 Mamma Mia!
+Mamma Roma
 Man Bites Dog
 Man Is Not a Bird
 Man Push Cart
@@ -3874,6 +3905,7 @@ Mountains May Depart
 Moynihan
 Mr. & Mrs. Mahi
 Mr. & Mrs. Smith
+Mr. Blandings Builds His Dream House
 Mr. Brooks
 Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.
 Mr. Deeds
@@ -3964,6 +3996,7 @@ My Left Foot
 My Life as a Dog
 My Life as a Zucchini
 My Life in Ruins
+My Little Chickadee
 My Little Pony: The Movie
 My Little Sister
 My Love Affair with Marriage
@@ -4261,6 +4294,7 @@ Only the Animals
 Only the Brave
 Only the River Flows
 Onward
+Open Range
 Operation Dumbo Drop
 Operation Finale
 Operation Fortune: Ruse de Guerre
@@ -4396,6 +4430,7 @@ Pawn Sacrifice
 Paws of Fury: The Legend of Hank
 Pay It Forward
 Payback
+Paycheck
 Peace by Chocolate
 Peaceful Warrior
 Pearl
@@ -4449,6 +4484,7 @@ Phantom of the Opera
 Phase IV
 Phenomenon
 Phil Spector
+Philadelphia
 Philomena
 Phir Aayi Hasseen Dillruba
 Pianoforte
@@ -4645,6 +4681,7 @@ Raid 2
 Rain Man
 Raising Arizona
 Raising Buchanan
+Raising Helen
 Raising Victor Vargas
 Rally Caps
 Ralph Breaks the Internet
@@ -4820,6 +4857,7 @@ Rocksteady: The Roots of Reggae
 Rocky
 Rocky Balboa
 Rocky II
+Rocky III
 Rocky IV
 Rocky V
 Rodeo
@@ -4914,6 +4952,7 @@ Salvatore Giuliano
 Salò, or the 120 Days of Sodom
 Sam & Mattie Make a Zombie Movie
 Samba
+Same Time, Next Year
 Sample This
 Samrat Prithviraj
 Samson and Delilah
@@ -4991,6 +5030,7 @@ Sebastian
 Secondhand Lions
 Seconds
 Secret Ceremony
+Secret Honor
 Secret Zoo
 Secret in Their Eyes
 Secret of the Wings
@@ -5082,6 +5122,7 @@ Shelter
 Shenandoah
 Sherlock Gnomes
 Sherlock Holmes
+Sherman's March
 Sherpa
 Shershaah
 Shiloh
@@ -5179,6 +5220,8 @@ Slalom
 Slam
 Slap Shot
 Slash/Back
+Slasher
+Slaughterhouse-Five
 Slay the Dragon
 Sleepers
 Sleeping Beauty
@@ -5325,6 +5368,7 @@ Splitsville
 Spoiler Alert
 Spontaneous
 Spring Blossom
+Spring, Summer, Fall, Winter... and Spring
 Sprinter
 Spy
 Spy Game
@@ -5436,6 +5480,7 @@ Student of the Year 2
 Studio 54
 Studio 666
 Stunt Rock
+Style Wars
 Sublet
 Submarine
 Subservience
@@ -5603,6 +5648,7 @@ Terrifier
 Terrifier 2
 Terrifier 3
 Tesla
+Tess
 Thank God
 Thank God It's Friday
 Thank You Very Much
@@ -5714,10 +5760,12 @@ The Ballad of Cable Hogue
 The Ballad of Genesis and Lady Jaye
 The Ballad of Gregorio Cortez
 The Band Wagon
+The Bank Dick
 The Bank Job
 The Banshees of Inisherin
 The Basketball Diaries
 The Batman
+The Battle of Algiers
 The Battle of Jangsari
 The Bay
 The Beach
@@ -5804,6 +5852,7 @@ The Bostonians
 The Bounty
 The Bounty Hunter
 The Bourne Identity
+The Bourne Supremacy
 The Bourne Ultimatum
 The Boxer
 The Boy Behind the Door
@@ -5839,6 +5888,7 @@ The Buddy Holly Story
 The Burning Plain
 The Burnt Orange Heresy
 The Butcher Boy
+The Butterfly Effect
 The Cable Guy
 The Caine Mutiny
 The Cakemaker
@@ -6112,6 +6162,7 @@ The Florida Project
 The Flower of My Secret
 The Flying Deuces
 The Fog
+The Fog of War
 The Force
 The Foreigner
 The Forever Purge
@@ -6174,6 +6225,7 @@ The Godfather Part II
 The Godfather Part III
 The Gold Rush
 The Golden Child
+The Golden Coach
 The Golden Compass
 The Golden Spurtle
 The Goldfinch
@@ -6333,6 +6385,7 @@ The Iron Horse
 The Iron Lady
 The Iron Mask
 The Island of Dr. Moreau
+The Ister
 The Italian
 The Italian Job
 The Jack Bull
@@ -6426,6 +6479,7 @@ The Last Wave
 The Last of England
 The Last of Sheila
 The Last of the Mohicans
+The Late Show
 The Laureate
 The Lavender Hill Mob
 The Law in These Parts
@@ -6488,6 +6542,7 @@ The Lord of the Rings: The Two Towers
 The Lord of the Rings: The War of the Rohirrim
 The Lords of Flatbush
 The Losers
+The Lost Boys
 The Lost City
 The Lost City of Z
 The Lost King
@@ -6589,6 +6644,7 @@ The Miracle Worker
 The Miracle of Morgan's Creek
 The Mirror
 The Mirror Crack'd
+The Mirror Has Two Faces
 The Misandrists
 The Miseducation of Cameron Post
 The Misfits
@@ -6750,6 +6806,7 @@ The Pink Cloud
 The Pink Panther
 The Pirates of Penzance
 The Place Beyond the Pines
+The Plainsman
 The Polar Express
 The Policeman's Lineage
 The Pollinators
@@ -6761,6 +6818,7 @@ The Poseidon Adventure
 The Positively True Adventures of the Alleged Texas Cheerleader-Murdering Mom
 The Post
 The Postcard Killings
+The Postman Always Rings Twice
 The Power
 The Power and the Glory
 The Power of Kangwon Province
@@ -6971,6 +7029,7 @@ The Spectacular Now
 The Spine of Night
 The Spiral Staircase
 The SpongeBob Movie: Search for SquarePants
+The SpongeBob SquarePants Movie
 The Spook Who Sat by the Door
 The Spy Who Came in from the Cold
 The Spy Who Dumped Me
@@ -7359,6 +7418,7 @@ Tosca
 Total Dhamaal
 Total Recall
 Touch of Evil
+Touch of Pink
 Touch the Sound: A Sound Journey with Evelyn Glennie
 Touchy Feely
 Touki Bouki
@@ -7399,6 +7459,7 @@ Tremors 3: Back to Perfection
 Tremors: A Cold Day in Hell
 Tremors: Shrieker Island
 Trenque Lauquen
+Trial by Jury
 Triangle of Sadness
 Trick or Treat
 Trigger Man
@@ -7433,6 +7494,7 @@ Tucker: The Man and His Dream
 Tuesdays with Morrie
 Tulip Fever
 Tully
+Tunes of Glory
 Tupac: Resurrection
 Turbo
 Turbo Cola
@@ -7474,6 +7536,7 @@ UglyDolls
 Ultraviolet
 Ulzana's Raid
 Umma
+Un chien andalou
 Uncertain Terms
 Uncle Buck
 Uncle Drew
@@ -7521,6 +7584,7 @@ Up the Sandbox
 Upgrade
 Uprising
 Uproar
+Uptown Girls
 Urban Legend
 Uri: The Surgical Strike
 Ursula von Rydingsvard: Into Her Own
@@ -7817,6 +7881,7 @@ Wise Blood
 Wish You Were Here
 Wit
 Witches
+With God on Our Side: George W. Bush and the Rise of the Religious Right in America
 Withnail and I
 Without Limits
 Without Name
@@ -7824,11 +7889,13 @@ Without a Clue
 Witness
 Witness for the Prosecution
 Wittgenstein
+Wizards
 Wobble Palace
 Wojnarowicz
 Wolf Man
 Wolfcop
 Wolfman's Got Nards
+Woman Is the Future of Man
 Woman Walks Ahead
 Woman at War
 Woman in Gold
@@ -7897,6 +7964,7 @@ Yogi Bear
 Yojimbo
 Yoo-Hoo, Mrs. Goldberg
 Yosemite
+Yossi & Jagger
 You Again
 You Can Count on Me
 You Can't Take It with You

@@ -5,6 +5,7 @@
 28 Weeks Later
 300
 3:10 to Yuma
+50 First Dates
 A Fistful of Dollars
 A History of Violence
 A Most Violent Year
@@ -72,6 +73,7 @@ Defending Your Life
 Deliverance
 Die Hard
 Die Hard 2
+Die Hard with a Vengeance
 Dirty Dancing
 Dirty Rotten Scoundrels
 Doctor Sleep
@@ -221,6 +223,7 @@ Something Wild
 Sorry to Bother You
 Speed
 Spellbound
+Spring, Summer, Fall, Winter... and Spring
 Stand by Me
 Superbad
 Superman Returns
@@ -234,8 +237,10 @@ The Babadook
 The Batman
 The Big Short
 The Bourne Identity
+The Bourne Supremacy
 The Bourne Ultimatum
 The Breakfast Club
+The Butterfly Effect
 The Color of Money
 The Dark Knight
 The Dead Zone
@@ -245,6 +250,7 @@ The Descent
 The English Patient
 The Evil Dead
 The Exorcist
+The Fog of War
 The Godfather
 The Godfather Part II
 The Good, the Bad and the Ugly
@@ -257,6 +263,7 @@ The King of Kong: A Fistful of Quarters
 The Last King of Scotland
 The Lobster
 The Lookout
+The Lost Boys
 The Loved Ones
 The Machinist
 The Man from Nowhere
