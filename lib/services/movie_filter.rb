@@ -24,7 +24,7 @@ module Services
       # return false unless loved?
       # return false if !restricted?
       # return false unless foreign?
-      return false if processed?
+      # return false if processed?
 
       # return false unless display_year.to_i >= 2000
       # return false unless popularity.to_i >= 1

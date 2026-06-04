@@ -331,6 +331,7 @@ The Running Man
 The Secret of My Success
 The Sound of Music
 The Straight Story
+The Suicide Squad
 The Truman Show
 The Usual Suspects
 The War of the Roses
@@ -374,3 +375,4 @@ X-Men: The Last Stand
 X2: X-Men United
 Yesterday
 Young Frankenstein
+Zack Snyder's Justice League

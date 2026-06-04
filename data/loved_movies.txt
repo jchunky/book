@@ -6,6 +6,8 @@
 300
 3:10 to Yuma
 50 First Dates
+50 First Dates
+A Beautiful Mind
 A Fistful of Dollars
 A History of Violence
 A Most Violent Year
@@ -41,8 +43,10 @@ Birdman or (The Unexpected Virtue of Ignorance)
 Black Hawk Down
 Blood Simple
 Bloodsport
+Blue Heron
 Blue Velvet
 Born on the Fourth of July
+Boss Level
 Boyhood
 Boyz n the Hood
 Braveheart
@@ -50,16 +54,17 @@ Brazil
 Breakfast at Tiffany's
 Brick
 Bridge of Spies
+Byzantium
 Capote
 Carrie
 Cast Away
-Celebration
 Chinatown
 Chop Shop
 Chungking Express
 Colossal
 Comedian
 Conan the Barbarian
+Cool Hand Luke
 Cronos
 Cyrano de Bergerac
 Dances with Wolves
@@ -69,6 +74,7 @@ Dark City
 Dave Chappelle's Block Party
 Dead Calm
 Dead Poets Society
+Death Becomes Her
 Death Proof
 Deathtrap
 Defending Your Life
@@ -82,8 +88,10 @@ Doctor Sleep
 Donnie Darko
 Drag Me to Hell
 Dragonslayer
+Dreamscape
 Dredd
 Drive
+Dual
 Dune: Part Two
 Dungeons & Dragons: Honor Among Thieves
 El Mariachi
@@ -97,6 +105,7 @@ Everything Everywhere All at Once
 Ferris Bueller's Day Off
 Field of Dreams
 Fight Club
+Fists of Fury
 For a Few Dollars More
 Forrest Gump
 Frantic
@@ -130,6 +139,7 @@ John Wick
 Kick-Ass
 Kids
 Kung Fu Hustle
+Kurt Cobain: Montage of Heck
 L.A. Confidential
 La Femme Nikita
 Ladyhawke
@@ -177,6 +187,7 @@ Parenthood
 Paterson
 Platoon
 Point Break
+Pontypool
 Predator
 Pretty Woman
 Pretty in Pink
@@ -184,10 +195,12 @@ Primer
 Psycho
 Pulp Fiction
 Pump Up the Volume
+Pumping Iron
 Punch-Drunk Love
 Rabbit-Proof Fence
 Rain Man
 Raising Victor Vargas
+Rashomon
 Ready or Not
 Rear Window
 Regarding Henry
@@ -195,6 +208,7 @@ Reservoir Dogs
 RoboCop
 Rocky
 Room
+Rosencrantz and Guildenstern Are Dead
 Rumble Fish
 Run Lola Run
 Salt
@@ -224,6 +238,7 @@ Snatch
 Solaris
 Something Wild
 Sorry to Bother You
+Soylent Green
 Speed
 Spellbound
 Splash
@@ -237,6 +252,7 @@ The 40-Year-Old Virgin
 The Abyss
 The Accidental Tourist
 The Accountant
+The Andromeda Strain
 The Babadook
 The Batman
 The Big Short
@@ -245,7 +261,9 @@ The Bourne Supremacy
 The Bourne Ultimatum
 The Breakfast Club
 The Butterfly Effect
+The Christophers
 The Color of Money
+The Corporation
 The Dark Knight
 The Dead Zone
 The Deer Hunter
@@ -255,12 +273,14 @@ The English Patient
 The Evil Dead
 The Exorcist
 The Fog of War
+The Fog of War
 The Godfather
 The Godfather Part II
 The Good, the Bad and the Ugly
 The Green Knight
 The Grifters
 The Hitcher
+The Hot Spot
 The House of Mirth
 The Hunt for Red October
 The King of Kong: A Fistful of Quarters
@@ -275,11 +295,14 @@ The Matrix
 The Matrix Reloaded
 The Mist
 The Notebook
+The Omega Man
 The One I Love
 The Outsiders
 The Piano
 The Place Beyond the Pines
+The Road Warrior
 The Rock
+The Seventh Seal
 The Shawshank Redemption
 The Shining
 The Silence of the Lambs
