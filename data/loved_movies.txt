@@ -6,7 +6,6 @@
 300
 3:10 to Yuma
 50 First Dates
-50 First Dates
 A Beautiful Mind
 A Fistful of Dollars
 A History of Violence
@@ -70,11 +69,9 @@ Cyrano de Bergerac
 Dances with Wolves
 Dangerous Liaisons
 Dark City
-Dark City
 Dave Chappelle's Block Party
 Dead Calm
 Dead Poets Society
-Death Becomes Her
 Death Proof
 Deathtrap
 Defending Your Life
@@ -114,11 +111,12 @@ Frequency
 Full Metal Jacket
 Gandhi
 Gattaca
+Gia
 Gladiator
 Good Will Hunting
+Greystoke: The Legend of Tarzan, Lord of the Apes
 Groundhog Day
 Hanna
-Hannah
 Hard Candy
 Heat
 Heathers
@@ -186,7 +184,6 @@ Pandorum
 Parenthood
 Paterson
 Platoon
-Point Break
 Pontypool
 Predator
 Pretty Woman
@@ -241,9 +238,9 @@ Sorry to Bother You
 Soylent Green
 Speed
 Spellbound
-Splash
 Spring, Summer, Fall, Winter... and Spring
 Stand by Me
+Stir of Echoes
 Superbad
 Superman Returns
 Terminator 2: Judgment Day
@@ -273,14 +270,12 @@ The English Patient
 The Evil Dead
 The Exorcist
 The Fog of War
-The Fog of War
 The Godfather
 The Godfather Part II
 The Good, the Bad and the Ugly
 The Green Knight
 The Grifters
 The Hitcher
-The Hot Spot
 The House of Mirth
 The Hunt for Red October
 The King of Kong: A Fistful of Quarters
@@ -292,7 +287,6 @@ The Loved Ones
 The Machinist
 The Man from Nowhere
 The Matrix
-The Matrix Reloaded
 The Mist
 The Notebook
 The Omega Man

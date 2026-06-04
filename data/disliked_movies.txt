@@ -88,6 +88,7 @@ Dawn of the Dead
 Daybreakers
 Dead Again
 Deadpool
+Death Becomes Her
 Deedpool 2
 Desperado
 Dick Tracy
@@ -217,6 +218,7 @@ Passengers
 Pee-wee's Big Adventure
 Pirates of the Caribbean: The Curse of the Black Pearl
 Planet of the Apes
+Point Break
 Police Academy
 Poltergeist
 Porky's
@@ -258,6 +260,7 @@ Spider-Man 3
 Spider-Man: Far from Home
 Spider-Man: Homecoming
 Spider-Man: No Way Home
+Splash
 Stakeout
 Star Trek
 Star Trek Beyond
@@ -269,6 +272,7 @@ Starship Troopers
 Sucker Punch
 Suicide Squad
 Sunshine
+Super Size Me
 Superman
 Taken 2
 Taken 3
@@ -303,6 +307,7 @@ The Godfather Part III
 The Golden Child
 The Graduate
 The Hateful Eight
+The Hot Spot
 The Hunger Games
 The Ice Storm
 The Imitation Game
@@ -320,10 +325,12 @@ The Lost World: Jurassic Park
 The Man with Two Brains
 The Mask
 The Mask of Zorro
+The Matrix Reloaded
 The Matrix Revolutions
 The Naked Gun
 The Northman
 The Paper
+The Party
 The Prestige
 The Revenant
 The Royal Tenenbaums
