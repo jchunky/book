@@ -110,6 +110,7 @@ A Bronx Tale
 A Bug's Life
 A Call to Spy
 A Canterbury Tale
+A Certain Kind of Death
 A Charlie Brown Christmas
 A Charlie Brown Thanksgiving
 A Child Is Waiting
@@ -305,6 +306,7 @@ After Parkland
 After She Died
 After Yang
 After the Fox
+After the Sunset
 After the Thin Man
 After the Wedding
 Afterglow
@@ -705,6 +707,7 @@ Ballerina
 Balloon
 Balls of Fury
 Baloney
+Balseros
 Balto
 Balzac and the Little Chinese Seamstress
 Bamako (The Court)
@@ -746,6 +749,7 @@ Battle of the Bulge
 Battleship
 Battleship Potemkin
 Baywatch
+Be Here to Love Me
 Be Kind Rewind
 Be Natural: The Untold Story of Alice Guy-Blaché
 Beach Rats
@@ -853,6 +857,7 @@ Bewitched
 Beyond a Reasonable Doubt
 Beyond the Lights
 Beyond the Mat
+Beyond the Sea
 Beyond the Valley of the Dolls
 Bhavesh Joshi Superhero
 Bheed
@@ -908,6 +913,7 @@ Bisbee '17
 Bitter Harvest
 Bitter Moon
 BlacKkKlansman
+Black
 Black Adam
 Black Bag
 Black Book
@@ -1102,6 +1108,7 @@ Bringing Up Baby
 Britannia Hospital
 Britt-Marie Was Here
 Broadcast News
+Broadway: The Golden Age, by the Legends Who Were There
 Brokeback Mountain
 Broken Arrow
 Broken Blossoms
@@ -1491,6 +1498,7 @@ Crazed Fruit
 Crazy Rich Asians
 Created Equal: Clarence Thomas in His Own Words
 Creating a Character: The Moni Yakim Legacy
+Creature Comforts
 Creature from the Black Lagoon
 Creed II
 Creed III
@@ -1566,11 +1574,13 @@ Danny Says
 Daphne
 Darbar
 Daredevil
+Dark Blue
 Dark City
 Dark Match
 Dark Passage
 Dark River
 Dark Victory
+Dark Water
 Darkest Hour
 Darling
 Darlings
@@ -1619,6 +1629,7 @@ Deadpool 2
 Dealing with Dad
 Dean Spanley
 Dear Diary
+Dear Frankie
 Dear Mr. Brody
 Death Becomes Her
 Death Proof
@@ -1697,6 +1708,7 @@ Diamonds of the Night
 Diana Kennedy: Nothing Fancy
 Diane Warren: Relentless
 Diary of a Lost Girl
+Diary of a Mad Black Woman
 Diary of a Mad Housewife
 Diary of a Wimpy Kid
 Diary of a Wimpy Kid: Dog Days
@@ -1850,6 +1862,7 @@ Drive-Away Dolls
 Drop
 Drop Dead Gorgeous
 Drowning by Numbers
+Drums Along the Mohawk
 Drunk Bus
 Dry Ground Burning
 Drylongso
@@ -1857,6 +1870,7 @@ Dual
 Duck Soup
 Duel in the Sun
 Duet for Cannibals
+Duma
 Dumb Money
 Dumb and Dumber
 Dumbo
@@ -1877,6 +1891,7 @@ Eagles of Death Metal: Nos Amis (Our Friends)
 Early Man
 Early Spring
 Early Summer
+Earth
 Earth: One Amazing Day
 Earwig and the Witch
 East of Eden
@@ -2138,6 +2153,7 @@ Ferrari
 Ferrari: Race to Immortality
 Ferris Bueller's Day Off
 Festival Express
+Fever Pitch
 Fiddler on the Roof
 Fiddler's Journey to the Big Screen
 Fiddler: A Miracle of Miracles
@@ -2262,6 +2278,7 @@ Forensic
 Forever Amber
 Forever Strong
 Forever Young
+Forgiving Dr. Mengele
 Formosa Betrayed
 Forrest Gump
 Fort Apache
@@ -2440,6 +2457,7 @@ Glory
 Glory Road
 Gnomeo & Juliet
 Go
+Go Further
 Go West
 Go West Young Man
 God & Country
@@ -2577,6 +2595,7 @@ Halloween Ends
 Halloween II
 Halloween Kills
 Halloween Party
+Halloweentown
 Halston
 Hamlet
 Hamlet 2
@@ -2659,6 +2678,7 @@ Heat
 Heat and Dust
 Heathers
 Heaven
+Heaven & Earth
 Heaven Can Wait
 Heaven Knows, Mr. Allison
 Heaven on Earth
@@ -2918,6 +2938,8 @@ Ice Age
 Ice Age: Collision Course
 Ice Age: Continental Drift
 Ice Age: The Meltdown
+Ice Princess
+Ice Station Zebra
 Iceberg Slim: Portrait of a Pimp
 Ida
 Identifying Features
@@ -2943,6 +2965,7 @@ In Bruges
 In Cold Blood
 In Country
 In Darkness
+In Good Company
 In Her Shoes
 In Jackson Heights
 In Pursuit of Silence
@@ -3089,6 +3112,7 @@ It's a Wonderful Knife
 It: Chapter Two
 Ittefaq
 Itzhak
+Ivanhoe
 Iverson
 J. Edgar
 JFK
@@ -3218,6 +3242,7 @@ Kahaani
 Kaili Blues
 Kajillionaire
 Kalank
+Kanal
 Kandahar
 Karaoke
 Karate Kid: Legends
@@ -3424,6 +3449,7 @@ Le amiche
 Le cercle rouge
 Le code a changé
 Le deuxième souffle
+Le grand rôle
 Lean on Me
 Leap Year
 Leatherheads
@@ -3482,6 +3508,7 @@ Lifeboat
 Lifechanger
 Lifeforce
 Light from Light
+Lightning in a Bottle
 Lights Out
 Lightyear
 Like Dandelion Dust
@@ -3735,6 +3762,7 @@ Man Push Cart
 Man of Aran
 Man of Steel
 Man of Tai Chi
+Man of the House
 Man of the West
 Man of the Year
 Man on Fire
@@ -3800,6 +3828,7 @@ Marty Supreme
 Marvelous and the Black Hole
 Marvin's Room
 Marx Can Wait
+Mary Pickford: The Muse of the Movies
 Mary Poppins
 Mary Poppins Returns
 Mary Queen of Scots
@@ -3956,6 +3985,7 @@ Mississippi Burning
 Mississippi Grind
 Mississippi Masala
 Mister Organ
+Mixing Nia
 Mo' Better Blues
 Moana
 Moana 2
@@ -4474,6 +4504,7 @@ Our Little Sister
 Our Man in Havana
 Our Mothers
 Our Time Machine
+Our Town
 Out Come the Wolves
 Out for Justice
 Out of Sight
@@ -4831,6 +4862,7 @@ Race to Freedom: The Underground Railroad
 Race with the Devil
 Rachel
 Rachel, Rachel
+Racing Stripes
 Radiance
 Radiant City
 Radical Wolfe
@@ -5011,6 +5043,7 @@ RoboCop
 Robot & Frank
 Robot Dreams
 Robot Overlords
+Robots
 Rocco and His Brothers
 Rock Camp
 Rock Dog
@@ -5110,6 +5143,7 @@ Saint Frances
 Saint Laurent
 Saint Maud
 Saint Omer
+Saint Ralph
 Saint of 9/11
 Saiyaara
 Sakra
@@ -5203,6 +5237,7 @@ Secondhand Lions
 Seconds
 Secret Ceremony
 Secret Honor
+Secret Lives: Hidden Children and Their Rescuers During WWII
 Secret Zoo
 Secret in Their Eyes
 Secret of the Wings
@@ -5262,6 +5297,7 @@ Shake Hands with the Devil
 Shake Hands with the Devil: The Journey of Roméo Dallaire
 Shake the Dust
 Shakespeare in Love
+Shall We Dance
 Shall We Dance?
 Shallow Hal
 Shame
@@ -5886,6 +5922,7 @@ The Adjustment Bureau
 The Adventurer: The Curse of the Midas Box
 The Adventurers
 The Adventures of Baron Munchausen
+The Adventures of Bullwhip Griffin
 The Adventures of Elmo in Grouchland
 The Adventures of Ichabod and Mr. Toad
 The Adventures of Milo and Otis
@@ -6082,6 +6119,7 @@ The Bridge on the River Kwai
 The Bridges of Madison County
 The Brink
 The Brink's Job
+The Broadway Melody
 The Broken Hearts Club: A Romantic Comedy
 The Bronze
 The Brood
@@ -6328,6 +6366,7 @@ The Fabelmans
 The Fabulous Baker Boys
 The Fabulous Four
 The Face of Love
+The Falcon and the Snowman
 The Falconer
 The Fall
 The Fall Guy
@@ -6399,6 +6438,7 @@ The Friend
 The Friends of Eddie Coyle
 The Frisco Kid
 The Front
+The Front Page
 The Fugitive
 The Full Monty
 The Furies
@@ -6479,6 +6519,7 @@ The Great Escaper
 The Great Gatsby
 The Great Indian Family
 The Great McGinty
+The Great Muppet Caper
 The Great New Wonderful
 The Great Outdoors
 The Great Race
@@ -6998,6 +7039,7 @@ The Owl and the Pussycat
 The Owners
 The Ox-Bow Incident
 The Oxford Murders
+The Pacifier
 The Painted Veil
 The Painter and the Thief
 The Pajama Game
@@ -7395,7 +7437,9 @@ The Unknown Woman
 The Unmaking of A College
 The Untold Story of Emmett Louis Till
 The Untouchables
+The Unwanted Woman
 The Upside
+The Upside of Anger
 The Usual Suspects
 The V.I.P.s
 The Vanishing
@@ -7403,6 +7447,7 @@ The Velvet Underground
 The Venerable W.
 The Verdict
 The Vikings
+The Village
 The Village Barbershop
 The Village Detective: a song cycle
 The Virgin Suicides
@@ -7441,6 +7486,7 @@ The Whistlers
 The White Buffalo
 The White Countess
 The White Crow
+The White Diamond
 The White Stripes Under Great White Northern Lights
 The White Tiger
 The Whole Nine Yards
@@ -7503,6 +7549,7 @@ The Year of Living Dangerously
 The Year of the Everlasting Storm
 The Yearling
 The YouTube Effect
+The Young Black Stallion
 The Young Lions
 The Young Philadelphians
 The Young and Prodigious T.S. Spivet
@@ -7728,6 +7775,7 @@ Tron: Ares
 Tron: Legacy
 Trophy
 Tropic Thunder
+Tropical Malady
 Troy
 Truck Turner
 True Believer
@@ -7768,6 +7816,7 @@ Twins
 Twinsters
 Twister
 Twisters
+Two Brothers
 Two Family House
 Two Lovers
 Two Lovers and a Bear
@@ -7802,6 +7851,7 @@ Uncovered: The Whole Truth About the Iraq War
 Uncropped
 Uncut Gems
 Under Capricorn
+Under Milk Wood
 Under Suspicion
 Under the Bombs
 Under the Cherry Moon
@@ -7826,6 +7876,7 @@ Universal Language
 Universal Soldier
 Universal Soldier: Regeneration
 Unknown Pleasures
+Unleashed
 Unlocking the Cage
 Unmade Beds
 Unpregnant
@@ -7839,6 +7890,7 @@ Until the End of the World
 Until the Light Takes Us
 Untraceable
 Up
+Up and Down
 Up in Smoke
 Up the Down Staircase
 Up the Sandbox
@@ -7967,6 +8019,7 @@ Waterland
 Waterloo
 Waterloo Bridge
 Watermark
+Watermarks
 Watership Down
 Wattstax
 Waves
@@ -8038,6 +8091,7 @@ What's Love Got to Do with It
 What's New Pussycat
 What's Up, Doc?
 Wheel of Fortune and Fantasy
+Wheel of Time
 Wheeler
 When Comedy Went to School
 When Fall Is Coming
@@ -8050,6 +8104,7 @@ When the Beat Drops
 When the Game Stands Tall
 When the Wind Blows
 Where Angels Fear to Tread
+Where Are the Children?
 Where Eagles Dare
 Where She Lies
 Where in the World Is Osama Bin Laden?
@@ -8184,6 +8239,7 @@ Wonka
 Woodlawn
 Woodstock
 Woody Allen: A Documentary
+Word Wars
 Wordplay
 Words on Bathroom Walls
 Working Girl
@@ -8270,6 +8326,7 @@ Yours, Mine & Ours
 Yourself and Yours
 Youth (Spring)
 Youth in Revolt
+Youth of the Beast
 Yu-Gi-Oh!: The Dark Side of Dimensions
 Yuni
 Yves Saint Laurent
