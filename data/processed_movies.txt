@@ -8,6 +8,7 @@ $ellebrity
 10
 10 Cloverfield Lane
 10 Lives
+10 Questions for the Dalai Lama
 10 Rillington Place
 10 Things I Hate About You
 100 Yards
@@ -83,6 +84,7 @@ $ellebrity
 7 Khoon Maaf
 7 Men from Now
 78/52
+7th Street
 8 Mile
 8-Bit Christmas
 80 for Brady
@@ -304,6 +306,7 @@ Afghan Star
 Afire
 After Parkland
 After She Died
+After Stonewall
 After Yang
 After the Fox
 After the Sunset
@@ -622,6 +625,7 @@ Assassination Nation
 Asteroid City
 Asthma
 Astrakan
+Astro Boy
 At Eternity's Gate
 At War
 At the Death House Door
@@ -1584,6 +1588,7 @@ Dark Water
 Darkest Hour
 Darling
 Darlings
+Darwin's Nightmare
 Das Boot
 Daughters of the Dust
 Daughters of the Sun
@@ -3314,6 +3319,7 @@ King of the Gypsies
 King on Screen
 Kingdom of Heaven
 Kingdom of the Planet of the Apes
+Kings & Queen
 Kings of the Evening
 Kingsglaive: Final Fantasy XV
 Kingsman: The Golden Circle
@@ -3604,6 +3610,7 @@ Loopers: The Caddie's Long Walk
 Lord of War
 Lord of the Flies
 Lords of Chaos
+Lords of Dogtown
 Lore
 Lorenzo's Oil
 Los Conductos
@@ -3915,6 +3922,7 @@ Meru
 Message in a Bottle
 Metal: A Headbanger's Journey
 Metro in Dino
+Metropolis
 Metropolitan
 Mia and the White Lion
 Miami Vice
@@ -3995,6 +4003,7 @@ Modern Times
 Modest Heroes
 Modigliani
 Mogambo
+Mojados: Through the Night
 Molly's Game
 Moloch
 Molokai
@@ -4566,6 +4575,7 @@ Paranoia
 Parasite
 Parental Guidance
 Parenthood
+Paris
 Paris Belongs to Us
 Paris Can Wait
 Paris Is Burning
@@ -4702,6 +4712,7 @@ Planet 51
 Planet B-Boy
 Planet Terror
 Planet of the Apes
+Platform
 Platinum Blonde
 Platoon
 Play It Again, Sam
@@ -5089,6 +5100,7 @@ Room
 Room at the Top
 Room in Rome
 Rope
+Rory O'Shea Was Here
 Rosario
 Rose Plays Julie
 Rosemary's Baby
@@ -5211,8 +5223,10 @@ Science Fair
 Scoob!
 Scooby-Doo
 Scooby-Doo and the Alien Invaders
+Scooby-Doo and the Cyber Chase
 Scoop
 Scott Pilgrim Vs. The World (2010)
+Scottsboro: An American Tragedy
 Scotty and the Secret History of Hollywood
 Scrapper
 Scream
@@ -5304,6 +5318,7 @@ Shame
 Shane
 Shang-Chi and the Legend of the Ten Rings
 Shanghai Express
+Shanghai Ghetto
 Shanghai Knights
 Shanghai Noon
 Shanghai Surprise
@@ -5867,6 +5882,7 @@ Tekkonkinkreet
 Tel Aviv on Fire
 Tell Me That You Love Me, Junie Moon
 Tell No One
+Tell Them Who You Are
 Tell Them Willie Boy Is Here
 Tender Mercies
 Tenet
@@ -5974,6 +5990,7 @@ The Artist and the Model
 The Aspern Papers
 The Asphalt Jungle
 The Assassination of Jesse James by the Coward Robert Ford
+The Assassination of Richard Nixon
 The Assessment
 The Associate
 The Astronaut
@@ -6869,6 +6886,7 @@ The Man with Two Brains
 The Man with the Answers
 The Man with the Iron Fists
 The Manchurian Candidate
+The Manhattan Project
 The Many Adventures of Winnie the Pooh
 The Many Saints of Newark
 The March on Rome
@@ -7506,6 +7524,7 @@ The Wind Rises
 The Wind Will Carry Us
 The Wind and the Lion
 The Windmill Movie
+The Winning Season
 The Winslow Boy
 The Witch Who Came from the Sea
 The Witches
@@ -7695,6 +7714,7 @@ Tongues Untied
 Toni
 Toni Erdmann
 Toni Morrison: The Pieces I Am
+Tony Robbins: I Am Not Your Guru
 Too Big to Fail
 Too Late for Tears
 Too Late to Die Young
@@ -7975,6 +7995,7 @@ WR: Mysteries of the Organism
 Waco: The Rules of Engagement
 Wadjda
 Wag the Dog
+Waging a Living
 Waikiki
 Wait Until Dark
 Waiting for Guffman
@@ -8122,6 +8143,7 @@ While We're Young
 While the City Sleeps
 Whiplash
 Whiskey Tango Foxtrot
+Whisky Galore!
 Whisper of the Heart
 White Bird
 White Boy Rick
@@ -8209,6 +8231,7 @@ Withnail and I
 Without Limits
 Without Name
 Without a Clue
+Without a Paddle
 Witness
 Witness for the Prosecution
 Wittgenstein
