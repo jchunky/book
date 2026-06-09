@@ -197,6 +197,8 @@ A New Leaf
 A Night at the Opera
 A Night to Remember
 A Nightmare on Elm Street
+A Nightmare on Elm Street 3: Dream Warriors
+A Nightmare on Elm Street 4: The Dream Master
 A Nightmare on Elm Street 5: The Dream Child
 A Paris Education
 A Passage to India
@@ -304,6 +306,7 @@ Advocate
 Aferim!
 Afghan Star
 Afire
+Africa Screams
 After Parkland
 After She Died
 After Stonewall
@@ -359,6 +362,7 @@ Alien: Romulus
 Alienoid
 Aliens
 Aliens in the Attic
+Aliens of the Deep
 Aline
 Alita: Battle Angel
 Alive and Kicking
@@ -1699,6 +1703,7 @@ Detachment
 Detective Story
 Detour
 Detroit
+Deuce Bigalow: European Gigolo
 Deuce Bigalow: Male Gigolo
 Deva
 Devil
@@ -1754,6 +1759,7 @@ Distant
 District 9
 Disturbing the Peace
 Diva
+Divan
 Divergent
 Divided We Fall
 Divine Love
@@ -2060,6 +2066,7 @@ Executive Order
 Executive Suite
 Exhibition
 Exhuma
+Exils
 Exit Wounds
 Exotica
 Experiment in Terror
@@ -2086,6 +2093,7 @@ Faces Places
 Facing Nolan
 Facing the Giants
 Fackham Hall
+Fade to Black
 Fading Gigolo
 Fados
 Fagara
@@ -2285,6 +2293,7 @@ Forever Strong
 Forever Young
 Forgiving Dr. Mengele
 Formosa Betrayed
+Formula 17
 Forrest Gump
 Fort Apache
 Fort Apache the Bronx
@@ -2312,6 +2321,7 @@ Freaks
 Freaky
 Freaky Friday
 Freaky Tales
+Freddy's Dead: The Final Nightmare
 Free Guy
 Free Men
 Free Puppies!
@@ -2582,6 +2592,7 @@ Gundala
 Gunfight at the O.K. Corral
 Gunga Din
 Gunless
+Gunner Palace
 Guys and Dolls
 Guzaarish
 H.H. Holmes: America's First Serial Killer
@@ -2692,6 +2703,7 @@ Heavy Metal
 Heavyweights
 Hector and the Search for Happiness
 Hedwig and the Angry Inch
+Heights
 Heist
 Helena from the Wedding
 Hell Is for Heroes
@@ -3745,6 +3757,7 @@ Maigret
 Main Atal Hoon
 Major
 Major League
+Make It Funky!
 Make Mine Music
 Make-Out with Violence
 Making Montgomery Clift
@@ -4269,6 +4282,7 @@ New Jack City
 New Life
 New Waterford Girl
 New York
+New York Doll
 New York Stories
 Newness
 News of the World
@@ -4595,6 +4609,7 @@ Passenger Side
 Passengers
 Passion
 Passione
+Passport to Pimlico
 Past Lives
 Pat Garrett & Billy the Kid
 Patch Adams
@@ -4817,6 +4832,7 @@ Proud Mary
 Prozac Nation
 Psycho
 Psycho II
+Psycho III
 Public Enemies
 Pulp
 Pulp Fiction
@@ -4946,6 +4962,7 @@ Red Shoes and the Seven Dwarfs
 Red Snow
 Red Sparrow
 Red Trees
+Red Trousers: The Life of the Hong Kong Stuntmen
 Redemption
 Reds
 Reefer Madness
@@ -5015,6 +5032,7 @@ Ride the Pink Horse
 Ride with the Devil
 Rider on the Rain
 Riders of Justice
+Riding Giants
 Riding in Cars with Boys
 Riefenstahl
 Rififi
@@ -5023,6 +5041,7 @@ Right Now, Wrong Then
 Righteous Kill
 Rimini
 Ring of Bright Water
+Ring of Fire: The Emile Griffith Story
 Rings
 Rio
 Rio Bravo
@@ -5369,6 +5388,7 @@ Shooting the Mafia
 Shopgirl
 Short Circuit
 Short Circuit 2
+Short Cut to Nirvana: Kumbh Mela
 Short Cuts
 Shortbus
 Shorts
@@ -5421,6 +5441,7 @@ Sister Act
 Sister Act 2: Back in the Habit
 Sister Aimee
 Sisters
+Sisters in Law
 Sisters of the Gion
 Sisu
 Sisu: Road to Revenge
@@ -5648,6 +5669,7 @@ Staying Alive
 Steak (R)evolution
 Steal a Pencil for Me
 Stealing Chaplin
+Stealing Home
 Steamboy
 Steel Magnolias
 Steelyard Blues
@@ -5948,6 +5970,8 @@ The Adventures of Robin Hood
 The Adventures of Tintin
 The Age of Adaline
 The Age of Innocence
+The Aggressives
+The Agronomist
 The Air I Breathe
 The Alamo
 The Alchemist Cookbook
@@ -6305,6 +6329,7 @@ The Devil Is a Woman
 The Devil Wears Prada
 The Devil and Daniel Webster
 The Devil's Advocate
+The Devil's Miner
 The Devil's Rain
 The Diary of Anne Frank
 The Diary of a Teenage Girl
@@ -7361,6 +7386,7 @@ The Suicide Squad
 The Sum of All Fears
 The Summer Book
 The Summit
+The Sun
 The Sundowners
 The Sunset Limited
 The Sunshine Makers
@@ -7988,6 +8014,7 @@ Vive L'Amour
 Vivo
 Vivre sa vie
 Volcano
+Volcanoes of the Deep Sea
 Volver
 Voodoo Macbeth
 Vulcanizadora
