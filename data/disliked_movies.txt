@@ -25,6 +25,7 @@ Any Which Way You Can
 Apollo 13
 Armageddon
 Army of Darkness
+Assault on Precinct 13
 Atomic Blonde
 Austin Powers: International Man of Mystery
 Avatar
@@ -137,6 +138,7 @@ Goodfellas
 Grand Canyon
 Green Card
 Green Lantern
+Grizzly Man
 Grosse Pointe Blank
 Guardians of the Galaxy
 Guardians of the Galaxy Vol. 2
@@ -199,6 +201,7 @@ Moonrise Kingdom
 Mr. & Mrs. Smith
 Mr. Mom
 Much Ado About Nothing
+Murderball
 My Blue Heaven
 My Own Private Idaho
 Mystic River
@@ -346,6 +349,7 @@ The War of the Roses
 The Warriors
 The Witches of Eastwick
 The Wolverine
+The Yes Men
 Thelma & Louise
 There Will Be Blood
 Thor
