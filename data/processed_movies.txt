@@ -240,6 +240,7 @@ A Soldier's Story
 A Somewhat Gentle Man
 A Spell to Ward Off the Darkness
 A Star Is Born
+A State of Mind
 A Story of Floating Weeds
 A Stranger Among Us
 A Street Cat Named Bob
@@ -741,6 +742,7 @@ Barbershop: The Next Cut
 Barbie
 Barcelona
 Barefoot in the Park
+Barnyard
 Barry Lyndon
 Barton Fink
 Basic Instinct
@@ -1078,6 +1080,7 @@ Brainwashed: Sex-Camera-Power
 Brand Upon the Brain!
 Brand: A Second Coming
 Brassed Off
+Bratz
 Brave
 Brave Miss World
 Brave the Dark
@@ -1553,6 +1556,7 @@ Cross of Iron
 Crossfire Hurricane
 Crossing Delancey
 Crossing Over
+Crossing the Bridge: The Sound of Istanbul
 Croupier
 Crown Heights
 Crshd
@@ -1956,6 +1960,7 @@ Edge of Seventeen
 Edge of Tomorrow
 Edge of Winter
 Edie
+Edvard Munch
 Edward II
 Edward Scissorhands
 Eephus
@@ -2003,6 +2008,7 @@ Emergent City
 Emily the Criminal
 Emitai
 Emma
+Emmanuel's Gift
 Emotional Arithmetic
 Empire of Light
 Empire of the Sun
@@ -2097,6 +2103,7 @@ Exit Wounds
 Exotica
 Experiment in Terror
 Experimenter
+Expiration Date
 Exporting Raymond
 Exposing Muybridge
 Exposure 36
@@ -2119,6 +2126,7 @@ Faces Places
 Facing Nolan
 Facing the Giants
 Fackham Hall
+Factotum
 Fade to Black
 Fading Gigolo
 Fados
@@ -2130,6 +2138,7 @@ Failure to Launch
 Falcon Lake
 Fall
 Fallen
+Fallen Angel
 Fallen Leaves
 Falling Down
 Fame
@@ -2234,6 +2243,7 @@ Firehouse Dog
 Fireproof
 Fires on the Plain
 Firestarter
+Firewall
 Fireworks
 Fireworks Wednesday
 First Cow
@@ -2766,6 +2776,7 @@ Hercules
 Hercules in the Haunted World
 Here Comes Mr. Jordan
 Here Today
+Hereafter
 Hereditary
 Heretic
 Hermia & Helena
@@ -2884,6 +2895,7 @@ How William Shatner Changed the World
 How to Blow Up a Pipeline
 How to Build a Girl
 How to Come Alive with Norman Mailer
+How to Eat Fried Worms
 How to Eat Your Watermelon in White Company (and Enjoy It)
 How to Let Go of the World: and Love All the Things Climate Can't Change
 How to Lose a Guy in 10 Days
@@ -2913,6 +2925,7 @@ Hurry Sundown
 Husbands
 Hush...Hush, Sweet Charlotte
 Hustle
+Hustle & Flow
 Hustlers
 Hyde Park on Hudson
 Hyena Road
@@ -3124,6 +3137,7 @@ Invisible Essence: The Little Prince
 Invisible Hands
 Ip Man 3
 Ip Man 4: The Finale
+Iraq for Sale: The War Profiteers
 Iraq in Fragments
 Irma Vep
 Iron Eagle
@@ -3211,6 +3225,7 @@ Jennifer's Body
 Jeremiah Johnson
 Jerry Maguire
 Jersey Boys
+Jesus Camp
 Jesus Christ Superstar
 Jesus Revolution
 Jia Zhangke, A Guy from Fenyang
@@ -3224,6 +3239,7 @@ Jimpa
 Jindabyne
 Joan Baez I Am a Noise
 Jodorowsky's Dune
+Joe
 Joe Bell
 Joe Kidd
 Joe Strummer: The Future Is Unwritten
@@ -3398,6 +3414,7 @@ Knock at the Cabin
 Knocking
 Knowing
 Koko: A Talking Gorilla
+Kolya
 Kompromat
 Kon-Tiki
 Kong: Skull Island
@@ -3531,6 +3548,7 @@ Lennox Lewis: The Untold Story
 Leolo
 Leona
 Leonard Cohen: I'm Your Man
+Leroy & Stitch
 Les Girls
 Les Misérables
 Les nôtres
@@ -3660,6 +3678,7 @@ Look Who's Talking Too
 Look at Us Now, Mother!
 Looking Glass
 Looking Through Water
+Looking for Comedy in the Muslim World
 Looking for Eric
 Looking for Langston
 Looper
@@ -3825,6 +3844,7 @@ Mamma Roma
 Man Bites Dog
 Man Is Not a Bird
 Man Push Cart
+Man in Black
 Man of Aran
 Man of Steel
 Man of Tai Chi
@@ -4164,6 +4184,7 @@ Mr. Turner
 Mr. Woodcock
 Mrs. Doubtfire
 Mrs. Harris Goes to Paris
+Mrs. Henderson Presents
 Mrs. Hyde
 Mrs. Miniver
 Mrs. Soffel
@@ -4268,6 +4289,7 @@ My Sister's Keeper
 My Son, My Son, What Have Ye Done
 My Spy
 My Summer of Love
+My Super Ex-Girlfriend
 My Week with Marilyn
 My Winnipeg
 My Wonderful Wanda
@@ -4494,6 +4516,7 @@ Oliver & Company
 Oliver Twist
 Oliver!
 Oliver's Story
+Olympia
 Om Shanti Om
 On Any Sunday
 On Chesil Beach
@@ -4896,6 +4919,7 @@ Proof
 Property
 Prosecuting Evil
 Proteus: A Nineteenth Century Vision
+Protocols of Zion
 Proud Mary
 Prozac Nation
 Psycho
@@ -5259,6 +5283,7 @@ Salò, or the 120 Days of Sodom
 Sam & Mattie Make a Zombie Movie
 Samba
 Same Time, Next Year
+Sammy Davis, Jr.: I've Gotta Be Me
 Sample This
 Samrat Prithviraj
 Samson and Delilah
@@ -5336,6 +5361,7 @@ Searching for Bobby Fischer
 Searching for Debra Winger
 Searching for Mr. Rugoff
 Searching for Sugar Man
+Searching for the Wrong-Eyed Jesus
 Season of the Witch
 Sebastian
 Secondhand Lions
@@ -5513,6 +5539,7 @@ Sing Street
 Singin' in the Rain
 Sink the Bismarck!
 Sinners
+Sir! No Sir!
 Sister Act
 Sister Act 2: Back in the Habit
 Sister Aimee
@@ -5902,6 +5929,7 @@ Suzume
 Swallows and Amazons
 Swan Song
 Sweeney Todd: The Demon Barber of Fleet Street
+Sweet Bird of Youth
 Sweet Charity
 Sweet Country
 Sweet Liberty
@@ -6018,6 +6046,7 @@ Thappad
 That Championship Season
 That Darn Cat!
 That Hamilton Woman
+That Man: Peter Berlin
 That Obscure Object of Desire
 That Sugar Film
 That Thing You Do!
@@ -6093,6 +6122,7 @@ The Apprenticeship of Duddy Kravitz
 The Archies
 The Argument
 The Aristocats
+The Aristocrats
 The Armstrong Lie
 The Art of Racing in the Rain
 The Art of the Steal
@@ -6310,6 +6340,7 @@ The Circle
 The City of Violence
 The City of Your Final Destination
 The Client
+The Climb
 The Cocoanuts
 The Coffee Table
 The Cold Blue
@@ -6362,6 +6393,7 @@ The Croods: A New Age
 The Crow
 The Crucible
 The Crying Game
+The Cult of the Suicide Bomber
 The Culture High
 The Curious Case of Benjamin Button
 The Curse of La Llorona
@@ -6562,6 +6594,7 @@ The Fortune Cookie
 The Founder
 The Four Feathers
 The Fourth Kind
+The Fox and the Hound 2
 The Free World
 The Freedom to Marry
 The French Connection
@@ -6937,6 +6970,7 @@ The Little Rascals
 The Little Shop of Horrors
 The Little Things
 The Lives of a Bengal Lancer
+The Lives of the Saints
 The Living Daylights
 The Lone Ranger
 The Loneliest Planet
@@ -6945,6 +6979,7 @@ The Long Goodbye
 The Long Riders
 The Long Walk
 The Long, Hot Summer
+The Long, Long Trailer
 The Longest Day
 The Longest Yard
 The Look of Silence
@@ -7696,6 +7731,7 @@ The Year Between
 The Year Without a Santa Claus
 The Year of Living Dangerously
 The Year of the Everlasting Storm
+The Year of the Yao
 The Yearling
 The Yes Men
 The YouTube Effect
@@ -8109,6 +8145,7 @@ Victor Frankenstein
 Victoria & Abdul
 Videodrome
 Vijay 69
+Vikings: Journey to New Worlds
 Vikram
 Village of the Damned
 Vincent & Theo
@@ -8308,6 +8345,7 @@ Whitney Houston: I Wanna Dance with Somebody
 Who Framed Roger Rabbit
 Who Is Harry Kellerman and Why Is He Saying Those Terrible Things About Me?
 Who Is Killing the Great Chefs of Europe?
+Who Killed the Electric Car?
 Who We Are: A Chronicle of Racism in America
 Who is Dayani Cristal?
 Who'll Stop the Rain
@@ -8358,10 +8396,12 @@ Winchester
 Wind River
 Windtalkers
 Wings of Desire
+Winnie the Pooh
 Winter Brothers
 Winter Flies
 Winter Kills
 Winter Light
+Winter Soldier
 Winter's Bone
 Winter's Tale
 Wise Blood
@@ -8442,6 +8482,7 @@ Year of the Dog
 Yeelen
 Yella
 Yellow Rose
+Yellow Sky
 Yellow Submarine
 YellowBrickRoad
 Yentl
