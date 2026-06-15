@@ -155,6 +155,7 @@ A Good Marriage
 A Good Woman Is Hard to Find
 A Good Year
 A Gray State
+A Great Day in Harlem
 A Guide to Recognizing Your Saints
 A Handful of Dust
 A Hard Day's Night
@@ -166,6 +167,7 @@ A Hologram for the King
 A House Made of Splinters
 A Jihad for Love
 A Journal for Jordan
+A Journey of Dmitry Shostakovich
 A Kid Like Jake
 A Kiss Before Dying
 A Knight's Tale
@@ -180,6 +182,7 @@ A Little Princess
 A Little Romance
 A Long Way Down
 A Lot of Nothing
+A Love Song for Bobby Long
 A Man Called Adam
 A Man Called Otto
 A Man and a Woman
@@ -197,6 +200,7 @@ A New Leaf
 A Night at the Opera
 A Night to Remember
 A Nightmare on Elm Street
+A Nightmare on Elm Street 2: Freddy's Revenge
 A Nightmare on Elm Street 3: Dream Warriors
 A Nightmare on Elm Street 4: The Dream Master
 A Nightmare on Elm Street 5: The Dream Child
@@ -516,6 +520,7 @@ Angelheaded Hipster: The Songs of Marc Bolan & T. Rex
 Angels & Demons
 Angels Over Broadway
 Angels in the Outfield
+Angels with Dirty Faces
 Anger Management
 Angry Inuk
 Animal
@@ -626,6 +631,7 @@ Ask Me to Dance
 Ask No Questions
 Assassin's Creed
 Assassination Nation
+Assault on Precinct 13
 Asteroid City
 Asthma
 Astrakan
@@ -742,6 +748,7 @@ Basquiat
 Batkid Begins: The Wish Heard Around the World
 Batman
 Batman & Mr. Freeze: SubZero
+Batman & Robin
 Batman Begins
 Batman Forever
 Batman v Superman: Dawn of Justice
@@ -757,9 +764,11 @@ Battle of the Bulge
 Battleship
 Battleship Potemkin
 Baywatch
+Be Cool
 Be Here to Love Me
 Be Kind Rewind
 Be Natural: The Untold Story of Alice Guy-Blaché
+Be with Me
 Beach Rats
 Beaches
 Beanpole
@@ -779,10 +788,12 @@ Beautiful Losers
 Beautiful Something
 Beautiful Thing
 Beauty Mark
+Beauty Shop
 Beauty and the Beast
 Beauty and the Beast: The Enchanted Christmas
 Beba
 Because I Said So
+Because of Winn-Dixie
 Becket
 Becky
 Becky Sharp
@@ -880,6 +891,7 @@ Big Bad Mama
 Big Boys Gone Bananas!*
 Big Business
 Big Crow
+Big Daddy
 Big Eden
 Big Fan
 Big Fish
@@ -930,6 +942,7 @@ Black Christmas
 Black Cop
 Black Dynamite
 Black God, White Devil
+Black Gold
 Black Hawk Down
 Black Moon Rising
 Black Mother
@@ -952,6 +965,7 @@ Blacklight
 Blade
 Blade II
 Blade Runner 2049
+Blade: Trinity
 Blades of Glory
 Blast from the Past
 Blaze
@@ -1077,6 +1091,7 @@ Breakfast at Tiffany's
 Breakheart Pass
 Breaking Away
 Breaking In
+Breaking Point
 Breaking Surface
 Breaking Upwards
 Breaking and Entering
@@ -1090,6 +1105,7 @@ Brexit
 Brian Wilson: Long Promised Road
 Brick
 Brick Lane
+Bride & Prejudice
 Bride Hard
 Bride Wars
 Bride of Chucky
@@ -1120,6 +1136,7 @@ Broadway: The Golden Age, by the Legends Who Were There
 Brokeback Mountain
 Broken Arrow
 Broken Blossoms
+Broken Flowers
 Brooklyn
 Brooklyn Castle
 Brooklyn's Finest
@@ -1192,6 +1209,7 @@ Call Me Kuchu
 Call Me by Your Name
 Calvaire
 Calvary
+Camille
 Camille Claudel 1915
 Camp Rock 2: The Final Jam
 Camp X-Ray
@@ -1244,6 +1262,7 @@ Casablanca Beats
 Casanova
 Casino
 Casper
+Casque d'Or
 Cassandro, The Exotico!
 Cast Away
 Casting By
@@ -1260,6 +1279,7 @@ Cats & Dogs
 Cats & Dogs 3: Paws Unite
 Cats & Dogs: The Revenge of Kitty Galore
 Catwalk: Tales from the Cat Show Circuit
+Catwoman
 Caught Stealing
 Caught by the Tides
 Cavalcade
@@ -1294,6 +1314,7 @@ Charley Varrick
 Charli XCX: Alone Together
 Charlie St. Cloud
 Charlie Wilson's War
+Charlie and the Chocolate Factory
 Charlie's Angels
 Charlie's Angels: Full Throttle
 Charlotte Gray
@@ -1332,6 +1353,7 @@ Children of the Mist
 Children of the Sea
 Chile '76
 Chinatown
+Chip 'n Dale: Rescue Rangers
 Chitty Chitty Bang Bang
 Chop & Steele
 Chop Shop
@@ -1342,6 +1364,7 @@ Christine
 Christmas Bloody Christmas
 Christmas Eve
 Christmas in Connecticut
+Christmas in the Clouds
 Christmas with the Kranks
 Christopher Robin
 Chuck & Buck
@@ -1370,6 +1393,7 @@ Claire's Knee
 Clash by Night
 Clash of the Titans
 Class of '83
+Class of 1984
 Claudine
 Clean
 Clean, Shaven
@@ -1455,6 +1479,7 @@ Confessions of a Dangerous Mind
 Confessions of a Shopaholic
 Confidence
 Conflict
+Confucius
 Congo
 Connie and Carla
 Conquest of the Planet of the Apes
@@ -1892,6 +1917,7 @@ Dungeons & Dragons: Honor Among Thieves
 Dunki
 Dunkirk
 Duplicity
+Dust to Glory
 Dying to Know: Ram Dass & Timothy Leary
 E.T. the Extra-Terrestrial
 EO
@@ -2211,6 +2237,7 @@ Firestarter
 Fireworks
 Fireworks Wednesday
 First Cow
+First Descent
 First Man
 First Name: Carmen
 First Reformed
@@ -2225,6 +2252,7 @@ Five Feet Apart
 Five Miles to Midnight
 Five Nights at Freddy's
 Five Nights at Freddy's 2
+Fixing Frank
 Flag Wars
 Flags of Our Fathers
 Flamenco
@@ -2241,6 +2269,7 @@ Flight
 Flight Risk
 Flight of the Intruder
 Flight of the Navigator
+Flight of the Phoenix
 Flight of the Red Balloon
 Flightplan
 Flipped
@@ -2259,6 +2288,7 @@ Flypaper
 Focus
 Fog City Mavericks
 Folk Hero & Funny Guy
+Food Chains
 Food and Country
 Food, Inc.
 Food, Inc. 2
@@ -2288,6 +2318,7 @@ Forces of Nature
 Ford v Ferrari
 Foreign Correspondent
 Forensic
+Forever
 Forever Amber
 Forever Strong
 Forever Young
@@ -2298,6 +2329,7 @@ Forrest Gump
 Fort Apache
 Fort Apache the Bronx
 Fortune Favors Lady Nikuko
+Four Brothers
 Four Daughters
 Four Good Days
 Four Kids and It
@@ -2573,6 +2605,7 @@ Gridlock'd
 Gridlocked
 Gringo
 Gringo Trails
+Grizzly Man
 Grosse Pointe Blank
 Groundhog Day
 Growing Up Coy
@@ -2581,6 +2614,7 @@ Grudge Match
 Grumpy Old Men
 Guardians of the Galaxy
 Guardians of the Galaxy Vol. 2
+Guerrilla: The Taking of Patty Hearst
 Guest Artist
 Guest of Cindy Sherman
 Guest of Honour
@@ -2700,6 +2734,7 @@ Heaven Knows, Mr. Allison
 Heaven on Earth
 Heavenly Creatures
 Heavy Metal
+Heavy Metal Parking Lot
 Heavyweights
 Hector and the Search for Happiness
 Hedwig and the Angry Inch
@@ -2816,6 +2851,7 @@ Horn from the Heart: The Paul Butterfield Story
 Horns and Halos
 Horror Noire: A History of Black Horror
 Horror of Dracula
+Hostage
 Hostiles
 Hot Fuzz
 Hot House
@@ -2935,6 +2971,7 @@ I Was a Simple Man
 I Was a Stranger
 I Will Follow
 I Wish I Knew
+I for India
 I'll Be Right There
 I'll See You in My Dreams
 I'll Show You Mine
@@ -2962,6 +2999,7 @@ Ida
 Identifying Features
 Identity
 Idiocracy
+Idlewild
 If Beale Street Could Talk
 If I Had Legs I'd Kick You
 If the Dancer Dances
@@ -3070,6 +3108,7 @@ International House
 Interstellar
 Interview with the Vampire
 Into Great Silence
+Into the Blue
 Into the Forest
 Into the Storm
 Into the Wild
@@ -3118,6 +3157,7 @@ It Might Get Loud
 It Runs in the Family
 It Started as a Joke
 It Takes Two
+It's All Gone Pete Tong
 It's All True: Based on an Unfinished Film by Orson Welles
 It's Better to Jump
 It's Complicated
@@ -3231,6 +3271,7 @@ Jumanji: Welcome to the Jungle
 Jump Shot: The Kenny Sailors Story
 Jumper
 June Zero
+Junebug
 Jungle Cruise
 Jungle Fever
 Jungleland
@@ -3244,6 +3285,7 @@ Jurassic World: Rebirth
 Juror #2
 Just Charlie
 Just Eat It: A Food Waste Story
+Just Friends
 Just Mercy
 Just a Sigh
 Just the Two of Us
@@ -3355,6 +3397,7 @@ Knock Off
 Knock at the Cabin
 Knocking
 Knowing
+Koko: A Talking Gorilla
 Kompromat
 Kon-Tiki
 Kong: Skull Island
@@ -3487,6 +3530,7 @@ Lemon Tree
 Lennox Lewis: The Untold Story
 Leolo
 Leona
+Leonard Cohen: I'm Your Man
 Les Girls
 Les Misérables
 Les nôtres
@@ -3567,6 +3611,7 @@ Little Miss Sunshine
 Little Nicholas - Happy as Can Be
 Little Richard: I Am Everything
 Little Shop of Horrors
+Little Tornadoes
 Little Vampire
 Little Women
 Little Woods
@@ -3668,6 +3713,7 @@ Love in the Afternoon
 Love in the Time of Fentanyl
 Love the Coopers
 Love with the Proper Stranger
+Love's Abiding Joy
 Love's Labour's Lost
 Love, Brooklyn
 Love, Gilda
@@ -3900,6 +3946,7 @@ Medium Cool
 Meet Joe Black
 Meet John Doe
 Meet Me in St. Louis
+Meet the Fockers
 Meet the Parents
 Meet the Robinsons
 Meeting Venus
@@ -3946,6 +3993,7 @@ Mickey Blue Eyes
 Mickey and the Bear
 Mickey's Once Upon a Christmas
 Midnight Cowboy
+Midnight Express
 Midnight Family
 Midnight Lace
 Midnight Run
@@ -3969,6 +4017,7 @@ Milk
 Millennium Bugs
 Miller's Crossing
 Millie Lies Low
+Million Dollar Baby
 Mimic
 Minari
 Mind Game
@@ -4006,6 +4055,7 @@ Mississippi Burning
 Mississippi Grind
 Mississippi Masala
 Mister Organ
+Mister Roberts
 Mixing Nia
 Mo' Better Blues
 Moana
@@ -4027,6 +4077,7 @@ Momma's Man
 Mommie Dearest
 Mona Lisa
 Mona Lisa Smile
+Mondovino
 Money Monster
 Money Train
 Monk in Pieces
@@ -4044,6 +4095,7 @@ Monster House
 Monster Hunter
 Monster Trucks
 Monster's Ball
+Monster-in-Law
 Monsters and Men
 Monsters, Inc.
 Monstrous
@@ -4059,6 +4111,7 @@ Moon
 Moonage Daydream
 Moonfall
 Moonfleet
+Moonraker
 Moonrise
 Moonrise Kingdom
 Moonshot
@@ -4134,16 +4187,21 @@ Murder Bury Win
 Murder Mubarak
 Murder She Said
 Murder at Yellowstone City
+Murder at the Gallop
 Murder by Death
 Murder by Numbers
 Murder in the First
 Murder on the Orient Express
+Murderball
 Muriel's Wedding
 Murmur of the Heart
+Murphy's Romance
 Music and Lyrics
 Music from the Inside Out
 Music of the Heart
+Must Love Dogs
 Mutiny on the Bounty
+My Architect
 My Beautiful Laundrette
 My Best Fiend
 My Best Friend's Girl
@@ -4154,6 +4212,7 @@ My Big Fat Greek Wedding 2
 My Big Fat Greek Wedding 3
 My Blue Heaven
 My Boss's Daughter
+My Country, My Country
 My Cousin Rachel
 My Cousin Vinny
 My Crazy Life
@@ -4196,6 +4255,7 @@ My Name Is Khan
 My Name Is Pedro
 My Name Is Sara
 My Neighbor Totoro
+My Neighbors the Yamadas
 My Night at Maud's
 My Old Lady
 My One and Only
@@ -4213,6 +4273,7 @@ My Winnipeg
 My Wonderful Wanda
 My Zoe
 Myra Breckinridge
+Mysteries of Egypt
 Mystery Train
 Mystery, Alaska
 Mystic Pizza
@@ -4320,6 +4381,7 @@ Nine
 Nine Days
 Nine Lives
 Ninja Scroll
+Ninotchka
 Nixon
 No Bears
 No Blade of Grass
@@ -4563,9 +4625,11 @@ Paint It Black
 Pal Joey
 Pale Flower
 Pale Rider
+Palindromes
 Pan's Labyrinth
 Panda Plan
 Pandas
+Pandemic
 Pandora's Box
 Pandorum
 Panga
@@ -4621,6 +4685,7 @@ Pather Panchali
 Paths of Glory
 Paths of the Soul
 Patient Zero
+Patriot Games
 Patriots Day
 Patti Smith: Dream of Life
 Patton
@@ -4756,6 +4821,7 @@ Polish Wedding
 Polite Society
 Pollock
 Poltergeist
+Pom Poko
 Pompo: The Cinéphile
 Poms
 Pontypool
@@ -4805,6 +4871,7 @@ Primal Fear
 Primary
 Primary Colors
 Primate
+Prime
 Prime Cut
 Primer
 Prince of Darkness
@@ -4825,6 +4892,7 @@ Promare
 Prometheus
 Promise at Dawn
 Promising Young Woman
+Proof
 Property
 Prosecuting Evil
 Proteus: A Nineteenth Century Vision
@@ -4900,6 +4968,7 @@ Raging Bull
 Ragtime
 Raid 2
 Rain Man
+Raise Your Voice
 Raising Arizona
 Raising Buchanan
 Raising Helen
@@ -5170,6 +5239,7 @@ Safe
 Safe House
 Safety Last!
 Sagrada: The Mystery of Creation
+Sahara
 Saint Frances
 Saint Laurent
 Saint Maud
@@ -5193,11 +5263,13 @@ Sample This
 Samrat Prithviraj
 Samson and Delilah
 Samurai Marathon
+Samurai Rebellion
 Sands of Iwo Jima
 Santa Buddies
 Santa Sangre
 Santiago, Italia
 Santoalla
+Saraband
 Sardar Udham
 Sasquatch Sunset
 Saturday Fiction
@@ -5293,6 +5365,7 @@ Senior Moment
 Senna
 Sense and Sensibility
 Senso
+Separate Lies
 Separate Tables
 September 5
 Serendipity
@@ -5320,6 +5393,7 @@ Sexual Drive
 Sexy Beast
 Sgt. Stubby: An American Hero
 Shabu
+Shadow Company
 Shadow Dancer
 Shadow of a Doubt
 Shadow of the Thin Man
@@ -5358,6 +5432,7 @@ She Will
 She Wore a Yellow Ribbon
 She's Funny That Way
 She's Having a Baby
+She's the Man
 She's the One
 Sheep Without a Shepherd
 Shelter
@@ -5382,6 +5457,7 @@ Shoeshine
 Sholay
 Sholem Aleichem: Laughing in the Darkness
 Shoot 'Em Up
+Shoot the Piano Player
 Shoot to Marry
 Shooter
 Shooting the Mafia
@@ -5458,6 +5534,7 @@ Skincare
 Skins
 Sky
 Sky Captain and the World of Tomorrow
+Sky High
 Skyscraper
 Slack Bay
 Slacker
@@ -5656,6 +5733,7 @@ Star Wars: Episode IV - A New Hope
 Star Wars: Episode IX - The Rise of Skywalker
 Star Wars: Episode VII - The Force Awakens
 Stardust
+Stardust Memories
 Starlet
 Starred Up
 Starship Troopers
@@ -5670,6 +5748,7 @@ Steak (R)evolution
 Steal a Pencil for Me
 Stealing Chaplin
 Stealing Home
+Stealth
 Steamboy
 Steel Magnolias
 Steelyard Blues
@@ -5678,10 +5757,12 @@ Stella Days
 Step Brothers
 Step Into Liquid
 Step Up
+Stepmom
 Steve Jobs
 Steve McQueen: The Man & Le Mans
 Steven Universe: The Movie
 Stevie
+Stick It
 Stigmata
 Still Breathing
 Still the Water
@@ -5860,6 +5941,7 @@ Take Back the Night
 Take Me to the River
 Take Out Girl
 Take Shelter
+Take the Lead
 Take the Money and Run
 Taken 2
 Taken 3
@@ -5870,6 +5952,7 @@ Tale of Tales
 Tales from Earthsea
 Tales from the Gimli Hospital
 Tales from the Organ Trade
+Tales of the Rat Fink
 Talk to Her
 Talladega Nights: The Ballad of Ricky Bobby
 Tamara Drewe
@@ -5933,6 +6016,7 @@ Thank You for Your Service
 Thanks for Sharing
 Thappad
 That Championship Season
+That Darn Cat!
 That Hamilton Woman
 That Obscure Object of Desire
 That Sugar Film
@@ -5967,6 +6051,7 @@ The Adventures of Milo and Otis
 The Adventures of Pinocchio
 The Adventures of Priscilla, Queen of the Desert
 The Adventures of Robin Hood
+The Adventures of Sharkboy and Lavagirl 3-D
 The Adventures of Tintin
 The Age of Adaline
 The Age of Innocence
@@ -5998,6 +6083,7 @@ The Animal
 The Animal Kingdom
 The Annihilation of Fish
 The Anonymous People
+The Ant Bully
 The Antichrist
 The Apartment
 The Apostle
@@ -6058,6 +6144,7 @@ The Beast
 The Beast Must Die
 The Beasts
 The Beatles: Eight Days a Week - The Touring Years
+The Beauty Academy of Kabul
 The Beauty Inside
 The Bedford Incident
 The Bedroom Window
@@ -6101,6 +6188,7 @@ The Birthday Cake
 The Bishop's Wife
 The Black Cat
 The Black Cauldron
+The Black Dahlia
 The Black Hole
 The Black Marble
 The Black Phone
@@ -6153,6 +6241,7 @@ The Brand New Testament
 The Brave Little Toaster
 The Brave One
 The Breadwinner
+The Break-Up
 The Breakfast Club
 The Breaking Point
 The Bride Wore Black
@@ -6166,6 +6255,7 @@ The Bronze
 The Brood
 The Brother from Another Planet
 The Brothers Bloom
+The Brothers Grimm
 The Brothers Grimsby
 The Brothers Karamazov
 The Brute
@@ -6327,6 +6417,7 @@ The Desperate Hours
 The Devil Came on Horseback
 The Devil Is a Woman
 The Devil Wears Prada
+The Devil and Daniel Johnston
 The Devil and Daniel Webster
 The Devil's Advocate
 The Devil's Miner
@@ -6457,6 +6548,7 @@ The Flintstones
 The Flintstones in Viva Rock Vegas
 The Florida Project
 The Flower of My Secret
+The Flowers of St. Francis
 The Flying Deuces
 The Fog
 The Fog of War
@@ -6464,6 +6556,7 @@ The Force
 The Foreigner
 The Forever Purge
 The Forgiven
+The Forgotten
 The Forgotten Space
 The Fortune Cookie
 The Founder
@@ -6514,6 +6607,7 @@ The Girl with All the Gifts
 The Girl with a Bracelet
 The Girl with the Dragon Tattoo
 The Giver
+The Glass Bottom Boat
 The Glass Castle
 The Glass Key
 The Glass Menagerie
@@ -6540,6 +6634,7 @@ The Good, the Bad and the Ugly
 The GoodTimesKid
 The Goodbye Girl
 The Goonies
+The Gospel
 The Gospel According to André
 The Gospel of Eureka
 The Grab
@@ -6570,6 +6665,7 @@ The Great Santini
 The Great Train Robbery
 The Great Waldo Pepper
 The Great Wall
+The Great War
 The Great White Hope
 The Greatest Game Ever Played
 The Greatest Show on Earth
@@ -6586,6 +6682,7 @@ The Grinch
 The Grissom Gang
 The Grizzlies
 The Group
+The Grudge
 The Guardian of Memory
 The Guilty
 The Gullspång Miracle
@@ -6814,6 +6911,7 @@ The Letter
 The Letters
 The Levelling
 The Liberation of L.B. Jones
+The Libertine
 The Librarian: Quest for the Spear
 The Life Aquatic with Steve Zissou
 The Life and Death of Colonel Blimp
@@ -7070,6 +7168,7 @@ The Other Fellow
 The Other Guys
 The Other Lamb
 The Other Side of Hope
+The Other Side of Midnight
 The Other Zoey
 The Others
 The Outfit
@@ -7163,6 +7262,7 @@ The Private Life of Henry VIII
 The Private Lives of Elizabeth and Essex
 The Private Lives of Pippa Lee
 The Producers
+The Professionals
 The Program
 The Proposal
 The Prosecutor
@@ -7295,6 +7395,7 @@ The Seventh Seal
 The Shack
 The Shadow
 The Shadowless Tower
+The Shaggy Dog
 The Shape of Water
 The Sharks
 The Shawshank Redemption
@@ -7355,6 +7456,7 @@ The Spanish Prisoner
 The Spectacular Now
 The Spine of Night
 The Spiral Staircase
+The Spirit of the Beehive
 The SpongeBob Movie: Search for SquarePants
 The SpongeBob SquarePants Movie
 The Spook Who Sat by the Door
@@ -7539,10 +7641,12 @@ The Whole Truth
 The Wicked Lady
 The Wicker Man
 The Wife
+The Wild
 The Wild Bunch
 The Wild Geese
 The Wild Goose Lake
 The Wild Life
+The Wild Parrots of Telegraph Hill
 The Wild Pear Tree
 The Wild Robot
 The Wilde Wedding
@@ -7593,6 +7697,7 @@ The Year Without a Santa Claus
 The Year of Living Dangerously
 The Year of the Everlasting Storm
 The Yearling
+The Yes Men
 The YouTube Effect
 The Young Black Stallion
 The Young Lions
@@ -7626,6 +7731,7 @@ They Might Be Giants
 They Say Nothing Stays the Same
 They Shall Not Grow Old
 They Shoot Horses, Don't They?
+Thief
 Thieves' Highway
 Thin
 Things We Lost in the Fire
@@ -7732,6 +7838,7 @@ Tom and Jerry: The Movie
 Tomb Raider
 Tombstone
 Tommaso
+Tommy Boy
 Tommy Guns
 Tomorrow Is Forever
 Tomorrow Never Dies
@@ -7786,12 +7893,14 @@ Train to Busan
 Training Day
 Traitor
 Trance
+Transamerica
 Transformers
 Transformers One
 Transformers: Age of Extinction
 Transformers: Dark of the Moon
 Transformers: Revenge of the Fallen
 Transformers: Rise of the Beasts
+Transporter 2
 Transporter 3
 Transylvania
 Trap
@@ -7854,12 +7963,14 @@ Turning Red
 Tusk
 Twelfth Night
 Twelve O'Clock High
+Twentieth Century
 Twenty-Four Eyes
 Twilight Zone: The Movie
 Twilight of the Warriors: Walled In
 Twin Peaks: Fire Walk with Me
 Twins
 Twinsters
+Twist of Faith
 Twister
 Twisters
 Two Brothers
@@ -7910,14 +8021,17 @@ Undercover Brother
 Underdog
 Underwater
 Underworld: Blood Wars
+Underworld: Evolution
 Undisputed
 Unfaithfully Yours
 Unfinished Business
 Unfinished Song
 Unfit: The Psychology of Donald Trump
 Unforgettable
+Unforgivable Blackness: The Rise and Fall of Jack Johnson
 Unforgiven
 Unhinged
+United 93
 Universal Language
 Universal Soldier
 Universal Soldier: Regeneration
@@ -7971,6 +8085,7 @@ Vampire in Brooklyn
 Vampyr
 Van Helsing
 Vanilla Sky
+Vanity Fair
 Vanya on 42nd Street
 Variety
 Vazante
@@ -8381,6 +8496,7 @@ Yu-Gi-Oh!: The Dark Side of Dimensions
 Yuni
 Yves Saint Laurent
 Z
+Z Channel: A Magnificent Obsession
 ZZ Top: That Little Ol' Band from Texas
 Zabriskie Point
 Zack Snyder's Justice League
@@ -8395,6 +8511,7 @@ Zenith
 Zero Dark Thirty
 Zero Effect
 Ziggy Stardust and the Spiders from Mars
+Zizek!
 Zodiac Killer Project
 Zola
 Zombieland: Double Tap

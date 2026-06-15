@@ -225,6 +225,7 @@ Point Break
 Police Academy
 Poltergeist
 Porky's
+Predator
 Primal Fear
 Prince of Persia: The Sands of Time
 Prisoners
@@ -343,6 +344,7 @@ The Sixth Sense
 The Sound of Music
 The Straight Story
 The Suicide Squad
+The Terminator
 The Truman Show
 The Usual Suspects
 The War of the Roses
