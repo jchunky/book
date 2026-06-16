@@ -719,6 +719,7 @@ Bajirao Mastani
 Ball of Fire
 Ballad of a Soldier
 Ballerina
+Ballets Russes
 Balloon
 Balls of Fury
 Baloney
@@ -922,6 +923,7 @@ Billy Liar
 Billy Lynn's Long Halftime Walk
 Billy Madison
 Billy the Kid
+Billy's Hollywood Screen Kiss
 Biloxi Blues
 Biosphere
 Bird
@@ -1220,6 +1222,7 @@ Can You Bring It: Bill T. Jones and D-Man in the Waters
 Can't Hardly Wait
 Canary
 Candleshoe
+Candy
 Candy Land
 Candyman
 Cane Fire
@@ -1502,6 +1505,7 @@ Cool as Ice
 Cop Car
 Cop Land
 Copa 71
+Coppelia
 Copshop
 Cora Bora
 Coral Reef Adventure
@@ -4452,6 +4456,7 @@ Not Wanted
 Not Without My Daughter
 Not a Pretty Picture
 Note by Note: The Making of Steinway L1037
+Notes on Marie Menken
 Notes on a Scandal
 Notes on an Appearance
 Nothing But Trouble
@@ -5258,6 +5263,7 @@ SPY KIDS 2: THE ISLAND OF LOST DREAMS (2002)
 Saboteur
 Sabrina
 Sacco & Vanzetti
+Sacco and Vanzetti
 Sadie
 Safe
 Safe House
@@ -6230,10 +6236,12 @@ The Blair Witch Project
 The Blind Side
 The Bling Ring
 The Blob
+The Blood of My Brother
 The Blue Caftan
 The Blue Dahlia
 The Blue Kite
 The Blue Lamp
+The Blue Light
 The Blues Brothers
 The Bob's Burgers Movie
 The Bone Collector
@@ -6267,6 +6275,7 @@ The Boys Are Back
 The Boys Next Door
 The Boys in Company C
 The Boys in Red Hats
+The Boys of Baraka
 The Brand New Testament
 The Brave Little Toaster
 The Brave One
@@ -7478,6 +7487,7 @@ The Son
 The Son of No One
 The Song of Bernadette
 The Song of Sparrows
+The Sons of Tennessee Williams
 The Sorcerer's Apprentice
 The Sorrow and the Pity
 The Sound Barrier
@@ -7556,6 +7566,7 @@ The Terminal
 The Terminator
 The Texas Chain Saw Massacre
 The Thief Collector
+The Thief Lord
 The Thief of Bagdad
 The Thin Man
 The Thin Man Goes Home
@@ -8072,6 +8083,7 @@ Universal Language
 Universal Soldier
 Universal Soldier: Regeneration
 Unknown Pleasures
+Unknown White Male
 Unleashed
 Unlocking the Cage
 Unmade Beds
