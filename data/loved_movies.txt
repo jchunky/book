@@ -6,6 +6,7 @@
 300
 3:10 to Yuma
 50 First Dates
+A Battle of Wits
 A Beautiful Mind
 A Fistful of Dollars
 A History of Violence
@@ -53,6 +54,7 @@ Brazil
 Breakfast at Tiffany's
 Brick
 Bridge of Spies
+Bunraku
 Byzantium
 Capote
 Carrie
@@ -65,6 +67,7 @@ Comedian
 Conan the Barbarian
 Cool Hand Luke
 Cronos
+Crouching Tiger, Hidden Dragon
 Cyrano de Bergerac
 Dances with Wolves
 Dangerous Liaisons
@@ -84,10 +87,12 @@ Dirty Rotten Scoundrels
 Doctor Sleep
 Donnie Darko
 Drag Me to Hell
+Dragon
 Dragonslayer
 Dreamscape
 Dredd
 Drive
+Drunken Master II
 Dual
 Dune: Part Two
 Dungeons & Dragons: Honor Among Thieves
@@ -134,6 +139,7 @@ In the Mood for Love
 Interview With the Vampire
 Invasion of the Body Snatchers
 Irma Vep
+Iron Monkey
 Jennifer's Body
 Jerry Maguire
 John Wick
@@ -180,6 +186,7 @@ No Country for Old Men
 No Time to Die
 Nobody
 Notting Hill
+Once Upon a Time in China
 Once Upon a Time in the West
 Once Were Warriors
 Ong-Bak: The Thai Warrior
@@ -263,6 +270,7 @@ The Bourne Ultimatum
 The Breakfast Club
 The Butterfly Effect
 The Christophers
+The City of Lost Children
 The Color of Money
 The Corporation
 The Dark Knight
@@ -277,6 +285,7 @@ The Fog of War
 The Godfather
 The Godfather Part II
 The Good, the Bad and the Ugly
+The Good, the Bad, the Weird
 The Green Knight
 The Grifters
 The Hitcher
@@ -328,6 +337,7 @@ True Lies
 U.S. Marshals
 Unforgiven
 Upgrade
+Versus
 Vertigo
 Waiting for Superman
 Whiplash
@@ -336,5 +346,6 @@ Wings of Desire
 Wonder Woman
 Working Girl
 Wrath of Man
+Wu Xia
 Yi Yi
 Yojimbo
