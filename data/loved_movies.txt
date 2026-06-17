@@ -122,9 +122,12 @@ Heat
 Heathers
 Hell or High Water
 Her
+Hero
 Highlander
 Highway 61
 House of Flying Daggers
+I Am Love
+I am love
 In the Bedroom
 In the Line of Fire
 In the Mood for Love
@@ -208,6 +211,7 @@ Room
 Rosencrantz and Guildenstern Are Dead
 Rumble Fish
 Run Lola Run
+SPL
 Salt
 Saving Private Ryan
 Say Anything
@@ -280,6 +284,7 @@ The House of Mirth
 The Hunt for Red October
 The King of Kong: A Fistful of Quarters
 The Last King of Scotland
+The Lives of Others
 The Lobster
 The Lookout
 The Lost Boys
@@ -287,6 +292,7 @@ The Loved Ones
 The Machinist
 The Man from Nowhere
 The Matrix
+The Mission
 The Mist
 The Notebook
 The Omega Man
@@ -294,6 +300,8 @@ The One I Love
 The Outsiders
 The Piano
 The Place Beyond the Pines
+The Raid
+The Raid: Redemption
 The Road Warrior
 The Rock
 The Seventh Seal
@@ -301,6 +309,7 @@ The Shawshank Redemption
 The Shining
 The Silence of the Lambs
 The Social Network
+The Son's Room
 The Ten Commandments
 The Thing
 The Transporter
@@ -312,7 +321,6 @@ Three Colors: Blue
 Time Bandits
 Tinker Tailor Soldier Spy
 To Kill a Mockingbird
-Total Recall
 Train to Busan
 Training Day
 Tron: Legacy
