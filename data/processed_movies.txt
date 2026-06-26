@@ -32,6 +32,7 @@ $ellebrity
 1408
 16 Blocks
 17 Again
+180° South
 1900
 1917
 1941
@@ -102,6 +103,7 @@ $ellebrity
 9 to 5
 90 Minutes in Heaven
 99 Homes
+9th Company
 A Bad Moms Christmas
 A Balance
 A Band Called Death
@@ -311,6 +313,7 @@ Across 110th Street
 Across the Pacific
 Across the River and Into the Trees
 Across the Universe
+Act of God
 Actor Martinez
 Ad Astra
 Adam Resurrected
@@ -380,6 +383,7 @@ Alexandra
 Alfie
 Algren
 Ali
+Alice
 Alice Adams
 Alice Through the Looking Glass
 Alice in Wonderland
@@ -472,8 +476,10 @@ American Dharma
 American Gangster
 American Gigolo
 American Graffiti
+American Grindhouse
 American Hangman
 American Hardcore
+American Harmony
 American Heretics: The Politics of the Gospel
 American History X
 American Honey
@@ -645,6 +651,7 @@ Around the World in 80 Days
 Arrival
 Arrowsmith
 Arsenic and Old Lace
+Art & Copy
 Arthur
 Arthur Christmas
 Arthur and the Invisibles
@@ -783,8 +790,10 @@ Barbershop: The Next Cut
 Barbie
 Barcelona
 Barefoot in the Park
+Barking Water
 Barnyard
 Barry Lyndon
+Barry Munday
 Barton Fink
 Basic Instinct
 Basquiat
@@ -817,6 +826,7 @@ Be with Me
 Beach Rats
 Beaches
 Beanpole
+BearCity
 Beast
 Beast Beast
 Beast from Haunted Cave
@@ -910,6 +920,7 @@ Berkeley in the Sixties
 Bernie
 Bes Vakit
 Best Sellers
+Best Worst Movie
 Best and Most Beautiful Things
 Best in Show
 Bethany Hamilton: Unstoppable
@@ -953,6 +964,7 @@ Big Game
 Big George Foreman
 Big Hero 6
 Big Night
+Big River Man
 Big Trouble in Little China
 Big Wednesday
 Bigger Stronger Faster*
@@ -1231,6 +1243,7 @@ Burden of Dreams
 Buried
 Buried: The 1982 Alpine Meadows Avalanche
 Burlesque
+Burma VJ: Reporting from a Closed Country
 Burn
 Burn After Reading
 Burning
@@ -1355,6 +1368,7 @@ Celebration
 Celebrity
 Celebrity: Dominick Dunne
 Celine and Julie Go Boating
+Celine: Through the Eyes of the World
 Cellular
 Cemetery Junction
 Center Stage
@@ -1652,6 +1666,7 @@ Cruising
 Crumb
 Cry Macho
 Cría Cuervos
+Cuba
 Cube
 Cujo
 Cul-de-sac
@@ -1878,6 +1893,7 @@ Disaster Movie
 Disclosure
 Disco Boy
 Disfluency
+Disgrace
 Dishonored
 Distant
 District 9
@@ -2033,6 +2049,7 @@ Earth
 Earth Days
 Earth: One Amazing Day
 Earwig and the Witch
+Easier with Practice
 East of Eden
 Easter Bloody Easter
 Eastern Promises
@@ -2435,6 +2452,7 @@ For a Woman
 For the Bible Tells Me So
 For the Boys
 For the Love of Benji
+Forbidden Lie$
 Forbidden Planet
 Forbidden Zone
 Force 10 from Navarone
@@ -2498,6 +2516,7 @@ Freestyle: The Art of Rhyme
 Fremont
 French Cancan
 French Exit
+French Film
 French Kiss
 Frenzy
 Frequency
@@ -2522,9 +2541,11 @@ From the Terrace
 From the Vine
 Frost/Nixon
 Frosty the Snowman
+Frozen
 Frozen II
 Frozen River
 Fruitvale Station
+Fuel
 Fugitive Pieces
 Fukrey 3
 Fulci for fake
@@ -2603,6 +2624,7 @@ Get Shorty
 Get to Know Your Rabbit
 Getting It Right
 Ghoomer
+Ghost Bird
 Ghost Dog: The Way of the Samurai
 Ghost Rider
 Ghost Town
@@ -2776,6 +2798,7 @@ Gunnin' for That #1 Spot
 Guys and Dolls
 Guzaarish
 H.H. Holmes: America's First Serial Killer
+H2Oil
 Hachi: A Dog's Tale
 Hacksaw Ridge
 Hail Satan?
@@ -2945,6 +2968,7 @@ High School Musical 3: Senior Year
 High Society
 High Tide
 High-Rise
+Higher Ground
 Higher Love
 Highlander
 Highway 61
@@ -3035,6 +3059,7 @@ How About You
 How Do You Know
 How Green Was My Valley
 How I Live Now
+How Much Does Your Building Weigh, Mr Foster?
 How She Move
 How Stella Got Her Groove Back
 How William Shatner Changed the World
@@ -3282,6 +3307,7 @@ Into the Forest
 Into the Storm
 Into the Wild
 Intolerable Cruelty
+Introducing Dorothy Dandridge
 Intruder in the Dust
 Invaders from Mars
 Invasion of the Body Snatchers
@@ -3331,6 +3357,7 @@ It's All Gone Pete Tong
 It's All True: Based on an Unfinished Film by Orson Welles
 It's Better to Jump
 It's Complicated
+It's Kind of a Funny Story
 It's Never Over, Jeff Buckley
 It's Quieter in the Twilight
 It's a Mad Mad Mad Mad World
@@ -3397,6 +3424,7 @@ Jimmy's Hall
 Jimpa
 Jindabyne
 Joan Baez I Am a Noise
+Joan Rivers: A Piece of Work
 Jodorowsky's Dune
 Joe
 Joe Bell
@@ -3565,6 +3593,7 @@ Kinsey
 Kiss Kiss Bang Bang
 Kiss Me, Stupid
 Kiss of the Dragon
+Kisses
 Kissing Jessica Stein
 Kit Kittredge: An American Girl
 Kitty Foyle
@@ -3868,6 +3897,7 @@ Lords of Chaos
 Lords of Dogtown
 Lore
 Lorenzo's Oil
+Lorna's Silence
 Los Conductos
 Los Hermanos/the Brothers
 Los Reyes
@@ -4237,6 +4267,7 @@ Millennium Bugs
 Miller's Crossing
 Millie Lies Low
 Million Dollar Baby
+Milton Glaser: To Inform and Delight
 Mimic
 Minari
 Mind Game
@@ -4618,6 +4649,7 @@ Night of the Zoopocalypse
 Night on Earth
 Nightbreed
 Nightmare Alley
+Nightmares in Red, White and Blue: The Evolution of the American Horror Film
 Nights and Weekends
 Nights in Rodanthe
 Nightwatching
@@ -4713,6 +4745,7 @@ Ocean's Eleven
 Ocean's Twelve
 Oceans
 October
+October Country
 October Sky
 Octopussy
 Odd Man Out
@@ -4853,6 +4886,7 @@ Out of the Blue
 Out of the Loop
 Out of the Past
 Outfoxed: Rupert Murdoch's War on Journalism
+Outrage
 Outside the Law
 Over Her Dead Body
 Over the Hedge
@@ -5013,6 +5047,7 @@ Phantom Thread
 Phantom of the Opera
 Phase IV
 Phenomenon
+Phil Ochs: There But for Fortune
 Phil Spector
 Philadelphia
 Philomena
@@ -5230,6 +5265,7 @@ Race to Witch Mountain
 Race with the Devil
 Rachel
 Rachel, Rachel
+Racing Dreams
 Racing Stripes
 Radiance
 Radiant City
@@ -5338,6 +5374,7 @@ Reprise
 Requiem for a Dream
 Reservoir Dogs
 Resident Evil
+Resident Evil: Afterlife
 Resident Evil: Apocalypse
 Resident Evil: Extinction
 Resident Evil: The Final Chapter
@@ -5946,6 +5983,7 @@ Souleymane's Story
 Sound of Freedom
 Sound of Metal
 Sound of My Voice
+Soundtrack for a Revolution
 Sour Grapes
 South Mountain
 South Pacific
@@ -6168,6 +6206,7 @@ Sunday Bloody Sunday
 Sunday Girl
 Sundowners
 Sunny Sanskari Ki Tulsi Kumari
+Sunrise at Campobello
 Sunset Boulevard
 Sunset Song
 Sunshine
@@ -6264,6 +6303,7 @@ Tale of Tales
 Tales from Earthsea
 Tales from the Gimli Hospital
 Tales from the Organ Trade
+Tales from the Script
 Tales of the Rat Fink
 Talk to Her
 Talladega Nights: The Ballad of Ricky Bobby
@@ -6303,6 +6343,7 @@ Tell No One
 Tell Them Who You Are
 Tell Them Willie Boy Is Here
 Tender Mercies
+Tenderness
 Tenet
 Teorema
 Teri Baaton Mein Aisa Uljha Jiya
@@ -6330,6 +6371,7 @@ Thanks for Sharing
 Thappad
 That Championship Season
 That Darn Cat!
+That Evening Sun
 That Hamilton Woman
 That Man: Peter Berlin
 That Obscure Object of Desire
@@ -6804,6 +6846,7 @@ The Emperor's Club
 The Emperor's Naked Army Marches On
 The Emperor's New Groove
 The End of America
+The End of Poverty?
 The End of Summer
 The End of Violence
 The End of the Affair
@@ -7280,6 +7323,7 @@ The Life of Chuck
 The Life of Emile Zola
 The Life of Reilly
 The Light Between Oceans
+The Lightkeepers
 The Limehouse Golem
 The Limey
 The Limits of Control
@@ -7466,6 +7510,7 @@ The Naked Kiss
 The Naked Prey
 The Naked and the Dead
 The Namesake
+The National Parks Project
 The Nativity Story
 The Natural
 The Natural History of the Chicken
@@ -7851,6 +7896,7 @@ The Starling Girl
 The Stars Fell on Henrietta
 The Statement
 The Station Agent
+The Stepfather
 The Stepford Wives
 The Sting
 The Story Won't Die
@@ -7870,6 +7916,7 @@ The Sum of All Fears
 The Summer Book
 The Summit
 The Sun
+The Sun Behind the Clouds: Tibet's Struggle for Freedom
 The Sundowners
 The Sunset Limited
 The Sunshine Makers
@@ -7953,6 +8000,7 @@ The Twelve Chairs
 The Twentieth Century
 The Twilight Saga: Breaking Dawn - Part 2
 The Twilight Saga: New Moon
+The Two Escobars
 The Two Faces of January
 The Two Jakes
 The U.S. vs. John Lennon
@@ -8067,6 +8115,7 @@ The Women
 The Wonderful, Horrible Life of Leni Riefenstahl
 The World Before Her
 The World Before Your Feet
+The World Unseen
 The World of Henry Orient
 The World of Suzie Wong
 The World's End
@@ -8364,6 +8413,7 @@ Turner & Hooch
 Turning Red
 Tusk
 Twelfth Night
+Twelve
 Twelve O'Clock High
 Twentieth Century
 Twenty-Four Eyes
@@ -8496,6 +8546,7 @@ Vampires Suck
 Vampyr
 Van Helsing
 Vanilla Sky
+Vanishing of the Bees
 Vanity Fair
 Vantage Point
 Vanya on 42nd Street
@@ -8688,6 +8739,7 @@ When Hitler Stole Pink Rabbit
 When I Consume You
 When Lambs Become Lions
 When Marnie Was There
+When You're Strange
 When a Woman Ascends the Stairs
 When the Beat Drops
 When the Game Stands Tall
@@ -8790,6 +8842,7 @@ Winchester
 Wind River
 Windtalkers
 Wings of Desire
+Winnebago Man
 Winnie the Pooh
 Winter Brothers
 Winter Flies
@@ -8899,6 +8952,7 @@ You Again
 You Can Count on Me
 You Can't Take It with You
 You Cannot Kill David Arquette
+You Don't Like the Truth: 4 Days Inside Guantanamo
 You Don't Mess with the Zohan
 You Don't Nomi
 You Go to My Head
