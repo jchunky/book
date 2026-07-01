@@ -8,6 +8,7 @@ A Clockwork Orange
 A Few Good Men
 A Fish Called Wanda
 A League of Their Own
+A Single Man
 About Time
 Adventures in Babysitting
 Akeelah and the Bee
@@ -165,6 +166,7 @@ Jack Reacher
 Jackie Brown
 Jason Bourne
 Jaws
+Jean-Michel Basquiat: The Radiant Child
 John Carter
 John Wick: Chapter 2
 Jumanji: The Next Level
@@ -178,6 +180,7 @@ Kiss of the Dragon
 Land of the Dead
 Last Action Hero
 Last Man Standing
+Legion
 Lethal Weapon 3
 Life of Pi
 Like Water for Chocolate
@@ -208,6 +211,7 @@ My Own Private Idaho
 Mystic River
 National Lampoon's Animal House
 Natural Born Killers
+Never Let Me Go
 Never Say Never Again
 Night of the Comet
 Night on Earth
@@ -287,6 +291,7 @@ Terminator: Dark Fate
 The Addams Family
 The Adjustment Bureau
 The Amazing Spider-Man 2
+The American
 The Avengers
 The Big Easy
 The Blair Witch Project
@@ -333,6 +338,7 @@ The Mask of Zorro
 The Matrix Reloaded
 The Matrix Revolutions
 The Naked Gun
+The Next Three Days
 The Northman
 The Paper
 The Party

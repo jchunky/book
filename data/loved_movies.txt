@@ -12,6 +12,7 @@ A Fistful of Dollars
 A History of Violence
 A Most Violent Year
 A Nightmare on Elm Street
+A Prophet
 A Quiet Place
 A Quiet Place Part II
 A Simple Plan
@@ -155,6 +156,7 @@ Ladyhawke
 Lawrence of Arabia
 Let the Right One In
 Lethal Weapon
+Limitless
 Lock, Stock and Two Smoking Barrels
 Logan
 Lone Star
@@ -248,12 +250,15 @@ Snatch
 Solaris
 Something Wild
 Sorry to Bother You
+Source Code
 Soylent Green
 Speed
 Spellbound
 Spring, Summer, Fall, Winter... and Spring
 Stand by Me
 Stir of Echoes
+Super
+Super 8
 Superbad
 Superman Returns
 Terminator 2: Judgment Day
@@ -325,12 +330,14 @@ The Social Network
 The Son's Room
 The Ten Commandments
 The Thing
+The Town
 The Transporter
 The Untouchables
 The Vanishing
 The Wrestler
 There's Something About Mary
 Three Colors: Blue
+Three Colors: Red
 Time Bandits
 Tinker Tailor Soldier Spy
 To Kill a Mockingbird
@@ -354,3 +361,4 @@ Wrath of Man
 Wu Xia
 Yi Yi
 Yojimbo
+Zombieland
