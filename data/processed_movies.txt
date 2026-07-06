@@ -473,6 +473,7 @@ Amazing Grace
 Amazing Journey: The Story of the Who
 Ambulance
 Amelia
+Amer
 America America
 America the Beautiful
 America's Sweethearts
@@ -532,6 +533,7 @@ An American in Paris
 An Angel at My Table
 An Education
 An Elephant Sitting Still
+An Encounter with Simone Weil
 An Englishman in New York
 An Extremely Goofy Movie
 An Ideal Husband
@@ -574,6 +576,7 @@ Animal Crackers
 Animal Factory
 Animal Kingdom
 Animalia
+Animals United
 Anita O'Day: The Life of a Jazz Singer
 Anna
 Anna Karenina
@@ -796,6 +799,7 @@ Bangkok Dangerous
 Banksy Most Wanted
 Barabbas
 Barbarella
+Barbershop Punk
 Barbershop: The Next Cut
 Barbie
 Barcelona
@@ -1339,6 +1343,7 @@ Captains of the Clouds
 Capture the Flag
 Capturing the Friedmans
 Carancho
+Carbon Nation
 Cardinals
 Carefree
 Carla's Song
@@ -1589,6 +1594,7 @@ Command and Control
 Companion
 Compensation
 Computer Chess
+Con Artist
 Conan the Barbarian
 Conceiving Ada
 Conclave
@@ -2501,6 +2507,7 @@ Force of Nature: The Dry 2
 Forces of Nature
 Ford v Ferrari
 Foreign Correspondent
+Foreign Parts
 Forensic
 Forever
 Forever Amber
@@ -2647,6 +2654,7 @@ Genesis 2.0
 Genevieve
 Genghis Blues
 Genius
+Genius Within: The Inner Life of Glenn Gould
 Gentleman's Agreement
 Geoff McFetridge: Drawing a Life
 George Harrison: Living in the Material World
@@ -2812,6 +2820,7 @@ Gregory's Girl
 Greta
 Gretel & Hansel
 Grey Gardens
+Grey Matter
 Grey Owl
 Greystoke: The Legend of Tarzan, Lord of the Apes
 Gridiron Gang
@@ -3211,6 +3220,7 @@ I Vitelloni
 I Wake Up Screaming
 I Walked with a Zombie
 I Wanna Hold Your Hand
+I Want Your Money
 I Want to Live!
 I Was Born, But...
 I Was a Simple Man
@@ -3479,6 +3489,7 @@ Jerusalem
 Jesus Camp
 Jesus Christ Superstar
 Jesus Revolution
+Jews and Baseball: An American Love Story
 Jia Zhangke, A Guy from Fenyang
 Jim Allison: Breakthrough
 Jim Gaffigan: Quality Time
@@ -3564,6 +3575,7 @@ Just the Two of Us
 Justice League
 Justice League: The Flashpoint Paradox
 Justice League: Throne of Atlantis
+Justin Bieber: Never Say Never
 K-19: The Widowmaker
 K-9
 Kabei: Our Mother
@@ -4144,6 +4156,7 @@ Mamma Roma
 Mammoth
 Man Bites Dog
 Man Is Not a Bird
+Man Made
 Man Push Cart
 Man in Black
 Man of Aran
@@ -4819,6 +4832,7 @@ Nuclear Now
 Nurse Betty
 Nurse.Fighter.Boy
 Nuts
+Nénette
 O Brother, Where Art Thou?
 O'Horten
 OMG 2
@@ -4905,6 +4919,7 @@ One Day as a Lion
 One Flew Over the Cuckoo's Nest
 One Hour Photo
 One Hour with You
+One Life
 One Magic Christmas
 One Night in Miami...
 One Night with the King
@@ -4946,6 +4961,7 @@ Ordinary Angels
 Ordinary Love
 Ordinary People
 Orfeu
+Orgasm Inc: The Story of OneTaste
 Orlando
 Orlando: My Political Biography
 Ornette: Made in America
@@ -5072,6 +5088,7 @@ Patti Smith: Dream of Life
 Patton
 Patty Hearst
 Paul
+Paul Goodman Changed My Life
 Paul, Apostle of Christ
 Pauline at the Beach
 Pavarotti
@@ -5166,6 +5183,7 @@ Pinocchio
 Pippa
 Pippi Longstocking
 Piranhas
+Pirates
 Pirates of the Caribbean: At World's End
 Pirates of the Caribbean: Dead Man's Chest
 Pirates of the Caribbean: Dead Men Tell No Tales
@@ -5790,6 +5808,7 @@ Selena
 Self/less
 Semi-Pro
 Semi-Tough
+Semper Fi: Always Faithful
 Send Help
 Send Me No Flowers
 Senior Love Triangle
@@ -5820,6 +5839,7 @@ Seven Samurai
 Seven Swords
 Seventeen
 Seventh Son
+Sex & Drugs & Rock & Roll
 Sex Positive
 Sex and the City 2
 Sex and the Single Girl
@@ -5988,6 +6008,7 @@ Slash/Back
 Slasher
 Slaughterhouse-Five
 Slay the Dragon
+Sleep Furiously
 Sleepers
 Sleeping Beauty
 Sleepless
@@ -6392,6 +6413,7 @@ Sye Raa Narasimha Reddy
 Sylvia
 Sylvia Scarlett
 Symbiopsychotaxiplasm: Take One
+Sympathy for Delicious
 Sympathy for the Devil
 Synecdoche, New York
 Synonyms
@@ -6763,6 +6785,7 @@ The Cable Guy
 The Caine Mutiny
 The Cakemaker
 The Call of the Wild
+The Calling
 The Camden 28
 The Cannonball Run
 The Canterville Ghost
@@ -7242,6 +7265,7 @@ The High Note
 The High and the Mighty
 The Highwaymen
 The Hills Have Eyes
+The Himalayas
 The History of Sound
 The Hitcher
 The Hitchhiker's Guide to the Galaxy
@@ -7722,6 +7746,7 @@ The Order
 The Order of Myths
 The Osterman Weekend
 The Other Boleyn Girl
+The Other F Word
 The Other Fellow
 The Other Guys
 The Other Lamb
@@ -8167,6 +8192,7 @@ The United States of Insanity
 The Universe of Keith Haring
 The Unknown Country
 The Unknown Woman
+The Unloved
 The Unmaking of A College
 The Untold Story of Emmett Louis Till
 The Untouchables
@@ -8679,6 +8705,7 @@ Up the Yangtze
 Upgrade
 Uprising
 Uproar
+Upside Down: The Creation Records Story
 Uptown Girls
 Urban Legend
 Uri: The Surgical Strike
