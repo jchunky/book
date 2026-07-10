@@ -76,6 +76,7 @@ $ellebrity
 30 Minutes or Less
 300
 35 Shots of Rum
+360
 36th Precinct
 3:10 to Yuma
 4 Little Girls
@@ -83,6 +84,7 @@ $ellebrity
 45 Years
 48 Hrs.
 49 Up
+4:44 Last Day on Earth
 4x4
 50 First Dates
 500 Days of Summer
@@ -105,6 +107,7 @@ $ellebrity
 9
 9 to 5
 90 Minutes in Heaven
+95 Miles to Go
 9500 Liberty
 99 Homes
 9th Company
@@ -220,6 +223,7 @@ A Monster Calls
 A Most Violent Year
 A Most Wanted Man
 A Mother's Courage: Talking Back to Autism
+A Necessary Death
 A New Leaf
 A Night at the Opera
 A Night to Remember
@@ -659,6 +663,7 @@ Are You Proud?
 Are You There God? It's Me, Margaret.
 Argentina
 Argo
+Arise
 Arise, My Love
 Arizona
 Arizona Dream
@@ -963,6 +968,7 @@ Bethany Hamilton: Unstoppable
 Better Luck Tomorrow
 Better Man
 Better Off Dead
+Better This World
 Betting on Zero
 Betty Blue
 Between Two Worlds
@@ -992,6 +998,7 @@ Big Boys Gone Bananas!*
 Big Business
 Big Crow
 Big Daddy
+Big Deal on Madonna Street
 Big Eden
 Big Fan
 Big Fish
@@ -1000,6 +1007,7 @@ Big Fur
 Big Game
 Big George Foreman
 Big Hero 6
+Big Miracle
 Big Night
 Big River Man
 Big Trouble in Little China
@@ -1607,6 +1615,7 @@ Colors
 Colossal
 Colossus: The Forbin Project
 Columbus
+Comanche Station
 Combat Obscura
 Come Away
 Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean
@@ -1618,6 +1627,7 @@ Come and See
 Come to Daddy
 Comedian
 Comedy of Power
+Comic-Con Episode IV: A Fan's Hope
 Coming 2 America
 Coming Home
 Coming Home Again
@@ -1647,6 +1657,7 @@ Constantine
 Contagion
 Contemporary Color
 Contempt
+Contraband
 Control Room
 Conversation Piece
 Conviction
@@ -1760,6 +1771,7 @@ Daddy Day Camp
 Daddy Day Care
 Daddy's Home 2
 Dahmer
+Daisies
 Daisy Miller
 Daliland
 Damage
@@ -2142,6 +2154,7 @@ Easy Rider
 Easy Virtue
 Eat Pray Love
 Eat That Question: Frank Zappa in His Own Words
+Eat This New York
 Eat Wheaties!
 Eat the Night
 Eating
@@ -2322,6 +2335,7 @@ Exposure 36
 Extract
 Extraordinary Measures
 Extreme Measures
+Extremely Loud & Incredibly Close
 Eye of the Beholder
 Eye of the Dolphin
 Eye of the Needle
@@ -2360,6 +2374,7 @@ Fame
 Familiar Touch
 Family Life
 Family Plot
+Family Portrait in Black and White
 Fanaa
 Fancy Dance
 Fancy Pants
@@ -2619,6 +2634,7 @@ Fremont
 French Cancan
 French Exit
 French Film
+French Immersion
 French Kiss
 Frenzy
 Frequency
@@ -2689,6 +2705,7 @@ Ganja & Hess
 Garbage Dreams
 Garbage Warrior
 Garbo Talks
+Garbo: The Spy
 Garden State
 Garfield: The Movie
 GasLand
@@ -2735,6 +2752,7 @@ Ghoomer
 Ghost Bird
 Ghost Dog: The Way of the Samurai
 Ghost Rider
+Ghost Rider: Spirit of Vengeance
 Ghost Town
 Ghost World
 Ghost in the Shell
@@ -2763,6 +2781,7 @@ Girl with a Pearl Earring
 Girl, Interrupted
 Girls Trip
 Gitmo
+Give 'em Hell, Harry!
 Give Me Liberty
 Give Up Tomorrow
 Gladiator
@@ -2862,6 +2881,7 @@ Grand Slam
 Grass
 Grave of the Fireflies
 Gray Matters
+Gray's Anatomy
 Grease
 Great Directors
 Great Expectations
@@ -3195,9 +3215,11 @@ How to Blow Up a Pipeline
 How to Build a Girl
 How to Come Alive with Norman Mailer
 How to Cook Your Life
+How to Die in Oregon
 How to Eat Fried Worms
 How to Eat Your Watermelon in White Company (and Enjoy It)
 How to Let Go of the World: and Love All the Things Climate Can't Change
+How to Live Forever
 How to Lose a Guy in 10 Days
 How to Make Millions Before Grandma Dies
 How to Marry a Millionaire
@@ -3551,6 +3573,7 @@ Jazz on a Summer's Day
 Je t'aime moi non plus
 Jean-Michel Basquiat: The Radiant Child
 Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles
+Jeff, Who Lives at Home
 Jefferson in Paris
 Jem and the Holograms
 Jennifer's Body
@@ -3589,6 +3612,7 @@ John Wick: Chapter 2
 John Wick: Chapter 3 - Parabellum
 John and the Hole
 Johnny English
+Johnny English Reborn
 Johnny English Strikes Again
 Johnny Got His Gun
 Jojo Rabbit
@@ -3602,6 +3626,7 @@ Josee, the Tiger and the Fish
 Joseph and the Amazing Technicolor Dreamcoat
 Joshua Tree, 1951: A Portrait of James Dean
 José
+Journey 2: The Mysterious Island
 Journey to Bethlehem
 Journey to Italy
 Journey to Mecca
@@ -3687,6 +3712,7 @@ Kes
 Kesari Chapter 2: The Untold Story of Jallianwala Bagh
 Kevin Hart's Guide to Black History
 Key Largo
+Keyhole
 Khaali Peeli
 Khartoum
 Khel Khel Mein
@@ -3752,6 +3778,7 @@ Kingsman: The Golden Circle
 Kink
 Kinky Boots
 Kinsey
+Kinyarwanda
 Kiss Kiss Bang Bang
 Kiss Me Deadly
 Kiss Me, Stupid
@@ -3855,6 +3882,7 @@ Last Chance Harvey
 Last Christmas
 Last Dance
 Last Days
+Last Days Here
 Last Exit to Brooklyn
 Last Flag Flying
 Last Flight Home
@@ -4210,6 +4238,7 @@ Madgaon Express
 Mafia Inc
 Magazine Dreams
 Maggie's Plan
+Magic Mike
 Magic Mike XXL
 Magic Mike's Last Dance
 Magic Trip: Ken Kesey's Search for a Kool Place
@@ -4234,6 +4263,7 @@ Make Mine Music
 Make Way for Tomorrow
 Make-Out with Violence
 Making Montgomery Clift
+Making Plans for Lena
 Making Waves: The Art of Cinematic Sound
 Making the Boys
 Mala Noche
@@ -4364,6 +4394,7 @@ Maybe I Do
 Mayday
 Mayhem
 Mayor of the Sunset Strip
+Maytime
 Maze Runner: The Scorch Trials
 McCabe & Mrs. Miller
 McFarland, USA
@@ -4485,6 +4516,7 @@ Miracle on 34th Street
 Miracles from Heaven
 Mirai
 Miral
+Mirror Mirror
 Mirrormask
 Misericordia
 Misery
@@ -4667,6 +4699,7 @@ Murmur of the Heart
 Murphy's Romance
 Music Makes a City: A Louisville Orchestra Story
 Music and Lyrics
+Music from the Big House
 Music from the Inside Out
 Music of the Heart
 Must Love Dogs
@@ -4698,6 +4731,7 @@ My Donkey, My Lover & I
 My Entire High School Sinking Into the Sea
 My Fair Lady
 My Father My Lord
+My Father and the Man in Black
 My Favorite Blonde
 My Favorite Brunette
 My Favorite Wife
@@ -4871,6 +4905,7 @@ Nine Days
 Nine Lives
 Ninja Scroll
 Ninotchka
+Nitro Circus: The Movie
 Nixon
 No Bears
 No Blade of Grass
@@ -5046,6 +5081,7 @@ One Sings, the Other Doesn't
 One True Loves
 One True Thing
 One Week
+One for the Money
 One of Them Days
 One of These Days
 One-Eyed Jacks
@@ -5234,6 +5270,7 @@ Penguins of Madagascar
 Peninsula
 Pennies from Heaven
 Penny Serenade
+People of a Feather
 People on Sunday
 Peppermint
 Percy Jackson & the Olympians: The Lightning Thief
@@ -5340,6 +5377,7 @@ Please Don't Eat the Daisies
 Please Give
 Plimpton! Starring George Plimpton as Himself
 Plus One
+Pocahontas
 Point Break
 Poisoned by Polonium: The Litvinenko File
 Pokémon Heroes
@@ -5435,6 +5473,7 @@ Profile
 Project Almanac
 Project Nim
 Project Wolf Hunting
+Project X
 Prom
 Promare
 Prometheus
@@ -5587,6 +5626,7 @@ Red Rocket
 Red Shoes and the Seven Dwarfs
 Red Snow
 Red Sparrow
+Red Tails
 Red Trees
 Red Trousers: The Life of the Hong Kong Stuntmen
 Redbelt
@@ -5715,6 +5755,7 @@ Rock Camp
 Rock Dog
 Rock Hudson's Home Movies
 Rock Star
+Rock of Ages
 Rockaway
 Rockers
 Rocket Science
@@ -5810,6 +5851,7 @@ Sadie
 Safe
 Safe House
 Safety Last!
+Safety Not Guaranteed
 Sagrada: The Mystery of Creation
 Sahara
 Saint Frances
@@ -6109,6 +6151,7 @@ Sing
 Sing 2
 Sing Me a Song
 Sing Street
+Sing Your Song
 Singin' in the Rain
 Sink the Bismarck!
 Sinners
@@ -6312,6 +6355,7 @@ Spirit: Stallion of the Cimarron
 Spirited Away
 Splash
 Splendor in the Grass
+Splinters
 Splitsville
 Spoiler Alert
 Spontaneous
@@ -6453,6 +6497,7 @@ Stronger
 Stuart Little
 Stuart Little 2
 Stuber
+Stuck Between Stations
 Stuck on You
 Student of the Year 2
 Studio 54
@@ -6516,6 +6561,7 @@ Superman
 Superman II: The Richard Donner Cut
 Superman IV: The Quest for Peace
 Superman Returns
+Superman vs. The Elite
 Superman/Batman: Apocalypse
 Superman: Doomsday
 Superman: Man of Tomorrow
@@ -6534,6 +6580,7 @@ Survival Skills
 Surviving Crooked Lake
 Surviving Picasso
 Surviving Progress
+Sushi: The Global Catch
 Susie Searches
 Suspended Time
 Suspiria
@@ -6587,6 +6634,7 @@ Take Me Home Tonight
 Take Me to the River
 Take Out Girl
 Take Shelter
+Take This Waltz
 Take the Lead
 Take the Money and Run
 Taken 2
@@ -6891,6 +6939,7 @@ The Bostonians
 The Bounty
 The Bounty Hunter
 The Bourne Identity
+The Bourne Legacy
 The Bourne Supremacy
 The Bourne Ultimatum
 The Boxer
@@ -7095,6 +7144,7 @@ The Deep Blue Sea
 The Deer Hunter
 The Deer King
 The Departed
+The Descendants
 The Descent
 The Desert Fox: The Story of Rommel
 The Desert Rats
@@ -7263,6 +7313,7 @@ The Force
 The Foreigner
 The Forever Purge
 The Forgiven
+The Forgiveness of Blood
 The Forgotten
 The Forgotten Space
 The Fortune Cookie
@@ -7495,6 +7546,7 @@ The Immaculate Conception of Little Dizzle
 The Immaculate Room
 The Immortal Life of Henrietta Lacks
 The Importance of Being Earnest
+The Imposter
 The In-Laws
 The Incredible Hulk
 The Incredible Shrinking Man
@@ -7719,6 +7771,7 @@ The Lover
 The Lovers
 The Lovers on the Bridge
 The Lunchbox
+The Machine Which Makes Everything Disappear
 The Machinist
 The Magic Flute
 The Magic Sword
@@ -7885,6 +7938,7 @@ The Night of the Iguana
 The Nightcomers
 The Nightingale
 The Nightmare Before Christmas
+The Nine Muses
 The Ninth Configuration
 The Ninth Gate
 The Normal Heart
@@ -7929,6 +7983,7 @@ The Other Lamb
 The Other Man
 The Other Side of Hope
 The Other Side of Midnight
+The Other Son
 The Other Woman
 The Other Zoey
 The Others
@@ -8245,6 +8300,7 @@ The Spook Who Sat by the Door
 The Spy Next Door
 The Spy Who Came in from the Cold
 The Spy Who Dumped Me
+The Spy Who Loved Me
 The Square
 The Squid and the Whale
 The Stanford Prison Experiment
@@ -8401,6 +8457,7 @@ The Village Detective: a song cycle
 The Virgin Suicides
 The Visit
 The Visitor
+The Vow
 The Wailing
 The Waiting City
 The Walker
@@ -8483,6 +8540,7 @@ The Woman King
 The Woman Who Left
 The Woman Who Loves Giraffes
 The Woman in Black
+The Woman in the Fifth
 The Woman in the Window
 The Woman in the Yard
 The Woman with the 5 Elephants
@@ -8520,6 +8578,7 @@ The Young Lions
 The Young Philadelphians
 The Young and Prodigious T.S. Spivet
 The Youth Governor
+The Zen of Bennett
 The Zero Theorem
 The Zookeeper's Wife
 The Zoya Factor
@@ -8601,6 +8660,7 @@ Three Colors: Red
 Three Fugitives
 Three Identical Strangers
 Three Men and a Baby
+Three Outlaw Samurai
 Three Stars
 Three Summers
 Three Thousand Years of Longing
@@ -8713,6 +8773,7 @@ Tous les matins du monde
 Tout va bien
 Towelhead
 Tower
+Tower Heist
 Town Bloody Hall
 Toxic Beauty
 Toy Story
@@ -8756,6 +8817,7 @@ Trick or Treat
 Trigger Man
 Triple 9
 Tristan + Isolde
+Tristana
 Tristram Shandy
 Triumph of the Will
 Trolls
@@ -8869,6 +8931,7 @@ Under the Volcano
 Undercover Brother
 Underdog
 Underwater
+Underworld: Awakening
 Underworld: Blood Wars
 Underworld: Evolution
 Underworld: Rise of the Lycans
