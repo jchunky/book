@@ -75,6 +75,7 @@ $ellebrity
 3 Faces
 3 Ninjas
 3 Women
+3, 2, 1... Frankie Go Boom
 30 Minutes or Less
 300
 35 Shots of Rum
@@ -307,6 +308,7 @@ A Walk Among the Tombstones
 A Walk to Beautiful
 A Walk to Remember
 A Werewolf Boy
+A Whisper to a Roar
 A White, White Day
 A Woman Under the Influence
 A Woman of Paris: A Drama of Fate
@@ -520,6 +522,7 @@ American Heretics: The Politics of the Gospel
 American History X
 American Honey
 American Hustle
+American Jesus
 American Made Movie
 American Mary
 American Me
@@ -552,6 +555,7 @@ Amores Perros
 Amsterdam
 An Accidental Studio
 An Actor's Revenge
+An Affair of the Heart
 An Affair to Remember
 An American Journey
 An American Pickle
@@ -843,6 +847,7 @@ Barney's Version
 Barnyard
 Barry Lyndon
 Barry Munday
+Barrymore
 Barton Fink
 Basic Instinct
 Basquiat
@@ -969,6 +974,7 @@ Beneath Hill 60
 Beneath the Planet of the Apes
 Benedetta
 Benjamin
+Benjamin Britten: Peace and Conflict
 Benji
 Benji the Hunted
 Benji: Off the Leash!
@@ -1061,6 +1067,7 @@ Birds of Passage
 Birds of Prey and the Fantabulous Emancipation of One Harley Quinn
 Birth
 Bisbee '17
+Bitchin': The Sound and Fury of Rick James
 Bitter Harvest
 Bitter Moon
 BlacKkKlansman
@@ -1190,6 +1197,7 @@ Borat
 Borderlands
 Borderline
 Borealis
+Boredom
 Born Free
 Born Into Brothels: Calcutta's Red Light Kids
 Born Yesterday
@@ -1630,6 +1638,7 @@ Cold Mountain
 Cold Pursuit
 Cold in July
 Colette
+Collaborator
 Collapse
 Collateral Damage
 College Road Trip
@@ -1774,6 +1783,7 @@ Cruise
 Cruising
 Crumb
 Cry Macho
+Crystal Fairy & the Magical Cactus
 Cría Cuervos
 Cuba
 Cuba: Island of Music
@@ -1907,6 +1917,7 @@ Death of a Unicorn
 Death on the Nile
 Deathtrap
 Decade of Fire
+Deceptive Practice: The Mysteries and Mentors of Ricky Jay
 Decision to Leave
 Deck the Halls
 Decoding Annie Parker
@@ -2232,6 +2243,7 @@ Election
 Electricity
 Elektra
 Elemental
+Elena
 Elena and Her Men
 Eleni
 Elephant
@@ -2369,6 +2381,7 @@ Experiment in Terror
 Experimenter
 Expiration Date
 Exporting Raymond
+Exposed
 Exposing Muybridge
 Exposure 36
 Extract
@@ -2603,6 +2616,7 @@ For Whom the Bell Tolls
 For Your Consideration
 For Your Eyes Only
 For a Few Dollars More
+For a Good Time, Call...
 For a Woman
 For the Bible Tells Me So
 For the Boys
@@ -2665,6 +2679,7 @@ Free Guy
 Free Men
 Free Puppies!
 Free Radicals: A History of Experimental Film
+Free Samples
 Free Solo
 Free State of Jones
 Free Willy
@@ -2767,6 +2782,7 @@ Gemma Bovery
 General Idi Amin Dada: A Self Portrait
 General Magic
 Generation Iron
+Generation Um...
 Genesis 2.0
 Genevieve
 Genghis Blues
@@ -2947,6 +2963,7 @@ Green for Danger
 Greenberg
 Greenfingers
 Greenland
+Greenwich Village: Music That Defined a Generation
 Gregory's Girl
 Greta
 Gretel & Hansel
@@ -2984,6 +3001,7 @@ Gunga Din
 Gunless
 Gunner Palace
 Gunnin' for That #1 Spot
+Gut Renovation
 Guy and Madeline on a Park Bench
 Guys and Dolls
 Guzaarish
@@ -3078,6 +3096,7 @@ Havana
 Haywire
 He Got Game
 He Ran All the Way
+He ni zai yi qi
 He's Just Not That Into You
 Head
 Head Count
@@ -3592,6 +3611,7 @@ It's Complicated
 It's Kind of a Funny Story
 It's Never Over, Jeff Buckley
 It's Quieter in the Twilight
+It's a Disaster
 It's a Mad Mad Mad Mad World
 It's a Very Merry Muppet Christmas Movie
 It's a Wonderful Knife
@@ -3643,6 +3663,7 @@ Jean-Michel Basquiat: The Radiant Child
 Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles
 Jeff, Who Lives at Home
 Jefferson in Paris
+Jeffrey
 Jem and the Holograms
 Jennifer's Body
 Jeremiah Johnson
@@ -3838,6 +3859,7 @@ King of Knives
 King of Thieves
 King of the Gypsies
 King on Screen
+King: A Filmed Record... Montgomery to Memphis
 Kingdom of Heaven
 Kingdom of the Planet of the Apes
 Kings & Queen
@@ -3870,6 +3892,8 @@ Knocking
 Know Your Mushrooms
 Knowing
 Knuckle
+Knuckleball!
+Koch
 Koko: A Talking Gorilla
 Kolya
 Kompromat
@@ -5291,6 +5315,7 @@ Paradise Hills
 Paradise Lost 3: Purgatory
 Paradise Lost: The Child Murders at Robin Hood Hills
 Paradise: Faith
+Paradise: Hope
 Paragraph 175
 Parallel Mothers
 Param Sundari
@@ -5394,6 +5419,7 @@ Pete 'n' Tillie
 Pete Kelly's Blues
 Pete Seeger: The Power of Song
 Pete's Dragon
+Peter Brook: The Tightrope
 Peter Hujar's Day
 Peter Ibbetson
 Peter Pan
@@ -5719,6 +5745,7 @@ Red Dragon
 Red Eye
 Red Hook Summer
 Red Lights
+Red Obsession
 Red One
 Red Riding Hood
 Red River
@@ -5820,6 +5847,7 @@ Right Now, Wrong Then
 Righteous Kill
 Rimini
 Ring of Bright Water
+Ring of Fire
 Ring of Fire: The Emile Griffith Story
 Rings
 Rio
@@ -6554,6 +6582,7 @@ Stir of Echoes
 Stockholm, Pennsylvania
 Stoker
 Stolen
+Stolen Seas
 Stomp the Yard
 Stone
 Stone Reader
@@ -6927,6 +6956,7 @@ The Associate
 The Astronaut
 The Atomic Cafe
 The August Virgin
+The Autobiography of Nicolae Ceausescu
 The Automat
 The Automatic Hate
 The Autopsy of Jane Doe
@@ -6960,6 +6990,7 @@ The Battle of Algiers
 The Battle of Jangsari
 The Bay
 The Beach
+The Beach Boys
 The Beach Bum
 The Beach House
 The Beaches of Agnès
@@ -7641,6 +7672,7 @@ The Hours
 The Hours and Times
 The House
 The House Bunny
+The House I Live In
 The House of Mirth
 The House of the Lost on the Cape
 The House on 92nd Street
@@ -8055,6 +8087,7 @@ The Negotiator
 The Nest
 The NeverEnding Story
 The New Age
+The New Black
 The New Corporation: The Unfortunately Necessary Sequel
 The New Mutants
 The New Radical
@@ -8112,6 +8145,7 @@ The Omen
 The One I Love
 The Ones Below
 The Only Living Boy in New York
+The Oranges
 The Order
 The Order of Myths
 The Osterman Weekend
@@ -8141,6 +8175,7 @@ The Oxford Murders
 The Pacifier
 The Painted Veil
 The Painter and the Thief
+The Painting
 The Pajama Game
 The Paleface
 The Palm Beach Story
@@ -8189,6 +8224,7 @@ The Pirates of Penzance
 The Pirates! Band of Misfits
 The Place Beyond the Pines
 The Plainsman
+The Pleasures of Being Out of Step
 The Polar Express
 The Policeman's Lineage
 The Pollinators
@@ -8203,6 +8239,7 @@ The Postcard Killings
 The Postman Always Rings Twice
 The Power
 The Power and the Glory
+The Power of Few
 The Power of Kangwon Province
 The Power of the Dog
 The Preacher's Wife
@@ -8416,6 +8453,7 @@ The Sleeping Beauty
 The Smashing Machine
 The Smiling Lieutenant
 The Smurfs
+The Smurfs 2
 The Snapper
 The Snow Walker
 The Snowman
@@ -8937,6 +8975,7 @@ Toy Story
 Toy Story 2
 Toy Story 3
 Toy Story 4
+Toys in the Attic
 Trading Places
 Traffic
 Traffik
@@ -9161,6 +9200,7 @@ Valiant
 Valkyrie
 Valley of Love
 Valley of the Dolls
+Vampira and Me
 Vampire in Brooklyn
 Vampires Suck
 Vampyr
@@ -9179,6 +9219,7 @@ Vengeance Is Mine
 Venom
 Venom: Let There Be Carnage
 Venom: The Last Dance
+Venus and Serena
 Vera Drake
 Vermiglio
 Veronica Guerin
@@ -9231,6 +9272,7 @@ Wait Until Dark
 Waiting for Armageddon
 Waiting for Forever
 Waiting for Guffman
+Waiting for Lightning
 Waiting for Superman
 Waiting to Exhale
 Waitress: The Musical
@@ -9372,12 +9414,14 @@ When Did You Last See Your Father?
 When Fall Is Coming
 When Hitler Stole Pink Rabbit
 When I Consume You
+When I Walk
 When Lambs Become Lions
 When Marnie Was There
 When You're Strange
 When a Woman Ascends the Stairs
 When in Rome
 When the Beat Drops
+When the Dragon Swallowed the Sun
 When the Game Stands Tall
 When the Road Bends... Tales of a Gypsy Caravan
 When the Wind Blows
