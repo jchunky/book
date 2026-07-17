@@ -1,4 +1,4 @@
-12 Monkeys
+{12 Monkeys
 2046
 48 Hrs.
 500 Days of Summer
@@ -132,6 +132,7 @@ Fried Green Tomatoes
 From Hell
 Galaxy Quest
 Game Night
+Gangster Squad
 Ghost World
 Ghostbusters
 Girl, Interrupted
@@ -152,6 +153,7 @@ Hard to Kill
 Heaven Can Wait
 Hellboy
 Hidden Figures
+How to Survive a Plague
 Howards End
 I, Robot
 Inception
@@ -221,6 +223,7 @@ Night of the Comet
 Night on Earth
 Nightbreed
 O Brother, Where Art Thou?
+Oblivion
 Octopussy
 Oldboy
 One Flew Over the Cuckoo's Nest
@@ -241,6 +244,7 @@ Prince of Persia: The Sands of Time
 Prisoners
 Prizzi's Honor
 Prometheus
+Quest for Fire
 Raising Arizona
 Rambo: First Blood Part II
 Ready Player One
@@ -280,11 +284,13 @@ Splash
 Stakeout
 Star Trek
 Star Trek Beyond
+Star Trek Into Darkness
 Star Trek: The Motion Picture
 Star Wars: Episode IV - A New Hope
 Star Wars: Episode IX - The Rise of Skywalker
 Star Wars: Episode VII - The Force Awakens
 Starship Troopers
+Stories We Tell
 Sucker Punch
 Suicide Squad
 Sunshine
@@ -372,6 +378,7 @@ The Yes Men
 Thelma & Louise
 There Will Be Blood
 These Amazing Shadows
+This Is 40
 Thor
 Thor: Ragnarok
 Thor: The Dark World
@@ -395,6 +402,7 @@ Venom
 Wall Street
 War of the Worlds
 WarGames
+Warm Bodies
 Watchmen
 Wedding Crashers
 Weird Science
@@ -409,4 +417,4 @@ X-Men: The Last Stand
 X2: X-Men United
 Yesterday
 Young Frankenstein
-Zack Snyder's Justice League
+Zack Snyder's Justice League}
