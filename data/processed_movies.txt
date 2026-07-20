@@ -166,6 +166,7 @@ A Dry White Season
 A Face in the Crowd
 A Farewell to Arms
 A Few Good Men
+A Field in England
 A Fierce Green Fire: The Battle for A Living Planet
 A Film Unfinished
 A Fish Called Wanda
@@ -336,6 +337,7 @@ About a Boy
 Abraham Lincoln
 Abraham Lincoln: Vampire Hunter
 Absence of Malice
+Absences
 Absolute Beginners
 Absolute Power
 Abundant Acreage Available
@@ -480,6 +482,7 @@ All the King's Men
 All the Money in the World
 All the Names of God
 All the President's Men
+All the Time in the World
 All the World Is Sleeping
 Allied
 Alma's Rainbow
@@ -497,6 +500,7 @@ Alpha
 Alpha and Omega
 Alps
 Altered Perceptions
+Altina
 Altman
 Alvin and the Chipmunks
 Alvin and the Chipmunks: Chipwrecked
@@ -541,6 +545,7 @@ American Pastoral
 American Pie
 American Pie 2
 American Pop
+American Promise
 American Psycho
 American Radical: The Trials of Norman Finkelstein
 American Reunion
@@ -646,6 +651,7 @@ Ant-Man
 Ant-Man and the Wasp
 Ant-Man and the Wasp: Quantumania
 Antarctica: Ice and Sky
+Antboy
 Antebellum
 Anthony Adverse
 Anthropocene: The Human Epoch
@@ -757,6 +763,7 @@ Attack the Block
 Attenberg
 Au Revoir les Enfants
 August Rush
+August Winds
 August: Osage County
 Augustine
 Auntie Mame
@@ -1050,6 +1057,7 @@ Big Fur
 Big Game
 Big George Foreman
 Big Hero 6
+Big Joy: The Adventures of James Broughton
 Big Miracle
 Big Night
 Big River Man
@@ -1229,6 +1237,7 @@ Both Sides of the Blade
 Bottle Rocket
 Bottle Shock
 Boulevard
+Bound by Flesh
 Boundaries
 Bowfinger
 Bowling for Columbine
@@ -1424,6 +1433,7 @@ Captain Fantastic
 Captain Horatio Hornblower
 Captain Kidd
 Captain Marvel
+Captain Phillips
 Captain Underpants: The First Epic Movie
 Captains of the Clouds
 Capture the Flag
@@ -1757,6 +1767,7 @@ Coupe de Ville
 Couples Retreat
 Courageous
 Cousin Bette
+Cousin Jules
 Cover Girl
 Cow
 Cowboy Bebop: The Movie - Knockin' on Heaven's Door
@@ -1831,6 +1842,7 @@ Cyrus
 DC League of Super-Pets
 DOMINO: Battle of the Bones
 DTF
+Daawat-e-Ishq
 Dad & Step-Dad
 Daddio
 Daddy Day Camp
@@ -2008,6 +2020,7 @@ Devil
 Devil's Playground
 Devotion
 Dhak Dhak
+Dhoom 3
 Diabolique
 Dial M for Murder
 Diamonds
@@ -2101,6 +2114,7 @@ Dolittle
 Dolores Claiborne
 Dolphin Island
 Dolphin Tale
+Dolphin Tale 2
 Dolphins
 Don Giovanni
 Don Jon
@@ -2128,6 +2142,7 @@ Doom
 Dora and the Lost City of Gold
 Dorian Blues
 Dorian Gray
+Dormant Beauty
 Dosed
 Double Down South
 Double Happiness
@@ -2332,9 +2347,11 @@ Enemy of the State
 Enfant Terrible
 Enlightenment Guaranteed
 Ennio
+Enough Said
 Enron: The Smartest Guys in the Room
 Enter the Dragon
 Enter the Fat Dragon
+Entertainment
 Entourage
 Entrapment
 Entre les Bras
@@ -2377,6 +2394,7 @@ Event Horizon
 Ever After: A Cinderella Story
 Ever Deadly
 Everest
+Evergreen: The Road to Legalization
 Every Body
 Every Day
 Every Day in Kaimuki
@@ -2549,6 +2567,7 @@ Film ist a Girl & a Gun
 Film socialisme
 Film: The Living Record of Our Memory
 Filmfarsi
+Filmistaan
 Filmmakers for the Prosecution
 Final Account
 Final Destination
@@ -2581,6 +2600,8 @@ Firestarter
 Firewall
 Fireworks
 Fireworks Wednesday
+First Comes Love
+First Cousin Once Removed
 First Cow
 First Descent
 First Man
@@ -2665,6 +2686,7 @@ For the Bible Tells Me So
 For the Boys
 For the Love of Benji
 Forbidden Lie$
+Forbidden Love: The Unashamed Stories of Lesbian Lives
 Forbidden Planet
 Forbidden Zone
 Force 10 from Navarone
@@ -2900,6 +2922,7 @@ Gladiator
 Gladiator II
 Glass
 Glastonbury
+Glickman
 Glorious
 Glorious 39
 Glory
@@ -3022,6 +3045,7 @@ Grey Gardens
 Grey Matter
 Grey Owl
 Greystoke: The Legend of Tarzan, Lord of the Apes
+GriGris
 Gridiron Gang
 Gridlock'd
 Gridlocked
@@ -3043,6 +3067,7 @@ Guest Artist
 Guest of Cindy Sherman
 Guest of Honour
 Guilty
+Gulaab Gang
 Gulliver's Travels
 Gummo
 Gun Hill Road
@@ -3145,6 +3170,7 @@ Hateship Loveship
 Haunted Honeymoon
 Haunted Mansion
 Havana
+Hawaa Hawaai
 Haywire
 He Got Game
 He Ran All the Way
@@ -3330,6 +3356,7 @@ Hotel Transylvania 3: Summer Vacation
 Hour of the Wolf
 House at the End of the Street
 House by the River
+House in the Alley
 House of Cardin
 House of Flying Daggers
 House of Gucci
@@ -3745,6 +3772,7 @@ Jimmy Carter: Rock & Roll President
 Jimmy's Hall
 Jimpa
 Jindabyne
+Jingle Bell Rocks!
 Joan Baez I Am a Noise
 Joan Rivers: A Piece of Work
 Jobs
@@ -4151,6 +4179,7 @@ Licorice Pizza
 Life
 Life & Life
 Life 2.0
+Life According to Sam
 Life During Wartime
 Life Is Beautiful
 Life Itself
@@ -4188,6 +4217,7 @@ Lindy Lou, Juror Number 2
 Line of Duty
 Link
 Linoleum
+Linsanity
 Lion of the Desert
 Lions Love (... and Lies)
 Lions for Lambs
@@ -4218,6 +4248,7 @@ Little Richard: I Am Everything
 Little Shop of Horrors
 Little Tornadoes
 Little Vampire
+Little White Lie
 Little Women
 Little Woods
 Littlerock
@@ -4499,6 +4530,7 @@ Manufactured Landscapes
 Manufacturing Consent: Noam Chomsky and the Media
 Manuscripts Don't Burn
 Mao's Last Dancer
+Map of the Human Heart
 Mapplethorpe
 Mapplethorpe: Look at the Pictures
 Maps to the Stars
@@ -4551,6 +4583,7 @@ Marvelous and the Black Hole
 Marvin's Room
 Marwencol
 Marx Can Wait
+Mary Kom
 Mary Pickford: The Muse of the Movies
 Mary Poppins
 Mary Poppins Returns
@@ -4563,6 +4596,7 @@ Master Gardener
 Master Z: The Ip Man Legacy
 Master and Commander: The Far Side of the World
 Master of Dark Shadows
+Master of the House
 Matador
 Matchstick Men
 Materialists
@@ -4896,6 +4930,7 @@ Music from the Big House
 Music from the Inside Out
 Music of the Heart
 Must Love Dogs
+Mustang
 Mutiny on the Bounty
 My Amityville Horror
 My Architect
@@ -5161,6 +5196,7 @@ Note by Note: The Making of Steinway L1037
 Notes on Marie Menken
 Notes on a Scandal
 Notes on an Appearance
+Nothing Bad Can Happen
 Nothing But Trouble
 Nothing But a Man
 Nothing But the Truth
@@ -5356,6 +5392,7 @@ Out Come the Wolves
 Out for Justice
 Out of Sight
 Out of the Blue
+Out of the Clear Blue Sky
 Out of the Loop
 Out of the Past
 Outfoxed: Rupert Murdoch's War on Journalism
@@ -5722,6 +5759,7 @@ Public Enemies
 Public Speaking
 Pulp
 Pulp Fiction
+Pump
 Pump Up the Volume
 Pumping Iron
 Punch-Drunk Love
@@ -6208,6 +6246,7 @@ Searching for Sugar Man
 Searching for the Wrong-Eyed Jesus
 Season of the Witch
 Sebastian
+Second Opinion: Laetrile at Sloan-Kettering
 Secondhand Lions
 Seconds
 Secrecy
@@ -6403,6 +6442,7 @@ Sing 2
 Sing Me a Song
 Sing Street
 Sing Your Song
+Singham Returns
 Singin' in the Rain
 Sink the Bismarck!
 Sinners
@@ -6575,6 +6615,7 @@ Space Jam: A New Legacy
 Space: The Longest Goodbye
 Spaceballs
 Spaceship Earth
+Spanish Lake
 Spare Parts
 Sparkle
 Sparkling: The Story of Champagne
@@ -7580,6 +7621,7 @@ The Final Countdown
 The Final Cut
 The Final Destination
 The Final Girls
+The Final Member
 The Fire Within
 The Firemen's Ball
 The Firm
@@ -7712,6 +7754,7 @@ The Grand Seduction
 The Grandmaster
 The Grapes of Wrath
 The Grass Is Greener
+The Great Beauty
 The Great Buck Howard
 The Great Buster
 The Great Debaters
@@ -7809,6 +7852,7 @@ The Homesman
 The Honey Pot
 The Honeymoon Killers
 The Horde
+The Hornet's Nest
 The Horse Boy
 The Horse Soldiers
 The Horse Whisperer
@@ -8199,6 +8243,7 @@ The Miseducation of Cameron Post
 The Misfits
 The Missing
 The Missing Person
+The Missing Picture
 The Mission
 The Missionary
 The Missouri Breaks
@@ -8594,6 +8639,7 @@ The Shop Around the Corner
 The Shop on Main Street
 The Short History of the Long Road
 The Shrouds
+The Signal
 The Silence
 The Silence of Others
 The Silence of the Lambs
@@ -8790,6 +8836,7 @@ The Unbearable Weight of Massive Talent
 The Unborn
 The Unholy Trinity
 The Uninvited
+The United States of Autism
 The United States of Insanity
 The Universe of Keith Haring
 The Unknown Country
@@ -8933,6 +8980,7 @@ The Year of the Everlasting Storm
 The Year of the Yao
 The Yearling
 The Yes Men
+The Yes Men Are Revolting
 The Yes Men Fix the World
 The YouTube Effect
 The Young Black Stallion
@@ -8961,6 +9009,7 @@ There's Something About Mary
 There's Something in the Water
 There's Still Tomorrow
 These Amazing Shadows
+These Birds Walk
 They All Laughed
 They Call It Myanmar: Lifting the Curtain
 They Call Me Mister Tibbs!
@@ -9163,6 +9212,7 @@ Training Day
 Traitor
 Trance
 Transamerica
+Transcendence
 Transformers
 Transformers One
 Transformers: Age of Extinction
