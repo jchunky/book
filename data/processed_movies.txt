@@ -90,6 +90,7 @@ $ellebrity
 49 Up
 4:44 Last Day on Earth
 4x4
+5 Fingers
 50 First Dates
 500 Days of Summer
 51 Birch Street
@@ -165,12 +166,14 @@ A Dog's Way Home
 A Dry White Season
 A Face in the Crowd
 A Farewell to Arms
+A Farewell to Fools
 A Few Good Men
 A Field in England
 A Fierce Green Fire: The Battle for A Living Planet
 A Film Unfinished
 A Fish Called Wanda
 A Fistful of Dollars
+A Five Star Life
 A Flickering Truth
 A Foreign Affair
 A Funny Thing Happened on the Way to the Forum
@@ -292,6 +295,7 @@ A Streetcar Named Desire
 A Suitable Girl
 A Summer Place
 A Summer in Genoa
+A Summer's Tale
 A Sunday in the Country
 A Tale of Two Cities
 A Talking Picture
@@ -316,6 +320,7 @@ A Walk to Remember
 A Werewolf Boy
 A Whisper to a Roar
 A White, White Day
+A Will for the Woods
 A Woman Under the Influence
 A Woman of Paris: A Drama of Fate
 A Woman's Face
@@ -330,6 +335,7 @@ Aberdeen
 Abigail
 Abominable
 About Dry Grasses
+About Last Night
 About My Father
 About Schmidt
 About Time
@@ -387,6 +393,8 @@ After the Thin Man
 After the Wedding
 Afterglow
 Aftermath
+Afternoon Delight
+Afternoon of a Faun: Tanaquil Le Clercq
 Afterschool
 Afterward
 Against All Odds
@@ -426,6 +434,7 @@ Alexander the Last
 Alexander's Ragtime Band
 Alexandra
 Alfie
+Algorithms
 Algren
 Ali
 Alice
@@ -691,8 +700,10 @@ Araby
 Ararat
 Arcadian
 Archenemy
+Archipelago
 Arctic
 Arctic Dogs
+Are You Here
 Are You Lonesome Tonight?
 Are You Proud?
 Are You There God? It's Me, Margaret.
@@ -745,6 +756,7 @@ Astrakan
 Astro Boy
 Asylum
 At Eternity's Gate
+At Middleton
 At War
 At the Death House Door
 At the Edge of the World
@@ -784,6 +796,7 @@ Awakenings
 Ayar
 Ayurveda: Art of Being
 Azrael
+B.B. King: The Life of Riley
 BUtterfield 8
 Baadasssss!
 Babe
@@ -903,6 +916,7 @@ Beach Rats
 Beaches
 Beanpole
 BearCity
+Bears
 Beast
 Beast Beast
 Beast from Haunted Cave
@@ -985,6 +999,7 @@ Bellingcat: Truth in a Post-Truth World
 Bellissima
 Beloved
 Beloved Sisters
+Beltracchi: The Art of Forgery
 Belushi
 Ben Is Back
 Ben X
@@ -993,6 +1008,7 @@ Bend It Like Beckham
 Bend of the River
 Benda Bilili!
 Beneath Hill 60
+Beneath the Harvest Sky
 Beneath the Planet of the Apes
 Benedetta
 Benjamin
@@ -1017,6 +1033,7 @@ Better Luck Tomorrow
 Better Man
 Better Off Dead
 Better This World
+Bettie Page Reveals All
 Betting on Zero
 Betty Blue
 Between Two Worlds
@@ -1091,6 +1108,7 @@ Birdman or (The Unexpected Virtue of Ignorance)
 Birds of Passage
 Birds of Prey and the Fantabulous Emancipation of One Harley Quinn
 Birth
+Birth of the Living Dead
 Bisbee '17
 Bitchin': The Sound and Fury of Rick James
 Bitter Harvest
@@ -1124,6 +1142,7 @@ Black Widow
 Black and Blue
 BlackBerry
 Blackbeard's Ghost
+Blackbird
 Blackboard Jungle
 Blackfish
 Blacklight
@@ -1169,6 +1188,7 @@ Bloom Up
 Blow Out
 Blown Away
 Blue Beetle
+Blue Caprice
 Blue Chips
 Blue Collar
 Blue Collar Comedy Tour: The Movie
@@ -1244,6 +1264,7 @@ Bowling for Columbine
 Boy A
 Boy Erased
 Boy Kills World
+Boy Meets Girl
 Boyhood
 Boys from County Hell
 Boyz n the Hood
@@ -1711,6 +1732,7 @@ Con Artist
 Conan O'Brien Can't Stop
 Conan the Barbarian
 Conceiving Ada
+Concerning Violence
 Conclave
 Concussion
 Coneheads
@@ -1743,6 +1765,7 @@ Cop Car
 Cop Land
 Cop Out
 Copa 71
+Copenhagen
 Coppelia
 Copshop
 Cora Bora
@@ -1824,6 +1847,7 @@ Crystal Fairy & the Magical Cactus
 Cría Cuervos
 Cuba
 Cuba: Island of Music
+Cuban Fury
 Cube
 Cujo
 Cul-de-sac
@@ -1835,6 +1859,7 @@ Curse of the Demon
 Curse of the Golden Flower
 Curse of the Pink Panther
 Cut Throat City
+Cutie and the Boxer
 Cymbeline
 Cyrano
 Cyrano de Bergerac
@@ -1883,6 +1908,7 @@ Dark Passage
 Dark River
 Dark Shadows
 Dark Skies
+Dark Star
 Dark Victory
 Dark Water
 Darkest Hour
@@ -1981,6 +2007,7 @@ Delicious
 Delirious
 Deliver Us from Evil
 Deliverance
+Delivery Man
 Den of Thieves
 Denise Ho: Becoming the Song
 Dennis the Menace
@@ -2239,6 +2266,7 @@ Early Spring
 Early Summer
 Earth
 Earth Days
+Earth to Echo
 Earth: One Amazing Day
 Earwig and the Witch
 Easier with Practice
@@ -2474,6 +2502,7 @@ Fahrenheit 9/11
 Fail Safe
 Failure to Launch
 Fair Game
+Faith Connections
 Falcon Lake
 Fall
 Fallen
@@ -2751,6 +2780,7 @@ Free Solo
 Free State of Jones
 Free Willy
 Free Willy 2: The Adventure Home
+Free the Mind
 Free to Run
 Freedom Writers
 Freeheld
@@ -2776,6 +2806,7 @@ Friends with Benefits
 Friends with Kids
 Friends with Money
 Fright Night
+From Dusk Till Dawn
 From Hell
 From Noon Till Three
 From Paris with Love
@@ -2815,6 +2846,7 @@ Fury
 Futura
 G-Force
 G.I. Joe: Retaliation
+GMO OMG
 GOAT
 GTFO: Get the F&#% Out
 Gabby's Dollhouse: The Movie
@@ -2859,6 +2891,7 @@ Genius
 Genius Within: The Inner Life of Glenn Gould
 Gentleman's Agreement
 Geoff McFetridge: Drawing a Life
+Geography Club
 George Harrison: Living in the Material World
 George Washington
 George of the Jungle
@@ -3073,6 +3106,7 @@ Gummo
 Gun Hill Road
 Guncrazy
 Gundala
+Gunday
 Gunfight at the O.K. Corral
 Gunga Din
 Gunless
@@ -3093,6 +3127,7 @@ Hail, Caesar!
 Hair
 Hairspray
 Half Past Dead
+Half of a Yellow Sun
 Hall Pass
 Hallelujah: Leonard Cohen, a Journey, a Song
 Hallow Road
@@ -3152,6 +3187,7 @@ Harold and the Purple Crayon
 Harper
 Harriet the Spy
 Harry Chapin: When in Doubt, Do Something
+Harry Dean Stanton: Partly Fiction
 Harry Potter 20th Anniversary: Return to Hogwarts
 Harry Potter and the Chamber of Secrets
 Harry Potter and the Deathly Hallows: Part 1
@@ -3212,6 +3248,7 @@ Helena from the Wedding
 Hell Is for Heroes
 Hell and Back Again
 Hell in the Pacific
+Hell on Earth: The Fall of Syria and the Rise of ISIS
 Hell or High Water
 Hellbound?
 Hellboy
@@ -3426,6 +3463,7 @@ Hyenas
 Hype!
 Hypochondriac
 Häxan
+I Am Ali
 I Am Another You
 I Am Bruce Lee
 I Am Curious (Yellow)
@@ -3518,6 +3556,7 @@ Idiocracy
 Idlewild
 If Beale Street Could Talk
 If I Had Legs I'd Kick You
+If I Stay
 If a Tree Falls: A Story of the Earth Liberation Front
 If the Dancer Dances
 Igby Goes Down
@@ -3545,8 +3584,10 @@ In Darkness
 In Good Company
 In Her Shoes
 In Jackson Heights
+In No Great Hurry: 13 Lessons in Life with Saul Leiter
 In Pursuit of Silence
 In Search of Blind Joe Death: The Saga of John Fahey
+In Search of Chopin
 In Search of Fellini
 In Search of Greatness
 In Search of Haydn
@@ -3769,6 +3810,7 @@ Jim Gaffigan: Quality Time
 Jim: The James Foley Story
 Jimmy Carter Man from Plains
 Jimmy Carter: Rock & Roll President
+Jimmy P: Psychotherapy of a Plains Indian
 Jimmy's Hall
 Jimpa
 Jindabyne
@@ -3861,6 +3903,7 @@ Just the Two of Us
 Justice League
 Justice League: The Flashpoint Paradox
 Justice League: Throne of Atlantis
+Justin Bieber's Believe
 Justin Bieber: Never Say Never
 K-19: The Widowmaker
 K-9
@@ -3889,6 +3932,7 @@ Keep on Keepin' On
 Keep the Change
 Keeper
 Keith Richards: Under the Influence
+Kelly & Cal
 Kelly's Heroes
 Kenny Scharf: When Worlds Collide
 Kes
@@ -3914,6 +3958,7 @@ Kids vs. Aliens
 Kiki
 Kiki's Delivery Service
 Kilimanjaro: To the Roof of Africa
+Kill Dil
 Kill List
 Kill Me Three Times
 Kill Your Darlings
@@ -4074,7 +4119,6 @@ Last Call at the Oasis
 Last Chance Harvey
 Last Christmas
 Last Dance
-Last Days
 Last Days Here
 Last Exit to Brooklyn
 Last Flag Flying
@@ -4092,6 +4136,7 @@ Last Survivors
 Last Tango in Paris
 Last Train Home
 Last Train from Gun Hill
+Last Weekend
 Last Year at Marienbad
 Last of the Dogmen
 Last of the Red Hot Lovers
@@ -4127,6 +4172,7 @@ Leatherheads
 Leave Her to Heaven
 Leave No Trace
 Leave No Traces
+Leave the World Behind
 Leaves of Grass
 Leaving Home, Coming Home: A Portrait of Robert Frank
 Leaving Normal
@@ -4138,6 +4184,7 @@ Legally Blonde 2: Red, White & Blonde
 Legend
 Legend of the Guardians: The Owls of Ga'Hoole
 Legendary
+Legends of Oz: Dorothy's Return
 Legends of the Fall
 Legion
 Leila
@@ -4448,6 +4495,7 @@ Madeinusa
 Madeleine Collins
 Madeline
 Madeline's Madeline
+Mademoiselle C
 Madgaon Express
 Mafia Inc
 Magazine Dreams
@@ -4513,10 +4561,12 @@ Man on a Mission: Richard Garriott's Road to the Stars
 Man on the Moon
 Man with a Movie Camera
 Management
+Manakamana
 Manchester by the Sea
 Mancora
 Manda Bala (Send a Bullet)
 Mandabi
+Mandela: Long Walk to Freedom
 Manderlay
 Mandrake
 Mandy
@@ -4678,6 +4728,7 @@ Merry Christmas Mr. Lawrence
 Meru
 Message in a Bottle
 Metal: A Headbanger's Journey
+Metallica Through the Never
 Method to the Madness of Jerry Lewis
 Metro in Dino
 Metropia
@@ -4692,6 +4743,7 @@ Mickey Blue Eyes
 Mickey and the Bear
 Mickey's Christmas Carol
 Mickey's Once Upon a Christmas
+Mickey, Donald, Goofy: The Three Musketeers
 Middle Men
 Midnight Cowboy
 Midnight Express
@@ -4719,6 +4771,7 @@ Milk
 Millennium Bugs
 Miller's Crossing
 Millie Lies Low
+Million Dollar Arm
 Million Dollar Baby
 Milton Glaser: To Inform and Delight
 Mimi
@@ -4847,6 +4900,7 @@ Mortdecai
 Mosley
 Motel Destino
 Mother Couch
+Mother of George
 Mother!
 Mother's Day
 Mother, May I?
@@ -4877,6 +4931,7 @@ Mr. Nice
 Mr. Nobody
 Mr. Nobody Against Putin
 Mr. Peabody & Sherman
+Mr. Pip
 Mr. Popper's Penguins
 Mr. Skeffington
 Mr. Smith Goes to Washington
@@ -4908,6 +4963,7 @@ Munich
 Munjya
 Munyurangabo
 Muppet Treasure Island
+Muppets Most Wanted
 Muppets from Space
 Murder Bury Win
 Murder Mubarak
@@ -5172,6 +5228,7 @@ Noi the Albino
 Noises Off...
 Nollywood Babylon
 Noma: My Perfect Storm
+Non-Stop
 Nope
 Norm of the North
 Norma Rae
@@ -5393,6 +5450,7 @@ Out for Justice
 Out of Sight
 Out of the Blue
 Out of the Clear Blue Sky
+Out of the Furnace
 Out of the Loop
 Out of the Past
 Outfoxed: Rupert Murdoch's War on Journalism
@@ -5458,6 +5516,7 @@ Paranormal Activity
 Paranormal Activity 2
 Paranormal Activity 3
 Paranormal Activity 4
+Paranormal Activity: The Marked Ones
 Parasite
 Parental Guidance
 Parenthood
@@ -5472,6 +5531,7 @@ Paris, Je T'aime
 Paris, Texas
 Parker
 Parkland
+Partisan
 Party Girl
 Pasolini
 Passage to Mars
@@ -5596,6 +5656,7 @@ Pihu
 Pilgrimage
 Pineapple Express
 Ping Pong
+Ping Pong Summer
 Pink Flamingos
 Pink Floyd: Live at Pompeii
 Pink Floyd: The Wall
@@ -5684,6 +5745,7 @@ Poser
 Possessor
 Post Grad
 Postcards from the Edge
+Postman Pat: The Movie
 Potato Dreams of America
 Poupelle of Chimney Town
 Power Rangers
@@ -6100,6 +6162,7 @@ Rumba
 Rumble Fish
 Rumble: The Indians Who Rocked The World
 Rumours
+Run & Jump
 Run All Night
 Run Fatboy Run
 Run Lola Run
@@ -6108,6 +6171,7 @@ Run Silent Run Deep
 Runaway Bride
 Runaway Jury
 Runaway Train
+Runner Runner
 Running Mates
 Running Scared
 Running with Scissors
@@ -6535,6 +6599,7 @@ So I Married an Axe Murderer
 So Much So Fast
 Soapdish
 Society
+Sol LeWitt
 Solaris
 Solitary Man
 Sollers Point
@@ -6645,6 +6710,7 @@ Spies
 Spies Like Us
 Spies in Disguise
 Spin Me Round
+Spinning Plates
 Spinout
 Spiral
 Spirit Untamed
@@ -6856,6 +6922,7 @@ Sunshine Cleaning
 Super
 Super 8
 Super Dark Times
+Super Duper Alice Cooper
 Super Fly
 Super Frenchie
 Super Size Me
@@ -6898,6 +6965,7 @@ Suzi Q
 Suzume
 Swallows and Amazons
 Swan Song
+Swearnet
 Sweeney Todd: The Demon Barber of Fleet Street
 Sweet Bird of Youth
 Sweet Charity
@@ -6990,6 +7058,7 @@ Ted 2
 Teen Beach Movie
 Teen Spirit
 Teen Titans GO! To the Movies
+Teenage
 Teenage Mutant Ninja Turtles
 Teenage Mutant Ninja Turtles II: The Secret of the Ooze
 Teenage Mutant Ninja Turtles: Mutant Mayhem
@@ -7028,6 +7097,7 @@ Thank You for Smoking
 Thank You for Your Service
 Thanks for Sharing
 Thappad
+That Awkward Moment
 That Championship Season
 That Darn Cat!
 That Evening Sun
@@ -7098,6 +7168,7 @@ The Amusement Park
 The Anderson Tapes
 The Andromeda Strain
 The Angels' Share
+The Angriest Man in Brooklyn
 The Angry Birds Movie
 The Angry Birds Movie 2
 The Angry Black Girl and Her Monster
@@ -7351,6 +7422,7 @@ The Children Act
 The Children of Huang Shi
 The Children's Hour
 The China Syndrome
+The Chipmunk Adventure
 The Choice
 The Choirboys
 The Choral
@@ -7609,6 +7681,7 @@ The Farmer's Daughter
 The Fast and the Furious
 The Fast and the Furious: Tokyo Drift
 The Fate of the Furious
+The Fault in Our Stars
 The Favourite
 The Fearless Vampire Killers
 The Feeling of Being Watched
@@ -7678,6 +7751,7 @@ The Fugitive
 The Full Monty
 The Furies
 The Future
+The Galapagos Affair: Satan Came to Eden
 The Gambler
 The Games Maker
 The Gangster, the Cop, the Devil
@@ -7711,6 +7785,7 @@ The Girl on the Train
 The Girl with All the Gifts
 The Girl with a Bracelet
 The Girl with the Dragon Tattoo
+The Girls in the Band
 The Giver
 The Glass Bottom Boat
 The Glass Castle
@@ -7848,7 +7923,9 @@ The Holdovers
 The Holiday
 The Holy Girl
 The Home
+The Home and the World
 The Homesman
+The Homestretch
 The Honey Pot
 The Honeymoon Killers
 The Horde
@@ -7876,6 +7953,7 @@ The Hudsucker Proxy
 The Human Comedy
 The Human Experiment
 The Human Factor
+The Human Scale
 The Human Stain
 The Hummingbird Project
 The Hunchback of Notre Dame
@@ -8038,6 +8116,7 @@ The Last Starfighter
 The Last Station
 The Last Sunset
 The Last Temptation of Christ
+The Last Time I Saw Macao
 The Last Time I Saw Paris
 The Last Tycoon
 The Last Vermeer
@@ -8131,6 +8210,7 @@ The Lottery
 The Love Bug
 The Love Guru
 The Love Parade
+The Love Punch
 The Love We Make
 The Love Witch
 The Lovebirds
@@ -8374,6 +8454,7 @@ The Outpost
 The Outrageous Sophie Tucker
 The Outrun
 The Outsiders
+The Overnighters
 The Owl and the Pussycat
 The Owners
 The Ox-Bow Incident
@@ -8427,6 +8508,7 @@ The Picture of Dorian Gray
 The Pink Cloud
 The Pink Panther
 The Pink Panther 2
+The Pirate Fairy
 The Pirates Who Don't Do Anything: A VeggieTales Movie
 The Pirates of Penzance
 The Pirates! Band of Misfits
@@ -8624,6 +8706,7 @@ The Shadowless Tower
 The Shaggy Dog
 The Shape of Water
 The Sharks
+The Shaukeens
 The Shawshank Redemption
 The Sheik
 The Sheltering Sky
@@ -8662,6 +8745,7 @@ The Skin I Live In
 The Sky Crawlers
 The Sky Turns
 The Sleeping Beauty
+The Slingshot
 The Smashing Machine
 The Smiling Lieutenant
 The Smurfs
@@ -8733,6 +8817,7 @@ The Sun
 The Sun Behind the Clouds: Tibet's Struggle for Freedom
 The Sundowners
 The Sunset Limited
+The Sunshine Boys
 The Sunshine Makers
 The Super 8 Years
 The Super Cops
@@ -8806,6 +8891,7 @@ The Treasure of the Sierra Madre
 The Tree of Life
 The Trench
 The Trials of Darryl Hunt
+The Trials of Muhammad Ali
 The Trip
 The Trip to Bountiful
 The Trip to Spain
@@ -8932,6 +9018,7 @@ The Wind that Shakes the Barley
 The Windmill Movie
 The Winning Season
 The Winslow Boy
+The Wipers Times
 The Witch Who Came from the Sea
 The Witches
 The Witches of Eastwick
@@ -9084,6 +9171,7 @@ Three Thousand Years of Longing
 Three Worlds
 Through Black Spruce
 Through a Glass Darkly
+Through a Lens Darkly: Black Photographers and the Emergence of a People
 Through the Olive Trees
 Throw Down
 Throw Down Your Heart
@@ -9199,6 +9287,7 @@ Toy Story
 Toy Story 2
 Toy Story 3
 Toy Story 4
+Toy Story of Terror
 Toys
 Toys in the Attic
 Trading Places
@@ -9256,6 +9345,7 @@ Tropical Malady
 Troubadours
 Trouble the Water
 Trouble with the Curve
+Troublesome Creek: A Midwestern
 Troy
 Truck Turner
 Trucker
@@ -9419,6 +9509,7 @@ V/H/S/Halloween
 VFW
 VHYes
 Vacancy
+Valentine Road
 Valentine's Day
 Valentino: The Last Emperor
 Valerian and the City of a Thousand Planets
@@ -9465,6 +9556,7 @@ Videodrome
 Vijay 69
 Vikings: Journey to New Worlds
 Vikram
+Viktoria
 Village of the Damned
 Vincent & Theo
 Vinyl Nation
@@ -9575,6 +9667,7 @@ We Live in Time
 We Steal Secrets
 We Were Here
 We Were Soldiers
+We Won't Grow Old Together
 We the Animals
 We the People: The Market Basket Effect
 We're No Angels
@@ -9582,6 +9675,7 @@ We're the Millers
 Weapons
 Weather Girl
 Weathering with You
+Web Junkie
 Wedding Crashers
 Weed the People
 Weekend at Bernie's
@@ -9620,6 +9714,7 @@ What Dreams May Come
 What Ever Happened to Baby Jane?
 What Happens in Vegas
 What If
+What Is Cinema?
 What Just Happened
 What Lies Beneath
 What Lies West
@@ -9649,6 +9744,7 @@ When Did You Last See Your Father?
 When Fall Is Coming
 When Hitler Stole Pink Rabbit
 When I Consume You
+When I Saw You
 When I Walk
 When Lambs Become Lions
 When Marnie Was There
@@ -9699,6 +9795,7 @@ White Shadow
 White Squall
 White Sun
 White of the Eye
+Whitewash
 Whitney
 Whitney Houston: I Wanna Dance with Somebody
 Who Bombed Judi Bari?
@@ -9847,6 +9944,7 @@ XXY
 XY Chelsea
 Xala
 Xanadu
+Xingu
 Y tu mamá también
 Yadang: The Snitch
 Yankee Doodle Dandy
@@ -9899,6 +9997,7 @@ You're a Big Boy Now
 You've Been Trumped
 You've Got Mail
 You, Me and Dupree
+Young & Beautiful
 Young Adult
 Young Frankenstein
 Young Man with a Horn
